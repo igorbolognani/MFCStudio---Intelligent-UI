@@ -16,7 +16,12 @@ jobs:
       - uses: pnpm/action-setup@v4
       - run: pnpm install --frozen-lockfile
       - run: python3 scripts/source_safety.py --check
+      - run: python3 scripts/build-materials.py
+      - run: python3 scripts/audit-s29.py
+      - run: python3 scripts/build-corpus.py
+      - run: git diff --exit-code --stat -- science/corpus-seed.json science/corpus-embedded-assets.json science/corpus-pdf-assets.json science/materials-processed.json research/materials-v0.1/curation-report.json research/corpus-v0.3/curation-report.json
       - run: python3 -m unittest discover -s scripts -p 'test_source_safety.py'
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
       - run: pnpm run check
       - run: pnpm test
       - run: python3 -m unittest discover -s science/legacy-v0.1 -p 'test_*.py'

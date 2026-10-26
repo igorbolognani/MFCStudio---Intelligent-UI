@@ -1,0 +1,104 @@
+[
+  {
+    "id": "sgl-gdl",
+    "url": "https://www.sglcarbon.com/pdf/SIGRACET-Whitepaper.pdf",
+    "status": "failed",
+    "error": "HTTP Error 504: Gateway Timeout"
+  },
+  {
+    "id": "sgl-felt",
+    "url": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRACELL-Battery-Felts-EN.pdf",
+    "status": "failed",
+    "error": "HTTP Error 504: Gateway Timeout"
+  },
+  {
+    "id": "fcs-cc",
+    "url": "https://www.fuelcellstore.com/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011",
+    "final_url": "https://www.fuelcellstore.com/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 75020,
+    "sha256": "618fcf18fad75a8ade8a596db0ebfa94cee8d7f5d12d36cd3e76e4e6d948ffc2",
+    "status": "retrieved"
+  },
+  {
+    "id": "fcs-cp",
+    "url": "https://www.fuelcellstore.com/freudenberg-h2315-i2-c6",
+    "final_url": "https://www.fuelcellstore.com/freudenberg-h2315-i2-c6",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 80121,
+    "sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e",
+    "status": "retrieved"
+  },
+  {
+    "id": "fcs-toray",
+    "url": "https://www.fuelcellstore.com/toray-carbon-paper-060",
+    "final_url": "https://www.fuelcellstore.com/toray-carbon-paper-060",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 88912,
+    "sha256": "6d62ee73fa2ac308da683f0c94702e6c1e2716d73d165f3ff9244c76ca76ac64",
+    "status": "retrieved"
+  },
+  {
+    "id": "fcs-nafion",
+    "url": "https://www.fuelcellstore.com/nafion-117",
+    "final_url": "https://www.fuelcellstore.com/fuel-cell-components/membranes",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 87255,
+    "sha256": "26bc88c9cc80bcdb3f1c5e019ecb6d2e7ea0a1797643e1706245764555b30d98",
+    "status": "rejected_redirect_to_category_not_target_product"
+  },
+  {
+    "id": "toray-datasheet",
+    "url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+    "final_url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+    "bytes": 223177,
+    "content_type": "application/pdf",
+    "sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+    "status": "retrieved"
+  },
+  {
+    "id": "fcs-toray-pack",
+    "url": "https://www.fuelcellstore.com/toray-carbon-paper-060-pack",
+    "final_url": "https://www.fuelcellstore.com/toray-carbon-paper-060-pack",
+    "bytes": 76036,
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "505d04f8827a72954ce8d39b1b5bc9dd13e7914879336b44dda4b0738f4015e1",
+    "status": "retrieved"
+  },
+  {
+    "id": "manufacturer-gde",
+    "url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011",
+    "final_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011",
+    "bytes": 190209,
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5b6ae338c00cefbd220bb63f6f4705208bbc40b35f0cff08a214bf01debd55df",
+    "status": "retrieved"
+  },
+  {
+    "id": "cetech",
+    "url": "https://www.ce-tech.com.tw/data/W1S1011",
+    "final_url": "https://www.ce-tech.com.tw/data/W1S1011",
+    "bytes": 47059,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25",
+    "status": "retrieved"
+  },
+  {
+    "id": "redox-felt",
+    "url": "https://redox-flow.com/product/sgl-carbon-felt-electrodes/",
+    "final_url": "https://redox-flow.com/product/sgl-carbon-felt-electrodes/",
+    "bytes": 280803,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "f531f3a7b60895930077881ea8e749a16747f93474be68a95c7070d9c09560ee",
+    "status": "retrieved"
+  },
+  {
+    "id": "cmi",
+    "url": "https://ionexchangemembranes.com/cmi-7000-cation-exchange-membranes-technical-specifications/",
+    "final_url": "https://ionexchangemembranes.com/cmi-7000-cation-exchange-membranes-technical-specifications/",
+    "bytes": 38151,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "2f205147bdda88f1b809c1f8ea126a73915fe0bb33c447603c9f40272195f282",
+    "status": "retrieved"
+  }
+]

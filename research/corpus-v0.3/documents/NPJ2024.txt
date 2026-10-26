@@ -1,0 +1,471 @@
+Resilience of anodic biofilm in microbial fuel cell biosensor for BOD monitoring of urban wastewater | npj Clean Water
+Skip to main content
+Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+and JavaScript.
+Advertisement
+View all journals
+Saved research
+Search
+Account Log in
+Content Explore content
+About the journal
+Publish with us
+Sign up for alerts
+RSS feed
+nature
+npj clean water
+articles
+article
+Resilience of anodic biofilm in microbial fuel cell biosensor for BOD monitoring of urban wastewater
+Download PDF
+Download PDF
+Article
+Open access
+Published: 28 June 2024
+Resilience of anodic biofilm in microbial fuel cell biosensor for BOD monitoring of urban wastewater
+Anna Salvian ORCID: orcid.org/0009-0000-1851-9167 1 , 2 ,
+Daniel Farkas ORCID: orcid.org/0000-0002-0277-9738 2 ,
+Marina Ramirez-Moreno ORCID: orcid.org/0000-0001-6390-7134 2 ,
+Daniela Torruella-Salas ORCID: orcid.org/0000-0002-8002-2773 3 , 4 ,
+Antonio Berná 4 ,
+Claudio Avignone-Rossa ORCID: orcid.org/0000-0002-1625-6487 2 ,
+John R. Varcoe ORCID: orcid.org/0000-0001-9898-0235 1 ,
+Abraham Esteve-Núñez 3 , 4 &
+…
+Siddharth Gadkari ORCID: orcid.org/0000-0001-5228-8534 1 Show authors
+npj Clean Water volume 7 ,  Article number: 53 ( 2024 ) Cite this article
+Save article
+View saved research
+8211 Accesses
+43 Citations
+49 Altmetric
+Metrics details
+Abstract
+Efficient wastewater treatment monitoring is vital for addressing water scarcity. Microbial fuel cells (MFCs) have emerged as real-time biosensors for biochemical oxygen demand (BOD) in urban wastewater. Discrepancies in signal generation may arise due to changes in the composition and metabolism of mixed-culture electroactive biofilms stemming from different wastewater compositions. In this study, 3D-printed MFC-based biosensors were employed to assess the BOD of sterile complex artificial wastewater and untreated urban wastewater. Alterations in the microbial composition of the anode were evaluated using 16S rRNA sequencing and metagenomics analysis. Results show that MFC-based biosensors can be effectively recalibrated for diverse types of wastewater, maintaining consistent sensitivity (0.64 ± 0.10 mA L mg −1 m −2 with synthetic wastewater and 0.78 ± 0.13 mA L mg −1 m −2 with urban wastewater) and limit of detection (49 ± 8 mg L −1 for synthetic wastewater and 44 ± 7 mg L −1 for urban wastewater). Crucially, pre-sterilization, conductivity adjustments, and nitrogen purging of wastewater are not required before its introduction into the biosensor. However, the presence of native aerobic microorganisms in the wastewater might affect the current output. Metagenomics and taxonomic analyses revealed that the alterations in biofilm composition are predominantly in response to the varied chemical and microbiological compositions of different substrates. Despite variations in anodic biofilm composition, the MFC-based biosensor maintains a relative error comparable to the standard BOD test. This highlights the resilience and flexibility of the biosensor when directly used with a variety of wastewater types before full biofilm adjustment.
+Similar content being viewed by others
+A waste-to-wealth initiative exploiting the potential of Anabaena variabilis for designing an integrated biorefinery
+Article Open access 08 June 2022
+Microbial risk assessment across multiple environments based on metagenomic absolute quantification with cellular internal standards
+Article 22 April 2025
+Performance and statistical evaluation of animal dung–driven microbial fuel cells for simultaneous bio electrochemical conversion and bioremediation of toxic metal-contaminated wastewater
+Article Open access 15 May 2026
+Explore related subjects Discover the latest articles and news in related subjects.
+Environmental monitoring
+Microbial Electrochemical Systems for Sustainable Energy Production
+Introduction
+Around 71% of the world’s population is estimated to face varying levels of water scarcity during certain periods of the year 1 . To address this challenge, wastewater treatment provides for a vital solution for the purification and subsequent recycling of wastewater. The efficacy of wastewater treatment plants can be assessed by measuring the biochemical oxygen demand (BOD), which quantifies the total biodegradable organic pollutants in the water. Several countries have implemented regulatory measures and guidelines that impose strict standards on the water discharged by wastewater treatment industries 2 , 3 . A fast and accurate monitoring of BOD parameters is deemed indispensable 4 . However, the currently accepted standard method is the BOD 5 test, a bioassay technique lasting over five days at a controlled temperature of 20 °C, resulting in a laborious and complex analytical process, thereby limiting its applicability in real-time process monitoring within industrial settings 5 . As a result, the progression towards automation and process optimization in wastewater treatment systems is hindered 6 .
+In recent times, the Microbial Fuel Cell (MFC)-based biosensors have been recognised as innovative approach for real-time BOD monitoring 7 , 8 , 9 . MFCs function by employing exoelectrogenic microorganisms that convert chemical energy stored in organic compounds into electrical energy. This conversion process is proxy utilized to measure wastewater BOD levels. Notably, they have exhibited exceptional operational stability and high performance for a duration exceeding five years with minimal necessity for maintenance 10 , 11 , 12 , 13 , 14 , 15 . Within the various reported MFC configurations, the single-chamber (SC) setup is favoured due to its simplicity and the lack of a requirement for continuous catholyte supply 16 , 17 . The SC-MFC consists of two primary components. The first is a bio-anode electrode located inside the main reactor compartment, housing a community of electroactive bacteria that catalyse the oxidation of organic pollutants in wastewater. The second component is an air-diffusion cathode electrode positioned on the side of the reactor, exposed to air. Here, gaseous oxygen from the air acts as the electron acceptor, undergoing reduction to water. When wastewater is introduced into the main (anodic) compartment, a potential difference between the electrodes emerges. Connecting these electrodes to an external load generates an electrical current, serving as an indirect measure of wastewater BOD concentration. The ability of the MFC to produce electricity is thus directly influenced by the level of organic pollutants in the wastewater that are oxidised by the electroactive biofilm at the anode 16 , 17 .
+The electroactive biofilm can be composed of either single-species or multi-species bacterial communities. Single-species biofilms, though preferred for their consistent response patterns, encounter several drawbacks. These include a limited range of degradable substrates, reduced adaptability to environmental changes, and increased susceptibility to microbial contamination. To address these challenges, the deployment of mixed-species cultures has been advocated, particularly in the realm of environmental monitoring, as they offer broader substrate degradation capabilities and enhanced adaptability 18 . However, mixed cultures within MFCs also encounter issues related to signal stability over time. Previous research corroborated that the diversity of feedstocks has a profound effect on the structure and metabolism of the microbial community, subsequently affecting the MFC’s performance 19 , 20 , 21 . Chae et al. reported that MFCs utilizing various substrates (acetate, propionate, and glucose) exhibit varying coulombic efficiencies due to distinct metabolic pathways related to extracellular electron transfer (EET) or fermentation. They also noted rapid current generation with no lag time upon sudden substrate changes 22 . Xiao et al. conducted a study on a MFC-based biosensor with a mixed bacterial culture. They observed that using urban wastewater as a substrate led to a lower current response compared to acetate. This reduction was attributed to the complex organic components in wastewater, which are metabolized less efficiently by the microbes, resulting in decreased current. However, the study underscores the need for more research on how complex organics affect biosensor responses 23 . These findings emphasise the need to explore how the properties of wastewater feedstock influence the biosensing capabilities of MFCs and quantify such variations in terms of accuracy and error produced by the biosensor over time. Understanding these relationships is crucial for optimising MFC performance and adapting their application to diverse types of wastewater.
+Previous research studies have established the potential of MFC technology for biosensing applications in assessing BOD in synthetic and real wastewater 9 , 11 , 14 , 24 . However, a major limitation in these studies is the use of sterile wastewater for calibrating the biosensors, which overlooks the influence of planktonic cells present in the wastewater. This limitation affects the practical use of MFC-based biosensors in real-world settings. In addition, while analysis of MFC microbial communities using 16S rRNA genes has shown a relationship between the anodic communities and the type of substrate used 22 , there remains a limited understanding of the genetic functions involved. The limitation stems from the fact that 16S rRNA-based methods primarily offer taxonomic classification, providing limited insights into the functional roles of individual species within the community. Therefore, more comprehensive approaches like metagenomics are essential for a deeper understanding of how variations in feedstock affect the functionality of the electroactive biofilm 25 .
+The current study sheds light on how MFC-based biosensors with a lab-cultivated electroactive biofilm respond to two different substrates: sterile synthetic wastewater (SWW) and real urban wastewater (RWW), with no sterilization, nitrogen purging, or conductivity adjustment prior to measuring the biosensor response. The study focuses on the factors driving the changes in the microbial composition of the electroactive biofilm at the anode of the biosensor. Microbial dynamics significantly impact the current output, consequently influencing the robustness and adaptability of the biosensor across various feedstocks. This is particularly evident when the biofilm is grown under controlled laboratory conditions and later evaluated in real-world scenarios at wastewater treatment plants. The primary objective of the study is to determine the effect of the introduction of non-sterile RWW as a substrate in the biosensor’s electrical current output. Moreover, the study explores how shifts in the electroactive microbial community at the anode impact the electrochemical properties of the system. Understanding the electrochemical and microbial dynamics is crucial for two fundamental reasons. Firstly, it elucidates the adaptability of the biosensor across varied complex substrates and its operational reliability compared to established BOD measurement techniques. Secondly, it enhances the existing scientific knowledge regarding the adaptation of MFC-based biosensors from controlled laboratory settings to practical applications in real-world wastewater treatment scenarios. A key milestone of this study is to establish a robust electroactive biofilm, initially cultivated in acetate-based artificial media, which can maintain high performance when exposed to complex SWW and non-sterile RWW. Achieving this will pave the way for the development and standardization of efficient, reliable biosensors that can offer quick and accurate BOD monitoring in various environmental conditions. This advancement holds significant promise for enhancing the monitoring capabilities in wastewater treatment processes, marking a pivotal step towards more efficient and environmentally sustainable practices in the field.
+Results and discussion
+Current production and Coulombic efficiency with different feedstocks
+The current measured across an external resistor (1 kΩ) at every batch cycle was observed upon replacing the anolyte with fresh feedstock at different BOD concentrations (Fig. 1 a– c ). Higher BOD levels in the feedstock, whether SWW or RWW, generally lead to a greater maximum current density, which is attributed to the oxidation of the substrate by the anodic biofilm. As the oxidizable substrate is depleted, the current generated decrease. The negative control did not exhibited increase in current density when the anolyte was replaced.
+Fig. 1: Biosensing characteristics of an MFC-based biosensor utilizing SWW and RWW as substrates.
+Full size image
+a , b Current peaks in response to varying BOD concentrations in synthetic wastewater (SWW) and real urban wastewater (RWW) (pH = 7.4 ± 0.3, conductivity 1.10 ± 0.3 mS cm −1 ). The results are represented as the mean of three MFCs replicates ± standard error of the mean. c relationship between maximum current and BOD concentration for SWW (in blue) and RWW (in orange). d correlation between coulombic efficiency and the BOD concentration of SWW (in blue) and RWW (in orange). Each data point in ( c ) and ( d ) represents the average of three separate feedings from three individual MFCs ± standard error of the mean, with BOD concentrations indicated as the mean ± standard deviation.
+A noticeable reduction in the maximum current was observed in the MFCs that were supplied with RWW as opposed to those supplied with SWW. Switching from a synthetic to a real substrate in an MFC often results in changes in the electrochemical system’s performance. This is typical due to the complex nature of real substrates compared to the controlled composition of synthetic ones 18 . In general, the decreased current production when feeding with RWW has been previously reported and can be attributed to three main factors: (i) presence of non-electroactive native microorganisms in RWW 21 ; (ii) presence of complex substrates 23 , and (iii) changes in the metabolic pathways of the electroactive biofilm, subsequently impacting the mechanisms of electrochemical electron transfer 26 .
+Native microorganisms in RWW, which are adapted to, and thrive in the RWW environment, may compete for substrate utilization with the anodic electroactive biofilm, affecting the CE and current production of the biosensors. The growth of planktonic cells in the anolyte was monitored in two MFC reactors, with both SWW and RWW. The kinetics of cell proliferation was estimated by optical density measurement at 600 nm (OD 600 ) over a period of two days, which corresponds to the duration required to reach the peak current production (Supplementary Fig. 1 ). The blank used was either RWW or SWW, which had been filtered through a 0.22 μm filter. The measured TS and VS in the RWW were 938 mg L −1 and 482 mg L −1 , respectively. In addition, at three sampling points (0, 24, and 48 h), 100 µL of the anolyte from two replicate MFCs were inoculated onto three distinct complex media: Tryptic Soy Agar (TSA), Plate Count Agar (PCA), and Nutrient Agar (NA) incubated at 30 °C for 37 h and subjected to plate count for quantification of total aerobic heterotrophic culturable bacteria present as planktonic cells 27 , 28 . For MFCs utilizing SWW, there is a noticeable decrease in coulombic efficiency as the BOD concentration rises. This trend, however, is reversed in MFCs fed with RWW, with the coulombic efficiency increasing with higher BOD levels (Fig. 1d ). Considering that the MFC reactors remain consistent throughout the study in terms of electroactive biofilm, reactor’s materials, geometry, and external resistance, the inverse correlation observed in CE relative to BOD can be attributed exclusively to the modification in the type of substrate used.
+In the case of SWW, a significant increase in OD 600 attributed to planktonic cell growth was observed in the media after 24 h from media replacement (Supplementary Fig, 1a ). Plate count results on TSA, NA, and PCA corroborated the OD 600 findings, indicating a 2 to 3 log 10 increase in aerobic planktonic bacterial counts across all three media (Supplementary Fig. 1 b– d ). This suggests a rise in aerobic bacterial populations in the anolyte of the biosensor over time, which might explain the decrease in CE at high BOD concentrations. A higher BOD in the anolyte tends to extend the duration required for the electroactive biofilm to metabolize it and produce the current peaks, as shown in Fig. 1a 29 , 30 . During an extended period of time required for the degradation by the electroactive biofilm of high BOD concentrations in batch-mode feeding, aerobic planktonic cells proliferate and divert substrate from the biofilm, reducing the number of electrons transferred to the anode 13 , 31 . The electrons generated by the anodic biofilm influence the current measured across the external resistance 32 , which in turn affects the charge produced Eq. ( 2 ) and subsequently impacts the CE (Eq. ( 3 )). This mechanism elucidates the negative correlation between BOD and CE observed in SWW, as illustrated in Fig. 1d .
+Conversely, RWW hosts a diverse bacterial community already adapted to a complex nutrient profile, which was found to maintain a relatively constant cell density in the anolyte of the MFC reactors over a 2-days peak time (Supplementary Fig. 1 ). When RWW is introduced into the MFC at limited substrate concentrations, the existing planktonic cells, already attuned to these conditions, rapidly consume the substrate. This substrate utilization leaves limited resources available for the electroactive bacteria at the anode, which reduces electricity generation and, therefore, CE, as shown in previous studies 21 . However, we observed that with an increase in BOD of the anolyte, the CE increases to a maximum of 1.5 ± 0.1%. This might be attributed to the fact that as the BOD concentration in RWW increases, the substrate becomes sufficiently abundant for both planktonic and electroactive bacteria, leading to a positive correlation between CE and BOD concentrations in RWW. Future studies should focus on measuring the metabolic rates of planktonic cells and electroactive biofilms to elucidate the observed correlation.
+The overall reduced current production and CE observed when feeding with RWW compared to SWW can be also attributed to the varied chemical composition of the substrate, which present a challenge for bacterial degradation as the microbes are not acclimated to these compounds, as hypothesized by Xiao et al. 23 . In addition, the composition of the biofilm and its metabolic potential might undergo changes to adapt to the environmental conditions of RWW. To further investigate the microbial and electrochemical change and, therefore, the error produced by the biosensor when changing substrate, additional studies were conducted, including electrochemical assessments (polarisation curves and cyclic voltammetry), examinations of temporal shifts in taxonomic composition, and metagenomic analyses.
+Biosensing properties
+After incorporating the data from the three MFC replicates supplied with SWW and RWW, a linear correlation was observed between BOD concentration (linear dynamic range up to 200 mg L −1 and 170 mg L −1 , respectively) and the maximum current density produced. This correlation was strong, as indicated by R 2 values of 0.95 for SWW and 0.91 for RWW, as depicted in Fig. 1c . Supplementary Table 1 displays the maximum current output for each of the 3 MFC replicates across the various tested BOD concentrations. Our results show that the biosensor exhibited comparable sensitivities (calculated as shown in Eq. ( 5 )) with both RWW and SWW as substrates (0.78 ± 0.13 and 0.64 ± 0.10 mA L mg −1 m −2 , respectively). The LOD (calculated as shown in Eq. ( 3 )), which represents the minimum BOD concentration detectable with confidence by the biosensor, was determined to be 44 ± 7 mg L −1 for MFCs utilizing RWW and 49 ± 8 mg L −1 for those with SWW. The sensitivity of the MFC biosensor primarily relies on the bio-anode’s ability to extract electrons from organic matter in water, influenced by factors such as anode material 33 , biosensor design 34 , and electroactive biofilm composition 18 . These factors also impact the LOD 35 . The consistent sensitivity and LOD in MFCs using both RWW and SWW are explained by the anode material and biosensor structure being constant over the study, and the biofilm composition is relatively robust (discussion later around Fig. 3 ); this elucidates the consistent sensitivity and LOD in MFCs using both RWW and SWW. Similar results have been previously found by Di Lorenzo et al. and Tardy et al. when comparing the biosensing properties of a SC-MFC biosensor with different artificial and real wastewaters 11 , 36 . In the case of SWW feedstock, the maximum current produced starts to plateau at BOD concentrations higher than 213 ± 4 mA m −2 , which can be attributed to substrate saturation, meaning there is a limit to the amount of substrate that the microbial communities in the MFCs can effectively process 13 . In the study using RWW, the current plateau was not reached as the BOD concentrations tested were limited to a maximum of 170 ± 6 mA m −2 , corresponding to the highest BOD level of the RWW collected from the wastewater treatment plant. This indicates that the dynamic range of the biosensor is well-suited for application in wastewater treatment plants dealing with urban wastewater.
+The response times, referred to the time needed from replacing the anolyte to reach the maximum current density, reported in Supplementary Table 2 for each MFC replicate, differed significantly between the two substrates. Response times were notably faster for RWW averaging 4.7 ± 0.4 h, compared to 11.1 ± 0.9 h for SWW.
+In summary, the sensitivity and LOD appear to be independent of the substrate type. However, the substrate significantly influences factors such as response time and the current density achieved. From a practical perspective, these findings suggest that the biosensor can be effectively used with a variety of substrates while maintaining consistent sensitivity and LOD. Nevertheless, further research on understanding the extent of variation in current production with different substrates is essential. Such understanding would enable the swift and efficient recalibration of the sensor for each specific substrate, enhancing its applicability and accuracy in diverse conditions.
+Electrochemical analyses: variability generated by adaptation of the biofilm to new substrate
+Polarization curves were performed on 2 MFCs replicates after a 4-day adaptation to the new substrate (SWW or RWW) and after ~1 month of continuous operation with the same feedstock (Fig. 2 ) to understand if the electrochemical performance of MFC-based biosensors changed over time. The cathode was replaced every two months to ensure it did not limit the performance of the MFC. Consequently, any observed differences in the electrochemical behaviour over time can be primarily attributed to changes in the anode.
+Fig. 2: Cell polarization and power curves of MFC-based biosensors.
+Full size image
+The MFC were tested with SWW (BOD = 215 ± 6 mg mL −1 , pH = 7.2 ± 0.1, Conductivity = 1.2 ± 0.1 mS cm −1 ) (blue) and RWW (BOD = 162 ± 9 mg mL −1 , pH = 7.3 ± 0.1, Conductivity = 1.4 ± 0.1 mS cm −1 ) (orange) after a 4 day of feeding with either SWW or RWW and b after 36 days. The analysis was performed using a PalmSense4 potentiostat connected in a two-configuration mode at 0.5 mV s −1 . Results are shown as the mean of two MFC replicates ± Standard Error of the Mean.
+Comparing the polarization curves of MFCs fed with SWW and RWW over time, we observed an increase in the maximum power density when using the same substrate for over a month. The power density generated with SWW was 59 ± 1 mW m −2 ( t = 4 d) and 87 ± 3 mW m −2 ( t = 36 d), while with RWW the power achieved was 16 ± 1 mW m −2 ( t = 4 d) and 23 ± 6 mW m −2 ( t = 36 d). This behaviour aligns with previous studies and is attributed to the biofilm’s adaptation to the environmental conditions specific to the feedstock 20 . Moreover, in our study, there was an increase in anode potential when comparing SWW (−458 ± 19 mV at t = 4 days and −411 ± 8 mV at t = 36 days) with RWW (−307 ± 34 mV at t = 4 days and −293 ± 25 mV at t = 36 days). This aligns with expectations, given that the chemical composition of SWW and RWW is different and the OCP of the anode typically shifts towards a more negative value, approaching the thermodynamic limit for a specific substrate oxidation 37 .
+The adaptation of biofilms to new substrates has a significant impact on the performance of biosensors. While this adaptation process enhances the versatility of biosensors, it also results in variations in their output. In the two MFC replicates tested, we noted alterations in both the current density and cell voltage, extrapolated from the polarization curve at a 1 kΩ external resistor, from day 4 to day 36 for SWW and RWW. This occurred even though the BOD of the substrates was maintained constant (277 ± 16 mg L −1 for SWW and 189 ± 14 mg L −1 for RWW). When using SWW as feedstock, the extrapolated current density, expressed as the mean generated by the two MFCs replicates tested ± standard error of the mean, was 186 ± 25 mA m −2 ( t = 4 d) and 218 ± 23 mA m −2 ( t = 36 d). This results in a variation in the current density over time of around 15%. A similar behaviour was observed when feeding the MFCs with RWW, where the extrapolated current density was 94 ± 8 mA m −2 ( t = 4 d) and 105 ± 11 mA m −2 ( t = 36 d), resulting in a variation of the current density of around 12%. The observed fluctuations in the current output are linked to changes in the estimation of BOD concentration when using the MFC-based biosensor. Nevertheless, such variations are comparable to those of the BOD 5 standard method, which usually ranges from 5 to 20% due to factors that are difficult to control, such as varying microbial inoculum and microbial activity and the presence of interfering substances 38 , 39 , 40 , 41 . Importantly, the strong linear correlation between BOD concentration and current density over a calibration period exceeding one month, as shown in Fig. 1c , suggests that full biofilm adaptation is not essential for obtaining accurate BOD measurements. This finding underscores the potential of using MFC-based biosensors for reliable BOD estimation, even with varying substrate compositions and biofilm adaptation states.
+In summary, the electrochemical analyses reveal the remarkable capacity of the anodic biofilm to adapt to various complex substrates, including both SWW and RWW. This underscores the reliability and potential applicability of the MFC-biosensor for BOD monitoring across diverse substrates and demonstrates its practical utility in real-world scenarios, where the chemical and microbiological composition of the wastewater is affected by seasonal changes 42 . The process of biofilm adaptation resulted in an increase of maximum power and current density over time, which affects the signal stability of the biosensor. The increase in electrochemical performance of the MFCs upon biofilm adaptation to novel substrates has been previously documented in scientific literature, showcasing similar results, albeit with simpler substrates, such as acetate, and casein 21 . Notably, the current output measured in this study at an external resistor of 1 kΩ exhibited minimal fluctuations over the course of a month. The level of error associated with these variations over time is comparable to that observed in the standard BOD 5 test. The results additionally revealed that the biofilm exhibited a significant current generation after only a few days ( t = 4 d) following substrate alteration, indicating a minimal lag phase requirement for adaptation upon abrupt substrate changes in the biosensor. Chae et al. attributed such a rapid current response to different feedstocks to a diverse composition of the anodic community, which enables the degradation of wider range of substrates 22 . Considering the importance of the anodic biofilm in the electrical response of MFC-based biosensors, a taxonomic and metagenomic examination of the biofilm was conducted to complement the electrochemical and biosensing analyses.
+Shifts in taxonomic composition resulting from substrate alteration
+We investigated whether the observed increase in electrochemical performance during prolonged exposure to a specific feedstock might be linked to changes in the biofilm’s taxonomic composition. Such variations could stem from the substrate chemical properties or interactions with native bacteria in RWW 21 , 43 . To investigate such hypothesis, temporal dynamics of the taxonomic composition of the biofilm fed in batch-mode with SWW (time 0) and RWW (after 4, 10, 19 and 34 days of feeding) were analysed and compared to the bacterial composition of RWW (Fig. 3 a, b ). Such a comparison would help evaluate whether there was any colonization of the anodic biofilm by bacteria present in the RWW, thus providing insights into the impact of substrate alteration on the biofilm’s taxonomic makeup.
+Fig. 3: Taxonomic analyses of the anodic biofilm fed with SWW and RWW.
+Full size image
+Relative abundance of lowest taxonomic rank assigned (species, genus, and family) of ( a ) anodic biofilm at different time points and ( b ) native bacteria in RWW. At t = 0, the MFCs had been supplied for around 2 months with SWW, day 4, 10, 19, and 34 indicate the days of RWW feeding. The abundance is the average of three biological replicates ± SEM. c Alpha diversity analysis of the anodic biofilm at each time point.
+The predominant taxon in the urban wastewater (RWW) used for this study is the genus Mycobacterium , which comprises a significant majority of 47.3% of the total microbial population (Fig. 3b ). Mycobacterium species are commonly found in soil, water, and as part of the natural microbial flora 44 , 45 . The genus Trichococcus is the second most prevalent, accounting for 8.5%. These are facultative anaerobic bacteria often found in sewage and wastewater treatment plants. They are known for their ability to degrade organic compounds, playing a role in the biodegradation process 46 . Other taxa are present with low relative abundance, such as the genus Actinomyces (4.1%), species Bifidobacterium adolescentis (3.7%), family Actinomycetaceae (3.6%), family Eubacteriaceae (2.6%), family Rhizobiales Incertae Sedis (2.4%), and the species Collinsella aerofaciens (2.3%), Bifidobacterium catenulatum (1.3%) Bifidobacterium longum (1.3%), and Romboutsia ilealis (1.3%), followed by the genus Leucobacter at 1.2% and Gordonia at 1.2%. These taxa have been identified in various environments, including soil, wastewater, and the human intestinal tract 44 , 47 . They are resilient, capable of thriving in harsh conditions, and many possess unique capabilities. For instance, the Rhizobiales Incertae Sedis are known for nitrogen fixation, while members of the Actinomycetaceae family can degrade pesticides 48 , 49 .
+The taxonomic composition of the anodic biofilm was analysed over time to evaluate possible changes in the microbial composition when the MFCs were fed with RWW. At t = 0, marking 64 days of SWW feeding, the dominant taxa were the genera Propionicicella (34.3 ± 3.4%) and Chryseobacterium (21.6 ± 8.3%), followed by the family Propionibacteriaceae (5.5 ± 0.6%), the species Simplicispira limi (4.8 ± 1.8%), genus Dechlorosoma (4.8 ± 0.5%), and genus Raoultella (4.4 ± 1.5%). Chryseobacterium , Dechlorosoma , and Propionicicella stand out as the most abundant genera following 34 days of feeding with RWW. The genus Chryseobacterium , the second most abundant at t = 0, was found to be the most abundant genus after 34 days of RWW feeding, reaching an abundance of 25.7 ± 0.9%. Despite notable fluctuations in its abundance over the 34-day period, ranging from 3.3 ± 3% on day 4 to 73.0 ± 6.3% at t = 19, the initial and final abundances exhibited remarkable similarity. In fact, Chryseobacterium species are generally known for their resilience to environmental changes, with a particular ability of heavy metal resistance and biofilm formation 50 . Dechlorosoma , initially constituting 4.8 ± 0.8% of the community after SWW feeding, exhibited an increase in its abundance, albeit with fluctuations over the observation period, eventually becoming the second most abundant at t = 34, with an abundance of 20.2 ± 8.8%. The genus Dechlorosoma plays a role in the enhanced biological removal of phosphorus and the metabolism of perchlorate and hydrocarbons, which are typical substrates found in urban wastewaters 51 , 52 . Propionicicella , the predominant species after feeding with SWW (34.3 ± 5.9%), displayed a gradual decrease over time, culminating in a final abundance of 12.6 ± 3.7% at t = 34, making it the third most abundant genus. Propionicicella is not commonly mentioned in the context of wastewater analysis. This genus is relatively less studied compared to other more prevalent wastewater bacteria and it is known for their role in the consumption of acetic and propionic acid 53 . At the conclusion of the 34-day experiment involving RWW feeding, these three species emerged as the predominant ones, collectively accounting for more than 60% of the total abundance. Chryseobacterium and Dechlorosoma has been previously found in MFC systems, suggesting a potential electroactivity of these genera 54 , 55 , while Propionicicella was found to have a role in fermentation of complex substrates and production of volatile fatty acids, which can be utilised by electroactive bacteria for current production 56 . Nevertheless, additional research is needed to conclusively establish the electroactivity of these organisms. The remaining identified genera exhibited a relative abundance of less than 3%. After SWW feeding, additional taxa with a relative abundance exceeding 3% were present, including Simplicispira limi , Propionibacteriaceae family, and Raoultella . However, all these species experienced a decrease in their abundance upon the shift to RWW feeding. The change in the relative abundance of the taxa present in the biofilm leads to different EET pathways, as shown by the cyclic voltammetry analysis in NTO conditions (Supplementary Fig. 2 ).
+The alpha diversity analysis (Fig. 3c ) indicates a decrease in diversity upon transitioning from SWW (Shannon’s diversity index = 2.7 ± 0.11 on day 0) to RWW feeding for 4 days (Shannon’s diversity index = 2.2 ± 0.56 on day 4). Subsequently, diversity increases to higher values, reaching Shannon’s diversity index of 3.1 ± 0.3 on day 19 and 2.9 ± 0.58 on day 34. This rise in diversity with increased substrate complexity suggests a higher variety of taxa present in the anodic biofilm when feeding with RWW over time. Previous research attributed such increase to a broader spectrum of metabolizable compounds and microorganisms present in wastewater compared to synthetic media, which promote the proliferation of a more diverse array of bacterial species 57 . Considering the observed increase in diversity following feeding with RWW, the study investigated the potential integration of bacteria from the RWW (with a relative abundance >1%) into the anodic biofilm at significant relative abundances (>1%). It is observed that bacteria originating from RWW are generally scarce in the biofilm, except for Mycobacterium and Trichococcus , the most abundant genera in RWW. These two genera, initially absent in the SWW, displayed an increase in their relative abundance in the anodic biofilm to 1.5 ± 0.3% and 1.0 ± 0.6%, respectively, after 34 days of RWW feeding. Nevertheless, their abundance in the biofilm remains relatively modest in comparison to other taxa. This suggests that the predominant taxa in the anodic biofilm exhibit stability even under RWW feeding, and the increased alpha diversity observed following 19 and 34 days of RWW feeding compared to SWW is likely attributed to a greater variety of rare taxa, characterized by relative abundances below 1%. The rare biosphere is known to play a crucial role in microbial ecology as it serves as a persistent microbial seed bank, countering the effects of local microbial extinction and immigration. It also provides a broad reservoir of ecological functions and enhances resilience to environmental changes 58 .
+The beta diversity analysis (Supplementary Fig. 3 ) revealed changes in the composition of the microbial community during RWW feeding. Uniformity of the microbial community structure is apparent within replicate MFCs at any given time point, as reported in previous studies 26 . It is also clear that feeding with RWW resulted in nearly identical changes in community structure between the three replicate MFCs over the course of the experiment. Due to a variety of assembly mechanisms, encompassing both stochastic and deterministic processes, β-diversity emerges, leading to distinct differentiation among communities at any given time point 59 . In Supplementary Fig. 3 , axis 1 accounts for 81.7% variation within the samples, whereas axis 2 only accounts for 12.4% variation. The position of samples along axis 1 represent a marked deviation of the community structure compared to t = 0, with a clear diverse composition on t = 4, t = 10 and t = 19. However, by t = 34 the community returns to similar composition to t = 0, as explained by axis 1. In addition, the communities at t = 0 and t = 4 were more varied between the replicate MFCs. This variation decreased over the course of the experiment, resulting in highly similar communities in the three replicate MFCs by t = 10 and beyond.
+In summary, significant differences in the anodic community are detected when feeding RWW over time, as evidenced by the relative abundance of each taxon in the temporal dynamics analysis. Beta diversity further validates these shifts in microbial community structure and demonstrates consistency among replicates at any given time point. These variations are the result of a variety of assembly mechanisms, both stochastic and deterministic. Future study should prioritise quantifying these factors to better understand the fundamental causes of anodic community dynamics 60 . In addition, a comparison of alpha diversity data and taxonomic analysis shows that the increase in alpha diversity during RWW feeding could be attributed to a broader variety of rare taxa, characterized by relative abundances of less than 1%, while the most abundant taxa remain consistent (despite fluctuation in their relative abundance) regardless the feedstock type.
+Shifts in gene abundance resulting from substrate alteration
+Through the temporal dynamic analysis of the biofilm’s taxonomic composition, we determined that the adaptation process is predominantly driven by the adjustment to the chemical composition of the new substrate (RWW), rather than the integration of RWW’s indigenous bacteria into the anodic biofilm. To further validate this finding, we conducted metagenomic analysis, which offers extensive insights into the complete genetic and functional overview of microbial communities by quantifying specific genes. This analysis highlighted functional redundancy among the microbial species, where different organisms can fulfil similar ecological roles, a key factor in understanding the resilience of the microbial community.
+Raw counts of KEGG-annotated genes were analysed via DESeq2, allowing for the determination of differentially abundant sets of genes between t = 0 and t = 34 of RWW feeding. Significant differentially abundant genes (adjusted p value < 0.01) were further filtered by their normalised abundance values, specifically genes per million (GPM), analogous to the transcripts per million (TPM) used to normalise transcriptome data. A GPM cutoff of 300 in either condition (after SWW or RWW feeding) was applied, resulting in the identification of 34 differentially abundant KEGG annotations (Supplementary Fig. 4a and Supplementary Table 3 ). A further filtering threshold of at least 100 raw counts in total across the samples and an absolute Log2 fold change of 6 was applied to account for less abundant genes that increase or decrease the most (Supplementary Fig. 4b and Supplementary Table 4 ).
+To assess the changes in genetic functions in the anodic biofilm after 34 days of RWW feeding, we organized genes based on their functional attributes, assigning each a KEGG annotation. Figure 4 highlights the KEGG annotations with the most significant number of genes (>14) that showed an increase or decrease following RWW feeding. For a detailed list of all KEGG annotations, refer to Supplementary Fig. 5 .
+Fig. 4: Comparative metagenomics analysis of the anodic biofilm fed with SWW and RWW.
+Full size image
+a Differential abundance of KEGG-annotated genes in anodic biofilms subjected to RWW and SWW feeding. Values plotted on the positive side of the x-axis represent an increased presence of genes under the RWW feeding, while annotations on the negative x-axis highlight a decreased gene abundance, indicating these genes were more prevalent in biofilms fed with SWW. The mean values are represented by coloured dots: a blue dot indicates an overall increase in the specific annotation after biofilms were fed with RWW. In contrast, a red dot signifies an overall decrease in the KEGG-annotated genes. b Anodic biofilm following 64 days of feeding with SWW. c Anodic biofilm following 34 days of feeding with RWW.
+The observed metagenomics data revealed a marked increase in genes related to “metabolic pathways” and “microbial metabolism in diverse environments,” with increases of 252 and 94 genes, respectively, and decreases of 66 and 27 genes, indicating biofilm adaptation to the new chemical composition of the feedstock. The genes implicated in the production of secondary metabolites also showed a significant change, with 74 genes increasing and 15 decreasing in number. Among these, “metalloreductase STEAP4” and “N-(5-amino-5-carboxypentanoyl)-L-cysteinyl-D-valine synthase,” which both recorded a Log2(Fold Change) of 8.3 ± 2.0, are associated with iron-related processes, suggesting the presence of iron in the RWW used. In addition, genes that facilitate biofilm formation and genes associated with flagellar assembly also increased in number when the biofilm metabolized the RWW. For instance, the gene related to flagella synthesis protein FlgN exhibited a Log2(fold change) of 2.2 ± 0.3. Flagella are known to facilitate bacterial motility, particularly in response to chemical gradients (chemotaxis), and they play a role in the formation and adhesion of biofilms 61 . The presence of flagella was confirmed through SEM imaging analysis, as depicted in Fig. 4c , d showcasing bacteria with flagella after 34 days of RWW exposure, in contrast to their absence in biofilm fed with SWW. The gene categories involved in sulfur metabolism exhibited an increase, a finding that aligns with the presence of sulfate in the RWW, as evidenced in Supplementary Table 5 .
+The genes showing a net decrease were predominantly linked to the “phosphotransferase system (PTS),” a bacterial sugar uptake mechanism 62 . This finding corresponds with the compositional variances between SWW and RWW. SWW’s carbon sources, including milk powder and starch, are rich in sugars, which are likely less prevalent in RWW. The genes associated with ABC transporters exhibited a balanced response, with similar number of genes increasing (25) and decreasing (26). This can be attributed to the widespread nature of ABC transporters as a superfamily of integral membrane proteins, which facilitate the ATP-driven translocation of various substrates across cellular membranes 63 . Upon closer examination of the specific genes that exhibited changes, it was found that the ones increasing in number are mostly linked to the uptake of lipopolysaccharides, glutamate, aspartate, and nitrate/nitrite transport. On the other hand, the genes that showed a decrease are associated with sugar uptake, consistent with the abundant presence of sugars in SWW.
+In the RWW, a substantial enhancement in various gene functions was observed (Supplementary Fig. 5 ), including the degradation of xenobiotics and aromatic compounds like benzoate, ethylbenzene, xylene, and toluene. These compounds are commonly identified in urban wastewater, attributable to their widespread usage in numerous domestic and commercial consumer products, including fuels, paints, aerosols, cosmetics, disinfectants, refrigerants, and pesticides 64 . In addition, genes related to antibiotic resistance and production, especially of vancomycin, also increased. This demonstrates that RWW feeding promotes bacteria capable of competing with others, a trait required in resource-constrained environments like RWW, which has a more complex chemical and microbiological composition than SWW. Overall, metagenomics data suggest an adaptive response of the microbial community to the unique selective pressures within the wastewater treatment environment, where indigenous bacteria are in competition with anodic biofilms for substrates.
+In terms of biosensing properties, having a biofilm that can adapt to and metabolize different substrates is critical in BOD biosensing, where the goal is for bacteria to degrade a wide range of biodegradable molecules and convert them into electricity for rapid and sensitive BOD monitoring. In a study conducted by Yi et al., a comparison between the performance of MFC-based BOD biosensor inoculated with mixed culture was compared with a pure culture of Shewanella Ioihica PV-4. The study revealed that mixed culture biofilm MFCs showed higher sensitivity for BOD measurements, while the pure culture is more suitable for biotoxicity monitoring 65 . Previous research conducted by Ishii et al. in 2012 yielded comparable findings regarding the adaptability of mixed-culture biofilms to complex substrates. However, their study did not demonstrate the implications for the BOD biosensing application of MFCs. Their research revealed that mixed cultures demonstrate greater stability compared to pure cultures, as the latter are susceptible to challenges arising from the regular introduction of competitors in wastewater. In contrast, mixed communities are more inclined to autonomously optimize in reaction to new inputs of carbon and microbial competitors 66 . For these reasons, mixed culture biofilm was extensively used for BOD monitoring applications 11 , 12 , 13 , 24 , 67 . Synthetic consortia and single-species biofilm have also been reported for use as biosensor. Hsie et al. inoculated an MFC-based biosensor with six bacterial strains ( Thermincola carboxydiphila, Pseudomonas aeruginosa, Ochrobactrum intermedium, Shewanella frigidimarina, Citrobacter freundii and Clostridium acetobutylicum ) capable of degrading complex organic compounds and surviving toxic conditions. Results showed a good accuracy of the biosensor with different types of wastewaters and a dynamic range up to a BOD of 240 mg L −1 . However, the sensitivity of the biosensor was found to be 0.16 µA L mg −1 , which is markedly lower than the sensitivities observed in the current study, recorded at 0.76 µA L mg −1 for SWW and 0.94 µA L mg −1 for RWW 68 . Biosensors with single strains show several advantages over systems integrating bacterial consortia, such as high reproducibility, selectivity, and possibility of genetical manipulations, which cannot be achieved when using a mixed culture 69 . For instance, Szydlowski et al. genetically manipulated Arcobacter butzleri to create a platform for single analyte detection (acetate or lactate) with MFC-based biosensors 70 . Nonetheless, in the context of BOD biosensing applications, mixed culture was determined to be more suitable, ensuring heightened sensitivity and adaptability to substrates.
+In summary, the metagenomic analysis provides compelling evidence supporting the hypothesis that the anodic biofilm undergoes significant adaptive changes in response to the chemical and microbiological composition of RWW. This adaptation is characterised by a marked shift in the biofilm’s genetic profile (resulting from changes in community composition) aimed at surviving in the RWW environment. Importantly, the results not only underscore the adaptability of the bacterial community within the biofilm to RWW but also bolsters the potential application of stable MFC-based biosensors with mixed culture biofilm in diverse environmental contexts.
+In this study, we have demonstrated that MFC-based biosensors, once recalibrated, can maintain consistent sensitivity and LOD across different feedstocks, including sterile synthetic wastewater and untreated real urban wastewater. This breakthrough suggests the possibility of developing MFC-based biosensors with a standard biofilm that can then be adapted to different wastewaters tailored to specific user needs. A significant finding is that wastewater sterilization is not a prerequisite prior to its introduction into the biosensor. While planktonic cells compete for substrate, leading to a reduction in current and coulombic efficiency, the current signal still exhibits a linear correlation with the biochemical oxygen demand (BOD) of the sample. In addition, planktonic cells naturally present in urban wastewater were observed not to integrate into the electroactive biofilm with relative abundances higher than 1%. Instead, an increase in alpha diversity when feeding with RWW suggests an increase of rare taxa in the biofilm. The biosensor showed a good linear correlation between the BOD and the maximum current density observed and the BOD concentration of the substrate (R 2 = 0.95 for SWW and R 2 = 0.91 for RWW). The source of the error can be partially attributed to the adaptation of the biofilm to a new substrate, which led to increased power and current generation over time, as demonstrated in the polarization curves. However, the fluctuation in the current output led to a variability comparable to the standard BOD 5 test. This indicates that the biosensor maintains its effectiveness across various substrates without the need to wait for complete biofilm adaptation. Such a feature underscores the biosensor’s robustness and its ease of application across a diverse array of substrates. Future research will involve testing the biosensor in continuous flow operation and with different types of real wastewater to replicate the seasonal variations in urban wastewater composition. In addition, further studies are necessary to accurately correlate the electrochemical behaviour of the system with changes in its transcriptomic and metabolomic profiles, paving the way for a deeper understanding and optimization of biosensor performance.
+Methods
+Experimental setup
+Four SC-MFCs with air-breathing gas diffusion electrodes (GDE), which had been in operation in batch-mode for approximately 4.7 months, were employed throughout the study (Fig. 5 ). The SC-MFC reactors consisted of a cube (5 × 5 × 5 cm) with a 30 mL cylindrical chamber positioned in the middle. The reactor was sealed with two end plates: one filled and the other featuring a central circular hole (3 cm diameter) to accommodate the air-cathode. The reactor was assembled by adding custom-made silicon gaskets in between the plates and the main body of the reactor to avoid leaks. The external chassis of the reactor was made of Co-Polyester + (Ultimaker, Utrecht, NL) and built using a 3D printer (Ultimaker 3, Ultimaker B.V, Utrecht, NL). The anode was constructed using a 2 × 3 cm carbon felt (6.35 mm thick, 99.0% purity, Alfa Aesar, Lancashire, UK) connected to a titanium wire (The Crazy Wire Company, UK). The GDE cathode was a carbon cloth electrode with a microporous layer (MPL) (W1S1011) and a platinum (Pt) loading of 0.5 mg Pt cm −2 (Pt(60% w/w)/Vulcan-C) (FuelCell Store, Texas, USA). Anode and cathode were connected using a 1 kΩ external resistor. Three MFCs were inoculated to obtain an electrocatalytic biofilm at the anode and a sterile MFC was set up as a negative control. The inoculum was derived from an acetate-fed MFC that had been in continuous operation for over a year. Initially, it was inoculated with sediment collected from a campus pond at the University of Surrey, Guildford, UK. Following collection, the inoculum was centrifuged at 4000 rpm for 10 min and resuspended in a minimal medium (1 g L −1 NH 4 Cl; 0.2 g L −1 MgSO 4 ·7H 2 O; 0.001 g L −1 FeSO 4 ·7H 2 O; 0.001 g L −1 CaCl 2 ; 0.5 g L −1 K 2 HPO 4 ; 0.005 g L −1 yeast extract (adjusted to pH = 7.2 ± 0.2 and conductivity = 1.00 ± 0.2 mS cm −1 ) containing 0.6 g L −1 ; sodium acetate. The optical density (OD 600 ) of the inoculum was measured using a spectrophotometer (Ultrospec 2000, Pendragon Scientific Ltd, UK) at a wavelength of 600 nm, resulting in a final OD 600 of 0.5. The MFCs were inoculated with 10% v/v inoculum in minimal medium containing 0.6 g L −1 ; sodium acetate. The anolyte was completely replaced with fresh minimal medium whenever the substrate was fully depleted (approximately every 1–4 days). The biofilm was deemed fully developed when the maximum current produced by the MFCs stabilized after three consecutive anolyte replacements, with an allowable variation of ±10 μA between the three measured current values. The taxonomic composition of the inoculum is shown in Fig. S6. Employing a mixed culture environmental inoculum followed by feeding the MFC with acetate was found to be a good strategy to enrich with electroactive bacteria while preserving microbial diversity within the anodic biofilm 71 . This approach is crucial in MFC biosensors for BOD analysis, where both electrochemical performance and substrate degradation capacity are pivotal, especially when employing a complex feedstock. A timeline outlining the modifications and analyses conducted on the reactors during the MFC’s operational lifetime is presented in Fig. S7. During the whole experiment, MFC-based biosensors were operated in fed-batch mode, involving complete replacement of the anolyte with fresh media for each batch. The media was replaced when the substrate was depleted every 1 to 4 days.
+Fig. 5: Representation of a typical single-chamber MFC.
+Full size image
+a Diagram of a single-chamber microbial fuel cell, showing its components: (1) Carbon felt anode electrode, (2) Electroactive biofilm, (3) Titanium current collector, (4) External resistor, (5) Opening for anolyte replacement and reference electrode insertion, (6) Anolyte (either SWW or RWW), (7) Air-breathing cathode. b Photograph of the 3D-printed MFC-biosensor used in the study.
+Previous studies have demonstrated that acetate enrichment selectively promotes the growth of electroactive bacteria, whereas a more complex substrate promotes a broader bacterial diversity at the anode. This diversity arises from the presence of multiple compounds, offering a greater opportunity for a wider range of microorganisms to develop 20 , 71 . To evaluate the effect of altering the substrate on the biosensor’s performance, sterile complex SWW was introduced after 143 days of acetate enrichment and feeding. The biosensor was immediately calibrated to gauge its response to the new conditions without allowing for an adaptation period. SWW was prepared as previously described 72 as a 10-time concentrated sterile SWW stock. After 64 days, the MFCs were supplied with non-sterile urban RWW collected from the primary effluent of a wastewater treatment plant (Fundación CENTA, Carrión de los Céspedes, Seville, Spain). Supplementary Table 5 presents the results of a detailed composition analysis of the RWW. RWW was refrigerated for 8 days and then frozen to maintain its compositional integrity during storage. Chemical oxygen demand (COD) tests were conducted routinely to streamline the analysis, given the reduced time required for the analysis (few hours). Meanwhile BOD tests, which requires 5 days, were performed to determine the BOD/COD ratio for SWW and RWW (Fig. S8). For RWW, the BOD/COD ratio was measured over time to monitor changes during storage (Supplementary Table 6 ). COD was measured using the standard method ISO 6060-1989 using a COD cuvette test (Hach Lange GmbH, Germany), while the BOD was measured using the dilution method according to standard EN 1899-1 using a COD cuvette test (Hach Lange GmbH, Germany). SWW and RWW were diluted with deionized water to different BOD concentrations to investigate the biosensor response. The maximum BOD concentration that could be tested with RWW was 177 ± 7 mg L −1 , which corresponded to the BOD of the undiluted RWW. The pH and conductivity of both SWW and RWW were maintained at 7.4 ± 0.3 and 1.10 ± 0.2 mS cm −1 , respectively, using HCl 0.5 M and sterile Phosphate Buffer Saline (PBS) solution (8 g L −1 NaCl, 0.2 g L −1 KCl, 1.44 g L −1 Na 2 HPO 4 , 0.14 g L −1 KH 2 PO 4 , adjusted to pH 7.4). The optical density at 600 nm (OD 600 ) technique was employed to determine the cell density in SWW and RWW, using as the blank a sample of the feedstock filtered through a 0.22 µm filter. In RWW, this method can be influenced by the presence of non-bacterial particles, such as suspended solids, that absorb light at the same wavelength, potentially leading to an overestimation of bacterial concentration. Therefore, to obtain a more comprehensive assessment of the biomass, total solids (TS) and volatile solids (VS) were also measured as previously described 73 .
+Biosensing calibration and performance characteristics
+The electrical current produced by each MFC was continuously monitored by measuring the voltage drop across the external resistor of the MFC using a data logger (Keysight 34972A LXI Data Acquisition Switch Unit) at 3-min intervals. The electrical current was calculated using Ohm’s law 32 :
+$$I=\frac{{\triangle V}_{{R}_{{ext}}}}{{R}_{{ext}}}$$
+(1)
+where R ext stands for the value of the external resistor in Ohms, \({\triangle V}_{{R}_{{ext}}}\) is the voltage drop across the external resistor in Volts and, I will be the value of the electrical current in Amps.
+The oxidation of biodegradable substrates at the anode led to an increase in the measured voltage drop, followed by a reduction when the substrate was depleted, originating a peak of current over time. The linear correlation between BOD concentration in the anolyte and the maximum current or charge produced was used to construct a calibration curve for the biosensor.
+Key performance metrics, including electrical charge, sensitivity, limit of detection (LOD) and coulombic efficiency (CE), were determined according to Eqs. 2 , 3 , 4 and 5 , as described in previous studies 11 , 32 , 74 . The response time was defined as the time taken to reach the maximum current production after media replacement.
+$${\rm{Charge}}=Q={\int }_{{t}_{{\rm{i}}}}^{{t}_{{\rm{f}}}}I{\rm{d}}{{t}}$$
+(2)
+where, t i and t f are the initial and final time (of current peak production), and I is the current.
+$${\rm{Coulombic\; Efficiency}}=\frac{{{\rm{M}}}_{{{\rm{O}}}_{2}}Q}{F{\rm{z}}{V}_{{An}}\triangle {\rm{COD}}}\times 100 \%$$
+(3)
+where, \({{\rm{M}}}_{{{\rm{O}}}_{2}}\,\) = 32, the molecular weight of oxygen, Q (C) is the charge produced at each feeding; F is Faraday’s constant (96485 C mol −1 ), z = 4 is the number of electrons exchanged per mole of oxygen, V An is the volume of the anode chamber, ΔCOD (g L −1 ) is the difference in the COD concentration of the feeding solution and the anolyte after the current peak production.
+$${LOD}=3.3\times \frac{{{\rm{SD}}}_{{\rm{Res}}}}{m}$$
+(4)
+where SD Res is the residual standard deviation about the fitted calibration line and m is the slope of the linear regression analysis of the calibration curve.
+$${\rm{Sensitivity}}=\frac{\triangle I}{\triangle \left[{\rm{S}}\right]{A}}={\rm{m}}$$
+(5)
+where, Δ I is a change in current, Δ[S] is change in concentration of the substrate, and A is the projected area of the anode.
+Electrochemical analyses
+Anode, cathode, and cell open circuit potentials (OCP) were measured in all reactors using a multimeter (RS Components Ltd, UK) after replacing the anolyte with fresh SWW or RWW and allowing the MFCs to equilibrate in OCP for ~2 h. Power curves were determined from polarization curves of the cell generated using a potentiostat (MTZ-35, BioLogic, France) operating in two-electrode mode (with the cathode as the counter electrode and reference electrode (RE), and the anode as the working electrode) at a scan rate of 0.5 mV s −1 . Current density and power density were calculated following established procedures 32 . Cyclic voltammograms (CV) of the anode were obtained in non-turnover (NTO) conditions, which involves the absence of oxidizable substrate in the anolyte, with the anode as the working electrode, Ag/AgCl 3.5 M KCl as the RE, and the cathode as the counter electrode, using a scan rate of 0.5 mV s −1 for a total of 3 scans. The CV in NTO was performed using sterile PBS solution as electrolyte.
+Amplicon and metagenome sequencing of the bacterial community
+Sampling the anodic biofilm was carried out after rinsing the reactor twice with 30 mL of sterile PBS solution and carbon felt fibres were harvested from both the upper and lower sections of the anode, resulting in a total mass of 50 ± 10 mg. These fibres were then placed into a sterile 10 mL tube, along with 1 mL of PBS. The contents were vortexed for 1 min, followed by centrifugation at 3500 × g for 5 min. Subsequently, the pellet was reconstituted in 500 µL of PBS.
+Genomic DNA was then extracted from the obtained pellet utilizing the DNeasy PowerSoil Pro Kit (Qiagen, UK). DNA quantification was performed using a Nanodrop ND-1000 spectrophotometer (Thermofischer Scientific, UK). Sequencing of the extracted genomic DNA were carried out by Novogene (Cambridge, UK) using the Illumina NovaSeq 6000 platform. Paired-end amplicon sequencing targeted the V3-V4 region of the 16S rRNA gene, while shotgun metagenome sequencing was performed to a depth of 6 Gb ( n = 2 at day 0 and day 34). Amplicon sequence variants were generated using the dada2 pipeline 75 . Alpha diversity was calculated based on the method in Bardenhorst et al. 76 , whereby pooled reads were processed by dada2 to increase sensitivity to rare sequences, followed by rarefaction of samples to even depth to avoid library size bias. Alpha diversity (Shannon index) was calculated using phyloseq 77 . Principal coordinates analysis for the amplicon-sequencing data was carried out using weighted unifrac distances, employing the R package phyloseq 77 . For the purpose of unifrac distance calculation, a phylogenetic tree was constructed using RaxML-NG 78 . Metagenome analysis was performed using the SqueezeMeta pipeline which performs annotation of genes against the KEGG database 79 . Abundance counts of KEGG annotations generated were processed by DESeq2 80 .
+Microscopy analyses
+Surface morphology of the anode electrodes was analysed using a Hitachi S-3200N scanning electron microscope (SEM) operating at 2 kV and 0.1 Na, equipped with an Everhart–Thornley detector (ETD) at a working distance of 10 mm. Anode and cathode samples with a geometric surface area of 0.5 × 0.5 cm were rinsed with fresh minimal media before being fixed for 15 min with 2 mL of 2.5% w/w glutaraldehyde in PBS. Subsequently, the samples underwent a series of dehydrating treatments with acetone aqueous solutions of increasing concentration and pure acetone (50%, 70%, 90%, and 100% w/w), each for 30 min, followed by three rinses with Milli-Q water (2 mL). Once dehydrated, the samples were air-dried overnight at 30 °C and coated with 0.3 nm gold particles 81 .
+Data availability
+The datasets used and/or analysed during the current study are available from the corresponding author on request.
+Code availability
+The codes that support the findings of this study are available from the corresponding authors upon reasonable request.
+References
+Mekonnen, M. M. & Hoekstra, A. Y. Four billion people facing severe water scarcity. Sci. Adv. 2 , e1500323 (2016).
+Article Google Scholar
+US Environmental Protection Agency. Clean Water Act (CWA) Action Plan (2009).
+Halleux, V. Urban Wastewater Treatment: Updating EU Rules (2023).
+Bourgeois, W., Burgess, J. E. & Stuetz, R. M. On-line monitoring of wastewater quality: a review. J. Chem. Technol. Biotechnol. 76 , 337–348 (2001).
+Article CAS Google Scholar
+Kunz, R. G. Environmental Calculations: A Multimedia Approach 543–558 (John Wiley & Sons, Ltd, 2009).
+Lynggaard-Jensen, A. Trends in monitoring of waste water systems. Talanta 50 , 707–716 (1999).
+Article CAS Google Scholar
+Kharkwal, S., Tan, Y. C., Lu, M. & Ng, H. Y. Development and long-term stability of a novel microbial fuel cell BOD sensor with MNo2 catalyst. Int. J. Mol. Sci. 18 , 276–286 (2017).
+Article Google Scholar
+Peixoto, L. et al. In situ microbial fuel cell-based biosensor for organic carbon. Bioelectrochemistry 81 , 99–103 (2011).
+Article CAS Google Scholar
+Do, M. H. et al. Performance of mediator-less double chamber microbial fuel cell-based biosensor for measuring biological chemical oxygen. J. Environ. Manag. 276 , 111279 (2020).
+Article CAS Google Scholar
+Cui, Y., Lai, B. & Tang, X. Microbial fuel cell-based biosensors. Biosensors 9 , 92 (2019).
+Lorenzo, M., Di, Curtis, T. P., Head, I. M. & Scott, K. A single-chamber microbial fuel cell as a biosensor for wastewaters. Water Res. 43 , 3145–3154 (2009).
+Article Google Scholar
+Pasternak, G., Greenman, J. & Ieropoulos, I. Self-powered, autonomous Biological Oxygen Demand biosensor for online water quality monitoring. Sens. Actuators B Chem. 244 , 815–822 (2017).
+Article CAS Google Scholar
+Spurr, M. W., Yu, E. H., Scott, K. & Head, I. M. No re-calibration required? Stability of a bioelectrochemical sensor for biodegradable organic matter over 800 days. Biosens. Bioelectron. 190 , 113392 (2021).
+Article CAS Google Scholar
+Chang, I. S. et al. Continuous determination of biochemical oxygen demand using microbial fuel cell type biosensor. Biosens. Bioelectron. 19 , 607–613 (2004).
+Article CAS Google Scholar
+Hong Kim, B., Seop Chang, I., Cheol Gil, G., Soo Park, H. & Joo Kim, H. Novel BOD (biological oxygen demand) sensor using mediator-less microbial fuel cell. Biotechnol. Lett. 25 , 541–545 (2003).
+Article Google Scholar
+Vilas Boas, J., Oliveira, V. B., Marcon, L. R. C., Simões, M. & Pinto, A. M. F. R. Optimization of a single chamber microbial fuel cell using Lactobacillus pentosus: Influence of design and operating parameters. Sci. Total Env. 648 , 263–270 (2019).
+Article CAS Google Scholar
+Di Lorenzo, M., Scott, K., Curtis, T. P. & Head, I. M. Effect of increasing anode surface area on the performance of a single chamber microbial fuel cell. Chem. Eng. J. 156 , 40–48 (2010).
+Article Google Scholar
+Feng, Y. & Harper, W. F. Biosensing with microbial fuel cells and artificial neural networks: Laboratory and field investigations. J. Environ. Manag. 130 , 369–374 (2013).
+Article CAS Google Scholar
+Liu, Z., Liu, J., Zhang, S. & Su, Z. Study of operational performance and electrical response on mediator-less microbial fuel cells fed with carbon- and protein-rich substrates. Biochem. Eng. J. 45 , 185–191 (2009).
+Article CAS Google Scholar
+You, J., Walter, X. A., Greenman, J., Melhuish, C. & Ieropoulos, I. Stability and reliability of anodic biofilms under different feedstock conditions: Towards microbial fuel cell sensors. Sens. Biosens. Res. 6 , 43–50 (2015).
+Google Scholar
+Chae, K. J., Choi, M. J., Lee, J. W., Kim, K. Y. & Kim, I. S. Effect of different substrates on the performance, bacterial diversity, and bacterial viability in microbial fuel cells. Bioresour. Technol. 100 , 3518–3525 (2009).
+Article CAS Google Scholar
+Jung, S. & Regan, J. M. Comparison of anode bacterial communities and performance in microbial fuel cells with different electron donors. Appl Microbiol. Biotechnol. 77 , 393–402 (2007).
+Article CAS Google Scholar
+Xiao, N., Wu, R., Huang, J. J. & Selvaganapathy, P. R. Development of a xurographically fabricated miniaturized low-cost, high-performance microbial fuel cell and its application for sensing biological oxygen demand. Sens. Actuators B Chem. 304 , 127432 (2020).
+Article CAS Google Scholar
+Corbella, C., Hartl, M., Fernandez-gatell, M. & Puigagut, J. MFC-based biosensor for domestic wastewater COD assessment in constructed wetlands. Sci. Total Env. 660 , 218–226 (2019).
+Article CAS Google Scholar
+Ma, J., Wang, Z., Li, H., Park, H. D. & Wu, Z. Metagenomes reveal microbial structures, functional potentials, and biofouling-related genes in a membrane bioreactor. Appl. Microbiol. Biotechnol. 100 , 5109–5121 (2016).
+Article CAS Google Scholar
+Zhang, H., Chen, X., Braithwaite, D. & He, Z. Phylogenetic and metagenomic analyses of substrate-dependent bacterial temporal dynamics in microbial fuel cells. PLoS ONE 9 , e107460 (2014).
+Article Google Scholar
+Mezzanotte, V., Prato, N., Sgorbati, S. & Citterio, S. Analysis of microbiological characteristics of wastewater along the polishing sequence of a treatment plant. Water Environ. Res. 76 , 463–467 (2004).
+Article CAS Google Scholar
+Guardabassi, L., Lo Fo Wong, D. M. A. & Dalsgaard, A. The effects of tertiary wastewater treatment on the prevalence of antimicrobial resistant bacteria. Water Res. 36 , 1955–1964 (2002).
+Article CAS Google Scholar
+Zhang, X. et al. COD removal characteristics in air-cathode microbial fuel cells. Bioresour. Technol. 176 , 23–31 (2015).
+Article CAS Google Scholar
+Rossi, R. & Logan, B. E. Impact of external resistance acclimation on charge transfer and diffusion resistance in bench-scale microbial fuel cells. Bioresour. Technol. 318 , 123921 (2020).
+Article CAS Google Scholar
+Greenman, J. et al. Microbial fuel cells and their electrified biofilms. Biofilm 3 , 100057 (2021).
+Article CAS Google Scholar
+Logan, B. E. et al. Microbial fuel cells: methodology and technology. Environ. Sci. Technol. 40 , 5181–5192 (2006).
+Article CAS Google Scholar
+Wang, C. et al. Role played by the physical structure of carbon anode materials in MFC biosensor for BOD measurement. Sci. Total Env. 856 , 158848 (2023).
+Article CAS Google Scholar
+Kim, M. et al. Membrane‐electrode assembly enhances performance of a microbial fuel cell type biological oxygen demand sensor. Environ. Technol. 30 , 329–336 (2009).
+Article CAS Google Scholar
+Jiang, Y., Yang, X., Liang, P., Liu, P. & Huang, X. Microbial fuel cell sensors for water quality early warning systems: Fundamentals, signal resolution, optimization and future challenges. Renew. Sust. Energ. Rev. 81 , 292–305 (2018).
+Article CAS Google Scholar
+Tardy, G. M. et al. Microbial fuel cell biosensor for the determination of biochemical oxygen demand of wastewater samples containing readily and slowly biodegradable organics. Biotechnol. Lett. 43 , 445–454 (2021).
+Article CAS Google Scholar
+Logan, B. E. Exoelectrogenic bacteria that power microbial fuel cells. Nat. Rev. Microbiol. 7 , 375–381 (2009).
+Article CAS Google Scholar
+Klein, R. L. Jr. & Gibbs, C. R. Graphical method for calculating biochemical oxygen demand. J. Water Pollut. Control Fed. 51 , 2257–2266 (1979).
+CAS Google Scholar
+Chiang, C. F., Wu, Y. S. & Young, J. C. Critical analysis of computing equations for determination of BOD by dilution methods. J. Environ. Eng. 132 , 470–478 (2006).
+Article CAS Google Scholar
+Young, J. C., McDermott Gerald, N. & Jenkins, D. Alterations in the BOD Procedure for the 15th Edition of ‘Standard Methods for the Examination of Water and Wastewater’. J. Water Pollut. Control Fed. 53 , 1253–1259 (1981).
+Google Scholar
+Jouanneau, S. et al. Methods for assessing biochemical oxygen demand (BOD): a review. Water Res. 49 , 62–82 (2014).
+Article CAS Google Scholar
+LaMartina, E., Lou, Mohaimani, A. A. & Newton, R. J. Urban wastewater bacterial communities assemble into seasonal steady states. Microbiome 9 , 1–13 (2021).
+Article Google Scholar
+Zhang, Y., Min, B., Huang, L. & Angelidaki, I. Electricity generation and microbial community response to substrate changes in microbial fuel cell. Bioresour. Technol. 102 , 1166–1173 (2011).
+Article CAS Google Scholar
+Numberger, D. et al. Characterization of bacterial communities in wastewater with enhanced taxonomic resolution by full-length 16S rRNA sequencing. Sci. Rep. 9 , 1–14 (2019).
+Article CAS Google Scholar
+Mtetwa, H. N., Amoah, I. D., Kumari, S., Bux, F. & Reddy, P. The source and fate of Mycobacterium tuberculosis complex in wastewater and possible routes of transmission. BMC Public Health 22 , 1–18 (2022).
+Article Google Scholar
+Vandewalle, J. L. et al. Acinetobacter, Aeromonas and Trichococcus populations dominate the microbial community within urban sewer infrastructure. Environ. Microbiol. 14 , 2538–2552 (2012).
+Article CAS Google Scholar
+Wéry, N., Monteil, C., Pourcher, A. M. & Godon, J. J. Human-specific fecal bacteria in wastewater treatment plant effluents. Water Res 44 , 1873–1883 (2010).
+Article Google Scholar
+Boufercha, O., Moreira, I. S., Castro, P. M. L. & Boudemagh, A. Actinobacteria isolated from wastewater treatment plants located in the east-north of Algeria able to degrade pesticides. World J. Microbiol. Biotechnol. 38 , 1–16 (2022).
+Article Google Scholar
+Jia, L., Jiang, B., Huang, F. & Hu, X. Nitrogen removal mechanism and microbial community changes of bioaugmentation subsurface wastewater infiltration system. Bioresour. Technol. 294 , 122140 (2019).
+Article CAS Google Scholar
+Khare, D., Kumar, R. & Acharya, C. Genomic and functional insights into the adaptation and survival of Chryseobacterium sp. strain PMSZPI in uranium enriched environment. Ecotoxicol. Environ. Saf. 191 , 110217 (2020).
+Article CAS Google Scholar
+Ward, O. P., Singh, A., Van Hamme, J. D. & Voordouw, G. Encyclopedia of Microbiology 3rd edn, 443–456 (Academic Press, 2009).
+Petriglieri, F. et al. “Candidatus Dechloromonas phosphoritropha” and “Ca. D. phosphorivorans”, novel polyphosphate accumulating organisms abundant in wastewater treatment systems. ISME J. 15 , 3605–3614 (2021).
+Article CAS Google Scholar
+Tucci, M. et al. Toluene-driven anaerobic biodegradation of chloroform in a continuous-flow bioelectrochemical reactor. Chemosphere 338 , 139467 (2023).
+Article CAS Google Scholar
+Li, S. et al. Sustainable conversion of antibiotic wastewater using microbial fuel cells: energy harvesting and resistance mechanism analysis. Chemosphere 313 , 137584 (2023).
+Article CAS Google Scholar
+Lu, Y. et al. Effects of Cod/N on electrochemical performances and denitrification efficiency in single-chamber microbial fuel cells: insights from electron transfer and bacterial communities. Bioresour. Technol. 387 , 129690 (2023).
+Article CAS Google Scholar
+Tucci, M. et al. Insights into the syntrophic microbial electrochemical oxidation of toluene: a combined chemical, electrochemical, taxonomical, functional gene-based, and metaproteomic approach. Sci. Total Env. 850 , 157919 (2022).
+Article CAS Google Scholar
+Ishii, S. et al. Identifying the microbial communities and operational conditions for optimized wastewater treatment in microbial fuel cells. Water Res. 47 , 7120–7130 (2013).
+Article CAS Google Scholar
+Lynch, M. D. J. & Neufeld, J. D. Ecology and exploration of the rare biosphere. Nat. Rev. Microbiol . 13 , 217–229 (2015).
+Article CAS Google Scholar
+Mori, A. S., Isbell, F. & Seidl, R. β-Diversity, community assembly, and ecosystem functioning. Trends Ecol. Evol. 33 , 549–564 (2018).
+Article Google Scholar
+Stegen, J. C., Lin, X., Konopka, A. E. & Fredrickson, J. K. Stochastic and deterministic assembly processes in subsurface microbial communities. ISME J. 6 , 1653–1664 (2012).
+Article CAS Google Scholar
+Haiko, J. & Westerlund-Wikström, B. The role of the bacterial flagellum in adhesion and virulence. Biology 2 , 1242–1267 (2013).
+Article Google Scholar
+Kotrba, P., Inui, M. & Yukawa, H. Bacterial phosphotransferase system (PTS) in carbohydrate uptake and control of carbon metabolism. J. Biosci. Bioeng. 92 , 502–517 (2001).
+Article CAS Google Scholar
+Rees, D. C., Johnson, E. & Lewinson, O. ABC transporters: the power to change. Nat. Rev. Mol. Cell Biol. 10 , 218–227 (2009).
+Article CAS Google Scholar
+Fatone, F., Di Fabio, S., Bolzonella, D. & Cecchi, F. Fate of aromatic hydrocarbons in Italian municipal wastewater systems: An overview of wastewater treatment using conventional activated-sludge processes (CASP) and membrane bioreactors (MBRs). Water Res. 45 , 93–104 (2011).
+Article CAS Google Scholar
+Yi, Y., Xie, B., Zhao, T. & Liu, H. Comparative analysis of microbial fuel cell based biosensors developed with a mixed culture and Shewanella loihica PV-4 and underlying biological mechanism. Bioresour. Technol. 265 , 415–421 (2018).
+Article CAS Google Scholar
+Ishii, S. et al. Functionally stable and phylogenetically diverse microbial enrichments from microbial fuel cells during wastewater treatment. PLoS ONE 7 , e30495 (2012).
+Article CAS Google Scholar
+Lóránt, B., Gyalai-Korpos, M., Goryanin, I. & Tardy, G. M. Single chamber air–cathode microbial fuel cells as biosensors for determination of biodegradable organics. Biotechnol. Lett. 41 , 555–563 (2019).
+Article Google Scholar
+Hsieh, M. C. & Chung, Y. C. Measurement of biochemical oxygen demand from different wastewater samples using a mediator-less microbial fuel cell biosensor. Environ. Technol. 35 , 2204–2211 (2014).
+Article CAS Google Scholar
+Di Lorenzo, M. M icrobial Electrochemical and Fuel Cells: Fundamentals and Applications 341–356 (Elsevier Inc., 2016).
+Szydlowski, L., Lan, T. C. T., Shibata, N. & Goryanin, I. Metabolic engineering of a novel strain of electrogenic bacterium Arcobacter butzleri to create a platform for single analyte detection using a microbial fuel cell. Enzym. Microb. Technol. 139 , 109564 (2020).
+Article CAS Google Scholar
+Christgen, B. et al. Does pre-enrichment of anodes with acetate to select for Geobacter spp. enhance performance of microbial fuel cells when switched to more complex substrates? Front. Microbiol. 14 , 1199286 (2023).
+Article Google Scholar
+Nopens, I., Capalozza, C. & Vanrolleghem, P. A. Stability Analysis of a Synthetic Municipal Wastewater (2001).
+Orhorhoro, E. K., Ebunilo, P. O. & Sadjere, G. E. Experimental determination of effect of total solid (TS) and volatile solid (VS) on biogas yield. AJME 3 , 131–135 (2017).
+Article Google Scholar
+Spurr, M. W. A. Microbial Fuel Cell-based Biosensors for Estimation of Biochemical Oxygen Demand and Detection of Toxicity (Newcastle University, 2017).
+Callahan, B. J. et al. DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Methods 13 , 581–583 (2016).
+Article CAS Google Scholar
+Kleine Bardenhorst, S., Vital, M., Karch, A. & Rübsamen, N. Richness estimation in microbiome data obtained from denoising pipelines. Comput. Struct. Biotechnol. J. 20 , 508–520 (2022).
+Article CAS Google Scholar
+McMurdie, P. J. & Holmes, S. phyloseq: an R package for reproducible interactive analysis and graphics of microbiome census data. PLoS ONE 8 , e61217 (2013).
+Article CAS Google Scholar
+Kozlov, A. M., Darriba, D., Flouri, T., Morel, B. & Stamatakis, A. RAxML-NG: a fast, scalable and user-friendly tool for maximum likelihood phylogenetic inference. Bioinformatics 35 , 4453–4455 (2019).
+Article CAS Google Scholar
+Tamames, J. & Puente-Sánchez, F. SqueezeMeta, a highly portable, fully automatic metagenomic analysis pipeline. Front. Microbiol. 10 , 425882 (2019).
+Google Scholar
+Love, M. I., Huber, W. & Anders, S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15 , 1–21 (2014).
+Article Google Scholar
+Zhu, T. J., Lin, C. W. & Liu, S. H. Sensitivity and reusability of a simple microbial fuel cell-based sensor for detecting bisphenol A in wastewater. Chemosphere 320 , 138082 (2023).
+Article CAS Google Scholar
+Download references
+Acknowledgements
+The authors would like to acknowledge the financial support from the Natural Environment Research Council (NERC) UK project grant: NE/W003627/1, Cost Action Phoenix - Protection, Resilience, Rehabilitation of Damaged Environment (CA-19123), and the Turing Funding Scheme. A.S. is funded by a Doctoral Studentship. D.F. is funded by a Doctoral Studentship. The authors wish to thank Mario Jiménez Conde for their assistance with the urban wastewater characterization.
+Author information
+Authors and Affiliations
+School of Chemistry and Chemical Engineering, University of Surrey, Guildford, UK
+Anna Salvian, John R. Varcoe & Siddharth Gadkari
+Department of Microbial Sciences, University of Surrey, Guildford, UK
+Anna Salvian, Daniel Farkas, Marina Ramirez-Moreno & Claudio Avignone-Rossa
+Department of Analytical Chemistry, Physical Chemistry and Chemical Engineering, Universidad de Alcalá, Alcalá de Henares, Spain
+Daniela Torruella-Salas & Abraham Esteve-Núñez
+IMDEA Water Institute, Alcalá de Henares, Spain
+Daniela Torruella-Salas, Antonio Berná & Abraham Esteve-Núñez
+Authors
+Anna Salvian
+View author publications
+Search author on: PubMed Google Scholar
+Daniel Farkas
+View author publications
+Search author on: PubMed Google Scholar
+Marina Ramirez-Moreno
+View author publications
+Search author on: PubMed Google Scholar
+Daniela Torruella-Salas
+View author publications
+Search author on: PubMed Google Scholar
+Antonio Berná
+View author publications
+Search author on: PubMed Google Scholar
+Claudio Avignone-Rossa
+View author publications
+Search author on: PubMed Google Scholar
+John R. Varcoe
+View author publications
+Search author on: PubMed Google Scholar
+Abraham Esteve-Núñez
+View author publications
+Search author on: PubMed Google Scholar
+Siddharth Gadkari
+View author publications
+Search author on: PubMed Google Scholar
+Contributions
+Anna Salvian: Conceptualization, methodology, investigation, data curation, formal analysis, writing—original draft, writing—review & editing, and visualization; Daniel Farkas: Conceptualization, methodology, software, writing—original draft, writing—review & editing and visualization; Marina Ramirez-Moreno: Writing—review & editing; Daniela Torruella-Salas: Methodology, writing—review & editing; Antonio Berná: Conceptualization, writing—review & editing; Claudio Avignone-Rossa, John R. Varcoe, Abraham Esteve-Nuñez, Siddharth Gadkari: Supervision, resources, writing—review & editing.
+Corresponding author
+Correspondence to Siddharth Gadkari .
+Ethics declarations
+Competing interests
+The authors declare no competing interests.
+Additional information
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplemental Material (download PDF )
+Rights and permissions
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ .
+Reprints and permissions
+About this article
+Cite this article
+Salvian, A., Farkas, D., Ramirez-Moreno, M. et al. Resilience of anodic biofilm in microbial fuel cell biosensor for BOD monitoring of urban wastewater. npj Clean Water 7 , 53 (2024). https://doi.org/10.1038/s41545-024-00350-5
+Download citation
+Received : 28 January 2024
+Accepted : 19 June 2024
+Published : 28 June 2024
+Version of record : 28 June 2024
+DOI : https://doi.org/10.1038/s41545-024-00350-5
+Share this article
+Anyone you share the following link with will be able to read this content: Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+Download PDF
+Associated content
+Collection
+Water Testing: Microbial Innovations in Sustainable Wastewater Treatment
+Advertisement
+Explore content
+Research articles
+Reviews & Analysis
+News & Comment
+Collections
+Follow us on X
+Sign up for alerts
+RSS feed
+About the journal
+Aims & Scope
+Content types
+Editors
+Journal Information
+Open Access
+Article Processing Charges
+Calls for Papers
+Journal Metrics
+About the Partner
+Contact
+Editorial Policies
+Publish with us
+For Authors and Referees
+Language editing services
+Open access funding
+Submit manuscript
+Search Search articles by subject, keyword or author
+Show results from All journals This journal
+Search
+Advanced search
+Quick links
+Explore articles by subject
+Find a job
+Guide to authors
+Editorial policies
+npj Clean Water ( npj Clean Water )
+ISSN 2059-7037 (online)
+nature.com footer links
+About Nature Portfolio
+About us
+Press releases
+Press office
+Contact us
+Discover content
+Journals A-Z
+Articles by subject
+protocols.io
+Nature Index
+Publishing policies
+Nature portfolio policies
+Open access
+Author & Researcher services
+Reprints & permissions
+Research data
+Language editing
+Scientific editing
+Nature Masterclasses
+Research Solutions
+Libraries & institutions
+Librarian service & tools
+Librarian portal
+Open research
+Recommend to library
+Advertising & partnerships
+Advertising
+Partnerships & Services
+Media kits
+Branded
+content
+Professional development
+Nature Awards
+Nature Careers
+Nature Conferences
+Regional websites
+Nature Africa
+Nature China
+Nature India
+Nature Japan
+Nature Middle East
+Privacy
+Policy
+Use
+of cookies
+Your privacy choices/Manage cookies
+Legal
+notice
+Accessibility
+statement
+Terms & Conditions
+Your US state privacy rights
+© 2026 Springer Nature Limited
+Close banner Close
+Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily.
+Email address
+Sign up
+I agree my information will be processed in accordance with the Nature and Springer Nature Limited Privacy Policy .
+Close banner Close
+Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing

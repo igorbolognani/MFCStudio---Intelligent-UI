@@ -130,5 +130,133 @@
       "status": "all paragraphs and tables extracted; all unique text reviewed; repeated identical paragraphs counted",
       "priority": "historical proposal, superseded by current MFC-only scope"
     }
-  ]
+  ],
+  "increment_2026_10_26": {
+    "user_decisions": [
+      "select commercial materials",
+      "literature and datasheets",
+      "cost and availability"
+    ],
+    "files": [
+      {
+        "path": "research/materials-v0.1/EXPERIMENTAL_LINK_REVIEW.md",
+        "size_bytes": 8374,
+        "sha256": "5a2abf51a90c20079cad00ae2a5d1b21956ae78701a06dc2bb73187d378728df"
+      },
+      {
+        "path": "research/materials-v0.1/catalog.json",
+        "size_bytes": 90028,
+        "sha256": "afd907705b3a4cbea0a4f33256ad46ac2fbbb472e665f81cdfceff021b55a7c0"
+      },
+      {
+        "path": "research/materials-v0.1/curation-report.json",
+        "size_bytes": 413,
+        "sha256": "1a2dc6576c66a2e63391b33670bec0dbf4edf366d5e80a84c4aff02dd874d404"
+      },
+      {
+        "path": "research/materials-v0.1/retrievals.json",
+        "size_bytes": 4119,
+        "sha256": "f66385a1279c830de4a416d5ec26fe87b62d5f63271a8ccf3e1756ee372f211f"
+      },
+      {
+        "path": "research/corpus-v0.3/S29_feeds.json",
+        "size_bytes": 42618,
+        "sha256": "90d81cb16b77505ffb9504d7bf5d668d02af334b0c01bb711d4330d2a02baa6e"
+      },
+      {
+        "path": "research/corpus-v0.3/S29_observations.json",
+        "size_bytes": 261783,
+        "sha256": "ae06e2859bf782628978eda7f5e292b65cbd24882ae492675fff849556def597"
+      },
+      {
+        "path": "research/corpus-v0.3/S29_source.json",
+        "size_bytes": 5531,
+        "sha256": "c5fa7660fa55c756d3fc37a5ebbfa3c29dbde0b28edc190fbe184a314d4b4368"
+      },
+      {
+        "path": "research/corpus-v0.3/S29_table1_table2.csv",
+        "size_bytes": 21207,
+        "sha256": "3d222eaa898b4c165bb2d20ca0c51fa974763babb30734cdf568cd3da6c963f0"
+      },
+      {
+        "path": "research/corpus-v0.3/curation-report.json",
+        "size_bytes": 2415,
+        "sha256": "5d6c38e4df1ea2d0087b4426e26dfe7598b2e38bb5154e3001acb68ccb083ede"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024.html",
+        "size_bytes": 504690,
+        "sha256": "1b3344e048ad93284bb5a7676540c0cbb41aed23c6b65d9bae3ab66ff42c7e80"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024.pdf",
+        "size_bytes": 1654760,
+        "sha256": "b2f2703391497238a512c1d24dd24384a248a55b418ed03ed356e545b8b43587"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024.txt",
+        "size_bytes": 88227,
+        "sha256": "0c9e6bc22c53eee3193bc791552d369a05126a0aaed8b2f73cce75f254165ae0"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024_pdf.txt",
+        "size_bytes": 96568,
+        "sha256": "123fa5f0f1b9fe9c4fc847ddd22668b6412b7199944594b2bda8b2e0ca8d3239"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024_supplement.pdf",
+        "size_bytes": 1284902,
+        "sha256": "2354f24b61bca58ffccd26b34316054b0af24148d66b4c50479fd8654fba06a0"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024_supplement.txt",
+        "size_bytes": 33523,
+        "sha256": "7785348263bfbd3fd478ba3cab70585f346423a2d22924ec5c5f905df6c2377b"
+      },
+      {
+        "path": "research/corpus-v0.3/documents/NPJ2024_supplement_p5.png",
+        "size_bytes": 376510,
+        "sha256": "b8f6ace5856b65027e42b63aec3e7cc6cbc13b45cc93c1de26b6018d0faa0a16"
+      },
+      {
+        "path": "research/corpus-v0.3/documents_manifest.json",
+        "size_bytes": 6995,
+        "sha256": "b2caed0628c913fdd275e516417fa53b830aa760573eb33d4114c622bb8ea1fa"
+      },
+      {
+        "path": "research/corpus-v0.3/extract_s29.py",
+        "size_bytes": 9309,
+        "sha256": "36955dc8a7b44e0227c5b0416d2c04d066ac16ba8fd4182bd6cccf7272a0f70f"
+      },
+      {
+        "path": "research/corpus-v0.3/fulltext/S29_main.txt",
+        "size_bytes": 96724,
+        "sha256": "771a55351beb45ca0ae8def30b040ffb92bca733f272ba0d32541308ed72160d"
+      },
+      {
+        "path": "research/corpus-v0.3/fulltext/S29_main.txt.gz",
+        "size_bytes": 30981,
+        "sha256": "91a2b68430a3168b4bfcfd7eacd31064be8412945884662230d13e297cd98e8f"
+      },
+      {
+        "path": "research/corpus-v0.3/fulltext/S29_supplement.txt",
+        "size_bytes": 33679,
+        "sha256": "81bf21edd7f0f534b0678293566b5063796bd41153e6e17b5bad37aedbab2f9e"
+      },
+      {
+        "path": "research/corpus-v0.3/fulltext/S29_supplement.txt.gz",
+        "size_bytes": 8522,
+        "sha256": "f07673cae9af69dc5ba109592fb3909fb3ccef6a124ae7d108b0249b3d1656e5"
+      }
+    ],
+    "inspection_scope": "All structured tables processed; S29Methods and supplementTables1/2 inspected, with all table cells cross-checked; selected scientific figures inspected. Manufacturer numerical tables/footnotes and all31offer options inspected. No claim of manual reading of every figure/reference or microbiome table.",
+    "access_limits": [
+      "SGL raw PDFsHTTP504; web text/rendered pages available",
+      "Nature web open blocked redirect; downloaded full licensed files available",
+      "Nafion short listing redirected to category and rejected",
+      "S19supplement, currentPt/ACprices and currentPhychemi products not recovered",
+      "Prior full conversation transcripts remain unavailable; inherited excerpts/summaries only"
+    ],
+    "public_documents_policy": "OnlyS29CCBY4fullfiles added; manufacturer full files not redistributed."
+  }
 }

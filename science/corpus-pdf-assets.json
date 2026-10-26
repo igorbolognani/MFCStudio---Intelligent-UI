@@ -58,5 +58,25 @@
     "license": "CC-BY-4.0",
     "object_key": "corpus/v02/S18-supplement-pdf.pdf",
     "content_type": "application/pdf"
+  },
+  {
+    "id": "S29-pdf",
+    "source_id": "S29",
+    "path": "research/corpus-v0.3/documents/NPJ2024.pdf",
+    "sha256": "b2f2703391497238a512c1d24dd24384a248a55b418ed03ed356e545b8b43587",
+    "size_bytes": 1654760,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v03/S29-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S29-supplement-pdf",
+    "source_id": "S29",
+    "path": "research/corpus-v0.3/documents/NPJ2024_supplement.pdf",
+    "sha256": "2354f24b61bca58ffccd26b34316054b0af24148d66b4c50479fd8654fba06a0",
+    "size_bytes": 1284902,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v03/S29-supplement-pdf.pdf",
+    "content_type": "application/pdf"
   }
 ]

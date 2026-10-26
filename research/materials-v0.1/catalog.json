@@ -1,0 +1,2655 @@
+{
+  "version": "commercial-materials/0.1.0",
+  "date": "2026-10-26",
+  "user_decisions": {
+    "goal": "select_commercial_materials",
+    "data_access": "literature_and_datasheets_only",
+    "constraints": [
+      "cost",
+      "availability"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S20",
+      "title": "CeTech W1S1011 manufacturer product data",
+      "authors": [
+        "CeTech"
+      ],
+      "url": "https://www.ce-tech.com.tw/data/W1S1011",
+      "type": "manufacturer_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Product description, complete numerical table, measurement methods and footnote inspected; H2/air test conditions separated.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "limits": "Description says MPL present but table heading says without MPL/PTFE. Second-generation product description cannot establish identity with a 2024 experimental lot; no exact lot match."
+    },
+    {
+      "id": "S21",
+      "title": "Fuel Cells Etc 0.5 mgPt/cm2 60% Pt/Vulcan W1S1011 GDE",
+      "authors": [
+        "Fuel Cells Etc"
+      ],
+      "url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011",
+      "type": "manufacturer_offer_and_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Full product description/key specifications and all five variant price/SKU/size entries read; no order placed.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "5b6ae338c00cefbd220bb63f6f4705208bbc40b35f0cff08a214bf01debd55df",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "limits": "Manufacturer/supplier specification, not an independent MFC experiment or calibrated parameter."
+    },
+    {
+      "id": "S22",
+      "title": "Fuel Cell Store Freudenberg H23C6 GDL listing",
+      "authors": [
+        "Fuel Cell Store"
+      ],
+      "url": "https://www.fuelcellstore.com/freudenberg-h2315-i2-c6",
+      "type": "supplier_offer_and_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Full description, numerical table and size options read; linked properties sheet inspected by research agent.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "cathode"
+      ],
+      "limits": "8 mOhm/cm2 is printed under resistivity: dimensional ambiguity blocks ASR/resistivity conversion. Linked Freudenberg sheet omits H23C6, so other grade columns cannot fill its values."
+    },
+    {
+      "id": "S23",
+      "title": "Torayca TGP-H carbon paper manufacturer data",
+      "authors": [
+        "Toray"
+      ],
+      "url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+      "type": "manufacturer_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Entire one-page PDF table and representative-values disclaimer inspected, including visual column alignment.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "limits": "Representative manufacturer values; hydration, contact pressure and detailed electrical test method not supplied. Supplier PTFE-treated variants remain separate."
+    },
+    {
+      "id": "S24",
+      "title": "Fuel Cell Store Toray 060 PTFE value pack",
+      "authors": [
+        "Fuel Cell Store"
+      ],
+      "url": "https://www.fuelcellstore.com/toray-carbon-paper-060-pack",
+      "type": "supplier_offer_and_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Entire product description, pack dimensions/count, minimum advertised price, lead-time sentence and specification table read.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "505d04f8827a72954ce8d39b1b5bc9dd13e7914879336b44dda4b0738f4015e1",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "limits": "Starting-from price is not a final quote. Native manufacturer substrate values reproduced by the seller do not establish treated-lot characterization."
+    },
+    {
+      "id": "S25",
+      "title": "SIGRACET gas diffusion layer white paper",
+      "authors": [
+        "SGL Carbon"
+      ],
+      "url": "https://www.sglcarbon.com/pdf/SIGRACET-Whitepaper.pdf",
+      "type": "manufacturer_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Web full text recovered; p5 table/notes visually inspected and read; p6 compression context read. Raw PDF download returned HTTP504.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": null,
+      "raw_retrieval_status": "failed",
+      "stage_ids": [
+        "cathode"
+      ],
+      "limits": "Typical data for fully treated grades. ASR at1MPa includes test/contact configuration; Gurley time and Darcy permeability are not an effective O2 transfer coefficient."
+    },
+    {
+      "id": "S26",
+      "title": "SIGRACELL battery felts TDS BF.01 04/2019",
+      "authors": [
+        "SGL Carbon"
+      ],
+      "url": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRACELL-Battery-Felts-EN.pdf",
+      "type": "manufacturer_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Entire one-page web PDF text/table/footnotes and rendered image inspected. Raw PDF download returned HTTP504.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": null,
+      "raw_retrieval_status": "failed",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "limits": "2019 table explicitly describes virgin felts without thermal activation. Supplier ready-to-use activated variants cannot inherit these numerical values automatically."
+    },
+    {
+      "id": "S27",
+      "title": "Redox Flow SGL felt offer variants",
+      "authors": [
+        "Redox Flow"
+      ],
+      "url": "https://redox-flow.com/product/sgl-carbon-felt-electrodes/",
+      "type": "supplier_offer_and_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Product description, all24 embedded variant rows, size/pack/SKU/prices and stock flags read.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "f531f3a7b60895930077881ea8e749a16747f93474be68a95c7070d9c09560ee",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "limits": "Quote-oriented listing with advertised EUR prices. In-stock flags are seller claims; delivery, VAT, freight, authenticity and batch identity not independently verified. Size typo5.0x.5.0cm is retained with a reviewed5x5cm interpretation from description."
+    },
+    {
+      "id": "S28",
+      "title": "CXM-200S / CMI-7000S manufacturer technical specifications",
+      "authors": [
+        "Membranes International"
+      ],
+      "url": "https://ionexchangemembranes.com/cmi-7000-cation-exchange-membranes-technical-specifications/",
+      "type": "manufacturer_specification",
+      "access": "structured_facts_and_primary_link",
+      "read_scope": "Entire technical table, Na form, prehydration procedure and disclaimer inspected.",
+      "license": "not_cleared_for_full_document_redistribution",
+      "retrieved_at": "2026-10-26",
+      "raw_sha256": "2f205147bdda88f1b809c1f8ea126a73915fe0bb33c447603c9f40272195f282",
+      "raw_retrieval_status": "retrieved",
+      "stage_ids": [
+        "membrane"
+      ],
+      "limits": "Current manufacturer alias; exact historical membrane lot inS17 is not established. Resistance is for0.5mol/LNaCl. Membrane configurations remain unsupported by current kernel."
+    }
+  ],
+  "materials": [
+    {
+      "id": "ct-w1s1011-gdl",
+      "manufacturer": "CeTech",
+      "grade": "W1S1011",
+      "form": "woven_carbon_cloth_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S20",
+      "treatment": "MPL described; table-heading inconsistency; PTFE amount unresolved",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "layer_identity": "GDL only; not finished Pt/C GDE"
+    },
+    {
+      "id": "etc-w1s1011-pt05-gde",
+      "manufacturer": "Fuel Cells Etc",
+      "grade": "0.5mgPt/cm2 60%Pt/Vulcan W1S1011 GDE",
+      "form": "finished_GDE",
+      "stage_ids": [
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "primary_source_id": "S21",
+      "treatment": "MPL + Pt/Vulcan + Nafion postcoat",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "substrate_material_id": "ct-w1s1011-gdl",
+      "sku_family": [
+        "11060059",
+        "11060060",
+        "11060061",
+        "11060062",
+        "11060063"
+      ]
+    },
+    {
+      "id": "freudenberg-h23c6-gdl",
+      "manufacturer": "Freudenberg",
+      "grade": "H23C6",
+      "form": "carbon_paper_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S22",
+      "treatment": "Hydrophobic treatment + single-sided MPL",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "supplier_sku": "31070005",
+      "layer_identity": "GDL without S18 in-house Pt/AC/Nafion coating"
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer",
+      "manufacturer": "Toray",
+      "grade": "TGP-H-060",
+      "form": "carbon_paper_substrate",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S23",
+      "treatment": "Treatment not specified by this manufacturer table",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "toray-tgp-h060-fcs-ptfe5",
+      "manufacturer": "Toray substrate / Fuel Cell Store treatment",
+      "grade": "TGP-H-060 PTFE5% value pack",
+      "form": "treated_carbon_paper_GDL",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S24",
+      "treatment": "Supplier5wt%PTFE; no MPL",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "base_material_id": "toray-tgp-h060-manufacturer",
+      "supplier_sku": "71070001",
+      "base_property_transfer_admitted": false
+    },
+    {
+      "id": "sgl-sigracet-22bb",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACET 22 BB",
+      "form": "carbon_paper_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S25",
+      "treatment": "Fully treated GDL with MPL; PTFE platform treatment described",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-sigracet-28bc",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACET 28 BC",
+      "form": "carbon_paper_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S25",
+      "treatment": "Fully treated GDL with MPL; PTFE platform treatment described",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-sigracet-36bb",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACET 36 BB",
+      "form": "carbon_paper_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S25",
+      "treatment": "Fully treated GDL with MPL; PTFE platform treatment described",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-sigracet-39bb",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACET 39 BB",
+      "form": "carbon_paper_GDL",
+      "stage_ids": [
+        "cathode"
+      ],
+      "primary_source_id": "S25",
+      "treatment": "Fully treated GDL with MPL; PTFE platform treatment described",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-kfd25ea-virgin-2019",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACELL KFD 2.5 EA",
+      "form": "carbon_or_graphite_felt",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S26",
+      "treatment": "Virgin, without thermal activation, per2019 table",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-gfd25ea-virgin-2019",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACELL GFD 2.5 EA",
+      "form": "carbon_or_graphite_felt",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S26",
+      "treatment": "Virgin, without thermal activation, per2019 table",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "sgl-gfd46ea-virgin-2019",
+      "manufacturer": "SGL Carbon",
+      "grade": "SIGRACELL GFD 4.6 EA",
+      "form": "carbon_or_graphite_felt",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S26",
+      "treatment": "Virgin, without thermal activation, per2019 table",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": []
+    },
+    {
+      "id": "redox-gfd25-activated",
+      "manufacturer": "SGL Carbon (seller attribution)",
+      "grade": "SIGRACELL GFD 2,5 EA",
+      "form": "felt_supplier_variant",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S27",
+      "treatment": "Thermally treated, supplier ready-to-use claim",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "manufacturer_2019_table_transfer_admitted": false
+    },
+    {
+      "id": "redox-gfd465-activated",
+      "manufacturer": "SGL Carbon (seller attribution)",
+      "grade": "SIGRACELL GFD4,65 EA",
+      "form": "felt_supplier_variant",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S27",
+      "treatment": "Thermally treated, supplier ready-to-use claim",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "manufacturer_2019_table_transfer_admitted": false
+    },
+    {
+      "id": "redox-kfd25-virgin",
+      "manufacturer": "SGL Carbon (seller attribution)",
+      "grade": "SIGRACELL KFD2,5",
+      "form": "felt_supplier_variant",
+      "stage_ids": [
+        "anode",
+        "cathode"
+      ],
+      "primary_source_id": "S27",
+      "treatment": "Virgin, not thermally treated, supplier claim",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "manufacturer_2019_table_transfer_admitted": false
+    },
+    {
+      "id": "mi-cxm200s-cmi7000s",
+      "manufacturer": "Membranes International",
+      "grade": "CXM-200S / CMI-7000S",
+      "form": "cation_exchange_membrane",
+      "stage_ids": [
+        "membrane"
+      ],
+      "primary_source_id": "S28",
+      "treatment": "Gel polystyrene/divinylbenzene; sulphonic acid; shipped Na form",
+      "lot": null,
+      "hydrated_characterization_available": false,
+      "experimental_validation": false,
+      "parameter_bindings": [],
+      "current_kernel_applicability": "unsupported_membrane_topology"
+    }
+  ],
+  "property_observations": [
+    {
+      "id": "ct-w1s1011-gdl:thickness:1",
+      "material_id": "ct-w1s1011-gdl",
+      "source_id": "S20",
+      "quantity": "thickness",
+      "value": 0.41,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Specification numerical table and average-value footnote",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "TECLOCK SM-114",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25"
+    },
+    {
+      "id": "ct-w1s1011-gdl:areal_mass:2",
+      "material_id": "ct-w1s1011-gdl",
+      "source_id": "S20",
+      "quantity": "areal_mass",
+      "value": 200,
+      "unit": "g/m2",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Specification numerical table and average-value footnote",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "ASIMID-646 as printed",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25"
+    },
+    {
+      "id": "ct-w1s1011-gdl:gas_transit_time_Gurley:3",
+      "material_id": "ct-w1s1011-gdl",
+      "source_id": "S20",
+      "quantity": "gas_transit_time",
+      "value": 55,
+      "unit": "s",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "Specification numerical table and average-value footnote",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "Gurley",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25"
+    },
+    {
+      "id": "ct-w1s1011-gdl:electronic_ASR:4",
+      "material_id": "ct-w1s1011-gdl",
+      "source_id": "S20",
+      "quantity": "electronic_ASR",
+      "value": 13,
+      "unit": "mOhm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "Specification numerical table and average-value footnote",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "through_plane",
+        "method": "ASTM C-611",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "390efd2cfe4a42ff50db9ca0cceec5f392fe64616266d8c562b32bd811f42c25"
+    },
+    {
+      "id": "etc-w1s1011-pt05-gde:metal_loading:5",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "quantity": "nominal_loading_ambiguous_mass_basis",
+      "value": 0.5,
+      "unit": "mg/cm2",
+      "relation": "eq",
+      "value_role": "manufacturer_nominal",
+      "locator": "Title/key specs; cathode geometric coating area",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "5b6ae338c00cefbd220bb63f6f4705208bbc40b35f0cff08a214bf01debd55df",
+      "mass_basis": "Current product says0.5mg/cm2; Pt-metal vsPt/C basis requires manufacturer confirmation.",
+      "normalization_blocked_reason": "Explicit mgPt basis appears inS18/S29, not unambiguously in this commercial listing; do not relabel by convention."
+    },
+    {
+      "id": "etc-w1s1011-pt05-gde:catalyst_metal_mass_fraction:6",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "quantity": "catalyst_metal_mass_fraction",
+      "value": 60,
+      "unit": "wt%",
+      "relation": "eq",
+      "value_role": "manufacturer_nominal",
+      "locator": "Key specs catalyst composition",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "5b6ae338c00cefbd220bb63f6f4705208bbc40b35f0cff08a214bf01debd55df",
+      "mass_basis": "Pt/(Pt+carbon), not binder-containing ink"
+    },
+    {
+      "id": "etc-w1s1011-pt05-gde:thickness:7",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "quantity": "thickness",
+      "value": 410,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "manufacturer_nominal",
+      "locator": "Key specs GDL thickness",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "5b6ae338c00cefbd220bb63f6f4705208bbc40b35f0cff08a214bf01debd55df",
+      "layer_basis": "GDL; not total finished GDE thickness"
+    },
+    {
+      "id": "freudenberg-h23c6-gdl:thickness:8",
+      "material_id": "freudenberg-h23c6-gdl",
+      "source_id": "S22",
+      "quantity": "thickness",
+      "value": 250,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_reported",
+      "locator": "Gas Diffusion Layer Properties",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e"
+    },
+    {
+      "id": "freudenberg-h23c6-gdl:areal_mass:9",
+      "material_id": "freudenberg-h23c6-gdl",
+      "source_id": "S22",
+      "quantity": "areal_mass",
+      "value": 135,
+      "unit": "g/m2",
+      "relation": "eq",
+      "value_role": "supplier_reported",
+      "locator": "Gas Diffusion Layer Properties",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e"
+    },
+    {
+      "id": "freudenberg-h23c6-gdl:gas_transit_time_Gurley:10",
+      "material_id": "freudenberg-h23c6-gdl",
+      "source_id": "S22",
+      "quantity": "gas_transit_time",
+      "value": 70,
+      "unit": "s",
+      "relation": "eq",
+      "value_role": "supplier_reported",
+      "locator": "Gas Diffusion Layer Properties; seconds, test method unstated",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e",
+      "method_assignment": "unconfirmed: do not infer Gurley method solely from seconds"
+    },
+    {
+      "id": "freudenberg-h23c6-gdl:electronic_ASR:11",
+      "material_id": "freudenberg-h23c6-gdl",
+      "source_id": "S22",
+      "quantity": "electronic_ASR",
+      "value": 8,
+      "unit": "mOhm/cm2",
+      "relation": "eq",
+      "value_role": "supplier_reported",
+      "locator": "Electrical Resistivity (through plane) row: unit printed with division",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "c8ad7b9736bb537a66cbad0363d31d8036beb059e7c188a511010e89e8649e5e",
+      "unit_ambiguity": true,
+      "normalization_blocked_reason": "Printed mOhm/cm2 differs dimensionally from both bulk resistivity and ASR; no silent correction."
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer:thickness:12",
+      "material_id": "toray-tgp-h060-manufacturer",
+      "source_id": "S23",
+      "quantity": "thickness",
+      "value": 0.19,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Manufacturer one-page table, TGP-H-060 column",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer:porosity:13",
+      "material_id": "toray-tgp-h060-manufacturer",
+      "source_id": "S23",
+      "quantity": "porosity",
+      "value": 78,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Manufacturer one-page table, TGP-H-060 column",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer:bulk_density:14",
+      "material_id": "toray-tgp-h060-manufacturer",
+      "source_id": "S23",
+      "quantity": "bulk_density",
+      "value": 0.44,
+      "unit": "g/cm3",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Manufacturer one-page table, TGP-H-060 column",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer:electronic_resistivity:15",
+      "material_id": "toray-tgp-h060-manufacturer",
+      "source_id": "S23",
+      "quantity": "electronic_resistivity",
+      "value": 80,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Electrical resistance, through_plane row",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "toray-tgp-h060-manufacturer:electronic_resistivity:16",
+      "material_id": "toray-tgp-h060-manufacturer",
+      "source_id": "S23",
+      "quantity": "electronic_resistivity",
+      "value": 5.8,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "Electrical resistance, in_plane row",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "in_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "sgl-sigracet-22bb:thickness:17",
+      "material_id": "sgl-sigracet-22bb",
+      "source_id": "S25",
+      "quantity": "thickness",
+      "value": 215,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, grade column; compression state not specified",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-22bb:electronic_ASR:18",
+      "material_id": "sgl-sigracet-22bb",
+      "source_id": "S25",
+      "quantity": "electronic_ASR",
+      "value": 10,
+      "unit": "mOhm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP area-specific resistance(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-22bb:intrinsic_gas_permeability:19",
+      "material_id": "sgl-sigracet-22bb",
+      "source_id": "S25",
+      "quantity": "intrinsic_gas_permeability",
+      "value": 0.47,
+      "unit": "1e-12*m2",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP gas permeability(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-28bc:thickness:20",
+      "material_id": "sgl-sigracet-28bc",
+      "source_id": "S25",
+      "quantity": "thickness",
+      "value": 235,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, grade column; compression state not specified",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-28bc:electronic_ASR:21",
+      "material_id": "sgl-sigracet-28bc",
+      "source_id": "S25",
+      "quantity": "electronic_ASR",
+      "value": 11,
+      "unit": "mOhm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP area-specific resistance(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-28bc:intrinsic_gas_permeability:22",
+      "material_id": "sgl-sigracet-28bc",
+      "source_id": "S25",
+      "quantity": "intrinsic_gas_permeability",
+      "value": 0.1,
+      "unit": "1e-12*m2",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP gas permeability(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-36bb:thickness:23",
+      "material_id": "sgl-sigracet-36bb",
+      "source_id": "S25",
+      "quantity": "thickness",
+      "value": 280,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, grade column; compression state not specified",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-36bb:electronic_ASR:24",
+      "material_id": "sgl-sigracet-36bb",
+      "source_id": "S25",
+      "quantity": "electronic_ASR",
+      "value": 12,
+      "unit": "mOhm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP area-specific resistance(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-36bb:intrinsic_gas_permeability:25",
+      "material_id": "sgl-sigracet-36bb",
+      "source_id": "S25",
+      "quantity": "intrinsic_gas_permeability",
+      "value": 0.21,
+      "unit": "1e-12*m2",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP gas permeability(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-39bb:thickness:26",
+      "material_id": "sgl-sigracet-39bb",
+      "source_id": "S25",
+      "quantity": "thickness",
+      "value": 315,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, grade column; compression state not specified",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-39bb:electronic_ASR:27",
+      "material_id": "sgl-sigracet-39bb",
+      "source_id": "S25",
+      "quantity": "electronic_ASR",
+      "value": 13,
+      "unit": "mOhm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP area-specific resistance(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-sigracet-39bb:intrinsic_gas_permeability:28",
+      "material_id": "sgl-sigracet-39bb",
+      "source_id": "S25",
+      "quantity": "intrinsic_gas_permeability",
+      "value": 0.12,
+      "unit": "1e-12*m2",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "White paper p5, TP gas permeability(1MPa)",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": 1000000,
+        "direction": "through_plane",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-kfd25ea-virgin-2019:thickness:29",
+      "material_id": "sgl-kfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "thickness",
+      "value": 2.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-kfd25ea-virgin-2019:porosity:30",
+      "material_id": "sgl-kfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "porosity",
+      "value": 90,
+      "unit": "%",
+      "relation": "gt",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-kfd25ea-virgin-2019:BET_specific_area:31",
+      "material_id": "sgl-kfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "BET_specific_area",
+      "value": 0.6,
+      "unit": "m2/g",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "BET, protocol not stated",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-kfd25ea-virgin-2019:electronic_resistivity:32",
+      "material_id": "sgl-kfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "electronic_resistivity",
+      "value": 10,
+      "unit": "Ohm*mm",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "Electrical resistivity II, parallel to longitudinal direction",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "parallel_to_longitudinal; plane relative to electronic path unresolved",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd25ea-virgin-2019:thickness:33",
+      "material_id": "sgl-gfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "thickness",
+      "value": 2.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd25ea-virgin-2019:porosity:34",
+      "material_id": "sgl-gfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "porosity",
+      "value": 94,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd25ea-virgin-2019:BET_specific_area:35",
+      "material_id": "sgl-gfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "BET_specific_area",
+      "value": 0.4,
+      "unit": "m2/g",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "BET, protocol not stated",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd25ea-virgin-2019:electronic_resistivity:36",
+      "material_id": "sgl-gfd25ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "electronic_resistivity",
+      "value": 3,
+      "unit": "Ohm*mm",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "Electrical resistivity II, parallel to longitudinal direction",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "parallel_to_longitudinal; plane relative to electronic path unresolved",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd46ea-virgin-2019:thickness:37",
+      "material_id": "sgl-gfd46ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "thickness",
+      "value": 4.6,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd46ea-virgin-2019:porosity:38",
+      "material_id": "sgl-gfd46ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "porosity",
+      "value": 94,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd46ea-virgin-2019:BET_specific_area:39",
+      "material_id": "sgl-gfd46ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "BET_specific_area",
+      "value": 0.4,
+      "unit": "m2/g",
+      "relation": "eq",
+      "value_role": "manufacturer_typical",
+      "locator": "TDS BF.01(04/2019), virgin felt table",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "BET, protocol not stated",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "sgl-gfd46ea-virgin-2019:electronic_resistivity:40",
+      "material_id": "sgl-gfd46ea-virgin-2019",
+      "source_id": "S26",
+      "quantity": "electronic_resistivity",
+      "value": 3,
+      "unit": "Ohm*mm",
+      "relation": "lt",
+      "value_role": "manufacturer_typical",
+      "locator": "Electrical resistivity II, parallel to longitudinal direction",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "parallel_to_longitudinal; plane relative to electronic path unresolved",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": null
+    },
+    {
+      "id": "redox-gfd25-activated:thickness:41",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "quantity": "thickness",
+      "value": 2.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_nominal",
+      "locator": "Product description nominal thickness",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown",
+        "compression_state": "uncompressed"
+      },
+      "source_snapshot_sha256": "f531f3a7b60895930077881ea8e749a16747f93474be68a95c7070d9c09560ee"
+    },
+    {
+      "id": "redox-gfd465-activated:thickness:42",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "quantity": "thickness",
+      "value": 4.6,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_nominal",
+      "locator": "Product description nominal thickness",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown",
+        "compression_state": "uncompressed"
+      },
+      "source_snapshot_sha256": "f531f3a7b60895930077881ea8e749a16747f93474be68a95c7070d9c09560ee"
+    },
+    {
+      "id": "redox-kfd25-virgin:thickness:43",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "quantity": "thickness",
+      "value": 2.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_nominal",
+      "locator": "Product description nominal thickness",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown",
+        "compression_state": "not stated"
+      },
+      "source_snapshot_sha256": "f531f3a7b60895930077881ea8e749a16747f93474be68a95c7070d9c09560ee"
+    },
+    {
+      "id": "mi-cxm200s-cmi7000s:thickness:44",
+      "material_id": "mi-cxm200s-cmi7000s",
+      "source_id": "S28",
+      "quantity": "thickness",
+      "value": 0.45,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "manufacturer_reported",
+      "locator": "Standard thickness row",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown"
+      },
+      "source_snapshot_sha256": "2f205147bdda88f1b809c1f8ea126a73915fe0bb33c447603c9f40272195f282",
+      "plus_minus": 0.025,
+      "uncertainty_type": "reported_tolerance_not_SD"
+    },
+    {
+      "id": "mi-cxm200s-cmi7000s:membrane_ASR:45",
+      "material_id": "mi-cxm200s-cmi7000s",
+      "source_id": "S28",
+      "quantity": "membrane_ASR",
+      "value": 30,
+      "unit": "Ohm*cm2",
+      "relation": "lt",
+      "value_role": "manufacturer_reported",
+      "locator": "Electrical resistance row,0.5mol/LNaCl",
+      "conditions": {
+        "hydration": "test state not explicitly supplied",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown",
+        "electrolyte": "NaCl",
+        "concentration": "0.5mol/L"
+      },
+      "source_snapshot_sha256": "2f205147bdda88f1b809c1f8ea126a73915fe0bb33c447603c9f40272195f282"
+    },
+    {
+      "id": "mi-cxm200s-cmi7000s:permselectivity:46",
+      "material_id": "mi-cxm200s-cmi7000s",
+      "source_id": "S28",
+      "quantity": "permselectivity",
+      "value": 94,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "manufacturer_reported",
+      "locator": "Permselectivity row,0.1molKCl/kg vs0.5molKCl/kg",
+      "conditions": {
+        "hydration": "unknown",
+        "temperature_C": null,
+        "pressure_Pa": null,
+        "direction": "unknown",
+        "method": "unknown",
+        "contact_contribution": "unknown",
+        "electrolyte": "KCl",
+        "concentration": "0.1mol/kg vs0.5mol/kg"
+      },
+      "source_snapshot_sha256": "2f205147bdda88f1b809c1f8ea126a73915fe0bb33c447603c9f40272195f282"
+    }
+  ],
+  "offer_snapshots": [
+    {
+      "id": "etc-11060059",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "observed_at": "2026-10-26",
+      "price_amount": 51,
+      "currency": "USD",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "11060059",
+      "availability_claim": "InStock in manufacturer variant data",
+      "locator": "Manufacturer variant SKU/size/price entry",
+      "variant_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011?variant=49732627890435"
+    },
+    {
+      "id": "etc-11060060",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "observed_at": "2026-10-26",
+      "price_amount": 111,
+      "currency": "USD",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        10,
+        10
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "11060060",
+      "availability_claim": "InStock in manufacturer variant data",
+      "locator": "Manufacturer variant SKU/size/price entry",
+      "variant_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011?variant=49732627923203"
+    },
+    {
+      "id": "etc-11060061",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "observed_at": "2026-10-26",
+      "price_amount": 354,
+      "currency": "USD",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        20,
+        20
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "11060061",
+      "availability_claim": "InStock in manufacturer variant data",
+      "locator": "Manufacturer variant SKU/size/price entry",
+      "variant_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011?variant=49732627955971"
+    },
+    {
+      "id": "etc-11060062",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "observed_at": "2026-10-26",
+      "price_amount": 720,
+      "currency": "USD",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        30,
+        30
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "11060062",
+      "availability_claim": "InStock in manufacturer variant data",
+      "locator": "Manufacturer variant SKU/size/price entry",
+      "variant_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011?variant=49732627988739"
+    },
+    {
+      "id": "etc-11060063",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "source_id": "S21",
+      "observed_at": "2026-10-26",
+      "price_amount": 1183,
+      "currency": "USD",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        40,
+        40
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "11060063",
+      "availability_claim": "InStock in manufacturer variant data",
+      "locator": "Manufacturer variant SKU/size/price entry",
+      "variant_url": "https://fuelcellsetc.com/products/carbon-cloth-05-ptc-gas-diffusion-electrode-w1s1011?variant=49732628021507"
+    },
+    {
+      "id": "redox-11907",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 35,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-S01",
+      "vendor_variation_id": 11907,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11907",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11908",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 58,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-S02",
+      "vendor_variation_id": 11908,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11908",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11909",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 135,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-S08",
+      "vendor_variation_id": 11909,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11909",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11910",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 30,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-M01",
+      "vendor_variation_id": 11910,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11910",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11911",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 58,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-M02",
+      "vendor_variation_id": 11911,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11911",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11912",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 135,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-M08",
+      "vendor_variation_id": 11912,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11912",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11913",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 180,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-A401",
+      "vendor_variation_id": 11913,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11913",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11914",
+      "material_id": "redox-gfd25-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 300,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD25-A402",
+      "vendor_variation_id": 11914,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD 2,5 EA",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11914",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11916",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 35,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-S01",
+      "vendor_variation_id": 11916,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11916",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11917",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 58,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-S02",
+      "vendor_variation_id": 11917,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11917",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11918",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 135,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-S08",
+      "vendor_variation_id": 11918,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11918",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11919",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 30,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-M01",
+      "vendor_variation_id": 11919,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11919",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11920",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 58,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-M02",
+      "vendor_variation_id": 11920,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11920",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11921",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 135,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-M08",
+      "vendor_variation_id": 11921,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11921",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11922",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 180,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-A401",
+      "vendor_variation_id": 11922,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11922",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11923",
+      "material_id": "redox-gfd465-activated",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 300,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLGFD465-A402",
+      "vendor_variation_id": 11923,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® GFD4,65 EA",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11923",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11925",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 25,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-S01",
+      "vendor_variation_id": 11925,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11925",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11926",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 48,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-S02",
+      "vendor_variation_id": 11926,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11926",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11927",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 115,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        2.5,
+        2.5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-S08",
+      "vendor_variation_id": 11927,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "2.5x2.5cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11927",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11928",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 25,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-M01",
+      "vendor_variation_id": 11928,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11928",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11929",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 48,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-M02",
+      "vendor_variation_id": 11929,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11929",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11930",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 115,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        5,
+        5
+      ],
+      "pack_count": 8,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-M08",
+      "vendor_variation_id": 11930,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "5.0x.5.0cm",
+        "attribute_package": "8 pack"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11930",
+      "size_interpretation_review": "5.0x.5.0cm retained; interpreted5x5cm against product description",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11931",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 150,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 1,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-A401",
+      "vendor_variation_id": 11931,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "1 piece"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11931",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "redox-11932",
+      "material_id": "redox-kfd25-virgin",
+      "source_id": "S27",
+      "observed_at": "2026-10-26",
+      "price_amount": 250,
+      "currency": "EUR",
+      "price_type": "fixed_variant",
+      "sheet_dimensions_cm": [
+        19.5,
+        29.5
+      ],
+      "pack_count": 2,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "E-GF-SGLKFD25-A402",
+      "vendor_variation_id": 11932,
+      "raw_options": {
+        "attribute_electrode-type": "SIGRACELL® KFD2,5",
+        "attribute_electrode-size": "19.5x29.5cm",
+        "attribute_package": "2 pieces"
+      },
+      "locator": "Embedded data-product_variations, variation_id=11932",
+      "size_interpretation_review": "exact dimensional option",
+      "requires_quote": true,
+      "availability_claim": {
+        "is_in_stock": true,
+        "availability_html": ""
+      }
+    },
+    {
+      "id": "fcs-toray-pack-floor",
+      "material_id": "toray-tgp-h060-fcs-ptfe5",
+      "source_id": "S24",
+      "observed_at": "2026-10-26",
+      "price_amount": 118,
+      "currency": "USD",
+      "price_type": "starting_from",
+      "sheet_dimensions_cm": [
+        10,
+        10
+      ],
+      "pack_count": 9,
+      "dimension_price_binding_verified": true,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "71070001",
+      "locator": "Description9sheets10x10cm; Starting From118USD",
+      "availability_claim": "Listing; lead time may be4–5businessdays",
+      "lead_time_claim": {
+        "min": 4,
+        "max": 5,
+        "unit": "business_day",
+        "certainty": "may"
+      }
+    },
+    {
+      "id": "fcs-h23c6-floor",
+      "material_id": "freudenberg-h23c6-gdl",
+      "source_id": "S22",
+      "observed_at": "2026-10-26",
+      "price_amount": 19,
+      "currency": "USD",
+      "price_type": "starting_from",
+      "sheet_dimensions_cm": null,
+      "pack_count": null,
+      "dimension_price_binding_verified": false,
+      "shipping_amount": null,
+      "tax_amount": null,
+      "import_duty_amount": null,
+      "destination": "Spain",
+      "destination_confirmed": false,
+      "all_costs_same_currency": false,
+      "availability_verified_independently": false,
+      "lead_time_days": null,
+      "sku": "31070005",
+      "locator": "Starting From19USD;10x10/22x30/30x44cm options not price-bound",
+      "availability_claim": "Listed; physical stock not established"
+    }
+  ],
+  "experimental_links": [
+    {
+      "id": "L01",
+      "material_id": "ct-w1s1011-gdl",
+      "record_ids": [
+        "S18-CC-material"
+      ],
+      "relation": "substrate_grade_and_nominal_thickness_correspond",
+      "exact_final_electrode_match": false,
+      "limitations": [
+        "GDL only; article uses finishedPt/C GDE. Current manufacturer page describes secondgeneration, lot equivalence unresolved."
+      ]
+    },
+    {
+      "id": "L02",
+      "material_id": "etc-w1s1011-pt05-gde",
+      "record_ids": [
+        "S18-CC-material"
+      ],
+      "relation": "finished_composition_loading_consistent_exact_article_SKU_unreported",
+      "exact_final_electrode_match": false,
+      "limitations": [
+        "Final GDE SKU, batch and postcoat equivalence not stated byS18; do not transfer numerical kinetics."
+      ]
+    },
+    {
+      "id": "L03",
+      "material_id": "freudenberg-h23c6-gdl",
+      "record_ids": [
+        "S18-CP-material"
+      ],
+      "relation": "substrate_grade_match_custom_final_coating",
+      "exact_final_electrode_match": false,
+      "limitations": [
+        "S18 addedPt10wt%/AC+Nafion inhouse; seller GDL price excludes that coating."
+      ]
+    },
+    {
+      "id": "L04",
+      "material_id": "mi-cxm200s-cmi7000s",
+      "record_ids": [
+        "S17-methods"
+      ],
+      "relation": "current_manufacturer_alias_for_historical_designation",
+      "exact_final_electrode_match": false,
+      "limitations": [
+        "Historical lot and conditioning not established; manufacturer0.5MNaClASR not MFC-neutralASR."
+      ]
+    }
+  ],
+  "stage_acquisition_plan": [
+    {
+      "stage_id": "anode_chamber",
+      "order": 1,
+      "name": "Câmara anódica",
+      "acquisition_and_comparability_requirement": "Chamber dimensions, wetted material, chemical compatibility/leachables, usable volume and seals; product-specific cost still pending.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "anolyte",
+      "order": 2,
+      "name": "Meio anódico",
+      "acquisition_and_comparability_requirement": "Reagent identity/hydration, stock recipe, COD vs calculated BOD, conductivity/pH and replacement history; no cost assigned from a generic chemical name.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "anode",
+      "order": 3,
+      "name": "Ânodo",
+      "acquisition_and_comparability_requirement": "Felt/paper/cloth grade, activation, directional resistivity, wetting, mounted geometry and lot identity; matched wet characterization still pending.",
+      "current_new_source_ids": [
+        "S20",
+        "S23",
+        "S24",
+        "S26",
+        "S27"
+      ],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "anode_catalyst",
+      "order": 4,
+      "name": "Catalisador anódico",
+      "acquisition_and_comparability_requirement": "No added artificial catalyst in initial family; preserve not-applicable until a separately characterized coating is documented.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "biofilm",
+      "order": 5,
+      "name": "Biofilme",
+      "acquisition_and_comparability_requirement": "Inoculum/enrichment, maturation and medium-switch history are controls/confounders, not coefficients inferred from material BET.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "membrane",
+      "order": 6,
+      "name": "Membrana",
+      "acquisition_and_comparability_requirement": "Membrane grade, counterion, prehydration, ASR/selectivity and electrolyte; current no-membrane kernel remains out of scope for membrane predictions.",
+      "current_new_source_ids": [
+        "S28"
+      ],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "external_circuit",
+      "order": 7,
+      "name": "Circuito e alimentação/coleta",
+      "acquisition_and_comparability_requirement": "External resistance and sampling, collector identity/contact geometry and feed/collection regime; contact losses require their own evidence.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "cathode_chamber",
+      "order": 8,
+      "name": "Câmara catódica",
+      "acquisition_and_comparability_requirement": "Air-side aperture/seals/chamber exposure; do not add an independent liquid reservoir for air cathodes.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "catholyte",
+      "order": 9,
+      "name": "Meio catódico",
+      "acquisition_and_comparability_requirement": "Shared anolyte or ambient gas boundary as topology requires; no infinite controlled-gas reservoir and no invented catholyte volume.",
+      "current_new_source_ids": [],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "cathode",
+      "order": 10,
+      "name": "Cátodo",
+      "acquisition_and_comparability_requirement": "Separate bare support, MPL, hydrophobic treatment and completeGDE; compare within matched assembly/operating conditions.",
+      "current_new_source_ids": [
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27"
+      ],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    },
+    {
+      "stage_id": "cathode_catalyst",
+      "order": 11,
+      "name": "Catalisador catódico",
+      "acquisition_and_comparability_requirement": "Separate metal loading, support mass fraction and ionomer/binder; cost of bare support is not finished catalyst assembly cost.",
+      "current_new_source_ids": [
+        "S21"
+      ],
+      "status": "integrated_acquisition; gaps_explicit; no_new_solver_claim"
+    }
+  ],
+  "record_qualifications": [
+    {
+      "record_id": "S19-methods",
+      "locator": "Original articleMethods2.1",
+      "issue": "Source says0.5mg/cm2Pt/C without establishing Pt-metal vsPt/C mass basis; existing Pt_loading field must not bind metal loading.",
+      "related_observation_metric": "Pt_loading",
+      "binding_admitted": false
+    }
+  ],
+  "automatic_solver_bindings": [],
+  "predictor_trained": false,
+  "experimental_error_metrics": null,
+  "reading_limits": [
+    "Raw SGL PDFs returnedHTTP504; web text and specified rendered pages were available.",
+    "Manufacturer/supplier full documents have no redistribution clearance; only extracted facts, links and provenance are versioned.",
+    "Prior conversation access remains inherited excerpts/summaries; no new full transcript retrieval.",
+    "No material is selected as best-performing from price or manufacturer PEMFC data."
+  ]
+}

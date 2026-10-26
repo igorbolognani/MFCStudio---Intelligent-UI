@@ -1,0 +1,76 @@
+{
+  "source_id": "S29",
+  "audit": "published_tables_and_calibration_readiness",
+  "by_medium": {
+    "SWW": {
+      "published_feed_rows": 21,
+      "reactor_feed_records": 63,
+      "measured_pairs": 62,
+      "missing_pairs": 1,
+      "biological_reactors": 3,
+      "COD_range_mg_L": [
+        108,
+        1071
+      ],
+      "author_calculated_BOD_range_mg_L": [
+        55,
+        546
+      ],
+      "peak_current_density_range_mA_m2": [
+        44,
+        261
+      ],
+      "response_time_range_h": [
+        1.1,
+        26.8
+      ],
+      "response_time_median_h": 10.7,
+      "descriptive_statistics_only": true
+    },
+    "RWW": {
+      "published_feed_rows": 18,
+      "reactor_feed_records": 54,
+      "measured_pairs": 53,
+      "missing_pairs": 1,
+      "biological_reactors": 3,
+      "COD_range_mg_L": [
+        238,
+        732
+      ],
+      "author_calculated_BOD_range_mg_L": [
+        57,
+        176
+      ],
+      "peak_current_density_range_mA_m2": [
+        1,
+        115
+      ],
+      "response_time_range_h": [
+        1.9,
+        7.2
+      ],
+      "response_time_median_h": 4.6,
+      "descriptive_statistics_only": true
+    }
+  },
+  "response_pairs": 115,
+  "missing_response_pairs": 2,
+  "response_numeric_cells": 230,
+  "independent_material_holdout_families_added": 0,
+  "shared_with_S18_leakage_group": "Salvian2024-Surrey-30mL",
+  "current_kernel_calibration_ready": false,
+  "training_eligible_records": 0,
+  "predictor_trained": false,
+  "experimental_error_metrics": null,
+  "blockers": [
+    "SWW/RWW are complex substrates; current kernel is acetate-only.",
+    "Published operatingpH7.4 differs from kernelpH7; operating temperature unreported.",
+    "Published data use fed-batch replacement; current kernel batch dynamics are not validated for these feeds.",
+    "Numeric area normalization unresolved; density-to-absolute-current conversion blocked.",
+    "Tables contain peaks/response times, not individual chronological current/substrate series.",
+    "Same three reactors reused; medium, age and cathode replacement are associated.",
+    "No controlled variation across commercial materials in these table rows.",
+    "Reactor overlap withS18 unresolved; source family conservatively co-grouped."
+  ],
+  "next_admission": "Resolve area/methods and obtain independent comparable material/assembly groups before fitting material-to-parameter relationships."
+}

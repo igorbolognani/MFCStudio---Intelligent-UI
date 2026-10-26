@@ -1,0 +1,512 @@
+    Resilience of Anodic Biofilm in Microbial Fuel Cell Biosensor for
+                 BOD Monitoring of Urban Wastewater
+    Anna Salvian 1,2, Daniel Farkas 2, Marina Ramirez-Moreno 2, Daniela Torruella-Salas
+     3,4, Antonio Berná 4, Claudio Avignone-Rossa 2, John R. Varcoe 1, Abraham Esteve-
+
+                               Nuñez 3,4, Siddharth Gadkari 1*
+1
+    School of Chemistry and Chemical Engineering, University of Surrey, Guildford, United Kingdom
+2 Department of Microbial Sciences, University of Surrey, Guildford, United Kingdom
+3 Department of Analytical Chemistry, Physical Chemistry and Chemical Engineering, Universidad de Alcalá, Alcalá de
+
+Henares, Spain
+4 IMDEA Water Institute, Alcalá de Henares, Spain
+
+*corresponding author: s.gadkari@surrey.ac.uk
+
+                                             Supplementary Figures
+
+
+
+
+Supplementary Figure 1: The growth of planktonic cells in the anolyte was monitored in two
+MFC reactors, one fed with SWW (COD = 442 ± 8 mg mL-1, pH = 7.2 ± 0.1, Conductivity =
+1.2 ± 0.1 mS cm-1) and then with real wastewater RWW (COD = 602 ± 7 mg mL-1, pH = 7.3 ±
+0.1, Conductivity = 1.4 ± 0.1 mS cm-1). Cell proliferation was estimated using a) the OD600
+method, and plate count of total aerobic heterotrophic culturable bacteria in b) Tryptic Soy
+Agar (TSA), c) Nutrient Agar (NA), and d) Plate Count Agar (PCA). Samples of the anolyte
+were taken at time 0 (after few minutes from anolyte replacement) and at various time intervals
+over a period of two days, which corresponds to the maximum duration required to complete a
+peak current production.
+
+
+
+
+Supplementary Figure 2: Cyclic voltammograms of (a) MFC fed for over one month with
+SWW and (b) MFC fed for over one month with RWW with the oxidation and reduction peaks
+highlighted with yellow dots. The experiment was performed in the presence of oxidizable
+substrate (TO conditions, dotted line), which was either SWW (COD = 442 mg mL-1, pH =
+7.29, Conductivity = 1.31 mS cm-1) or RWW (COD = 169 mg mL-1, pH = 7.39, Conductivity
+= 1.31 mS cm-1) and in absence of oxidizable substrate (NTO conditions, continuous line), with
+Phosphate Buffer Saline solution (8 g L-1 NaCl; 0.2 g L-1 KCl; 1.44 g L-1 Na2HPO4; 0.14 g L-
+1
+   KH2PO4; pH=7.4).The analysis was performed using a PalmSense4 potentiostat connected
+in a three-configuration mode (anode as WE, cathode CE, and Ag/AgCl RE) at 0.5 mV s-1.
+
+
+
+
+Supplementary Figure 3: Principal Coordinate Analysis of three replicates at day 0, 4,10, 19
+and 34. The analysis, performed with the R package "phyloseq," is supplemented with weighted
+UniFrac distance assessment. The taxa were filtered above 0.025%.
+Supplementary Figure 4: Results of differential expression analysis applied to the KEGG-
+annotated metagenome, expressed in Log2(Fold Change) at two levels of filtering a) Significant
+differentially abundant KEGG annotations (adjusted p-value < 0.01) exceeding 300 genes per
+million (GPM), and b) significant differentially abundant KEGG annotations (adjusted p-value
+< 0.01) exhibiting the greatest Log2(Fold Change) upon transitioning from SWW to RWW.
+Negative values indicate a decrease in gene abundance when moving from SWW to RWW,
+whereas positive values signify an increase.
+Supplementary Figure 5: Differential abundance of KEGG-annotated genes in anodic
+biofilms subjected to RWW and SWW feeding. Values plotted on the positive side of the x-
+axis represent an increased presence of genes under the RWW feeding. In contrast, annotations
+on the negative x-axis highlight a decreased gene abundance, indicating these genes were more
+prevalent in biofilms fed with SWW. The mean values are represented by coloured dots: a blue
+dot indicates an overall increase in the specific annotation after biofilms were fed with RWW.
+In contrast, a red dot signifies an overall decrease in the KEGG-annotated genes.
+Supplementary Figure 6: Relative abundance of the lowest taxonomic rank assigned (species,
+genus and families) of the inoculum used in the study. The inoculum used in this study was
+sourced from an acetate-fed MFC, which had been in operation for more than a year and was
+initially inoculated with sediment from the campus pond (University of Surrey, Guildford, UK).
+Taxa with abundances exceeding 1% are individually displayed, while those with lower
+abundances are collectively categorized as "other."
+
+
+
+
+Supplementary Figure 7: Visual representation of the timeline of the MFC reactors,
+showcasing the diverse interventions and analyses undertaken. These include replacement of
+the GDE cathode, linear sweep voltammetry, cyclic voltammetry, taxonomic and
+metagenomics analyses of the biofilm, and scanning electron microscopy of the anode and
+cathode. The current study focuses on the last two phases of the experiment using artificial
+wastewater and real wastewater as feeding solutions.
+Supplementary Figure 8: Correlation between the BOD of the artificial wastewater (SWW)
+and its COD. The BOD/COD ratio is 0.51 ± 0.05 and is equal to the reciprocal of the slope.
+Data are reported as mean of 2 replicates ± SD (error bars are smaller than the dots).
+                                   Supplementary Tables
+
+
+Supplementary Table 1: Maximum current density obtained in three MFC replicates (R1, R2,
+R3) fed with RWW and SWW with different BOD and COD concentrations. The variation in
+cell colours (grey or white) indicates groups with comparable BOD (or COD) values, which
+are depicted as mean values with corresponding error bars on the x-axis and y-axis in Figure
+1.
+
+                   RWW                                         SWW
+  COD /       Calculated Current density        COD /     Calculated Current density
+  mg L-1      BOD / mg       / mA m-2           mg L-1    BOD / mg       / mA m-2
+                 L -1                                        L -1
+
+                         R1 R2 R3                                    R1 R2 R3
+    658          165     103 60       80         411         210     154 188 179
+    655          164      81    33    75         416         212     150     -   177
+    612          153      80    53    62         425         217     131 156 121
+    348           84      15    11    13         597         304     153 180 186
+    361           87      13     8    11         621         317     148 137 177
+    297           71      14    10    12         605         309     151 178 178
+    238           57       2     3     2         207         106      73    86    90
+    284           68       1     1     1         202         103      72    93    90
+    277           66       1     2     1         198         101      76    91    88
+    381           91      25    24    29         858         438     190 202 194
+    359           86      24    24    32         853         435     235 246 261
+    412           99      25    32    24         843         430     180 214 193
+    712          171     115 92 100              114          58      44    64    70
+    685          164     103 83        -         108          55      57    66    69
+    732          176      97 101 102             113          58      45    64    71
+    482          116      48    51    43         314         160     109 129 136
+    458          110      35    51    56         319         163     107 140 135
+    473          114      41    54    47         311         159     114 136 132
+                                                1060         541     163 188 206
+                                                1071         546     177 208 222
+                                                1056         539     164 161 215
+- :Data not available due to equipment fault.
+
+
+
+Supplementary Table 2: Response time obtained in three MFC replicates (R1, R2, R3) fed
+with RWW and SWW with different BOD and COD concentrations.
+
+                   RWW                                          SWW
+  COD /       Calculated Response time /         COD /     Calculated Response time /
+  mg L-1      BOD / mg         h                 mg L-1    BOD / mg         h
+                 L-1                                          L-1
+                         R1    R2 R3                                   R1 R2 R3
+    658          165     6.1   3.0 2.9            411         210      8.1 1.1 8.6
+    655          164     4.8   6.0 4.6            416         212      7.7  -     7.4
+    612          153     6.6   3.5 3.5            425         217     13.1 9.4 13.1
+    348              84              5.8      5.0       5.8        597        304          12.2    12.4   18.3
+    361              87              4.1      4.6       4.6        621        317          12.1    12.1   18.2
+    297              71              4.8      4.3       5.0        605        309          12.0    11.1   12.9
+    238              57              3.4      4.8       3.6        207        106           9.3     8.5   11.3
+    284              68              4.6      4.8       4.8        202        103          10.2    10.2    7.9
+    277              66              6.2      4.8       4.8        198        101           9.2    10.5   10.3
+    381              91              4.1      4.1       7.2        858        438          14.9    14.1   13.7
+    359              86              2.6      3.1       1.9        853        435          21.6    18.9   20.8
+    412              99              6.2      6.2       3.1        843        430          19.9    10.9   20.0
+    712             171              6.0      6.0       2.9        114         58           2.2     3.5    2.7
+    685             164              6.2      3.1        -         108         55           4.5     4.6    4.6
+    732             176              6.5      6.5       3.4        113         58           2.2     3.5    2.7
+    482             116              2.6      3.1       1.9        314        160           9.3     8.6   11.3
+    458             110              2.9      3.8       3.1        319        163          10.2    10.3    7.9
+    473             114              2.4      3.1       2.4        311        159           9.3    10.5   10.3
+                                                                  1060        541          17.0    21.8   26.8
+                                                                  1071        546          17.0    21.8   26.8
+                                                                  1056        539          14.1    15.3   17.6
+- :Data not available due to equipment fault.
+
+
+
+Supplementary Table 3: List of the most abundant genes in both artificial wastewater
+(SWW) and real wastewater (RWW) samples, focusing on those exceeding 300 Transcripts
+Per Million (TPM) in either type of sample. Each gene is identified by a Kegg identifier
+(KO), Name, Kegg Orthology, Transcripts Per Million of the gene in SWW and RWW
+(expressed as mean of 2 biological replicates ± Standard Error of the Mean), and Log2(Fold
+Change).
+   KO               Kegg Name                 Kegg Orthology      TPM (SWW)   TPM (RWW)       Log2(Fold
+                                                                                               Change)
+ K11527    Two-component system, sensor       Protein families:    132 ± 18   545 ± 161          1.95
+            histidine kinase and response      signaling and
+                regulator [EC:2.7.13.3]           cellular
+                                                 processes
+ K13924       Two-component system,           Protein families:    439 ± 91   1618 ± 524          1.78
+            chemotaxis family, cheb/cher       signaling and
+             fusion protein [EC:2.1.1.80          cellular
+                      3.1.1.61]                  processes
+ K03413       Two-component system,           Protein families:    204 ± 46   677 ± 235           1.66
+           chemotaxis family, chemotaxis       signaling and
+                    protein chey                  cellular
+                                                 processes
+ K03407      Two-component system,            Protein families:    104 ± 20   368 ± 112           1.55
+          chemotaxis family, sensor kinase     signaling and
+                chea [EC:2.7.13.3]                cellular
+                                                 processes
+ K03406     Methyl-accepting chemotaxis         Cell motility      650 ± 97   2168 ± 679          1.52
+                      protein
+
+ K00376       Nitrous-oxide reductase            Nitrogen          94 ± 24     302 ± 97           1.51
+                    [EC:1.7.2.4]                metabolism
+
+ K08738            Cytochrome c                  Energy            157 ± 37   440 ± 141           1.41
+                                                metabolism
+
+ K13590   Diguanylate cyclase [EC:2.7.7.65]       Cellular         154 ± 35   459 ± 155           1.38
+                                                 Processes
+K08303     Putative protease [EC:3.4.-.-]    Protein families:   103 ± 18    305 ± 70    1.36
+                                               metabolism
+
+K15726    Cobalt-zinc-cadmium resistance     Protein families:   143 ± 36   430 ± 138    1.33
+                    protein czca              signaling and
+                                                 cellular
+                                                processes
+K21023   Diguanylate cyclase [EC:2.7.7.65]       Cellular        441 ± 56   1239 ± 367   1.33
+                                                Processes
+
+K03832       Periplasmic protein tonb        Protein families:   170 ± 36   450 ± 121    1.32
+                                              signaling and
+                                                 cellular
+                                                processes
+K03559   Biopolymer transport protein exbd   Protein families:   127 ± 27    330 ± 74    1.29
+                                              signaling and
+                                                 cellular
+                                                processes
+K16087   Hemoglobin/transferrin/lactoferri   Protein families:   113 ± 37   331 ± 113    1.27
+               n receptor protein             signaling and
+                                                 cellular
+                                                processes
+K03561   Biopolymer transport protein exbb   Protein families:   115 ± 26    303 ± 74    1.25
+                                              signaling and
+                                                 cellular
+                                                processes
+K02488   Two-component system, cell cycle        Cellular        139 ± 34   365 ± 124    1.25
+          response regulator [EC:2.7.7.65]      Processes
+
+K01953    Asparagine synthase (glutamine-    Protein families:   141 ± 26    388 ± 93    1.23
+             hydrolysing) [EC:6.3.5.4]         metabolism
+
+K07152            Protein SCO1/2             Protein families:   142 ± 29   351 ± 101    1.19
+                                                  genetic
+                                               information
+                                                processing
+K03821    Polyhydroxyalkanoate synthase       Carbohydrate       126 ± 29    328 ± 88    1.16
+             subunit phac [EC:2.3.1.-]         metabolism
+
+K00102       D-lactate dehydrogenase          Carbohydrate       173 ± 36   417 ± 126    1.08
+             (cytochrome) [EC:1.1.2.4]         metabolism
+
+K07182    CBS domain-containing protein        Unclassified:     240 ± 17   543 ± 125    1.03
+                                              signaling and
+                                                 cellular
+                                                processes
+K08309          Soluble lytic murein         Protein families:   134 ± 21    337 ± 76    1.02
+            transglycosylase [EC:4.2.2.-]      metabolism
+
+K02014     Iron complex outermembrane        Protein families:   136 ± 25   311 ± 106    1.02
+                  recepter protein            signaling and
+                                                 cellular
+                                                processes
+K03320     Ammonium transporter, Amt         Protein families:   484 ± 56   1115 ± 331   1.01
+                   family                     signaling and
+                                                 cellular
+                                                processes
+K00632       Acetyl-coa acyltransferase            Lipid         322 ± 73   724 ± 214    0.98
+                    [EC:2.3.1.16]              metabolism
+
+K04771          Serine protease Do           Protein families:   153 ± 35    320 ± 87    0.93
+                  [EC:3.4.21.107]              metabolism
+
+K07814    Putative two-component system                          180 ± 43    358 ± 95    0.83
+                 response regulator
+
+K00248      Butyryl-coa dehydrogenase            Lipid           483 ± 2    882 ± 169    0.75
+                    [EC:1.3.8.1]               metabolism
+
+K02030   Polar amino acid transport system   Protein families:   174 ± 46    306 ± 8     0.72
+             substrate-binding protein        signaling and
+                                                    cellular
+                                                   processes
+
+ K03286    Ompa-ompf porin, OOP family          Protein families:   495 ± 105    928 ± 206     0.71
+                                                 signaling and
+                                                    cellular
+                                                   processes
+ K10546   Putative multiple sugar transport     Protein families:    177 ± 25    328 ± 62      0.70
+          system substrate-binding protein       signaling and
+                                                    cellular
+                                                   processes
+ K10548   Putative multiple sugar transport     Protein families:    383 ± 45    222 ± 28      -0.83
+            system ATP-binding protein           signaling and
+                    [EC:3.6.3.17]                   cellular
+                                                   processes
+ K19428   Sugar transferase epsl [EC:2.-.-.-]   Protein families:    417 ± 55    232 ± 31      -0.84
+                                                 signaling and
+                                                    cellular
+                                                   processes
+ K11527    Two-component system, sensor         Protein families:    333 ± 45    206 ± 40      -0.84
+            histidine kinase and response        signaling and
+                regulator [EC:2.7.13.3]             cellular
+                                                   processes
+
+
+
+
+Supplementary Table 4: List of genes with the most pronounced log2(fold change), greater
+than 6 or less than -6. on those exceeding 300 Transcripts Per Million in either type of
+sample. Each gene is identified by a Kegg identifier (KO), Name, Kegg Orthology, TPM of
+the gene in SWW and RWW (expressed as mean of 2 biological replicate ± Standard Error of
+the Mean), and Log2(Fold Change).
+   Ko                Kegg Name                  Kegg Orthology      TPM (SWW)   TPM (RWW)    Log2(Fold
+                                                                                              Change)
+ K16444         Vancomycin aglycone             Biosynthesis of       0±0        9.9 ± 5.2     12.20
+          glucosyltransferase [ec:2.4.1.310]      vancomycin
+                                                     group
+                                                   antibiotics
+ K09285      Ap2-like factor, ant lineage       Protein families:     0±0        3.9 ± 1.8    11.43
+                                                 signaling and
+                                                    cellular
+                                                   processes
+ K13870     Solute carrier family 7 (l-type         Methane           0±0        6.5 ± 3.4    11.33
+          amino acid transporter), member         metabolism
+                          13
+ K16161      Methane monooxygenase               Metabolism of        0±0        3.9 ± 1.8    11.06
+            component c [ec:1.14.13.25]         terpenoids and
+                                                  polyketides
+ K18886       Gibberellin a4 carboxyl           Protein families:     0±0        5.2 ± 2.2    10.97
+          methyltransferase [ec:2.1.1.276]       signaling and
+                                                     cellular
+                                                   processes
+ K21817   Beta-carotene 15,15'-dioxygenase      Protein families:     0±0        7.1 ± 2.6    10.96
+                   [ec:1.13.11.63]                   genetic
+                                                  information
+                                                   processing
+ K21332     Dtdp-alpha-d-glucuronic acid         Metabolism of        0±0         5 ± 2.4     10.79
+             decarboxylase [ec:1.1.1.-]         terpenoids and
+                                                  polyketides
+ K18961      T4 rna ligase 1 [ec:6.5.1.3]             Lipid           0±0        2.8 ± 0.1    10.76
+                                                  metabolism
+
+ K18942       T4virus DNA polymerase                 Protein          0±0        2.8 ± 1.2    10.75
+                    [ec:2.7.7.7]                    families:
+                                                 signaling and
+                                                     cellular
+                                                   processes
+K04641           Bacteriorhodopsin             Protein families:    0±0         1.7 ± 0.3    10.59
+                                                    genetic
+                                                 information
+                                                  processing
+K18956      Whib family transcriptional         Environmental       0±0         1.1 ± 0.2    10.32
+             regulator, redox-sensing            Information
+             transcriptional regulator            Processing
+K21079         Major capsid protein            Protein families:    0±0         1.3 ± 0.3    10.07
+                                                 metabolism
+
+K21331        Dtdp-alpha-d-glucose              Environmental       0±0         1.3 ± 0.1    10.07
+            dehydrogenase [ec:1.1.1.-]           Information
+                                                  Processing
+K18473   Acetoacetyl-[acyl-carrier protein]    Protein families:    0±0         2.5 ± 0.9    10.04
+             synthase [ec:2.3.1.180]                genetic
+                                                 information
+                                                  processing
+K21523   Terminase, large subunit [ec:3.1.-    Protein families:    0±0         1.1 ± 0.2    9.77
+                        .-]                      metabolism
+
+K18950      Ribonuclease h [ec:3.1.26.4]       Protein families:    0±0         0.8 ± 0.6    9.71
+                                                    genetic
+                                                 information
+                                                  processing
+K18960   Recombination endonuclease vii        Ubiquinone and       0±0         5.7 ± 2.5    9.69
+                                                     other
+                                                  terpenoid-
+                                                    quinone
+                                                 biosynthesis
+K18434    Type iv secretion system t-DNA       Protein families:    0±0         0.9 ± 0.1    9.59
+            border endonuclease vird2           signaling and
+                                                    cellular
+                                                   processes
+K16192      Uncharacterized membrane           Protein families:    0±0         1.3 ± 0.1    9.33
+                   protein arfb                  metabolism
+
+K04801   Replication factor c small subunit    Protein families:    0±0         1.6 ± 0.3    9.25
+                                                    genetic
+                                                 information
+                                                  processing
+K20488    Two-component system, ompr            Biosynthesis of     0±0         0.8 ± 0.3    9.25
+           family, lantibiotic biosynthesis    other secondary
+            response regulator nisr/spar         metabolites
+K12244   [skp1-protein]-hydroxyproline n-      Protein families:    0±0         0.8 ± 0.8    9.03
+          acetylglucosaminyltransferase          metabolism
+                    [ec:2.4.1.229]
+K16299   Atp-binding cassette, subfamily c,      Nucleotide         0±0         1.8 ± 0.7    8.95
+                    bacterial eexd               metabolism
+
+K11585         Chromobox protein 1              Unclassified:       0±0         1.3 ± 0.8    8.74
+                                                metabolism
+
+K13701    Abhydrolase domain-containing           Methane          0.1 ± 0.1      4±2        8.67
+                    protein 8                    metabolism
+
+K11920       Arac family transcriptional         Xenobiotics        0±0         0.9 ± 0.1    8.58
+                     regulator                 biodegradation
+                                               and metabolism
+K09834    Tocopherol cyclase [ec:5.5.1.24]           Lipid          0±0         0.9 ± 0.4    8.55
+                                                 biosynthesis
+                                                   proteins
+K02661   Type iv pilus assembly protein pilk   Protein families:    0±0          3.9 ± 2     8.48
+                                                signaling and
+                                                    cellular
+                                                  processes
+K08659        Dipeptidase [ec:3.4.-.-]           Unclassified:     0.6 ± 0.5   33.7 ± 14.7   8.36
+                                                 metabolism
+
+K19876       Metalloreductase steap4             Amino acid         0±0         1.4 ± 0.6    8.35
+                   [ec:1.16.1.-]                 metabolism
+K12743   N-(5-amino-5-carboxypentanoyl)-           Lipid         0.5 ± 0.5   41.4 ± 18.7   8.31
+           l-cysteinyl-d-valine synthase       biosynthesis
+                    [ec:6.3.2.26]                proteins
+K10953             Rtx toxin rtxa            Protein families:   1.3 ± 0.4      0±0        8.31
+                                              signaling and
+                                                  cellular
+                                                processes
+K20151   Alpha(1,3/1,4) fucosyltransferase   Protein families:   1.6 ± 0.5      0±0        8.17
+              [ec:2.4.1.65 2.4.1.152]         signaling and
+                                                  cellular
+                                                processes
+K14641         Apyrase [ec:3.6.1.5]           Carbohydrate       3 ± 0.8        0±0        8.14
+                                               metabolism
+
+K18962      T4 rna ligase 2 [ec:6.5.1.3]     Protein families:   2 ± 0.6        0±0        8.10
+                                              signaling and
+                                                 cellular
+                                                processes
+K19711   L-serine 3-dehydrogenase (nad+)     Protein families:   2.3 ± 0.7      0±0        8.10
+                   [ec:1.1.1.387]             signaling and
+                                                 cellular
+                                                processes
+K05824    Homoisocitrate dehydrogenase        Carbohydrate       1.5 ± 0.2      0±0        8.03
+                 [ec:1.1.1.87]                 metabolism
+
+K12514      Tight adherence protein f        Protein families:   1.6 ± 0.6      0±0        -8.24
+                                               metabolism
+
+K13650   Mqsr-controlled colanic acid and     Unclassified:      1.9 ± 0.8      0±0        -8.26
+                biofilm protein a                 genetic
+                                               information
+                                                processing
+K12147         Acidic protein msyb            Carbohydrate       1.7 ± 0.7      0±0        -8.27
+                                               metabolism
+
+K02465      General secretion pathway        Protein families:   1.7 ± 0.3      0±0        -8.31
+                     protein s                    genetic
+                                               information
+                                                processing
+K07470         DNA gyrase inhibitor           Environmental      2.4 ± 0.7      0±0        -8.31
+                                               Information
+                                                Processing
+K12513      Tight adherence protein e          Unclassified:     1.9 ± 1        0±0        -8.36
+                                               metabolism
+
+K05839        Haemolysin expression           Environmental      1.3 ± 0.4      0±0        -8.36
+               modulating protein               Information
+                                                 Processing
+K01085       Glucose-1-phosphatase            Metabolism of      1.9 ± 0.6      0±0        -8.45
+                  [ec:3.1.3.10]              terpenoids and
+                                                polyketides
+K02681    Prepilin peptidase dependent       Protein families:   2.1 ± 0.6      0±0        -8.65
+                     protein c                 signaling and
+                                                   cellular
+                                                 processes
+K07781      Luxr family transcriptional            Energy        2.3 ± 0.3      0±0        -8.82
+         regulator, capsular biosynthesis       metabolism
+           positive transcription factor
+K19775      Gntr family transcriptional       Environmental      2.3 ± 0.9      0±0        -9.12
+          regulator, hexuronate regulon         Information
+             transcriptional repressor           Processing
+K12512      Tight adherence protein d        Protein families:   1 ± 0.1        0±0        -9.21
+                                               signaling and
+                                                   cellular
+                                                 processes
+K08476    Two-component system, ntrc         Protein families:   2.2 ± 0.1      0±0        -9.87
+            family, phosphoglycerate           signaling and
+           transport system response               cellular
+                 regulator pgta                  processes
+ K00885         N-acylmannosamine kinase                          1.8 ± 0.3        0±0           -9.95
+                       [ec:2.7.1.60]
+
+ K09470     Gamma-glutamylputrescine            Unclassified:     1.3 ± 0.8        0±0           -10.16
+              synthase [ec:6.3.1.11]               genetic
+                                                information
+                                                 processing
+ K01731         Pectate disaccharide-lyase    Protein families:   1.3 ± 0.6        0±0           -10.50
+                       [ec:4.2.2.9]            signaling and
+                                                   cellular
+                                                 processes
+
+
+
+
+Supplementary Table 5: Chemical characterization of real municipal wastewater following
+primary treatment (Fundación CENTA, Carrión de los Céspedes, Seville, Spain).
+
+                                                                  Concentration (mg L-1)
+                    COD                                                       661.00
+                Total nitrogen                                                 82.00
+                  Chlorine                                                    141.02
+                   Nitrite                                                      0.20
+                   Nitrate                                                      1.00
+                 Phosphate                                                     18.62
+                  Sulphate                                                     19.82
+                   Sodium                                                     103.95
+                 Ammonia                                                       84.15
+                 Potassium                                                     41.94
+                  Calcium                                                      36.92
+                 Magnesium                                                     18.54
+
+
+
+Supplementary Table 6: BOD and COD concentration of municipal wastewater over time
+during storage at refrigerated conditions (4 ± 2 ⁰C). Data are represented as mean of three
+technical replicates ± SD.
+
+          Day                        COD                      BOD                      BOD/COD
+           0                       653 ± 27                  165 ± 12                  0.25 ± 0.03
+           8                       548 ± 35                  132 ± 14                  0.24 ± 0.04
+          17                        474 ± 6                   90 ± 4                   0.19 ± 0.01
+

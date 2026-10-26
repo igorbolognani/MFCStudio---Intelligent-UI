@@ -17,7 +17,7 @@ export async function seedCorpus(){
  await batches(db,sourceStatements);
  const definitions:D1PreparedStatement[]=[];
  for(const s of corpus.stages)for(const p of s.properties)definitions.push(db.prepare('INSERT INTO properties(id,stage_id,name,symbol,unit,implementation_status,metadata_json) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(p.id,s.id,p.name_pt,p.symbol,p.unit,'catalog_proposed_not_automatically_resolved',JSON.stringify(p)));
- for(const s of corpus.stage_map)for(const sid of s.source_ids)definitions.push(db.prepare('INSERT INTO source_stages(id,source_id,stage_id,relation) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(sid+':'+s.stage_id,sid,s.stage_id,JSON.stringify({evidence_status:s.evidence_status,initial_family_applicability:s.initial_family_applicability,remaining_gaps:s.remaining_gaps})));
+ for(const s of corpus.stage_map)for(const sid of s.source_ids)definitions.push(db.prepare('INSERT INTO source_stages(id,source_id,stage_id,relation) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(sid+':'+s.stage_id,sid,s.stage_id,JSON.stringify({evidence_status:s.commercial_context_source_ids?.includes(sid)?'commercial_facts_not_experimental_validation':s.evidence_status,initial_family_applicability:s.initial_family_applicability,remaining_gaps:s.remaining_gaps})));
  await batches(db,definitions);
  for(const doc of corpus.documents){
   if(await digest(doc.text)!==doc.sha256)throw new Error('Document content digest mismatch');
@@ -31,7 +31,7 @@ export async function seedCorpus(){
  const groups=new Map<string,any[]>();
  for(const r of corpus.records){const rows=groups.get(r.leakage_group_id)||[];rows.push(r);groups.set(r.leakage_group_id,rows);}
  const exps:D1PreparedStatement[]=[];
- for(const [group,rows] of groups)exps.push(db.prepare('INSERT INTO experiments(id,source_id,study_id,family_id,reactor_id,replicate_id,scope,conditions_json) VALUES(?,?,?,?,NULL,NULL,?,?) ON CONFLICT(id) DO NOTHING').bind(group,rows[0].source_id,rows[0].study_id,group,'provenance_family_not_independent_sample',JSON.stringify({record_ids:rows.map(r=>r.id),conditions:rows.map(r=>r.conditions||{}),raw_replicates_available:false})));
+ for(const [group,rows] of groups)exps.push(db.prepare('INSERT INTO experiments(id,source_id,study_id,family_id,reactor_id,replicate_id,scope,conditions_json) VALUES(?,?,?,?,NULL,NULL,?,?) ON CONFLICT(id) DO UPDATE SET conditions_json=excluded.conditions_json WHERE experiments.source_id=excluded.source_id AND experiments.study_id=excluded.study_id').bind(group,rows[0].source_id,rows[0].study_id,group,'provenance_family_not_independent_sample',JSON.stringify({corpus_version:corpus.version,record_ids:rows.map(r=>r.id),source_ids:[...new Set(rows.map(r=>r.source_id))],study_ids:[...new Set(rows.map(r=>r.study_id))],conditions:rows.map(r=>r.conditions||{}),tabulated_individual_reactor_values_available:rows.some(r=>r.conditions?.evidence_kind==='published_table_individual_reactor_value'),raw_individual_timeseries_available:false})));
  await batches(db,exps);
  const records:D1PreparedStatement[]=[];
  for(const r of corpus.records)records.push(db.prepare('INSERT INTO evidence_records(id,source_id,study_id,leakage_group_id,scope,status,training_eligible,data_json) VALUES(?,?,?,?,?,?,0,?) ON CONFLICT(id) DO NOTHING').bind(r.id,r.source_id,r.study_id,r.leakage_group_id,r.experimental_scope,r.status,JSON.stringify(r)));

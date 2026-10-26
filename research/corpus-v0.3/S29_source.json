@@ -1,0 +1,146 @@
+{
+  "id": "S29",
+  "title": "Resilience of anodic biofilm in microbial fuel cell biosensor for BOD monitoring of urban wastewater",
+  "authors": [
+    "Anna Salvian",
+    "Daniel Farkas",
+    "Marina Ramirez-Moreno",
+    "Daniela Torruella-Salas",
+    "Antonio Berná",
+    "Claudio Avignone-Rossa",
+    "John R. Varcoe",
+    "Abraham Esteve-Núñez",
+    "Siddharth Gadkari"
+  ],
+  "doi": "10.1038/s41545-024-00350-5",
+  "year": 2024,
+  "published_at": "2024-06-28",
+  "journal": "npj Clean Water",
+  "volume": 7,
+  "article_number": 53,
+  "url": "https://www.nature.com/articles/s41545-024-00350-5",
+  "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41545-024-00350-5/MediaObjects/41545_2024_350_MOESM1_ESM.pdf",
+  "access": "full_text_and_supplement_retrieved",
+  "read_scope": "complete_methods; main scientific text consulted; all supplement table1/2 cells inspected and extracted; timelineFigureS7 visually inspected; microbiome tables retained in source but not scientifically re-extracted",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_verified": true,
+  "license_locator": "Main article Rights and permissions; PDFp12. No differing supplement copyright credit identified.",
+  "retrieved_at": "2026-10-26",
+  "type": "original_full_cell_experiment",
+  "leakage_group_id": "Salvian2024-Surrey-30mL",
+  "independent_external_validation_eligible": false,
+  "independence_reason": "Same laboratory, inoculum origin, material formulation and day55 biofilm maturation asS18; supplement timeline describes prior acetate phase. Individual reactor identity overlap is unresolved; co-group conservatively.",
+  "stage_ids": [
+    "anode_chamber",
+    "anolyte",
+    "anode",
+    "biofilm",
+    "external_circuit",
+    "cathode_chamber",
+    "catholyte",
+    "cathode",
+    "cathode_catalyst"
+  ],
+  "training_ready": false,
+  "materials": {
+    "anode": {
+      "supplier": "Alfa Aesar",
+      "designation": "carbon felt6.35mm99.0%",
+      "reported_dimensions_cm": [
+        2,
+        3,
+        0.635
+      ],
+      "article_SKU": null,
+      "catalog_candidate_root_SKU": "043200",
+      "match_status": "brand/thickness/purity candidate, not article-reportedSKU"
+    },
+    "cathode": {
+      "substrate_grade": "W1S1011",
+      "supplier": "FuelCell Store",
+      "Pt_loading_mgPt_cm2": 0.5,
+      "catalyst_composition": "60wt%Pt/Vulcan-C",
+      "commercial_ready_GDE_candidate_SKU": "11060059",
+      "match_status": "grade/composition/loading correspondence; article does not give final GDESKU/lot"
+    },
+    "membrane": {
+      "reported": false,
+      "applicability": "no standalone membrane described; Nafion binder/postcoat is not a separate chamber-separating membrane"
+    }
+  },
+  "methods": {
+    "working_volume_mL": 30,
+    "chambers": 1,
+    "cathode_environment": "ambient_air",
+    "feed_regime": "fed_batch_complete_medium_replacement",
+    "external_resistance_Ohm": 1000,
+    "initial_inoculum": "acetate-fedMFC operating>1year, originallyUniversityofSurreypondsediment",
+    "inoculum_volume_fraction": 0.1,
+    "inoculum_OD600": 0.5,
+    "replicates_inoculated": 3,
+    "sterile_controls": 1,
+    "current_sampling_interval_s": 180,
+    "temperature_K": null,
+    "operating_temperature_reported": false,
+    "SWW_preparation": "10x sterile stock, recipe referred to Ref72 instead of fully listed in Methods",
+    "RWW_origin": "primaryWWTPeffluent,FundaciónCENTA,CarrióndelosCéspedes,Seville,Spain",
+    "pH_control_main_methods": {
+      "value": 7.4,
+      "plus_minus": 0.3
+    },
+    "conductivity_control_mS_cm": {
+      "value": 1.1,
+      "plus_minus": 0.2
+    },
+    "polarization_reactors": 2,
+    "polarization_scan_mV_s": 0.5,
+    "OCP_rest_h_approx": 2,
+    "reference_electrode_CV": "Ag/AgCl3.5MKCl",
+    "reference_electrode_OCP": "not explicitly specified in method paragraph",
+    "cathode_replacement_interval_months": 2,
+    "cathode_replacement_source_days": [
+      143,
+      207
+    ],
+    "phase_timeline_days": {
+      "biofilm_formation": [
+        0,
+        55
+      ],
+      "acetate": [
+        55,
+        143
+      ],
+      "SWW": [
+        143,
+        207
+      ],
+      "RWW": [
+        207,
+        247
+      ]
+    },
+    "quantitative_anode_normalization_area_m2": null,
+    "normalization_issue": "Text says2x3cm felt and projectedanodearea; no12cm2 numeric declaration found inMethods or supplement. Do not resolve by inheriting a later thesis/paper."
+  },
+  "data_summary": {
+    "table1_feed_rows": 39,
+    "table2_feed_rows": 39,
+    "reactor_feed_records": 117,
+    "measured_pairs": 115,
+    "missing_reactor_feed_records": 2,
+    "numeric_response_values": 230,
+    "independent_experiment_count": null,
+    "biological_reactors": 3,
+    "individual_timeseries_available": false,
+    "dataset_access_statement": "available from corresponding author upon request; supplement nevertheless contains per-reactor tabulated peak/time observations."
+  },
+  "issues": [
+    "Figure2 and supplementFigureS1/S2 usemg/mL in places where methods/tables usemg/L; retain raw source and use explicitly labeled table units.",
+    "Figure1 captionconductivity1.10±.3mScm vsMethods1.10±.2; do not silently pool uncertainty.",
+    "Figure3text/Methods infergeneabundance, not geneexpression measurements; microbiome data are not kinetic parameters.",
+    "Temperature not explicitly stated for MFCoperation.",
+    "Chronological feedtimestamps not available."
+  ]
+}

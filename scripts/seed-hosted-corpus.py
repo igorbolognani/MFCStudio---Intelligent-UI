@@ -34,7 +34,10 @@ for asset in json.loads((root/'science/corpus-pdf-assets.json').read_text()):
 report['database']=call('/api/seed')[0]
 assert report['database']['seed_applied']
 assert all(a['sha256_matches'] for a in report['database'].get('embedded_assets',[]))
-assert len(report['database'].get('embedded_assets',[]))==5
+assert len(report['database'].get('embedded_assets',[]))==len(json.loads((root/'science/corpus-embedded-assets.json').read_text()))
+assert report['database']['counts']['sources']==report['seed']['report']['sources']
+assert report['database']['counts']['evidence_records']==report['seed']['report']['records']
+assert report['database']['counts']['observations']==report['seed']['report']['observations']
 report['service_cannot_impersonate_visitor']=call('/api/scenarios',expected=(401,))[1]==401
 report['development_QA_not_public']=call('/qa',expected=(404,))[1]==404
 report['landing_available']=call('/')[1]==200

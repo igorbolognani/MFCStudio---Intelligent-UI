@@ -1,0 +1,14 @@
+{
+  "material_variants": 16,
+  "commercial_sources": 9,
+  "property_observations": 46,
+  "normalized_property_observations": 44,
+  "blocked_property_normalizations": 2,
+  "offer_snapshots": 31,
+  "exact_variant_offers": 29,
+  "offers_with_comparable_purchased_area": 30,
+  "confirmed_delivered_quotes": 0,
+  "automatic_solver_bindings": 0,
+  "training_eligible_records": 0,
+  "stage_acquisition_plan_count": 11
+}
