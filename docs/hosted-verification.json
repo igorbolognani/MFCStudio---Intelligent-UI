@@ -3,15 +3,22 @@
   "publication_audit": "shared_corpus_and_access_boundary",
   "seed": {
     "alreadyApplied": false,
-    "version": "mfc-corpus/0.2.1",
+    "version": "mfc-corpus/0.3.0",
     "report": {
       "properties_proposed": 110,
-      "sources": 19,
-      "complete_main_articles": 5,
-      "supplements": 1,
-      "records": 32,
-      "observations": 86,
+      "sources": 29,
+      "complete_main_articles": 6,
+      "supplements": 2,
+      "records": 198,
+      "observations": 397,
+      "numeric_observations": 393,
+      "missing_observation_cells": 4,
       "digitized_curve_points": 13,
+      "material_variants": 16,
+      "commercial_offer_snapshots": 31,
+      "S29_reactor_feed_records": 117,
+      "S29_measured_response_pairs": 115,
+      "S29_missing_response_pairs": 2,
       "training_eligible_records": 0,
       "predictor_trained": false,
       "experimental_error_metrics": null,
@@ -43,20 +50,30 @@
     {
       "id": "S18-supplement-pdf",
       "alreadyStored": true
+    },
+    {
+      "id": "S29-pdf",
+      "sha256": "b2f2703391497238a512c1d24dd24384a248a55b418ed03ed356e545b8b43587",
+      "stored": true
+    },
+    {
+      "id": "S29-supplement-pdf",
+      "sha256": "2354f24b61bca58ffccd26b34316054b0af24148d66b4c50479fd8654fba06a0",
+      "stored": true
     }
   ],
   "database": {
-    "version": "mfc-corpus/0.2.1",
+    "version": "mfc-corpus/0.3.0",
     "counts": {
       "stages": 11,
       "properties": 110,
-      "sources": 19,
-      "source_stages": 62,
-      "documents": 6,
-      "document_chunks": 35,
-      "experiments": 6,
-      "evidence_records": 32,
-      "observations": 86,
+      "sources": 29,
+      "source_stages": 86,
+      "documents": 8,
+      "document_chunks": 49,
+      "experiments": 15,
+      "evidence_records": 198,
+      "observations": 397,
       "curves": 1,
       "curve_points": 13
     },
@@ -86,6 +103,14 @@
       {
         "id": "S18-supplement-pdf",
         "present": true
+      },
+      {
+        "id": "S29-pdf",
+        "present": true
+      },
+      {
+        "id": "S29-supplement-pdf",
+        "present": true
       }
     ],
     "embedded_assets": [
@@ -113,11 +138,20 @@
         "id": "S19-html",
         "present": true,
         "sha256_matches": true
+      },
+      {
+        "id": "S29-html",
+        "present": true,
+        "sha256_matches": true
       }
     ],
-    "content_sha256": "dabadbca907fbf527355bd8ae74c804e5849a5dd2e818131fd3773fa29982a5d"
+    "content_sha256": "a0a246631a0d64887c432ed09e8cb94f3e620cdc52b0471b48aa4e40d548c100"
   },
   "service_cannot_impersonate_visitor": true,
   "development_QA_not_public": true,
-  "landing_available": true
+  "landing_available": true,
+  "idempotency_recheck": {
+    "alreadyApplied": true,
+    "version": "mfc-corpus/0.3.0"
+  }
 }

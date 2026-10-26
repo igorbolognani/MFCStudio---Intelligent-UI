@@ -1,0 +1,17 @@
+{
+  "document_count": 8,
+  "document_metadata_hashes_match_seed": true,
+  "document_metadata_truncated": false,
+  "fulltext_database_reconstruction_performed": false,
+  "fulltext_database_reconstruction_limit": "Sites database row reader truncated the first10000-character chunk to2035characters; full database text was not independently reconstructed.",
+  "local_original_files_and_generated_text_hashes_verified": true,
+  "project_id": "appgprj_6ade38dd6f4481919a62ea9e66ab76c8",
+  "verified_runtime_version_id": "appgprj_6ade38dd6f4481919a62ea9e66ab76c8~appgver_42daf4f9ea04819195a9d51f1a45877a",
+  "github_implementation_commit": "5dde96ec44ff31db43026d92e0e08b3e93b9d5ac",
+  "ci": {
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/igorbolognani/MFCStudio---Intelligent-UI/actions/runs/40419765285"
+  },
+  "scope": "Corpus0.3.0 data/backend verification; no new visual QA or predictive accuracy claim"
+}
