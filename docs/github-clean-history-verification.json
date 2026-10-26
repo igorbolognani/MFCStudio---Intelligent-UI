@@ -1,0 +1,12 @@
+{
+  "scope": "all blobs reachable from all refs in fresh public GitHub clone",
+  "blobs_scanned": 225,
+  "matches": [],
+  "clean": true,
+  "commit_count": 4,
+  "verified_head": "91f22d7bb71c9a6e657dc56a5a6bc6f4fe6183c2",
+  "verified_at": "2026-10-26",
+  "ci_run_url": "https://github.com/igorbolognani/MFCStudio---Intelligent-UI/actions/runs/40380732068",
+  "ci_conclusion": "success",
+  "excludes": "Unreachable GitHub objects, caches, third-party clones and historical Sites versions."
+}

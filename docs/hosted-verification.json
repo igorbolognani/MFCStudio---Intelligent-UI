@@ -2,8 +2,8 @@
   "url": "https://mfc-studio.igorbolognani768385.chatgpt.site",
   "publication_audit": "shared_corpus_and_access_boundary",
   "seed": {
-    "alreadyApplied": true,
-    "version": "mfc-corpus/0.2.0",
+    "alreadyApplied": false,
+    "version": "mfc-corpus/0.2.1",
     "report": {
       "properties_proposed": 110,
       "sources": 19,
@@ -42,12 +42,11 @@
     },
     {
       "id": "S18-supplement-pdf",
-      "sha256": "eb6f20967fbaa273af2c9758e90175767cd97d48ed7545cc412da90c9aa4c961",
-      "stored": true
+      "alreadyStored": true
     }
   ],
   "database": {
-    "version": "mfc-corpus/0.2.0",
+    "version": "mfc-corpus/0.2.1",
     "counts": {
       "stages": 11,
       "properties": 110,
@@ -89,7 +88,34 @@
         "present": true
       }
     ],
-    "content_sha256": "0fae773d265f9457c56601512d7aa7b282e88d3b44039a9293f5c586d12db845"
+    "embedded_assets": [
+      {
+        "id": "S08-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S09-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S17-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S18-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S19-html",
+        "present": true,
+        "sha256_matches": true
+      }
+    ],
+    "content_sha256": "dabadbca907fbf527355bd8ae74c804e5849a5dd2e818131fd3773fa29982a5d"
   },
   "service_cannot_impersonate_visitor": true,
   "development_QA_not_public": true,

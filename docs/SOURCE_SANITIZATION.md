@@ -9,3 +9,10 @@ O seeding 0.2.1 substitui os HTMLs comprimidos em R2 e atualiza apenas os metada
 A aquisição agora tem uma checagem que examina fontes, arquivos comprimidos e conteúdo base64 incorporado. O build recusa HTML com um padrão de chave Google. Quatro testes cobrem remoção de configuração, preservação do conteúdo científico e fórmulas, detecção dentro de gzip/base64 e ausência do padrão nos arquivos atuais. A CI executa essa checagem.
 
 A limpeza do histórico publicado do GitHub reconstrói os commits de implementação mantendo sua sequência e removendo os objetos contaminados dos ancestrais de main. Uma reescrita não certifica eliminação de caches por SHA, clones externos ou versões históricas guardadas pelo provedor de hospedagem; essas cópias não são controladas pela atualização da branch. As ferramentas de Sites disponíveis não oferecem exclusão de versões históricas.
+
+## Verificação realizada
+
+- Em um clone novo do GitHub, foram inspecionados os 225 blobs alcançáveis pelos quatro commits e por todas as referências publicadas naquele momento, incluindo gzip e conteúdo base64: nenhum padrão de chave Google encontrado. O resultado e o commit examinado estão em `github-clean-history-verification.json`.
+- A CI do commit de correção passou. Localmente passaram 30 testes Node, 19 testes científicos legados, oito verificações de integridade do corpus e quatro testes de sanitização, além de TypeScript e build de produção. Esses testes não constituem validação preditiva.
+- O deploy privado foi atualizado e o seed 0.2.1 foi aplicado na produção. Os cinco HTMLs comprimidos conferem por SHA-256; os cinco artigos em PDF e o suplemento continuam presentes. As contagens científicas permanecem iguais. Ver `hosted-verification.json`.
+- O conector GitHub disponível não gerencia alertas de secret scanning; a página administrativa não estava acessível pela sessão de navegador disponível. O estado administrativo do alerta não foi alterado nem confirmado. A remoção do histórico alcançável não demonstra que ninguém copiou a sequência anteriormente.
