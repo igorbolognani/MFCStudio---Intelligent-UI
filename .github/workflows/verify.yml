@@ -1,0 +1,25 @@
+name: Verify MFC Studio
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run check
+      - run: pnpm test
+      - run: python3 -m unittest discover -s science/legacy-v0.1 -p 'test_*.py'
+      - run: python3 -m unittest discover -s research/corpus-v0.2 -p 'test_*.py'
+      - run: pnpm run build

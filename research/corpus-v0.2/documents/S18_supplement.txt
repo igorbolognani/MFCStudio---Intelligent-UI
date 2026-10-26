@@ -1,0 +1,48 @@
+                                                  Supplementary Material
+
+       Impact of Air-Cathodes on Operational Stability of Single-
+        Chamber Microbial Fuel Cell Biosensors for Wastewater
+                             Monitoring
+
+
+
+
+Figure S1 a) MFC reactor u lized during the study; (b) schema c representa on of the structure of a SC MFC with an air cathode, and (c) open reactor displaying the
+diﬀerent components.
+Figure S2 Current produced during the bioﬁlm forma on me in a) CC-MFC and b) CP-MFC with external resistor of 1000 Ω. The arrows indicate the anolyte
+replacement, which contains 0.6 mg L-1 Na-acetate. Data are shown as mean of 4 replicates ± Standard Error of the Mean.
+
+
+
+
+Figure S3 Concentra on of dissolved oxygen in the electrolyte of MFC reactors equipped with CC- and CP cathode over me. Time 0 h corresponds to replacing of
+the anolyte inside the aerobic chamber. Over me, O2 diﬀused inside the reactor, and the concentra on of dissolved O2 in the anolyte increased and it was measured
+with a Fiber-Op c Oxygen Meter and a Pyro Oxygen Logger So ware (FireS ng O2, Aachen, Germany). Data are presented as mean of 2 replicates ± SD.
+Figure S4 Current produced during the calibra on of the biosensor with diﬀerent Na-acetate concentra ons in a) CC-MFC and b) CP-MFC with external resistor of
+1000 Ω. The anolyte replacement is marked by arrows, with each arrow’s color represen ng a diﬀerent Na-acetate concentra on in the media, as annotated in the
+graph. Each Na-acetate concentra on underwent three tests to evaluate the reproducibility of the biosensor. Data are shown as mean of 4 replicates ± Standard
+Error of the Mean.
+
+
+
+
+Figure S5 Correla on between the coulombic eﬃciency produced by the CC-MFC (blue) and CP-MFC (orange) and the acetate concentra on of the feeding solu on.
+Data are shown as mean of 4 replicates ± Standard Error of the Mean.
+Figure S6 Correla on between the response me of CC-MFC (blue) and CP-MFC (orange) biosensors and the acetate concentra on of the feeding solu on. Data are
+shown as mean of 4 replicates ± Standard Error of the Mean.
+
+
+
+
+Figure S7 Inner surface of (a) CP GDE cathode at the end of the experiment and of (b) CC GDE cathode at the end of the experiment.
+Figure S8 Principal Coordinate Analysis of four replicates of CC-MFCs, CP-MFCs, and the ini al inoculum. The analysis, performed with the R package "phyloseq," is
+supplemented with weighted UniFrac distance assessment. The taxa were ﬁltered above 0.025% .
+
+
+
+
+Figure S9 Alpha diversity analysis results using Shannon and Simpson indices for four replicates of CC-MFCs, CP-MFCs, and the ini al inoculum. The analysis,
+performed with the R package "phyloseq," is supplemented with weighted UniFrac distance assessment.
+Figure S10 Cyclic voltammograms of (a) CC-MFC and (b) CP-MFC at the end of the experiment with 0.6 g L-1 Na-acetate in minimal medium (TO condi ons, do ed
+line) and acetate-free minimal medium (NTO condi ons, con nuous line).
+

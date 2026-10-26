@@ -1,0 +1,1179 @@
+[
+  {
+    "order": 1,
+    "id": "anode_chamber",
+    "name_pt": "Câmara anódica",
+    "candidate_modules": [
+      "substrate_balance",
+      "ionic_path",
+      "oxygen_crossover"
+    ],
+    "rationale_sources": [
+      "S02",
+      "S05",
+      "S08"
+    ],
+    "properties": [
+      {
+        "id": "anode_chamber.liquid_volume",
+        "symbol": "V_a",
+        "name_pt": "Volume líquido",
+        "unit": "m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.headspace_volume",
+        "symbol": "V_g,a",
+        "name_pt": "Volume do headspace",
+        "unit": "m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.ionic_path_length",
+        "symbol": "L_a",
+        "name_pt": "Percurso iônico efetivo",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.ionic_cross_section",
+        "symbol": "A_ion,a",
+        "name_pt": "Área efetiva do percurso iônico",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.inflow",
+        "symbol": "Q_in",
+        "name_pt": "Vazão de entrada",
+        "unit": "m3/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.mixing_mass_transfer",
+        "symbol": "k_L,a",
+        "name_pt": "Coeficiente de transferência de massa",
+        "unit": "m/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.wall_oxygen_permeance",
+        "symbol": "K_wall,O2",
+        "name_pt": "Permeância efetiva ao oxigênio",
+        "unit": "mol/(m2 s Pa)",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_chamber.temperature",
+        "symbol": "T_a",
+        "name_pt": "Temperatura",
+        "unit": "K",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "id": "anolyte",
+    "name_pt": "Meio anódico",
+    "candidate_modules": [
+      "substrate_balance",
+      "acid_base",
+      "ionic_path",
+      "microbial_competition"
+    ],
+    "rationale_sources": [
+      "S04",
+      "S05",
+      "S06",
+      "S08"
+    ],
+    "properties": [
+      {
+        "id": "anolyte.substrate_concentration",
+        "symbol": "S",
+        "name_pt": "Concentração do substrato identificado",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.cod",
+        "symbol": "COD",
+        "name_pt": "Demanda química de oxigênio",
+        "unit": "kg O2/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.biodegradable_cod_fraction",
+        "symbol": "f_bCOD",
+        "name_pt": "Fração biodegradável da DQO",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.conductivity",
+        "symbol": "kappa_a",
+        "name_pt": "Condutividade iônica",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.ph",
+        "symbol": "pH_a",
+        "name_pt": "pH",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.alkalinity",
+        "symbol": "Alk_a",
+        "name_pt": "Alcalinidade em equivalentes",
+        "unit": "mol charge/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.buffer_total",
+        "symbol": "C_buffer,a",
+        "name_pt": "Concentração total do tampão",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.ionic_strength",
+        "symbol": "I_ion,a",
+        "name_pt": "Força iônica",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.dissolved_oxygen",
+        "symbol": "C_O2,a",
+        "name_pt": "Oxigênio dissolvido",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.nutrient_nitrogen",
+        "symbol": "C_N",
+        "name_pt": "Nitrogênio assimilável",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.inhibitor_concentration",
+        "symbol": "C_inhib",
+        "name_pt": "Concentração de inibidor identificado",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anolyte.viscosity",
+        "symbol": "mu_a",
+        "name_pt": "Viscosidade dinâmica",
+        "unit": "Pa s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "id": "anode",
+    "name_pt": "Ânodo",
+    "candidate_modules": [
+      "electronic_conduction",
+      "colonization",
+      "biofilm_transfer"
+    ],
+    "rationale_sources": [
+      "S01",
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "properties": [
+      {
+        "id": "anode.geometric_area",
+        "symbol": "A_a",
+        "name_pt": "Área geométrica molhada",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.projected_area",
+        "symbol": "A_proj,a",
+        "name_pt": "Área projetada declarada",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.electronic_conductivity",
+        "symbol": "sigma_a",
+        "name_pt": "Condutividade eletrônica efetiva direcional",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.conduction_length",
+        "symbol": "L_e,a",
+        "name_pt": "Comprimento do percurso eletrônico",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.conduction_cross_section",
+        "symbol": "A_e,a",
+        "name_pt": "Seção transversal da condução eletrônica",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.open_porosity",
+        "symbol": "epsilon_a",
+        "name_pt": "Porosidade aberta",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.pore_size",
+        "symbol": "d_pore,a",
+        "name_pt": "Distribuição/tamanho de poros",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.tortuosity",
+        "symbol": "tau_a",
+        "name_pt": "Tortuosidade e convenção",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.bet_specific_area",
+        "symbol": "a_BET,a",
+        "name_pt": "Área específica BET",
+        "unit": "m2/kg",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.wet_ecsa",
+        "symbol": "A_ECSA,a",
+        "name_pt": "Área eletroquímica em condição molhada",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.roughness",
+        "symbol": "Ra_a",
+        "name_pt": "Rugosidade média e método",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.contact_angle",
+        "symbol": "theta_a",
+        "name_pt": "Ângulo de contato e protocolo",
+        "unit": "degree",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.surface_functionality",
+        "symbol": "x_func,a",
+        "name_pt": "Fração atômica de grupo identificado",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode.capacitance",
+        "symbol": "C_dl,a",
+        "name_pt": "Capacitância da dupla camada",
+        "unit": "F",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "id": "anode_catalyst",
+    "name_pt": "Catalisador anódico",
+    "candidate_modules": [
+      "electronic_conduction",
+      "interfacial_kinetics",
+      "colonization"
+    ],
+    "rationale_sources": [
+      "S01",
+      "S04"
+    ],
+    "properties": [
+      {
+        "id": "anode_catalyst.loading",
+        "symbol": "m_cat,a",
+        "name_pt": "Carga de material depositado",
+        "unit": "kg/m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.thickness",
+        "symbol": "L_cat,a",
+        "name_pt": "Espessura",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.coverage",
+        "symbol": "f_cov,a",
+        "name_pt": "Cobertura superficial",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.binder_fraction",
+        "symbol": "f_bind,a",
+        "name_pt": "Fração mássica de ligante",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.electronic_conductivity",
+        "symbol": "sigma_cat,a",
+        "name_pt": "Condutividade eletrônica molhada",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.composition",
+        "symbol": "x_cat,a",
+        "name_pt": "Fração de componente identificado",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.roughness",
+        "symbol": "Ra_cat,a",
+        "name_pt": "Rugosidade",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.interfacial_rate",
+        "symbol": "k_ET,a",
+        "name_pt": "Coeficiente efetivo de transferência eletrônica",
+        "unit": "m/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "anode_catalyst.stability_rate",
+        "symbol": "k_deg,a",
+        "name_pt": "Taxa efetiva de degradação",
+        "unit": "1/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "id": "biofilm",
+    "name_pt": "Biofilme",
+    "candidate_modules": [
+      "anode_biokinetics",
+      "biofilm_transfer",
+      "microbial_competition"
+    ],
+    "rationale_sources": [
+      "S04",
+      "S05",
+      "S08"
+    ],
+    "properties": [
+      {
+        "id": "biofilm.thickness",
+        "symbol": "L_b",
+        "name_pt": "Espessura hidratada",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.active_biomass",
+        "symbol": "X_e",
+        "name_pt": "Densidade de biomassa eletroativa",
+        "unit": "kg dry biomass/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.electroactive_fraction",
+        "symbol": "f_e",
+        "name_pt": "Fração eletroativa da biomassa",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.max_uptake",
+        "symbol": "q_max",
+        "name_pt": "Consumo máximo específico do substrato",
+        "unit": "mol/(kg dry biomass s)",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.half_saturation",
+        "symbol": "K_S",
+        "name_pt": "Constante de meia saturação para substrato definido",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.biomass_yield",
+        "symbol": "Y_XS",
+        "name_pt": "Rendimento de biomassa no substrato definido",
+        "unit": "kg dry biomass/mol",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.decay",
+        "symbol": "k_d",
+        "name_pt": "Coeficiente de decaimento",
+        "unit": "1/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.conductivity",
+        "symbol": "sigma_b",
+        "name_pt": "Condutividade efetiva do biofilme",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.substrate_diffusivity",
+        "symbol": "D_eff,S",
+        "name_pt": "Difusividade efetiva do substrato",
+        "unit": "m2/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.oxygen_diffusivity",
+        "symbol": "D_eff,O2",
+        "name_pt": "Difusividade efetiva de oxigênio",
+        "unit": "m2/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.ph_optimum",
+        "symbol": "pH_opt",
+        "name_pt": "pH ótimo condicionado ao consórcio",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.activation_energy",
+        "symbol": "E_act,bio",
+        "name_pt": "Energia de ativação local da cinética",
+        "unit": "J/mol",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "biofilm.age",
+        "symbol": "t_b",
+        "name_pt": "Idade/estado de maturação",
+        "unit": "s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "id": "membrane",
+    "name_pt": "Membrana",
+    "candidate_modules": [
+      "membrane_transport",
+      "ionic_path",
+      "acid_base",
+      "oxygen_crossover"
+    ],
+    "rationale_sources": [
+      "S02",
+      "S06"
+    ],
+    "properties": [
+      {
+        "id": "membrane.wet_area",
+        "symbol": "A_m",
+        "name_pt": "Área de transporte molhada",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.wet_thickness",
+        "symbol": "L_m",
+        "name_pt": "Espessura hidratada",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.ionic_conductivity",
+        "symbol": "kappa_m",
+        "name_pt": "Condutividade iônica nas condições de uso",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.area_specific_resistance",
+        "symbol": "ASR_m",
+        "name_pt": "Resistência específica de área",
+        "unit": "Ohm m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.ion_exchange_capacity",
+        "symbol": "IEC_m",
+        "name_pt": "Capacidade de troca iônica e base seca",
+        "unit": "mol charge/kg",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.fixed_charge",
+        "symbol": "X_fix",
+        "name_pt": "Densidade volumétrica de carga fixa",
+        "unit": "mol charge/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.water_uptake",
+        "symbol": "w_m",
+        "name_pt": "Absorção mássica de água",
+        "unit": "kg/kg",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.swelling",
+        "symbol": "f_sw",
+        "name_pt": "Razão de expansão e direção",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.oxygen_permeance",
+        "symbol": "K_m,O2",
+        "name_pt": "Permeância ao oxigênio",
+        "unit": "mol/(m2 s Pa)",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.substrate_permeability",
+        "symbol": "P_m,S",
+        "name_pt": "Coeficiente de permeabilidade ao substrato",
+        "unit": "m2/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.transport_number",
+        "symbol": "t_i",
+        "name_pt": "Número de transporte da espécie identificada",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "membrane.degradation_rate",
+        "symbol": "k_deg,m",
+        "name_pt": "Taxa efetiva de perda de função",
+        "unit": "1/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "id": "external_circuit",
+    "name_pt": "Circuito e alimentação/coleta",
+    "candidate_modules": [
+      "electrical_closure",
+      "feeding_events",
+      "energy_collection"
+    ],
+    "rationale_sources": [
+      "S03",
+      "S05",
+      "S08",
+      "S11"
+    ],
+    "properties": [
+      {
+        "id": "external_circuit.load_resistance",
+        "symbol": "R_ext",
+        "name_pt": "Resistência da carga externa",
+        "unit": "Ohm",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.contact_resistance",
+        "symbol": "R_contact",
+        "name_pt": "Resistência de contato",
+        "unit": "Ohm",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.wire_resistance",
+        "symbol": "R_wire",
+        "name_pt": "Resistência dos condutores",
+        "unit": "Ohm",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.feed_flow",
+        "symbol": "Q_feed",
+        "name_pt": "Vazão de alimentação do meio",
+        "unit": "m3/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.feed_substrate",
+        "symbol": "S_in",
+        "name_pt": "Concentração do substrato de entrada",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.feed_interval",
+        "symbol": "dt_feed",
+        "name_pt": "Intervalo entre alimentações",
+        "unit": "s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.external_capacitance",
+        "symbol": "C_store",
+        "name_pt": "Capacitância de armazenamento",
+        "unit": "F",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.collector_efficiency",
+        "symbol": "eta_collect",
+        "name_pt": "Eficiência do coletor em função da carga",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "external_circuit.parasitic_power",
+        "symbol": "P_aux",
+        "name_pt": "Consumo de bombeamento/aeração/eletrônica",
+        "unit": "W",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "id": "cathode_chamber",
+    "name_pt": "Câmara catódica",
+    "candidate_modules": [
+      "gas_balance",
+      "oxygen_supply",
+      "thermal_conditions"
+    ],
+    "rationale_sources": [
+      "S02",
+      "S07"
+    ],
+    "properties": [
+      {
+        "id": "cathode_chamber.liquid_volume",
+        "symbol": "V_c",
+        "name_pt": "Volume líquido quando aplicável",
+        "unit": "m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.gas_volume",
+        "symbol": "V_g,c",
+        "name_pt": "Volume gasoso controlado",
+        "unit": "m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.gas_pressure",
+        "symbol": "p_g",
+        "name_pt": "Pressão total do gás",
+        "unit": "Pa",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.oxygen_fraction",
+        "symbol": "y_O2",
+        "name_pt": "Fração molar de oxigênio",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.gas_flow",
+        "symbol": "Q_g",
+        "name_pt": "Vazão volumétrica gasosa nas condições declaradas",
+        "unit": "m3/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.relative_humidity",
+        "symbol": "RH",
+        "name_pt": "Umidade relativa",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_chamber.temperature",
+        "symbol": "T_c",
+        "name_pt": "Temperatura",
+        "unit": "K",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "id": "catholyte",
+    "name_pt": "Meio catódico",
+    "candidate_modules": [
+      "oxygen_supply",
+      "acid_base",
+      "ionic_path"
+    ],
+    "rationale_sources": [
+      "S02",
+      "S03",
+      "S06"
+    ],
+    "properties": [
+      {
+        "id": "catholyte.dissolved_oxygen",
+        "symbol": "C_O2,c",
+        "name_pt": "Oxigênio dissolvido",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.conductivity",
+        "symbol": "kappa_c",
+        "name_pt": "Condutividade iônica",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.ph",
+        "symbol": "pH_c",
+        "name_pt": "pH",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.buffer_total",
+        "symbol": "C_buffer,c",
+        "name_pt": "Concentração total de tampão",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.alkalinity",
+        "symbol": "Alk_c",
+        "name_pt": "Alcalinidade em equivalentes",
+        "unit": "mol charge/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.oxygen_transfer",
+        "symbol": "kLa_c",
+        "name_pt": "Coeficiente volumétrico de transferência de O2",
+        "unit": "1/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.ionic_strength",
+        "symbol": "I_ion,c",
+        "name_pt": "Força iônica",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "catholyte.acceptor_concentration",
+        "symbol": "C_acc",
+        "name_pt": "Concentração de aceptor identificado",
+        "unit": "mol/m3",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "id": "cathode",
+    "name_pt": "Cátodo",
+    "candidate_modules": [
+      "electronic_conduction",
+      "oxygen_supply",
+      "gas_diffusion_water_balance"
+    ],
+    "rationale_sources": [
+      "S02",
+      "S03",
+      "S07"
+    ],
+    "properties": [
+      {
+        "id": "cathode.geometric_area",
+        "symbol": "A_c",
+        "name_pt": "Área geométrica",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.electronic_conductivity",
+        "symbol": "sigma_c",
+        "name_pt": "Condutividade eletrônica efetiva direcional",
+        "unit": "S/m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.conduction_length",
+        "symbol": "L_e,c",
+        "name_pt": "Percurso eletrônico",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.conduction_cross_section",
+        "symbol": "A_e,c",
+        "name_pt": "Seção transversal de condução eletrônica",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.gdl_thickness",
+        "symbol": "L_GDL",
+        "name_pt": "Espessura da camada de difusão gasosa",
+        "unit": "m",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.open_porosity",
+        "symbol": "epsilon_GDL",
+        "name_pt": "Porosidade aberta da camada de difusão",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.tortuosity",
+        "symbol": "tau_GDL",
+        "name_pt": "Tortuosidade e convenção",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.water_saturation",
+        "symbol": "s_w",
+        "name_pt": "Saturação líquida dos poros",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode.oxygen_transfer",
+        "symbol": "k_O2",
+        "name_pt": "Coeficiente efetivo de transporte de O2",
+        "unit": "m/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  },
+  {
+    "order": 11,
+    "id": "cathode_catalyst",
+    "name_pt": "Catalisador catódico",
+    "candidate_modules": [
+      "cathodic_reaction",
+      "interfacial_kinetics",
+      "ageing"
+    ],
+    "rationale_sources": [
+      "S07"
+    ],
+    "properties": [
+      {
+        "id": "cathode_catalyst.loading",
+        "symbol": "m_cat,c",
+        "name_pt": "Carga de catalisador por área",
+        "unit": "kg/m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.composition",
+        "symbol": "x_cat,c",
+        "name_pt": "Fração de componente identificado",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.wet_ecsa",
+        "symbol": "A_ECSA,c",
+        "name_pt": "Área eletroquímica molhada",
+        "unit": "m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.exchange_current_density",
+        "symbol": "j0_c",
+        "name_pt": "Densidade de corrente de troca e base de área",
+        "unit": "A/m2",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.transfer_coefficient",
+        "symbol": "alpha_c",
+        "name_pt": "Coeficiente de transferência",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.electron_number",
+        "symbol": "n_ORR",
+        "name_pt": "Número efetivo de elétrons da via ORR",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.peroxide_fraction",
+        "symbol": "f_H2O2",
+        "name_pt": "Fração de peróxido medida e convenção",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.binder_fraction",
+        "symbol": "f_bind,c",
+        "name_pt": "Fração mássica de ligante",
+        "unit": "1",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      },
+      {
+        "id": "cathode_catalyst.decay_rate",
+        "symbol": "k_deg,c",
+        "name_pt": "Taxa efetiva de desativação",
+        "unit": "1/s",
+        "status": "planned_not_connected_to_predictor",
+        "missing_value": null,
+        "requires_method_and_conditions": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+'use client';
+import { useState } from 'react';
+export function ScientificChart({points,kind,operating}:{points:any[];kind:string;operating?:any}){
+ const [selected,setSelected]=useState<number|null>(null);
+ const time=kind==='batch',power=kind==='power',W=850,H=355,L=80,R=25,T=40,B=65;
+ const rows=points.map(p=>({x:time?p.time_s/3600:p.j_anode_A_m2,y:time?p.cod_g_m3:power?p.power_density_cathode_W_m2*1000:p.V_V}));
+ const maxX=Math.max(1e-9,...rows.map(p=>p.x))*1.04,maxY=Math.max(1e-9,...rows.map(p=>p.y))*1.1;
+ const X=(x:number)=>L+x/maxX*(W-L-R),Y=(y:number)=>H-B-y/maxY*(H-T-B);
+ const active=selected===null?null:rows[selected],nf=(n:number)=>n===0?'0':Math.abs(n)>=100?n.toFixed(0):Math.abs(n)>=1?n.toFixed(2):n.toPrecision(3);
+ return <div className="chart-box"><div className="chart-title"><h3>{time?'Batelada · substrato ao longo do tempo':power?'Curva de potência':'Curva de polarização'}</h3><p>{time?'Trajetória do modelo · sem validação temporal':'Quase estática · DQO inicial constante'}</p></div><div className="chart-scroll"><svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={time?'DQO versus tempo':power?'Potência por área catódica versus corrente por área anódica':'Tensão versus densidade de corrente'} onPointerMove={e=>{const rect=e.currentTarget.getBoundingClientRect(),x=(e.clientX-rect.left)/rect.width*W;const target=(x-L)/(W-L-R)*maxX;let best=0;for(let i=1;i<rows.length;i++)if(Math.abs(rows[i].x-target)<Math.abs(rows[best].x-target))best=i;setSelected(best);}} onPointerLeave={()=>setSelected(null)}>
+ <line x1="82" y1="22" x2="105" y2="22" stroke="#4d845d" strokeWidth="3"/><text x="113" y="26" fill="#56725d" fontSize="11">Modelo exploratório</text>{!time&&<><circle cx="330" cy="22" r="5" fill="#bf7e35"/><text x="343" y="26" fill="#56725d" fontSize="11">Ponto operacional</text></>}
+ {Array.from({length:6},(_,i)=><g key={i}><line x1={L} y1={Y(maxY*i/5)} x2={W-R} y2={Y(maxY*i/5)} stroke="#e4eade"/><text x={L-12} y={Y(maxY*i/5)+4} textAnchor="end" fontSize="11" fill="#72846a">{nf(maxY*i/5)}</text><line x1={X(maxX*i/5)} y1={T} x2={X(maxX*i/5)} y2={H-B} stroke="#eff2eb"/><text x={X(maxX*i/5)} y={H-B+22} textAnchor="middle" fontSize="11" fill="#72846a">{nf(maxX*i/5)}</text></g>)}
+ <path d={`M${L} ${T}V${H-B}H${W-R}`} fill="none" stroke="#9baa91"/><path d={rows.map((p,i)=>`${i?'L':'M'}${X(p.x)},${Y(p.y)}`).join(' ')} fill="none" stroke="#4d845d" strokeWidth="3"/>
+ {operating&&!time&&<circle cx={X(operating.j_anode_A_m2)} cy={Y(power?operating.power_density_cathode_W_m2*1000:operating.V_V)} r="6" fill="#bf7e35" stroke="white" strokeWidth="2"/>}
+ {active&&<><line x1={X(active.x)} x2={X(active.x)} y1={T} y2={H-B} stroke="#b5c1a7" strokeDasharray="4 4"/><circle cx={X(active.x)} cy={Y(active.y)} r="5" fill="#294d39"/></>}
+ <text x={(L+W-R)/2} y={H-15} textAnchor="middle" fontSize="12" fill="#51674c">{time?'Tempo (h)':'Densidade de corrente · área anódica (A/m²)'}</text><text transform={`translate(20 ${(T+H-B)/2}) rotate(-90)`} textAnchor="middle" fontSize="12" fill="#51674c">{time?'DQO (mg O₂/L)':power?'Potência / área catódica (mW/m²)':'Tensão terminal (V)'}</text>
+ </svg></div><div className="chart-readout" aria-live="polite">{active?`${time?'t':'jₐ'} = ${nf(active.x)} ${time?'h':'A/m²'} · ${time?'DQO':power?'P/A𝚌':'V'} = ${nf(active.y)} ${time?'mg O₂/L':power?'mW/m²':'V'}`:'Passe sobre a curva ou selecione um ponto.'}<label style={{display:"flex",gap:10,alignItems:"center",marginTop:7,fontSize:10}}>Ponto da curva<input style={{flex:1,accentColor:"#4d845d"}} type="range" min="0" max={Math.max(0,rows.length-1)} value={selected||0} onChange={e=>setSelected(Number(e.target.value))}/></label></div></div>;
+}

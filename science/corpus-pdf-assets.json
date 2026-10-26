@@ -1,0 +1,62 @@
+[
+  {
+    "id": "S08-pdf",
+    "source_id": "S08",
+    "path": "research/corpus-v0.2/documents/S08.pdf",
+    "sha256": "e0aa62c9eadc7338eb855fbec78fd38e1d23d501321ecc5e975e946563547a05",
+    "size_bytes": 2916648,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S08-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S09-pdf",
+    "source_id": "S09",
+    "path": "research/corpus-v0.2/documents/S09.pdf",
+    "sha256": "65f5661498dd60542ee5baa090e7b835e2a7ebe4eb8121a418b0aa3212dfd059",
+    "size_bytes": 4006806,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S09-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S17-pdf",
+    "source_id": "S17",
+    "path": "research/corpus-v0.2/documents/S17.pdf",
+    "sha256": "3a388b211fca10cbd914a99b647be09688dd1b3fa4e03eee3bcfece5610563e3",
+    "size_bytes": 6138893,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S17-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S18-pdf",
+    "source_id": "S18",
+    "path": "research/corpus-v0.2/documents/S18.pdf",
+    "sha256": "35eba46dc497f919972931ea2c4b9872ab83bbcdad7ef4a3fa9110803de6189e",
+    "size_bytes": 5320438,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S18-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S19-pdf",
+    "source_id": "S19",
+    "path": "research/corpus-v0.2/documents/S19.pdf",
+    "sha256": "a09e9b66766b18729053b47202de1ccb1b5a070b6c0828d1d262fc13f2ea9c24",
+    "size_bytes": 2564318,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S19-pdf.pdf",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "S18-supplement-pdf",
+    "source_id": "S18",
+    "path": "research/corpus-v0.2/documents/S18_supplement/energies-3078330-supplementary.pdf",
+    "sha256": "eb6f20967fbaa273af2c9758e90175767cd97d48ed7545cc412da90c9aa4c961",
+    "size_bytes": 2539894,
+    "license": "CC-BY-4.0",
+    "object_key": "corpus/v02/S18-supplement-pdf.pdf",
+    "content_type": "application/pdf"
+  }
+]

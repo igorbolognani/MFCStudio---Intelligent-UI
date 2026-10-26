@@ -1,0 +1,38 @@
+{
+  "S09_code": {
+    "repository": "https://github.com/jlab-sensing/MFC_Modeling",
+    "read_file": "README.md",
+    "read_via": "GitHub connector",
+    "sha": "e92f8f757f77ad45eb6e61b01d1b27fe6906dc76",
+    "dataset_location": "https://huggingface.co/datasets/adunlop621/Soil_MFC/tree/main",
+    "files": [
+      {
+        "path": "stanfordMFCDataset.zip",
+        "size_bytes": 1467825518
+      },
+      {
+        "path": "ucscMFCDataset.zip",
+        "size_bytes": 4706026
+      },
+      {
+        "path": "trained_models.zip",
+        "size_bytes": 65684778
+      }
+    ],
+    "files_downloaded": false,
+    "dataset_license_verified": false,
+    "reason_not_redistributed": "No dataset README/license exposed in listing; article CC BY does not automatically license separate data repository."
+  },
+  "S10": {
+    "doi": "10.17632/gydpxvj8gp.1",
+    "license": "CC-BY-4.0",
+    "license_verified_on_primary_landing": true,
+    "raw_files_downloaded": false,
+    "blocker": "HTTP403 from landing bytes and 3 dataset endpoint retrieval attempts"
+  },
+  "EuropePMC": {
+    "S01": "No DOI result",
+    "S13": "No DOI result",
+    "S03": "PMID30810037; noPMC/nofulltextPDF"
+  }
+}

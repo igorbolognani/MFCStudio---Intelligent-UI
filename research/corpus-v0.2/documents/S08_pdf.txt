@@ -1,0 +1,1485 @@
+processes
+Article
+
+An Integrated Mathematical Model of Microbial Fuel
+Cell Processes: Bioelectrochemical and
+Microbiologic Aspects†
+Andrea G. Capodaglio 1, * ID , Daniele Cecconet 1 ID and Daniele Molognoni 1,2
+1
+2
+
+*
+†
+
+DICAr, University of Pavia, 27100 Pavia, Italy; daniele.cecconet@unipv.it (D.C.);
+dmolognoni@leitat.org (D.M.)
+LEITAT Technological Centre, 08225 Terrassa, Barcelona, Spain
+Correspondence: capo@unipv.it; Tel.: +39-0382-985-591
+This paper is an extended version of our paper published in the 29th European Conference on Modelling
+and Simulation as titled “Formulation and Preliminary Application of an Integrated Model of Microbial Fuel
+Cell Processes”.
+
+Received: 19 September 2017; Accepted: 7 November 2017; Published: 20 November 2017
+
+Abstract: Microbial Fuel Cells (MFCs) represent a still relatively new technology for liquid organic
+waste treatment and simultaneous recovery of energy and resources. Although the technology is
+quite appealing due its potential benefits, its practical application is still hampered by several
+drawbacks, such as systems instability (especially when attempting to scale-up reactors from
+laboratory prototypes), internally competing microbial reactions, and limited power generation.
+This paper is an attempt to address some of the issues related to MFC application in wastewater
+treatment with a simulation model. Reactor configuration, operational schemes, electrochemical
+and microbiological characterization, optimization methods and modelling strategies were reviewed
+and have been included in a mathematical simulation model written with a multidisciplinary,
+multi-perspective approach, considering the possibility of feeding real substrates to an MFC system
+while dealing with a complex microbiological population. The conclusions drawn herein can be of
+practical interest for all MFC researchers dealing with domestic or industrial wastewater treatment.
+Keywords: microbial fuel cells; biolectrochemical systems; mathematical model; heterotrophic
+bacteria; methanogenic archaea; exoelectrogenic bacteria; complex substrate
+
+1. Introduction
+Depletion of fossil fuel reserves and global warming concerns make it necessary to develop
+alternative, climate-neutral technologies for energy production; not just employing traditional
+renewable sources (solar, wind, etc.), but also tapping into non-conventional ones, such as wastes of
+different origin, to achieve established targets [1,2]. Renewable bioenergy from wastes, presenting a
+neutral or even negative carbon footprint, is also viewed as one of the ways to alleviate the climate
+change crisis [3–5]. In this context, a specific research track, concerning Microbial Electrochemical
+Technologies (METs), has been pursued by scientists for the last couple of decades [6–8]. METs in their
+generality represent a technology concerned with the recovery of energy and resources from waste
+streams [9], and comprise various sub-systems, targeted to different objectives, including microbial fuel
+cells (MFCs). These are a class of bioelectrochemical systems that directly transform the chemical energy
+contained in bioconvertible organic matter substrates into electrical energy, exploiting the biocatalytic
+effect of specific electroactive bacteria (EAB), acting on one or both reactions of substrate oxidation
+and oxidant reduction, composing a classical redox reaction [7,8]. When wastewater containing
+organic matter is used as anode fuel, a MFC effectively removes the latter, while recovering energy,
+
+Processes 2017, 5, 73; doi:10.3390/pr5040073
+
+www.mdpi.com/journal/processes
+
+Processes 2017, 5, 73
+
+2 of 14
+
+leading to the future possibility of designing energy-producing wastewater treatment plants (WWTPs),
+or Water and Resource Recovery Facilities (WRRFs), as the new terminology is starting to denote
+such installations. It has, in fact, been estimated that urban wastewater contains more than 9 times
+the amount of energy currently consumed to treat it with state-of-the-art processing technology [10],
+while the best current treatment technologies allow the recovery of 1/4th to 1/3rd, at most, of that
+energy. MFCs could be one of the new technologies to increase that fraction, with applications for
+almost all types of different liquid wastes [11–14].
+Bioelectrochemical systems may also have other useful environmental applications: if such
+processes were applied in their “inverse” configuration, usually referred to as Microbial Electrolytic
+Cells (MECs), with which they share the general design and basic processes, they could achieve,
+for example, autotrophic denitrification of contaminated groundwater by externally supplying an
+adequate voltage to the system [15,16]. Additionally, in this case, these processes turn out to be
+particularly efficient from an energetic point of view, with lower specific energy consumption that
+other currently used denitrification systems [17,18].
+Practical full-scale MFC application in WRRF design has been long delayed by the instability of
+full-scale engineered systems, low achieved power densities and output voltages practically achievable
+so far. Several practical issues remain to be solved before MFC systems could be deemed ready for
+full-scale applications; among them, reduction of the systems’ internal resistance, which would
+allow higher substrate-electricity conversion rates, cathode technology improvements, efficient,
+scalable, design, and reduction of electrochemical losses. Undesirable anodic side-reactions, such as
+methanogenesis, aerobic or anoxic respiration by competitive microorganisms, represent some of the
+drawbacks of the process, and also need structural address, even though they can be partly limited
+by appropriate operational strategies [19–21]. Deeper process understanding and its mathematical
+reproducibility can also play an important role in the quest for improvement of this technology.
+Since the mid-90s, researchers have attempted to simulate the bioelectrochemical activity of MFCs,
+as summarized in Table 1. This table does not consider applications of soft simulation methods such
+as genetic programming (GP), artificial intelligence (AI), fuzzy logic and neural networks, which are
+sometimes used as an alternative for deterministic mathematical modeling of complex physical
+non-linear systems, such as a MFCs [22] or conventional-technology WWTPs [23,24].
+Zhang and Halme [25] proposed a simple model based on a single anodic population and focused
+on the generated power in relationship to substrate concentration and cathodic-chamber mediator.
+Later, models by Kato Marcus et al. [26] were developed, neglecting the contribution of the mediator,
+but considering a complex bacterial population composed by exoelectrogen and non-exoelectrogen
+species. In the same year, Picioreanu et al. [27] proposed a 3-dimensional model considering both
+adhese and suspended microorganisms. Zheng et al. [28] developed a dual-chamber MFC model
+that simulated transient conditions, including cathodic compartment reactions, while Pinto et al. [29]
+published a 2-population, anodic dynamic model representing the competition between exoelectrogens
+and methanogens. Later, Oliveira et al. [30] proposed a steady-state MFC model, focusing on the
+effect of some parameters such as: cell temperature, substrate concentration, biofilm thickness and
+current density.
+In order to develop an enhanced model capable of describing complex bacterial communities
+such as those present in a MFC, as well as the complexity of feed substrates, the Pinto model [26] was
+integrated with the ASM2d model [31]. The resulting model, an improvement of a previous work [32],
+is herein discussed, together with its application to longer series of MFC operational data. Results are
+discussed, confirming the good performance of the new model.
+
+Processes 2017, 5, 73
+
+3 of 14
+
+Table 1. Summary of published MFC models.
+Model
+
+Compartment
+
+Mediator
+
+Species
+
+Time Resolution
+
+Space Resolution
+
+Zhang e Halme,1995 [25]
+Kato Marcus et al., 2007 [26]
+Oliveira et al., 2013 [30]
+Picioreanu et al., 2007 [27]
+Zheng et al., 2010 [28]
+Pinto et al., 2010 [29]
+Capodaglio et al., 2015 [32]
+
+Anodic
+Anodic
+Anodic/cathodic
+Anodic
+Anodic/cathodic
+Anodic
+Anodic
+
+Yes
+No
+No
+Yes
+No
+Yes
+Yes
+
+Single
+Multiple
+Single
+Multiple
+Single
+multiple
+Multiple
+
+Dynamic
+Dynamic
+Steady st.
+Dynamic
+Dynamic/Steady st.
+Dynamic
+Dynamic
+
+1D
+1D
+1D
+3D
+1D
+1D
+1D
+
+2. MFC Integrated Model
+Fuel cells are devices performing a combustion reaction without resorting to thermal processes,
+thus achieving direct conversion of chemical energy (of a generic “fuel”, or “substrate”) into electrical
+energy, through the mediation of exoelectrogenic bacteria that act as catalysers of the half-reaction of
+substrate oxidation [8,33]. The first evidence of this phenomenon was discovered in 1911 by Potter [33],
+but very few practical advances were achieved in the field until the first patent of mediator-less MFCs,
+dated 1999 [34].
+The process’ working principle relies on splitting the semireactions of oxidation and reduction
+that make up a typical redox reaction, allowing them to occur in two different compartments: in the
+anodic compartment, exoelectrogen bacteria catalyse substrate oxidation and transfer the electrons,
+released from cellular respiratory chain, to an electrode (i.e., anode). Electrons flow through an external
+electric circuit towards the cathodic compartment, where they reduce the terminal electron acceptor
+(TEA, usually oxygen) [35]. For each electron released at the anode, an H+ ion must reach the cathode
+through the electrolytic in the cell, in order to internally close the circuit and reestablish neutrality.
+Electrons and protons thus react with oxygen at the cathode, generating H2 O [36].
+The maximum current that can be produced by a MFC depends on the actual rate of substrate
+biodegradation, whereas maximum theoretical cell voltage (also called electromotive force, or emf )
+depends on Gibbs’ free energy of the overall reaction, and can be calculated as the difference between
+the standard reduction potentials of the cathodic oxidant (oxygen) and the chosen anodic substrate,
+as described by Heijnen [37]. Since the cell’s emf is a thermodynamic value that does not take into
+account any internal losses [36], measured current experimental values are always substantially lower
+than theoretical ones.
+2.1. Model Assumptions
+The model herein presented is based on the work by Pinto et al. [29], and the authors’ previous
+work [32]; it is, as shown in Table 1, a dynamic, 1-dimensional (completely mixed), multi-species model.
+Recently, model results have also been tested against a full, separate MFC hydrodynamic study,
+showing good correlation with experimental observations [38].
+The model considers the presence of two distinct microbial populations in the anodic chamber:
+exoelectrogen (a.k.a. anodophilic bacteria) and methanogenic microorganisms co-existing in competition
+for available substrate, as observed in previous studies [39]. It is known that methanogens compete
+with anodophiles for substrate, thus reducing power generation and overall coulombic efficiency (CE)
+of the cell. The presence of an endogenous mediator, either in reduced or oxidized form, is responsible
+for the extracellular electronic transfer by exoelectrogenic bacteria. It is assumed that these adhere to
+the anode as a biofilm, while methanogens can either be suspended or adhese. The model also assumed
+that dynamics at the cathode’s end are non-limiting, and thus not considered for simulation purposes
+(Figure 1).
+This model therefore describes:
+
+Processes 2017, 5, 73
+
+4 of 14
+
+-substrate (Sa ) oxidation to CO2 by exoelectrogen bacteria (Xa ), with reduction of the mediator:
+
+( Mox → Mred )
+
+(1)
+
+where Mox and Mred represent the oxidized and reduced mediator, respectively.
+-mediator reoxydation, with release of free electrons and protons:
+Mred → Mox + e− + H +
+
+(2)
+
+-methane and carbon dioxide production by methanogens:
+Sa → CH4 + CO2
+Processes 2017, 5, 73
+
+(3)
+4 of 13
+
+where Sa is the substrate, expressed by mass balance Equations (4)–(6):
+
+where Sa is the substrate, expressed by mass balance Equations (4)–(6):
+
+dSa
+= −=q a−x a − q−m xm + +D (S( a0 −−Sa ))
+dt
+
+(4) (4)
+
+dx a
+= µ=a x a − −
+Kd,a x, a −−α a Dx a
+dt
+
+(5) (5)
+
+dxm
+= µ=m xm − −
+Kd,m,xm −−αm Dxm
+dt
+
+(6) (6)
+
+) [t − 1]; qa, qm substrate conversion rates for exoelectrogens and methanogens;
+where
+D = 1/(HRT)anode
+where D
+= 1/(HRT
+anode [t − 1]; qa , qm substrate conversion rates for exoelectrogens and methanogens;
+μa, μm Monod-type growth rates, and Kda, αa bacterial endogenous decay and washout coefficients,
+µa , µm Monod-type growth rates, and Kda , αa bacterial endogenous decay and washout
+respectively.
+coefficients, respectively.
+
+Figure 1. The initial conceptual model.
+Figure 1. The initial conceptual model.
+
+Monod kinetics are assumed for bacteria; specifically, exoelectrogens’ growth is limited by both
+substrate (acetate) and oxidized mediator concentrations, while methanogens’ only by acetate’s. The
+Pinto model assumes that biomass growth occurs in two phases: growth, during which there is no
+microorganism dispersion/washout (αa = 0); and steady state, where a dynamic equilibrium between
+growth, endogenous decay and washout is established. An internal “switch” in the model converts
+between operating phases, depending on process conditions. Total mediator concentration (in
+
+Processes 2017, 5, 73
+
+5 of 14
+
+Monod kinetics are assumed for bacteria; specifically, exoelectrogens’ growth is limited by both
+substrate (acetate) and oxidized mediator concentrations, while methanogens’ only by acetate’s.
+The Pinto model assumes that biomass growth occurs in two phases: growth, during which there is no
+microorganism dispersion/washout (αa = 0); and steady state, where a dynamic equilibrium between
+growth, endogenous decay and washout is established. An internal “switch” in the model converts
+between operating phases, depending on process conditions. Total mediator concentration (in reduced
+and oxidized forms) is assumed constant in the system.
+Since one of the most important aspects characterizing MFC performance is the electric current
+produced, this is calculated from the cell’s tension through Ohm’s First Law:
+Processes 2017, 5, 73
+
+Ecell = IMFC Rext
+
+5 of(7)
+13
+
+where EEcell
+cell is
+Rext
+ext the
+and IIMFC
+MFC the
+where
+is the
+the cell’s
+cell’s tension,
+tension, R
+the external
+external resistance
+resistance and
+thecurrent
+currentflowing
+flowing between
+between anode
+anode
+and
+cathode
+of
+the
+MFC.
+and cathode of the MFC.
+The electromotive
+electromotive force
+force (Equation
+(Equation (8))
+(8)) is
+is considered
+equal to
+to the
+of the
+the cell
+cell
+The
+considered equal
+the Open
+Open Circuit
+Circuit Voltage
+Voltage of
+(EOCV
+OCV),),neglecting
+(E
+neglectingactivation
+activationlosses:
+losses:
+(
+−
+)
+
+= (EOCV − ηconc )
+(8)
+Mred
++
+)
++
+IMFC = (
+(8)
+(Rext + Rint ) ε + Mred
+is the overpotential linked with concentrations, Rint is the internal resistance of the cell.
+where
+where
+η
+is
+the overpotential
+linked
+with concentrations,
+Rint is the
+internal resistance
+of theuptake
+cell.
+conc
+While competing
+methane
+production
+is calculated
+proportionally
+to acetate
+While
+competing
+methane
+production
+through
+a specific
+yield
+coefficient,
+YCH4: Qa is calculated proportionally to acetate uptake through a
+specific yield coefficient, YCH4 :
+(9)
+=Y q X V
+Qa =
+(9)
+CH4 m m
+2.2.
+Model Modification
+Modification
+2.2. Model
+While
+While the
+the Pinto
+Pinto model
+model represents
+represents the
+the ongoing
+ongoing competition
+competition between
+between exoelectrogens
+exoelectrogens and
+and
+methanogens
+in
+the
+anodic
+chamber,
+at
+the
+same
+time
+it
+completely
+neglects
+species
+methanogens in the anodic chamber, at the same time it completely neglects otherother
+species
+(e.g.,
+(e.g.,
+heterotrophs)
+that could
+be present
+in the
+cell, (Figure
+as well 2).
+(Figure
+2). Furthermore,
+model
+heterotrophs)
+that could
+be present
+in the cell,
+as well
+Furthermore,
+the modelthe
+considers
+considers
+acetate
+as
+the
+only
+substrate
+present,
+while,
+in
+reality,
+the
+composition
+of
+the
+incoming
+acetate as the only substrate present, while, in reality, the composition of the incoming substrate will
+substrate
+will more
+have acomplex
+much more
+complex composition
+3).compensate
+In order to compensate
+formentioned
+the above
+have a much
+composition
+(Figure 3). In(Figure
+order to
+for the above
+mentioned
+shortcomings,
+it wasdecided
+thereforetodecided
+modify
+thebymodel,
+by integrating
+in its structure
+shortcomings,
+it was therefore
+modifyto
+the
+model,
+integrating
+in its structure
+specific
+specific
+elements
+of
+the
+well-known
+ASM2d
+model
+[32].
+elements of the well-known ASM2d model [32].
+
+Figure 2.
+2. Schematics
+interaction between
+between exoelectrogems
+exoelectrogems (X
+(Xaa),
+), methanogens
+methanogens (X
+(Xm
+m)) and
+and
+Figure
+Schematics of
+of the
+the interaction
+heterotrophs (X
+(Xhh))populations
+populationsin in
+a MFC
+as represented
+the modified
+integrated
+model.
+The
+heterotrophs
+a MFC
+as represented
+in the in
+modified
+integrated
+model. The
+reactions
+reactionsthe
+outside
+the
+shaded
+areas (unconnected)
+are not represented
+in the model.
+outside
+shaded
+areas
+(unconnected)
+are not represented
+in the model.
+
+The latter was designed to simulate the processes normally occurring in traditional activated sludge
+The latter was designed to simulate the processes normally occurring in traditional activated
+facilities, and considers basic substrate measured as COD (Chemical Oxygen Demand), although in
+sludge facilities, and considers basic substrate measured as COD (Chemical Oxygen Demand),
+diverse fractions, such as particulate (X) and soluble (S), as follows: Sf soluble substrate that can be
+fermented to Sa (acetate); inert soluble and particulate substrate, Si and Xi; slowly degradable
+particulate, Xs; soluble nitrogenous, SNO3, and ammonia, SNH4 matter. Ammonia and nitrogenous matter,
+as well as the influence of alkalinity and oxygen inhibition were, for the moment, neglected.
+
+Processes 2017, 5, 73
+
+6 of 14
+
+although in diverse fractions, such as particulate (X) and soluble (S), as follows: Sf soluble substrate that
+can be fermented to Sa (acetate); inert soluble and particulate substrate, Si and Xi ; slowly degradable
+particulate, Xs ; soluble nitrogenous, SNO3 , and ammonia, SNH4 matter. Ammonia and nitrogenous
+Processes as
+2017,
+5, 73as the influence of alkalinity and oxygen inhibition were, for the moment, neglected.
+6 of 13
+matter,
+well
+
+Figure 3.
+3. Results
+Results of
+of experimental
+experimental wastewater
+wastewater characterization
+characterizationover
+overtime.
+time.
+Figure
+
+Although,inintheory,
+theory,
+heterotrophic,
+autothrophic
+(nitrifiers)
+and phosphate-accumulating
+Although,
+heterotrophic,
+autothrophic
+(nitrifiers)
+and phosphate-accumulating
+bacteria
+bacteria
+can
+all
+be
+present
+in
+wastewater
+treatment
+plants,
+the
+sole
+presence
+of
+heterotrophs
+was
+can all be present in wastewater treatment plants, the sole presence of heterotrophs was herein
+herein
+considered
+since,
+due
+to
+their
+characteristics,
+they
+are
+more
+likely
+to
+be
+actually
+present
+in a
+considered since, due to their characteristics, they are more likely to be actually present in a MFC’s
+MFC’s
+anodic
+chamber.
+The
+model
+as
+is,
+is
+therefore
+not
+applicable
+to
+MECs,
+but
+efforts
+are
+ongoing
+anodic chamber. The model as is, is therefore not applicable to MECs, but efforts are ongoing to
+to study
+future
+changes
+appropriate
+also representing
+type of configuration
+and
+related
+study
+future
+changes
+appropriate
+to alsotorepresenting
+this typethis
+of configuration
+and related
+processes.
+processes.
+All
+degradation
+processes
+in
+ASM2d
+are
+represented
+by
+Monod-type
+kinetics:
+All degradation processes in ASM2d are represented by Monod-type kinetics:
+1
++
+(10)
+dSa = −1
+= − ρ7 X H + ρ8 X H
+(10)
+dt
+YH
+(11)
+=−
+−
++ (1 − )
+dXS
+= −ρ2 X H − ρ3 X H + (1 − f XI )ρ9
+(11)
+dt
+(12)
+=
+( + )
+dS NH4
+= υ NH4 (ρ2 + ρ3 ) X H
+(12)
+dt
+(13)
+= ( + )
+dS I
+= f SI (ρ2 + ρ3 ) X H
+(13)
+dt
+(14)
+=
++
+−
+dX H
+= ρ6 X H + ρ7 X H − ρ9
+(14)
+dt
+1
+= (1 − )( + ) −
+−
+(15)
+dS f
+1
+= (1 − f SI )(ρ2 + ρ3 ) X H −
+ρ6 X H − ρ8 X H
+(15)
+dt
+YH
+(16)
+=
+dX I
+= f XI ρ9
+(16)
+dt 1 −
+=−
+( + )
+(17)
+dS NO3
+12.86
+− YH
+=−
+(17)
+( ρ6 + ρ7 ) X H
+dt
+12.86
+− YH
+=
+( + )
+(18)
+dS N2
+12.86
+− YH
+=
+(18)
+( ρ6 + ρ7 ) X H
+dt
+2.86 YH
+are described in Table 2.
+where the i coefficients contained in Equations (10)–(18)
+where the ρi coefficients contained in Equations (10)–(18) are described in Table 2.
+Table 2. Definition of the equations’ coefficients.
+Coefficient
+
+Descriptive Equation
++
+
+,
+
++
+
+,
+
++
+
++
+
+,
+
++
+
+Processes 2017, 5, 73
+
+7 of 14
+
+Table 2. Definition of the equations’ coefficients.
+Coefficient
+
+Descriptive Equation
+Xs
+XH
+
+ρ1
+
+O2
+Kh KO2S+
+SO2
+
+ρ2
+
+S NO3
+Kh η NO3,i KO2K+O2SO2 K NO3
++S NO3 K
+
+ρ3
+
+K NO3
+Kh η f e KO2K+O2SO2 K NO3
++S NO3
+
+Kx,s + XXs
+
+H
+Xs
+XH
+
+XS
+X,S + X
+H
+Xs
+XH
+
+X
+
+KX,S + X S
+
+H
+
+Table 2. Cont.
+Coefficient
+
+Descriptive Equation
+
+ρ4
+
+Sf
+Sf
+Salk
+S NH4
+O2
+µh KO2S+
+SO2 K f +S f S f +Sa K NH4 +S NH4 Kalk +Salk
+
+ρ5
+
+Salk
+S NH4
+Sa
+Sa
+O2
+µh KO2S+
+SO2 Ka +Sa S f +Sa K NH4 +S NH4 Kalk +Salk
+
+ρ6
+
+f
+f
+Salk
+S NO3
+S NH4
+µh η NO3 KO2K+O2SO2 K NO3
++S NO3 K f +S f S f +Sa K NH4 +S NH4 Kalk +Salk
+
+ρ7
+
+Salk
+S NO3
+S NH4
+Sa
+Sa
+µh η NO3 KO2K+O2SO2 K NO3
++S NO3 Ka +Sa S f +Sa K NH4 +S NH4 Kalk +Salk
+
+ρ8
+
+f
+Salk
+K NO3
+Sa
+q f e KO2K+O2SO2 K NO3
++S NO3 K f +S f S f +Sa Kalk +Salk
+
+ρ9
+
+bh X H
+
+S
+
+S
+
+S
+
+Integrating appropriately the above equations yields:
+-a combined equation (from Equations (4)–(10)) describing Sa .
+dSa
+1
+= −q a x a − qm xm + D (Sa0 − Sa ) −
+ρ7 X H + ρ8 X H
+dt
+YH
+
+(19)
+
+-an equation in Sf , including the influent term for all COD components (Sa , Si , Sf , Xi , Xs ):
+
+
+dS f
+1
+= (1 − f SI )(ρ2 + ρ3 ) X H −
+ρ6 X H − ρ8 X H + D S f 0 − S f
+dt
+YH
+
+(20)
+
+-an equation representing the lysis component for all microorganisms in the Xs and Xi mass
+balances, with addition of the washout coefficient for heterotrophs:
+dX H
+= ρ6 X H + ρ7 X H − ρ9 − αh Dxh
+dt
+
+(21)
+
+The effect of aerobic activity of heterotrophs has also been included in the model, by considering
+a small influent oxygen concentration (SO2 = 2 mg/L), and diffusive oxygen transfer from the
+cathode to the anodic chamber through the ion exchange membrane, by means of an oxygen mass
+balance equation:
+
+
+dSO2
+1
+= 1−
+(22)
+(ρ4 X H + ρ5 X H ) + D (SO20 − SO2 )
+dt
+YH
+Also, in the integrated model, the dynamic formulas of internal resistance (Rint ), and Open Circuit
+Voltage (EOCV ) are included, in order to better correlate their values with the actual concentration
+of exoelectrogens estimated at any time in the cell (in the original model, these were represented as
+constant values to be declared as initial conditions).
+
+Processes 2017, 5, 73
+
+8 of 14
+
+Rint = Rmin + ( Rmax − Rmin )e−Kr Xa
+−1
+
+−1
+
+EOCV = Emin + ( Emax − Emin )e−Kr Xa
+
+(23)
+(24)
+
+The resulting, integrated MFC model was then implemented in the MATLAB environment,
+and the representative differential equations solved by means of the MATLAB “ode23t” function.
+It is clear that, by neglecting the presence of some entire components of the possible bacterial
+population of the cells, the increased bacterial community complexity of these system is partly lost,
+as well as some of the interrelated relationships among organisms that make it almost impossible to
+individually study the individual exoenergetic properties of each strain. In addition to exoelectrogen
+(a.k.a. anodophilic bacteria) and methanogenic microorganisms co-existing in competition for available
+substrate, an actual MFC would also contain nitrifiers, P-accumulating organisms, and others.
+Development of structured microbial communities within a cell’s anode shows significant advantages
+compared to pure communities in the treatment of complex organic matter matrices, such as,
+for example, urban wastewater. In the model under present configuration, a direct competition
+among methanoges and anodophiles is represented (Figures 1 and 2). Even though both species
+contribute to the abatement of organic matter in the system, one does that by transforming it into
+methane and CO2 , the other into CO2 and electrons, harvested at the cathode. As the design purpose
+of MFCs is actually to directly generate electric energy from the wastewater’s organic matter, the
+former reaction is actually an undesirable by-product of poorly controllable circumstances, although it
+contributes to the organic matter removal efficiency of the system.
+3. Results
+The model was applied to the observations gathered from an intensely monitored, dual chamber,
+laboratory MFC with anodic volume of 0.42 L, continuously fed with swine wastewater at 1.5 L/day,
+operating in steady state at 21 ◦ C for a prolonged period (over 110 days). The time series of the influent
+substrate (and its components) used for this purpose was previously shown in Figure 3. Following
+current modeling practice, a reduced subset of these data (30 days) was used to initially calibrate
+the integrated model. Initially, some available literature-reported parameter values were selected.
+If these were not available, “reasonable” best estimates (educated guesses from previous experience)
+were used. A Least Squares estimation method was subsequently applied to determine more fitting
+values based on those obtained from a different subset of experimental observations to verify the model.
+The results thus obtained from the present version of the model yield a much better representation of
+the original data, and are thus believed to be more representative of actual cell behavior than those
+obtained in the authors’ previous work [32].
+Once calibrated and verified, the integrated model was used to simulate the temporal trend of
+system’s variables over time. Figure 4 shows the predicted behavior of exoelectrogen, methanogen
+and heterotropic populations in the MFC. After day 53 (when a steady decrease in COD load),
+exoelectrogens grow more rapidly than other groups, reaching a concentration of about 250 mg/L,
+against methanogens decreasing by half, and heterotroph concentrations remaining stable. A high
+concentration of exoelectrogenic biomass allows a higher production of electric current, from 4.4 mA
+during the previous period to 8.9 mA, when the organic load is lower (Figure 5). All the above results
+are in general agreement with the experimental observed trends of actual MFC electricity behavior,
+although some improvement in microbial population predictions of yield and development is still
+necessary, as there appears to be a lag of about 10 days between observed and predicted current
+maxima and minima, most likely linked to the dynamics of anodophiles and methanogens in the
+anodic cell volume and/or the yield coefficients of the former in the model.
+Figure 6 shows predicted methane production over time. The simulated values agree well with
+actual measurements and with methanogenic population present in the system in time, showing also a
+good correlation (r = 0.92, according to Pearson) between simulated and measured values. This good
+
+Processes 2017, 5, 73
+
+9 of 14
+
+correlation fit indicates that, in all likelihood, the differential between observed and predicted current
+productions is actually due in part to misestimated yield coefficients of the anodophile population,
+or to hydrodynamic factors in the anodic compartments.
+Figure 7 shows the behavior of experimental and simulated soluble COD; results from the model
+showed a high level of correlation with measured ones (r = 0.94), while simulated data were still
+not fully convincing for total COD (data not shown), probably due to physical filtration effects of
+the granular graphite filling the anodic cell, trapping some of the small organic particulates. In the
+soluble COD case, however, maxima and minima of measured and simulated data are appropriately
+synchronous,
+that this organic matter removal is appropriately represented by the model.
+Processes 2017, 5,showing
+73
+9 of 13
+Processes 2017, 5, 73
+
+9 of 13
+
+Figure4.4.Predicted
+Predicted development
+development ofofmicrobial
+populations
+in time.
+Figure
+microbial
+populations
+in time.
+Figure 4. Predicted development of microbial populations in time.
+
+Figure 5. Simulated vs. observed current production by the cell.
+
+Figure
+vs.observed
+observedcurrent
+currentproduction
+production
+cell.
+Figure 5.
+5. Simulated
+Simulated vs.
+byby
+thethe
+cell.
+
+Figure 6. Methane production rate over time.
+
+Processes 2017, 5, 73
+
+Figure 5. Simulated vs. observed current production by the cell.
+
+10 of 14
+
+Figure6.6.Methane
+Methaneproduction
+production rate
+Figure
+rate over
+overtime.
+time.
+Processes 2017, 5, 73
+
+10 of 13
+
+Figure
+Simulationand
+and observed
+observed soluble
+over
+time.
+Figure
+7. 7.Simulation
+solubleCOD
+COD
+over
+time.
+
+4. Discussion
+
+4. Discussion
+
+Development of an integrated MFC description model based on deeper process understanding
+Development
+an integrated
+MFC description
+on deeper
+understanding
+and
+allowing itsofmathematical
+reproducibility
+could model
+play anbased
+important
+role inprocess
+the quest
+for MFC
+and allowing
+its
+mathematical
+reproducibility
+could
+play
+an
+important
+role
+in
+the
+quest
+for
+technology improvement and industrialization, in the same way already observed for other types
+of MFC
+similar processes
+[40]. The
+model
+herein presented
+a small
+forward
+in this
+effort, as
+combines
+technology
+improvement
+and
+industrialization,
+in isthe
+samestep
+way
+already
+observed
+forit other
+types of
+an processes
+existing model
+for this is
+type
+of system,
+but limited
+by the
+possibility
+of
+similar
+[40]. specifically
+The model developed
+herein presented
+a small
+step forward
+in this
+effort,
+as it combines
+simulating
+only
+dual-component
+microbiodomes
+and
+mono-component
+(synthetic)
+substrate
+with
+a
+an existing model specifically developed for this type of system, but limited by the possibility
+of
+more general microbial population model. However, wastewater treatment by MFCs is characterized
+simulating only dual-component microbiodomes and mono-component (synthetic) substrate with a
+by several, simultaneous, multi-phase heterogeneous phenomena (e.g., biochemical reactions in the
+more general microbial population model. However, wastewater treatment by MFCs is characterized
+biofilm, electrochemical reactions at the electrodes, hydrodynamics of the bulk liquid, membrane
+by several,
+simultaneous,
+multi-phase
+heterogeneous
+phenomenamathematical
+(e.g., biochemical
+reactions in
+polarization,
+etc.), that make
+development
+of a truly comprehensive
+model difficult
+the biofilm,
+electrochemical
+reactions
+at
+the
+electrodes,
+hydrodynamics
+of
+the
+bulk
+liquid,
+membrane
+(Figure 8). The proposed model considers an additional microbial component (heterotrophs) and
+the
+polarization,
+etc.),
+that
+make
+development
+of
+a
+truly
+comprehensive
+mathematical
+model
+difficult
+possibility of simulating complex substrates, including their intermediate transformations and
+(Figure
+8). Thewith
+proposed
+model considers
+additional
+component
+(heterotrophs)
+interaction
+microorganisms
+(Figure 2).an
+It can
+thereforemicrobial
+be considered
+a step forward,
+although and
+not the finalofstep,
+in the realization
+ofsubstrates,
+a more complete
+MFC simulation
+model (Figure
+8).
+the possibility
+simulating
+complex
+including
+their intermediate
+transformations
+and
+
+interaction with microorganisms (Figure 2). It can therefore be considered a step forward, although not
+the final step, in the realization of a more complete MFC simulation model (Figure 8).
+
+biofilm, electrochemical reactions at the electrodes, hydrodynamics of the bulk liquid, membrane
+polarization, etc.), that make development of a truly comprehensive mathematical model difficult
+(Figure 8). The proposed model considers an additional microbial component (heterotrophs) and the
+possibility of simulating complex substrates, including their intermediate transformations and
+interaction
+Processes 2017, with
+5, 73 microorganisms (Figure 2). It can therefore be considered a step forward, although
+11 of 14
+not the final step, in the realization of a more complete MFC simulation model (Figure 8).
+
+Figure8.8. Integration
+Integration of
+of multiple
+multiple models
+Figure
+models for
+for comprehensive
+comprehensive description
+descriptionof
+ofMFCs
+MFCs(redrawn
+(redrawnfrom
+from[41]).
+[41]).
+
+When operating with complex substrate (i.e., other than acetate or glucose-media) applications,
+When operating with complex substrate (i.e., other than acetate or glucose-media) applications,
+it could be of major interest to focus on microbial populations and organic matter dynamics within
+it could be of major interest to focus on microbial populations and organic matter dynamics within
+the anode chamber (or nitrogen dynamics in the cathode chamber) of the cell. In these conditions,
+MFCs show a much more complex microbiome than those operated with synthetic wastewater.
+These populations can show either syntrophic or competing behaviors. For example, heterotrophs
+could cut down complex, slowly biodegradable organic substrates, providing easily biodegradable
+molecules to EABs for electricity generation. In contrast, presence of methanogens could generate
+side-reaction compounds (i.e., methane) and reduce both coulombic and energy efficiencies of MFCs.
+Some of these phenomena are represented in the current model, but at the moment they can only be
+empirically controlled with external stimuli [21] in a reactive fashion. The model could be improved
+with appropriate algorithms representing the effects of implementable interventions. The present
+model also assumes completely mixed cells behavior. In view of system up-scaling, the influence of
+internal cell hydrodynamics (presence of shortcircuits, dead volumes, etc.) could become extremely
+relevant. For this reason, the model should be integrated with a hydrodynamic module, in order to
+better characterize and simulate overall cell performance; this could be obtained both by using
+computational fluid dynamics (CFD) [42] or tracer tests to assess the equivalent hydrodynamic
+configuration of a cell [43–45].
+5. Conclusions
+An integrated, dynamic, multi-species model for a completely mixed MFC is presented. The model
+was obtained by combining the Pinto model of an acetate-fed MFC, with the ASM2d activated sludge
+model, representing biological treatment systems fed by complex substrates. Hence, the presence of
+various microorganism species (exoelectrogens, methanogens and heterotrophs), feeding on a complex
+influent substrate, was able to be represented, and different methabolic processes simulated. The model
+was implemented on a MATLAB platform; its equations, solved by a numerical solutor, allowed the
+reproduction of the growth dynamics of microorganisms, organic matter degradation, current and
+methane production within a MFC. Monitoring observations from a MFC laboratory system operating
+for about four months were used to calibrate the model, and to compare results obtained from the
+simulations. Further validation from similar MFC systems, fed with different organic substrates is,
+however, necessary.
+
+Processes 2017, 5, 73
+
+12 of 14
+
+The model could be used to simulate scaled-up systems with the same physical configuration,
+keeping in mind, however, that the influence of the physical configuration and effects of these
+bioelectrochemical processes is far from being completely understood and replicable.
+Acknowledgments: No funding was received for this study. At the time of the study, Molognoni was employed
+at the University of Pavia as a Postdoc researcher.
+Author Contributions: The authors contributed paritetically to the writing of this manuscript.
+Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.
+
+2.
+
+3.
+4.
+5.
+6.
+7.
+
+8.
+9.
+10.
+11.
+
+12.
+13.
+14.
+
+15.
+16.
+17.
+
+Capodaglio, A.; Callegari, A.; Lopez, M. European Framework for the Diffusion of Biogas Uses: Emerging
+Technologies, Acceptance, Incentive Strategies, and Institutional-Regulatory Support. Sustainability 2016, 8, 298.
+[CrossRef]
+Raboni, M.; Viotti, P.; Capodaglio, A.G. A comprehensive analysis of the current and future role of biofuels
+for transport in the European Union (EU). Ambient. e Agu—Interdiscip. J. Appl. Sci. J. Appl. Sci. 2015, 10, 9–21.
+[CrossRef]
+Capodaglio, A.G.; Callegari, A.; Dondi, D. Microwave-Induced Pyrolysis for Production of Sustainable
+Biodiesel from Waste Sludges. Waste Biomass Valor. 2016, 7, 703–709. [CrossRef]
+Capodaglio, A.G.; Ranieri, E.; Torretta, V. Process enhancement for maximization of methane production in
+codigestion biogas plants. Manag. Environ. Qual. Int. J. 2016, 27, 289–298. [CrossRef]
+Capodaglio, A.G.; Callegari, A. Feedstock and process influence on biodiesel produced from waste
+sewage sludge. J. Environ. Manag. 2017, in press. [CrossRef] [PubMed]
+Du, Z.; Li, H.; Gu, T. A state of the art review on microbial fuel cells: A promising technology for wastewater
+treatment and bioenergy. Biotechnol. Adv. 2007, 25, 464–482. [CrossRef] [PubMed]
+Capodaglio, A.G.; Molognoni, D.; Dallago, E.; Liberale, A.; Cella, R.; Longoni, P.; Pantaleoni, L. Microbial
+Fuel Cells for direct electrical energy recovery from urban wastewaters. Sci. World J. 2013, 2013, 634738.
+[CrossRef] [PubMed]
+Rabaey, K.; Verstraete, W. Microbial fuel cells: Novel biotechnology for energy generation. Trends Biotechnol.
+2005, 23, 291–298. [CrossRef] [PubMed]
+Logan, B.E.; Rabaey, K. Conversion of Wastes into Bioelectricity and Chemicals by Using Microbial
+Electrochemical Technologies. Science 2012, 337, 686–690. [CrossRef] [PubMed]
+Shizas, I.; Bagley, D.M. Experimental Determination of Energy Content of Unknown Organics in Municipal
+Wastewater Streams. J. Energy Eng. 2004, 130, 45–53. [CrossRef]
+Puig, S.; Serra, M.; Coma, M.; Balaguer, M.D.; Colprim, J. Simultaneous domestic wastewater treatment
+and renewable energy production using microbial fuel cells (MFCs). Water Sci. Technol. 2011, 64, 904–909.
+[CrossRef] [PubMed]
+Puig, S.; Serra, M.; Coma, M.; Cabré, M.; Dolors Balaguer, M.; Colprim, J. Microbial fuel cell application in
+landfill leachate treatment. J. Hazard. Mater. 2011, 185, 763–767. [CrossRef] [PubMed]
+Cecconet, D.; Molognoni, D.; Callegari, A.; Capodaglio, A.G. Agro-food industry wastewater treatment with
+microbial fuel cells: Energetic recovery issues. Int. J. Hydrogen Energy 2017. [CrossRef]
+Cecconet, D.; Molognoni, D.; Callegari, A.; Capodaglio, A.G. Biological combination processes for efficient
+removal of pharmaceutically active compounds from wastewater: A review and future perspectives.
+J. Environ. Chem. Eng. 2017, 5, 3590–3603. [CrossRef]
+Capodaglio, A.G.; Hlavínek, P.; Raboni, M. Advances in wastewater nitrogen removal by biological processes:
+State of the art review. Ambient. e Agua—An Interdiscip. J. Appl. Sci. 2016, 11, 250. [CrossRef]
+Molognoni, D.; Devecseri, M.; Cecconet, D.; Capodaglio, A.G. Cathodic groundwater denitrification with a
+bioelectrochemical system. J. Water Process Eng. 2017, 19, 67–73. [CrossRef]
+Cecconet, D.; Devecseri, M.; Callegari, A.; Capodaglio, A.G. Effects of process operating conditions on
+the autotrophic denitrification of nitrate-contaminated groundwater using bioelectrochemical systems.
+Sci. Total Environ. 2018, 613–614, 663–671. [CrossRef] [PubMed]
+
+Processes 2017, 5, 73
+
+18.
+
+19.
+
+20.
+21.
+
+22.
+23.
+24.
+
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+
+33.
+34.
+35.
+36.
+37.
+
+38.
+39.
+
+40.
+
+13 of 14
+
+Pous, N.; Puig, S.; Dolors Balaguer, M.; Colprim, J. Cathode potential and anode electron donor evaluation
+for a suitable treatment of nitrate-contaminated groundwater in bioelectrochemical systems. Chem. Eng. J.
+2015, 263, 151–159. [CrossRef]
+Kaur, A.; Boghani, H.C.; Michie, I.; Dinsdale, R.M.; Guwy, A.J.; Premier, G.C. Inhibition of methane
+production in microbial fuel cells: Operating strategies which select electrogens over methanogens.
+Bioresour. Technol. 2014, 173, 75–81. [CrossRef] [PubMed]
+Capodaglio, A.G.; Molognoni, D.; Puig, S.; Balaguer, M.D.; Colprim, J. Role of Operating Conditions on
+Energetic Pathways in a Microbial Fuel Cell. Energy Procedia 2015, 74, 728–735. [CrossRef]
+Molognoni, D.; Puig, S.; Balaguer, M.D.; Capodaglio, A.G.; Callegari, A.; Colprim, J. Multiparametric control
+for enhanced biofilm selection in microbial fuel cells. J. Chem. Technol. Biotechnol. 2015, 91, 1720–1727.
+[CrossRef]
+Garg, A.; Vijayaraghavan, V.; Mahapatra, S.S.; Tai, K.; Wong, C.H. Performance evaluation of microbial fuel
+cell by artificial intelligence methods. Expert Syst. Appl. 2014, 41, 1389–1399. [CrossRef]
+Capodaglio, A.G. Evaluation of modelling techniques for wastewater treatment plant automation.
+Water Sci. Technol. 1994, 30, 149–156.
+Raduly, B.; Gernaey, K.V.; Mikkelsen, P.S.; Capodaglio, A.G.; Henze, M. Artificial neural networks for rapid
+WWTP performance evaluation: Methodology and case study. Environ. Model. Softw. 2007, 22, 1208–1216.
+[CrossRef]
+Zhang, X.; Halme, A. Modelling of a microbial fuel cell process. Biotechnol. Lett. 1995, 17, 809–814. [CrossRef]
+Kato Marcus, A.; Torres, C.I.; Rittmann, B.E. Conduction-based modeling of the biofilm anode of a microbial
+fuel cell. Biotechnol. Bioeng. 2007, 98, 1171–1182. [CrossRef] [PubMed]
+Picioreanu, C.; Head, I.M.; Katuri, K.P.; van Loosdrecht, M.C.M.; Scott, K. A computational model for
+biofilm-based microbial fuel cells. Water Res. 2007, 41, 2921–2940. [CrossRef] [PubMed]
+Zeng, Y.; Choo, Y.F.; Kim, B.-H.; Wu, P. Modelling and simulation of two-chamber microbial fuel cell.
+J. Power Sources 2010, 195, 79–89. [CrossRef]
+Pinto, R.P.; Srinivasan, B.; Manuel, M.F.; Tartakovsky, B. A two-population bio-electrochemical model of a
+microbial fuel cell. Bioresour. Technol. 2010, 101, 5256–5265. [CrossRef] [PubMed]
+Oliveira, V.B.; Simões, M.; Melo, L.F.; Pinto, A.M.F.R. A 1D mathematical model for a microbial fuel cell.
+Energy 2013, 61, 463–471. [CrossRef]
+Henze, M.; Gujer, W.; Mino, T.; Matsuo, T.; Wentzel, C.M.; Marais, M.V.R. Activated sludge model no. 2d,
+ASM2d. Water Sci. Technol. 1999, 39, 165–182.
+Capodaglio, A.G.; Molognoni, D.; Callegari, A. Formulation And Preliminary Application Of An Integrated
+Model Of Microbial Fuel Cell Processes. In Proceedings of the 29th European Conference on Modelling and
+Simulation (ECMS 2015), Varna, Bulgaria, 26–29 May 2015.
+Potter, M.C. Electrical effects accompanying the decomposition of organic compounds. Proc. R. Soc. B: Biol. Sci.
+1911, 84, 260–276. [CrossRef]
+Kim, B.H.; Park, D.H.; Shin, P.K.; Chang, I.S.; Kim, H.J. Mediator-Less Biofuel Cell. U.S. Patent 5,976,719,
+2 November 1999.
+Rozendal, R.A.; Hamelers, H.V.M.; Rabaey, K.; Keller, J.; Buisman, C.J.N. Towards practical implementation
+of bioelectrochemical wastewater treatment. Trends Biotechnol. 2008, 26, 450–459. [CrossRef] [PubMed]
+Logan, B.E.; Regan, J.M. Microbial fuel cells—Challenges and applications. Environ. Sci. Technol. 2006, 40,
+5172–5180. [CrossRef] [PubMed]
+Heijnen, J.J. Bioenergetics of Microbial Growth. In Encyclopedia of Bioprocess Technology: Fermentation,
+Biocatalysis, and Bioseparation; Flickinger, M.C., Drew, S.D., Eds.; John Wiley & Sons: New York, NY, USA,
+1999; pp. 267–291.
+Cecconet, D.; Molognoni, D.; Bolognesi, S.; Callegari, A.; Capodaglio, A.G. On the influence of reactor’s
+hydraulics on the performance of Microbial Fuel Cells. Bioresour. Technol. 2017, under review.
+Molognoni, D.; Puig, S.; Balaguer, M.D.; Liberale, A.; Capodaglio, G.; Callegari, A.; Colprim, J. Reducing
+start-up time and minimizing energy losses of Microbial Fuel Cells using Maximum Power Point Tracking
+strategy. J. Power Sources 2014, 269, 403–411. [CrossRef]
+Harremoës, P.; Capodaglio, A.G.; Hellström, B.G.; Henze, M.; Jensen, K.N.; Lynggaard-Jensen, A.;
+Otterpohl, R.; Søeberg, H. Wastewater Treatment Plants under Transient Loading—Performance, Modelling
+and Control. Water Sci. Technol. 1993, 27, 71–115.
+
+Processes 2017, 5, 73
+
+41.
+
+42.
+43.
+44.
+
+45.
+
+14 of 14
+
+Picioreanu, C.; Katuri, K.P.; Head, I.M.; Van Loosdrecht, M.C.M.; Scott, K. Mathematical model for microbial
+fuel cells with anodic biofilms and anaerobic digestion. Water. Sci. Technol. 2008, 57, 965–971. [CrossRef]
+[PubMed]
+Vilà-Rovira, A.; Puig, S.; Balaguer, M.D.; Colprim, J. Anode hydrodynamics in Bioelectrochemical Systems.
+RSC Adv. 2015, 5, 78994–79000. [CrossRef]
+Kim, K.-Y.; Yang, W.; Logan, B.E. Impact of electrode configurations on retention time and domestic
+wastewater treatment efficiency using microbial fuel cells. Water Res. 2015, 80, 41–46. [CrossRef] [PubMed]
+Zhao, L.; Li, J.; Battaglia, F.; He, Z. Investigation of multiphysics in tubular microbial fuel cells by coupled
+computational fluid dynamics with multi-order Butler-Volmer reactions. Chem. Eng. J. 2016, 296, 377–385.
+[CrossRef]
+Richardson, J.F.; Peacock, D.G. Flow Characteristics of Reactors. In Coulson & Richardson’s Chemical
+Engineering: Chemical & Biochemical Reactors & Process Control, 3rd ed.; Pergamon Press: London, UK,
+1994; Volume 3.
+© 2017 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+
+

@@ -1,0 +1,97 @@
+{
+  "url": "https://mfc-studio.igorbolognani768385.chatgpt.site",
+  "publication_audit": "shared_corpus_and_access_boundary",
+  "seed": {
+    "alreadyApplied": true,
+    "version": "mfc-corpus/0.2.0",
+    "report": {
+      "properties_proposed": 110,
+      "sources": 19,
+      "complete_main_articles": 5,
+      "supplements": 1,
+      "records": 32,
+      "observations": 86,
+      "digitized_curve_points": 13,
+      "training_eligible_records": 0,
+      "predictor_trained": false,
+      "experimental_error_metrics": null,
+      "all_11_stages_mapped": true,
+      "independent_validation_pending": true
+    }
+  },
+  "pdf_uploads": [
+    {
+      "id": "S08-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S09-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S17-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S18-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S19-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S18-supplement-pdf",
+      "sha256": "eb6f20967fbaa273af2c9758e90175767cd97d48ed7545cc412da90c9aa4c961",
+      "stored": true
+    }
+  ],
+  "database": {
+    "version": "mfc-corpus/0.2.0",
+    "counts": {
+      "stages": 11,
+      "properties": 110,
+      "sources": 19,
+      "source_stages": 62,
+      "documents": 6,
+      "document_chunks": 35,
+      "experiments": 6,
+      "evidence_records": 32,
+      "observations": 86,
+      "curves": 1,
+      "curve_points": 13
+    },
+    "training_eligible_records": 0,
+    "seed_applied": true,
+    "pdf_assets": [
+      {
+        "id": "S08-pdf",
+        "present": true
+      },
+      {
+        "id": "S09-pdf",
+        "present": true
+      },
+      {
+        "id": "S17-pdf",
+        "present": true
+      },
+      {
+        "id": "S18-pdf",
+        "present": true
+      },
+      {
+        "id": "S19-pdf",
+        "present": true
+      },
+      {
+        "id": "S18-supplement-pdf",
+        "present": true
+      }
+    ],
+    "content_sha256": "0fae773d265f9457c56601512d7aa7b282e88d3b44039a9293f5c586d12db845"
+  },
+  "service_cannot_impersonate_visitor": true,
+  "development_QA_not_public": true,
+  "landing_available": true
+}

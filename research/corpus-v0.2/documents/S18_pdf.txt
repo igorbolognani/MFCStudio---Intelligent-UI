@@ -1,0 +1,1606 @@
+             energies
+Article
+Impact of Air-Cathodes on Operational Stability of
+Single-Chamber Microbial Fuel Cell Biosensors for
+Wastewater Monitoring
+Anna Salvian 1,2 , Daniel Farkas 2 , Marina Ramírez-Moreno 2 , Claudio Avignone Rossa 2 , John R. Varcoe 1
+and Siddharth Gadkari 1, *
+
+                                         1   School of Chemistry and Chemical Engineering, University of Surrey, Guildford GU2 7XH, UK
+                                         2   Department of Microbial Sciences, University of Surrey, Guildford GU2 7XH, UK;
+                                             c.avignone-rossa@surrey.ac.uk (C.A.R.)
+                                         *   Correspondence: s.gadkari@surrey.ac.uk
+
+
+                                         Abstract: The increasing global water pollution leads to the need for urgent development of rapid and
+                                         accurate water quality monitoring methods. Microbial fuel cells (MFCs) have emerged as real-time
+                                         biosensors for biochemical oxygen demand (BOD), but they grapple with several challenges, including
+                                         issues related to reproducibility, operational stability, and cost-effectiveness. These challenges are
+                                         substantially shaped by the selection of an appropriate air-breathing cathode. Previous studies
+                                         indicated a critical influence of the cathode on both the enduring electrochemical performance of
+                                         MFCs and the taxonomic diversity at the electroactive anode. However, the effect of different gas
+                                         diffusion electrodes (GDE) on 3D-printed single-chamber MFCs for BOD biosensing application
+                                         and its effect on the bioelectroactive anode was not investigated before. Our study focuses on
+                                         comparing GDE cathode materials to enhance MFC performance for precise and rapid BOD analysis
+                                         in wastewater. We examined for over 120 days two Pt-coated air-breathing cathodes with distinct
+                                         carbonaceous gas diffusion layers (GDLs) and catalyst layers (CLs): cost-effective carbon paper (CP)
+                                         with hand-coated CL and more expensive woven carbon cloth (CC) with CL pre-applied by the
+                                         supplier. The results show significant differences in electrochemical characteristics and anodic biofilm
+Citation: Salvian, A.; Farkas, D.;
+                                         composition between MFCs with CP and CC GDE cathodes. CP-MFCs exhibited lower sensitivity
+Ramírez-Moreno, M.; Avignone
+                                         (16.6 C L mg−1 m−2 ) and a narrower dynamic range (25 to 600 mg L−1 ), attributed to biofouling-
+Rossa, C.; Varcoe, J.R.; Gadkari, S.
+                                         related degradation of the GDE. In contrast, CC-MFCs demonstrated superior performance with
+Impact of Air-Cathodes on
+                                         higher sensitivity (37.6 C L mg−1 m−2 ) and a broader dynamic range (25 to 800 mg L−1 ). In conclusion,
+Operational Stability of
+Single-Chamber Microbial Fuel Cell
+                                         our study underscores the pivotal role of cathode selection in 3D-printed MFC biosensors, influencing
+Biosensors for Wastewater                anodic biofilm enrichment time and overall BOD assessment performance. We recommend the
+Monitoring. Energies 2024, 17, 3574.     use of cost-effective CP GDL with hand-coated CL for short-term MFC biosensor applications,
+https://doi.org/10.3390/en17143574       while advocating for CC GDL supplied with CL as the preferred choice for long-term sensing
+                                         implementations with enduring reliability.
+Academic Editor: Antonino S. Aricò
+
+Received: 11 June 2024                   Keywords: microbial fuel cell biosensor; BOD analysis; air-cathode gas diffusion electrode; gas
+Revised: 28 June 2024                    diffusion layer; taxonomic composition biofilm; operational stability
+Accepted: 17 July 2024
+Published: 20 July 2024
+
+
+                                         1. Introduction
+Copyright: © 2024 by the authors.
+                                              Water scarcity is a global challenge that affects 10% of the world’s population. Water
+Licensee MDPI, Basel, Switzerland.       use has increased and is globally driven by population growth and socioeconomic devel-
+This article is an open access article   opment, accelerating climate change and water pollution [1]. To alleviate water stress,
+distributed under the terms and          wastewater treatment presents an efficient solution for purifying wastewater and recycling
+conditions of the Creative Commons       the treated effluent. The effective monitoring of wastewater treatment plant performance
+Attribution (CC BY) license (https://    hinges on the measurement of the concentration of total organic biodegradable pollutants
+creativecommons.org/licenses/by/         within the wastewater, known as biochemical oxygen demand (BOD). However, the cur-
+4.0/).                                   rent gold standard BOD measurement method, the BOD5 test, is a time-consuming and
+
+
+
+Energies 2024, 17, 3574. https://doi.org/10.3390/en17143574                                               https://www.mdpi.com/journal/energies
+                           performance hinges on the measurement of the concentration of total organic biodegrada-
+                           ble pollutants within the wastewater, known as biochemical oxygen demand (BOD).
+Energies 2024, 17, 3574    However, the current gold standard BOD measurement method, the BOD5 test, is a 2time-                                 of 19
+                           consuming and complex analysis that cannot be implemented for real-time process mon-
+                           itoring [2]. As a result, there is a growing need for reliable and real-time BOD measure-
+                           ment methods.
+                          complex      analysisThisthatadvancement           would significantly
+                                                          cannot be implemented                          optimize
+                                                                                             for real-time     process wastewater
+                                                                                                                           monitoring    treatment
+                                                                                                                                             [2]. As
+                          aprocesses,
+                             result, thereenabling    the timely
+                                               is a growing         detection
+                                                                 need             of potential
+                                                                         for reliable            contamination
+                                                                                         and real-time                 spikes within methods.
+                                                                                                             BOD measurement               the plant
+                           and serving
+                          This   advancementas a validation     tool, confirming
+                                                    would significantly                the proper
+                                                                                optimize              execution
+                                                                                             wastewater             of theprocesses,
+                                                                                                             treatment       treatmentenabling
+                                                                                                                                             process
+                           [3]. timely
+                          the   Microbial      fuel cell
+                                          detection    of(MFC)-based          biosensors have
+                                                           potential contamination            spikesemerged
+                                                                                                       within theas real-time,
+                                                                                                                       plant andself-powered
+                                                                                                                                       serving as a
+                           and easy-to-use
+                          validation             systems for the
+                                          tool, confirming        BOD    measurement
+                                                                      proper     execution   inof
+                                                                                                wastewater,
+                                                                                                  the treatment   displaying
+                                                                                                                       processexcellent        oper-
+                                                                                                                                   [3]. Microbial
+                          fuel
+                           ationcell  (MFC)-based
+                                  stability             biosensorsfor
+                                               and performance         have    emerged
+                                                                            more   than fiveas real-time,
+                                                                                                years withself-powered          and easy-to-use
+                                                                                                               minimal maintenance             [4–9].
+                          systems
+                           In recentfor    BODsubstantial
+                                       years,     measurement        in wastewater,
+                                                               advancements         havedisplaying
+                                                                                            been achievedexcellent
+                                                                                                                in theoperation
+                                                                                                                         primary stability
+                                                                                                                                      components and
+                          performance
+                           of biosensors,for      more than
+                                               including    the five   years
+                                                                  anode,        with minimal
+                                                                             cathode,    and overallmaintenance
+                                                                                                         architecture.  [4–9].   In recent
+                                                                                                                             These     eﬀortsyears,
+                                                                                                                                                have
+                          substantial
+                           concentrated    advancements
+                                              on optimizinghave       been achieved
+                                                                 sensitivity,    loweringinthe thedetection
+                                                                                                    primary limits,
+                                                                                                                 components        of biosensors,
+                                                                                                                          and improving         user-
+                          including
+                           friendliness  thetoanode,   cathode,
+                                                facilitate          and detection
+                                                            the early     overall architecture.
+                                                                                       of organic These        efforts
+                                                                                                      pollutants         have concentrated
+                                                                                                                      [10–12].    Among all the    on
+                          optimizing       sensitivity,
+                           MFC configurations,            lowering the detection
+                                                        single-chamber        configurationlimits,
+                                                                                                 is and   improving
+                                                                                                    the most     used for  user-friendliness
+                                                                                                                              its simplicity and    to
+                          facilitate   the   early  detection     of organic     pollutants    [10–12].    Among
+                           the absence of a constant catholyte supply [13,14]. Figure 1 shows a schematic representa-  all the  MFC      configura-
+                          tions,
+                           tion ofsingle-chamber
+                                     single-chamberconfiguration
+                                                          MFC, consisting    is the
+                                                                                  of most    used for components:
+                                                                                     the following      its simplicity(i)   and   the absence
+                                                                                                                               A bioanode           of
+                                                                                                                                                elec-
+                          atrode
+                             constant
+                                  placed  catholyte    supply
+                                              inside the    main[13,14].
+                                                                    reactorFigure     1 shows aThis
+                                                                               compartment.          schematic
+                                                                                                         electrode  representation        of single-
+                                                                                                                        hosts an electroactive
+                          chamber       MFC, consisting
+                           bacteria community          on its of   the following
+                                                               surface     that actscomponents:
+                                                                                       as a catalyst for (i) Athebioanode
+                                                                                                                   oxidation   electrode
+                                                                                                                                  of organic  placed
+                                                                                                                                                 bio-
+                          inside    the   main   reactor   compartment.         This  electrode     hosts   an   electroactive
+                           degradable pollutants in wastewater. For example, when acetate is oxidized at the anode,                 bacteria    com-
+                          munity      on its
+                           the reaction     is surface
+                                                2HCO3− that
+                                                          + 9Hacts    as− →
+                                                                 + + 8e    a catalyst
+                                                                              CH3COO     for
+                                                                                           − +the
+                                                                                               4H2oxidation
+                                                                                                    O, E° = −0.296of organic
+                                                                                                                         V, pH =biodegradable
+                                                                                                                                     7 [15]. (ii) An
+                          pollutants     in wastewater.      For   example,     when   acetate   is oxidized
+                           air-diﬀusion cathode electrode, located on one of the sides of the reactor            at the  anode,  andtheexposed
+                                                                                                                                         reaction to is
+                          2HCO       − + 9H+ + 8e− → CH COO− + 4H O, E◦ = −0.296 V, pH = 7 [15]. (ii) An air-diffusion
+                           air. In 3this electrode, the gaseous 3         oxygen2 coming from the air is used as the electron ac-
+                          cathode
+                           ceptor. Itelectrode,
+                                        reacts with located   on one in
+                                                       the protons      of the
+                                                                            the electrolyte
+                                                                                 sides of theand reactor   and exposed
+                                                                                                     is reduced      to water to in
+                                                                                                                                  air.the
+                                                                                                                                        In so-called
+                                                                                                                                            this elec-
+                          trode,   the  gaseous    oxygen     coming     from   the  air is  used  as the  electron
+                           “oxygen reduction reaction” (ORR). When the main compartment (the anodic chamber)            acceptor.    It reacts  with
+                          the   protons
+                           is fed          in the electrolyte
+                                  with solutions       containing   and   is reduced tocompounds
+                                                                      biodegradable          water in the(suchso-called     “oxygen reduction
+                                                                                                                    as wastewater),         a poten-
+                          reaction”     (ORR).    When     the  main   compartment          (the
+                           tial diﬀerence proportional to the amount of biodegradable molecules  anodic    chamber)       is fed  with solutions
+                                                                                                                                oxidized      by the
+                          containing biodegradable compounds (such as wastewater), a potential difference propor-
+                           electroactive biofilm arises between both electrodes. By connecting an external load be-
+                          tional to the amount of biodegradable molecules oxidized by the electroactive biofilm arises
+                           tween the electrodes, an electric current can flow. This electrical signal serves as an indi-
+                          between both electrodes. By connecting an external load between the electrodes, an electric
+                           rect measurement of the presence of organic pollutants in the wastewater. In essence, the
+                          current can flow. This electrical signal serves as an indirect measurement of the presence of
+                           MFC’s ability to generate electricity is influenced by the level of organic pollutants present
+                          organic pollutants in the wastewater. In essence, the MFC’s ability to generate electricity is
+                           in the wastewater being treated [5].
+                          influenced by the level of organic pollutants present in the wastewater being treated [5].
+
+
+
+
+                                  1. Schematic representation of the configuration of the single-chamber microbial fuel cell
+                          Figure 1.
+                          (MFC)-based biosensor
+                          (MFC)-based   biosensor used
+                                                  used in
+                                                        in this
+                                                           this study.
+                                                                study. The
+                                                                       The figure
+                                                                            figure includes
+                                                                                   includes aa zoomed-in
+                                                                                               zoomed-in cross-sectional
+                                                                                                          cross-sectional view
+                                                                                                                          view of
+                                                                                                                                of
+                          the gas  diﬀusion electrode  (GDE)   cathode,  which   comprises  three layers: the gas diﬀusion
+                          the gas diffusion electrode (GDE) cathode, which comprises three layers: the gas diffusion layer   layer
+                          (GDL), microporous
+                          (GDL),  microporous layer
+                                               layer (MPL),
+                                                     (MPL), and
+                                                             and catalyst
+                                                                  catalyst layer
+                                                                           layer (CL).
+                                                                                 (CL).
+
+                                 The gas
+                                 The gas diffusion
+                                         diﬀusion electrode
+                                                   electrode (GDE)
+                                                             (GDE) is
+                                                                    is an
+                                                                       an electrode
+                                                                          electrodewhere
+                                                                                    whereORRORRoccurs
+                                                                                                  occurs(i.e.,
+                                                                                                         (i.e.,OO22++ 2H
+                                                                                                                      2H22O
+                                                                                                                          O
+                             4e →
+                          ++ 4e −
+                                −
+                                  → 4OH  −−
+                                     4OH , ,E° ◦
+                                             E ==0.815
+                                                  0.815V,
+                                                        V,pH
+                                                          pH == 7).
+                                                                7). GDE
+                                                                    GDE cathodes
+                                                                           cathodes have
+                                                                                    have aa significant
+                                                                                            significant impact on MFC
+                          systems’ performance because ORR kinetics are a limiting factor for current generation in
+                          MFCs [14,16]. However, owing to their superior environmental performance compared
+                          to two-chamber MFCs, attributed to the elimination of the need for catholyte supply and
+                          replacement, there has been a concerted effort to advance air cathodes. The objective is
+Energies 2024, 17, 3574                                                                                            3 of 19
+
+
+
+
+                          to optimize ORR performance, encompassing swift ORR kinetics, effective electrolyte–air
+                          contact, long-term operational stability, and cost-efficiency [17,18]. GDE usually consists of
+                          several layers of different materials:
+                          •    A catalyst layer (CL) in contact with the electrolyte, usually made of precious metals
+                               such as Pt, which decreases the activation energy of ORR.
+                          •    A microporous layer (MPL) is usually made of conductive ink, which acts as a microp-
+                               orous support for the CL, preventing flooding and biofilm penetration [19].
+                          •    A gas diffusion layer (GDL), which is the scaffolding of the electrode, is placed in
+                               direct contact with the air. It is generally made of conductive carbon-based materials
+                               with a hydrophobic treatment, which ensures oxygen diffusion without the electrolyte
+                               leaking through to the air-facing side of the GDE [19]. The most used carbonaceous
+                               GDLs for MFC-biosensing applications are carbon paper (CP) [20–23] and carbon cloth
+                               (CC) [9,24–27] due to their wide availability, reasonable cost, mechanical strength,
+                               thermal stability, and easiness of CL coating. [19,28–30].
+                                 In general, the main environmental factors that affect air cathode performance
+                          (i.e., ORR kinetics) are the solution pH and the oxygen concentration at the catalyst sur-
+                          faces [31]. The pH of the electrolyte (in this case wastewater) depends on the type of GDE
+                          used. A slow ORR performance leads to a pH gradient in the main chamber since the
+                          protons generated from the metabolism of microorganisms are not consumed in the ORR;
+                          this pH gradient can influence the development of the anodic microbial community [32].
+                          The concentration of dissolved oxygen that permeates through the GDE (or the case of the
+                          reactor) influences the balance of aerobic to anaerobic bacteria [33]. This balance is crucial
+                          for catalyzing the substrate at the anode. Excess oxygen could compete with the anode as
+                          an electron acceptor, resulting in a decrease in the coulombic efficiency of the system [34].
+                          Furthermore, the higher catalytic efficiency of the cathode increases the current produc-
+                          tion and cell open circuit potential (OCP), which creates a more favorable electrochemical
+                          gradient and encourages bacteria to increase the extracellular electron transfer (EET). This
+                          effect on the anode surface modulates the microbial community formation [35,36]. Cathode
+                          performance can therefore significantly influence the anodic microbial composition of the
+                          catalytic biofilm that culminates in a distinct electrical output and the internal resistance of
+                          the MFC [37]. Recent research has consistently aimed to enhance the materials and designs
+                          employed in MFC-based technologies, primarily targeting power generation [24,38–42].
+                          Nonetheless, there is a significant lack of insight into how GDE cathodes influence 3D-
+                          printed MFC-based biosensors, specifically regarding their effect on the system’s biosensing
+                          performance, including sensitivity and dynamic range. Additionally, the impact of various
+                          GDEs on the development and composition of the electroactive microbial community at the
+                          anode remains an unexplored area in the field of biosensing applications. Moreover, while
+                          there have been numerous studies focusing on MFC-based biosensors with commercial
+                          Pt/C-based GDE cathodes [9,20–26], making direct comparisons between these studies
+                          is challenging due to the multitude of variables affecting MFC performance. These vari-
+                          ables encompass the type of feedstock used, the nature of the anodic microbial biofilm, its
+                          metabolic processes and EET mechanism involved, the geometric design and shape of the
+                          electrodes, the materials used for cell construction including the type of membrane, and
+                          the external resistance used to discharge the MFC [43–45].
+                                 The objective of this research is to conduct a comprehensive comparison of the effects
+                          of different GDE materials (commercial CC with a CL pre-applied by the supplier and
+                          CP with a hand-coated CL) on the performance of 3D-printed MFC-based biosensors for
+                          monitoring the BOD of wastewater. This study is divided into two main phases: the first
+                          phase is focused on attaining stability in the current signal, which is the primary output
+                          of the biosensor, during the maturation of the anodic biofilm, while the second phase
+                          centers on the biosensing capabilities and operational stability of the MFCs. Throughout
+                          both phases, there was an emphasis on evaluating the performance of the air-cathode and
+                          its influence on both the signal stability and the biosensing efficacy of the system. Three
+                          different approaches were used to study the effect of CC and CP GDEs: (i) an examination
+Energies 2024, 17, 3574                                                                                           4 of 19
+
+
+
+
+                          of the electrochemical performance of the MFCs via chronoamperometry, polarization
+                          curve, and cyclic voltammetry techniques; (ii) an evaluation of GDE’s influence on the
+                          development and composition of the electroactive community at the anode; and (iii) air-
+                          cathode surface analyses through scanning electron microscopy (SEM) before and after the
+                          120-day study period. The findings from this study are expected to offer valuable insights
+                          into the selection of GDE cathodes for future research in the field of MFC-based biosensing,
+                          contributing to advancements in this promising technology.
+
+                          2. Materials and Methods
+                                Unless otherwise stated, all the reagents were purchased from Fischer Scientific
+                          (Loughborough, UK) or Sigma-Aldrich (Gillingham, UK). All experiments were conducted
+                          at a temperature of 21 ± 2 ◦ C.
+
+                          2.1. Set-Up and Operation Mode of the 3D-Printed MFC-Based Biosensor
+                                Ten single-chamber MFCs with air-breathing cathodes were built to carry out this
+                          experiment. The MFCs consisted of a cube (5 × 5 × 5 cm) with a 30 mL cylindrical chamber
+                          positioned in the middle of the cubic chamber and two plates to close the ends of the
+                          reactor, one filled and the other with a circular hole (3 cm diameter) in the center for the
+                          air-cathode side (Figure S1). The reactor was assembled by adding custom-made silicon
+                          gaskets in between the plates and the main body of the reactor to avoid leaks. The external
+                          chassis of the reactor was made of Co-Polyester + (Ultimaker, Utrecht, The Netherlands)
+                          and built using a 3D printer (Ultimaker 3, Ultimaker B.V, Utrecht, The Netherlands). The
+                          anode was prepared using a 2 × 3 cm piece of carbon felt (6.35 mm thick, 99.0%, Alfa
+                          Aesar, Lancashire, UK) connected to a titanium wire (The CrazyWire Company, Warrington,
+                          UK), which was used to connect the circuit to an external load (REx ) of 1 kΩ [8,26,41,46].
+                          The selected resistance is lower than the internal resistance (discussion in Section 3.3),
+                          ensuring high current production without being low enough to induce signal noise or
+                          voltage reversal [8,47]. GDE cathodes consist of three layers: a catalyst layer, a microporous
+                          layer, and a catalyst layer, as illustrated in Figure 1. The GDEs were either a CC electrode
+                          (W1S1011) supplied with 0.5 mgPt cm−2 loading (Pt(60% w/w)/Vulcan-C) (FuelCell Store,
+                          Bryan, USA) or CP electrode (Freudenberg H23C6) (FuelCell Store, TX, USA) hand-coated
+                          with 0.5 mgPt cm−2 (Pt(10% w/w)/activated carbon ca. 50% moisture purchased from
+                          Thermo Fisher Scientific, Paisley, UK). Both were equipped with MPL. The CL of the CP
+                          GDE was prepared as reported in previous studies, mixing 0.83 µL of DI water, 6.67 µL of
+                          Nafion ionomer, and 3.3 µL of isopropanol per 1 mg of Pt/C [14]. The CP-GDE exhibits
+                          a lower thickness of the GDL and MPL (250 µm), compared to CC-GDE (410 µm). The
+                          thickness of the CL was measured using scanning electron microscopy as described in
+                          paragraph 2.6, revealing that the CL of CP-GDL (~96 µm) is significantly thicker than
+                          that of CC-GDL (~3 µm). Of the 10 reactors, 5 were built with CP and 5 with the CC
+                          GDE cathode. In both sets of MFCs, 4 were inoculated with electroactive bacteria and
+                          considered replicates and 1 was a sterile control. The anolyte consisted of sterile minimal
+                          medium (1 g L−1 NH4 Cl; 0.2 g L−1 MgSO4 .7H2 O; 0.001 g L−1 FeSO4 .7H2 O; 0.001 g L−1
+                          CaCl2 ; 0.5 g L−1 K2 HPO4 ; 0.005 g L−1 yeast extract) containing various concentrations of
+                          Na-acetate (pH = 7.2 ± 0.2, conductivity = 1.0 ± 0.2 mS cm−1 ) [48]. The concentration of
+                          Na-acetate was used to modulate the BOD of the feedstock. The experiment was conducted
+                          in fed-batch mode, with the anolyte fully replaced with fresh media at every batch. This
+                          procedure was performed inside an anaerobic chamber to maintain anaerobic conditions
+                          during the feeding. Oxygen diffusion through the reactor was measured by quantifying
+                          the amount of dissolved oxygen in the electrolyte over time by using a Fiber-Optic Oxygen
+                          Meter (FireSting O2, PyroScience, Aachen, Germany) and a Pyro Oxygen Logger Software
+                          v. 3.31.9 (PyroScience, Aachen, Germany).
+Energies 2024, 17, 3574                                                                                           5 of 19
+
+
+
+
+                          2.2. Electroactive Biofilm Formation
+                               The inoculum used in this study was sourced from an acetate-fed MFC, which had
+                          been in operation for more than a year and was initially inoculated with sediment from the
+                          campus pond (University of Surrey, Guildford, UK), which collects run-off water and has a
+                          moderate population of wildfowl and fish. Post collection, the inoculum was centrifuged for
+                          10 min at 4000 rpm (Accuspin 3R, Pendragon Scientific Ltd., Bucks, UK) and resuspended
+                          in minimal medium containing 0.6 g L−1 of Na-acetate. The optical density (OD600 ) was
+                          determined with a spectrophotometer (Ultrospec 2000, Pendragon Scientific Ltd., UK) at a
+                          wavelength of 600 nm. The final OD600 of the inoculum was 0.5. The MFCs were inoculated
+                          with 10% v/v inoculum in minimal medium containing Na-acetate at a concentration of
+                          0.6 g L−1 . The anolyte was replaced in its entirety with fresh minimal medium every time
+                          the substrate was completely depleted (ca. 1–4 days). The biofilm was considered fully
+                          developed when the maximum current produced by the MFCs measured across the 1 kΩ
+                          external resistor reached a stable value after three consecutive anolyte replacements. A
+                          permissible variation of ±10 µA was allowed between the three measured current values.
+
+                          2.3. Biosensing Performance
+                                The potential of each MFC was monitored by measuring the voltage across the external
+                          resistor of the MFC with a data logger (Keysight 34972A LXI Data Acquisition Switch Unit,
+                          Keysight, Wokingham, UK) every 2 min. The oxidation of the Na-acetate at the anode
+                          causes an increase in the measured voltage, which is followed by a reduction when Na-
+                          acetate is depleted. A correlation between the concentration of substrate in the anolyte
+                          and the charge produced was used to build the calibration curve of the biosensor. When
+                          calibrating the biosensor, the detection of a specific amount of Na-acetate was tested 3 times
+                          in each replicate. Na-acetate concentrations in the anolyte were determined with High
+                          Performance Liquid Chromatography (HPLC). Samples were filtered through a 0.22 µm
+                          filter and injected in the system Vanquish Core HPLC (Thermo Fisher Scientific Inc., UK)
+                          with an Aminex HPX-87H column (300 mm length × 7.8 mm diameter, 9 µm particles size)
+                          (Bio-Rad Laboratories Inc., Watford, UK) and a UV detector operating at a wavelength of
+                          210 nm. An isocratic flow of H2 SO4 5 mM at a flow rate of 0.3 mL min−1 at 35 ◦ C was used.
+                          A calibration curve with ultrapure water and known concentrations of Na-acetate standard
+                          was created (R2 > 0.99). The electrical charge, sensitivity, and coulombic efficiency were
+                          determined as previously reported by Spurr et al. [49].
+
+                          2.4. Electrochemical Analysis
+                               The anode, cathode, and cell voltage were measured using Ag/AgCl (3M KCl) as
+                          a reference electrode in all reactors using a multimeter (RS Components Ltd., Corby,
+                          UK) after replacing the anolyte with fresh minimal media containing 0.6 g L−1 of Na-
+                          acetate and leaving the MFCs in OCP for 3 h. The reference electrode was positioned
+                          between the anode and cathode in the hole located at the top of the reactor, as shown in
+                          Figure S1. The power and polarization curves of the cell were obtained using a potentiostat
+                          (PalmSense4, PalmSens, Houten, NL) connected in the two-electrode mode (i.e., anode
+                          as working electrode, and cathode as counter electrode and reference electrode) at a scan
+                          rate of 0.5 mV s−1 . The current density, power density, and internal resistance (RInt ) were
+                          calculated as previously reported by Logan et al. [15]. The cyclic voltammograms of the
+                          anode were obtained in the presence and absence of Na-acetate in the medium. The two
+                          conditions are referred to as the turnover and non-turnover mode, respectively. The anode
+                          acted as the working electrode, Ag/AgCl (3.5 M aqueous KCl internal solution) as the
+                          reference electrode, and the cathode as the counter electrode, at a scan rate of 0.5 mV s−1
+                          for a total of 3 scans.
+
+                          2.5. Taxonomic Analysis of the Biofilm
+                               Carbon felt fibers were collected from the top and the bottom part of the anode for a
+                          total of 50 ± 10 mg and put in a sterile 10 mL tube with 1 mL of Phosphate Buffer Saline
+Energies 2024, 17, 3574                                                                                                         6 of 19
+
+
+
+
+                               (PBS) (8 g L−1 NaCl; 0.2 g L−1 KCl; 1.44 g L−1 Na2 HPO4 ; 0.14 g L−1 H2 PO4 ; pH = 7.4),
+                               vortexed for 1 min, centrifuged at 4000 rpm for 5 min (Accuspin 3R, Pendragon Scientific
+                               Ltd., Granborough, UK), and resuspended in 500 µL of PBS. The DNA was then extracted
+                               using the DNeasy Power Soil Pro Kit (Qiagen, Manchester, UK), quantified using the
+                               Nanodrop ND-1000 spectrophotometer (Thermo Fischer Scientific, UK), and submitted
+                               to paired-end amplicon sequencing of the 16S rRNA gene’s V3-V4 regions (primers 341F
+                               and 806R) with the Illumina NovaSeq 6000 platform (Novogene, Cambridge, UK). The
+                               dada2 pipeline v. 1.28 was used to process the data and create Amplicon Sequence Variants
+                               (ASV) [50,51]. Diversity analyses (alpha diversity calculation and principal coordinates
+                               analysis with weighted unifrac distance) were carried out using the R v. 4.3.3 package
+                               phyloseq [52]. Phylogenetic tree construction for unifrac distance calculation was carried
+                               out using RaxML-NG v. 1.2.
+
+                               2.6. Surface Material Analysis
+                                    A Hitachi S-3200N SEM operated at 2 kV and 0.1 Na, equipped with an Everhart–Thornley
+                               detector (ETD) (Hitachi High-Tech Corporation, Tokyo, Japan) at a working distance of
+                               10 mm, was used to examine the anode electrode’s surface. Anode and cathode samples
+                               (0.5 × 0.5 cm) were rinsed with fresh minimal media before being fixed for 15 min with 2
+                               mL of 2.5% glutaraldehyde in PBS. The samples were dehydrated by immersing them in a
+                               series of 2 mL of acetone aqueous solutions of increasing concentration of acetone (50%,
+                               70%, 90%, and 100%) for 30 min each before being rinsed three times with Milli-Q water (2
+                               mL). The dehydrated samples were air-dried overnight at 30 ◦ C and coated with 0.3 nm
+                               gold particles [53].
+
+                               3. Results and Discussions
+                               3.1. Correlation of Electroactive Biofilm Formation Time and Type of GDE Cathode
+                                        Following the initial inoculation of the microbial fuel cell (MFC) on day 0, the devel-
+                                   opment of the electroactive biofilm was facilitated by consistently feeding the MFC with a
+                                   minimal medium containing 0.6 mg mL−1 of Na-acetate. The progress of biofilm formation
+                                   on the anodes in both carbon cloth (CC) and carbon paper (CP) MFCs was tracked by
+                                   periodically measuring the open circuit potential (OCP) of the anode at various time points
+                                   (Figure 2), as well as observing the evolution of the current peaks produced by the MFCs af-
+                                   ter each batch cycle (i.e., upon media replacement). The MFC-based biosensor was deemed
+                                   stable when it consistently reached a stable peak current output following three consecutive
+Energies 2024, 17, x FOR PEER REVIEW                                                                                     7 of 19
+                                   replacements of the anolyte in all experimental replicates (Figure S2). The stabilization of
+                                   the current peaks is crucial for ensuring the reproducible biosensor’s readings.
+
+
+
+
+                               Figure  2. Voltage
+                               Figure 2.          of the
+                                          Voltage of the anode
+                                                          anode (black)
+                                                                (black) and
+                                                                        and cathode
+                                                                             cathode (red)
+                                                                                      (red)vs.
+                                                                                            vs. Ag/AgCl
+                                                                                                Ag/AgCl RE
+                                                                                                        RE and
+                                                                                                           and cell
+                                                                                                                cell voltage
+                                                                                                                     voltage (blue and
+                                                                                                                             (blue and
+                               orange)
+                               orange) over
+                                        over time
+                                              time for
+                                                   for (a)
+                                                       (a) CC-MFC
+                                                           CC-MFC and
+                                                                    and (b)
+                                                                         (b) CP-MFC.
+                                                                             CP-MFC. TheThe measurements
+                                                                                            measurements are
+                                                                                                          are represented  as mean
+                                                                                                              represented as   mean of
+                                                                                                                                     of
+                               4 replicates ± Standard Error of the Mean.
+                               4 replicates ± Standard Error of the Mean.
+
+                                    The   anodic OCP
+                                    The anodic   OCPdecreased
+                                                       decreasedoveroverthe
+                                                                          thefirst
+                                                                               first month,
+                                                                                   month,     during
+                                                                                            during thethe development
+                                                                                                       development        of the
+                                                                                                                      of the     an-
+                                                                                                                              anodic
+                               odic  electroactive
+                               electroactive       biofilm,
+                                             biofilm, from −from
+                                                              193 −193
+                                                                   ± 2 mV± 2 (day
+                                                                              mV (day
+                                                                                   0) to 0) to −479
+                                                                                         −479       ± 2 mV
+                                                                                                ± 2 mV  (day(day  30)CC-MFCs
+                                                                                                             30) in   in CC-MFCs and
+                               and
+                               fromfrom
+                                     −177−177   ± 3 (day
+                                           ± 3 mV   mV (day
+                                                         0) to 0) to −454
+                                                               −454  ± 4 mV± 4 (day
+                                                                                 mV (day
+                                                                                      26) in26) in CC-MFCs.
+                                                                                             CC-MFCs.   These These
+                                                                                                              anodicanodic      OCP
+                                                                                                                       OCP values
+                               values are within the typical range for a formed and electroactive biofilm in MFCs [34].
+                               The time required for anode OCP stabilization, which is indicative of electroactive biofilm
+                               maturation, is comparably similar between CC and CP-MFCs. However, in terms of the
+                               current peaks observed with the MFCs connected to a 1 kΩ resistor when maintaining a
+                               constant Na-acetate concentration in the media, stable current production was reached on
+Energies 2024, 17, 3574                                                                                                  7 of 19
+
+
+
+
+                              are within the typical range for a formed and electroactive biofilm in MFCs [34]. The time
+                              required for anode OCP stabilization, which is indicative of electroactive biofilm maturation,
+                              is comparably similar between CC and CP-MFCs. However, in terms of the current peaks
+                              observed with the MFCs connected to a 1 kΩ resistor when maintaining a constant Na-
+                              acetate concentration in the media, stable current production was reached on day 55 for
+                              the CC-MFCs and on day 34 for the CP-MFCs (Figure S2). This observation indicates that
+                              after anode OCP stabilization, current production increased at every batch in both CC and
+                              CP-MFCs, suggesting the existence of additional factors that impact current generation,
+                              such as the better acclimatization of the biofilm to the operational conditions, resulting in
+                              improved microbial metabolic activity and electron transfer efficiency, ultimately leading
+                              to an increased current generation, despite a constant anodic OCP [54]. Previous studies on
+                              a similar MFC configuration have documented similar outcomes in terms of the maximum
+                              current produced across the external resistance and biofilm formation time, as shown in
+                              Table 1. The difference in the stabilization time of anodic OCP observed between MFCs
+                              equipped with different cathodes (CC and CP GDE) can be attributed to diverse biofilm
+                              development and composition (discussion in Section 3.5), which was also observed in
+                              previous studies focused on MFC for power production [35–37]. Such differences are
+                              attributed to variations in the environmental conditions within the MFC; the GDE cathode
+                              influences crucial factors such as pH levels and the concentration of dissolved oxygen
+                              in the electrolyte, which are dependent on the type and kinetics of the oxygen reduction
+                              reaction (ORR) at the cathode [31]. However, our observations showed no significant
+                              differences in the pH values of the electrolyte solution at the end of each batch (stable
+                              at 7.3 ± 0.5 in both CC and CP-MFCs). Also, the measured amount of dissolved O2 in
+                              the anolyte showed no significant differences between CP and CC-MFCs (Figure S3). The
+                              percentage of dissolved O2 in the anolyte reached approximately 80% after 24 h, indicating
+                              the substantial permeation of O2 through the 3D-printed reactors. This suggests that the
+                              sole variable distinguishing the two sets of experiments and, therefore, having an effect on
+                              the anodic biofilm development was the performance of the cathode, which varied between
+                              the CP and CC-MFCs, as discussed in Section 3.3. Enhanced cathode performance leads to
+                              a greater electrochemical potential difference between the anode and cathode. A greater
+                              potential gradient has been observed to affect biofilm activity and composition in dual
+                              manners: it motivates bacteria to oxidize organic matter and enhances EET and drives the
+                              selection of electroactive bacterial species [35,55].
+
+                              Table 1. Performance comparison of MFC biosensors for BOD with similar architecture.
+
+                 Pt Loading    OCP Cathode           REx               Max Current Peak   Max Current Density
+ GDL                                                                                                            Reference
+                 (mg cm−2 )    (mV)                  (Ω)               (µA)               (mA m−2 )
+ CC              0.5           -                     953               440 1              1500                  [8]
+ CC              0.5           230                   1000              520                353 1                 [46]
+ CC              0.5           236                   1000              365                333                   This study
+ CP              0.3           -                     500               120 1              -                     [5]
+ CP              0.5           111–191               100               -                  2000 1                [19]
+ CP              0.5           101                   1000              130                231                   This study
+                              1 : Value estimated from a figure; -: Data not reported.
+
+
+
+                                   Variations in the stabilization of the maximum current peak are attributed not only to
+                              differences in biofilm development and composition but also to cathodic electrochemical
+                              constraints, as detailed in the electrochemical analyses section. These limitations restrict
+                              the peak current in CP-MFCs to 130 ± 6 µA (108 ± 9 mA m−2 ), in contrast to 365 ± 13 µA
+                              (304 ± 11 mA m−2 ) in CC-MFCs. Consequently, the CP-MFCs only required achieving a
+                              lower maximum current peak compared to CC-MFCs, potentially explaining the quicker
+                              stabilization of the maximum current peak in CP-MFCs. The measured initial cathode
+                              potentials were 210 ± 3 mV in CP-MFCs and 395 ± 4 mV in CC-MFCs four hours post-
+                              inoculation, which then declined to 101 ± 1 mV and 236 ± 5 mV, respectively, after four
+Energies 2024, 17, 3574                                                                                          8 of 19
+
+
+
+
+                          days and remained stable thereafter. Further electrochemical analyses were conducted to
+                          evaluate the long-term performance of the MFC-biosensor and to elucidate the limitations
+                          imposed by the cathode.
+
+                          3.2. Biosensing Performance
+                                Both the CC-MFC and CP-MFC configurations demonstrated linear correlations be-
+                          tween the charge generated during each anolyte replacement, as calculated using a pre-
+                          viously reported method [56], and a broad spectrum of acetate substrate concentrations.
+                          Figure 3a visually represents the described relationship, and Figure S4 offers an extensive
+                          visualization of the chronoamperometric data over 120 days, showing the current genera-
+                          tion at each batch interval in correlation with the corresponding Na-acetate concentration
+                          in the medium. The linear regression analysis of the linear dynamic range (excluding the
+                          plateau regions at high concentrations) yielded high R2 values of 0.97 for CP-MFCs and
+                          0.99 for CC-MFCs. The linear dynamic range of CC-MFC (25–800 mg L−1 ) was larger than
+                          that of CP-MFC (25–600 mg L−1 ). The sensitivity, determined by normalizing the slope of
+                          the linear regression to the projected geometric area of the anode, was 37.6 C L mg−1 m−2
+                          for CC-MFC and 16.6 C L mg−1 m−2 for CP-MFC. CP-MFCs exhibited lower coulombic
+                          efficiency (ranging from 0.49 ± 0.03% to 19.1 ±1.6%) compared to CC-MFCs (ranging
+                          from 0.10 ± 0.03% to 11.0 ± 1.4%). Furthermore, the coulombic efficiency decreased as
+                          the Na-acetate concentration in the electrolyte increased, as shown in Figure S5. The re-
+                          sponse time of the MFC-based biosensor increased with higher substrate concentrations
+                          (Figure S6). CC-MFCs had a response time ranging from 8.3 ± 1.1 h to 19.1 ± 1.6 h, while
+                          CP-MFCs ranged from 13.1 ± 0.5 h to 33.4 ± 1.5 h. The decrease in coulombic efficiency at
+                          higher Na-acetate concentrations is attributed to the extended substrate oxidation time by
+                          electroactive bacteria at elevated BOD levels, compared to lower concentrations (Figure S3).
+                          This decline in CE results from increased dissolved O2 levels in the MFC over time, which
+                          aerobic bacteria use without generating electricity, and a rise in planktonic cell density,
+                          which competes with the electroactive biofilm for substrate degradation [57–59]. It is well
+                          known that the performance of an MFC biosensor in water monitoring is closely related to
+                          the strength of its electric signal output, which elucidates why CC-MFCs exhibit superior
+                          performance characteristics [60]. The lower dynamic range, sensitivity, coulombic efficiency,
+                          and longer response time in CP-MFCs are attributed to a high internal resistance that ham-
+                          pers efficient current production. Figure 3b shows that the current peaks do not exceed
+                          approximately 110 µA m−2 , and an increase in Na-acetate concentration in the feedstock
+                          only results in increased charge production, indicating the presence of a limiting factor for
+                          current production. Further electrochemical analyses were conducted to investigate the
+                          cause of these limitations.
+
+                          3.3. Electrochemical Analyses
+                               On day 120, polarization and power curves were generated using two different cath-
+                          odes: one that had been used throughout the experiment and another a pristine cathode.
+                          The objective was to determine which electrode is limiting current production. Figure 4a,b
+                          show the polarization curves of the cell, anode, and cathode, featuring a fully developed
+                          catalytic biofilm at the anode and a pristine cathode. Notably, both the CP and CC cathodes
+                          exhibited minimal voltage drops at high current densities, indicating that neither the GDE
+                          electrodes, when undamaged, restrict current production in the MFC. Instead, the limitation
+                          arises from the anode, as its voltage becomes positive at high current densities, indicating
+                          significant overpotential that is not observed in the cathode [15]. The CC-MFC achieved a
+                          maximum current of 352 mA m−2 , while the CP-MFC reached 274 mA m−2 . The calculated
+                          internal resistance (RInt ) of the MFCs, which corresponded to the external resistance (REx )
+                          applied when obtaining the maximum power, resulted in 1432 Ω for CC-MFC and 2294 Ω
+                          for CP-MFC. Figure 4c,d illustrate a comparison between the polarization curves of the
+                          whole cell after 120 days. The experiment was conducted using an MFC with a cathode
+                          that had been in use for 120 days, as well as a pristine cathode within the same MFC on the
+Energies 2024, 17, 3574                                                                                           9 of 19
+
+
+
+
+                          same day, in order to compare the cathode performance before and after usage. In both
+                          the CP and CC-MFC set-ups, a decline in performance is observed attributed to cathode
+                          degradation, specifically in terms of a decrease in the initial open circuit potential (OCP)
+                          and maximum current density. However, this decline is more pronounced in CP-MFC,
+                          where the maximum current dropped from 274 to 231 mA m−2 , while the OCP decreased
+                          from 782 to 500 mV. The slope of the initial segment of the polarization curve, indicative of
+                          activation losses at low current densities, becomes significantly steeper with prolonged use
+                          of the GDE cathode. Activation losses, also known as activation overpotentials, are one
+                          of the three major types of losses in fuel cells (the others being ohmic and concentration
+                          losses) and they occur due to the energy barrier that must be overcome to initiate the
+                          electrochemical reactions at the electrode surfaces [15]. This suggests a decrease in the
+                          ORR catalytic efficiency of the CP GDE cathode over time. On the other hand, CC-MFC
+                          exhibited less noticeable cathode deterioration, with a decrease in OCP from 854 to 764 mV
+                          and current density from 352 to 333 mA m−2 . Such degradation can also be observed
+                          in Figure 2, which shows the voltage of the anode, cathode, and cell in OCP over time.
+                          As highlighted in the polarization curves of Figure 4c,d, at 1 kΩ and with 0.6 g L−1 of
+                          Na-acetate, the current produced by CC-MFC and CP-MFC was 252 and 109 mA m−2 ,
+                          respectively, which matches the values of the maximum current peak produced by CC
+                          and CP-MFCs when fed with the same Na-acetate concentration during the calibration
+                          phase (Figure 3b,c). This implies that the calibration of the biosensor was conducted
+                          when the cathode performance had already decreased (and the electroactive biofilm was
+                          fully formed). The observed reduction in the performance of CP and CC cathodes over
+                          120 days, especially notable in CP cathodes, corroborates findings from prior research,
+                          primarily attributing this decline to biofouling at the cathode, which acts as a barrier to
+                          proton transfer and oxygen diffusion [61,62]. Several investigations have documented that
+                          cathodic biofilms obstruct the GDE, leading to an increase in both activation and diffusion
+                          losses. Specifically, Zhang et al. identified the decrease in the cathode’s performance as
+                          a result of the occlusion of micropores within the CL caused by biofilm growth [62]. Li
+                          et al. reported that biofouling affected not only the surface of the CL but also penetrated
+                          the inner layers of the GDE, which significantly reduced oxygen permeability, conductivity,
+                          and the contact of the oxygen with the reaction sites [63]. Consequently, the kinetic activity
+                          of the cathode was impaired, and the activation losses increased, as observed in the present
+                          study. Another known cause of cathode degradation is the poisoning of the ionomer by
+                          anions in the electrolyte, which reduces ORR kinetics by obstructing O2 adsorption. Both
+                          CC and CP-GDEs employed Nafion as the ionomer. Although the exact Nafion loading
+                          for the premade CC-GDE is not provided by the manufacturer, it is highly likely that there
+                          is a variation in Nafion content between the two types of GDEs, potentially influencing
+                          the degree of ionomer poisoning. The greater activation losses in CP GDE, in comparison
+                          to CC GDE, may be linked to the distinct surface morphology characteristics of the two
+                          types of air-cathodes, such as surface roughness, porosity, pore size, and the thickness of
+                          the GDL, MPL, and CL, which are recognized factors influencing cathode performance
+                          and biofilm development [30,64,65]. To further investigate the surface morphology of the
+                          GDE cathodes and understand the severity of biofouling, SEM analyses were conducted.
+                          Additional research is essential to fully understand how each of these specific composition
+                          and surface characteristics individually influences the cathodic biofilm composition and its
+                          impact on cathode degradation and on the performance of an MFC-based biosensor.
+                                      respectively, which matches the values of the maximum current peak produced by CC
+                                      and CP-MFCs when fed with the same Na-acetate concentration during the calibration
+                                      phase (Figure 3b,c). This implies that the calibration of the biosensor was conducted when
+                                      the cathode performance had already decreased (and the electroactive biofilm was fully
+Energies  2024,17,
+ Energies2024,  17,3574
+                    x FOR PEER REVIEW
+                                      formed). The observed reduction in the performance of CP and CC cathodes                                                     over
+                                                                                                                                                                9 of 1910 of120
+                                                                                                                                                                             19
+                                      days, especially notable in CP cathodes, corroborates findings from prior research, pri-
+                                      marily attributing this decline to biofouling at the cathode, which acts as a barrier to pro-
+                                      ton transfer and oxygen diﬀusion [61,62]. Several investigations have documented that
+                                      cathodic biofilms obstruct the GDE, leading to an increase in both activation and diﬀusion
+                                      losses. Specifically, Zhang et al. identified the decrease in the cathode’s performance as a
+                                      result of the occlusion of micropores within the CL caused by biofilm growth [62]. Li et al.
+                                      reported that biofouling aﬀected not only the surface of the CL but also penetrated the
+                                      inner layers of the GDE, which significantly reduced oxygen permeability, conductivity,
+                                      and the contact of the oxygen with the reaction sites [63]. Consequently, the kinetic activity
+                                      of the cathode was impaired, and the activation losses increased, as observed in the pre-
+                                      sent study. Another known cause of cathode degradation is the poisoning of the ionomer
+                                      by anions in the electrolyte, which reduces ORR kinetics by obstructing O2 adsorption.
+                                      Both CC and CP-GDEs employed Nafion as the ionomer. Although the exact Nafion load-
+                                      ing for3.the       premade
+                                                     (a)Correlation
+                                                          Correlation  CC-GDE
+                                                                          between     is not   provided         by the    manufacturer,         it isCC-MFC
+                                                                                                                                                      highly likely       that
+                                     Figure
+                                    Figure     3. (a)                  between      thethe  charge
+                                                                                         charge       produced
+                                                                                                  produced            by two
+                                                                                                                 by two    typestypes  of MFCs,
+                                                                                                                                   of MFCs,    CC-MFC      (shown (shown
+                                                                                                                                                                      in     in
+                                      there
+                                     blue)     is
+                                              and  a  variation
+                                                    CP-MFC          in
+                                                                (shown  Nafion
+                                                                            in      content
+                                                                               orange),    with between
+                                                                                                  respect    tothe
+                                                                                                                 the two   types
+                                                                                                                      acetate       of GDEs,
+                                                                                                                                concentration
+                                    blue) and CP-MFC (shown in orange), with respect to the acetate concentration in the feeding solu-            potentially
+                                                                                                                                                  in the  feeding  influenc-
+                                                                                                                                                                     solution.
+                                      ing Four
+                                    tion.
+                                     Four   the   degree
+                                                   individual
+                                             individual       of ionomer
+                                                             MFCs MFCswere were poisoning.
+                                                                              usedusedasas       The greater
+                                                                                             replicates,
+                                                                                          replicates,      andeach
+                                                                                                         and     eachactivation     losses inthree
+                                                                                                                       reactor underwent
+                                                                                                                       reactor    underwent       CP separate
+                                                                                                                                                 threeGDE,
+                                                                                                                                                       separate infeed-
+                                                                                                                                                                    compar-
+                                                                                                                                                                    feedings
+                                      ison
+                                    ings   forto  CC
+                                                each     GDE,
+                                                        acetate   may     be
+                                                                concentration. linkedThe  to  the
+                                                                                          charge    distinct
+                                                                                                   produced       surface
+                                                                                                                   by each    morphology
+                                                                                                                             reactor
+                                     for each acetate concentration. The charge produced by each reactor during these three feedings  during     characteristics
+                                                                                                                                               these  three  feedings   of the
+                                    was
+                                      two averaged.
+                                             types     of The  graph
+                                                           air-cathodes,displays
+                                                                               such the  average
+                                                                                        as surface  of  the  four
+                                                                                                        roughness,  resulting   data
+                                                                                                                          porosity,
+                                    was averaged. The graph displays the average of the four resulting data points for each acetate   points
+                                                                                                                                       pore   for  each
+                                                                                                                                               size,  andacetate
+                                                                                                                                                            the    con-
+                                                                                                                                                                  thickness
+                                    centration
+                                      of the GDL,   ± Standard
+                                                          MPL,     ErrorCL,
+                                                                   and      of the Mean.      (b)recognized
+                                                                                                   Current peaks        obtained    from CP-MFCs        andperformance
+                                                                                                                                                              from (c)
+                                     concentration        ±  Standard      Errorwhich
+                                                                                   of theare Mean.     (b) Current  factors
+                                                                                                                         peaksinfluencing
+                                                                                                                                  obtained from cathode
+                                                                                                                                                     CP-MFCs       and from
+                                    CC-MFCs when supplied with minimal medium containing varying concentrations of Na-acetate
+                                      and
+                                    (c)      biofilmwhen
+                                         CC-MFCs          development
+                                                                 supplied      [30,64,65].
+                                                                               with   minimal   Tomedium
+                                                                                                     further      investigate
+                                                                                                                containing         the
+                                                                                                                               varying  surface     morphology
+                                                                                                                                          concentrations     of         of the
+                                                                                                                                                                  Na-acetate
+                                    (pH = 7.4 ± 0.2, conductivity = 1.0 ± 0.2 mS cm−1) to modulate the BOD. The data presented in the
+                                      GDE   =  cathodes
+                                               7.4  ±   0.2,  and    understand
+                                                             conductivity       =  1.0  the
+                                                                                        ±  0.2severity
+                                                                                               mS   cm   −1of)  biofouling,
+                                                                                                               to  modulate       SEM
+                                    figures were obtained from a single MFC reactor that underwent three separate feedings for eachin the
+                                    (pH                                                                                          the BOD. analyses
+                                                                                                                                             The   datawere    conducted.
+                                                                                                                                                          presented
+                                      Additional
+                                    Na-acetate
+                                     figures    were     research
+                                                     concentration
+                                                         obtained fromistested.
+                                                                          essential
+                                                                              a single  toMFC
+                                                                                 The resultsfully
+                                                                                                areunderstand
+                                                                                                     presented
+                                                                                                  reactor     that as  how
+                                                                                                                       the mean
+                                                                                                                     underwent eachcurrent
+                                                                                                                                      of these
+                                                                                                                                    three         specific
+                                                                                                                                             values
+                                                                                                                                            separate         composition
+                                                                                                                                                      obtained
+                                                                                                                                                        feedings  from
+                                                                                                                                                                     for each
+                                      and
+                                    these    surface
+                                             three        characteristics
+                                                      feedings.                  individually         influences        the   cathodic
+                                     Na-acetate concentration tested. The results are presented as the mean current values obtained from   biofilm    composition         and
+                                      its impact        on
+                                     these three feedings.  cathode      degradation          and   on   the    performance         of an   MFC-based         biosensor.
+                                    3.3. Electrochemical Analyses
+                                            On day 120, polarization and power curves were generated using two diﬀerent cath-
+                                    odes: one that had been used throughout the experiment and another a pristine cathode.
+                                    The objective was to determine which electrode is limiting current production. Figure 4a,b
+                                    show the polarization curves of the cell, anode, and cathode, featuring a fully developed
+                                    catalytic biofilm at the anode and a pristine cathode. Notably, both the CP and CC cath-
+                                    odes exhibited minimal voltage drops at high current densities, indicating that neither the
+                                    GDE electrodes, when undamaged, restrict current production in the MFC. Instead, the
+                                    limitation arises from the anode, as its voltage becomes positive at high current densities,
+                                    indicating significant overpotential that is not observed in the cathode [15]. The CC-MFC
+                                    achieved a maximum current of 352 mA m−2, while the CP-MFC reached 274 mA m−2. The
+                                    calculated internal resistance (RInt) of the MFCs, which corresponded to the external re-
+                                    sistance (REx) applied when obtaining the maximum power, resulted in 1432 Ω for CC-
+                                    MFC and 2294 Ω for CP-MFC. Figure 4c,d illustrate a comparison between the polariza-
+                                    tion curves of the whole cell after 120 days. The experiment was conducted using an MFC
+                                    with a cathode that had been in use for 120 days, as well as a pristine cathode within the
+                                    same MFC on the same day, in order to compare the cathode performance before and after
+                                    usage. In both the CP and CC-MFC set-ups, a decline in performance is observed at-
+                                    tributed to cathode degradation, specifically in terms of a decrease in the initial open cir-
+                                    cuit potential (OCP) and maximum current density. However, this decline is more pro-
+                                    nounced in CP-MFC, where the maximum current dropped from 274 to 231 mA m−2, while
+                                    the OCP decreased from 782 to 500 mV. The slope of the initial segment of the polarization
+                                      Figureindicative
+                                    curve,
+                                     Figure     4. (a)
+                                                4.  (a) Polarization
+                                                         Polarization     and power
+                                                               of activation
+                                                                          and   power     curves
+                                                                                  lossescurves
+                                                                                           at lowof of  CC-MFC
+                                                                                                    current
+                                                                                                        CC-MFC        and (b)
+                                                                                                                 densities,
+                                                                                                                      and   (b)becomes
+                                                                                                                                CP-MFC significantly
+                                                                                                                                CP-MFC      after 120
+                                                                                                                                            after  120 days
+                                                                                                                                                        dayssteeper
+                                                                                                                                                                of operation
+                                                                                                                                                               of  operation
+                                      with prolonged
+                                    with     a mature biofilm use  ofatthe
+                                                                         theGDE
+                                                                              anode     and with
+                                                                                     cathode.       freshly replaced
+                                                                                                  Activation        losses,  cathodes
+                                                                                                                              also  known(non-fouled).
+                                                                                                                                              as           (c) Comparison
+                                                                                                                                                  activation     over-
+                                    with a mature biofilm at the anode and with freshly replaced cathodes (non-fouled). (c) Comparison
+                                    potentials,
+                                     of polarization   are one
+                                                             and of   the three
+                                                                  power      curves  major    types ofand
+                                                                                        of MFC-CC          losses(d) in  fuel cells
+                                                                                                                      MFC-CP          (the
+                                                                                                                                   (day      others
+                                                                                                                                          120)   withbeing     ohmic used
+                                                                                                                                                       the cathode
+                                    and    concentration         losses)    and    they   occur   due     to  the   energy    barrier
+                                     during the experiment (dotted line) and with a freshly replaced cathode (continuous line). The
+                                                                                                                                        that  must    be  overcome
+                                    to initiate the electrochemical reactions at the electrode                            surfaces [15]. This suggests a de-
+                                    polarization curves were performed using 0.6 g L−1 Na-acetate in minimal medium as electrolyte
+                                    crease in the ORR catalytic eﬃciency of the CP GDE cathode over time. On the −other                                          hand,
+                                    with a PalmSense4 potentiostat connected in a two-configuration mode at 0.5 mV s 1 . The voltage of
+                                    CC-MFC exhibited less noticeable cathode deterioration, with a decrease in OCP from 854
+                                     the anode (black triangles) and cathode (red dots) (vs. Ag/AgCl RE) was measured every 20 s during
+                                    to 764 mV and current density from 352 to 333 mA m−2. Such degradation can also be
+                                     the LSV with a multimeter. The power (P) was calculated as P = I ECell . The correlation between the
+                                    observed in Figure 2, which shows the voltage of the anode, cathode,                                   and cell in OCP over
+                                           potential of the cell, anode, and cathode is represented by the equation ECell = ECat − EAn − I RInt ,
+                                           where ECell , ECat , and EAn are the empirically measured potential of the cell, cathode, and anode,
+                                           respectively [15].
+Energies 2024, 17, 3574                                                                                       11 of 19
+
+
+
+
+                          3.4. Material Surface Analyses
+                                The SEM images (Figure 5) include visualizations of the GDEs in their pristine condi-
+                          tion as well as after 120 days of continuous usage. By examining these images, we aim to
+                          assess the morphological differences and potential degradation that may have occurred in
+                          the GDEs over the course of the experiment, which provides further evidence to support the
+                          electrochemical findings. The results indicate a significantly different morphology of the
+                          GDL (air-facing side) and CL (electrolyte-facing side) of both CC and CP cathodes before
+                          and after the experiment, with the CP cathodes exhibiting more pronounced biofouling
+                          after 120 days of operation. The pristine CL of the CP cathode showcases a highly porous
+                          heterogeneous and rough surface, likely due to the manual application of the catalyst. In
+                          contrast, the CL of CC cathodes, pre-coated by the manufacturer, presents a more uniform
+                          surface. On the GDL side, the CP structure is compact, with less open space visible be-
+                          tween the fibers compared to CC GDL, where the surface appears smoother and uniform,
+                          with some fibers overlapping. Previous studies on polymer electrolyte fuel cells have
+                          demonstrated that the CC GDL, characterized by reduced tortuosity and enhanced porosity,
+                          outperforms the CP GDL because CC GDL facilitates efficient oxygen transport, which
+                          could explain the better performance and operational stability of the CC-MFCs observed in
+                          this study [30]. Both types of commercial cathodes are also equipped with MPL. A recent
+                          investigation by Chen et al. revealed that the MPL of the commercial material used for
+                          CP GDL has a porosity of 61 ± 0% with an overall lower thickness of the GDL and MPL
+                          of 250 µm compared to CC GDE, which has a porosity of 54 ± 3% and higher thickness
+                          (410 µm) [66]. Santoro et al. showed that thicker GDE structures with MPL prevented
+                          biofilm penetration into the cathode, leading to the better performance of MFC [19]. This
+                          observation could explain the heightened biofouling noted in the thinner CP cathodes.
+                          After 120 days in operation within MFCs, both CP and CC cathodes exhibit visible biofilm
+                          formation within the CL and GDL, more extensively on CP. On the GDL side, CC cathodes
+                          display a network of carbon fibers that retain much of their original structure with signs
+                          of biofilm presence. Meanwhile, the CP GDL image reveals a more drastic alteration with
+                          significant biofilm development. The fibers are heavily coated with biofilm, which appears
+                          as an accumulation of material that obscures the original fiber structure. On the CL side,
+                          both the CC and CP cathodes exhibited the presence of biological material. Biological
+                          residues were visible on the CL side of the post-experiment CC cathode, which were also
+                          visible to the naked eye when the cathode was removed after the experiment concluded (see
+                          Figure S7). In the case of the CP cathode, the CL appears to have an even more pronounced
+                          biofilm presence, with a thick, uneven layer that almost completely obscures the underlying
+                          structure of the electrode. The biofilm here is rugged and heterogeneous, with large clumps
+                          and debris, suggesting heavy colonization and possibly higher biofouling when compared
+                          to the CC GDE.
+                                The CP cathodes, characterized by a more porous catalyst layer and a thinner, denser
+                          gas diffusion layer, showed a higher presence of biological material. This biofouling
+                          extended from the catalyst layer’s surface deep into the electrode, severely blocking the
+                          gas diffusion layer. Such extensive clogging was associated with a significant drop in the
+                          electrochemical performance of the CP cathodes.
+
+                          3.5. Effect of GDE Cathodes on the Anodic Biofilm Composition
+                               Analysis of anode polarization curves and OCP values revealed differences in the
+                          anodic catalytic activity between MFCs with CC or CP air-cathodes, likely due to varied
+                          electroactive biofilm compositions, despite identical inoculum. Consequently, a taxonomic
+                          analysis of the anode was conducted to investigate the microbial community differences
+                          potentially causing these variations. The taxonomic analysis of the inoculum and the
+                          four MFC reactors (biological replicates) equipped with CC and CP-MFCs (Figure 6)
+                          reveals distinct biofilm development between the CC-MFCs and CP-MFCs, both differing
+                          from the initial inoculum. The variation in biofilm composition could account for the
+Energies 2024, 17, 3574                                                                                                            12 of 19
+
+
+ Energies 2024, 17, x FOR PEER REVIEW                                                                                              12 of 19
+                                 distinct electrochemical behavior of the biofilm, with CC MFCs producing a higher current
+                                 compared to CP MFCs (Figure 4a,b).
+
+
+
+
+                                  Figure5.5.SEM
+                                 Figure     SEMimages
+                                                  imagescomparing
+                                                          comparingthethegas
+                                                                          gasdiffusion
+                                                                              diﬀusionlayers
+                                                                                        layers(GDLs)
+                                                                                               (GDLs)and
+                                                                                                      andcatalyst
+                                                                                                           catalystlayers
+                                                                                                                    layers(CLs)
+                                                                                                                           (CLs)of
+                                                                                                                                 ofpristine
+                                                                                                                                   pristine
+                                  and  post-usage   conditions  in both  CC  and  CP  cathodes.  The left column   of images  displays
+                                 and post-usage conditions in both CC and CP cathodes. The left column of images displays the GDLs       the
+                                  GDLs in their pristine form, while the right column showcases the GDLs after an extended usage
+                                 in their pristine form, while the right column showcases the GDLs after an extended usage period of
+                                  period of 120 days. Images were taken with Hitachi S-3200N scanning electron microscope (SEM)
+                                 120 days. Images were taken with Hitachi S-3200N scanning electron microscope (SEM) operated at
+                                  operated at 2 kV and 0.1 Na, equipped with an Everhart–Thornley detector (ETD) at a magnification
+                                 2ofkV and 0.1 Na, equipped with an Everhart–Thornley detector (ETD) at a magnification of 650×.
+                                     650X.
+
+                                  3.5. Eﬀect of GDE Cathodes on the Anodic Biofilm Composition
+                                       Analysis of anode polarization curves and OCP values revealed diﬀerences in the
+                                  anodic catalytic activity between MFCs with CC or CP air-cathodes, likely due to varied
+                                  electroactive biofilm compositions, despite identical inoculum. Consequently, a taxo-
+                                  nomic analysis of the anode was conducted to investigate the microbial community dif-
+                                  ferences potentially causing these variations. The taxonomic analysis of the inoculum and
+                           the four MFC reactors (biological replicates) equipped with CC and CP-MFCs (Figure 6)
+                           reveals distinct biofilm development between the CC-MFCs and CP-MFCs, both diﬀering
+                           from the initial inoculum. The variation in biofilm composition could account for the dis-
+Energies 2024, 17, 3574                                                                                      13 of 19
+                           tinct electrochemical behavior of the biofilm, with CC MFCs producing a higher current
+                           compared to CP MFCs (Figure 4a,b).
+
+
+
+
+                           Figure6.6.Heatmap
+                          Figure      Heatmapshowing
+                                                 showing thethe species
+                                                              species   and
+                                                                      and     genera
+                                                                          genera     found
+                                                                                  found     in the
+                                                                                        in the      initial
+                                                                                               initial      inoculum
+                                                                                                       inoculum  and inand in replicates
+                                                                                                                         four four repli-
+                          ofcates of CC-MFCs
+                             CC-MFCs           and CPMFCs.
+                                         and CPMFCs.            Thewere
+                                                         The taxa   taxa filtered
+                                                                         were filtered
+                                                                                  aboveabove  0.025%.
+                                                                                        0.025%.          Phylogenetic
+                                                                                                  Phylogenetic         tree construction
+                                                                                                                  tree construction  for
+                           for unifrac
+                          unifrac       distance
+                                   distance       calculation
+                                            calculation        was carried
+                                                         was carried        out using
+                                                                       out using       RaxML-NG.
+                                                                                  RaxML-NG.
+
+                                  PrincipalCoordinate
+                                 Principal      Coordinate      Analysis
+                                                             Analysis          (PCoA)
+                                                                          (PCoA)          highlighted
+                                                                                      highlighted          similarity
+                                                                                                      similarity    amongamong      the replicates
+                                                                                                                              the replicates   and
+                          aand    a closer
+                             closer          similarity
+                                     similarity     of theofinoculum
+                                                              the inoculum to thetomicrobial
+                                                                                       the microbial      community
+                                                                                                   community              of CC-MFCs
+                                                                                                                    of CC-MFCs              (Figure
+                                                                                                                                      (Figure   S8).
+                          InS8). In CP-MFCs,
+                              CP-MFCs,       a fewagenera
+                                                      few genera       dominated
+                                                               dominated                 the microbial
+                                                                                 the microbial              population,
+                                                                                                    population,              comprising
+                                                                                                                     comprising      up to up
+                                                                                                                                            >60%:to >
+                            60%: Zooglea
+                          Zooglea    (48 ± (48    ± 4.4%),
+                                              4.4%),          Pseudarcobacter
+                                                       Pseudarcobacter        (10 ±  (103.9%),
+                                                                                          ± 3.9%),   Pseudomonas
+                                                                                                  Pseudomonas      (3.7(3.7
+                                                                                                                         ± ±0.1%),
+                                                                                                                                0.1%),Alcaligenes
+                                                                                                                                        Alcaligenes
+                            (1.5±± 0.7%),
+                          (1.5      0.7%), and
+                                             andDelftia
+                                                    Delftia(2.2
+                                                             (2.2±± 1.1%).
+                                                                       1.1%). These
+                                                                                 These genera
+                                                                                          genera are are also
+                                                                                                          also present
+                                                                                                                 presentin  inCC-MFCs
+                                                                                                                                CC-MFCsbut    butinin
+                            lesserproportions.
+                          lesser    proportions.In   Inthe
+                                                         the best-performing
+                                                              best-performing CC-MFCs, ten additional      additional genera
+                                                                                                                          genera areare found
+                                                                                                                                         foundin  in>
+                            2% relative abundance, including
+                          >2%                                including Citrifermentas,
+                                                                             Citrifermentas, Comamonas,
+                                                                                                  Comamonas, Dechlorosoma,
+                                                                                                                  Dechlorosoma, Rhodococcus,
+                                                                                                                                      Rhodococcus,
+                          Paludibacter,
+                            Paludibacter,Chriseobacterium,
+                                            Chriseobacterium,Lentimicrobium,
+                                                                    Lentimicrobium,     Azospirillum,
+                                                                                           Azospirillum, Glutamicibacter,
+                                                                                                             Glutamicibacter,       Thermomonas.
+                                                                                                                               andand   Thermomo-
+                          The
+                            nas.coexistence     of both
+                                  The coexistence       of aerobic    and anaerobic
+                                                            both aerobic       and anaerobicbacteria   at the at
+                                                                                                    bacteria   anode    of bothoftypes
+                                                                                                                  the anode          both of  MFCof
+                                                                                                                                           types
+                          confirms     the presence
+                            MFC confirms                  of oxygen
+                                               the presence              within
+                                                                 of oxygen           the the
+                                                                                within     reactor   (Figure
+                                                                                                reactor  (Figure S3)S3)
+                                                                                                                      and
+                                                                                                                        and indicates
+                                                                                                                               indicatescomplex
+                                                                                                                                          complex
+                          microbial
+                            microbialdynamics,
+                                         dynamics,wherein
+                                                        whereinaerobic
+                                                                     aerobicbacteria
+                                                                                 bacterialikely
+                                                                                             likelyconsume
+                                                                                                     consumeoxygen,
+                                                                                                                  oxygen,thereby
+                                                                                                                              therebyprotecting
+                                                                                                                                        protecting
+                          anaerobic
+                            anaerobic bacteria [33]. The results indicate a colonization of the anode byaamore
+                                        bacteria   [33].  The   results    indicate     a colonization      of the  anode    by      morediverse
+                                                                                                                                            diverse
+                          set
+                            setof
+                                oftaxa
+                                   taxa in CC-MFCs
+                                             CC-MFCs compared
+                                                            comparedto       toCP-MFCs.
+                                                                                 CP-MFCs.Such    Such    higher
+                                                                                                      higher       diversity
+                                                                                                               diversity         in CC-MFCs
+                                                                                                                            in CC-MFCs             is
+                                                                                                                                             is con-
+                          confirmed
+                            firmed byby      alpha
+                                          alpha      diversity
+                                                  diversity        analysis
+                                                               analysis         (Figure
+                                                                            (Figure    S9).S9).  Zhang
+                                                                                             Zhang        et have
+                                                                                                      et al.  al. have   previously
+                                                                                                                     previously         observed
+                                                                                                                                    observed    that
+                          that
+                            the the  cathode
+                                 cathode         significantly
+                                            significantly          affects
+                                                              aﬀects    thethe     microbial
+                                                                               microbial         composition
+                                                                                              composition      of of
+                                                                                                                  thethe   bioanode
+                                                                                                                       bioanode         [36].
+                                                                                                                                     [36]. ThisThisin-
+                          influence     is likely   due   to  the   impact      of  different    cathodes     on  the
+                            fluence is likely due to the impact of diﬀerent cathodes on the internal resistance of MFCs,internal    resistance    of
+                          MFCs,
+                            whichwhich      modulates
+                                     modulates             bothelectron
+                                                    both the      the electronflowflow
+                                                                                     throughthrough    the circuit
+                                                                                                  the circuit   andandthe the   anode’s
+                                                                                                                           anode’s        electron
+                                                                                                                                       electron   ac-
+                          acceptor    availability.    Previous     studies     have   demonstrated        that  adjusting
+                            ceptor availability. Previous studies have demonstrated that adjusting these parameters            these  parameters
+                          via
+                            viathe
+                                theRRExExexerts
+                                          exertsselective
+                                                   selectivepressure
+                                                               pressureon    onthethecomposition
+                                                                                      compositionof     ofelectroactive
+                                                                                                            electroactivebacteria
+                                                                                                                              bacteriawithin
+                                                                                                                                        withinthe the
+                          bioanode     [67,68].
+                            bioanode [67,68].
+                                 Cyclic
+                                  Cyclicvoltammetry
+                                           voltammetryexperiments,
+                                                              experiments,with     withandandwithout
+                                                                                                 withoutNa-acetate,
+                                                                                                             Na-acetate,were wereperformed
+                                                                                                                                    performedtoto
+                          identify
+                            identify EET sites capable of regulating bioelectrochemical anodic processes.The
+                                      EET    sites  capable     of  regulating      bioelectrochemical          anodic    processes.      Thetwotwo
+                          conditions in the presence and absence of Na-acetate are referred to as the turnover and
+                          non-turnover mode, respectively. As shown in Figure S10a, in a non-turnover cyclic voltam-
+                          mogram of the anode of a CC-MFC, it is possible to observe three oxidation and three
+                          reduction peaks. The three calculated midpoints might correspond to the standard electro-
+                          chemical potential of the redox couples SO3 2− /HS− (E◦ = −120 mV, pH = 7), ubiquinone
+                          ox/red (E◦ = 111 mV, pH = 7), and 12 O2 /H2 O (E◦ = 820 mV, pH = 7), respectively (all vs.
+Energies 2024, 17, 3574                                                                                          14 of 19
+
+
+
+
+                          Ag/AgCl RE) [69]. The comparison of the non-turnover with turnover voltammogram
+                          reveals that the redox couples SO3 2− /HS− is the main EET site responsible for acetate
+                          oxidation. Interestingly, similar peaks can be seen in the non-turnover and turnover voltam-
+                          mogram of a CP-MFC (Figure S10b), even though a lower current is produced. These
+                          results suggest that the EET mechanism is similar in the two types of MFC (with CC and
+                          CP cathode), regardless of the differences in the relative abundance of bacterial genera.
+                          The cyclic voltammograms show that the current produced by CP-MFCs is lower than
+                          the one produced by CC-MFCs. This difference may be attributed to the prevalence of
+                          Zooglea resiniphila, a commonly found species in anaerobic sludge, within all the replicates
+                          of CP-MFCs. Z. resiniphila has been observed to form dense biofilms, particularly in the
+                          presence of conductive materials. However, the specific electroactivity of Z. resiniphila
+                          has not been extensively studied, suggesting that it may not be classified among the
+                          bacteria with the highest degree of electroactivity. Nonetheless, despite its unconfirmed
+                          electroactivity, Z. resiniphila could still contribute to the formation of biofilms owing to
+                          its ability to produce substantial quantities of exopolysaccharides. Further research is
+                          required to elucidate the precise electrochemical role of Z. resiniphila in CP-MFCs [70].
+                          Furthermore, among the identified bacteria, Pseudarcobacter was also found to be abun-
+                          dant in both CP and CC-MFCs and is known to exhibit electroactivity, although further
+                          research is needed to investigate the specific electroactive metabolic pathways employed
+                          by this bacterium [71,72]. Notably, certain species of Pseudomonas, such as P. aeruginosa and
+                          P. putida, have been extensively investigated for their ability to form biofilms on elec-
+                          trodes and engage in EET processes [73,74]. Other genera, including Alcaligenes [75],
+                          Delftia [76], Citrifermentans [77], Comamonas [78,79], Dechlorosoma [80], Rhodococcus [81],
+                          Paludibacter [82], Chriseobacterium [83], Lentimicrobium [84], Azospirillum [85], and Ther-
+                          momonas [86], are known to develop in bioelectrochemical systems and they are able to
+                          use the anode as an external electron acceptor, either directly or through the use of shut-
+                          tle molecules. Glutamicibacter has been previously reported to colonize GDE cathodes in
+                          SC-MFCs. Its presence in the anode of CC-MFCs might be due to the anode bacteria that
+                          might migrate from one electrode to the other; it is known to be able to adapt to different
+                          environments [29,87].
+                               The cyclic voltammograms reveal that sulfur might act as an electron shuttle, and it
+                          could be the main EET mechanism during Na-acetate oxidation in both CP and CC-MFCs.
+                          Among the genera found in the anodic biofilm of both types of MFCs, Pseudomonas [88],
+                          Comamonas [89], and Rhodococcus [90] are known to include species that are capable of sulfur
+                          reduction for EET processes. It is well known that bacteria can use sulfur as a final electron
+                          acceptor, producing sulfide. The latter is then spontaneously reoxidized to its original
+                          form when the anode has a suitable potential, which makes sulfur a shuttle molecule for
+                          mediated EET [91].
+
+                          4. Conclusions
+                               This study elucidates the pivotal role that the choice of a gas diffusion electrode (GDE)
+                          cathode plays in the performance of 3D-printed single-chamber MFC-based biosensors.
+                          The findings highlight how cathode selection significantly influences critical factors such
+                          as the time required for current signal stabilization, the overall biosensor performance
+                          in analyzing biological oxygen demand (BOD), and key sensing parameters, including
+                          linear dynamic range, sensitivity, and response time. From a practical standpoint, cost-
+                          effective carbon paper (CP) GDEs with a hand-coated CL emerge as favorable options
+                          for short-term biosensor applications, while carbon cloth (CC) GDEs supplied with the
+                          CL exhibit superior performance for long-term sensing purposes. This delineation will
+                          guide researchers and practitioners in selecting the most appropriate cathode materials for
+                          their specific MFC biosensor objectives. Looking forward, this study paves the way for
+                          future investigations focused on optimizing cathode materials and design. Future studies
+                          should also aim to elucidate the effects of more complex substrates or real wastewater on
+                          the performance of MFC-biosensors and assess their applicability in real-world scenarios.
+Energies 2024, 17, 3574                                                                                                      15 of 19
+
+
+
+
+                                Addressing challenges such as biofouling and degradation through innovative strategies
+                                has the potential to significantly enhance the sustained performance and stability of MFC
+                                biosensors, thus advancing their utility in environmental monitoring and beyond. Such
+                                endeavors will continue to be pivotal in the evolution of this promising technology.
+
+                                Supplementary Materials: The following supporting information can be downloaded at: https://
+                                www.mdpi.com/article/10.3390/en17143574/s1, Figure S1: (a) MFC reactor utilized during the study;
+                                (b) schematic representation of the structure of a SC MFC with an air cathode, and (c) open reactor
+                                displaying the different components. Figure S2: Current produced during the biofilm formation time
+                                in a) CC-MFC and b) CP-MFC with external resistor of 1000 Ω. The arrows indicate the anolyte re-
+                                placement, which contains 0.6 mg L−1 Na-acetate. Data are shown as mean of 4 replicates ± Standard
+                                Error of the Mean. Figure S3: Concentration of dissolved oxygen in the electrolyte of MFC reactors
+                                equipped with CC- and CP cathode over time. Time 0 h corresponds to replacing of the anolyte inside
+                                the aerobic chamber. Over time, O2 diffused inside the reactor, and the concentration of dissolved O2
+                                in the anolyte increased and it was measured with a Fiber-Optic Oxygen Meter and a Pyro Oxygen
+                                Logger Software (FireSting O2 , Aachen, Germany). Data are presented as mean of 2 replicates ± SD.
+                                Figure S4: Current produced during the calibration of the biosensor with different Na-acetate concen-
+                                trations in (a) CC-MFC and (b) CP-MFC with external resistor of 1000 Ω. The anolyte replacement is
+                                marked by arrows, with each arrow’s color representing a different Na-acetate concentration in the
+                                media, as annotated in the graph. Each Na-acetate concentration underwent three tests to evaluate
+                                the reproducibility of the biosensor. Data are shown as mean of 4 replicates ± Standard Error of the
+                                Mean. Figure S5: Correlation between the coulombic efficiency produced by the CC-MFC (blue) and
+                                CP-MFC (orange) and the acetate concentration of the feeding solution. Data are shown as mean
+                                of 4 replicates ± Standard Error of the Mean. Figure S6: Correlation between the response time of
+                                CC-MFC (blue) and CP-MFC (orange) biosensors and the acetate concentration of the feeding solution.
+                                Data are shown as mean of 4 replicates ± Standard Error of the Mean. Figure S7: Inner surface of
+                                (a) CP GDE cathode at the end of the experiment and of (b) CC GDE cathode at the end of the
+                                experiment. Figure S8: Principal Coordinate Analysis of four replicates of CC-MFCs, CP-MFCs, and
+                                the initial inoculum. The analysis, performed with the R package “phyloseq”, is supplemented with
+                                weighted UniFrac distance assessment. The taxa were filtered above 0.025%. Figure S9: Alpha diver-
+                                sity analysis results using Shannon and Simpson indices for four replicates of CC-MFCs, CP-MFCs,
+                                and the initial inoculum. The analysis, performed with the R package “phyloseq”, is supplemented
+                                with weighted UniFrac distance assessment. Figure S10: Cyclic voltammograms of (a) CC-MFC
+                                and (b) CP-MFC at the end of the experiment with 0.6 g L−1 Na-acetate in minimal medium (TO
+                                conditions, dotted line) and acetate-free minimal medium (NTO conditions, continuous line).
+                                Author Contributions: A.S.: Conceptualization, Methodology, Investigation, Data Curation, Formal
+                                Analysis, Writing—original draft, Writing—review and editing, Visualization; D.F.: Conceptualiza-
+                                tion, Methodology, Software, Writing—review and editing; M.R.-M.: Methodology, Writing—review
+                                and editing; C.A.R.: Supervision, Resources, Writing—review and editing; J.R.V.: Supervision, Re-
+                                sources, Writing—review and editing; S.G.: Supervision, Resources, Writing—review and editing.
+                                All authors have read and agreed to the published version of the manuscript.
+                                Funding: This work was funded by the Natural Environment Research Council (NERC) UK project
+                                grant: NE/W003627/1.
+                                Data Availability Statement: The original contributions presented in the study are included in the
+                                article/Supplementary Materials, further inquiries can be directed to the corresponding author/s.
+                                Acknowledgments: We extend our acknowledgment to Thomas Chamberlain (School of Chemistry
+                                and Chemical Engineering, University of Surrey, Guildford, UK) for his invaluable assistance in the
+                                fabrication of the reactors.
+                                Conflicts of Interest: The authors declare no conflicts of interest.
+
+References
+1.    World Health Organization. Drinking-Water. Available online: https://www.who.int/news-room/fact-sheets/detail/drinking-
+      water (accessed on 13 October 2023).
+2.    Zhang, W.; Tooker, N.B.; Mueller, A.V. Enabling Wastewater Treatment Process Automation: Leveraging Innovations in Real-Time
+      Sensing, Data Analysis, and Online Controls. Environ. Sci. 2020, 6, 2973–2992. [CrossRef]
+Energies 2024, 17, 3574                                                                                                           16 of 19
+
+
+
+
+3.    Emaminejad, S.A.; Morgan, V.L.; Kumar, K.; Kavathekar, A.; Ragush, C.; Shuai, W.; Jia, Z.; Huffaker, R.; Wells, G.; Cusick, R.D.
+      Statistical and Microbial Analysis of Bio-Electrochemical Sensors Used for Carbon Monitoring at Water Resource Recovery
+      Facilities. Environ. Sci. 2022, 8, 2052–2064. [CrossRef]
+4.    Chang, I.S.; Jang, J.K.; Gil, G.C.; Kim, M.; Kim, H.J.; Cho, B.W.; Kim, B.H. Continuous Determination of Biochemical Oxygen
+      Demand Using Microbial Fuel Cell Type Biosensor. Biosens. Bioelectron. 2004, 19, 607–613. [CrossRef] [PubMed]
+5.    Di Lorenzo, M.; Curtis, T.P.; Head, I.M.; Velasquez-Orta, S.B.; Scott, K. A Single Chamber Packed Bed Microbial Fuel Cell Biosensor
+      for Measuring Organic Content of Wastewater. Water Sci. Technol. 2009, 60, 2879–2887. [CrossRef]
+6.    Pasternak, G.; Greenman, J.; Ieropoulos, I. Self-Powered, Autonomous Biological Oxygen Demand Biosensor for Online Water
+      Quality Monitoring. Sens. Actuators B Chem. 2017, 244, 815–822. [CrossRef]
+7.    Spurr, M.W.A.; Yu, E.H.; Scott, K.; Head, I.M. A Microbial Fuel Cell Sensor for Unambiguous Measurement of Organic Loading
+      and Definitive Identification of Toxic Influents. Environ. Sci. 2020, 6, 612–621. [CrossRef]
+8.    Spurr, M.W.; Yu, E.H.; Scott, K.; Head, I.M. No Re-Calibration Required? Stability of a Bioelectrochemical Sensor for Biodegradable
+      Organic Matter over 800 Days. Biosens. Bioelectron. 2021, 190, 113392. [CrossRef]
+9.    Di Lorenzo, M.; Scott, K.; Curtis, T.P.; Head, I.M. Effect of Increasing Anode Surface Area on the Performance of a Single Chamber
+      Microbial Fuel Cell. Chem. Eng. J. 2010, 156, 40–48. [CrossRef]
+10.   Wang, C.; Yin, L.; Wang, S.; Jin, X.; Yang, J.; Liu, H. Role Played by the Physical Structure of Carbon Anode Materials in MFC
+      Biosensor for BOD Measurement. Sci. Total Environ. 2023, 856, 158848. [CrossRef]
+11.   Wang, Z.; Liao, C.; Zhong, Z.; Liu, S.; Li, M.; Wang, X. Design, Optimization and Application of a Highly Sensitive Microbial
+      Electrolytic Cell-Based BOD Biosensor. Environ. Res. 2023, 216, 114533. [CrossRef]
+12.   Nakamoto, T.; Nakamoto, D.; Taguchi, K. Stand-Alone Floating Microbial Fuel Cell-Based Biosensor for Tracking Organic
+      Pollution Influx. Biochem. Eng. J. 2023, 200, 109087. [CrossRef]
+13.   Vilas Boas, J.; Oliveira, V.B.; Marcon, L.R.C.; Simões, M.; Pinto, A.M.F.R. Optimization of a Single Chamber Microbial Fuel Cell
+      Using Lactobacillus Pentosus: Influence of Design and Operating Parameters. Sci. Total Environ. 2019, 648, 263–270. [CrossRef]
+14.   Cheng, S.; Liu, H.; Logan, B.E. Increased Performance of Single-Chamber Microbial Fuel Cells Using an Improved Cathode
+      Structure. Electrochem. Commun. 2006, 8, 489–494. [CrossRef]
+15.   Logan, B.E.; Hamelers, B.; Rozendal, R.; Schröder, U.; Keller, J.; Freguia, S.; Aelterman, P.; Verstraete, W.; Rabaey, K. Microbial
+      Fuel Cells: Methodology and Technology. Environ. Sci. Technol. 2006, 40, 5181–5192. [CrossRef] [PubMed]
+16.   Gil, G.C.; Chang, I.S.; Kim, B.H.; Kim, M.; Jang, J.K.; Park, H.S.; Kim, H.J. Operational Parameters Affecting the Performannce of a
+      Mediator-Less Microbial Fuel Cell. Biosens. Bioelectron. 2003, 18, 327–334. [CrossRef] [PubMed]
+17.   Freguia, S.; Rabaey, K.; Yuan, Z.; Keller, J. Electron and Carbon Balances in Microbial Fuel Cells Reveal Temporary Bacterial
+      Storage Behavior during Electricity Generation. Environ. Sci. Technol. 2007, 41, 2915–2921. [CrossRef] [PubMed]
+18.   Lu, M.; Li, S.F.Y. Cathode Reactions and Applications in Microbial Fuel Cells: A Review. Crit. Rev. Environ. Sci. Technol. 2012, 42,
+      2504–2525. [CrossRef]
+19.   Santoro, C.; Agrios, A.; Pasaogullari, U.; Li, B. Effects of Gas Diffusion Layer (GDL) and Micro Porous Layer (MPL) on Cathode
+      Performance in Microbial Fuel Cells (MFCs). Int. J. Hydrogen Energy 2011, 36, 13096–13104. [CrossRef]
+20.   Modin, O.; Wilén, B.M. A Novel Bioelectrochemical BOD Sensor Operating with Voltage Input. Water Res. 2012, 46, 6113–6120.
+      [CrossRef]
+21.   Winfield, J.; Greenman, J.; Ieropoulos, I. Response of Ceramic Microbial Fuel Cells to Direct Anodic Airflow and Novel Hydrogel
+      Cathodes. Int. J. Hydrogen Energy 2019, 44, 15344–15354. [CrossRef]
+22.   Yi, Y.; Xie, B.; Zhao, T.; Liu, H. Comparative Analysis of Microbial Fuel Cell Based Biosensors Developed with a Mixed Culture
+      and Shewanella Loihica PV-4 and Underlying Biological Mechanism. Bioresour. Technol. 2018, 265, 415–421. [CrossRef] [PubMed]
+23.   Quaglio, M.; Massaglia, G.; Vasile, N.; Margaria, V.; Chiodoni, A.; Salvador, G.P.; Marasso, S.L.; Cocuzza, M.; Saracco, G.;
+      Pirri, F.C. A Fluid Dynamics Perspective on Material Selection in Microbial Fuel Cell-Based Biosensors. Int. J. Hydrogen Energy
+      2019, 44, 4533–4542. [CrossRef]
+24.   Di Lorenzo, M.; Thomson, A.R.; Schneider, K.; Cameron, P.J.; Ieropoulos, I. A Small-Scale Air-Cathode Microbial Fuel Cell for
+      on-Line Monitoring of Water Quality. Biosens. Bioelectron. 2014, 62, 182–188. [CrossRef]
+25.   Lóránt, B.; László, K.; Tardy, G.M. Improving the Performance of Microbial Fuel Cells with Modified Carbon Aerogel Based
+      Cathode Catalysts. Period. Polytech. Chem. Eng. 2022, 66, 1–9. [CrossRef]
+26.   Wang, Y.; Liu, X.; Wang, M.; Zhang, P.; Zong, Y.; Zhang, Q. A Single-Chamber Microbial Fuel Cell for Rapid Determination of
+      Biochemical Oxygen Demand Using Low-Cost Activated Carbon as Cathode Catalyst. Environ. Technol. 2018, 39, 3228–3237.
+      [CrossRef] [PubMed]
+27.   Zeng, L.; Li, X.; Shi, Y.; Qi, Y.; Huang, D.; Tadé, M.; Wang, S.; Liu, S. FePO4 Based Single Chamber Air-Cathode Microbial Fuel
+      Cell for Online Monitoring Levofloxacin. Biosens. Bioelectron. 2017, 91, 367–373. [CrossRef]
+28.   Sánchez-Peña, P.; Rodriguez, J.; Montes, R.; Baeza, J.A.; Gabriel, D.; Baeza, M.; Guisasola, A. Less Is More: A Comprehensive
+      Study on the Effects of the Number of Gas Diffusion Layers on Air–Cathode Microbial Fuel Cells. ChemElectroChem 2021, 8,
+      3416–3426. [CrossRef]
+29.   Jia, L.; Jiang, B.; Huang, F.; Hu, X. Nitrogen Removal Mechanism and Microbial Community Changes of Bioaugmentation
+      Subsurface Wastewater Infiltration System. Bioresour. Technol. 2019, 294, 122140. [CrossRef]
+Energies 2024, 17, 3574                                                                                                               17 of 19
+
+
+
+
+30.   Wang, Y.; Wang, C.Y.; Chen, K.S. Elucidating Differences between Carbon Paper and Carbon Cloth in Polymer Electrolyte Fuel
+      Cells. Electrochim. Acta 2007, 52, 3965–3975. [CrossRef]
+31.   Zhao, F.; Harnisch, F.; Schröder, U.; Scholz, F.; Bogdanoff, P.; Herrmann, I. Challenges and Constraints of Using Oxygen Cathodes
+      in Microbial Fuel Cells. Environ. Sci. Technol. 2006, 40, 5193–5199. [CrossRef]
+32.   Córdova-Bautista, Y.; Paraguay-Delgado, F.; Pérez Hernández, B.; Pérez Hernández, G.; Martínez Pereyra, G.; Ramírez Morales, E.
+      Influence of External Resistance and Anodic PH on Power Density in Microbial Fuel Cell Operated with B. Subtilis BSC-2 Strain.
+      Appl. Ecol. Environ. Res. 2018, 16, 1983–1997. [CrossRef]
+33.   Cristiani, P.; Carvalho, M.L.; Guerrini, E.; Daghio, M.; Santoro, C.; Li, B. Cathodic and Anodic Biofilms in Single Chamber
+      Microbial Fuel Cells. Bioelectrochemistry 2013, 92, 6–13. [CrossRef]
+34.   Logan, B.E.; Rossi, R.; Ragab, A.; Saikaly, P.E. Electroactive Microorganisms in Bioelectrochemical Systems. Nat. Rev. Microbiol.
+      2019, 17, 307–319. [CrossRef] [PubMed]
+35.   Almatouq, A.; Babatunde, A.O.; Khajah, M.; Webster, G.; Alfodari, M. Microbial Community Structure of Anode Electrodes in
+      Microbial Fuel Cells and Microbial Electrolysis Cells. J. Water Process Eng. 2020, 34, 101140. [CrossRef]
+36.   Zhang, G.; Wang, K.; Zhao, Q.; Jiao, Y.; Lee, D.J. Effect of Cathode Types on Long-Term Performance and Anode Bacterial
+      Communities in Microbial Fuel Cells. Bioresour. Technol. 2012, 118, 249–256. [CrossRef]
+37.   Kiely, P.D.; Rader, G.; Regan, J.M.; Logan, B.E. Long-Term Cathode Performance and the Microbial Communities That Develop in
+      Microbial Fuel Cells Fed Different Fermentation Endproducts. Bioresour. Technol. 2011, 102, 361–366. [CrossRef]
+38.   Dávila, D.; Esquivel, J.P.; Sabaté, N.; Mas, J. Silicon-Based Microfabricated Microbial Fuel Cell Toxicity Sensor. Biosens. Bioelectron.
+      2011, 26, 2426–2430. [CrossRef] [PubMed]
+39.   Janicek, A.; Gao, N.; Fan, Y.; Liu, H. High Performance Activated Carbon/Carbon Cloth Cathodes for Microbial Fuel Cells. Fuel
+      Cells 2015, 15, 855–861. [CrossRef]
+40.   Li, B.; Zhou, J.; Zhou, X.; Wang, X.; Li, B.; Santoro, C.; Grattieri, M.; Babanova, S.; Artyushkova, K.; Atanassov, P.; et al. Surface
+      Modification of Microbial Fuel Cells Anodes: Approaches to Practical Design. Electrochim. Acta 2014, 134, 116–126. [CrossRef]
+41.   López-Hincapié, J.D.; Picos-Benítez, A.R.; Cercado, B.; Rodríguez, F.; Rodríguez-García, A. Improving the Configuration and
+      Architecture of a Small-Scale Air-Cathode Single Chamber Microbial Fuel Cell (MFC) for Biosensing Organic Matter in Wastewater
+      Samples. J. Water Process Eng. 2020, 38, 101671. [CrossRef]
+42.   Yaqoob, A.A.; Ibrahim, M.N.M.; Rafatullah, M.; Chua, Y.S.; Ahmad, A.; Umar, K. Recent Advances in Anodes for Microbial Fuel
+      Cells: An Overview. Materials 2020, 13, 2078. [CrossRef] [PubMed]
+43.   Aghababaie, M.; Farhadian, M.; Jeihanipour, A.; Biria, D. Effective Factors on the Performance of Microbial Fuel Cells in
+      Wastewater Treatment—A Review. Environ. Technol. Rev. 2015, 4, 71–89. [CrossRef]
+44.   González del Campo, A.; Cañizares, P.; Lobato, J.; Rodrigo, M.; Fernandez Morales, F.J. Effects of External Resistance on Microbial
+      Fuel Cell’s Performance. In The Handbook of Environmental Chemistry; Springer: Cham, Switzerland, 2014; pp. 175–197.
+45.   Stein, N.E.; Hamelers, H.V.M.; Buisman, C.N.J. Stabilizing the Baseline Current of a Microbial Fuel Cell-Based Biosensor through
+      Overpotential Control under Non-Toxic Conditions. Bioelectrochemistry 2010, 78, 87–91. [CrossRef] [PubMed]
+46.   Liu, H.; Ramnarayanan, R.; Logan, B.E. Production of Electricity during Wastewater Treatment Using a Single Chamber Microbial
+      Fuel Cell. Environ. Sci. Technol. 2004, 38, 2281–2285. [CrossRef] [PubMed]
+47.   Ren, L.; Ahn, Y.; Hou, H.; Zhang, F.; Logan, B.E. Electrochemical Study of Multi-Electrode Microbial Fuel Cells under Fed-Batch
+      and Continuous Flow Conditions. J. Power Sources 2014, 257, 454–460. [CrossRef]
+48.   Ma, L.; Chen, N.; Feng, C.; Hu, Y.; Li, M.; Liu, T. Feasibility and Mechanism of Microbial-Phosphorus Minerals-Alginate
+      Immobilized Particles in Bioreduction of Hexavalent Chromium and Synchronous Removal of Trivalent Chromium. Bioresour.
+      Technol. 2019, 294, 122213. [CrossRef] [PubMed]
+49.   Spurr, M.W.A. Microbial Fuel Cell-Based Biosensors for Estimation of Biochemical Oxygen Demand and Detection of Toxicity.
+      Ph.D. Thesis, Newcastle University, Newcastle upon Tyne, UK, 2017.
+50.   Callahan, B.J.; McMurdie, P.J.; Rosen, M.J.; Han, A.W.; Johnson, A.J.A.; Holmes, S.P. DADA2: High-Resolution Sample Inference
+      from Illumina Amplicon Data. Nat. Methods 2016, 13, 581–583. [CrossRef] [PubMed]
+51.   Martinez, S.M.; Di Lorenzo, M. Electricity Generation from Untreated Fresh Digestate with a Cost-Effective Array of Floating
+      Microbial Fuel Cells. Chem. Eng. Sci. 2019, 198, 108–116. [CrossRef]
+52.   McMurdie, P.J.; Holmes, S. Phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census
+      Data. PLoS ONE 2013, 8, e61217. [CrossRef]
+53.   Zhu, T.J.; Lin, C.W.; Liu, S.H. Sensitivity and Reusability of a Simple Microbial Fuel Cell-Based Sensor for Detecting Bisphenol A
+      in Wastewater. Chemosphere 2023, 320, 138082. [CrossRef]
+54.   Juang, D.F.; Yang, P.C.; Chou, H.Y.; Chiu, L.J. Effects of Microbial Species, Organic Loading and Substrate Degradation Rate on
+      the Power Generation Capability of Microbial Fuel Cells. Biotechnol. Lett. 2011, 33, 2147–2160. [CrossRef] [PubMed]
+55.   Ding, A.; Yang, Y.; Sun, G.; Wu, D. Impact of Applied Voltage on Methane Generation and Microbial Activities in an Anaerobic
+      Microbial Electrolysis Cell (MEC). Chem. Eng. J. 2016, 283, 260–265. [CrossRef]
+56.   Tardy, G.M.; Lóránt, B.; Gyalai-Korpos, M.; Bakos, V.; Simpson, D.; Goryanin, I. Microbial Fuel Cell Biosensor for the Determination
+      of Biochemical Oxygen Demand of Wastewater Samples Containing Readily and Slowly Biodegradable Organics. Biotechnol. Lett.
+      2021, 43, 445–454. [CrossRef]
+Energies 2024, 17, 3574                                                                                                              18 of 19
+
+
+
+
+57.   Ayyaru, S.; Dharmalingam, S. Enhanced Response of Microbial Fuel Cell Using Sulfonated Poly Ether Ether Ketone Membrane as
+      a Biochemical Oxygen Demand Sensor. Anal. Chim. Acta 2014, 818, 15–22. [CrossRef]
+58.   Xiao, N.; Selvaganapathy, P.R.; Wu, R.; Huang, J.J. Influence of Wastewater Microbial Community on the Performance of
+      Miniaturized Microbial Fuel Cell Biosensor. Bioresour. Technol. 2020, 302, 122777. [CrossRef]
+59.   Salvian, A.; Farkas, D.; Ramirez-Moreno, M.; Torruella-Salas, D.; Berná, A.; Avignone-Rossa, C.; Varcoe, J.R.; Esteve- Núñez, A.;
+      Gadkari, S. Resilience of Anodic Biofilm in Microbial Fuel Cell Biosensor for BOD Monitoring of Urban Wastewater. npj Clean.
+      Water 2024, 7, 53. [CrossRef]
+60.   Jiang, Y.; Liang, P.; Liu, P.; Miao, B.; Bian, Y.; Zhang, H.; Huang, X. Enhancement of the Sensitivity of a Microbial Fuel Cell Sensor
+      by Transient-State Operation. Environ. Sci. 2017, 3, 472–479. [CrossRef]
+61.   Kolajo, O.O.; Pandit, C.; Thapa, B.S.; Pandit, S.; Mathuriya, A.S.; Gupta, P.K.; Jadhav, D.A.; Lahiri, D.; Nag, M.; Upadhye, V.J.
+      Impact of Cathode Biofouling in Microbial Fuel Cells and Mitigation Techniques. Biocatal. Agric. Biotechnol. 2022, 43, 102408.
+      [CrossRef]
+62.   Zhang, F.; Pant, D.; Logan, B.E. Long-Term Performance of Activated Carbon Air Cathodes with Different Diffusion Layer
+      Porosities in Microbial Fuel Cells. Biosens. Bioelectron. 2011, 30, 49–55. [CrossRef]
+63.   Li, D.; Liu, J.; Qu, Y.; Wang, H.; Feng, Y. Analysis of the Effect of Biofouling Distribution on Electricity Output in Microbial Fuel
+      Cells. RSC Adv. 2016, 6, 27494–27500. [CrossRef]
+64.   Al-Amshawee, S.; Yunus, M.Y.B.M.; Lynam, J.G.; Lee, W.H.; Dai, F.; Dakhil, I.H. Roughness and Wettability of Biofilm Carriers: A
+      Systematic Review. Environ. Technol. Innov. 2021, 21, 101233. [CrossRef]
+65.   Shafahi, M.; Vafai, K. Biofilm Affected Characteristics of Porous Structures. Int. J. Heat. Mass. Transf. 2009, 52, 574–581. [CrossRef]
+66.   Chen, Y.C.; Karageorgiou, C.; Eller, J.; Schmidt, T.J.; Büchi, F.N. Determination of the Porosity and Its Heterogeneity of Fuel Cell
+      Microporous Layers by X-Ray Tomographic Microscopy. J. Power Sources 2022, 539, 231612. [CrossRef]
+67.   Vilajeliu-Pons, A.; Bañeras, L.; Puig, S.; Molognoni, D.; Vilà-Rovira, A.; Hernández-del Amo, E.; Balaguer, M.D.; Colprim, J.
+      External Resistances Applied to MFC Affect Core Microbiome and Swine Manure Treatment Efficiencies. PLoS ONE 2016,
+      11, e0164044. [CrossRef] [PubMed]
+68.   Jung, S.; Regan, J.M. Influence of External Resistance on Electrogenesis, Methanogenesis, and Anode Prokaryotic Communities in
+      Microbial Fuel Cells. Appl. Environ. Microbiol. 2011, 77, 564–571. [CrossRef] [PubMed]
+69.   Madigan, M.; Bender, K.; Buckley, D.; Sattley, W.; Stahl, D. The Foundation of Microbiology. In Brock Biology of Microorganisms;
+      Pearson Education, Limited: London, UK, 2018; pp. 37–172.
+70.   Choi, T.S.; Song, Y.C.; Joicy, A. Influence of Conductive Material on the Bioelectrochemical Removal of Organic Matter and
+      Nitrogen from Low Strength Wastewater. Bioresour. Technol. 2018, 259, 407–413. [CrossRef] [PubMed]
+71.   Li, X.; Wang, X.; Zhang, Y.; Gao, N.; Li, D.; Zhou, Q. Effects of Catalyst Layer and Gas Diffusion Layer Thickness on the
+      Performance of Activated Carbon Air-Cathode for Microbial Fuel Cells. Int. J. Electrochem. Sci. 2015, 10, 5086–5100. [CrossRef]
+72.   Luo, D.; Zhang, K.; Song, T.; Xie, J. Enhancing Microbial Electrosynthesis by Releasing Extracellular Polymeric Substances: Novel
+      Strategy through Extracellular Electron Transfer Improvement. Biochem. Eng. J. 2022, 184, 108496. [CrossRef]
+73.   Boyd, A.; Chakrabarty, A.M. Pseudomonas Aeruginosa Biofilms: Role of the Alginate Exopolysaccharide. J. Ind. Microbiol. 1995,
+      15, 162–168. [CrossRef]
+74.   Pham, T.H.; Boon, N.; Aelterman, P.; Clauwaert, P.; De Schamphelaire, L.; Vanhaecke, L.; De Maeyer, K.; Höfte, M.; Verstraete, W.;
+      Rabaey, K. Metabolites Produced by Pseudomonas Sp. Enable a Gram-Positive Bacterium to Achieve Extracellular Electron Transfer.
+      Appl. Microbiol. Biotechnol. 2008, 77, 1119–1129. [CrossRef]
+75.   Jian, M.; Xue, P.; Shi, K.; Li, R.; Ma, L.; Li, P. Efficient Degradation of Indole by Microbial Fuel Cell Based Fe2O3-Polyaniline-
+      Dopamine Hybrid Composite Modified Carbon Felt Anode. J. Hazard. Mater. 2020, 388, 122123. [CrossRef]
+76.   Jangir, Y.; French, S.; Momper, L.M.; Moser, D.P.; Amend, J.P.; El-Naggar, M.Y. Isolation and Characterization of Electrochemically
+      Active Subsurface Delftia and Azonexus Species. Front. Microbiol. 2016, 7, 756. [CrossRef]
+77.   Meng, L.; Xie, L.; Hirose, Y.; Nishiuchi, T.; Yoshida, N. Reduced Graphene Oxide Increases Cells with Enlarged Outer Membrane
+      of Citrifermentans Bremense and Exopolysaccharides Secretion. Biosens. Bioelectron. 2022, 218, 114754. [CrossRef]
+78.   Guo, N.; Ma, X.; Ren, S.; Wang, S.; Wang, Y. Mechanisms of Metabolic Performance Enhancement during Electrically Assisted
+      Anaerobic Treatment of Chloramphenicol Wastewater. Water Res. 2019, 156, 199–207. [CrossRef]
+79.   Shi, Y.; Liu, T.; Chen, S.; Quan, X. Accelerating Anaerobic Hydrolysis Acidification of Dairy Wastewater in Integrated Floating-
+      Film and Activated Sludge (IFFAS) by Using Zero-Valent Iron (ZVI) Composite Carriers. Biochem. Eng. J. 2022, 177, 108226.
+      [CrossRef]
+80.   Qiu, S.; Wang, L.; Zhang, Y.; Yu, Y. Microbial Fuel Cell-Based Biosensor for Simultaneous Test of Sodium Acetate and Glucose in a
+      Mixed Solution. Int. J. Environ. Res. Public Health 2022, 19, 12297. [CrossRef]
+81.   Cheng, P.; Shan, R.; Yuan, H.R.; Deng, L.F.; Chen, Y. Enhanced Rhodococcus Pyridinivorans HR-1 Anode Performance by Adding
+      Trehalose Lipid in Microbial Fuel Cell. Bioresour. Technol. 2018, 267, 774–777. [CrossRef]
+82.   Nath, D.; Ghangrekar, M.M. Plant Secondary Metabolites Induced Electron Flux in Microbial Fuel Cell: Investigation from
+      Laboratory-to-Field Scale. Sci. Rep. 2020, 10, 17185. [CrossRef]
+83.   Yang, Z.; Li, H.; Li, N.; Sardar, M.F.; Song, T.; Zhu, H.; Xing, X.; Zhu, C. Dynamics of a Bacterial Community in the Anode and
+      Cathode of Microbial Fuel Cells under Sulfadiazine Pressure. Int. J. Environ. Res. Public Health 2022, 19, 6253. [CrossRef]
+Energies 2024, 17, 3574                                                                                                          19 of 19
+
+
+
+
+84.   Zhu, K.; Wang, S.; Liu, H.; Liu, S.; Zhang, J.; Yuan, J.; Fu, W.; Dang, W.; Xu, Y.; Yang, X.; et al. Heteroatom-Doped Porous Carbon
+      Nanoparticle-Decorated Carbon Cloth (HPCN/CC) as Efficient Anode Electrode for Microbial Fuel Cells (MFCs). J. Clean. Prod.
+      2022, 336, 130374. [CrossRef]
+85.   Garbini, G.L.; Barra Caracciolo, A.; Grenni, P. Electroactive Bacteria in Natural Ecosystems and Their Applications in Microbial
+      Fuel Cells for Bioremediation: A Review. Microorganisms 2023, 11, 1255. [CrossRef]
+86.   He, J.; Xin, X.; Pei, Z.; Chen, L.; Chu, Z.; Zhao, M.; Wu, X.; Li, B.; Tang, X.; Xiao, X. Microbial Profiles Associated Improving
+      Bioelectricity Generation from Sludge Fermentation Liquid via Microbial Fuel Cells with Adding Fruit Waste Extracts. Bioresour.
+      Technol. 2021, 337, 125452. [CrossRef] [PubMed]
+87.   Santos, R.G.; Hurtado, R.; Gomes, L.G.R.; Profeta, R.; Rifici, C.; Attili, A.R.; Spier, S.J.; Giuseppe, M.; Morais-Rodrigues, F.;
+      Gomide, A.C.P.; et al. Complete Genome Analysis of Glutamicibacter Creatinolyticus from Mare Abscess and Comparative
+      Genomics Provide Insight of Diversity and Adaptation for Glutamicibacter. Gene 2020, 741, 144566. [CrossRef]
+88.   Lee, C.Y.; Ho, K.L.; Lee, D.J.; Su, A.; Chang, J.S. Electricity Harvest from Nitrate/Sulfide-Containing Wastewaters Using Microbial
+      Fuel Cell with Autotrophic Denitrifier, Pseudomonas Sp. C27. Int. J. Hydrogen Energy 2012, 37, 15827–15832. [CrossRef]
+89.   Xing, D.; Cheng, S.; Logan, B.E.; Regan, J.M. Isolation of the Exoelectrogenic Denitrifying Bacterium Comamonas Denitrificans
+      Based on Dilution to Extinction. Appl. Microbiol. Biotechnol. 2010, 85, 1575–1587. [CrossRef]
+90.   Hou, J.; Deng, H.-K.; Liu, Z.-X.; Xu, P.; Wang, L.-J. Sulfur Metabolism in Rhodococcus Species and Their Application in
+      Desulfurization of Fossil Fuels. J. Appl. Microbiol. 2023, 134, lxad048. [CrossRef]
+91.   Dutta, K.; Kundu, P.P. A Review on Aromatic Conducting Polymers-Based Catalyst Supporting Matrices for Application in
+      Microbial Fuel Cells. Polym. Rev. 2014, 54, 401–435. [CrossRef]
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+

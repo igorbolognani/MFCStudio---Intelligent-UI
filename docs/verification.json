@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-25",
+  "model_version": "mfc-kernel/0.2.0",
+  "scope": "software_physical_verification_only",
+  "tests_passed": 28,
+  "predictor_trained": false,
+  "experimental_validation": false,
+  "experimental_mae": null,
+  "experimental_rmse": null,
+  "defaults_kind": "assumed_not_calibrated",
+  "default_point": {
+    "I_A": 0.000461839525154772,
+    "V_V": 0.461839525154772,
+    "P_W": 0.00021329574699518528,
+    "R_ohm": 90.75714285714285,
+    "residual_V": 0
+  },
+  "batch_balances": {
+    "initial_COD_g": 0.028,
+    "final_COD_g": 0.017015954380520587,
+    "removed_COD_g": 0.010984045619479414,
+    "electrogenic_COD_g": 0.0033079115326646222,
+    "competing_COD_g": 0.005757100565111072,
+    "crossover_COD_g": 0.0019190335217036906,
+    "charge_C": 39.89561785659057,
+    "energy_J": 18.42199475117296,
+    "cathode_O2_mol": 0.00010337223539576944,
+    "coulombic_efficiency": 0.30115602640963923,
+    "mass_residual_g": 2.8406096919120216e-17,
+    "charge_residual_C": 2.842170943040401e-14,
+    "oxygen_charge_residual_C": 2.842170943040401e-14,
+    "max_voltage_residual_V": 1.6653345369377348e-16
+  },
+  "convergence": {
+    "steps_s": [
+      300,
+      150,
+      75
+    ],
+    "final_COD_g": [
+      0.017015954380520587,
+      0.0170187152181724,
+      0.01702009491570749
+    ],
+    "energy_J": [
+      18.42199475117296,
+      18.421984066884807,
+      18.421978726040873
+    ]
+  }
+}

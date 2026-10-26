@@ -1,0 +1,71 @@
+{
+  "records": 7,
+  "audits": [
+    {
+      "id": "S01-E1",
+      "issues": [
+        "rights_not_reviewed"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S01-E2",
+      "issues": [
+        "rights_not_reviewed"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S01-E3",
+      "issues": [
+        "rights_not_reviewed"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S02-glucose-PEM",
+      "issues": [
+        "incomplete_methods_access",
+        "rights_not_reviewed",
+        "unknown_area_basis"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S02-glucose-noPEM",
+      "issues": [
+        "incomplete_methods_access",
+        "rights_not_reviewed",
+        "unknown_area_basis"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S03-acetate_50mM_PBS",
+      "issues": [
+        "incomplete_methods_access",
+        "rights_not_reviewed",
+        "unknown_area_basis"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    },
+    {
+      "id": "S03-domestic_wastewater",
+      "issues": [
+        "incomplete_methods_access",
+        "rights_not_reviewed",
+        "unknown_area_basis"
+      ],
+      "training_eligible": false,
+      "certifies_scientific_accuracy": false
+    }
+  ],
+  "seed_sha256": "8d32261ff81880d55160365bb9d601aa725d1fd6e268e7d948ec179984a781b2",
+  "predictor_trained": false
+}

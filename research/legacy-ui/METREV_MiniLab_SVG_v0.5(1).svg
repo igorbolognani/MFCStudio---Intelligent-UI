@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="585" viewBox="0 0 640 390" role="img" aria-labelledby="title desc">
+<title id="title">METREV Mini Lab v0.5 — Célula bioeletroquímica MFC</title>
+<desc id="desc">Representação vetorial configurável de duas câmaras, com ânodo de carbono, revestimento anódico, biofilme, membrana de troca iônica, camada catalítica e cátodo. Exemplo MFC de bancada. Proporções esquemáticas e parâmetros demonstrativos.</desc>
+<defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f9fcfd"/><stop offset="1" stop-color="#f0f7fa"/></linearGradient>
+<linearGradient id="anolyte" x2="0" y2="1"><stop stop-color="#bbebe1"/><stop offset="1" stop-color="#64bcb2"/></linearGradient>
+<linearGradient id="catholyte" x2="0" y2="1"><stop stop-color="#e0effe"/><stop offset="1" stop-color="#95bfe4"/></linearGradient>
+<pattern id="mem-pattern" width="11" height="12" patternUnits="userSpaceOnUse"><path d="M0 6H11" stroke="#e1effe" stroke-width="2"/></pattern>
+<style>
+text{font-family:Inter,Arial,sans-serif} .label{font-size:16px;font-weight:650;fill:#264759}.small{font-size:13px;fill:#5d7b8a}.value{font-size:17px;font-weight:700;fill:#195f7a}.line{stroke:#527486;stroke-width:8;fill:none;stroke-linejoin:round} .chamber{fill:none;stroke:#527486;stroke-width:10}.selectable{cursor:pointer}.selectable:hover .highlight,.selectable:focus .highlight{stroke:#e4a139;stroke-width:5;filter:drop-shadow(0 0 2px #e4a139)}.selectable:focus{outline:none} .hotspot{fill:transparent} .key{font-size:13px;font-weight:600;fill:#fff}.tag{font-size:13px;font-weight:700;fill:#1a627c}
+</style>
+</defs>
+<rect x="1" y="1" width="638" height="388" rx="22" fill="url(#bg)" stroke="#d5e2e9" stroke-width="2"/>
+<rect x="16" y="17" width="165" height="37" rx="11" fill="#e0eef3"/>
+<text x="29" y="41" class="tag">24 h · 25 °C</text>
+<rect x="232" y="17" width="177" height="37" rx="11" fill="#d6edf0"/>
+<text x="244" y="41" class="tag">MFC · Geração</text>
+<rect x="456" y="17" width="168" height="37" rx="11" fill="#dbeaf4"/>
+<text x="470" y="41" class="tag">I · modelo 0D</text>
+<!-- Electrode liquids sit below overlaid components -->
+<g class="selectable" tabindex="0" aria-label="Meio anódico"><title>Meio anódico: DQO, volume, condutividade iônica e pH</title>
+<rect x="37" y="117" width="231" height="192" rx="6" fill="url(#anolyte)" class="highlight" stroke="#70b8af" stroke-width="2"/>
+<text x="208" y="163" text-anchor="middle" class="label">Anólito</text>
+<text x="208" y="187" text-anchor="middle" class="value">DQO 1000</text>
+<text x="208" y="205" text-anchor="middle" class="small">mg O₂/L</text>
+<text x="208" y="229" text-anchor="middle" class="value">0,50 L</text>
+<text x="208" y="249" text-anchor="middle" class="small">pH 7,0</text></g>
+<g class="selectable" tabindex="0" aria-label="Meio catódico"><title>Meio catódico: volume, pH e condutividade iônica</title>
+<rect x="373" y="117" width="231" height="192" rx="6" fill="url(#catholyte)" class="highlight" stroke="#85b1d5" stroke-width="2"/>
+<text x="462" y="163" text-anchor="middle" class="label">Católito</text>
+<text x="462" y="187" text-anchor="middle" class="value">0,50 L</text>
+<text x="462" y="209" text-anchor="middle" class="small">κ = 8 mS/cm</text>
+<text x="462" y="230" text-anchor="middle" class="small">pH 7,0</text></g>
+<g class="selectable" tabindex="0" aria-label="Parede anódica"><title>Material da parede anódica</title><rect x="27" y="106" width="252" height="213" rx="12" class="chamber highlight"/><rect x="27" y="106" width="252" height="213" rx="12" fill="none" stroke="transparent" stroke-width="20"/></g>
+<g class="selectable" tabindex="0" aria-label="Parede catódica"><title>Material da parede catódica</title><rect x="362" y="106" width="252" height="213" rx="12" class="chamber highlight"/><rect x="362" y="106" width="252" height="213" rx="12" fill="none" stroke="transparent" stroke-width="20"/></g>
+<!-- Electrodes and biofilm, physical order support -> coating -> biofilm -->
+<g class="selectable" tabindex="0" aria-label="Eletrodo anódico"><title>Ânodo: material, área e condutividade</title><rect x="60" y="138" width="27" height="151" rx="4" fill="#354a58" stroke="#253d49" stroke-width="3" class="highlight"/><rect x="56" y="133" width="33" height="161" class="hotspot"/></g>
+<g class="selectable" tabindex="0" aria-label="Revestimento anódico"><title>Revestimento anódico sobre eletrodo</title><rect x="95" y="138" width="13" height="151" rx="3" fill="#d6a557" stroke="#a9762a" stroke-width="2" class="highlight"/><rect x="91" y="133" width="21" height="161" class="hotspot"/></g>
+<g class="selectable" tabindex="0" aria-label="Biofilme anódico"><title>Biofilme sobre revestimento anódico</title><rect x="118" y="138" width="21" height="151" rx="7" fill="#3fa577" stroke="#247550" stroke-width="3" class="highlight"/><rect x="114" y="133" width="29" height="161" class="hotspot"/></g>
+<g class="selectable" tabindex="0" aria-label="Membrana"><title>Membrana: ASR, espessura e área</title><rect x="297" y="106" width="46" height="214" rx="6" fill="#8eb8e4" stroke="#4a82ba" stroke-width="4" class="highlight"/><rect x="300" y="109" width="40" height="208" fill="url(#mem-pattern)"/><rect x="293" y="102" width="54" height="220" class="hotspot"/></g>
+<g class="selectable" tabindex="0" aria-label="Camada catalítica catódica"><title>Camada catalítica depositada no cátodo</title><rect x="526" y="138" width="13" height="151" rx="3" fill="#d6a557" stroke="#a9762a" stroke-width="2" class="highlight"/><rect x="522" y="133" width="21" height="161" class="hotspot"/></g>
+<g class="selectable" tabindex="0" aria-label="Eletrodo catódico"><title>Cátodo: material, resistência de transferência, área acessível</title><rect x="548" y="138" width="27" height="151" rx="4" fill="#637887" stroke="#435766" stroke-width="3" class="highlight"/><rect x="545" y="133" width="33" height="161" class="hotspot"/></g>
+<!-- Circuit over chambers -->
+<g class="selectable" tabindex="0" aria-label="Circuito elétrico"><title>Circuito: OCV, carga e resistência de contato</title>
+<path d="M74 138V75H291 M350 75H561V138" class="line highlight"/>
+<path d="M74 138V75H291 M350 75H561V138" fill="none" stroke="transparent" stroke-width="23"/>
+<rect x="290" y="58" width="60" height="42" rx="9" fill="#277e9c" stroke="#176483" stroke-width="3" class="highlight"/>
+<rect x="287" y="55" width="66" height="48" class="hotspot"/>
+<path d="M298 79H306L312 67L321 91L331 67L338 79H344" stroke="#fff" fill="none" stroke-width="3" stroke-linejoin="round" pointer-events="none"/></g>
+<!-- Directional charge movement, illustrative -->
+<path d="M207 270H264 M258 264L264 270L258 276 M377 270H422 M416 264L422 270L416 276" fill="none" stroke="#227fa5" stroke-width="2.5" stroke-linecap="round" pointer-events="none"/>
+<text x="148" y="344" class="small" text-anchor="middle">Eletrodo · camada · biofilme</text>
+<text x="320" y="344" class="small" text-anchor="middle">Membrana</text>
+<text x="504" y="344" class="small" text-anchor="middle">Catalisador · cátodo</text>
+<text x="320" y="377" class="small" text-anchor="middle">Diagrama esquemático · parâmetros ilustrativos · não calibrado</text>
+</svg>

@@ -1,0 +1,350 @@
+[
+  {
+    "order": 1,
+    "stage_id": "anode_chamber",
+    "name_pt": "Câmara anódica",
+    "catalog_properties": 8,
+    "source_ids": [
+      "S02",
+      "S05",
+      "S08",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-geometry",
+      "S17-methods",
+      "S19-methods",
+      "S19-topology-transition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 2,
+    "stage_id": "anolyte",
+    "name_pt": "Meio anódico",
+    "catalog_properties": 12,
+    "source_ids": [
+      "S04",
+      "S05",
+      "S06",
+      "S08",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-medium",
+      "S17-methods",
+      "S19-methods",
+      "S19-electron-partition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 3,
+    "stage_id": "anode",
+    "name_pt": "Ânodo",
+    "catalog_properties": 14,
+    "source_ids": [
+      "S01",
+      "S03",
+      "S04",
+      "S05",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-geometry",
+      "S18-CC-fresh-polarization",
+      "S18-CC-used120d-polarization",
+      "S18-CP-fresh-polarization",
+      "S18-CP-used120d-polarization",
+      "S17-methods",
+      "S19-methods"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 4,
+    "stage_id": "anode_catalyst",
+    "name_pt": "Catalisador anódico",
+    "catalog_properties": 9,
+    "source_ids": [
+      "S01",
+      "S04",
+      "S18",
+      "S17"
+    ],
+    "record_ids": [
+      "S18-methods-biofilm",
+      "S17-methods"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "no_added_anode_catalyst_reported",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 5,
+    "stage_id": "biofilm",
+    "name_pt": "Biofilme",
+    "catalog_properties": 13,
+    "source_ids": [
+      "S04",
+      "S05",
+      "S08",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-medium",
+      "S18-methods-biofilm",
+      "S18-CC-fresh-polarization",
+      "S18-CC-used120d-polarization",
+      "S18-CC-resistance-operating",
+      "S18-CP-fresh-polarization",
+      "S18-CP-used120d-polarization",
+      "S18-CP-resistance-operating",
+      "S17-methods",
+      "S19-methods",
+      "S19-electron-partition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 6,
+    "stage_id": "membrane",
+    "name_pt": "Membrana",
+    "catalog_properties": 12,
+    "source_ids": [
+      "S02",
+      "S06",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S17-methods",
+      "S19-topology-transition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "membrane_not_described_in_S18_initial_family",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 7,
+    "stage_id": "external_circuit",
+    "name_pt": "Circuito e alimentação/coleta",
+    "catalog_properties": 9,
+    "source_ids": [
+      "S03",
+      "S05",
+      "S08",
+      "S11",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-geometry",
+      "S18-methods-medium",
+      "S18-CC-fresh-polarization",
+      "S18-CC-used120d-polarization",
+      "S18-CC-resistance-operating",
+      "S18-CP-fresh-polarization",
+      "S18-CP-used120d-polarization",
+      "S18-CP-resistance-operating",
+      "S17-methods",
+      "S17-CF-MPL-power",
+      "S17-CC-MPL-power",
+      "S17-SS-MPL-power",
+      "S17-CF-AC-power",
+      "S17-CC-AC-power",
+      "S17-SS-AC-power",
+      "S19-methods",
+      "S19-electron-partition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 8,
+    "stage_id": "cathode_chamber",
+    "name_pt": "Câmara catódica",
+    "catalog_properties": 7,
+    "source_ids": [
+      "S02",
+      "S07",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-geometry",
+      "S17-methods",
+      "S19-topology-transition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "not_a_separate_liquid_domain",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 9,
+    "stage_id": "catholyte",
+    "name_pt": "Meio catódico",
+    "catalog_properties": 8,
+    "source_ids": [
+      "S02",
+      "S03",
+      "S06",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-methods-geometry",
+      "S17-methods",
+      "S17-RRDE-method",
+      "S19-topology-transition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "not_a_separate_liquid_domain",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 10,
+    "stage_id": "cathode",
+    "name_pt": "Cátodo",
+    "catalog_properties": 9,
+    "source_ids": [
+      "S02",
+      "S03",
+      "S07",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-CC-material",
+      "S18-CP-material",
+      "S18-CC-fresh-polarization",
+      "S18-CC-used120d-polarization",
+      "S18-CC-resistance-operating",
+      "S18-CP-fresh-polarization",
+      "S18-CP-used120d-polarization",
+      "S18-CP-resistance-operating",
+      "S17-CB-characterization",
+      "S17-AC-characterization",
+      "S17-CF-MPL-power",
+      "S17-CC-MPL-power",
+      "S17-SS-MPL-power",
+      "S17-CF-AC-power",
+      "S17-CC-AC-power",
+      "S17-SS-AC-power",
+      "S19-methods",
+      "S19-electron-partition"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  },
+  {
+    "order": 11,
+    "stage_id": "cathode_catalyst",
+    "name_pt": "Catalisador catódico",
+    "catalog_properties": 9,
+    "source_ids": [
+      "S07",
+      "S18",
+      "S17",
+      "S19"
+    ],
+    "record_ids": [
+      "S18-CC-material",
+      "S18-CP-material",
+      "S18-CC-fresh-polarization",
+      "S18-CC-used120d-polarization",
+      "S18-CP-fresh-polarization",
+      "S18-CP-used120d-polarization",
+      "S17-CB-characterization",
+      "S17-AC-characterization",
+      "S17-CF-MPL-power",
+      "S17-CC-MPL-power",
+      "S17-SS-MPL-power",
+      "S17-CF-AC-power",
+      "S17-CC-AC-power",
+      "S17-SS-AC-power",
+      "S17-RRDE-method",
+      "S19-methods"
+    ],
+    "implemented_constitutive_models": [],
+    "evidence_status": "characterization_or_operating_context_available",
+    "requires_task_specific_review": true,
+    "initial_family_applicability": "active",
+    "remaining_gaps": [
+      "Do not infer constitutive parameters from material names or reported maximum power.",
+      "Independent family holdout needed for applicability claim."
+    ]
+  }
+]

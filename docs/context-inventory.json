@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-25",
+  "project": "Intelligent UI - GPT",
+  "folder_listing_complete": true,
+  "next_cursor": null,
+  "original_files": [
+    {
+      "name": "METREV_Cell_Studio_UX_v0.5(1).html",
+      "size_bytes": 69571,
+      "sha256": "20bfe1d89fb8e3f25e9df6db7c20bf7a33040e1b1e6a70150bbc2a508692e87f",
+      "status": "complete_text_read; duplicate_confirmed_by_sha256"
+    },
+    {
+      "name": "METREV_Cell_Studio_UX_v0.5.html",
+      "size_bytes": 69571,
+      "sha256": "20bfe1d89fb8e3f25e9df6db7c20bf7a33040e1b1e6a70150bbc2a508692e87f",
+      "status": "complete_text_read"
+    },
+    {
+      "name": "METREV_Cell_Studio_v05_browser_overview.png",
+      "size_bytes": 175663,
+      "sha256": "3ea9608db463e77d31ef7e07aee4a4b9e9223bcd29caaa21f24087f49f333953",
+      "status": "visually_inspected"
+    },
+    {
+      "name": "METREV_MiniLab_SVG_v0.5(1).svg",
+      "size_bytes": 7260,
+      "sha256": "190de64c33050a25d438ebceba5372adf5553e4a533c8f09ff6eac4faf95b176",
+      "status": "complete_text_read; duplicate_confirmed_by_sha256"
+    },
+    {
+      "name": "METREV_MiniLab_SVG_v0.5.svg",
+      "size_bytes": 7260,
+      "sha256": "190de64c33050a25d438ebceba5372adf5553e4a533c8f09ff6eac4faf95b176",
+      "status": "complete_text_read"
+    },
+    {
+      "name": "METREV_MiniLab_SVG_v0.5_preview.png",
+      "size_bytes": 62215,
+      "sha256": "1da362ef111fff52026c715cab44f48fd2c181ba144a9845df5e0353da38150a",
+      "status": "visually_inspected"
+    },
+    {
+      "name": "METREV_v05_desktop_preview.png",
+      "size_bytes": 303711,
+      "sha256": "003c5f5348cf250ee1e5335183829ce8eaf3cddeaefb99a3c59c800264cb8279",
+      "status": "visually_inspected"
+    },
+    {
+      "name": "METREV_v05_mobile_preview.png",
+      "size_bytes": 249859,
+      "sha256": "a3d5c2d0af44175f4bb7ede397852978491eeb25b41c19c6bfd2231c45da5113",
+      "status": "visually_inspected"
+    },
+    {
+      "name": "MFC_Studio_Base_Cientifica_v0.1.zip",
+      "size_bytes": 32115,
+      "sha256": "f6beda61f2456e695ae9ede583ec213e86be13f4853cda49a2a11d08f14e1d89",
+      "status": "archive_extracted_all_members"
+    }
+  ],
+  "zip_members": [
+    {
+      "path": "MFC_STUDIO_BASE_CIENTIFICA.md",
+      "size_bytes": 24345,
+      "sha256": "04740a01f053741a9069291a966325edf17a46b28be218a1995b36ef447ebbcf",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "build_registry.py",
+      "size_bytes": 20560,
+      "sha256": "39ce2a5fd6626294c5fe43b659be6423d4236a989eab64ce5387121405390fbc",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "evidence.py",
+      "size_bytes": 8391,
+      "sha256": "b7a57f416b8b16db4bbe89420df99d7938e1c5b35ec9680f7ead1e6b646caf97",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "evidence_seed.jsonl",
+      "size_bytes": 8930,
+      "sha256": "f978dc1d1316ac079c3020bf20afef9cdf0b9253ff51c1c56118267ef1ab8a29",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "parameter_catalog.json",
+      "size_bytes": 36050,
+      "sha256": "9d85d7f5690f399b5bc4b25588e9035c764b6af8eb12c3f6578bc7fabe1cc8d7",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "sources.json",
+      "size_bytes": 8462,
+      "sha256": "ee44b981dd723e24fa0a8f7399b3d12d1a7eae401f2812cd128a2a4c229e63c8",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "test_evidence.py",
+      "size_bytes": 5314,
+      "sha256": "38159b074721d14f9389b06f76ac515e725d095c9154d7f6ba551dcc1241ec5b",
+      "status": "text_and_data_reviewed"
+    },
+    {
+      "path": "validation.json",
+      "size_bytes": 1668,
+      "sha256": "e214ddb38a224134f03e062ed9a38273ecb75f7e10c86abd71a0285e092d5ff1",
+      "status": "text_and_data_reviewed"
+    }
+  ],
+  "conversation_access": "Inherited excerpts and personal-context summaries only. Full source and linked session transcripts were not returned. No claim of complete transcript reading.",
+  "version_discovery": "Recursive project folder listing plus exact/prefix filename searches. No later matching version returned; non-indexed material cannot be ruled out.",
+  "additional_historical_documents": [
+    {
+      "name": "Expanded_Research_Proposal_MFC_MEC_Digital_Twin_40Page_Draft.docx",
+      "sha256": "82d39f4e13f261ea06a7a7ded3d0c6247afc99b17fb707d8135a579f170877ea",
+      "paragraphs": 171,
+      "unique_paragraphs": 56,
+      "images": 0,
+      "status": "all paragraphs and tables extracted; all unique text reviewed; repeated identical paragraphs counted",
+      "priority": "historical proposal, superseded by current MFC-only scope"
+    },
+    {
+      "name": "Research_Brief_MFC_MEC_AI_Digital_Twin_SciSpace.docx",
+      "sha256": "02c859a56115c266799aed25a0bdb7d7d674422a16c0c68f682eb0d667d2fee3",
+      "paragraphs": 32,
+      "unique_paragraphs": 32,
+      "images": 0,
+      "status": "all paragraphs and tables extracted; all unique text reviewed; repeated identical paragraphs counted",
+      "priority": "historical proposal, superseded by current MFC-only scope"
+    }
+  ]
+}
