@@ -22,6 +22,8 @@ export async function seedCorpus(){
  for(const doc of corpus.documents){
   if(await digest(doc.text)!==doc.sha256)throw new Error('Document content digest mismatch');
   await db.prepare('INSERT INTO documents(id,source_id,title,sha256,raw_sha256,license,format,object_key,complete,text_length,metadata_json) VALUES(?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(doc.id,doc.source_id,doc.title,doc.sha256,doc.raw_sha256,doc.license,doc.format,doc.object_key,doc.complete?1:0,doc.text_length,JSON.stringify(doc.metadata)).run();
+  // Refresh only source-file provenance for the same verified scientific text.
+  await db.prepare('UPDATE documents SET raw_sha256=?,metadata_json=? WHERE id=? AND source_id=? AND sha256=?').bind(doc.raw_sha256,JSON.stringify(doc.metadata),doc.id,doc.source_id,doc.sha256).run();
   const chunks:D1PreparedStatement[]=[];
   for(let p=0,n=0;p<doc.text.length;p+=10000,n++){const text=doc.text.slice(p,p+10000);chunks.push(db.prepare('INSERT INTO document_chunks(id,document_id,ordinal,text,sha256) VALUES(?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(doc.id+':'+n,doc.id,n,text,await digest(text)));}
   await batches(db,chunks);
@@ -51,5 +53,11 @@ export async function corpusStatus(){
  const eligible=await db.prepare('SELECT COUNT(*) AS count FROM evidence_records WHERE training_eligible=1').first<{count:number}>();
  const seed=await db.prepare('SELECT * FROM seed_versions WHERE id=?').bind(corpus.version).first();
  const stored=[];for(const a of rawAssets)stored.push({id:a.id,present:!!await bucket().head(a.object_key)});
- return {version:corpus.version,counts,training_eligible_records:eligible?.count||0,seed_applied:!!seed,pdf_assets:stored,content_sha256:seed?.content_sha256||null};
+ const embeddedStatus=[];
+ for(const asset of embedded){
+  const obj=await bucket().get(asset.object_key);
+  const actual=obj?Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await obj.arrayBuffer())),x=>x.toString(16).padStart(2,'0')).join(''):null;
+  embeddedStatus.push({id:asset.id,present:!!obj,sha256_matches:actual===asset.sha256});
+ }
+ return {version:corpus.version,counts,training_eligible_records:eligible?.count||0,seed_applied:!!seed,pdf_assets:stored,embedded_assets:embeddedStatus,content_sha256:seed?.content_sha256||null};
 }
