@@ -656,6 +656,14 @@ Quando um número é apresentado, observe conjuntamente sua origem, as condiçõ
 <a id="dados"></a>
 ## 11. Como transformar literatura e fichas em dados utilizáveis
 
+### Auditoria reproduzível do corpus — 2 de novembro de 2026
+
+A rotina `node scripts/audit-corpus.mjs` confere referências, identificadores únicos, valores numéricos, localizadores e hashes dos textos completos. A execução sobre o corpus 0.3.0 confirmou 198 registros, 393 células numéricas e quatro ausentes. O relatório em [research/audits/corpus-0.3.0-audit.json](../research/audits/corpus-0.3.0-audit.json) apresenta a cobertura por etapa e os grupos conectados de proveniência.
+
+Oito registros não possuem atribuição explícita às etapas. A auditoria os lista para revisão; não deduz essa atribuição dos vínculos gerais do artigo. Uma contagem por etapa pode incluir o mesmo registro em várias partes da célula. Grupos comerciais também aparecem na proveniência: seu número não representa famílias experimentais independentes.
+
+Essa verificação confirma a integridade estrutural do material processado. Não constitui nova leitura científica de todas as páginas, aquisição de novos ensaios ou calibração. O próximo incremento deve revisar os oito registros, completar suas relações com as etapas a partir dos métodos e recuperar as fontes ainda pendentes antes de admitir comparações quantitativas.
+
 ### 11.1 Classifique o que foi realmente observado
 
 Uma base útil mantém separados os diferentes níveis de ensaio:
