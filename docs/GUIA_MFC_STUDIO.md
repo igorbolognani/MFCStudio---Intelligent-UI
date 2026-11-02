@@ -1823,3 +1823,9 @@ Os seis primeiros registros mantêm integralmente os dados JSON dos arquivos ant
 <!-- audit:consolidation-inventory.json:end -->
 
 </details>
+
+### Retomada: revisão de atribuição por etapa
+
+Os oito registros antes sem etapas receberam uma revisão explícita em `research/audits/record-stage-review.json`. Execute `node scripts/review-stage-coverage.mjs` para aplicar essa camada em memória e conferir a cobertura. Os dados originais permanecem intactos; essa revisão ainda não foi aplicada ao banco de produção. Atribuir etapas não significa identificar efeitos causais nem aprovar treinamento.
+
+A revisão dos métodos de S02 identificou mudança simultânea de membrana, suporte catódico, carga de Pt e processamento. A comparação deve ser tratada como comparação entre montagens. Unidades de transporte e conversões de potencial conflitantes permanecem bloqueadas. Veja `research/audits/S02-methods-review.json`.

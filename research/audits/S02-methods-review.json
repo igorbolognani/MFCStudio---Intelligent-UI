@@ -1,0 +1,36 @@
+{
+  "source_id": "S02",
+  "doi": "10.1021/es0499344",
+  "review_date": "2026-11-02",
+  "url": "https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2004-LiuLogan-PEM-noPEM-EST.pdf",
+  "read_scope": "Methods and results, PDF pages 1–4; not complete visual review",
+  "redistribution": "Full PDF not added to public repository; rights unresolved",
+  "facts": {
+    "volume_mL": 28,
+    "temperature_C": 30,
+    "anode": "Toray carbon paper, not wet-proofed, no catalyst; grade unspecified",
+    "PEM_arm": {
+      "membrane": "Nafion 117",
+      "cathode": "flexible carbon cloth",
+      "Pt_mg_cm2": 0.5
+    },
+    "noPEM_arm": {
+      "membrane": "none",
+      "cathode": "rigid carbon paper",
+      "Pt_mg_cm2": 0.35
+    },
+    "power_area_basis": "projected anode cross-section",
+    "nominal_load_ohm": 1000
+  },
+  "confounders": [
+    "Membrane, cathode support, Pt loading and hot pressing differ."
+  ],
+  "blocked_conversions": [
+    "Printed oxygen-transfer coefficient units conflict with k=D/thickness.",
+    "Cathode reference-potential conversion is internally inconsistent."
+  ],
+  "model_admission": {
+    "training_eligible": false,
+    "reason": "Glucose, 30 C and changed assemblies differ from current acetate kernel; no independent calibration."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-02",
+  "corpus_version": "mfc-corpus/0.3.0",
+  "reviews": [
+    {
+      "record_id": "S01-E1",
+      "stage_ids": [
+        "anode",
+        "biofilm"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Sections 2.1, 2.2, Bioelectrochemical Experiments; Table 2",
+      "evidence_access_this_round": "publisher_indexed_sections",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S01-E2",
+      "stage_ids": [
+        "anode",
+        "biofilm"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Sections 2.1, 2.2, Bioelectrochemical Experiments; Table 2",
+      "evidence_access_this_round": "publisher_indexed_sections",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S01-E3",
+      "stage_ids": [
+        "anode",
+        "biofilm"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Sections 2.1, 2.2, Bioelectrochemical Experiments; Table 2",
+      "evidence_access_this_round": "publisher_indexed_sections",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S02-glucose-PEM",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Institutional abstract, glucose experiment",
+      "evidence_access_this_round": "author_hosted_pdf_methods_and_results",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S02-glucose-noPEM",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Institutional abstract, glucose experiment",
+      "evidence_access_this_round": "author_hosted_pdf_methods_and_results",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S03-acetate_50mM_PBS",
+      "stage_ids": [
+        "anolyte",
+        "anode",
+        "cathode"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Publisher/institutional abstract",
+      "evidence_access_this_round": "publisher_abstract_previously_retrieved",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S03-domestic_wastewater",
+      "stage_ids": [
+        "anolyte",
+        "anode",
+        "cathode"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Publisher/institutional abstract",
+      "evidence_access_this_round": "publisher_abstract_previously_retrieved",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    },
+    {
+      "record_id": "S18-CC-pristine-figure4a-digitized",
+      "stage_ids": [
+        "anode",
+        "biofilm",
+        "cathode",
+        "cathode_catalyst",
+        "external_circuit"
+      ],
+      "review_status": "reviewed_scope_attribution_not_training_admission",
+      "basis": "Figure 4a, p10; lossless embedded image from PDF",
+      "evidence_access_this_round": "preserved_digitization_metadata_and_methods",
+      "limitations": [
+        "Attribution identifies components involved; it does not isolate their causal effects.",
+        "Original records and immutable corpus remain unchanged."
+      ]
+    }
+  ],
+  "production_applied": false
+}
