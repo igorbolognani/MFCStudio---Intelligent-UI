@@ -1,8 +1,9 @@
 """Build deterministic D1/R2 seed from preserved primary documents, not summaries."""
 from pathlib import Path
-import json,hashlib,base64,gzip
+import json,hashlib,base64
 import importlib.util
 from source_safety import inspect_bytes
+from corpus_compression import canonical_gzip
 R=Path(__file__).resolve().parents[1];b=R/'research/corpus-v0.2'
 sha=lambda v:hashlib.sha256(v).hexdigest()
 sources=json.loads((b/'index_sources.json').read_text())
@@ -59,7 +60,7 @@ for sid in ['S08','S09','S17','S18','S19','S29']:
  source_manifest=next(x for x in (json.loads((next_base/'documents_manifest.json').read_text()) if sid=='S29' else manifest) if x['path']==str(raw.relative_to(base)))
  object_key=('corpus/v03/' if sid=='S29' else 'corpus/v02/')+sid+'.html.gz'
  docs.append({'id':sid+'-fulltext','source_id':sid,'title':src['title'],'sha256':sha(t.encode()),'raw_sha256':sha(raw.read_bytes()),'license':'CC-BY-4.0','format':'text/plain','complete':True,'text_length':len(t),'text':t,'object_key':object_key,'metadata':{'doi':src.get('doi'),'source_url':src['url'],'authors':src.get('authors'),'retrieved_at':src.get('retrieved_at','2026-10-25'),'read_scope':src.get('read_scope'),'text_extraction':'complete extracted article text; typography and figures in original HTML/PDF','original_html_object_key':object_key,'pdf_asset_id':sid+'-pdf','license_url':'https://creativecommons.org/licenses/by/4.0/','source_html_sanitization':source_manifest.get('sanitization'),'source_html_retrieved_sha256':source_manifest.get('retrieved_sha256',source_manifest['sha256'])}})
- compressed=gzip.compress(raw.read_bytes(),mtime=0)
+ compressed=canonical_gzip(raw.read_bytes())
  assets.append({'id':sid+'-html','object_key':docs[-1]['object_key'],'content_base64':base64.b64encode(compressed).decode(),'sha256':sha(compressed),'content_type':'application/gzip'})
 supp=b/'documents/S18_supplement.txt';t=supp.read_text();raw=b/'documents/S18_supplement/energies-3078330-supplementary.pdf'
 docs.append({'id':'S18-supplement','source_id':'S18','title':'S18 · Supplementary information S1–S10','sha256':sha(t.encode()),'raw_sha256':sha(raw.read_bytes()),'license':'CC-BY-4.0','format':'text/plain','complete':True,'text_length':len(t),'text':t,'object_key':None,'metadata':{'doi':'10.3390/en17143574','source_url':'https://www.mdpi.com/article/10.3390/en17143574/s1','pdf_asset_id':'S18-supplement-pdf','pages':6,'contains_raw_individual_data':False}})

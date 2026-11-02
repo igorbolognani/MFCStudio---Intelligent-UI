@@ -1114,6 +1114,8 @@ Para manutenção, os comandos existentes incluem `pnpm run check`, `pnpm test` 
 
 Quando uma auditoria futura for atualizada, sua versão precisa ser comparada à data e ao escopo declarados no texto principal. A rotina preserva a explicação; ela não reescreve automaticamente a interpretação científica ou as contagens do corpo do guia.
 
+Na conferência desta reorganização, a checagem automática também detectou uma diferença de formato dos arquivos compactados entre ambientes Python. A geração passou a explicitar o nível de compactação e o marcador do cabeçalho usados no corpus publicado. Os seis arquivos comprimidos e seus hashes foram preservados integralmente; a correção não altera observações, equações ou parâmetros. Há testes específicos de reprodução e preservação de conteúdo para esse caso. As mudanças de comportamento entre versões estão descritas na [documentação de gzip do Python](https://docs.python.org/3/library/gzip.html#gzip.compress).
+
 ### 19.3 Mapa dos onze documentos consolidados
 
 | Arquivo anterior | Onde seu conteúdo foi integrado |
