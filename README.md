@@ -2,6 +2,8 @@
 
 Laboratório digital de células a combustível microbianas. Montagem guiada em onze etapas, evidências rastreáveis e núcleo físico exploratório. Aplicação independente do METREV completo.
 
+**Comece pelo [guia de engenharia, materiais e modelagem](docs/GUIA_MFC_STUDIO.md).** Ele reúne os documentos anteriores em uma leitura explicativa: funcionamento da célula, onze etapas, materiais, equações, exemplos, dados e calibração. Os registros originais de auditoria ficam em anexos recolhíveis no mesmo guia.
+
 **Estado v0.2:** núcleo mecanístico não calibrado; nenhum preditor treinado nem erro experimental externo demonstrado. Defaults são hipóteses de engenharia, não valores de literatura aprendidos.
 
 ## Aplicação
@@ -21,7 +23,7 @@ Corpus 0.3.0: 29 fontes indexadas de tipos distintos (inclui documentação da p
 
 Documentos originais, autores, DOIs, licenças, hashes e localizadores em `research/corpus-v0.2/`. Redistribuição dos documentos segue a licença individual CC BY; não se aplica uma licença de código aos artigos. A curva S18 mantém a base de área pendente e não é convertida silenciosamente em corrente absoluta.
 
-O incremento em `research/corpus-v0.3/` acrescenta S29 com 115 pares publicados por reator (pico/tempo), mantendo dois pares ausentes e a mesma família conservadora de S18. `research/materials-v0.1/` separa material/variante, caracterização, oferta e vínculo experimental. Fabricantes sem licença de redistribuição têm fatos e proveniência preservados, sem cópia integral pública. `docs/DATA_CURATION_2026-10-26.md` registra decisões, normalização, onze etapas e admissões ainda bloqueadas.
+O incremento em `research/corpus-v0.3/` acrescenta S29 com 115 pares publicados por reator (pico/tempo), mantendo dois pares ausentes e a mesma família conservadora de S18. `research/materials-v0.1/` separa material/variante, caracterização, oferta e vínculo experimental. Fabricantes sem licença de redistribuição têm fatos e proveniência preservados, sem cópia integral pública. A [seção de curadoria do guia](docs/GUIA_MFC_STUDIO.md#dados) explica decisões, normalização e admissões ainda bloqueadas.
 
 ## Desenvolvimento
 
@@ -35,11 +37,10 @@ O adaptador de autenticação é o nativo do Sites. Nunca configure OAuth indepe
 
 ## Ciência, verificação e continuidade
 
-- `docs/CONTEXT_RECONCILIATION.md`: fatos, inferências, lacunas e limites da recuperação.
-- `docs/context-inventory.json`: inventário e hashes dos originais.
-- `docs/MODEL_V02.md`: equações e domínio do núcleo.
-- `docs/verification.json`: conservação e convergência; não é validação preditiva.
+- [Guia único](docs/GUIA_MFC_STUDIO.md): explicação de engenharia, equações, exemplos, estado científico, histórico, inventários e auditorias originais.
 - `research/corpus-v0.2/RESEARCH_STATUS.md`: inspeção dos artigos, conflitos e admissões pendentes.
 - `science/validation.mjs`: agrupamento transitivo de estudos/reatores/famílias e métricas sem erros perfeitos fabricados.
+
+As rotinas `seed-hosted-corpus.py` e `verify-database.py` atualizam seus blocos de auditoria no guia por meio de `scripts/document_audits.py`. Os relatórios continuam legíveis por máquina nos blocos JSON, sem recriar documentos separados em `docs`.
 
 Próximo trabalho científico: resolver área/condições S18, recuperar réplicas e curvas comparáveis, identificar parâmetros separadamente e obter família externa intocada. Só então medir MAE/RMSE, cobertura de intervalos e generalização. Não ajustar todos os coeficientes numa curva e declarar aprendizado dos onze componentes.

@@ -1,5 +1,6 @@
 """Read-only audit of a seeded local D1 SQLite file; emits a reproducible report."""
 from pathlib import Path
+from document_audits import write_audit
 import sqlite3,json,hashlib
 r=Path(__file__).resolve().parents[1];seed=json.loads((r/'science/corpus-seed.json').read_text())
 paths=list((r/'.wrangler/state').rglob('*.sqlite'));c=None
@@ -21,4 +22,4 @@ group=json.loads(c.execute('SELECT conditions_json FROM experiments WHERE id=?',
 assert set(group['source_ids'])=={'S18','S29'}
 assert len([rid for rid in group['record_ids'] if rid.startswith('S29-')])==118
 report={'audit':'local_D1_real_database','counts':counts,'foreign_key_violations':0,'complete_text_reconstruction_verified':len(seed['documents']),'training_eligible_records':0,'missing_observation_cells':seed['report']['missing_observation_cells'],'related_S18_S29_family_verified':True,'seed_sha256':seed['content_sha256'],'experimental_predictive_validation':False}
-(r/'docs/database-local-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+write_audit('database-local-verification.json',report);print(json.dumps(report,indent=2))

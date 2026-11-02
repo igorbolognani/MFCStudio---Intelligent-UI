@@ -2,6 +2,7 @@
 Pass {url,token} on stdin. Credentials are never written or printed.
 """
 from pathlib import Path
+from document_audits import write_audit
 import json,urllib.request,urllib.error,sys,termios
 root=Path(__file__).resolve().parents[1]
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -41,5 +42,5 @@ assert report['database']['counts']['observations']==report['seed']['report']['o
 report['service_cannot_impersonate_visitor']=call('/api/scenarios',expected=(401,))[1]==401
 report['development_QA_not_public']=call('/qa',expected=(404,))[1]==404
 report['landing_available']=call('/')[1]==200
-(root/'docs/hosted-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+write_audit('hosted-verification.json',report)
 print(json.dumps({'complete':True,'counts':report['database']['counts'],'pdf_assets':report['database']['pdf_assets'],'auth_boundary':report['service_cannot_impersonate_visitor'],'qa_production_404':report['development_QA_not_public']}),flush=True)
