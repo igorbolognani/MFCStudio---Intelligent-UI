@@ -2,6 +2,8 @@ import seedData from '../science/corpus-seed.json';
 import embedded from '../science/corpus-embedded-assets.json';
 import pdfAssets from '../science/corpus-pdf-assets.json';
 import {bucket,database,digest} from './server';
+import {applyRecordRevisions,applySourceRevisions} from '../science/record-revisions.mjs';
+import {verifyCorpusDatabase} from '../science/corpus-integrity.mjs';
 export const corpus:any=seedData;
 export const rawAssets=pdfAssets;
 async function batches(db:D1Database,statements:D1PreparedStatement[]){for(let i=0;i<statements.length;i+=60)await db.batch(statements.slice(i,i+60));}
@@ -15,6 +17,7 @@ export async function seedCorpus(){
  const sourceStatements:D1PreparedStatement[]=[];
  for(const s of corpus.sources)sourceStatements.push(db.prepare('INSERT INTO sources(id,doi,title,url,access,scope,metadata_json) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(s.id,s.doi||null,s.title,s.url,s.access||'metadata',s.type,JSON.stringify(s)));
  await batches(db,sourceStatements);
+ await applySourceRevisions(db,corpus);
  const definitions:D1PreparedStatement[]=[];
  for(const s of corpus.stages)for(const p of s.properties)definitions.push(db.prepare('INSERT INTO properties(id,stage_id,name,symbol,unit,implementation_status,metadata_json) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(p.id,s.id,p.name_pt,p.symbol,p.unit,'catalog_proposed_not_automatically_resolved',JSON.stringify(p)));
  for(const s of corpus.stage_map)for(const sid of s.source_ids)definitions.push(db.prepare('INSERT INTO source_stages(id,source_id,stage_id,relation) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(sid+':'+s.stage_id,sid,s.stage_id,JSON.stringify({evidence_status:s.commercial_context_source_ids?.includes(sid)?'commercial_facts_not_experimental_validation':s.evidence_status,initial_family_applicability:s.initial_family_applicability,remaining_gaps:s.remaining_gaps})));
@@ -36,6 +39,7 @@ export async function seedCorpus(){
  const records:D1PreparedStatement[]=[];
  for(const r of corpus.records)records.push(db.prepare('INSERT INTO evidence_records(id,source_id,study_id,leakage_group_id,scope,status,training_eligible,data_json) VALUES(?,?,?,?,?,?,0,?) ON CONFLICT(id) DO NOTHING').bind(r.id,r.source_id,r.study_id,r.leakage_group_id,r.experimental_scope,r.status,JSON.stringify(r)));
  await batches(db,records);
+ await applyRecordRevisions(db,corpus);
  const obs:D1PreparedStatement[]=[];
  for(const r of corpus.records)for(const [i,o] of (r.observations||[]).entries())obs.push(db.prepare('INSERT INTO observations(id,record_id,metric,value,unit,kind,area_basis,potential_reference,locator,metadata_json) VALUES(?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(r.id+':'+i,r.id,o.metric,o.value??null,o.unit,o.kind,o.area_basis||null,o.reference_electrode||null,o.locator,JSON.stringify(o)));
  await batches(db,obs);
@@ -43,6 +47,8 @@ export async function seedCorpus(){
  await db.prepare('INSERT INTO curves(id,record_id,x_metric,y_metric,x_unit,y_unit,extraction_method,metadata_json) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(c.id,c.id,'current_density','cell_voltage','A/m2','V','digitized_published_curve_not_raw_replicate',JSON.stringify({...c,points:undefined})).run();
  await batches(db,c.points.map((p:any,i:number)=>db.prepare('INSERT INTO curve_points(id,curve_id,ordinal,x,y,uncertainty) VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(c.id+':'+i,c.id,i,p.current_density_A_m2,p.cell_voltage_V,p.voltage_digitization_bound_V)));
  for(const asset of embedded){const bytes=Uint8Array.from(atob(asset.content_base64),c=>c.charCodeAt(0));await bucket().put(asset.object_key,bytes,{httpMetadata:{contentType:asset.content_type},customMetadata:{sha256:asset.sha256}});}
+ const integrity=await verifyCorpusDatabase(db,corpus);
+ if(!integrity.complete)throw new Error('Corpus readback mismatch: '+integrity.mismatches.join(','));
  const now=new Date().toISOString();
  await db.prepare('INSERT INTO seed_versions(id,content_sha256,report_json,applied_at) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING').bind(corpus.version,corpus.content_sha256,JSON.stringify(corpus.report),now).run();
  return {alreadyApplied:false,version:corpus.version,report:corpus.report};
@@ -52,12 +58,17 @@ export async function corpusStatus(){
  for(const table of ['stages','properties','sources','source_stages','documents','document_chunks','experiments','evidence_records','observations','curves','curve_points']){const r=await db.prepare(`SELECT COUNT(*) AS count FROM ${table}`).first<{count:number}>();counts[table]=r?.count||0;}
  const eligible=await db.prepare('SELECT COUNT(*) AS count FROM evidence_records WHERE training_eligible=1').first<{count:number}>();
  const seed=await db.prepare('SELECT * FROM seed_versions WHERE id=?').bind(corpus.version).first();
- const stored=[];for(const a of rawAssets)stored.push({id:a.id,present:!!await bucket().head(a.object_key)});
+ const stored=[];
+ for(const a of rawAssets){
+  const obj=await bucket().get(a.object_key);
+  const actual=obj?Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await obj.arrayBuffer())),x=>x.toString(16).padStart(2,'0')).join(''):null;
+  stored.push({id:a.id,present:!!obj,sha256_matches:actual===a.sha256});
+ }
  const embeddedStatus=[];
  for(const asset of embedded){
   const obj=await bucket().get(asset.object_key);
   const actual=obj?Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await obj.arrayBuffer())),x=>x.toString(16).padStart(2,'0')).join(''):null;
   embeddedStatus.push({id:asset.id,present:!!obj,sha256_matches:actual===asset.sha256});
  }
- return {version:corpus.version,counts,training_eligible_records:eligible?.count||0,seed_applied:!!seed,pdf_assets:stored,embedded_assets:embeddedStatus,content_sha256:seed?.content_sha256||null};
+ return {version:corpus.version,integrity:await verifyCorpusDatabase(db,corpus),counts,training_eligible_records:eligible?.count||0,seed_applied:!!seed,pdf_assets:stored,embedded_assets:embeddedStatus,content_sha256:seed?.content_sha256||null};
 }

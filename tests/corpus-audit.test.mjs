@@ -5,7 +5,7 @@ import {auditCorpus} from '../scripts/audit-corpus.mjs';
 const seed=JSON.parse(readFileSync(new URL('../science/corpus-seed.json',import.meta.url),'utf8'));
 test('real corpus audit preserves missing cells and does not infer stage mappings',()=>{
  const before=JSON.stringify(seed),a=auditCorpus(seed);
- assert.deepEqual(a.errors,[]);assert.equal(a.numeric_cells,393);assert.equal(a.missing_cells,4);
+ assert.deepEqual(a.errors,[]);assert.equal(a.numeric_cells,423);assert.equal(a.missing_cells,4);
  assert.equal(a.coverage.length,11);assert.equal(a.training_eligible_records,0);
  assert.equal(JSON.stringify(seed),before);assert.deepEqual(a,auditCorpus(seed));
 });

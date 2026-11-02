@@ -29,7 +29,7 @@ export function auditCorpus(seed){
  for(const d of seed.documents){if(!sources.has(d.source_id))errors.push(`Unknown document source: ${d.id}`);if(hash(d.text)!==d.sha256)errors.push(`Text hash mismatch: ${d.id}`);if(Array.from(d.text).length!==d.text_length)errors.push(`Text length mismatch: ${d.id}`);}
  let components=[];try{components=provenanceComponents(seed.records);}catch(e){errors.push(e.message);}
  for(const c of coverage){c.source_ids=[...new Set(c.source_ids)].sort();c.provenance_groups=[...new Set(c.provenance_groups)].sort();}
- const {content_sha256,...payload}=seed;
+ const {content_sha256}=seed;
  // The published digest uses Python canonical JSON; document hashes are checked here.
  return {audit_version:'1.0.0',corpus_version:seed.version,corpus_declared_sha256:content_sha256,status:errors.length?'failed':'passed_with_explicit_limits',errors,warnings,records:seed.records.length,numeric_cells:numeric,missing_cells:missing,missing_observations:missingCells,documents_verified:seed.documents.length,scopes,coverage,records_without_explicit_stage_mapping:unmapped,connected_provenance_components:components,training_eligible_records:seed.records.filter(r=>r.training_eligible).length,experimental_predictive_validation:false,limits:['Stage counts overlap: one record may describe several components.','Provenance components include commercial sources and are not counts of independent experiments.','Source-stage links are not substituted for missing record-stage attribution.','Document text integrity is not scientific review of every page.','No parameter fitting, causal attribution or predictive validation is performed.']};
 }

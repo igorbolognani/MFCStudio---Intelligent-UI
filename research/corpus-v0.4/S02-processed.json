@@ -1,0 +1,1005 @@
+{
+  "acquisition": {
+    "source_id": "S02",
+    "doi": "10.1021/es0499344",
+    "retrieved_at": "2026-11-02",
+    "url": "https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2004-LiuLogan-PEM-noPEM-EST.pdf",
+    "format": "application/pdf",
+    "pages": 7,
+    "size_bytes": 281803,
+    "sha256": "f050572df0a346f8b1264a0e738f5bceaf51fb950bd70459c8120bce49cd8b0c",
+    "text_sha256": "66778c8c37b4377afe599231a3e620c7fb494c176bec03a1f676b6312fdb3697",
+    "read_scope": "Methods/results text and rendered pages1–4; remaining discussion text read; references not revalidated",
+    "rights": "Author-hosted research copy; no open redistribution license identified; full PDF/text excluded from public GitHub and public corpus assets",
+    "extraction": "Reviewed factual transcription; no full-source text copied to public corpus",
+    "full_pdf_private_copy_preserved": true
+  },
+  "records": [
+    {
+      "id": "S02-reviewed-methods",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "full_cell_mfc",
+      "stage_ids": [
+        "anode_chamber",
+        "anolyte",
+        "anode",
+        "anode_catalyst",
+        "biofilm",
+        "membrane",
+        "external_circuit",
+        "cathode_chamber",
+        "catholyte",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "source_locator": "S02 PDF p1 (journal p4040), Construction; S02 PDF p2 (journal p4041), Experimental Conditions; S02 PDF p2 (journal p4041), Construction continuation",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "stage_applicability": {
+          "anode_catalyst": "no_added_catalyst",
+          "cathode_chamber": "air_side_boundary_not_second_liquid_chamber",
+          "catholyte": "shared_liquid_contact_no_independent_catholyte_volume"
+        },
+        "liquid_inventories": 1,
+        "anode_active_area_m2": null
+      },
+      "observations": [
+        {
+          "metric": "empty_bed_volume",
+          "value": 28,
+          "unit": "mL",
+          "kind": "reported",
+          "locator": "S02 PDF p1 (journal p4040), Construction",
+          "normalization": {
+            "value": 2.8e-05,
+            "unit": "m3",
+            "transformation": {
+              "multiply": 1e-06,
+              "add": 0
+            },
+            "source_value": 28,
+            "source_unit": "mL",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "chamber_length",
+          "value": 4,
+          "unit": "cm",
+          "kind": "reported",
+          "locator": "S02 PDF p1 (journal p4040), Construction",
+          "normalization": {
+            "value": 0.04,
+            "unit": "m",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 4,
+            "source_unit": "cm",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "chamber_diameter",
+          "value": 3,
+          "unit": "cm",
+          "kind": "reported",
+          "locator": "S02 PDF p1 (journal p4040), Construction",
+          "normalization": {
+            "value": 0.03,
+            "unit": "m",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 3,
+            "source_unit": "cm",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "anode_area_per_volume",
+          "value": 25,
+          "unit": "m2/m3",
+          "kind": "reported",
+          "locator": "S02 PDF p1 (journal p4040), Construction",
+          "normalization": {
+            "value": 25,
+            "unit": "1/m",
+            "transformation": {
+              "multiply": 1,
+              "add": 0
+            },
+            "source_value": 25,
+            "source_unit": "m2/m3",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "operating_temperature",
+          "value": 30,
+          "unit": "degC",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Experimental Conditions",
+          "normalization": {
+            "value": 303.15,
+            "unit": "K",
+            "transformation": {
+              "multiply": 1,
+              "add": 273.15
+            },
+            "source_value": 30,
+            "source_unit": "degC",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "nominal_external_resistance",
+          "value": 1000,
+          "unit": "Ohm",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Construction continuation",
+          "normalization": {
+            "value": 1000,
+            "unit": "Ohm",
+            "transformation": {
+              "multiply": 1,
+              "add": 0
+            },
+            "source_value": 1000,
+            "source_unit": "Ohm",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain.",
+        "28 mL is reported empty-bed volume; retained as such.",
+        "Rounded geometry and area/volume are not an exact active-area measurement."
+      ]
+    },
+    {
+      "id": "S02-reviewed-PEM-assembly",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "full_cell_mfc",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "source_locator": "S02 PDF p1 (journal p4040), Construction; S02 PDF p2 (journal p4041), Construction continuation",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "membrane": "Nafion117",
+        "cathode_support": "flexible carbon cloth, E-Tek",
+        "conditioning": "sequential cleaning and hot pressing; experimental thickness not measured here"
+      },
+      "observations": [
+        {
+          "metric": "Pt_metal_loading",
+          "value": 0.5,
+          "unit": "mgPt/cm2",
+          "kind": "reported",
+          "locator": "S02 PDF p1 (journal p4040), Construction",
+          "area_basis": "cathode_coating_area",
+          "normalization": {
+            "value": 0.005,
+            "unit": "kgPt/m2",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 0.5,
+            "source_unit": "mgPt/cm2",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "hot_press_temperature",
+          "value": 140,
+          "unit": "degC",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Construction continuation",
+          "normalization": {
+            "value": 413.15,
+            "unit": "K",
+            "transformation": {
+              "multiply": 1,
+              "add": 273.15
+            },
+            "source_value": 140,
+            "source_unit": "degC",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "hot_press_pressure",
+          "value": 1780,
+          "unit": "kPa",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Construction continuation",
+          "normalization": {
+            "value": 1780000,
+            "unit": "Pa",
+            "transformation": {
+              "multiply": 1000,
+              "add": 0
+            },
+            "source_value": 1780,
+            "source_unit": "kPa",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "hot_press_duration",
+          "value": 3,
+          "unit": "min",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Construction continuation",
+          "normalization": {
+            "value": 180,
+            "unit": "s",
+            "transformation": {
+              "multiply": 60,
+              "add": 0
+            },
+            "source_value": 3,
+            "source_unit": "min",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain."
+      ]
+    },
+    {
+      "id": "S02-reviewed-noPEM-assembly",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "full_cell_mfc",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "source_locator": "S02 PDF p2 (journal p4041), Construction continuation",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "membrane": "none",
+        "cathode_support": "rigid carbon paper, E-Tek"
+      },
+      "observations": [
+        {
+          "metric": "Pt_metal_loading",
+          "value": 0.35,
+          "unit": "mgPt/cm2",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Construction continuation",
+          "area_basis": "cathode_coating_area",
+          "normalization": {
+            "value": 0.0034999999999999996,
+            "unit": "kgPt/m2",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 0.35,
+            "source_unit": "mgPt/cm2",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain."
+      ]
+    },
+    {
+      "id": "S02-reviewed-wastewater-PEM",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "full_cell_mfc",
+      "stage_ids": [
+        "anolyte",
+        "biofilm",
+        "membrane",
+        "external_circuit",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "source_locator": "S02 PDF p3 (journal p4042), Wastewater results; S02 PDF p3 (journal p4042), Coulombic Efficiency",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "substrate": "domestic_wastewater",
+        "assembly": "PEM",
+        "power_vs_CE_paired_same_batch": false,
+        "source_COD_range_mg_L": [
+          200,
+          300
+        ],
+        "source_pH_range": [
+          7.3,
+          7.6
+        ]
+      },
+      "observations": [
+        {
+          "metric": "cell_power_density_at_1kohm",
+          "value": 28,
+          "unit": "mW/m2",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Wastewater results",
+          "area_basis": "projected_anode_cross_section",
+          "uncertainty": 3,
+          "uncertainty_type": "reported_plus_minus_unspecified_for_this_result",
+          "normalization": {
+            "value": 0.028,
+            "unit": "W/m2",
+            "transformation": {
+              "multiply": 0.001,
+              "add": 0
+            },
+            "source_value": 28,
+            "source_unit": "mW/m2",
+            "reported_plus_minus": 0.003,
+            "uncertainty_type": "reported_plus_minus_unspecified_for_this_result",
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "volumetric_power_density_at_1kohm",
+          "value": 0.7,
+          "unit": "mW/L",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Wastewater results",
+          "uncertainty": 0.1,
+          "volume_basis": "reported_liquid_volume",
+          "normalization": {
+            "value": 0.7,
+            "unit": "W/m3",
+            "transformation": {
+              "multiply": 1,
+              "add": 0
+            },
+            "source_value": 0.7,
+            "source_unit": "mW/L",
+            "reported_plus_minus": 0.1,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "coulombic_efficiency",
+          "value": 28,
+          "unit": "%",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Coulombic Efficiency",
+          "normalization": {
+            "value": 0.28,
+            "unit": "1",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 28,
+            "source_unit": "%",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "COD_removal",
+          "value": 55,
+          "unit": "%",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Coulombic Efficiency",
+          "normalization": {
+            "value": 0.55,
+            "unit": "1",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 55,
+            "source_unit": "%",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain.",
+        "Power, COD removal and CE are study-level results, not certified paired per-batch observations."
+      ]
+    },
+    {
+      "id": "S02-reviewed-wastewater-noPEM",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "full_cell_mfc",
+      "stage_ids": [
+        "anolyte",
+        "biofilm",
+        "membrane",
+        "external_circuit",
+        "cathode",
+        "cathode_catalyst"
+      ],
+      "source_locator": "S02 PDF p3 (journal p4042), Wastewater results; S02 PDF p3 (journal p4042), Coulombic Efficiency",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "substrate": "domestic_wastewater",
+        "assembly": "noPEM",
+        "power_vs_CE_paired_same_batch": false,
+        "source_COD_range_mg_L": [
+          200,
+          300
+        ],
+        "source_pH_range": [
+          7.3,
+          7.6
+        ]
+      },
+      "observations": [
+        {
+          "metric": "cell_power_density_at_1kohm",
+          "value": 146,
+          "unit": "mW/m2",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Wastewater results",
+          "area_basis": "projected_anode_cross_section",
+          "uncertainty": 8,
+          "uncertainty_type": "reported_plus_minus_unspecified_for_this_result",
+          "normalization": {
+            "value": 0.146,
+            "unit": "W/m2",
+            "transformation": {
+              "multiply": 0.001,
+              "add": 0
+            },
+            "source_value": 146,
+            "source_unit": "mW/m2",
+            "reported_plus_minus": 0.008,
+            "uncertainty_type": "reported_plus_minus_unspecified_for_this_result",
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "volumetric_power_density_at_1kohm",
+          "value": 3.7,
+          "unit": "mW/L",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Wastewater results",
+          "uncertainty": 0.2,
+          "volume_basis": "reported_liquid_volume",
+          "normalization": {
+            "value": 3.7,
+            "unit": "W/m3",
+            "transformation": {
+              "multiply": 1,
+              "add": 0
+            },
+            "source_value": 3.7,
+            "source_unit": "mW/L",
+            "reported_plus_minus": 0.2,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "coulombic_efficiency",
+          "value": 20,
+          "unit": "%",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Coulombic Efficiency",
+          "normalization": {
+            "value": 0.2,
+            "unit": "1",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 20,
+            "source_unit": "%",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "COD_removal",
+          "value": 75,
+          "unit": "%",
+          "kind": "measurement_derived",
+          "locator": "S02 PDF p3 (journal p4042), Coulombic Efficiency",
+          "normalization": {
+            "value": 0.75,
+            "unit": "1",
+            "transformation": {
+              "multiply": 0.01,
+              "add": 0
+            },
+            "source_value": 75,
+            "source_unit": "%",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain.",
+        "Power, COD removal and CE are study-level results, not certified paired per-batch observations."
+      ]
+    },
+    {
+      "id": "S02-reviewed-oxygen-assay",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "component_oxygen_ingress_assay",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "catholyte",
+        "anode_chamber"
+      ],
+      "source_locator": "S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+      "status": "reviewed_factual_extraction_not_training_admitted",
+      "training_eligible": false,
+      "evidence_access": "author_hosted_full_pdf",
+      "extraction_method": "structured_manual_transcription_cross_checked_against_rendered_PDF_pages_1_to_4",
+      "conditions": {
+        "chambers": 1,
+        "cathode_environment": "ambient_air",
+        "feed_regime": "repeated_batch_replacement",
+        "temperature_C": 30,
+        "anode_material": "Toray carbon paper, un-wetproofed, grade unreported",
+        "anode_catalyst": "none_added_reported",
+        "inoculum": "domestic wastewater",
+        "replication": "two cells; repeated tests; Figure5 triplicate voltage measurements are not three independent reactors",
+        "independent_from_S18": true,
+        "kernel_domain_admitted": false,
+        "assay": "oxygen accumulation in stirred glucose-free medium",
+        "lumped_model": "well_mixed_liquid; fixed interfacial saturation; initially oxygen-free",
+        "equation": "k_liquid = ln(2)*V/(A*t_half)",
+        "source_printed_k": {
+          "PEM": 2.3e-06,
+          "noPEM": 8.6e-06,
+          "unit": "cm2/s",
+          "admission": "blocked_dimensional_inconsistency"
+        },
+        "not_ORR_cathode_gas_transfer": true
+      },
+      "observations": [
+        {
+          "metric": "oxygen_assay_volume",
+          "value": 28,
+          "unit": "mL",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Oxygen accumulation calculation",
+          "normalization": {
+            "value": 2.8e-05,
+            "unit": "m3",
+            "transformation": {
+              "multiply": 1e-06,
+              "add": 0
+            },
+            "source_value": 28,
+            "source_unit": "mL",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_assay_area",
+          "value": 7.1,
+          "unit": "cm2",
+          "kind": "reported",
+          "locator": "S02 PDF p2 (journal p4041), Oxygen transport geometry",
+          "normalization": {
+            "value": 0.00071,
+            "unit": "m2",
+            "transformation": {
+              "multiply": 0.0001,
+              "add": 0
+            },
+            "source_value": 7.1,
+            "source_unit": "cm2",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_half_saturation_time_PEM",
+          "value": 200,
+          "unit": "min",
+          "kind": "measured",
+          "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "uncertainty": 3,
+          "uncertainty_type": "reported_plus_minus_unspecified",
+          "normalization": {
+            "value": 12000,
+            "unit": "s",
+            "transformation": {
+              "multiply": 60,
+              "add": 0
+            },
+            "source_value": 200,
+            "source_unit": "min",
+            "reported_plus_minus": 180,
+            "uncertainty_type": "reported_plus_minus_unspecified",
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_half_saturation_time_noPEM",
+          "value": 53,
+          "unit": "min",
+          "kind": "measured",
+          "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "uncertainty": 13,
+          "uncertainty_type": "reported_plus_minus_unspecified",
+          "normalization": {
+            "value": 3180,
+            "unit": "s",
+            "transformation": {
+              "multiply": 60,
+              "add": 0
+            },
+            "source_value": 53,
+            "source_unit": "min",
+            "reported_plus_minus": 780,
+            "uncertainty_type": "reported_plus_minus_unspecified",
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_saturation_concentration_assumed",
+          "value": 0.000265,
+          "unit": "mol/L",
+          "kind": "author_assumed",
+          "locator": "S02 PDF p2 (journal p4041), Oxygen accumulation calculation",
+          "normalization": {
+            "value": 0.265,
+            "unit": "mol/m3",
+            "transformation": {
+              "multiply": 1000,
+              "add": 0
+            },
+            "source_value": 0.000265,
+            "source_unit": "mol/L",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_ingress_rate_PEM_author_estimate",
+          "value": 0.05,
+          "unit": "mg/h",
+          "kind": "author_calculated",
+          "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "normalization": {
+            "value": 1.3888888888888888e-11,
+            "unit": "kg/s",
+            "transformation": {
+              "multiply": 2.7777777777777777e-10,
+              "add": 0
+            },
+            "source_value": 0.05,
+            "source_unit": "mg/h",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        },
+        {
+          "metric": "oxygen_ingress_rate_noPEM_author_estimate",
+          "value": 0.187,
+          "unit": "mg/h",
+          "kind": "author_calculated",
+          "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "normalization": {
+            "value": 5.1944444444444444e-11,
+            "unit": "kg/s",
+            "transformation": {
+              "multiply": 2.7777777777777777e-10,
+              "add": 0
+            },
+            "source_value": 0.187,
+            "source_unit": "mg/h",
+            "reported_plus_minus": null,
+            "uncertainty_type": null,
+            "solver_binding_admitted": false
+          }
+        }
+      ],
+      "limitations": [
+        "Assembly comparison: separator, cathode substrate, Pt loading and hot pressing covary.",
+        "Glucose/wastewater at 30 C are outside current acetate-only kernel domain.",
+        "Liquid-referenced ingress coefficient cannot bind gas-referenced cathodic ORR coefficient.",
+        "Source reported concentration is an assumption; derived flux is not a new independent measurement."
+      ]
+    },
+    {
+      "id": "S02-derived-oxygen-ingress-PEM",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "derived_component_oxygen_ingress",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "catholyte",
+        "anode_chamber"
+      ],
+      "source_locator": "S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+      "status": "derived_under_declared_assumptions",
+      "training_eligible": false,
+      "conditions": {
+        "assembly": "PEM",
+        "parent_record_id": "S02-reviewed-oxygen-assay",
+        "liquid_volume_m3": 2.8e-05,
+        "oxygen_assay_area_m2": 0.00071,
+        "half_saturation_time_s": 12000,
+        "concentration_assumed_mol_m3": 0.265,
+        "oxygen_molar_mass_kg_mol": 0.032,
+        "well_mixed": true,
+        "initial_oxygen_assumed_zero": true,
+        "fixed_saturation_boundary": true,
+        "coefficient_reference": "aqueous_bulk_concentration",
+        "correction_of_published_coefficient": false
+      },
+      "observations": [
+        {
+          "metric": "liquid_referenced_oxygen_ingress_coefficient",
+          "value": 2.277948480713435e-06,
+          "unit": "m/s",
+          "kind": "derived",
+          "locator": "Derived from S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "equation": "ln(2)*V/(A*t_half)",
+          "uncertainty": null,
+          "solver_binding_admitted": false
+        },
+        {
+          "metric": "maximum_oxygen_ingress_mass_rate",
+          "value": 1.371507221267945e-11,
+          "unit": "kg/s",
+          "kind": "derived",
+          "locator": "Derived from S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "equation": "k*A*C_sat*M_O2",
+          "uncertainty": null,
+          "solver_binding_admitted": false
+        }
+      ],
+      "limitations": [
+        "Not a new independent measurement or external validation family.",
+        "No distribution of uncertainty inferred from unspecified reported plus/minus.",
+        "Ingress into stirred substrate-free liquid is not gas-referenced cathode ORR transport.",
+        "Reported printed k remains unit-blocked; this reconstruction does not silently relabel it."
+      ]
+    },
+    {
+      "id": "S02-derived-oxygen-ingress-noPEM",
+      "source_id": "S02",
+      "study_id": "10.1021/es0499344",
+      "leakage_group_id": "LiuLogan2004-air-cathode",
+      "experimental_scope": "derived_component_oxygen_ingress",
+      "stage_ids": [
+        "membrane",
+        "cathode",
+        "catholyte",
+        "anode_chamber"
+      ],
+      "source_locator": "S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+      "status": "derived_under_declared_assumptions",
+      "training_eligible": false,
+      "conditions": {
+        "assembly": "noPEM",
+        "parent_record_id": "S02-reviewed-oxygen-assay",
+        "liquid_volume_m3": 2.8e-05,
+        "oxygen_assay_area_m2": 0.00071,
+        "half_saturation_time_s": 3180,
+        "concentration_assumed_mol_m3": 0.265,
+        "oxygen_molar_mass_kg_mol": 0.032,
+        "well_mixed": true,
+        "initial_oxygen_assumed_zero": true,
+        "fixed_saturation_boundary": true,
+        "coefficient_reference": "aqueous_bulk_concentration",
+        "correction_of_published_coefficient": false
+      },
+      "observations": [
+        {
+          "metric": "liquid_referenced_oxygen_ingress_coefficient",
+          "value": 8.596032002692207e-06,
+          "unit": "m/s",
+          "kind": "derived",
+          "locator": "Derived from S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "equation": "ln(2)*V/(A*t_half)",
+          "uncertainty": null,
+          "solver_binding_admitted": false
+        },
+        {
+          "metric": "maximum_oxygen_ingress_mass_rate",
+          "value": 5.175498948180924e-11,
+          "unit": "kg/s",
+          "kind": "derived",
+          "locator": "Derived from S02 PDF p2 (journal p4041), Oxygen accumulation calculation; S02 PDF p2 (journal p4041), Oxygen transport geometry; S02 PDF p4 (journal p4043), Oxygen Transfer",
+          "equation": "k*A*C_sat*M_O2",
+          "uncertainty": null,
+          "solver_binding_admitted": false
+        }
+      ],
+      "limitations": [
+        "Not a new independent measurement or external validation family.",
+        "No distribution of uncertainty inferred from unspecified reported plus/minus.",
+        "Ingress into stirred substrate-free liquid is not gas-referenced cathode ORR transport.",
+        "Reported printed k remains unit-blocked; this reconstruction does not silently relabel it."
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "S02-k-unit",
+      "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+      "type": "dimensional",
+      "decision": "Do not convert printed coefficients; recompute a separate liquid-referenced coefficient from half-times."
+    },
+    {
+      "id": "S02-flux-ratio",
+      "locator": "S02 PDF p4 (journal p4043), Oxygen Transfer",
+      "type": "arithmetic",
+      "reported_ratio": 2.7,
+      "decision": "Retain fluxes .187 and .05 mg/h; their ratio is 3.74, not the reported multiplier."
+    },
+    {
+      "id": "S02-reference-potential",
+      "locator": "S02 PDF p4 (journal p4043), Electrode Potential",
+      "type": "reference_conversion",
+      "decision": "The printed -0.031 V plus .195 V does not equal the stated .226 V; no corrected electrode-potential target admitted."
+    },
+    {
+      "id": "S02-Faraday",
+      "locator": "S02 PDF p2 (journal p4041), Calculations",
+      "type": "constant_typo",
+      "printed_C_mol": 98485,
+      "decision": "Do not propagate to the kernel; canonical Faraday constant remains unchanged."
+    }
+  ],
+  "report": {
+    "source_id": "S02",
+    "reviewed_records_added": 8,
+    "reviewed_source_numeric_cells": 26,
+    "derived_numeric_cells": 4,
+    "raw_transcription_method": "manual_visual_PDF_review",
+    "normalizations": 26,
+    "conflicts_preserved": 4,
+    "new_independent_experimental_families": 0,
+    "training_eligible_records": 0,
+    "kernel_calibration_ready": false,
+    "experimental_error_metrics": null,
+    "oxygen_ingress_reconstruction": [
+      {
+        "assembly": "PEM",
+        "k_liquid_m_s": 2.277948480713435e-06,
+        "maximum_rate_mg_h": 0.04937425996564602
+      },
+      {
+        "assembly": "noPEM",
+        "k_liquid_m_s": 8.596032002692207e-06,
+        "maximum_rate_mg_h": 0.1863179621345133
+      }
+    ],
+    "published_flux_ratio_check": {
+      "computed": 3.7399999999999998,
+      "reported": 2.7,
+      "consistent": false
+    },
+    "public_full_document_redistribution": false
+  }
+}

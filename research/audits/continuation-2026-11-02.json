@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-02",
+  "round": "corpus_0.4.0_acquisition_curation_production_readback",
+  "status": "complete_for_this_reviewed_lot",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "19c15868ee06ca5b8d69d82bba4719a1e065f409d2c4eb668aecc26e055ce796",
+      "scope": "Read and updated for corpus 0.4.0."
+    },
+    {
+      "path": "docs/GUIA_MFC_STUDIO.md",
+      "sha256": "2f3eb6a135bbeca38f128d9f3c7b7cccc22edf920728882d2a42ec01504de348",
+      "scope": "Changed engineering sections reviewed and updated; historical audit blocks preserved, not manually reread in full this round."
+    },
+    {
+      "path": "lib/corpus.ts",
+      "sha256": "0ad89f943cb2402f9c1cb726e201d38ab9834be834e65c52e063155138bcd8e9",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "science/mfc-engine.mjs",
+      "sha256": "e216aeb9bd8de01113f716feea759e1a8b633a6bfee75213c9a8cb4642a8d043",
+      "scope": "scientific_kernel_relevant_equations_previously_read_unchanged"
+    },
+    {
+      "path": "science/record-revisions.mjs",
+      "sha256": "13e932b9d3445e5f69f1da35c51a61b751e3300820bb6e8c48d3a6f850216fd8",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "science/corpus-integrity.mjs",
+      "sha256": "dda85c54db068cf420f40507a5ce3389737602f5d6a0b403b35ae5546eb3c925",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "scripts/build-corpus.py",
+      "sha256": "526d10bd3401cd91cdc4d6a01a686dd079af618ad0ea724ca8995e04609703aa",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "scripts/build-s02.py",
+      "sha256": "ef34d8bb894cb0ef134e0bd117a612f2a1703e06f24791367b2aa31f390d443e",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "scripts/acquire-s02.py",
+      "sha256": "7fb2d4f1616709e91d3657a9019412eb72ef94e7de98b5ec5210634a77d67f11",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "scripts/audit-corpus.mjs",
+      "sha256": "209b7332e172c75524870e3252dc53c87c5c74878cbd19b06f0825f8453b7230",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "scripts/seed-hosted-corpus.py",
+      "sha256": "6be704e2f3113c116ffcea0d0c2f0fd5450928021e1fe898ad3ea6692f420084",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "research/corpus-v0.4/S02-extraction.json",
+      "sha256": "a4c880cf60d81fb9bc4e1a098a8f3e3253babf0869cb337d175c31b487d179f5",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "research/corpus-v0.4/S02-processed.json",
+      "sha256": "2cd2adacabac93111eab7115b32b914a44daa9382c3d16310c555b95fb64b8ee",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "research/audits/record-stage-review.json",
+      "sha256": "0266956770ebdff61a95ba71b0f08da0965dc50d8b8c5ce3c9a6e4b581028d52",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "research/audits/production-0.4.0.json",
+      "sha256": "5fedc9835df08ea307b289bf4cff58df14a6abf90995dc79b8f5ce18d8b0e819",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    },
+    {
+      "path": "research/audits/production-0.4.0-independent.json",
+      "sha256": "17c5586298fcde68cdc641494d17a76f4f79cb73be0b239518e27c2907bc26a6",
+      "scope": "read_or_authored_and_execution_verified_in_this_continuation"
+    }
+  ],
+  "source_document": {
+    "source_id": "S02",
+    "doi": "10.1021/es0499344",
+    "retrieved_at": "2026-11-02",
+    "url": "https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2004-LiuLogan-PEM-noPEM-EST.pdf",
+    "format": "application/pdf",
+    "pages": 7,
+    "size_bytes": 281803,
+    "sha256": "f050572df0a346f8b1264a0e738f5bceaf51fb950bd70459c8120bce49cd8b0c",
+    "text_sha256": "66778c8c37b4377afe599231a3e620c7fb494c176bec03a1f676b6312fdb3697",
+    "read_scope": "Methods/results text and rendered pages1–4; remaining discussion text read; references not revalidated",
+    "rights": "Author-hosted research copy; no open redistribution license identified; full PDF/text excluded from public GitHub and public corpus assets",
+    "extraction": "Reviewed factual transcription; no full-source text copied to public corpus",
+    "full_pdf_private_copy_preserved": true
+  },
+  "context_limits": [
+    "Prior conversation retrieval returned summaries and truncated excerpts, not complete sessions.",
+    "Original nine UI/scientific artifacts were byte-compared with the preserved repository copies earlier in this session; that is not a new full visual review.",
+    "No new complete-source recovery of S01 or S03; S10 raw dataset files not recovered."
+  ],
+  "verification": {
+    "javascript_tests": 42,
+    "python_tests": 50,
+    "typescript": "passed",
+    "production_build": "passed",
+    "production_seed_idempotent": true,
+    "experimental_predictive_validation": false,
+    "browser_preview": "connection_refused_unverified"
+  },
+  "next_work": {
+    "priority": "Resolve S18/S29 numeric area and obtain comparable independent material families before parameter fitting.",
+    "resume_commands": [
+      "node scripts/audit-corpus.mjs",
+      "node scripts/review-stage-coverage.mjs",
+      "python3 scripts/build-s02.py",
+      "python3 scripts/build-corpus.py"
+    ],
+    "do_not_repeat": "Previously verified acquisition or extraction unless source, rules or bytes change."
+  }
+}

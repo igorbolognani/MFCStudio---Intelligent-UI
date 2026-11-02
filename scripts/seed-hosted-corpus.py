@@ -2,7 +2,6 @@
 Pass {url,token} on stdin. Credentials are never written or printed.
 """
 from pathlib import Path
-from document_audits import write_audit
 import json,urllib.request,urllib.error,sys,termios
 root=Path(__file__).resolve().parents[1]
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -34,6 +33,10 @@ for asset in json.loads((root/'science/corpus-pdf-assets.json').read_text()):
  report['pdf_uploads'].append(value);print(json.dumps({'asset':asset['id'],'stored':True}),flush=True)
 report['database']=call('/api/seed')[0]
 assert report['database']['seed_applied']
+assert report['database']['integrity']['complete']
+assert all(a['sha256_matches'] for a in report['database']['pdf_assets'])
+report['idempotent_repeat']=call('/api/seed','POST',b'')[0]
+assert report['idempotent_repeat']['alreadyApplied']
 assert all(a['sha256_matches'] for a in report['database'].get('embedded_assets',[]))
 assert len(report['database'].get('embedded_assets',[]))==len(json.loads((root/'science/corpus-embedded-assets.json').read_text()))
 assert report['database']['counts']['sources']==report['seed']['report']['sources']
@@ -42,5 +45,6 @@ assert report['database']['counts']['observations']==report['seed']['report']['o
 report['service_cannot_impersonate_visitor']=call('/api/scenarios',expected=(401,))[1]==401
 report['development_QA_not_public']=call('/qa',expected=(404,))[1]==404
 report['landing_available']=call('/')[1]==200
-write_audit('hosted-verification.json',report)
-print(json.dumps({'complete':True,'counts':report['database']['counts'],'pdf_assets':report['database']['pdf_assets'],'auth_boundary':report['service_cannot_impersonate_visitor'],'qa_production_404':report['development_QA_not_public']}),flush=True)
+audit_path=root/'research/audits'/('production-'+report['database']['version'].split('/')[-1]+'.json')
+audit_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'complete':True,'counts':report['database']['counts'],'pdf_assets':report['database']['pdf_assets'],'auth_boundary':report['service_cannot_impersonate_visitor'],'qa_production_404':report['development_QA_not_public'],'integrity_complete':report['database']['integrity']['complete'],'idempotent_repeat':report['idempotent_repeat']['alreadyApplied'],'report_path':str(audit_path.relative_to(root))}),flush=True)

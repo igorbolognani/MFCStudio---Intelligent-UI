@@ -81,6 +81,36 @@ for name,asset_id in [('NPJ2024.pdf','S29-pdf'),('NPJ2024_supplement.pdf','S29-s
  raw_assets.append({'id':asset_id,'source_id':'S29','path':str(path.relative_to(R)),'sha256':sha(path.read_bytes()),'size_bytes':path.stat().st_size,'license':'CC-BY-4.0','object_key':'corpus/v03/'+asset_id+'.pdf','content_type':'application/pdf'})
 all_obs=[o for r in records for o in r.get('observations',[])]
 seed={'version':'mfc-corpus/0.3.0','sources':sources,'stages':catalog,'stage_map':mapping,'records':records,'documents':docs,'curve':curve,'material_curation':{'report':materials['report'],'experimental_links':materials['experimental_links'],'record_qualifications':materials['record_qualifications'],'stage_acquisition_plan':materials['stage_acquisition_plan']},'report':{'properties_proposed':110,'sources':len(sources),'complete_main_articles':6,'supplements':2,'records':len(records),'observations':len(all_obs),'numeric_observations':sum(o.get('value') is not None for o in all_obs),'missing_observation_cells':sum(o.get('value') is None for o in all_obs),'digitized_curve_points':len(curve['points']),'material_variants':materials['report']['material_variants'],'commercial_offer_snapshots':materials['report']['offer_snapshots'],'S29_reactor_feed_records':117,'S29_measured_response_pairs':115,'S29_missing_response_pairs':2,'training_eligible_records':0,'predictor_trained':False,'experimental_error_metrics':None,'all_11_stages_mapped':True,'independent_validation_pending':True}}
+# Versioned, guarded scope-only revisions; preserve the original record snapshot.
+review=json.loads((R/'research/audits/record-stage-review.json').read_text())
+assert review['corpus_version']==seed['version']
+seed['record_revisions']=[]
+for change in review['reviews']:
+ record=next(r for r in records if r['id']==change['record_id'])
+ assert not record.get('stage_ids')
+ previous=json.loads(json.dumps(record))
+ record['stage_ids']=change['stage_ids']
+ record['stage_attribution_review']=change
+ seed['record_revisions'].append({'id':record['id'],'previous':previous})
+s02_module=importlib.util.spec_from_file_location('build_s02',R/'scripts/build-s02.py')
+s02_builder=importlib.util.module_from_spec(s02_module);s02_module.loader.exec_module(s02_builder)
+s02=s02_builder.build()
+source=next(s for s in sources if s['id']=='S02')
+seed['source_revisions']=[{'id':'S02','previous':json.loads(json.dumps(source))}]
+source.update({'access':'author_hosted_full_pdf_retrieved','retrieved_at':'2026-11-02',
+ 'read_scope':s02['acquisition']['read_scope'],'additional_acquisition':s02['acquisition'],
+ 'fulltext_redistribution_cleared':False,'additional_conflicts':s02['conflicts']})
+records+=s02['records']
+for entry in mapping:
+ if any(entry['stage_id'] in r['stage_ids'] for r in s02['records']) and 'S02' not in entry['source_ids']:entry['source_ids'].append('S02')
+seed['version']='mfc-corpus/0.4.0'
+seed['S02_curation']=s02['report']
+all_obs=[o for r in records for o in r.get('observations',[])]
+seed['report'].update({'records':len(records),'observations':len(all_obs),
+ 'numeric_observations':sum(o.get('value') is not None for o in all_obs),
+ 'missing_observation_cells':sum(o.get('value') is None for o in all_obs),
+ 'primary_pdfs_acquired_not_redistributed':1,'S02_reviewed_numeric_cells':26,'S02_derived_numeric_cells':4})
+seed['report']['reviewed_stage_attributions']=len(seed['record_revisions'])
 canonical=json.dumps(seed,ensure_ascii=False,sort_keys=True,separators=(',',':'));seed['content_sha256']=sha(canonical.encode())
 (R/'science/corpus-seed.json').write_text(json.dumps(seed,ensure_ascii=False,separators=(',',':'))+'\n')
 (R/'science/corpus-embedded-assets.json').write_text(json.dumps(assets,separators=(',',':'))+'\n')

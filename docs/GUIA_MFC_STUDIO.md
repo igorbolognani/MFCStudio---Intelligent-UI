@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial: **2 de novembro de 2026**. Código científico conferido: `mfc-kernel/0.2.0`; base de evidências: `mfc-corpus/0.3.0`. Os registros de publicação e auditoria reunidos aqui são de **25 e 26 de outubro de 2026**. Esta revisão organiza e explica o trabalho existente; não representa uma nova calibração ou uma nova auditoria da aplicação em produção.
+Revisão editorial: **2 de novembro de 2026**. Código científico conferido: `mfc-kernel/0.2.0`; base de evidências: `mfc-corpus/0.4.0`. Os registros de publicação e auditoria reunidos aqui são de **25 e 26 de outubro de 2026**. Esta rodada acrescenta a curadoria S02 e a atribuição das etapas. Continua sem calibração experimental; a aplicação em produção foi confirmada em 2 de novembro de 2026, com relatórios específicos desta rodada.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -70,16 +70,16 @@ Configurações fora dessa família podem ser registradas, mas a previsão é de
 
 ### 2.2 O significado dos números da base
 
-| Conteúdo no corpus 0.3.0 | Quantidade | Como interpretar |
+| Conteúdo no corpus 0.4.0 | Quantidade | Como interpretar |
 |---|---:|---|
 | Etapas de configuração | 11 | Estrutura do sistema. |
 | Propriedades propostas no catálogo | 110 | Perguntas e campos pertinentes; não são 110 leis físicas implementadas. |
 | Campos numéricos do núcleo | 39 | Incluem entradas de cálculo, condições fixas, limites de uso e propriedades apenas registradas. |
 | Fontes indexadas | 29 | Misturam estudos, modelos, dados, fornecedores e uma referência de plataforma. |
-| Artigos completos recuperados | 6 | Arquivos integrais com licença de redistribuição conferida. |
+| Artigos completos recuperados | 7 | Seis publicados com licença CC BY; S02 preservado em cópia de pesquisa sem redistribuição pública. |
 | Suplementos completos | 2 | Incluem métodos, figuras e dados adicionais. |
-| Registros de evidência | 198 | Incluem contextos, especificações, ofertas e resultados; não são 198 experimentos independentes. |
-| Células de observação | 397 | 393 numéricas e quatro ausentes. Parte dos números é comercial. |
+| Registros de evidência | 206 | Incluem contextos, especificações, ofertas e resultados; não são 206 experimentos independentes. |
+| Células de observação | 427 | 423 numéricas e quatro ausentes. Incluem valores comerciais e quatro derivados S02. |
 | Variantes comerciais | 16 | Suportes, tratamentos e componentes completos separados. |
 | Propriedades comerciais extraídas | 46 | 44 normalizadas dimensionalmente; duas com conversão bloqueada. |
 | Ofertas datadas | 31 | Capturas de 26/10/2026; não são preços atuais garantidos nem custos entregues. |
@@ -660,9 +660,9 @@ Quando um número é apresentado, observe conjuntamente sua origem, as condiçõ
 
 A rotina `node scripts/audit-corpus.mjs` confere referências, identificadores únicos, valores numéricos, localizadores e hashes dos textos completos. A execução sobre o corpus 0.3.0 confirmou 198 registros, 393 células numéricas e quatro ausentes. O relatório em [research/audits/corpus-0.3.0-audit.json](../research/audits/corpus-0.3.0-audit.json) apresenta a cobertura por etapa e os grupos conectados de proveniência.
 
-Oito registros não possuem atribuição explícita às etapas. A auditoria os lista para revisão; não deduz essa atribuição dos vínculos gerais do artigo. Uma contagem por etapa pode incluir o mesmo registro em várias partes da célula. Grupos comerciais também aparecem na proveniência: seu número não representa famílias experimentais independentes.
+Na auditoria histórica, oito registros não possuíam atribuição explícita às etapas. A revisão foi documentada individualmente e integrada ao corpus 0.4.0. A auditoria atual encontra zero registros sem atribuição. Uma contagem por etapa pode incluir o mesmo registro em várias partes da célula. Grupos comerciais também aparecem na proveniência: seu número não representa famílias experimentais independentes.
 
-Essa verificação confirma a integridade estrutural do material processado. Não constitui nova leitura científica de todas as páginas, aquisição de novos ensaios ou calibração. O próximo incremento deve revisar os oito registros, completar suas relações com as etapas a partir dos métodos e recuperar as fontes ainda pendentes antes de admitir comparações quantitativas.
+Essa verificação confirma a integridade estrutural do material processado. Não constitui nova leitura científica de todas as páginas, aquisição de novos ensaios ou calibração. A revisão de escopo está concluída; as lacunas de normalização, independência e calibração continuam exigindo fontes e medições adequadas.
 
 ### 11.1 Classifique o que foi realmente observado
 
@@ -719,6 +719,40 @@ Uma curva com cem pontos continua sendo uma curva de um ensaio ou conjunto de en
 A base registra essa proveniência para agrupar os dados relacionados. O agrupamento precisa acontecer antes de separar ajuste e avaliação, antes de normalizar variáveis com estatísticas aprendidas e antes de escolher parâmetros com base no desempenho.
 
 O termo “big data” só será útil aqui se vier acompanhado de diversidade experimental, qualidade e relações identificáveis. Aumentar a quantidade de linhas copiadas da mesma família não resolve a falta de comparações independentes entre materiais.
+
+### S02: o que a nova leitura permite calcular
+
+A cópia integral de Liu e Logan (2004) foi recuperada do site dos autores. Os métodos e resultados foram lidos, e as primeiras quatro páginas foram conferidas visualmente. A extração estruturada foi manual. Os scripts repetem as conversões e os cálculos, preservando a transcrição e os localizadores. A licença para redistribuição pública do PDF não foi identificada; por isso, o repositório contém os fatos revisados, hashes e endereço da fonte, sem copiar o artigo completo.
+
+Os seis novos registros de fatos acrescentam 26 valores publicados. Dois registros derivados acrescentam quatro valores calculados. Continuam no mesmo grupo dos registros S02 anteriores; não acrescentam outra família independente. Todos permanecem fora de treinamento.
+
+A comparação de montagens merece atenção: o braço com Nafion 117 usou tecido de carbono com 0,5 mgPt/cm² e prensagem a quente; o braço sem membrana usou papel de carbono com 0,35 mgPt/cm². Não é possível usar essa diferença de potência para aprender um efeito isolado da membrana. O ânodo é descrito como papel Toray sem tratamento hidrofóbico, mas sem grau comercial suficiente para identificá-lo como TGP-H-060 do catálogo atual.
+
+**Entrada de oxigênio no líquido.** O artigo mediu quanto tempo uma solução sem glicose e agitada leva para atingir metade da saturação de O₂. Em uma representação perfeitamente misturada, inicialmente sem O₂, com concentração de saturação fixa na fronteira:
+
+$$
+k_{L,\mathrm{entrada}}=\frac{\ln(2)V}{A t_{1/2}}
+$$
+
+Aqui, $V$ é o volume do ensaio em m³; $A$, a área de passagem em m²; $t_{1/2}$, o tempo até meia saturação em s; e $k_{L,\mathrm{entrada}}$, o coeficiente referido à concentração no líquido em m/s. O balanço tem a forma $V\,dC/dt=k_LA(C^*-C)$. Ele descreve o ensaio de entrada no líquido, sem resolver o consumo em uma célula operando.
+
+Com 28 mL, 7,1 cm² e os tempos de 200 e 53 minutos, obtêm-se aproximadamente **2,28 × 10⁻⁶ e 8,60 × 10⁻⁶ m/s**. Usando a saturação assumida no artigo, 2,65 × 10⁻⁴ mol/L, a taxa máxima reconstruída é $k_LAC^*M_{O_2}$, em kg/s, com $M_{O_2}=0,032$ kg/mol. Isso fornece **0,049 e 0,186 mg/h**. Os valores publicados são 0,05 e 0,187 mg/h. A proximidade verifica a conta sob essas hipóteses; não demonstra previsão em outro reator.
+
+O artigo imprime uma unidade incompatível para seu coeficiente. Mantivemos esse valor bloqueado e criamos uma reconstrução independente dos tempos e da geometria. Também preservamos o conflito entre o fator de aumento publicado, 2,7, e a razão entre os fluxos, cerca de 3,74. A conversão de um potencial catódico e a constante de Faraday impressa apresentam inconsistências e não foram admitidas como parâmetros do núcleo.
+
+A formação de biofilme, a geometria e a presença de glicose durante operação podem mudar o transporte e o consumo. Portanto, o coeficiente acima não preenche o parâmetro $k_{O_2,g}$ da seção 8: esse parâmetro usa concentração no gás e representa outra fronteira e outro fenômeno. Faltam ensaios comparáveis para relacioná-los quantitativamente.
+
+Os arquivos [de transcrição e tratamento S02](../research/corpus-v0.4/) preservam as condições, conflitos e fórmulas. Os demais seis artigos e dois suplementos completos já publicados continuam preservados. As ofertas comerciais continuam sendo capturas históricas de outubro; esta rodada não atualizou preços ou estoque.
+
+### Conferência da publicação 0.4.0
+
+A base publicada contém 206 registros e 427 células de observação, das quais 423 são numéricas e quatro permanecem ausentes. As oito atribuições de etapa revisadas foram aplicadas. O preenchimento repetido retornou “já aplicado”. A conferência do aplicativo comparou integralmente os registros e as observações, os metadados das 29 fontes e os textos dos oito documentos reconstruídos de 49 trechos; não encontrou divergências. Também conferiu os hashes dos oito PDFs e dos seis HTMLs comprimidos. O acesso de serviço aos cenários particulares continuou retornando 401; a página de QA permaneceu indisponível em produção.
+
+Uma leitura independente do banco percorreu 32 páginas e confirmou os 206 identificadores únicos e zero registros aprovados para treinamento. Essa ferramenta truncou 176 campos longos. Portanto, essa leitura independente confirma a presença e os metadados projetados, mas não reconstrói sozinha todo o conteúdo. A comparação integral acima é executada pelo código publicado, que foi testado contra truncamento e alteração de valores em SQLite. Essas verificações têm alcances distintos e estão documentadas nos [relatórios de produção](../research/audits/production-0.4.0.json) e [da leitura independente](../research/audits/production-0.4.0-independent.json).
+
+Passaram 42 testes JavaScript e 50 testes Python, incluindo contratos legados, curadoria, compressão e higienização. A conferência TypeScript e o build passaram. A tentativa de inspeção visual pelo preview recebeu conexão recusada no navegador; o fluxo visual de login e cenários não foi certificado novamente nesta rodada. Os testes numéricos e de dados não demonstram erro preditivo experimental.
+
+Continuam abertos os dados necessários à calibração: área de normalização S18/S29, séries individuais comparáveis, identificação independente das perdas e uma família externa de materiais/montagens compatível. S01 e S03 não tiveram seus documentos completos recuperados nesta rodada; os arquivos do conjunto S10 continuam pendentes. O novo lote S02 melhora as condições e a rastreabilidade, sem preencher essas lacunas por suposição.
 
 <a id="estudos"></a>
 ## 12. O que os estudos já reunidos permitem aprender
@@ -1826,6 +1860,6 @@ Os seis primeiros registros mantêm integralmente os dados JSON dos arquivos ant
 
 ### Retomada: revisão de atribuição por etapa
 
-Os oito registros antes sem etapas receberam uma revisão explícita em `research/audits/record-stage-review.json`. Execute `node scripts/review-stage-coverage.mjs` para aplicar essa camada em memória e conferir a cobertura. Os dados originais permanecem intactos; essa revisão ainda não foi aplicada ao banco de produção. Atribuir etapas não significa identificar efeitos causais nem aprovar treinamento.
+Os oito registros antes sem etapas receberam uma revisão explícita em `research/audits/record-stage-review.json`. Execute `node scripts/review-stage-coverage.mjs` para aplicar essa camada em memória e conferir a cobertura. Os dados experimentais originais permanecem intactos; a revisão foi incorporada ao preenchimento versionado do corpus 0.4.0, com proteção contra edições divergentes. A aplicação dos oito registros em produção foi confirmada; os relatórios estão em `research/audits/production-0.4.0.json` e `production-0.4.0-independent.json`. Atribuir etapas não significa identificar efeitos causais nem aprovar treinamento.
 
 A revisão dos métodos de S02 identificou mudança simultânea de membrana, suporte catódico, carga de Pt e processamento. A comparação deve ser tratada como comparação entre montagens. Unidades de transporte e conversões de potencial conflitantes permanecem bloqueadas. Veja `research/audits/S02-methods-review.json`.

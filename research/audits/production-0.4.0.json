@@ -1,0 +1,284 @@
+{
+  "url": "https://mfc-studio.igorbolognani768385.chatgpt.site",
+  "publication_audit": "shared_corpus_and_access_boundary",
+  "seed": {
+    "alreadyApplied": false,
+    "version": "mfc-corpus/0.4.0",
+    "report": {
+      "properties_proposed": 110,
+      "sources": 29,
+      "complete_main_articles": 6,
+      "supplements": 2,
+      "records": 206,
+      "observations": 427,
+      "numeric_observations": 423,
+      "missing_observation_cells": 4,
+      "digitized_curve_points": 13,
+      "material_variants": 16,
+      "commercial_offer_snapshots": 31,
+      "S29_reactor_feed_records": 117,
+      "S29_measured_response_pairs": 115,
+      "S29_missing_response_pairs": 2,
+      "training_eligible_records": 0,
+      "predictor_trained": false,
+      "experimental_error_metrics": null,
+      "all_11_stages_mapped": true,
+      "independent_validation_pending": true,
+      "primary_pdfs_acquired_not_redistributed": 1,
+      "S02_reviewed_numeric_cells": 26,
+      "S02_derived_numeric_cells": 4,
+      "reviewed_stage_attributions": 8
+    }
+  },
+  "pdf_uploads": [
+    {
+      "id": "S08-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S09-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S17-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S18-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S19-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S18-supplement-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S29-pdf",
+      "alreadyStored": true
+    },
+    {
+      "id": "S29-supplement-pdf",
+      "alreadyStored": true
+    }
+  ],
+  "database": {
+    "version": "mfc-corpus/0.4.0",
+    "integrity": {
+      "complete": true,
+      "mismatches": [],
+      "records_verified": 206,
+      "observations_verified": 427,
+      "sources_verified": 29,
+      "documents": [
+        {
+          "id": "S08-fulltext",
+          "chunks": 5,
+          "sha256": "13f4a32db710b3b3bf57dc1772f9abc443653533b0deded36ea9378c7faf0d7a",
+          "matches": true
+        },
+        {
+          "id": "S09-fulltext",
+          "chunks": 10,
+          "sha256": "3503aaa3880fe947655928f45c7ace2fa07e9de8613c5ee66749ffc6a14416a2",
+          "matches": true
+        },
+        {
+          "id": "S17-fulltext",
+          "chunks": 5,
+          "sha256": "21a347602368b3db23385da4557eb8c55c42455e5295c31dbc6f4ff42e125eff",
+          "matches": true
+        },
+        {
+          "id": "S18-fulltext",
+          "chunks": 9,
+          "sha256": "09fcfd8a0bca33ffd49d552c2fc762b0e5e20b588eee715758701422b6e4feda",
+          "matches": true
+        },
+        {
+          "id": "S19-fulltext",
+          "chunks": 5,
+          "sha256": "8481a3310f7a67b564cf1e9a968270426bad7e5fc50f6c48d3d9d48c1d3dcfa6",
+          "matches": true
+        },
+        {
+          "id": "S29-fulltext",
+          "chunks": 10,
+          "sha256": "771a55351beb45ca0ae8def30b040ffb92bca733f272ba0d32541308ed72160d",
+          "matches": true
+        },
+        {
+          "id": "S18-supplement",
+          "chunks": 1,
+          "sha256": "db1f9b1b8e814b103485a44a7662b5ee33a8ad0014ce0ea5cd06a46bf6808bff",
+          "matches": true
+        },
+        {
+          "id": "S29-supplement",
+          "chunks": 4,
+          "sha256": "81bf21edd7f0f534b0678293566b5063796bd41153e6e17b5bad37aedbab2f9e",
+          "matches": true
+        }
+      ],
+      "stage_attribution_revisions": [
+        {
+          "id": "S01-E1",
+          "matches": true
+        },
+        {
+          "id": "S01-E2",
+          "matches": true
+        },
+        {
+          "id": "S01-E3",
+          "matches": true
+        },
+        {
+          "id": "S02-glucose-PEM",
+          "matches": true
+        },
+        {
+          "id": "S02-glucose-noPEM",
+          "matches": true
+        },
+        {
+          "id": "S03-acetate_50mM_PBS",
+          "matches": true
+        },
+        {
+          "id": "S03-domestic_wastewater",
+          "matches": true
+        },
+        {
+          "id": "S18-CC-pristine-figure4a-digitized",
+          "matches": true
+        }
+      ],
+      "limitation": "Hashes verify stored bytes against the bundled corpus; they do not demonstrate predictive validation."
+    },
+    "counts": {
+      "stages": 11,
+      "properties": 110,
+      "sources": 29,
+      "source_stages": 92,
+      "documents": 8,
+      "document_chunks": 49,
+      "experiments": 15,
+      "evidence_records": 206,
+      "observations": 427,
+      "curves": 1,
+      "curve_points": 13
+    },
+    "training_eligible_records": 0,
+    "seed_applied": true,
+    "pdf_assets": [
+      {
+        "id": "S08-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S09-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S17-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S18-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S19-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S18-supplement-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S29-pdf",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S29-supplement-pdf",
+        "present": true,
+        "sha256_matches": true
+      }
+    ],
+    "embedded_assets": [
+      {
+        "id": "S08-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S09-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S17-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S18-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S19-html",
+        "present": true,
+        "sha256_matches": true
+      },
+      {
+        "id": "S29-html",
+        "present": true,
+        "sha256_matches": true
+      }
+    ],
+    "content_sha256": "98070542f898257658f6baaa197989e18081d16a697d2eb8c6798687433a8a00"
+  },
+  "idempotent_repeat": {
+    "alreadyApplied": true,
+    "version": "mfc-corpus/0.4.0",
+    "report": {
+      "properties_proposed": 110,
+      "sources": 29,
+      "complete_main_articles": 6,
+      "supplements": 2,
+      "records": 206,
+      "observations": 427,
+      "numeric_observations": 423,
+      "missing_observation_cells": 4,
+      "digitized_curve_points": 13,
+      "material_variants": 16,
+      "commercial_offer_snapshots": 31,
+      "S29_reactor_feed_records": 117,
+      "S29_measured_response_pairs": 115,
+      "S29_missing_response_pairs": 2,
+      "training_eligible_records": 0,
+      "predictor_trained": false,
+      "experimental_error_metrics": null,
+      "all_11_stages_mapped": true,
+      "independent_validation_pending": true,
+      "primary_pdfs_acquired_not_redistributed": 1,
+      "S02_reviewed_numeric_cells": 26,
+      "S02_derived_numeric_cells": 4,
+      "reviewed_stage_attributions": 8
+    }
+  },
+  "service_cannot_impersonate_visitor": true,
+  "development_QA_not_public": true,
+  "landing_available": true
+}
