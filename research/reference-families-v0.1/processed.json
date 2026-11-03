@@ -1,0 +1,1123 @@
+{
+  "version": "mfc-reference-families/0.1.0",
+  "report": {
+    "screened_primary_sources": 17,
+    "full_main_article_texts_acquired": 13,
+    "main_articles_with_figures_acquired": 10,
+    "article_formats": {
+      "PDF": 9,
+      "JATS_XML": 4
+    },
+    "main_article_figure_assets_pending": [
+      "RF04",
+      "RF07",
+      "RF09"
+    ],
+    "full_main_article_texts_pending": [
+      "RF01",
+      "RF03",
+      "RF15",
+      "RF16"
+    ],
+    "supplements_acquired": 3,
+    "commercial_documents": 5,
+    "reference_configurations": 6,
+    "reference_configuration_facts": 200,
+    "reported_reference_results": 12,
+    "normalized_commercial_specs": 12,
+    "coverage": [
+      {
+        "stage_id": "anode_chamber",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "anolyte",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "anode",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "anode_catalyst",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "not_applicable": 6
+        }
+      },
+      {
+        "stage_id": "biofilm",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "membrane",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "not_applicable": 1,
+          "reported": 5
+        }
+      },
+      {
+        "stage_id": "external_circuit",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "cathode_chamber",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "not_applicable": 2,
+          "reported": 4
+        }
+      },
+      {
+        "stage_id": "catholyte",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "shared": 1,
+          "reported": 4,
+          "not_applicable": 1
+        }
+      },
+      {
+        "stage_id": "cathode",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 6
+        }
+      },
+      {
+        "stage_id": "cathode_catalyst",
+        "configurations_with_stage": 6,
+        "statuses": {
+          "reported": 4,
+          "not_applicable": 2
+        }
+      }
+    ],
+    "substrates_in_six_curated_configurations": {
+      "acetate + local raw wastewater": 1,
+      "lactate": 1,
+      "acetate": 2,
+      "glucose": 2
+    },
+    "cross_paper_identical_configurations_demonstrated": 0,
+    "training_eligible": 0,
+    "curves_digitized_this_round": 0,
+    "new_prices": 0,
+    "production_seed_updated": false,
+    "frequency_scope": "purposeful acquisition cohort, not global literature prevalence"
+  },
+  "configuration_fact_ids": [
+    "RF02-reference:anode_chamber:material",
+    "RF02-reference:anode_chamber:nominal_empty_electrolyte_volume",
+    "RF02-reference:anode_chamber:temperature",
+    "RF02-reference:anode_chamber:electrode_gap",
+    "RF02-reference:anode_chamber:volume_basis",
+    "RF02-reference:anolyte:domain",
+    "RF02-reference:anolyte:raw_wastewater_fraction",
+    "RF02-reference:anolyte:carbonate_buffer_fraction",
+    "RF02-reference:anolyte:buffer_stock",
+    "RF02-reference:anolyte:sodium_acetate_mass",
+    "RF02-reference:anolyte:sodium_acetate_molar_reported",
+    "RF02-reference:anolyte:ph_target_stock",
+    "RF02-reference:anode:material",
+    "RF02-reference:anode:manufacturer",
+    "RF02-reference:anode:grade",
+    "RF02-reference:anode:dimensions",
+    "RF02-reference:anode:exposed_working_face",
+    "RF02-reference:anode:preparation",
+    "RF02-reference:anode_catalyst:description",
+    "RF02-reference:biofilm:inoculum",
+    "RF02-reference:biofilm:replicates_per_lab",
+    "RF02-reference:biofilm:duration",
+    "RF02-reference:biofilm:cycles",
+    "RF02-reference:biofilm:phases",
+    "RF02-reference:biofilm:CNR",
+    "RF02-reference:membrane:present",
+    "RF02-reference:external_circuit:collector",
+    "RF02-reference:external_circuit:external_load_start",
+    "RF02-reference:external_circuit:external_load_final",
+    "RF02-reference:external_circuit:feed",
+    "RF02-reference:external_circuit:LSV_scan",
+    "RF02-reference:external_circuit:polarization_basis",
+    "RF02-reference:cathode_chamber:domain",
+    "RF02-reference:cathode_chamber:dedicated_liquid_volume",
+    "RF02-reference:cathode_chamber:gas_condition",
+    "RF02-reference:catholyte:domain",
+    "RF02-reference:catholyte:shared_with",
+    "RF02-reference:catholyte:additional_liquid_volume",
+    "RF02-reference:cathode:support",
+    "RF02-reference:cathode:exposed_area",
+    "RF02-reference:cathode:fabrication",
+    "RF02-reference:cathode_catalyst:material",
+    "RF02-reference:cathode_catalyst:binder",
+    "RF02-reference:cathode_catalyst:dry_mass_ratio_AC_PTFE",
+    "RF02-reference:cathode_catalyst:metal_catalyst",
+    "RF05-reference:anode_chamber:chamber_volume",
+    "RF05-reference:anode_chamber:geometry",
+    "RF05-reference:anode_chamber:temperature",
+    "RF05-reference:anode_chamber:temperature_plus_minus",
+    "RF05-reference:anolyte:substrate",
+    "RF05-reference:anolyte:concentration",
+    "RF05-reference:anolyte:medium",
+    "RF05-reference:anolyte:nitrogen",
+    "RF05-reference:anode:manufacturer",
+    "RF05-reference:anode:grade",
+    "RF05-reference:anode:supplier",
+    "RF05-reference:anode:precursor",
+    "RF05-reference:anode:dimensions",
+    "RF05-reference:anode:preparation",
+    "RF05-reference:anode_catalyst:added",
+    "RF05-reference:biofilm:strain",
+    "RF05-reference:biofilm:inoculum_preparation",
+    "RF05-reference:membrane:grade",
+    "RF05-reference:membrane:supplier",
+    "RF05-reference:membrane:sheet_dimensions",
+    "RF05-reference:membrane:active_area",
+    "RF05-reference:external_circuit:mode",
+    "RF05-reference:external_circuit:anolyte_flow",
+    "RF05-reference:external_circuit:catholyte_flow",
+    "RF05-reference:external_circuit:load",
+    "RF05-reference:external_circuit:divider",
+    "RF05-reference:external_circuit:reservoir_volumes",
+    "RF05-reference:cathode_chamber:chamber_volume",
+    "RF05-reference:cathode_chamber:reservoir_volume",
+    "RF05-reference:catholyte:medium",
+    "RF05-reference:catholyte:pH",
+    "RF05-reference:catholyte:oxygen",
+    "RF05-reference:cathode:grade",
+    "RF05-reference:cathode:dimensions",
+    "RF05-reference:cathode:preparation",
+    "RF05-reference:cathode_catalyst:added",
+    "RF08-reference:anode_chamber:material",
+    "RF08-reference:anode_chamber:working_volume",
+    "RF08-reference:anode_chamber:temperature",
+    "RF08-reference:anolyte:medium",
+    "RF08-reference:anolyte:sodium_acetate",
+    "RF08-reference:anolyte:N2",
+    "RF08-reference:anolyte:stirring",
+    "RF08-reference:anode:material",
+    "RF08-reference:anode:grade",
+    "RF08-reference:anode:supplier",
+    "RF08-reference:anode:projected_area",
+    "RF08-reference:anode:coating",
+    "RF08-reference:anode_catalyst:added",
+    "RF08-reference:biofilm:inoculum",
+    "RF08-reference:biofilm:fraction",
+    "RF08-reference:biofilm:replicates",
+    "RF08-reference:membrane:grade",
+    "RF08-reference:membrane:active_area",
+    "RF08-reference:external_circuit:collector",
+    "RF08-reference:external_circuit:load",
+    "RF08-reference:external_circuit:polarization_scan",
+    "RF08-reference:external_circuit:measurement_days",
+    "RF08-reference:cathode_chamber:working_volume",
+    "RF08-reference:cathode_chamber:material",
+    "RF08-reference:catholyte:medium",
+    "RF08-reference:catholyte:oxygen",
+    "RF08-reference:cathode:grade",
+    "RF08-reference:cathode:projected_area",
+    "RF08-reference:cathode:coating",
+    "RF08-reference:cathode_catalyst:added",
+    "RF09-reference:anode_chamber:working_volume",
+    "RF09-reference:anode_chamber:material",
+    "RF09-reference:anode_chamber:temperature",
+    "RF09-reference:anode_chamber:mixing",
+    "RF09-reference:anolyte:medium",
+    "RF09-reference:anolyte:sodium_acetate",
+    "RF09-reference:anolyte:gas",
+    "RF09-reference:anolyte:feeding",
+    "RF09-reference:anode:grade",
+    "RF09-reference:anode:supplier",
+    "RF09-reference:anode:dimensions",
+    "RF09-reference:anode:preparation",
+    "RF09-reference:anode:additive",
+    "RF09-reference:anode_catalyst:added",
+    "RF09-reference:biofilm:strain",
+    "RF09-reference:biofilm:inoculum",
+    "RF09-reference:biofilm:replicates",
+    "RF09-reference:biofilm:medium_exchange",
+    "RF09-reference:membrane:grade",
+    "RF09-reference:membrane:supplier",
+    "RF09-reference:membrane:active_area",
+    "RF09-reference:external_circuit:collector",
+    "RF09-reference:external_circuit:load",
+    "RF09-reference:cathode_chamber:working_volume",
+    "RF09-reference:cathode_chamber:material",
+    "RF09-reference:catholyte:phosphate_buffer",
+    "RF09-reference:catholyte:oxygen",
+    "RF09-reference:cathode:product",
+    "RF09-reference:cathode:dimensions",
+    "RF09-reference:cathode:exact_grade",
+    "RF09-reference:cathode_catalyst:catalyst",
+    "RF09-reference:cathode_catalyst:loading_reported",
+    "RF12-reference:anode_chamber:working_volume",
+    "RF12-reference:anode_chamber:temperature",
+    "RF12-reference:anode_chamber:stirring",
+    "RF12-reference:anolyte:glucose_operating_feed",
+    "RF12-reference:anolyte:glucose_acclimation_feed",
+    "RF12-reference:anolyte:recipe",
+    "RF12-reference:anode:material",
+    "RF12-reference:anode:dimensions",
+    "RF12-reference:anode:manufacturer",
+    "RF12-reference:anode_catalyst:added",
+    "RF12-reference:biofilm:inoculum",
+    "RF12-reference:biofilm:fraction",
+    "RF12-reference:membrane:grade",
+    "RF12-reference:membrane:manufacturer",
+    "RF12-reference:external_circuit:collector",
+    "RF12-reference:external_circuit:load",
+    "RF12-reference:external_circuit:logging_interval",
+    "RF12-reference:external_circuit:open_circuit_before_scan",
+    "RF12-reference:external_circuit:each_scan_load_dwell",
+    "RF12-reference:cathode_chamber:working_volume",
+    "RF12-reference:cathode_chamber:stirring",
+    "RF12-reference:catholyte:recipe",
+    "RF12-reference:catholyte:oxygen",
+    "RF12-reference:cathode:material",
+    "RF12-reference:cathode:dimensions",
+    "RF12-reference:cathode:manufacturer",
+    "RF12-reference:cathode_catalyst:material",
+    "RF12-reference:cathode_catalyst:loading",
+    "RF13-reference:anode_chamber:chamber_liquid_volume",
+    "RF13-reference:anode_chamber:chamber_dimensions",
+    "RF13-reference:anode_chamber:loop_total_volume",
+    "RF13-reference:anolyte:glucose_loading",
+    "RF13-reference:anolyte:ionic_strength",
+    "RF13-reference:anolyte:pH",
+    "RF13-reference:anode:material",
+    "RF13-reference:anode:supplier",
+    "RF13-reference:anode:diameter",
+    "RF13-reference:anode:thickness",
+    "RF13-reference:anode:collector",
+    "RF13-reference:anode_catalyst:added",
+    "RF13-reference:biofilm:inoculum",
+    "RF13-reference:biofilm:independent_reactors",
+    "RF13-reference:membrane:grade",
+    "RF13-reference:membrane:configuration",
+    "RF13-reference:external_circuit:mode",
+    "RF13-reference:external_circuit:flow",
+    "RF13-reference:external_circuit:collector",
+    "RF13-reference:cathode_chamber:domain",
+    "RF13-reference:cathode_chamber:dedicated_liquid_volume",
+    "RF13-reference:catholyte:external_catholyte",
+    "RF13-reference:catholyte:additional_liquid_volume",
+    "RF13-reference:catholyte:cathode_ionomer_hydration",
+    "RF13-reference:cathode:material",
+    "RF13-reference:cathode:dimensions",
+    "RF13-reference:cathode:supplier",
+    "RF13-reference:cathode_catalyst:material",
+    "RF13-reference:cathode_catalyst:loading"
+  ],
+  "reference_results": [
+    {
+      "id": "RF02-UNM-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row UNM; Pmax column",
+      "value": 71.0,
+      "plus_minus": 36.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "UNM",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.71,
+        "unit": "W/m2",
+        "plus_minus": 0.36,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF02-TUB-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row TUB; Pmax column",
+      "value": 62.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "TUB",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.62,
+        "unit": "W/m2",
+        "plus_minus": 0.18,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF02-UFZ-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row UFZ; Pmax column",
+      "value": 43.0,
+      "plus_minus": 21.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "UFZ",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.43,
+        "unit": "W/m2",
+        "plus_minus": 0.21,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF02-UNM-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row UNM; Pmax column",
+      "value": 61.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "UNM",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.61,
+        "unit": "W/m2",
+        "plus_minus": 0.18,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF02-TUB-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row TUB; Pmax column",
+      "value": 58.0,
+      "plus_minus": 27.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "TUB",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.58,
+        "unit": "W/m2",
+        "plus_minus": 0.27,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF02-UFZ-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row UFZ; Pmax column",
+      "value": 38.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "UFZ",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": [],
+      "normalized": {
+        "value": 0.38,
+        "unit": "W/m2",
+        "plus_minus": 0.18,
+        "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "cathode_exposed_geometric_2.9cm2",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF08-A-cycle1-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle1",
+      "value": 0.0082,
+      "unit": "mW/m2",
+      "cycle": 1,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+      "normalized": {
+        "value": 8.200000000000001e-06,
+        "unit": "W/m2",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_for_selected_value",
+        "transformation": "original value and reported dispersion multiplied by 0.001",
+        "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF08-A-cycle2-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle2",
+      "value": 6.72,
+      "unit": "mW/m2",
+      "cycle": 2,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+      "figure_label_value": 6.719,
+      "figure_label_unit": "mW/m2",
+      "rounding_review": "Figure1A value6.719 rounds to prose6.72; preserve both; prose value used for stated precision",
+      "normalized": {
+        "value": 0.00672,
+        "unit": "W/m2",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_for_selected_value",
+        "transformation": "original value and reported dispersion multiplied by 0.001",
+        "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF08-A-cycle3-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle3",
+      "value": 0.0815,
+      "unit": "mW/m2",
+      "cycle": 3,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+      "normalized": {
+        "value": 8.15e-05,
+        "unit": "W/m2",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_for_selected_value",
+        "transformation": "original value and reported dispersion multiplied by 0.001",
+        "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF09-control-peak_power_density",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.3.2;Figure4A;bare anode",
+      "value": 0.2,
+      "unit": "W/m2",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "exact_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf",
+      "normalized": {
+        "value": 0.2,
+        "unit": "W/m2",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_in_selected_text",
+        "transformation": "original value and reported dispersion multiplied by 1",
+        "area_basis": "exact_face_convention_pending",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF09-control-COD_removal_cycle2",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.4;Figure6A;bare anode",
+      "value": 37,
+      "unit": "%",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "reported_ratio",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf",
+      "normalized": {
+        "value": 0.37,
+        "unit": "1",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_in_selected_text",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "reported_ratio",
+        "absolute_power_inferred": false
+      }
+    },
+    {
+      "id": "RF09-control-coulombic_efficiency_cycle2",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.4;Figure6B;bare anode",
+      "value": 14,
+      "unit": "%",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "reported_ratio",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf",
+      "normalized": {
+        "value": 0.14,
+        "unit": "1",
+        "plus_minus": null,
+        "uncertainty_type": "not_reported_in_selected_text",
+        "transformation": "original value and reported dispersion multiplied by 0.01",
+        "area_basis": "reported_ratio",
+        "absolute_power_inferred": false
+      }
+    }
+  ],
+  "commercial_specs": [
+    {
+      "id": "CM01-N117-t",
+      "source_id": "CM01",
+      "grade": "N117",
+      "quantity": "thickness",
+      "value": 183,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p2 Table1,grade row,footnote1",
+      "conditions": {
+        "temperature_C": 23,
+        "humidity_RH_percent": 50,
+        "hydration": "conditioned"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.000183,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "183 um * 1e-06 = 0.000183 m",
+        "source_observation_id": "CM01-N117-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM01-N115-t",
+      "source_id": "CM01",
+      "grade": "N115",
+      "quantity": "thickness",
+      "value": 127,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p2 Table1,grade row,footnote1",
+      "conditions": {
+        "temperature_C": 23,
+        "humidity_RH_percent": 50,
+        "hydration": "conditioned"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.000127,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "127 um * 1e-06 = 0.000127 m",
+        "source_observation_id": "CM01-N115-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM02-090-t",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "thickness",
+      "value": 0.28,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 TGP-H-090 column",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.00028000000000000003,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "0.28 mm * 0.001 = 0.00028000000000000003 m",
+        "source_observation_id": "CM02-090-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM02-090-rhoTP",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "electronic_resistivity",
+      "value": 80,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Thickness direction row",
+      "conditions": {
+        "direction": "through_plane",
+        "pressure_Pa": null,
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "normalized": {
+        "quantity": "electronic_resistivity",
+        "value": 0.0008,
+        "unit": "Ohm*m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "80 mOhm*cm * 1e-05 = 0.0008 Ohm*m",
+        "source_observation_id": "CM02-090-rhoTP",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM02-090-rhoIP",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "electronic_resistivity",
+      "value": 5.6,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Planar direction row",
+      "conditions": {
+        "direction": "in_plane",
+        "pressure_Pa": null,
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "normalized": {
+        "quantity": "electronic_resistivity",
+        "value": 5.6e-05,
+        "unit": "Ohm*m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "5.6 mOhm*cm * 1e-05 = 5.6e-05 Ohm*m",
+        "source_observation_id": "CM02-090-rhoIP",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM02-090-porosity",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "porosity",
+      "value": 78,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Porosity row",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "normalized": {
+        "quantity": "porosity",
+        "value": 0.78,
+        "unit": "1",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "78 % * 0.01 = 0.78 1",
+        "source_observation_id": "CM02-090-porosity",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM03-GFA6-t",
+      "source_id": "CM03",
+      "grade": "GFA6EA",
+      "quantity": "thickness",
+      "value": 6,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 GFA6EA column nominal thickness",
+      "conditions": {
+        "thermal_activation": false
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.006,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "6 mm * 0.001 = 0.006 m",
+        "source_observation_id": "CM03-GFA6-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM03-GFA6-ASR",
+      "source_id": "CM03",
+      "grade": "GFA6EA",
+      "quantity": "electronic_ASR",
+      "value": 0.45,
+      "unit": "Ohm*cm2",
+      "relation": "lt",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 area-specific resistance row;footnote*",
+      "conditions": {
+        "compression_fraction_of_initial_thickness": 0.8,
+        "direction": "through_felt_as_sheet_symbol",
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad",
+      "normalized": {
+        "quantity": "electronic_ASR",
+        "value": 4.5e-05,
+        "unit": "Ohm*m2",
+        "relation": "lt",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "0.45 Ohm*cm2 * 0.0001 = 4.5e-05 Ohm*m2",
+        "source_observation_id": "CM03-GFA6-ASR",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM04-G200-t",
+      "source_id": "CM04",
+      "grade": "G200",
+      "quantity": "thickness",
+      "value": 6.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Typical material characteristics",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.006500000000000001,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "6.5 mm * 0.001 = 0.006500000000000001 m",
+        "source_observation_id": "CM04-G200-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM04-G200-mass",
+      "source_id": "CM04",
+      "grade": "G200",
+      "quantity": "areal_mass",
+      "value": 480,
+      "unit": "g/m2",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 G200 areal weight",
+      "conditions": {
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6",
+      "normalized": {
+        "quantity": "areal_mass",
+        "value": 0.48,
+        "unit": "kg/m2",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "480 g/m2 * 0.001 = 0.48 kg/m2",
+        "source_observation_id": "CM04-G200-mass",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM05-Hydro-t",
+      "source_id": "CM05",
+      "grade": "ELAT Hydrophilic",
+      "quantity": "thickness",
+      "value": 406,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Hydrophilic column",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f",
+      "normalized": {
+        "quantity": "thickness",
+        "value": 0.000406,
+        "unit": "m",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "406 um * 1e-06 = 0.000406 m",
+        "source_observation_id": "CM05-Hydro-t",
+        "calibration_status": "not_calibrated"
+      }
+    },
+    {
+      "id": "CM05-Hydro-p",
+      "source_id": "CM05",
+      "grade": "ELAT Hydrophilic",
+      "quantity": "porosity",
+      "value": 80,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Hydrophilic porosity row",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f",
+      "normalized": {
+        "quantity": "porosity",
+        "value": 0.8,
+        "unit": "1",
+        "relation": "eq",
+        "value_role": "supplier_representative_specification_not_cell_measurement",
+        "reported_plus_minus": null,
+        "uncertainty_type": null,
+        "transformation": "80 % * 0.01 = 0.8 1",
+        "source_observation_id": "CM05-Hydro-p",
+        "calibration_status": "not_calibrated"
+      }
+    }
+  ],
+  "document_verification": [
+    {
+      "id": "RF02-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF04-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF05-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF06-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF07-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF08-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF09-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF10-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF11-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF12-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF13-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF14-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF17-main",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF02-SI",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF04-SI",
+      "bytes_verified": false
+    },
+    {
+      "id": "RF07-SI",
+      "bytes_verified": false
+    },
+    {
+      "id": "CM01",
+      "bytes_verified": false
+    },
+    {
+      "id": "CM02",
+      "bytes_verified": false
+    },
+    {
+      "id": "CM03",
+      "bytes_verified": false
+    },
+    {
+      "id": "CM04",
+      "bytes_verified": false
+    },
+    {
+      "id": "CM05",
+      "bytes_verified": false
+    }
+  ]
+}

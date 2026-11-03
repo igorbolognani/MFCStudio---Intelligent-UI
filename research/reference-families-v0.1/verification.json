@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-03",
+  "full_source_document_hashes_verified": [
+    {
+      "id": "RF02-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF04-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF05-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF06-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF07-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF08-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF09-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF10-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF11-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF12-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF13-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF14-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF17-main",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF02-SI",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF04-SI",
+      "bytes_verified": true
+    },
+    {
+      "id": "RF07-SI",
+      "bytes_verified": true
+    },
+    {
+      "id": "CM01",
+      "bytes_verified": true
+    },
+    {
+      "id": "CM02",
+      "bytes_verified": true
+    },
+    {
+      "id": "CM03",
+      "bytes_verified": true
+    },
+    {
+      "id": "CM04",
+      "bytes_verified": true
+    },
+    {
+      "id": "CM05",
+      "bytes_verified": true
+    }
+  ],
+  "cached_resume_documents": 21,
+  "resume_all_cached": true,
+  "processed_output_idempotent": true,
+  "processed_sha256": "76f62d168312762acd10847eb29137bed81cfd7082dabb9536b41cc5bfa28fde",
+  "changed_cached_copy_rejected_without_overwrite": true,
+  "python_tests_in_tests_directory": 23,
+  "new_scientific_curation_regression_tests": 4,
+  "predictive_validation": false,
+  "production_updated": false,
+  "source_archive": {
+    "filename": "MFC_Referencias_Convencionais_Fontes_Abertas_v0.1.zip",
+    "sha256": "8539d7ab8fbad67226d66e5a96b42263eafd0a75af7766ad022cb45f5381a979",
+    "bytes": 35904480,
+    "complete_documents": 14,
+    "one_additional_full_CC_BY_article_in_git": true,
+    "non_open_copies_not_rehosted": [
+      "RF17",
+      "CM01",
+      "CM02",
+      "CM03",
+      "CM04",
+      "CM05"
+    ]
+  },
+  "full_text_formats": {
+    "PDF": 9,
+    "JATS_XML": 4
+  },
+  "main_figures_pending": [
+    "RF04",
+    "RF07",
+    "RF09"
+  ],
+  "archive_saved": true
+}

@@ -1,0 +1,1808 @@
+[
+  {
+    "id": "R30",
+    "url": "https://ruidera.uclm.es/server/api/core/bitstreams/f1fd7ddd-8e28-444b-8893-a4cb7ba005a2/content",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "R31",
+    "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cssc.202100294",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "R31-SI",
+    "url": "https://chemistry-europe.onlinelibrary.wiley.com/doi/suppl/10.1002/cssc.202100294/supinfo/cssc202100294-sup-0001-misc_information.pdf",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "RF05",
+    "url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2012/LAPSE-2020.1214-1v1.pdf",
+    "acquired_utc": "2026-11-03T19:19:03.451916+00:00",
+    "http_status": 200,
+    "final_url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2012/LAPSE-2020.1214-1v1.pdf",
+    "bytes": 4394331,
+    "sha256": "5dffef8baca7399ed3f04fc371524af16e2a4535df97823023009df94c1ee429",
+    "status": "retrieved",
+    "text_bytes": 112936
+  },
+  {
+    "id": "RF06",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-17-00943/article_deploy/energies-17-00943.pdf",
+    "acquired_utc": "2026-11-03T19:19:03.453881+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-17-00943/article_deploy/energies-17-00943.pdf",
+    "bytes": 2993491,
+    "sha256": "bfc5236735f682437567ed2698eaab719d3f333a72e2e2e1d7d08be9d88a9224",
+    "status": "retrieved",
+    "text_bytes": 87592
+  },
+  {
+    "id": "RF08",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-12-01034/article_deploy/energies-12-01034.pdf",
+    "acquired_utc": "2026-11-03T19:19:03.454975+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-12-01034/article_deploy/energies-12-01034.pdf",
+    "bytes": 1684865,
+    "sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+    "status": "retrieved",
+    "text_bytes": 51721
+  },
+  {
+    "id": "RF10",
+    "url": "https://eprints.soton.ac.uk/504517/1/sustainability-15-14817-v2.pdf",
+    "acquired_utc": "2026-11-03T19:19:03.457047+00:00",
+    "status": "pending",
+    "failure": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": "RF11",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-16-04238/article_deploy/energies-16-04238.pdf",
+    "acquired_utc": "2026-11-03T19:19:03.458369+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-16-04238/article_deploy/energies-16-04238.pdf",
+    "bytes": 3578963,
+    "sha256": "69ecbe40e585d827c634b43c495ab303c71e49bbdee62cf0f76e9c6925e75ad9",
+    "status": "retrieved",
+    "text_bytes": 216891
+  },
+  {
+    "id": "RF12",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-15-01412/article_deploy/energies-15-01412.pdf?version=1644919564",
+    "acquired_utc": "2026-11-03T19:19:03.458939+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-15-01412/article_deploy/energies-15-01412.pdf?version=1644919564",
+    "bytes": 2237184,
+    "sha256": "cb0580f6e2670ad48dff3d801c6610ae8e6a7eae5d603e07328c19fe99fbf697",
+    "status": "retrieved",
+    "text_bytes": 142673
+  },
+  {
+    "id": "RF13",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-03-00592/article_deploy/energies-03-00592.pdf",
+    "acquired_utc": "2026-11-03T19:19:09.588761+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-03-00592/article_deploy/energies-03-00592.pdf",
+    "bytes": 250526,
+    "sha256": "c5e9433080cebe35c449b6b3983d42f2bfeb56b97b6fe007045e825b363ca460",
+    "status": "retrieved",
+    "text_bytes": 51547
+  },
+  {
+    "id": "RF14",
+    "url": "https://mdpi-res.com/d_attachment/energies/energies-09-00388/article_deploy/energies-09-00388.pdf",
+    "acquired_utc": "2026-11-03T19:19:10.436259+00:00",
+    "http_status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/energies/energies-09-00388/article_deploy/energies-09-00388.pdf",
+    "bytes": 3038708,
+    "sha256": "21a7addae01045ca19b90058c495074f9a267fc3eec2e49e7644074d0d2ae24e",
+    "status": "retrieved",
+    "text_bytes": 67455
+  },
+  {
+    "id": "RF17",
+    "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2007-Logan-etal-EST.pdf",
+    "acquired_utc": "2026-11-03T19:19:10.702776+00:00",
+    "http_status": 200,
+    "final_url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2007-Logan-etal-EST.pdf",
+    "bytes": 431800,
+    "sha256": "8fd07dd6b4072e861b64b7756d6df8b5b408ef8bd8fb3e21ce6d997f15ebd5f8",
+    "status": "retrieved",
+    "text_bytes": 38924
+  },
+  {
+    "id": "CM01",
+    "url": "https://www.fuelcellearth.com/pdf/nafion-N115-N117-N1110.pdf",
+    "acquired_utc": "2026-11-03T19:19:10.775228+00:00",
+    "http_status": 200,
+    "final_url": "https://www.fuelcellearth.com/pdf/nafion-N115-N117-N1110.pdf",
+    "bytes": 70873,
+    "sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114",
+    "status": "retrieved",
+    "text_bytes": 14998
+  },
+  {
+    "id": "CM02",
+    "url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+    "acquired_utc": "2026-11-03T19:19:10.815793+00:00",
+    "http_status": 200,
+    "final_url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+    "bytes": 223177,
+    "sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+    "status": "retrieved",
+    "text_bytes": 1887
+  },
+  {
+    "id": "RF02_SI",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8252665/supplementaryFiles",
+    "status": "pending",
+    "failure": "The read operation timed out"
+  },
+  {
+    "id": "RF04_SI",
+    "url": "https://mdpi-res.com/d_attachment/micromachines/micromachines-14-02142/article_deploy/micromachines-14-02142-s001.zip",
+    "status": "retrieved",
+    "bytes": 9061243,
+    "sha256": "25997b4d737964f4b3ee29781723450a5c08e0aded2cd9e367477ea3197410be",
+    "path": "RF04_SI.zip",
+    "entries": [
+      {
+        "name": "micromachines-2699592-supplementary.pdf",
+        "bytes": 9100411
+      }
+    ]
+  },
+  {
+    "id": "RF07_SI",
+    "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-20-02580/article_deploy/ijerph-20-02580-s001.zip",
+    "status": "retrieved",
+    "bytes": 1695081,
+    "sha256": "1df44d674205f1da6ad4028584e7f9998dab237e746c71eab9cb13f3366567b0",
+    "path": "RF07_SI.zip",
+    "entries": [
+      {
+        "name": "ijerph-2099857-supplementary.pdf",
+        "bytes": 1861021
+      }
+    ]
+  },
+  {
+    "id": "CM03",
+    "url": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRACELL-Battery-Felts-EN.pdf",
+    "status": "retrieved",
+    "bytes": 76381,
+    "sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad",
+    "path": "CM03.pdf"
+  },
+  {
+    "id": "RF10",
+    "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14817/article_deploy/sustainability-15-14817-v2.pdf",
+    "status": "retrieved",
+    "bytes": 4150414,
+    "sha256": "1aa613d6c29eb9ecead161c0d196d897f88d8d3976a5f37bf73cf1f82510e9d6",
+    "path": "RF10.pdf"
+  },
+  {
+    "id": "RF01",
+    "url": "https://api.crossref.org/works/10.1016/j.jpowsour.2018.12.007",
+    "kind": "metadata",
+    "title": [
+      "Reproducibility and robustness of microbial fuel cells technology"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Sara",
+        "family": "Mateo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pablo",
+        "family": "Cañizares",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manuel Andrés",
+        "family": "Rodrigo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0389-6247",
+        "authenticated-orcid": false,
+        "given": "Francisco Jesús",
+        "family": "Fernández-Morales",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 22797,
+    "sha256": "1562cabc068812a9830ea0fec50d1a634c02a372f8644669f860ce1cd8d33432"
+  },
+  {
+    "id": "RF02",
+    "url": "https://api.crossref.org/works/10.1002/cssc.202100294",
+    "kind": "metadata",
+    "title": [
+      "How Comparable are Microbial Electrochemical Systems around the Globe? An Electrochemical and Microbiological Cross‐Laboratory Study"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0944-4500",
+        "authenticated-orcid": false,
+        "given": "Carlo",
+        "family": "Santoro",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Material Science University of Milan Bicocca  U5 Via Cozzi 55 Milan 20125 Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sofia",
+        "family": "Babanova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Aquacycl LLC  2180 Chablis Court, Suite 102 Escondido CA 92029 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pierangela",
+        "family": "Cristiani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Sustainable Development and Energy Resources Ricerca sul Sistema Energetico S.p.A.  Via Rubattino 54 Milan 20134 Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kateryna",
+        "family": "Artyushkova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Physical Electronics  18725 Lake Drive East Chanhassen, Minnesota 55317 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Plamen",
+        "family": "Atanassov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical &amp; Biomolecular Engineering National Fuel Cell Research Center (NFCRC) University of California  Irvine CA 92697 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alain",
+        "family": "Bergel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratoire de Génie Chimique Université de Toulouse, CNRS-INPT-UPS  4 allée Emile Monso 31432 Toulouse France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Orianna",
+        "family": "Bretschger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Aquacycl LLC  2180 Chablis Court, Suite 102 Escondido CA 92029 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert K.",
+        "family": "Brown",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Environmental and Sustainable Chemistry Technische Universität Braunschweig  Hagenring 30 38106 Braunschweig Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kayla",
+        "family": "Carpenter",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "J. Craig Venter Institute  4120 Capricorn Lane La Jolla CA 92037 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alessandra",
+        "family": "Colombo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry Università degli Studi di Milano  Via Golgi 19 Milan 20133 Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rachel",
+        "family": "Cortese",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "J. Craig Venter Institute  4120 Capricorn Lane La Jolla CA 92037 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin",
+        "family": "Erable",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratoire de Génie Chimique Université de Toulouse, CNRS-INPT-UPS  4 allée Emile Monso 31432 Toulouse France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Falk",
+        "family": "Harnisch",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Microbiology Helmholtz-Centre for Environmental Research – UFZ  Permoserstr. 15 04318 Leipzig Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mounika",
+        "family": "Kodali",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical &amp; Biomolecular Engineering National Fuel Cell Research Center (NFCRC) University of California  Irvine CA 92697 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sujal",
+        "family": "Phadke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "J. Craig Venter Institute  4120 Capricorn Lane La Jolla CA 92037 USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Riedl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Environmental and Sustainable Chemistry Technische Universität Braunschweig  Hagenring 30 38106 Braunschweig Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luis F. M.",
+        "family": "Rosa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Microbiology Helmholtz-Centre for Environmental Research – UFZ  Permoserstr. 15 04318 Leipzig Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Uwe",
+        "family": "Schröder",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Environmental and Sustainable Chemistry Technische Universität Braunschweig  Hagenring 30 38106 Braunschweig Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 21901,
+    "sha256": "bf8aabb382444b26ea6ba220711cc8473f6f3ee5fd6a20b9785c27f59262abc9"
+  },
+  {
+    "id": "RF03",
+    "url": "https://api.crossref.org/works/10.1128/aem.02181-22",
+    "kind": "metadata",
+    "title": [
+      "Investigating Variability in Microbial Fuel Cells"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8501-2796",
+        "authenticated-orcid": true,
+        "given": "Daniel David",
+        "family": "Leicester",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Engineering, Newcastle University, Newcastle upon Tyne, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sam",
+        "family": "Settle",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, Newcastle University, Newcastle upon Tyne, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Clare M.",
+        "family": "McCann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Applied Sciences, Faculty of Health and Life Sciences, Northumbria University, Newcastle upon Tyne, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elizabeth Susan",
+        "family": "Heidrich",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, Newcastle University, Newcastle upon Tyne, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 9537,
+    "sha256": "47feb39b97cb1ebc41ae118755ec3b26e1a300b9424d969ad7e4ce2d0901186c"
+  },
+  {
+    "id": "RF04",
+    "url": "https://api.crossref.org/works/10.3390/mi14122142",
+    "kind": "metadata",
+    "title": [
+      "Untreated vs. Treated Carbon Felt Anodes: Impacts on Power Generation in Microbial Fuel Cells"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-1634-7351",
+        "authenticated-orcid": false,
+        "given": "Abdelghani",
+        "family": "Ghanam",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Univ Lyon, Ecole Centrale de Lyon, INSA Lyon, Université Claude Bernard Lyon 1, CNRS, Ampère, UMR5005, 69130 Ecully, France"
+          },
+          {
+            "name": "Chemical Analysis and Biosensors Group, Laboratory of Process Engineering and Environment, Faculty of Science and Techniques, Hassan II University of Casablanca, B.P 146, Mohammedia 20000, Morocco"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastien",
+        "family": "Cecillon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lyon, Ecole Centrale de Lyon, INSA Lyon, Université Claude Bernard Lyon 1, CNRS, Ampère, UMR5005, 69130 Ecully, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9305-1701",
+        "authenticated-orcid": false,
+        "given": "Andrei",
+        "family": "Sabac",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lyon, Ecole Centrale de Lyon, INSA Lyon, Université Claude Bernard Lyon 1, CNRS, Ampère, UMR5005, 69130 Ecully, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1506-8481",
+        "authenticated-orcid": false,
+        "given": "Hasna",
+        "family": "Mohammadi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Chemical Analysis and Biosensors Group, Laboratory of Process Engineering and Environment, Faculty of Science and Techniques, Hassan II University of Casablanca, B.P 146, Mohammedia 20000, Morocco"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7909-2224",
+        "authenticated-orcid": false,
+        "given": "Aziz",
+        "family": "Amine",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Chemical Analysis and Biosensors Group, Laboratory of Process Engineering and Environment, Faculty of Science and Techniques, Hassan II University of Casablanca, B.P 146, Mohammedia 20000, Morocco"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "François",
+        "family": "Buret",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lyon, Ecole Centrale de Lyon, INSA Lyon, Université Claude Bernard Lyon 1, CNRS, Ampère, UMR5005, 69130 Ecully, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2430-5568",
+        "authenticated-orcid": false,
+        "given": "Naoufel",
+        "family": "Haddour",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lyon, Ecole Centrale de Lyon, INSA Lyon, Université Claude Bernard Lyon 1, CNRS, Ampère, UMR5005, 69130 Ecully, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 20001,
+    "sha256": "4d08dad5db757113367f8b9dfa8360412771bd0ee1b7636060baddd140317538"
+  },
+  {
+    "id": "RF05",
+    "url": "https://api.crossref.org/works/10.3390/pr8080939",
+    "kind": "metadata",
+    "status": "pending",
+    "failure": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "RF06",
+    "url": "https://api.crossref.org/works/10.3390/en17040943",
+    "kind": "metadata",
+    "title": [
+      "Assessing the Performance of Continuous-Flow Microbial Fuel Cells and Membrane Electrode Assembly with Electrodeposited Mn Oxide Catalyst"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4861-0548",
+        "authenticated-orcid": false,
+        "given": "Laura",
+        "family": "Mais",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Dipartimento di Ingegneria Meccanica, Chimica e dei Materiali, Università degli Studi di Cagliari, Via Marengo 2, 09123 Cagliari, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9733-9008",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Mascia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dipartimento di Ingegneria Meccanica, Chimica e dei Materiali, Università degli Studi di Cagliari, Via Marengo 2, 09123 Cagliari, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3795-9867",
+        "authenticated-orcid": false,
+        "given": "Annalisa",
+        "family": "Vacca",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dipartimento di Ingegneria Meccanica, Chimica e dei Materiali, Università degli Studi di Cagliari, Via Marengo 2, 09123 Cagliari, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 19756,
+    "sha256": "c332b1bff59a12b683e3a17828cdae5561e925bd58a876b7a33136bd39ddd8ca"
+  },
+  {
+    "id": "RF07",
+    "url": "https://api.crossref.org/works/10.3390/ijerph20032580",
+    "kind": "metadata",
+    "title": [
+      "Anode Modification with Fe2O3 Affects the Anode Microbiome and Improves Energy Generation in Microbial Fuel Cells Powered by Wastewater"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Dawid",
+        "family": "Nosek",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Biotechnology, University of Warmia and Mazury in Olsztyn, Słoneczna 45 G, 10-709 Olsztyn, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0113-4804",
+        "authenticated-orcid": false,
+        "given": "Tomasz",
+        "family": "Mikołajczyk",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry, University of Warmia and Mazury in Olsztyn, plac Łódzki 4, 10-721 Olsztyn, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8710-8297",
+        "authenticated-orcid": false,
+        "given": "Agnieszka",
+        "family": "Cydzik-Kwiatkowska",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Biotechnology, University of Warmia and Mazury in Olsztyn, Słoneczna 45 G, 10-709 Olsztyn, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 39109,
+    "sha256": "79d42d50daec873205d33697b883347b8d0b46136c8990e3a2701d5d3efa5211"
+  },
+  {
+    "id": "RF08",
+    "url": "https://api.crossref.org/works/10.3390/en12061034",
+    "kind": "metadata",
+    "status": "pending",
+    "failure": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "RF09",
+    "url": "https://api.crossref.org/works/10.3390/microorganisms12030604",
+    "kind": "metadata",
+    "title": [
+      "The Performance of a Modified Anode Using a Combination of Kaolin and Graphite Nanoparticles in Microbial Fuel Cells"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Lea Ouaknin",
+        "family": "Hirsch",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0773-1087",
+        "authenticated-orcid": false,
+        "given": "Bharath",
+        "family": "Gandu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          },
+          {
+            "name": "Department of Environmental Studies, University of Delhi, New Delhi 110007, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-3776-7485",
+        "authenticated-orcid": false,
+        "given": "Abhishiktha",
+        "family": "Chiliveru",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6332-0181",
+        "authenticated-orcid": false,
+        "given": "Irina",
+        "family": "Amar Dubrovin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9403-6693",
+        "authenticated-orcid": false,
+        "given": "Shmuel",
+        "family": "Rozenfeld",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3464-1936",
+        "authenticated-orcid": false,
+        "given": "Alex",
+        "family": "Schechter",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Sciences, Ariel University, Ariel 40700, Israel"
+          },
+          {
+            "name": "Research and Development Centre for Renewable Energy, New Technologies, Research Centre (NTC), University of West Bohemia, 30100 Pilsen, Czech Republic"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rivka",
+        "family": "Cahan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Ariel University, Ariel 40700, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 19025,
+    "sha256": "e34be6437ffaff35d035379a49b7a2bd35a18d37c7690c67ad997ad9429f222e"
+  },
+  {
+    "id": "RF11",
+    "url": "https://api.crossref.org/works/10.3390/en16104238",
+    "kind": "metadata",
+    "title": [
+      "Design and Optimization of Microbial Fuel Cells and Evaluation of a New Air-Breathing Cathode Based on Carbon Felt Modified with a Hydrogel—Ion Jelly®"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Rui N. L.",
+        "family": "Carvalho",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute for Bioengineering and Biosciences (iBB), Instituto Superior Técnico (IST), Universidade de Lisboa (UL), Av. Rovisco Pais, 1049-001 Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8562-0644",
+        "authenticated-orcid": false,
+        "given": "Luisa L.",
+        "family": "Monteiro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Bioengineering and Biosciences (iBB), Instituto Superior Técnico (IST), Universidade de Lisboa (UL), Av. Rovisco Pais, 1049-001 Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9291-9169",
+        "authenticated-orcid": false,
+        "given": "Silvia A.",
+        "family": "Sousa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Bioengineering and Biosciences (iBB), Instituto Superior Técnico (IST), Universidade de Lisboa (UL), Av. Rovisco Pais, 1049-001 Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sudarsu V.",
+        "family": "Ramanaiah",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Food and Biotechnology Research Lab, South Ural State University (National Research University), 454080 Chelyabinsk, Russia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8850-274X",
+        "authenticated-orcid": false,
+        "given": "Jorge H.",
+        "family": "Leitão",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Bioengineering (DBE), Institute for Bioengineering and Biosciences (iBB), The Associate Laboratory Institute for Health and Bioeconomy (i4HB), Instituto Superior Tecnico (IST), Universidade de Lisboa (UL), Avenida Rovisco Pais, 1049-001 Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7892-8955",
+        "authenticated-orcid": false,
+        "given": "Cristina M.",
+        "family": "Cordas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Associated Laboratory for Green Chemistry of the Network of Chemistry and Technology (LAQV-REQUIMTE), Department of Chemistry, NOVA School of Science and Technology, Universidade Nova de Lisboa, 2829-516 Caparica, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8429-6977",
+        "authenticated-orcid": false,
+        "given": "Luis P.",
+        "family": "Fonseca",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Bioengineering (DBE), Institute for Bioengineering and Biosciences (iBB), The Associate Laboratory Institute for Health and Bioeconomy (i4HB), Instituto Superior Tecnico (IST), Universidade de Lisboa (UL), Avenida Rovisco Pais, 1049-001 Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 39876,
+    "sha256": "9be3c95394fb75a2d99d5102421322a20b21b6a22d8caf53085134918542042e"
+  },
+  {
+    "id": "RF12",
+    "url": "https://api.crossref.org/works/10.3390/en15041412",
+    "kind": "metadata",
+    "title": [
+      "A 2D Modelling Approach for Predicting the Response of a Two-Chamber Microbial Fuel Cell to Substrate Concentration and Electrolyte Conductivity Changes"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Theofilos",
+        "family": "Kamperidis",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Chemical Engineering, National Technical University of Athens, 15780 Athens, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5097-217X",
+        "authenticated-orcid": false,
+        "given": "Asimina",
+        "family": "Tremouli",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Chemical Engineering, National Technical University of Athens, 15780 Athens, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Antonis",
+        "family": "Peppas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Chemical Engineering, National Technical University of Athens, 15780 Athens, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gerasimos",
+        "family": "Lyberatos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Chemical Engineering, National Technical University of Athens, 15780 Athens, Greece"
+          },
+          {
+            "name": "Institute of Chemical Engineering Sciences (ICE-HT), Stadiou Str., Platani, 26504 Patras, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 13023,
+    "sha256": "76e7e9b245fecf9b129a278bd88b9e782376319721a4b2688334aef91866ac9a"
+  },
+  {
+    "id": "RF13",
+    "url": "https://api.crossref.org/works/10.3390/en3040592",
+    "kind": "metadata",
+    "title": [
+      "Assessment of the Effects of Flow Rate and Ionic Strength on the Performance of an Air-Cathode Microbial Fuel Cell Using Electrochemical Impedance Spectroscopy"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Doug",
+        "family": "Aaron",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Civil and Environmental Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0522-1027",
+        "authenticated-orcid": false,
+        "given": "Costas",
+        "family": "Tsouris",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Civil and Environmental Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA"
+          },
+          {
+            "name": "Nuclear Sciences and Technology Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Choo Y.",
+        "family": "Hamilton",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The University of Tennessee, Knoxville, TN 37996, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Abhijeet P.",
+        "family": "Borole",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "BioSciences Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 11810,
+    "sha256": "b2f76bb6635341adda1fc328878425f9d38fd7badbe415d53d44424debe628cf"
+  },
+  {
+    "id": "RF14",
+    "url": "https://api.crossref.org/works/10.3390/en9050388",
+    "kind": "metadata",
+    "title": [
+      "Cathode Assessment for Maximizing Current Generation in Microbial Fuel Cells Utilizing Bioethanol Effluent as Substrate"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Guotao",
+        "family": "Sun",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Center for BioProcess Engineering, Department of Chemical and Biochemical Engineering, Technical University of Denmark, Søltofts Plads 229, DK-2800 Kgs. Lyngby, Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8440-1121",
+        "authenticated-orcid": false,
+        "given": "Anders",
+        "family": "Thygesen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center for BioProcess Engineering, Department of Chemical and Biochemical Engineering, Technical University of Denmark, Søltofts Plads 229, DK-2800 Kgs. Lyngby, Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8910-9931",
+        "authenticated-orcid": false,
+        "given": "Anne",
+        "family": "Meyer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center for BioProcess Engineering, Department of Chemical and Biochemical Engineering, Technical University of Denmark, Søltofts Plads 229, DK-2800 Kgs. Lyngby, Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 11966,
+    "sha256": "38a7820fff7071dacb42415245e084e83f989f7414c0a7d279b617a8935eb772"
+  },
+  {
+    "id": "RF15",
+    "url": "https://api.crossref.org/works/10.1021/es0512071",
+    "kind": "metadata",
+    "status": "pending",
+    "failure": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "RF16",
+    "url": "https://api.crossref.org/works/10.1016/j.elecom.2006.10.023",
+    "kind": "metadata",
+    "title": [
+      "Ammonia treatment of carbon cloth anodes to enhance power generation of microbial fuel cells"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Shaoan",
+        "family": "Cheng",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bruce E.",
+        "family": "Logan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 11409,
+    "sha256": "72fd62144475d8560c39b3a945849a29b3997e9aa36aecc32c6c4f97c5816ddc"
+  },
+  {
+    "id": "RF17",
+    "url": "https://api.crossref.org/works/10.1021/es062644y",
+    "kind": "metadata",
+    "title": [
+      "Graphite Fiber Brush Anodes for Increased Power Production in Air-Cathode Microbial Fuel Cells"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "given": "Bruce",
+        "family": "Logan",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Civil and Environmental Engineering, The Penn State Hydrogen Energy (H2E) Center, and Department of Chemical Engineering, Penn State University, University Park, Pennsylvania 16802"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shaoan",
+        "family": "Cheng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Civil and Environmental Engineering, The Penn State Hydrogen Energy (H2E) Center, and Department of Chemical Engineering, Penn State University, University Park, Pennsylvania 16802"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Valerie",
+        "family": "Watson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Civil and Environmental Engineering, The Penn State Hydrogen Energy (H2E) Center, and Department of Chemical Engineering, Penn State University, University Park, Pennsylvania 16802"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Garett",
+        "family": "Estadt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Civil and Environmental Engineering, The Penn State Hydrogen Energy (H2E) Center, and Department of Chemical Engineering, Penn State University, University Park, Pennsylvania 16802"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 9504,
+    "sha256": "8990e9ced8cddd4024d14135d6d4b3ff59824fd04015790f382be8a00780d811"
+  },
+  {
+    "id": "RF10",
+    "url": "https://api.crossref.org/works/10.3390/su152014817",
+    "kind": "metadata",
+    "title": [
+      "Microbial Fuel Cell Using a Novel Ionic-Liquid-Type Membrane-Cathode Assembly with Heterotrophic Anodic Denitrification for Slurry Treatment"
+    ],
+    "type": "journal-article",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2148-8039",
+        "authenticated-orcid": false,
+        "given": "Adrián",
+        "family": "Hernández-Fernández",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Faculty of Chemistry, University of Murcia (UMU), Campus de Espinardo, E-30100 Murcia, Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8508-022X",
+        "authenticated-orcid": false,
+        "given": "Eduardo",
+        "family": "Iniesta-López",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Faculty of Chemistry, University of Murcia (UMU), Campus de Espinardo, E-30100 Murcia, Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9391-9432",
+        "authenticated-orcid": false,
+        "given": "Yolanda",
+        "family": "Garrido",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Faculty of Chemistry, University of Murcia (UMU), Campus de Espinardo, E-30100 Murcia, Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ioannis A.",
+        "family": "Ieropoulos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Civil, Maritime & Environmental Engineering Department, University of Southampton, Bolderwood Campus, Southampton SO16 7QF, UK"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Francisco J.",
+        "family": "Hernández-Fernández",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemical Engineering, Faculty of Chemistry, University of Murcia (UMU), Campus de Espinardo, E-30100 Murcia, Spain"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "status": "retrieved",
+    "bytes": 20079,
+    "sha256": "8bbf90a03b2631199b689289c40476c6cb72f7b61c19c3683b35222ff18eb8eb"
+  },
+  {
+    "id": "CM04",
+    "url": "https://www.fuelcellearth.com/wp-content/uploads/converted_files/pdf/4379-Soft-Graphite-Felt-SCREEN.pdf",
+    "kind": "pdf",
+    "path": "CM04.pdf",
+    "status": "retrieved",
+    "bytes": 246576,
+    "sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6"
+  },
+  {
+    "id": "CM05",
+    "url": "https://www.fuelcellstore.com/spec-sheets/elat-gas-diffusion-layer-spec-sheet.pdf",
+    "kind": "pdf",
+    "path": "CM05.pdf",
+    "status": "retrieved",
+    "bytes": 334572,
+    "sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f"
+  },
+  {
+    "id": "RF02_SI",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8252665/supplementaryFiles",
+    "kind": "zip",
+    "entries": [
+      "CSSC-14-2313-g006.gif",
+      "CSSC-14-2313-g008.gif",
+      "CSSC-14-2313-g004.jpg",
+      "CSSC-14-2313-g004.gif",
+      "CSSC-14-2313-g001.jpg",
+      "CSSC-14-2313-g008.jpg",
+      "CSSC-14-2313-g009.gif",
+      "CSSC-14-2313-g003.gif",
+      "CSSC-14-2313-g005.gif",
+      "CSSC-14-2313-g007.jpg",
+      "CSSC-14-2313-s001.pdf",
+      "CSSC-14-2313-g003.jpg",
+      "CSSC-14-2313-g005.jpg",
+      "CSSC-14-2313-g001.gif",
+      "CSSC-14-2313-g009.jpg",
+      "CSSC-14-2313-g006.jpg",
+      "CSSC-14-2313-g002.gif",
+      "CSSC-14-2313-g002.jpg"
+    ],
+    "path": "RF02_SI_supplements.zip",
+    "status": "retrieved",
+    "bytes": 2606714,
+    "sha256": "6198a60c4c3c4916496c6cea02ec58728733a3ce57906764f7a31b5c0a2304d2"
+  },
+  {
+    "id": "RF03",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10057029/",
+    "kind": "html",
+    "status": "pending",
+    "failure": ""
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8252665/fullTextXML",
+    "format": "full_article_xml",
+    "bytes": 251105,
+    "sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+    "license": [
+      "© 2021 The Authors. ChemSusChem published by Wiley-VCH GmbH This is an open access article under the terms of the  http://creativecommons.org/licenses/by/4.0/  License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited."
+    ],
+    "supplements": [
+      {
+        "id": "supplementary-material1",
+        "position": "float",
+        "text": "As a service to our authors and readers, this journal provides supporting information supplied by the authors. Such materials are peer reviewed and may be re‐organized for online delivery, but are not"
+      },
+      {
+        "id": "supplementary-material2",
+        "position": "float",
+        "text": "Supplementary Click here for additional data file."
+      },
+      {
+        "id": "db_ds_supplementary-material1_reqid_",
+        "position": "float",
+        "text": "As a service to our authors and readers, this journal provides supporting information supplied by the authors. Such materials are peer reviewed and may be re‐organized for online delivery, but are not"
+      },
+      {
+        "id": "db_ds_supplementary-material2_reqid_",
+        "position": "float",
+        "text": "Supplementary Click here for additional data file."
+      }
+    ]
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10057029/fullTextXML",
+    "failure": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10744851/fullTextXML",
+    "format": "full_article_xml",
+    "bytes": 111080,
+    "sha256": "0da12d71c4cbf43e26bab8067dc5b1a5c36fe534700d35388aeea4bbb335c5ad",
+    "license": [
+      "© 2023 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ )."
+    ],
+    "supplements": [
+      {
+        "id": "micromachines-14-02142-s001",
+        "position": "float",
+        "text": "Click here for additional data file."
+      },
+      {
+        "id": "db_ds_supplementary-material1_reqid_",
+        "position": "float",
+        "text": "Click here for additional data file."
+      }
+    ]
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9916399/fullTextXML",
+    "format": "full_article_xml",
+    "bytes": 202949,
+    "sha256": "e3458dac4a741c98323833dfe207a6b0e0e78d194b50ccc7c21eb213b34d95f5",
+    "license": [
+      "© 2023 by the authors. 2023 https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ )."
+    ],
+    "supplements": [
+      {
+        "id": "ijerph-20-02580-s001",
+        "position": "float",
+        "content-type": "local-data",
+        "orientation": "portrait",
+        "text": "Click here for additional data file."
+      }
+    ]
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10974860/fullTextXML",
+    "format": "full_article_xml",
+    "bytes": 114522,
+    "sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf",
+    "license": [
+      "© 2024 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ )."
+    ],
+    "supplements": []
+  },
+  {
+    "id": "RF04",
+    "url": "https://mdpi-res.com/d_attachment/micromachines/micromachines-14-02142/article_deploy/micromachines-14-02142.pdf",
+    "status": "pending",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "RF07",
+    "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-20-02580/article_deploy/ijerph-20-02580.pdf",
+    "status": "pending",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "RF09",
+    "url": "https://mdpi-res.com/d_attachment/microorganisms/microorganisms-12-00604/article_deploy/microorganisms-12-00604.pdf",
+    "status": "pending",
+    "failure": "HTTP Error 403: Forbidden"
+  }
+]

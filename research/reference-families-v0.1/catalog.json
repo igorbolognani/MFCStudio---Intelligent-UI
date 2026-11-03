@@ -1,0 +1,3241 @@
+{
+  "version": "mfc-reference-families/0.1.0",
+  "acquired_date": "2026-11-03",
+  "scope": "conventional reference arms only",
+  "user_decisions": {
+    "no_substrate_preference": true,
+    "reference_family_not_selected": true,
+    "modified_arms_excluded": true,
+    "no_cross_arm_effects_extracted": true,
+    "no_shopping_prices_this_round": true,
+    "calibration_deferred": true
+  },
+  "integration": {
+    "parent_corpus": "mfc-corpus/0.4.0",
+    "canonical_stage_ids_reused": true,
+    "existing_commercial_registry": "research/materials-v0.1/catalog.json",
+    "canonical_source_promotion": "pending curatorial admission; RF identifiers are acquisition work IDs",
+    "production_seed_changed": false,
+    "reason": "Source screening and reference configurations are not new approved model parameters; historical corpus remains unchanged."
+  },
+  "stages": [
+    {
+      "order": 1,
+      "id": "anode_chamber",
+      "name": "Câmara anódica"
+    },
+    {
+      "order": 2,
+      "id": "anolyte",
+      "name": "Meio anódico"
+    },
+    {
+      "order": 3,
+      "id": "anode",
+      "name": "Ânodo"
+    },
+    {
+      "order": 4,
+      "id": "anode_catalyst",
+      "name": "Catalisador anódico"
+    },
+    {
+      "order": 5,
+      "id": "biofilm",
+      "name": "Biofilme"
+    },
+    {
+      "order": 6,
+      "id": "membrane",
+      "name": "Membrana"
+    },
+    {
+      "order": 7,
+      "id": "external_circuit",
+      "name": "Circuito e alimentação/coleta"
+    },
+    {
+      "order": 8,
+      "id": "cathode_chamber",
+      "name": "Câmara catódica"
+    },
+    {
+      "order": 9,
+      "id": "catholyte",
+      "name": "Meio catódico"
+    },
+    {
+      "order": 10,
+      "id": "cathode",
+      "name": "Cátodo"
+    },
+    {
+      "order": 11,
+      "id": "cathode_catalyst",
+      "name": "Catalisador catódico"
+    }
+  ],
+  "sources": [
+    {
+      "id": "RF01",
+      "doi": "10.1016/j.jpowsour.2018.12.007",
+      "url": "https://doi.org/10.1016/j.jpowsour.2018.12.007",
+      "title": "Reproducibility and robustness of microbial fuel cells technology",
+      "authors": [
+        "Sara Mateo",
+        "Pablo Cañizares",
+        "Manuel Andrés Rodrigo",
+        "Francisco Jesús Fernández-Morales"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "bibliographic record / indexed publisher excerpts",
+      "reference_label": "Identical mini-MFC array",
+      "reference_scope": "112 individual cells; stacks are excluded",
+      "reading_status": "text_full_pending",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "screening_only_not_accepted_extraction",
+      "training_eligible": false,
+      "screening_notes": [
+        "112 nominally identical units; .695cm3 chamber; Sigracell GF6EA/N117/Freudenberg C2 Pt in indexed publisher methods. Full copy pending: no curated numeric observations."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              2
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              2
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": false,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF02",
+      "doi": "10.1002/cssc.202100294",
+      "url": "https://doi.org/10.1002/cssc.202100294",
+      "title": "How Comparable are Microbial Electrochemical Systems around the Globe? An Electrochemical and Microbiological Cross‐Laboratory Study",
+      "authors": [
+        "Carlo Santoro",
+        "Sofia Babanova",
+        "Pierangela Cristiani",
+        "Kateryna Artyushkova",
+        "Plamen Atanassov",
+        "Alain Bergel",
+        "Orianna Bretschger",
+        "Robert K. Brown",
+        "Kayla Carpenter",
+        "Alessandra Colombo",
+        "Rachel Cortese",
+        "Benjamin Erable",
+        "Falk Harnisch",
+        "Mounika Kodali",
+        "Sujal Phadke",
+        "Sebastian Riedl",
+        "Luis F. M. Rosa",
+        "Uwe Schröder"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher XML",
+      "reference_label": "Standard protocol across five laboratories",
+      "reference_scope": "Unmodified graphite/AC-PTFE reference protocol; RSE from cycle 4 excluded",
+      "reading_status": "baseline_methods_and_selected_results_reviewed",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              5
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              5
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              8
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF03",
+      "doi": "10.1128/aem.02181-22",
+      "url": "https://doi.org/10.1128/aem.02181-22",
+      "title": "Investigating Variability in Microbial Fuel Cells",
+      "authors": [
+        "Daniel David Leicester",
+        "Sam Settle",
+        "Clare M. McCann",
+        "Elizabeth Susan Heidrich"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "bibliographic record / indexed publisher excerpts",
+      "reference_label": "Initial identical Type A cohort",
+      "reference_scope": "Initial 28 reactors only; later reseeding phases excluded",
+      "reading_status": "text_full_pending",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "screening_only_not_accepted_extraction",
+      "training_eligible": false,
+      "screening_notes": [
+        "Initial28 identical TypeA MFCs is relevant to repeatability. Full text bytes not acquired; later reseeding excluded."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              29
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              29
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": false,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF04",
+      "doi": "10.3390/mi14122142",
+      "url": "https://doi.org/10.3390/mi14122142",
+      "title": "Untreated vs. Treated Carbon Felt Anodes: Impacts on Power Generation in Microbial Fuel Cells",
+      "authors": [
+        "Abdelghani Ghanam",
+        "Sebastien Cecillon",
+        "Andrei Sabac",
+        "Hasna Mohammadi",
+        "Aziz Amine",
+        "François Buret",
+        "Naoufel Haddour"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher XML",
+      "reference_label": "Pristine CF",
+      "reference_scope": "CF only, before any acid, heat or coating treatment",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "Pristine CF cube1cm per side;250mL,Wheaton;1g/LNaAc;330Ohm;2cmgap. Grade/supplier unresolved.",
+        "Conductivity printed mS/cm2, Pt recipe10wt% vs cathode described5%; neither silently corrected.",
+        "Supplement recovered: setup photos/captions, not raw individual curves.",
+        "Complete JATS body acquired; article figures are external references. Publisher PDF returned403; external main-article figure files remain pending."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              23
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              23
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF05",
+      "doi": "10.3390/pr8080939",
+      "url": "https://doi.org/10.3390/pr8080939",
+      "title": "Enhanced Performance of Microbial Fuel Cells with Anodes from Ethylenediamine and Phenylenediamine Modified Graphite Felt",
+      "authors": [
+        "Egidijus Griškonis",
+        "Arminas Ilginis",
+        "Ilona Jonuškienė",
+        "Laurencas Raslavičius",
+        "Rolandas Jonynas",
+        "Kristina Kantminienė"
+      ],
+      "author_metadata_status": "manually_checked_publisher_title_page",
+      "bibliographic_version": "LAPSE-2020.1214-1v1 author-deposited publisher PDF with repository cover",
+      "reference_label": "Bare GF control",
+      "reference_scope": "Room-temperature control only; cathode component tests and cooling series excluded",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps."
+      ],
+      "bibliographic_metadata_origin": "publisher PDF title page or publisher bibliographic page, manually transcribed",
+      "full_text_acquired": true,
+      "article_figures_acquired": true,
+      "publication_dates": {
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              8,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "RF06",
+      "doi": "10.3390/en17040943",
+      "url": "https://doi.org/10.3390/en17040943",
+      "title": "Assessing the Performance of Continuous-Flow Microbial Fuel Cells and Membrane Electrode Assembly with Electrodeposited Mn Oxide Catalyst",
+      "authors": [
+        "Laura Mais",
+        "Michele Mascia",
+        "Annalisa Vacca"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Pt/C reference",
+      "reference_scope": "Conventional Pt/C only; no Mn or AC/CB comparator observations",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "Pt/C reference: CC4 FuelCellEarth5cm2;2.5mg of40wt%Pt/C gives0.2mgPt/cm2 over5cm2; Nafion115 hotpress105C.",
+        "Activated FuelCellEarth felt; activation supplement pending. Flow0.3mL/min,NaAc2g/L,30C,1kOhm.",
+        "Continuous and recirculated modes need exact reference-run mapping; reservoir volume and replicate identities unresolved."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              17
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              17
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF07",
+      "doi": "10.3390/ijerph20032580",
+      "url": "https://doi.org/10.3390/ijerph20032580",
+      "title": "Anode Modification with Fe2O3 Affects the Anode Microbiome and Improves Energy Generation in Microbial Fuel Cells Powered by Wastewater",
+      "authors": [
+        "Dawid Nosek",
+        "Tomasz Mikołajczyk",
+        "Agnieszka Cydzik-Kwiatkowska"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher XML",
+      "reference_label": "MFCcontrol",
+      "reference_scope": "Unmodified CF only; Pt counter electrode in CV is not the MFC cathode",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "MFCcontrol: unmodified CF10×20×.3cm;2L per chamber;N1178×8cm;1200Ohm;400mgCOD/Lacetate;48hcycles,50% replacement.",
+        "Cell cathode material is absent in inspected setup and supplement captions. CV Pt counter electrode does not supply it.",
+        "Ag/AgCl offset printed0.197mV; remains blocked rather than corrected to V.",
+        "Complete JATS body acquired; article figures are external references. Publisher PDF returned403; external main-article figure files remain pending."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              31
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              31
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF08",
+      "doi": "10.3390/en12061034",
+      "url": "https://doi.org/10.3390/en12061034",
+      "title": "Comparative Evaluation of Coated and Non-Coated Carbon Electrodes in a Microbial Fuel Cell for Treatment of Municipal Sludge",
+      "authors": [
+        "Arpita Nandy",
+        "Mohita Sharma",
+        "Senthil Velan Venkatesan",
+        "Nicole Taylor",
+        "Lisa Gieg",
+        "Venkataraman Thangadurai"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Cell A C-C",
+      "reference_scope": "Both electrodes uncoated; abiotic runs excluded from biotic outcomes",
+      "reading_status": "baseline_methods_and_selected_results_reviewed",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps."
+      ],
+      "bibliographic_metadata_origin": "publisher PDF title page or publisher bibliographic page, manually transcribed",
+      "full_text_acquired": true,
+      "article_figures_acquired": true,
+      "publication_dates": {
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              3,
+              16
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "RF09",
+      "doi": "10.3390/microorganisms12030604",
+      "url": "https://doi.org/10.3390/microorganisms12030604",
+      "title": "The Performance of a Modified Anode Using a Combination of Kaolin and Graphite Nanoparticles in Microbial Fuel Cells",
+      "authors": [
+        "Lea Ouaknin Hirsch",
+        "Bharath Gandu",
+        "Abhishiktha Chiliveru",
+        "Irina Amar Dubrovin",
+        "Shmuel Rozenfeld",
+        "Alex Schechter",
+        "Rivka Cahan"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher XML",
+      "reference_label": "Bare control",
+      "reference_scope": "Commercial ELAT with the stated nitrogen-plasma preparation, no deposited additives",
+      "reading_status": "baseline_methods_and_selected_results_reviewed",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps.",
+        "Complete JATS body acquired; article figures are external references. Publisher PDF returned403; external main-article figure files remain pending."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              18
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              18
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF10",
+      "doi": "10.3390/su152014817",
+      "url": "https://doi.org/10.3390/su152014817",
+      "title": "Microbial Fuel Cell Using a Novel Ionic-Liquid-Type Membrane-Cathode Assembly with Heterotrophic Anodic Denitrification for Slurry Treatment",
+      "authors": [
+        "Adrián Hernández-Fernández",
+        "Eduardo Iniesta-López",
+        "Yolanda Garrido",
+        "Ioannis A. Ieropoulos",
+        "Francisco J. Hernández-Fernández"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF v2",
+      "reference_label": "Control C Nafion/Pt",
+      "reference_scope": "Conventional graphite granules/Nafion/Pt only",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "ControlC: graphitegranules2–6mm,GraphiteStore;100cm3bed,200mLfeed,250mLreactor;N117/PtHiSPEC9100;25C,1kOhm,duplicates.",
+        "Pt6.3mg,3cmdiameter disk,and0.5mgPt/cm2 are reported together; area/loading relation unresolved.",
+        "Do not sum100cm3granules+200mLliquid into working volume: displacement and accessible pore volume unresolved.",
+        "Slurry/denitrification is a separate operating family, not pooled with defined acetate media."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              12
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              12
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF11",
+      "doi": "10.3390/en16104238",
+      "url": "https://doi.org/10.3390/en16104238",
+      "title": "Design and Optimization of Microbial Fuel Cells and Evaluation of a New Air-Breathing Cathode Based on Carbon Felt Modified with a Hydrogel—Ion Jelly®",
+      "authors": [
+        "Rui N. L. Carvalho",
+        "Luisa L. Monteiro",
+        "Silvia A. Sousa",
+        "Sudarsu V. Ramanaiah",
+        "Jorge H. Leitão",
+        "Cristina M. Cordas",
+        "Luis P. Fonseca"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Abiotic aerated uncoated CF reference",
+      "reference_scope": "No permanganate, no biocathode and no Ion Jelly; mapping to results remains pending",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "N117 hydrated12h,CF5mmAlfaAesar,copper connections,360mL each,acetate .82g/L,room22–25C.",
+        "Uncoated air-sparged abiotic cathode is the eligible reference concept; later permanganate, biocathode, IonJelly excluded.",
+        "Exact baseline result/protocol and resistance must be mapped before extracting numbers."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              22
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              22
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF12",
+      "doi": "10.3390/en15041412",
+      "url": "https://doi.org/10.3390/en15041412",
+      "title": "A 2D Modelling Approach for Predicting the Response of a Two-Chamber Microbial Fuel Cell to Substrate Concentration and Electrolyte Conductivity Changes",
+      "authors": [
+        "Theofilos Kamperidis",
+        "Asimina Tremouli",
+        "Antonis Peppas",
+        "Gerasimos Lyberatos"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Experimental H-type reference",
+      "reference_scope": "Experimental measurements only; COMSOL predictions and fitted constants excluded",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              15
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              15
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF13",
+      "doi": "10.3390/en3040592",
+      "url": "https://doi.org/10.3390/en3040592",
+      "title": "Assessment of the Effects of Flow Rate and Ionic Strength on the Performance of an Air-Cathode Microbial Fuel Cell Using Electrochemical Impedance Spectroscopy",
+      "authors": [
+        "Doug Aaron",
+        "Costas Tsouris",
+        "Choo Y. Hamilton",
+        "Abhijeet P. Borole"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Undiluted reference condition",
+      "reference_scope": "0.37 M, 7 mL/min only; diluted/flow variation experiments excluded",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "See curated reference configuration and source-specific gaps."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              3,
+              26
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2010,
+              3,
+              26
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF14",
+      "doi": "10.3390/en9050388",
+      "url": "https://doi.org/10.3390/en9050388",
+      "title": "Cathode Assessment for Maximizing Current Generation in Microbial Fuel Cells Utilizing Bioethanol Effluent as Substrate",
+      "authors": [
+        "Guotao Sun",
+        "Anders Thygesen",
+        "Anne Meyer"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "Acetate conditioning, period 1",
+      "reference_scope": "Day 4 air-cathode reference; no effluent feed or later operation",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "Only period1/day4 acetate reference; air cathode AiC architecture selected for future extraction.",
+        "CFAlfaAesar43199,CCWP3030,PTC10-1 10wt%PtC5mg/cm2; four PTFE diffusion layers.",
+        "Dual-cell167mL chambers and0.5Lrecirculation vessels belong to other architectures, not AiC volumes.",
+        "M9 recipe depends on cited source; raw reference curves/replicate counts pending."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              20
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              20
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    },
+    {
+      "id": "RF15",
+      "doi": "10.1021/es0512071",
+      "url": "https://doi.org/10.1021/es0512071",
+      "title": "Power Densities Using Different Cathode Catalysts (Pt and CoTMPP) and Polymer Binders (Nafion and PTFE) in Single Chamber Microbial Fuel Cells",
+      "authors": [
+        "Shaoan Cheng",
+        "Hong Liu",
+        "Bruce E. Logan"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "bibliographic record / indexed publisher excerpts",
+      "reference_label": "Pt/Nafion standard",
+      "reference_scope": "0.5 mgPt/cm2; other catalysts, binder and loading arms excluded",
+      "reading_status": "text_full_pending",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "screening_only_not_accepted_extraction",
+      "training_eligible": false,
+      "screening_notes": [
+        "Conventional Pt0.5mg/cm2,Nafion binder; full article pending, no numeric extraction accepted."
+      ],
+      "bibliographic_metadata_origin": "publisher PDF title page or publisher bibliographic page, manually transcribed",
+      "full_text_acquired": false,
+      "article_figures_acquired": false,
+      "publication_dates": {
+        "published-online": {
+          "date-parts": [
+            [
+              2005,
+              11,
+              23
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2006,
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "RF16",
+      "doi": "10.1016/j.elecom.2006.10.023",
+      "url": "https://doi.org/10.1016/j.elecom.2006.10.023",
+      "title": "Ammonia treatment of carbon cloth anodes to enhance power generation of microbial fuel cells",
+      "authors": [
+        "Shaoan Cheng",
+        "Bruce E. Logan"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "bibliographic record / indexed publisher excerpts",
+      "reference_label": "Untreated cloth control",
+      "reference_scope": "No ammonia treatment; choose one declared original buffer condition after full text",
+      "reading_status": "text_full_pending",
+      "full_document_acquired": false,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "screening_only_not_accepted_extraction",
+      "training_eligible": false,
+      "screening_notes": [
+        "Untreated E-TEK TypeA cloth control; full article pending. Buffer condition must not be chosen from a modified-arm headline."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2007,
+              3
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2007,
+              3
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": false,
+      "article_figures_acquired": false
+    },
+    {
+      "id": "RF17",
+      "doi": "10.1021/es062644y",
+      "url": "https://doi.org/10.1021/es062644y",
+      "title": "Graphite Fiber Brush Anodes for Increased Power Production in Air-Cathode Microbial Fuel Cells",
+      "authors": [
+        "Bruce Logan",
+        "Shaoan Cheng",
+        "Valerie Watson",
+        "Garett Estadt"
+      ],
+      "author_metadata_status": "retrieved",
+      "bibliographic_version": "publisher PDF or author-hosted publisher copy",
+      "reference_label": "B-MFC plain carbon paper",
+      "reference_scope": "Bottle reactor, 50 mM PBS, glucose, untreated paper only; brushes and 200 mM condition excluded",
+      "reading_status": "baseline_methods_reviewed_with_gaps",
+      "full_document_acquired": true,
+      "acquired_date": "2026-11-03",
+      "existing_source_ids": [],
+      "extraction_method": "manual_contextual_transcription_of_reference_methods",
+      "training_eligible": false,
+      "screening_notes": [
+        "Bottle control only:320mL bottle,300mLmedium,Toraycarbonpaper2.5×4.5cm,Ti wire,.5mgPt/cm2 onTypeB-1B wetproofed cloth,4diffusionlayers.",
+        "Glucose1g/L,50mMPBS,23±3C,1000Ohm reference; no brush-anode data extracted.",
+        "Projected cathode area4.9cm2 and3.8cmcathode disk dimension use different exposed/mounted areas; aperture must be checked.",
+        "Same article reactor comparisons and buffer variants are not independent conventional references."
+      ],
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2007,
+              3,
+              21
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2007,
+              3,
+              21
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2007,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "bibliographic_metadata_origin": "Crossref DOI record plus acquired document identity",
+      "full_text_acquired": true,
+      "article_figures_acquired": true
+    }
+  ],
+  "documents": [
+    {
+      "id": "RF02-main",
+      "source_id": "RF02",
+      "type": "main_article",
+      "format": "JATS XML",
+      "original_filename": "RF02.xml",
+      "bytes": 251105,
+      "sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": "research/reference-families-v0.1/documents/RF02.xml.gz",
+      "archive_path": null,
+      "storage_transformation": "lossless gzip; original uncompressed SHA-256 retained",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8252665/fullTextXML",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF02.xml",
+      "preservation_status": "public_git_lossless_gzip",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF04-main",
+      "source_id": "RF04",
+      "type": "main_article",
+      "format": "JATS XML",
+      "original_filename": "RF04.xml",
+      "bytes": 111080,
+      "sha256": "0da12d71c4cbf43e26bab8067dc5b1a5c36fe534700d35388aeea4bbb335c5ad",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF04.xml",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10744851/fullTextXML",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF04.xml",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": false
+    },
+    {
+      "id": "RF05-main",
+      "source_id": "RF05",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF05.pdf",
+      "bytes": 4394331,
+      "sha256": "5dffef8baca7399ed3f04fc371524af16e2a4535df97823023009df94c1ee429",
+      "license": "CC BY 4.0; original publisher article in repository wrapper, original bytes retained",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF05.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2012/LAPSE-2020.1214-1v1.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF05.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF06-main",
+      "source_id": "RF06",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF06.pdf",
+      "bytes": 2993491,
+      "sha256": "bfc5236735f682437567ed2698eaab719d3f333a72e2e2e1d7d08be9d88a9224",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF06.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-17-00943/article_deploy/energies-17-00943.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF06.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF07-main",
+      "source_id": "RF07",
+      "type": "main_article",
+      "format": "JATS XML",
+      "original_filename": "RF07.xml",
+      "bytes": 202949,
+      "sha256": "e3458dac4a741c98323833dfe207a6b0e0e78d194b50ccc7c21eb213b34d95f5",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF07.xml",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9916399/fullTextXML",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF07.xml",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": false
+    },
+    {
+      "id": "RF08-main",
+      "source_id": "RF08",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF08.pdf",
+      "bytes": 1684865,
+      "sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF08.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-12-01034/article_deploy/energies-12-01034.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF08.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF09-main",
+      "source_id": "RF09",
+      "type": "main_article",
+      "format": "JATS XML",
+      "original_filename": "RF09.xml",
+      "bytes": 114522,
+      "sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF09.xml",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10974860/fullTextXML",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF09.xml",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": false
+    },
+    {
+      "id": "RF10-main",
+      "source_id": "RF10",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF10.pdf",
+      "bytes": 4150414,
+      "sha256": "1aa613d6c29eb9ecead161c0d196d897f88d8d3976a5f37bf73cf1f82510e9d6",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF10.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14817/article_deploy/sustainability-15-14817-v2.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF10.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF11-main",
+      "source_id": "RF11",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF11.pdf",
+      "bytes": 3578963,
+      "sha256": "69ecbe40e585d827c634b43c495ab303c71e49bbdee62cf0f76e9c6925e75ad9",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF11.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-16-04238/article_deploy/energies-16-04238.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF11.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF12-main",
+      "source_id": "RF12",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF12.pdf",
+      "bytes": 2237184,
+      "sha256": "cb0580f6e2670ad48dff3d801c6610ae8e6a7eae5d603e07328c19fe99fbf697",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF12.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-15-01412/article_deploy/energies-15-01412.pdf?version=1644919564",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF12.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF13-main",
+      "source_id": "RF13",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF13.pdf",
+      "bytes": 250526,
+      "sha256": "c5e9433080cebe35c449b6b3983d42f2bfeb56b97b6fe007045e825b363ca460",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF13.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-03-00592/article_deploy/energies-03-00592.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF13.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF14-main",
+      "source_id": "RF14",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF14.pdf",
+      "bytes": 3038708,
+      "sha256": "21a7addae01045ca19b90058c495074f9a267fc3eec2e49e7644074d0d2ae24e",
+      "license": "CC BY 4.0",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": "documents/RF14.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/energies/energies-09-00388/article_deploy/energies-09-00388.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF14.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF17-main",
+      "source_id": "RF17",
+      "type": "main_article",
+      "format": "PDF",
+      "original_filename": "RF17.pdf",
+      "bytes": 431800,
+      "sha256": "8fd07dd6b4072e861b64b7756d6df8b5b408ef8bd8fb3e21ce6d997f15ebd5f8",
+      "license": "publisher copyright; no redistribution permission identified",
+      "reading_scope": "Methods plus selected reference-arm passages; all references/figures not fully reviewed",
+      "repository_path": null,
+      "archive_path": null,
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2007-Logan-etal-EST.pdf",
+        "container": null
+      },
+      "local_acquisition_path": "documents/RF17.pdf",
+      "preservation_status": "original_author_url_and_hash_only_no_open_license",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF02-SI",
+      "source_id": "RF02",
+      "type": "supplement",
+      "format": "PDF",
+      "original_filename": "RF02_SI_CSSC-14-2313-s001.pdf",
+      "bytes": 6283885,
+      "sha256": "68bfb088173c42ea3c49d4db8105989bd905b2ecefbecf961b96a3080986c7fd",
+      "license": "CC BY 4.0",
+      "reading_scope": "RF02: sections 1,8,9; curves located, not digitized. RF04/RF07: captions and setup-related supplementary text inspected; not every figure reviewed.",
+      "repository_path": null,
+      "archive_path": "documents/RF02_SI_CSSC-14-2313-s001.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8252665/supplementaryFiles",
+        "container": "zip",
+        "entry": "CSSC-14-2313-s001.pdf",
+        "container_sha256": "6198a60c4c3c4916496c6cea02ec58728733a3ce57906764f7a31b5c0a2304d2"
+      },
+      "local_acquisition_path": "documents/RF02_SI_CSSC-14-2313-s001.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF04-SI",
+      "source_id": "RF04",
+      "type": "supplement",
+      "format": "PDF",
+      "original_filename": "micromachines-2699592-supplementary.pdf",
+      "bytes": 9100411,
+      "sha256": "b6711de13efba58f3de0c4ab2a1097fecefab008a5778bcd5a27f0768e0a345e",
+      "license": "CC BY 4.0",
+      "reading_scope": "RF02: sections 1,8,9; curves located, not digitized. RF04/RF07: captions and setup-related supplementary text inspected; not every figure reviewed.",
+      "repository_path": null,
+      "archive_path": "documents/RF04_SI/micromachines-2699592-supplementary.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/micromachines/micromachines-14-02142/article_deploy/micromachines-14-02142-s001.zip",
+        "container": "zip",
+        "entry": "micromachines-2699592-supplementary.pdf",
+        "container_sha256": "25997b4d737964f4b3ee29781723450a5c08e0aded2cd9e367477ea3197410be"
+      },
+      "local_acquisition_path": "documents/RF04_SI/micromachines-2699592-supplementary.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    },
+    {
+      "id": "RF07-SI",
+      "source_id": "RF07",
+      "type": "supplement",
+      "format": "PDF",
+      "original_filename": "ijerph-2099857-supplementary.pdf",
+      "bytes": 1861021,
+      "sha256": "2a5e64961e09f3f552e92d994830b4a6d27abe228fd144312aa012ceaa5b8ece",
+      "license": "CC BY 4.0",
+      "reading_scope": "RF02: sections 1,8,9; curves located, not digitized. RF04/RF07: captions and setup-related supplementary text inspected; not every figure reviewed.",
+      "repository_path": null,
+      "archive_path": "documents/RF07_SI/ijerph-2099857-supplementary.pdf",
+      "locator_page_basis": "printed article page or JATS section/table ID; repository cover excluded from printed page numbering",
+      "acquisition": {
+        "url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-20-02580/article_deploy/ijerph-20-02580-s001.zip",
+        "container": "zip",
+        "entry": "ijerph-2099857-supplementary.pdf",
+        "container_sha256": "1df44d674205f1da6ad4028584e7f9998dab237e746c71eab9cb13f3366567b0"
+      },
+      "local_acquisition_path": "documents/RF07_SI/ijerph-2099857-supplementary.pdf",
+      "preservation_status": "open_license_source_archive",
+      "complete_acquired_file": true,
+      "full_text_complete": true,
+      "figures_embedded_or_preserved": true
+    }
+  ],
+  "reference_arms": [
+    {
+      "id": "RF02-reference",
+      "source_id": "RF02",
+      "document_id": "RF02-main",
+      "experimental_family_id": "graphite-CP2200_AC-PTFE_SCMFC_125mL",
+      "architecture": "single_chamber_membraneless_air",
+      "substrate": "acetate + local raw wastewater",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "material": "glass; Arbore Cataldo",
+            "nominal_empty_electrolyte_volume": {
+              "value": 125,
+              "unit": "mL"
+            },
+            "temperature": {
+              "value": 25,
+              "unit": "degC"
+            },
+            "electrode_gap": {
+              "value": 7,
+              "unit": "cm"
+            },
+            "volume_basis": "empty electrolyte volume, not newly inferred displaced working volume"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "domain": "liquid-1",
+            "raw_wastewater_fraction": {
+              "value": 50,
+              "unit": "vol%"
+            },
+            "carbonate_buffer_fraction": {
+              "value": 50,
+              "unit": "vol%"
+            },
+            "buffer_stock": "0.1 M carbonate +0.1 M KCl, pH7.8; recipe in Experimental Section, not automatically the final diluted medium",
+            "sodium_acetate_mass": {
+              "value": 3,
+              "unit": "g/L"
+            },
+            "sodium_acetate_molar_reported": {
+              "value": 24,
+              "unit": "mM"
+            },
+            "ph_target_stock": {
+              "value": 7.8,
+              "unit": "1"
+            }
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "material": "graphite plate",
+            "manufacturer": "CP-Handels",
+            "grade": "CP-2200",
+            "dimensions": {
+              "value": [
+                2.5,
+                2.5,
+                0.2
+              ],
+              "unit": "cm"
+            },
+            "exposed_working_face": {
+              "value": 6.25,
+              "unit": "cm2",
+              "basis": "one face"
+            },
+            "preparation": "1000 grit sanding; MilliQ wash; all other faces sealed with Epoxy HT2"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "description": "No added anodic catalyst in the stated graphite preparation"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "inoculum": "local domestic wastewater from five WWTPs; SI S2 records origins",
+            "replicates_per_lab": {
+              "value": 3,
+              "unit": "reactors"
+            },
+            "duration": {
+              "value": 42,
+              "unit": "day"
+            },
+            "cycles": {
+              "value": 6,
+              "unit": "cycles"
+            },
+            "phases": "cycles1–2 acclimation,3–4 stabilization,5–6 author-defined steady phase",
+            "CNR": "low-voltage reactors retained; microbiological samples lost in shipment"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "membrane",
+          "status": "not_applicable",
+          "facts": {
+            "present": false
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "collector": "Goodfellow Ti wire 0.5mm,99.6%; Teflon insulation",
+            "external_load_start": {
+              "value": 1000,
+              "unit": "Ohm"
+            },
+            "external_load_final": {
+              "value": 100,
+              "unit": "Ohm"
+            },
+            "feed": "full medium exchange every7days",
+            "LSV_scan": {
+              "value": 0.2,
+              "unit": "mV/s"
+            },
+            "polarization_basis": "exposed cathode 2.9cm2"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "not_applicable",
+          "facts": {
+            "domain": "ambient-air-boundary",
+            "dedicated_liquid_volume": false,
+            "gas_condition": "ambient air; not a sealed infinite liquid reservoir"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "shared",
+          "facts": {
+            "domain": "liquid-1",
+            "shared_with": "anolyte",
+            "additional_liquid_volume": false
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "support": "stainless-steel mesh, McMaster as publisher spelling MacMaster",
+            "exposed_area": {
+              "value": 2.9,
+              "unit": "cm2"
+            },
+            "fabrication": "pressed1400psi5min, no heat treatment"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "reported",
+          "facts": {
+            "material": "activated carbon Norit SX Plus, Sigma-Aldrich",
+            "binder": "PTFE60wt% emulsion, Sigma-Aldrich",
+            "dry_mass_ratio_AC_PTFE": "80:20",
+            "metal_catalyst": "not added"
+          },
+          "locator": "Experimental Section: Cross-laboratory study design; Cell assembly; MFC Electrodes; Inoculum; SI tables S1,S2",
+          "document_id": "RF02-main"
+        }
+      ],
+      "gaps": [
+        "One study, five laboratories, three reactors/laboratory; cycles are repeated measures, not new experiments.",
+        "Local wastewater inocula and instruments differ.",
+        "RSE after fresh-inoculum substitution at cycle 4 is outside this reference extraction.",
+        "TUB/UNM changed load at day16; UFZ/CNR nominally day14.",
+        "3 g/L sodium acetate and 24 mM both reported; hydrate not established, molar conversion blocked.",
+        "Main tables 2/3 label OCV in V but numeric entries are about500; OCV normalization blocked.",
+        "SI MAD equation S2 lacks absolute-value bars; reported uncertainty retained, no recomputation."
+      ],
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9"
+    },
+    {
+      "id": "RF05-reference",
+      "source_id": "RF05",
+      "document_id": "RF05-main",
+      "experimental_family_id": "AvCarbG200_NRE212_lactate_Shewanella",
+      "architecture": "dual_chamber_recirculated",
+      "substrate": "lactate",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "chamber_volume": {
+              "value": 32,
+              "unit": "mL",
+              "basis": "approximate, per chamber"
+            },
+            "geometry": "interdigitated flow channels",
+            "temperature": {
+              "value": 20,
+              "unit": "degC"
+            },
+            "temperature_plus_minus": {
+              "value": 1,
+              "unit": "degC"
+            }
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "substrate": "sodium DL-lactate",
+            "concentration": {
+              "value": 18,
+              "unit": "mM"
+            },
+            "medium": "minimal medium, section2.5; do not assume this is pure lactate without other organics",
+            "nitrogen": "constant N2 flow on anodic system"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "manufacturer": "AvCarb",
+            "grade": "G200",
+            "supplier": "Fuel Cell Store",
+            "precursor": "PAN graphite felt",
+            "dimensions": {
+              "value": [
+                7,
+                7,
+                0.65
+              ],
+              "unit": "cm"
+            },
+            "preparation": "10vol% aqueous isopropanol prewetting, distilled-water wash, placed wet; no oxidation or diamine"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "strain": "Shewanella putrefaciens NCTC10695 / DSM1818",
+            "inoculum_preparation": "culture protocol section2.5"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "membrane",
+          "status": "reported",
+          "facts": {
+            "grade": "Nafion NRE-212",
+            "supplier": "Fuel Cell Store",
+            "sheet_dimensions": {
+              "value": [
+                10,
+                10
+              ],
+              "unit": "cm"
+            },
+            "active_area": "not established by sheet size"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "mode": "batch with separate recirculation loops",
+            "anolyte_flow": {
+              "value": 6.25,
+              "unit": "mL/min"
+            },
+            "catholyte_flow": {
+              "value": 18.18,
+              "unit": "mL/min"
+            },
+            "load": {
+              "value": 659,
+              "unit": "Ohm"
+            },
+            "divider": "620Ohm +39Ohm in series; voltage recorded across39Ohm, reconstructed by Ohm law",
+            "reservoir_volumes": "not_reported"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "reported",
+          "facts": {
+            "chamber_volume": {
+              "value": 32,
+              "unit": "mL",
+              "basis": "approximate, per chamber"
+            },
+            "reservoir_volume": "not_reported"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "reported",
+          "facts": {
+            "medium": "PBS",
+            "pH": {
+              "value": 7.2,
+              "unit": "1"
+            },
+            "oxygen": "aerated with air"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "grade": "AvCarb G200",
+            "dimensions": {
+              "value": [
+                7,
+                7,
+                0.65
+              ],
+              "unit": "cm"
+            },
+            "preparation": "same wetting/wash as bare anode"
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp3–5, sections2.2,2.5,2.6; Figure5",
+          "document_id": "RF05-main"
+        }
+      ],
+      "gaps": [
+        "32mL per chamber does not include unspecified recirculation reservoirs.",
+        "Exact full minimal-medium recipe requires resolution: source omits numeric L-arginine/serine amounts.",
+        "No independent replicate count established in reviewed methods.",
+        "20±1C reference only; cooling series excluded."
+      ],
+      "document_sha256": "5dffef8baca7399ed3f04fc371524af16e2a4535df97823023009df94c1ee429"
+    },
+    {
+      "id": "RF08-reference",
+      "source_id": "RF08",
+      "document_id": "RF08-main",
+      "experimental_family_id": "Toray090_PTFE1_N117_H100",
+      "architecture": "dual_chamber_oxygen_sparged",
+      "substrate": "acetate",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "material": "glass H-cell",
+            "working_volume": {
+              "value": 100,
+              "unit": "mL"
+            },
+            "temperature": {
+              "value": 25,
+              "unit": "degC",
+              "basis": "approximately"
+            }
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "medium": "Coleville synthetic brine medium, cited recipe",
+            "sodium_acetate": {
+              "value": 10,
+              "unit": "mM"
+            },
+            "N2": "sparged; anaerobic",
+            "stirring": "continuous"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "material": "carbon paper",
+            "grade": "Toray090 with1wt% wetproofing",
+            "supplier": "Fuel Cell Store",
+            "projected_area": {
+              "value": 3.75,
+              "unit": "cm2"
+            },
+            "coating": "no catalyst"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "inoculum": "activated sludge, Calgary wastewater treatment plant",
+            "fraction": {
+              "value": 5,
+              "unit": "vol%",
+              "basis": "enriched sludge"
+            },
+            "replicates": {
+              "value": 2,
+              "unit": "reactors",
+              "basis": "authors state all experiments duplicate; no SD reconstructed"
+            }
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "membrane",
+          "status": "reported",
+          "facts": {
+            "grade": "Nafion117",
+            "active_area": "not_reported"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "collector": "Ti screen0.007inch, Fuel Cell Store; Ti wire Sigma-Aldrich",
+            "load": {
+              "value": 3300,
+              "unit": "Ohm"
+            },
+            "polarization_scan": {
+              "value": 0.02,
+              "unit": "uA/s"
+            },
+            "measurement_days": {
+              "value": [
+                0,
+                15,
+                30
+              ],
+              "unit": "day"
+            }
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "reported",
+          "facts": {
+            "working_volume": {
+              "value": 100,
+              "unit": "mL"
+            },
+            "material": "glass H-cell"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "reported",
+          "facts": {
+            "medium": "phosphate buffer, neutral pH",
+            "oxygen": "O2 gas bubbled; not ambient-air cathode"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "grade": "Toray090 with1wt% wetproofing",
+            "projected_area": {
+              "value": 3.75,
+              "unit": "cm2"
+            },
+            "coating": "no catalyst"
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp2–4 sections2.1–2.4; p5 section3.1/Figure1A",
+          "document_id": "RF08-main"
+        }
+      ],
+      "gaps": [
+        "CSBK minimal medium is cited elsewhere; recipe not yet acquired.",
+        "Temperature reported approximately25C.",
+        "Electrode spacing and membrane exposed area unresolved.",
+        "Day0/15/30 observations are from the same control reactors, not independent studies."
+      ],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14"
+    },
+    {
+      "id": "RF09-reference",
+      "source_id": "RF09",
+      "document_id": "RF09-main",
+      "experimental_family_id": "ELAT_N115_PtGDE_Geobacter_H200",
+      "architecture": "dual_chamber_aerated",
+      "substrate": "acetate",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "working_volume": {
+              "value": 200,
+              "unit": "mL"
+            },
+            "material": "glass",
+            "temperature": {
+              "value": 30,
+              "unit": "degC"
+            },
+            "mixing": {
+              "value": 120,
+              "unit": "rpm"
+            }
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "medium": "DSMZ826 Geobacter recipe in section2.1",
+            "sodium_acetate": {
+              "value": 10,
+              "unit": "mM"
+            },
+            "gas": "80%N2/20%CO2",
+            "feeding": "refresh on voltage drop"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "grade": "ELAT Hydrophilic",
+            "supplier": "FuelCellsEtc",
+            "dimensions": {
+              "value": [
+                2,
+                5
+              ],
+              "unit": "cm"
+            },
+            "preparation": "cold low-pressure nitrogen plasma, section2.3/ref19",
+            "additive": "none"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "strain": "Geobacter sulfurreducens DSMZ12127",
+            "inoculum": {
+              "value": 10,
+              "unit": "mL",
+              "basis": "OD1 per section2.1"
+            },
+            "replicates": {
+              "value": 3,
+              "unit": "reactors"
+            },
+            "medium_exchange": {
+              "value": 10,
+              "unit": "day",
+              "basis": "section2.3"
+            }
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "membrane",
+          "status": "reported",
+          "facts": {
+            "grade": "Nafion115",
+            "supplier": "Ionpower",
+            "active_area": "not_reported"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "collector": "Ti wires, contact areas epoxy sealed",
+            "load": {
+              "value": 1000,
+              "unit": "Ohm"
+            }
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "reported",
+          "facts": {
+            "working_volume": {
+              "value": 200,
+              "unit": "mL"
+            },
+            "material": "glass"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "reported",
+          "facts": {
+            "phosphate_buffer": {
+              "value": 200,
+              "unit": "mM"
+            },
+            "oxygen": "aquarium air pump; filtered gas"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "product": "Cloth GDE, FuelCellsEtc",
+            "dimensions": {
+              "value": [
+                2,
+                5
+              ],
+              "unit": "cm"
+            },
+            "exact_grade": "not established"
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "reported",
+          "facts": {
+            "catalyst": "commercial Pt/C60%",
+            "loading_reported": {
+              "value": 0.5,
+              "unit": "mg/cm2",
+              "basis": "author wording PtC60%; mass basis must be confirmed before mgPt conversion"
+            }
+          },
+          "locator": "XML sections2.1,2.3,2.5; sections3.3.2,3.4,Figures4A/6",
+          "document_id": "RF09-main"
+        }
+      ],
+      "gaps": [
+        "Control anode also received nitrogen plasma: commercial sheet alone is not the installed surface.",
+        "Inoculum text states10mL OD1 at590nm; later procedure mentions1mL OD1 at600nm for additive preparation. No silent transfer of additive procedure to control.",
+        "Geobacter growth recipe includes fumarate; verify whether and how it was removed for final fed medium.",
+        "Power reported per area; exact face convention and raw curves pending review."
+      ],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf"
+    },
+    {
+      "id": "RF12-reference",
+      "source_id": "RF12",
+      "document_id": "RF12-main",
+      "experimental_family_id": "graphite_paper_N117_Ptcloth_glucose_H300",
+      "architecture": "dual_chamber_aerated",
+      "substrate": "glucose",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "working_volume": {
+              "value": 300,
+              "unit": "mL"
+            },
+            "temperature": {
+              "value": 30,
+              "unit": "degC"
+            },
+            "stirring": "continuous"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "glucose_operating_feed": {
+              "value": 1,
+              "unit": "gCOD/L"
+            },
+            "glucose_acclimation_feed": {
+              "value": 10,
+              "unit": "gCOD/L"
+            },
+            "recipe": "NaH2PO4 3.67g/L; Na2HPO4 3.45g/L; KCl0.16g/L; NaHCO3 5g/L; trace1vol%,Table1"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "material": "plain graphite paper",
+            "dimensions": {
+              "value": [
+                3.8,
+                2.5
+              ],
+              "unit": "cm"
+            },
+            "manufacturer": "not_reported"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "inoculum": "anaerobic sludge",
+            "fraction": {
+              "value": 10,
+              "unit": "vol%",
+              "basis": "during acclimation"
+            }
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "membrane",
+          "status": "reported",
+          "facts": {
+            "grade": "Nafion117",
+            "manufacturer": "DuPont as article attribution"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "collector": "Ti wire + Circuit Works conductive silver epoxy",
+            "load": {
+              "value": 100,
+              "unit": "Ohm"
+            },
+            "logging_interval": {
+              "value": 2,
+              "unit": "min"
+            },
+            "open_circuit_before_scan": {
+              "value": 3,
+              "unit": "hour"
+            },
+            "each_scan_load_dwell": {
+              "value": 6,
+              "unit": "min"
+            }
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "reported",
+          "facts": {
+            "working_volume": {
+              "value": 300,
+              "unit": "mL"
+            },
+            "stirring": "continuous"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "reported",
+          "facts": {
+            "recipe": "NaH2PO4 3.67g/L;Na2HPO4 3.45g/L;KCl0.16g/L",
+            "oxygen": "continuous air sparging"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "material": "graphite cloth with Pt",
+            "dimensions": {
+              "value": [
+                3.8,
+                2.5
+              ],
+              "unit": "cm"
+            },
+            "manufacturer": "not_reported"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "reported",
+          "facts": {
+            "material": "Pt",
+            "loading": "not_reported"
+          },
+          "locator": "PDF pp3–4 section2.1; Table1; experimental passages only",
+          "document_id": "RF12-main"
+        }
+      ],
+      "gaps": [
+        "No electrode manufacturer/grade or Pt loading established.",
+        "Experimental curves must be distinguished from COMSOL curves before digitizing.",
+        "10gCOD/L is acclimation feed;1gCOD/L is stated operation; do not combine as same condition.",
+        "Independent replicate count and electrode spacing not established."
+      ],
+      "document_sha256": "cb0580f6e2670ad48dff3d801c6610ae8e6a7eae5d603e07328c19fe99fbf697"
+    },
+    {
+      "id": "RF13-reference",
+      "source_id": "RF13",
+      "document_id": "RF13-main",
+      "experimental_family_id": "CF_N115_Pt_air_230mLloop",
+      "architecture": "single_chamber_membrane_air_recirculated",
+      "substrate": "glucose",
+      "experimental_scope": "full_cell",
+      "reference_role_verified": true,
+      "training_eligible": false,
+      "review_scope": "bibliographic_reference_configuration_not_parameter_calibration",
+      "stages": [
+        {
+          "id": "anode_chamber",
+          "status": "reported",
+          "facts": {
+            "chamber_liquid_volume": {
+              "value": 16,
+              "unit": "mL"
+            },
+            "chamber_dimensions": {
+              "value": [
+                4,
+                1.27
+              ],
+              "unit": "cm",
+              "basis": "diameter × thickness"
+            },
+            "loop_total_volume": {
+              "value": 230,
+              "unit": "mL",
+              "basis": "chamber+lines+reservoir; includes chamber, do not add16again"
+            }
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "anolyte",
+          "status": "reported",
+          "facts": {
+            "glucose_loading": {
+              "value": 0.2,
+              "unit": "g/day"
+            },
+            "ionic_strength": {
+              "value": 0.37,
+              "unit": "mol/L",
+              "basis": "undiluted reference"
+            },
+            "pH": "near7 before EIS; not fixed everywhere"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "anode",
+          "status": "reported",
+          "facts": {
+            "material": "carbon felt",
+            "supplier": "Alfa Aesar",
+            "diameter": {
+              "value": 4,
+              "unit": "cm"
+            },
+            "thickness": {
+              "value": 1.27,
+              "unit": "cm"
+            },
+            "collector": "graphite rod"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "anode_catalyst",
+          "status": "not_applicable",
+          "facts": {
+            "added": false
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "biofilm",
+          "status": "reported",
+          "facts": {
+            "inoculum": "mature glucose/lactate-fed MFC, cited prior enrichment",
+            "independent_reactors": "not_reported"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "membrane",
+          "status": "reported",
+          "facts": {
+            "grade": "Nafion115",
+            "configuration": "anode and cathode close to membrane"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "external_circuit",
+          "status": "reported",
+          "facts": {
+            "mode": "recirculation",
+            "flow": {
+              "value": 7,
+              "unit": "mL/min",
+              "basis": "undiluted reference condition"
+            },
+            "collector": "perforated carbon foil and gold wire on cathode"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "cathode_chamber",
+          "status": "not_applicable",
+          "facts": {
+            "domain": "ambient-air-boundary",
+            "dedicated_liquid_volume": false
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "catholyte",
+          "status": "not_applicable",
+          "facts": {
+            "external_catholyte": "none described; membrane-air-cathode assembly",
+            "additional_liquid_volume": false,
+            "cathode_ionomer_hydration": "not_reported"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "cathode",
+          "status": "reported",
+          "facts": {
+            "material": "carbon cloth",
+            "dimensions": {
+              "value": [
+                2.54,
+                2.54
+              ],
+              "unit": "cm"
+            },
+            "supplier": "Fuel Cell Store"
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        },
+        {
+          "id": "cathode_catalyst",
+          "status": "reported",
+          "facts": {
+            "material": "Pt",
+            "loading": {
+              "value": 5,
+              "unit": "g/m2",
+              "basis": "metal Pt as reported"
+            }
+          },
+          "locator": "PDF pp3,6 sections2.1,2.4;100% medium,7mL/min reference",
+          "document_id": "RF13-main"
+        }
+      ],
+      "gaps": [
+        "Full inoculum enrichment and medium recipe referenced to earlier work.",
+        "Two EIS spectra are repeat measurements, not two independent reactors.",
+        "No generic load or exact medium composition established.",
+        "This reference is retained as a candidate; quantitative extraction of varied-flow/dilution series excluded."
+      ],
+      "document_sha256": "c5e9433080cebe35c449b6b3983d42f2bfeb56b97b6fe007045e825b363ca460"
+    }
+  ],
+  "reported_reference_results": [
+    {
+      "id": "RF02-UNM-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row UNM; Pmax column",
+      "value": 71.0,
+      "plus_minus": 36.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "UNM",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF02-TUB-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row TUB; Pmax column",
+      "value": 62.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "TUB",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF02-UFZ-cycle5-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0002; row UFZ; Pmax column",
+      "value": 43.0,
+      "plus_minus": 21.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 5,
+      "lab": "UFZ",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF02-UNM-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row UNM; Pmax column",
+      "value": 61.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "UNM",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF02-TUB-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row TUB; Pmax column",
+      "value": 58.0,
+      "plus_minus": 27.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "TUB",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF02-UFZ-cycle6-Pmax",
+      "source_id": "RF02",
+      "arm_id": "RF02-reference",
+      "document_id": "RF02-main",
+      "document_sha256": "a0c6c5914a28e6142399804e776364f9df124b5946ccd201fe68e15090e6f0c9",
+      "locator": "cssc202100294-tbl-0003; row UFZ; Pmax column",
+      "value": 38.0,
+      "plus_minus": 18.0,
+      "unit": "uW/cm2",
+      "area_basis": "cathode_exposed_geometric_2.9cm2",
+      "measurement_type": "published_median",
+      "uncertainty_type": "reported_expanded_uncertainty_k2_approx95percent_not_SD_or_SE",
+      "replicates": 3,
+      "cycle": 6,
+      "lab": "UFZ",
+      "independence_group": "RF02",
+      "training_eligible": false,
+      "review_status": "checked_against_JATS_table_and_methods_SI",
+      "extraction_method": "JATS_table_cell_parser_for_selected_reference_labs",
+      "transformations": []
+    },
+    {
+      "id": "RF08-A-cycle1-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle1",
+      "value": 0.0082,
+      "unit": "mW/m2",
+      "cycle": 1,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14"
+    },
+    {
+      "id": "RF08-A-cycle2-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle2",
+      "value": 6.72,
+      "unit": "mW/m2",
+      "cycle": 2,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14",
+      "figure_label_value": 6.719,
+      "figure_label_unit": "mW/m2",
+      "rounding_review": "Figure1A value6.719 rounds to prose6.72; preserve both; prose value used for stated precision"
+    },
+    {
+      "id": "RF08-A-cycle3-Pmax",
+      "source_id": "RF08",
+      "arm_id": "RF08-reference",
+      "document_id": "RF08-main",
+      "locator": "PDF p5 section3.1; Figure1A; cycle3",
+      "value": 0.0815,
+      "unit": "mW/m2",
+      "cycle": 3,
+      "independence_group": "RF08",
+      "measurement_type": "reported_peak",
+      "uncertainty_type": "not_reported_for_selected_value",
+      "replicates": 2,
+      "area_basis": "projected_electrode_area_3.75cm2_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "text_transcription_visually_checked_on_PDF_p5",
+      "extraction_method": "manual_transcription_not_digitization",
+      "transformations": [],
+      "document_sha256": "0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14"
+    },
+    {
+      "id": "RF09-control-peak_power_density",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.3.2;Figure4A;bare anode",
+      "value": 0.2,
+      "unit": "W/m2",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "exact_face_convention_pending",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf"
+    },
+    {
+      "id": "RF09-control-COD_removal_cycle2",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.4;Figure6A;bare anode",
+      "value": 37,
+      "unit": "%",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "reported_ratio",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf"
+    },
+    {
+      "id": "RF09-control-coulombic_efficiency_cycle2",
+      "source_id": "RF09",
+      "arm_id": "RF09-reference",
+      "document_id": "RF09-main",
+      "locator": "section3.4;Figure6B;bare anode",
+      "value": 14,
+      "unit": "%",
+      "measurement_type": "author_reported_control_value",
+      "uncertainty_type": "not_reported_in_selected_text",
+      "replicates": 3,
+      "independence_group": "RF09",
+      "area_basis": "reported_ratio",
+      "training_eligible": false,
+      "review_status": "contextual_text_review_figures_not_digitized",
+      "extraction_method": "manual_transcription_from_JATS_text",
+      "transformations": [],
+      "document_sha256": "94afd960b31519b90bb9dae08776dc33023cc583a2d6f2b5eef046f0783f54bf"
+    }
+  ],
+  "commercial_documents": [
+    {
+      "id": "CM01",
+      "title": "Chemours Product Bulletin P-12 N115 N117 N1110",
+      "url": "https://www.fuelcellearth.com/pdf/nafion-N115-N117-N1110.pdf",
+      "version": "C-10604 (2/16)",
+      "acquired_date": "2026-11-03",
+      "sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114",
+      "bytes": 70873,
+      "archive_path": null,
+      "license": "No public redistribution license identified; original kept privately",
+      "read_scope": "full PDF text; visual table/footnote review CM01/02/03",
+      "source_links": [
+        "RF01",
+        "RF06",
+        "RF07",
+        "RF08",
+        "RF09",
+        "RF10",
+        "RF11",
+        "RF12",
+        "RF13"
+      ],
+      "matching_status": "grade-level crosswalk, not proof of lot identity",
+      "limitations": [
+        "NRE212 is outside this bulletin.",
+        "Thickness/basisweight at23C50%RH; physical properties footnote2 measured onN115; conductivity footnote4 hot-water conditioning then DIwater25C.",
+        "Do not assign the bulletin conductivity as in-operando N117 resistance."
+      ],
+      "prices_acquired": false,
+      "solver_binding": false,
+      "existing_source_ids": [],
+      "acquisition": {
+        "url": "https://www.fuelcellearth.com/pdf/nafion-N115-N117-N1110.pdf",
+        "container": null
+      },
+      "original_filename": "CM01.pdf",
+      "local_acquisition_path": "documents/CM01.pdf",
+      "preservation_status": "original_supplier_url_and_hash_only_no_open_license"
+    },
+    {
+      "id": "CM02",
+      "title": "Torayca carbon paper manufacturer table",
+      "url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+      "version": "undated PDF snapshot, acquired2026-11-03",
+      "acquired_date": "2026-11-03",
+      "sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff",
+      "bytes": 223177,
+      "archive_path": null,
+      "license": "No public redistribution license identified; original kept privately",
+      "read_scope": "full PDF text; visual table/footnote review CM01/02/03",
+      "source_links": [
+        "RF08",
+        "RF17"
+      ],
+      "matching_status": "substrate-family only",
+      "limitations": [
+        "RF08 includes1wt%wetproofing; RF17 grade not specified; neither is an exact unmodified-sheet match.",
+        "Representative not guaranteed; pressure/method must be obtained for in-cell transfer."
+      ],
+      "prices_acquired": false,
+      "solver_binding": false,
+      "existing_source_ids": [
+        "S23"
+      ],
+      "acquisition": {
+        "url": "https://www.cf-composites.toray/products/electrode/pdf/carbon_paper.pdf",
+        "container": null
+      },
+      "original_filename": "CM02.pdf",
+      "local_acquisition_path": "documents/CM02.pdf",
+      "preservation_status": "original_supplier_url_and_hash_only_no_open_license"
+    },
+    {
+      "id": "CM03",
+      "title": "SGL SIGRACELL battery felts",
+      "url": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRACELL-Battery-Felts-EN.pdf",
+      "version": "TDS BF.01 04/2019",
+      "acquired_date": "2026-11-03",
+      "sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad",
+      "bytes": 76381,
+      "archive_path": null,
+      "license": "No public redistribution license identified; original kept privately",
+      "read_scope": "full PDF text; visual table/footnote review CM01/02/03",
+      "source_links": [
+        "RF01"
+      ],
+      "matching_status": "unresolved grade spelling",
+      "limitations": [
+        "Paper says GF6EA; sheet says GFA6EA. Do not alias without confirmation.",
+        "ASR specified at80%initial thickness; directions preserved; BET is not electroactive biofilm area."
+      ],
+      "prices_acquired": false,
+      "solver_binding": false,
+      "existing_source_ids": [
+        "S26"
+      ],
+      "acquisition": {
+        "url": "https://www.sglcarbon.com/pdf/SGL-Datasheet-SIGRACELL-Battery-Felts-EN.pdf",
+        "container": null
+      },
+      "original_filename": "CM03.pdf",
+      "local_acquisition_path": "documents/CM03.pdf",
+      "preservation_status": "original_supplier_url_and_hash_only_no_open_license"
+    },
+    {
+      "id": "CM04",
+      "title": "AvCarb soft graphite felt thermal applications",
+      "url": "https://www.fuelcellearth.com/wp-content/uploads/converted_files/pdf/4379-Soft-Graphite-Felt-SCREEN.pdf",
+      "version": "undated supplier-hosted manufacturer sheet",
+      "acquired_date": "2026-11-03",
+      "sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6",
+      "bytes": 246576,
+      "archive_path": null,
+      "license": "No public redistribution license identified; original kept privately",
+      "read_scope": "full PDF text; visual table/footnote review CM01/02/03",
+      "source_links": [
+        "RF05"
+      ],
+      "matching_status": "G200 nominal grade matches",
+      "limitations": [
+        "G200 is not proven identical to current G650A.",
+        "Thermal-application sheet lacks wet MFC conductivity and biofilm kinetics; no claim to complete electrochemical specification."
+      ],
+      "prices_acquired": false,
+      "solver_binding": false,
+      "existing_source_ids": [],
+      "acquisition": {
+        "url": "https://www.fuelcellearth.com/wp-content/uploads/converted_files/pdf/4379-Soft-Graphite-Felt-SCREEN.pdf",
+        "container": null
+      },
+      "original_filename": "CM04.pdf",
+      "local_acquisition_path": "documents/CM04.pdf",
+      "preservation_status": "original_supplier_url_and_hash_only_no_open_license"
+    },
+    {
+      "id": "CM05",
+      "title": "ELAT gas diffusion layers",
+      "url": "https://www.fuelcellstore.com/spec-sheets/elat-gas-diffusion-layer-spec-sheet.pdf",
+      "version": "undated supplier PDF",
+      "acquired_date": "2026-11-03",
+      "sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f",
+      "bytes": 334572,
+      "archive_path": null,
+      "license": "No public redistribution license identified; original kept privately",
+      "read_scope": "full PDF text; visual table/footnote review CM01/02/03",
+      "source_links": [
+        "RF09"
+      ],
+      "matching_status": "Hydrophilic family, processing differs",
+      "limitations": [
+        "Source brands NuVant while article says FuelCellsEtc; exact historical version/lot pending.",
+        "Nitrogen plasma changes installed surface; do not fill wet electrochemical properties from untreated cloth.",
+        "Electrical Conductivity row uses mOhmcm2 andTBD; it supplies no numeric conductivity."
+      ],
+      "prices_acquired": false,
+      "solver_binding": false,
+      "existing_source_ids": [],
+      "acquisition": {
+        "url": "https://www.fuelcellstore.com/spec-sheets/elat-gas-diffusion-layer-spec-sheet.pdf",
+        "container": null
+      },
+      "original_filename": "CM05.pdf",
+      "local_acquisition_path": "documents/CM05.pdf",
+      "preservation_status": "original_supplier_url_and_hash_only_no_open_license"
+    }
+  ],
+  "commercial_specs": [
+    {
+      "id": "CM01-N117-t",
+      "source_id": "CM01",
+      "grade": "N117",
+      "quantity": "thickness",
+      "value": 183,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p2 Table1,grade row,footnote1",
+      "conditions": {
+        "temperature_C": 23,
+        "humidity_RH_percent": 50,
+        "hydration": "conditioned"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114"
+    },
+    {
+      "id": "CM01-N115-t",
+      "source_id": "CM01",
+      "grade": "N115",
+      "quantity": "thickness",
+      "value": 127,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p2 Table1,grade row,footnote1",
+      "conditions": {
+        "temperature_C": 23,
+        "humidity_RH_percent": 50,
+        "hydration": "conditioned"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "5239d820aa675cab4ed80e2154c16ee3f01f909957cc08d07a0e24dcd802d114"
+    },
+    {
+      "id": "CM02-090-t",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "thickness",
+      "value": 0.28,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 TGP-H-090 column",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "CM02-090-rhoTP",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "electronic_resistivity",
+      "value": 80,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Thickness direction row",
+      "conditions": {
+        "direction": "through_plane",
+        "pressure_Pa": null,
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "CM02-090-rhoIP",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "electronic_resistivity",
+      "value": 5.6,
+      "unit": "mOhm*cm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Planar direction row",
+      "conditions": {
+        "direction": "in_plane",
+        "pressure_Pa": null,
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "CM02-090-porosity",
+      "source_id": "CM02",
+      "grade": "TGP-H-090",
+      "quantity": "porosity",
+      "value": 78,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Porosity row",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "13c657dd4ca41f492d6f1f306e79b239bdf364aa1cb1805bea70fbe592e5ecff"
+    },
+    {
+      "id": "CM03-GFA6-t",
+      "source_id": "CM03",
+      "grade": "GFA6EA",
+      "quantity": "thickness",
+      "value": 6,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 GFA6EA column nominal thickness",
+      "conditions": {
+        "thermal_activation": false
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad"
+    },
+    {
+      "id": "CM03-GFA6-ASR",
+      "source_id": "CM03",
+      "grade": "GFA6EA",
+      "quantity": "electronic_ASR",
+      "value": 0.45,
+      "unit": "Ohm*cm2",
+      "relation": "lt",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 area-specific resistance row;footnote*",
+      "conditions": {
+        "compression_fraction_of_initial_thickness": 0.8,
+        "direction": "through_felt_as_sheet_symbol",
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "a888b0d8aba38899430172794eccc37f49a05f704fbc29e9feab5b257e868aad"
+    },
+    {
+      "id": "CM04-G200-t",
+      "source_id": "CM04",
+      "grade": "G200",
+      "quantity": "thickness",
+      "value": 6.5,
+      "unit": "mm",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Typical material characteristics",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6"
+    },
+    {
+      "id": "CM04-G200-mass",
+      "source_id": "CM04",
+      "grade": "G200",
+      "quantity": "areal_mass",
+      "value": 480,
+      "unit": "g/m2",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 G200 areal weight",
+      "conditions": {
+        "hydration": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "0dc67af47f1eb8780579aa225a58d3ed8bc0ada75e165091900cf15ef2ec14d6"
+    },
+    {
+      "id": "CM05-Hydro-t",
+      "source_id": "CM05",
+      "grade": "ELAT Hydrophilic",
+      "quantity": "thickness",
+      "value": 406,
+      "unit": "um",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Hydrophilic column",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f"
+    },
+    {
+      "id": "CM05-Hydro-p",
+      "source_id": "CM05",
+      "grade": "ELAT Hydrophilic",
+      "quantity": "porosity",
+      "value": 80,
+      "unit": "%",
+      "relation": "eq",
+      "value_role": "supplier_representative_specification_not_cell_measurement",
+      "locator": "p1 Hydrophilic porosity row",
+      "conditions": {
+        "compression": "not_reported"
+      },
+      "automatic_solver_binding": false,
+      "document_sha256": "f5d65a3fab326af8b3895311562ff05abb10560795fedbfcd7b72af857e2357f"
+    }
+  ],
+  "reading_inventory": [
+    {
+      "source_id": "RF01",
+      "read": "text_full_pending",
+      "scope": "112 individual cells; stacks are excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF02",
+      "read": "baseline_methods_and_selected_results_reviewed",
+      "scope": "Unmodified graphite/AC-PTFE reference protocol; RSE from cycle 4 excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF03",
+      "read": "text_full_pending",
+      "scope": "Initial 28 reactors only; later reseeding phases excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF04",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "CF only, before any acid, heat or coating treatment",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF05",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Room-temperature control only; cathode component tests and cooling series excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF06",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Conventional Pt/C only; no Mn or AC/CB comparator observations",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF07",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Unmodified CF only; Pt counter electrode in CV is not the MFC cathode",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF08",
+      "read": "baseline_methods_and_selected_results_reviewed",
+      "scope": "Both electrodes uncoated; abiotic runs excluded from biotic outcomes",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF09",
+      "read": "baseline_methods_and_selected_results_reviewed",
+      "scope": "Commercial ELAT with the stated nitrogen-plasma preparation, no deposited additives",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF10",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Conventional graphite granules/Nafion/Pt only",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF11",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "No permanganate, no biocathode and no Ion Jelly; mapping to results remains pending",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF12",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Experimental measurements only; COMSOL predictions and fitted constants excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF13",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "0.37 M, 7 mL/min only; diluted/flow variation experiments excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF14",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Day 4 air-cathode reference; no effluent feed or later operation",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF15",
+      "read": "text_full_pending",
+      "scope": "0.5 mgPt/cm2; other catalysts, binder and loading arms excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF16",
+      "read": "text_full_pending",
+      "scope": "No ammonia treatment; choose one declared original buffer condition after full text",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    },
+    {
+      "source_id": "RF17",
+      "read": "baseline_methods_reviewed_with_gaps",
+      "scope": "Bottle reactor, 50 mM PBS, glucose, untreated paper only; brushes and 200 mM condition excluded",
+      "figures_fully_reviewed": false,
+      "all_references_read": false
+    }
+  ],
+  "limits": [
+    "Seventeen purposefully selected primary candidates are not a systematic global prevalence sample.",
+    "Complete bytes acquired do not mean complete visual review of every figure or reference.",
+    "No new curves digitized; no raw replicate time series acquired.",
+    "Six configurations curated across eleven stages; none accepted for calibration.",
+    "Cross-paper assembly equivalence not established.",
+    "Original linked conversations/original project files retain earlier inventory limits; this round reuses verified context, not a new claim to reread everything.",
+    "RF04/RF07/RF09 JATS full text contains external figure references; corresponding complete publisher PDFs returned403. Main-article figure assets remain pending, distinct from text availability."
+  ],
+  "next_increment": [
+    "Recover missing main-article figures or complete publisher PDFs for RF04/RF07/RF09 before curve digitization or figure-based review.",
+    "Digitize only RF02 UNM/TUB/UFZ individual reference curves from SI with axis calibration and uncertainty; keep CNR low-output results.",
+    "Recover RF01,RF03,RF15,RF16 full manuscripts through lawful author/institution repositories.",
+    "Resolve exact product/preparation and medium recipes; follow cited original protocols, then identify repeated equivalent references in additional primary articles."
+  ],
+  "source_preservation": "CC BY originals: one JATS document in git, eleven other main documents and three supplements in source archive. RF17 and five manufacturer sheets: original URLs, hashes and extracted factual specifications, without rehosting complete copies.",
+  "reading_sample_review": [
+    {
+      "document": "CM01",
+      "locator": "p2, Table1 and footnotes1/2/4",
+      "method": "PDF rendered and visually inspected",
+      "finding": "N115 test basis; hot-water conditioning, no in-operando N117 assignment"
+    },
+    {
+      "document": "CM02",
+      "locator": "p1 TGP-H-090 column",
+      "method": "PDF rendered and visually inspected",
+      "finding": "mOhmcm is resistivity dimension; directional values retained; not guaranteed"
+    },
+    {
+      "document": "CM03",
+      "locator": "p1 GFA6EA and footnote*",
+      "method": "PDF rendered and visually inspected",
+      "finding": "ASR at80%initialthickness, gradeGF6EA alias not proven"
+    },
+    {
+      "document": "RF08-main",
+      "locator": "printed p5 Figure1A and section3.1",
+      "method": "PDF rendered and visually inspected",
+      "finding": "ControlA three peakvalues preserved; 6.719 label rounds to6.72 in prose; no axisdigitization"
+    },
+    {
+      "document": "RF02-SI",
+      "locator": "Section8TablesS1/S2;Section9EqS2–S5",
+      "method": "text and schedule legends read; color grid not digitized",
+      "finding": "load-change day and reseeding divergence; MAD absolute bars absent in printed equation, no recomputation"
+    }
+  ]
+}

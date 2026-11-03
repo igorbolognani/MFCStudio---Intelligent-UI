@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial: **2 de novembro de 2026**. Código científico conferido: `mfc-kernel/0.2.0`; base de evidências: `mfc-corpus/0.4.0`. Os registros de publicação e auditoria reunidos aqui são de **25 e 26 de outubro de 2026**. Esta rodada acrescenta a curadoria S02 e a atribuição das etapas. Continua sem calibração experimental; a aplicação em produção foi confirmada em 2 de novembro de 2026, com relatórios específicos desta rodada.
+Revisão editorial: **3 de novembro de 2026**. Código científico: `mfc-kernel/0.2.0`; base publicada: `mfc-corpus/0.4.0`. A integração 0.4.0 foi confirmada em produção em 2 de novembro. A rodada de 3 de novembro acrescenta aquisição e curadoria de **braços convencionais**, em `research/reference-families-v0.1/`, descrita na seção 12.6. Esse lote ainda não foi promovido ao banco publicado nem à calibração. Os valores padrão do núcleo continuam hipóteses; não determinam a família que será escolhida a partir da literatura.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -815,6 +815,53 @@ Esses dados ajudam a estudar resposta e repetibilidade de uma família. Não con
 
 Preservar uma contradição não inutiliza automaticamente o estudo. Indica que certas relações podem ser usadas como contexto e que determinados números ainda não devem sustentar uma conversão ou calibração.
 
+### 12.6 Referências convencionais: aquisição de 3 de novembro
+
+O ponto de partida passa a ser a **célula convencional de referência**, descrita como um conjunto. Um artigo que desenvolve um material novo pode ser útil porque contém esse conjunto; nesta coleta, seus resultados de intervenção não são extraídos. O texto integral permanece preservado para permitir conferir a origem e o contexto do braço convencional.
+
+O lote reúne **17 artigos primários candidatos**, com **13 textos principais integrais** (nove PDFs e quatro JATS XML), **três suplementos** e **cinco documentos técnicos comerciais** recuperados. Quatro textos principais continuam pendentes: RF01, RF03, RF15 e RF16. Bloqueios de download e tentativas alternativas estão registrados; um registro bibliográfico ou trecho indexado não é contado como texto integral adquirido. RF02 foi obtido em JATS XML completo, com figuras originais em contêiner associado, e suplemento em PDF. RF04/RF07/RF09 têm o texto XML integral, mas suas figuras principais são referências externas ainda pendentes; os PDFs editoriais retornaram HTTP403. Esses três textos não são contados como artigos com todas as figuras recuperadas. RF05 é uma cópia do PDF editorial depositada no LAPSE, com capa do repositório. RF10 é o PDF v2. As identidades bibliográficas e os hashes individuais ficam no [catálogo do lote](../research/reference-families-v0.1/catalog.json).
+
+**O que foi lido:** os métodos pertinentes às referências e passagens selecionadas dos resultados dos 13 textos. Também foram lidas as seções de protocolo, instrumentos e estatística do suplemento RF02 e os textos/legendas de montagem dos suplementos RF04/RF07. A leitura não cobre integralmente cada figura, referência citada ou curva. A amostra de conferência visual incluiu a página 5 de RF08 e as tabelas/notas das fichas Chemours, Toray e SGL. Curvas das referências foram localizadas, mas nenhuma curva nova foi digitalizada.
+
+Seis configurações receberam uma extração coordenada nas onze etapas. Isso inclui marcar a ausência de um catalisador adicionado, um meio compartilhado e a inexistência de uma segunda câmara líquida. **Ter uma ficha organizada não significa ter uma referência já completa para modelagem:** os bloqueios continuam anexos a cada configuração.
+
+| Referência | Conjunto convencional recuperado | Condições que o identificam | Lacuna principal |
+|---|---|---|---|
+| [RF02, Santoro et al., 2021](https://doi.org/10.1002/cssc.202100294) | Placa CP-2200; cátodo Norit SX Plus/PTFE em malha; sem membrana | Monocâmara nominal 125 mL, 25 °C, acetato e esgoto local; triplicatas em cinco laboratórios | Inóculo varia; carga mudou em dias diferentes. Há divergência entre g/L e mM de acetato. |
+| [RF05, Griškonis et al., 2020](https://doi.org/10.3390/pr8080939) | AvCarb G200 no ânodo e cátodo; Nafion NRE-212 | Duas câmaras de aproximadamente 32 mL com recirculação; lactato; *S. putrefaciens*; 659 Ω | Volumes dos reservatórios e dois ingredientes da receita precisam ser resolvidos. |
+| [RF08, Nandy et al., 2019](https://doi.org/10.3390/en12061034) | Célula A: papel Toray 090 impermeabilizado com 1% de PTFE nos dois eletrodos, sem catalisadores; Nafion 117 | Duas câmaras úteis de 100 mL; acetato 10 mM; lodo enriquecido; O₂ borbulhado; 3.300 Ω | Receita CSBK citada em outra fonte, distância e área exposta da membrana. |
+| [RF09, Ouaknin Hirsch et al., 2024](https://doi.org/10.3390/microorganisms12030604) | ELAT Hydrophilic no ânodo; Nafion 115; cátodo comercial de tecido com Pt/C | Duas câmaras de 200 mL; *G. sulfurreducens* DSMZ12127; acetato; 30 °C; 1.000 Ω; triplicatas | O controle recebeu plasma de N₂; a preparação e a composição final do meio precisam acompanhar o produto. |
+| [RF12, Kamperidis et al., 2022](https://doi.org/10.3390/en15041412) | Papel de grafite, Nafion 117, tecido com Pt | Duas câmaras de 300 mL; glicose 1 g DQO/L na operação; 30 °C; 100 Ω | Fabricante, grau, carga de Pt e réplicas. Extrair somente resultados experimentais, distinguindo os calculados. |
+| [RF13, Aaron et al., 2010](https://doi.org/10.3390/en3040592) | Feltro Alfa Aesar, Nafion 115, tecido comercial com Pt, cátodo ao ar | Câmara de 16 mL dentro de circuito líquido total de 230 mL; referência não diluída, 7 mL/min | Receita/inóculo dependem de fonte anterior; duas medidas de EIS não são dois reatores. |
+
+O catálogo mantém outros sete textos completos como triagem com lacunas, sem promovê-los a configurações completas. Em RF07, por exemplo, o material do cátodo da MFC não aparece no método inspecionado nem foi resolvido pelo suplemento. O eletrodo de platina usado como contraeletrodo de voltametria é outro equipamento e não pode preencher essa ausência. RF17 fornece um controle de papel de carbono em reator tipo frasco; a escova desenvolvida no artigo fica fora da extração. RF10 conserva o controle Nafion/Pt em efluente de criação animal numa família própria, sem reuni-lo a meios definidos de acetato.
+
+#### O que os números extraídos significam
+
+Foram preservados **199 fatos de configuração** — materiais, dimensões, condições e estados de aplicabilidade — e **12 resultados quantitativos dos braços de referência**. São seis valores de potência máxima de RF02, três de RF08 e três resultados do controle RF09. Não são 199 propriedades independentes nem 12 experimentos independentes. As conversões de unidade são reproduzidas por `scripts/audit-reference-families.py`; os valores originais e a base de comparação permanecem no catálogo.
+
+Em RF02, cada laboratório operou três reatores. Os ciclos 5 e 6 são medições repetidas desses reatores. Extraíram-se UNM, TUB e UFZ; os resultados agrupados que incluem RSE após a substituição de inóculo não entraram nesse lote. Os reatores CNR de baixa produção continuam registrados; ausência de uma curva de potência não foi transformada em potência zero. A dispersão publicada é identificada como incerteza expandida, aproximadamente 95%, com fator de cobertura 2, e não como desvio padrão ou erro padrão.
+
+Um exemplo de conversão: 61 ± 18 µW/cm², reportados para UNM no ciclo 6, tornam-se **0,61 ± 0,18 W/m²**. O fator é 0,01 porque 1 µW corresponde a 10⁻⁶ W e 1 cm² a 10⁻⁴ m². A área de normalização é a face catódica exposta de 2,9 cm². Isso não cria um novo reator, não reduz a incerteza e não demonstra desempenho em outra arquitetura.
+
+Em RF08, o controle A apresenta potências de pico diferentes nos três momentos de leitura. Foram preservados os três valores, inclusive os pequenos, em vez de reter apenas o pico mais alto. A legenda de Figura 1A mostra 6,719 mW/m²; o corpo arredonda para 6,72 mW/m². Essa diferença é compatível com arredondamento e foi registrada na revisão. Nenhum efeito de revestimento foi extraído.
+
+#### Como as fichas comerciais ajudam a modelar
+
+As cinco fichas/documentos técnicos cobrem Nafion N115/N117, papéis Toray, feltros SIGRACELL, AvCarb G200 e tecido ELAT. Foram transcritas **12 especificações**, com condicionamento e localizador. Os vínculos distinguem mesmo grau nominal, mesma família e correspondência ainda não demonstrada. O documento Toray e o SGL reutilizam as identidades comerciais S23/S26 do acervo; uma nova aquisição é uma versão documental, não um novo experimento.
+
+Uma ficha pode informar a espessura e a resistividade de um papel. Para calcular uma resistência eletrônica idealizada, usaríamos R = ρL/A: R em Ω, resistividade ρ em Ω·m, comprimento do percurso L em m e seção condutora A em m². Mas o papel conduz de forma diferente no plano e através da espessura; o contato com o coletor também contribui. Sem direção, pressão e geometria do percurso, colocar a resistividade numa conta não determina a perda da montagem. Essa relação já é discutida no núcleo, mas os valores deste lote não foram ligados automaticamente a ele.
+
+A ficha Chemours fornece espessuras de 127 e 183 µm para N115 e N117 condicionadas a 23 °C e 50% de umidade relativa. Outras propriedades da tabela foram medidas em N115. A condutividade indicada usa condicionamento em água quente e ensaio em água deionizada; não fornece diretamente a resistência da membrana em esgoto tamponado. O documento AvCarb identifica G200 e sua espessura nominal, mas é voltado a aplicações térmicas e não contém uma caracterização eletroquímica completa em meio de MFC. **Comercialização facilita a rastreabilidade; não garante que todos os parâmetros necessários estejam disponíveis.**
+
+#### Critério para reunir artigos e próximo lote
+
+Os seis registros contêm três referências alimentadas com acetato ou acetato/esgoto, duas com glicose e uma com lactato. Essa contagem vale apenas para a seleção dirigida que foi curada. Não estima qual substrato domina a literatura e não escolhe o vencedor por maioria. Ainda não foi demonstrada equivalência integral de montagem/operação entre dois artigos desse lote.
+
+A próxima aquisição deve seguir as receitas e protocolos citados e localizar outros artigos com os mesmos produtos e preparação. Em paralelo, as curvas individuais do suplemento RF02 permitem preparar uma extração de referência com identificação de reator, calibração dos eixos e incerteza de digitalização. A decisão de família fica aberta até conferir essas condições e a repetição entre estudos. Calibração, correção estatística e avaliação preditiva continuam etapas posteriores.
+
+O ponto de retomada contém catálogo, tentativas de aquisição, documento XML licenciado, produto tratado e verificadores em `research/reference-families-v0.1/` e `scripts/*reference*`. Onze outros documentos principais CC BY e os três suplementos integram um pacote de fontes abertas. RF17 e os cinco PDFs comerciais foram consultados e tiveram seus bytes conferidos, mas são mantidos como links originais, hashes e fatos extraídos, sem republicação integral. O banco de produção permanece em 0.4.0. **Este lote está persistido como curadoria científica; ainda não foi enviado ao banco do aplicativo e não altera previsões.**
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
@@ -909,14 +956,16 @@ Por exemplo, a posição de um coletor pode alterar o percurso eletrônico. Para
 <a id="continuidade"></a>
 ## 15. Próximas decisões científicas
 
-O foco permanece na base necessária à seleção de materiais comerciais. Uma sequência coerente para aprofundar o trabalho é:
+**Direção vigente, definida em 3 de novembro:** buscar exclusivamente os braços convencionais dos artigos. A escolha do substrato, dos materiais e da montagem será sustentada pelas referências recuperadas. Não existe preferência fechada por glicose, acetato, platina ou membrana. A disponibilidade de uma ficha ajuda a identificar e caracterizar o componente; compra, preço e logística ficam adiados nesta fase. O histórico anterior de comparação de intervenções permanece documentado, mas não orienta a extração nova.
 
-1. **Conseguir comparações de produtos e montagens equivalentes.** Priorizar estudos em que variante, preparação, geometria e condições estejam descritas junto com curvas e réplicas. Registrar quando vários fatores mudam simultaneamente.
-2. **Fechar as bases que bloqueiam contas.** Resolver área S18/S29, bases de massa e unidades ambíguas; manter o texto original e a justificativa de qualquer correção.
+Uma sequência coerente para aprofundar esse trabalho é:
+
+1. **Completar referências convencionais.** Recuperar os quatro textos integrais pendentes do lote, os protocolos citados e as receitas necessárias. Extrair apenas o braço de referência; ler os métodos que o descrevem mesmo quando aparecem numa seção comum do artigo.
+2. **Encontrar repetição entre artigos.** Procurar produto, preparação, geometria, meio, inóculo e operação equivalentes. Mesmo nome de material ou campo ausente em dois artigos não demonstra igualdade. Resolver bases de área, massa e unidades sem substituições silenciosas.
 3. **Relacionar caracterização às condições reais.** Procurar condução direcional, compressão, hidratação, contato, preparação e transporte do componente final. A coleta deve continuar conectada às onze etapas.
 4. **Separar o que pode ser identificado.** Medir ou obter na literatura as parcelas independentes antes de ajustar parâmetros efetivos da célula inteira. Verificar compensações e sensibilidade.
 5. **Reservar uma família externa comparável.** Somente então avaliar erro, conservação, incerteza e domínio para configurações que não participaram do ajuste.
-6. **Completar a comparação econômica.** Confirmar variante, quantidade, entrega, custo total e aproveitamento para a montagem, além do preço da folha.
+6. **Retomar custo quando fizer parte da decisão.** As ofertas antigas continuam como fotografias datadas; esta rodada não atualiza preços nem usa preço para escolher a referência científica.
 
 Esse é um roteiro de investigação. As relações ainda não sustentadas continuam hipóteses ou registros. Não é uma declaração de que novos módulos, modelos de membrana ou transportes espaciais tenham sido implementados.
 
