@@ -22,5 +22,11 @@
     "source": "X011",
     "issue": "A receita impressa no §2.1 lista KCl em 13 mg, 0,13 mg e 0,26 g para PBS 5, 50 e 100 mmol/L, respectivamente.",
     "decision": "Preservar a concentração nominal de PBS e a condutividade publicada. Confirmar o KCl a 50 mmol/L antes de reconstruir a composição iônica."
+  },
+  {
+    "id": "EXQ005",
+    "source": "X012",
+    "issue": "O pico de potência do controle foi publicado como 30,7 mW/m³ na Fig. 5B. O método relata volume de trabalho de 200 cm³ e adição de 70 mL, sem fixar o denominador da curva no trecho consultado.",
+    "decision": "Preservar o pico volumétrico nesta ocorrência. Extrair para comparação apenas a tensão terminal de 67 mV a 1000 Ω até esclarecer a base da potência."
   }
 ]

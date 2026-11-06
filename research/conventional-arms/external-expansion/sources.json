@@ -272,5 +272,28 @@
       "X011-AC": {},
       "X011-Pt": {}
     }
+  },
+  {
+    "source": "X012",
+    "doi": "10.1039/c2cp40873b",
+    "title": "Enhanced electricity production from microbial fuel cells with plasma-modified carbon paper anode",
+    "authors": "Y.-R. He, X. Xiao, W.-W. Li, G.-P. Sheng, F.-F. Yan, H.-Q. Yu, H. Yuan e L.-J. Wu",
+    "year": 2012,
+    "route": "coverage_multilingual_reference_chaining",
+    "reading_scope": "full_methods_web",
+    "methods_location": "§§2.1–2.3, Fig. 1: controle dose zero, montagem a ar e bateladas",
+    "arm_outcome_location": "§3.3, Fig. 5A–B: tensão e potência do controle de papel sem implantação",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "publisher_layout_indexed_web",
+      "url": "https://www.researchgate.net/publication/225374746_Enhanced_electricity_production_from_microbial_fuel_cells_with_plasma-modified_carbon_paper_anode",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "pmid": "22699925",
+    "comparison": {
+      "X012-paper": {}
+    }
   }
 ]

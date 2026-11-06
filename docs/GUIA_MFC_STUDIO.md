@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.8 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
+Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.9 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -936,6 +936,37 @@ python3 scripts/audit-external-arms.py --check
 ```
 
 As consultas reutilizam páginas em cache e registram quais resultados foram limitados. Para conferir também os arquivos originais baixados, use `--cache "$cache"` na auditoria. Os arquivos desta rodada complementam o registro anterior com identificadores estáveis. A triagem manual e os controles revisados ficam separados da fila de descoberta.
+
+### 12.9 Escala da busca e confirmação por família
+
+Uma contagem exata exige delimitar bases, data, tipo de publicação e critérios de elegibilidade. A combinação procurada pertence ao braço experimental. A presença de termos na mesma página ou seção pode juntar o controle e a intervenção, o contraeletrodo de uma medição auxiliar ou um material citado na discussão. A base de referências verificadas é um mínimo demonstrável. As contagens de índice medem o universo recuperável por cada consulta.
+
+O ciclo 4 paginou 5.003 registros da busca de MFC em título ou resumo no Europe PMC. O OpenAlex informou 16.611 resultados de uma consulta geral de título, resumo e palavras-chave filtrada por artigo. As consultas por intervalo de anos usaram paginação por número de página para recuperar resultados além da primeira página, dentro do limite registrado. O ciclo 5 executou 18 consultas em métodos e corpo do Europe PMC, mais seis consultas ao Crossref. O Crossref retornou parte das filas priorizadas, incluindo respostas 429. Os dois ciclos acrescentaram 9.594 retornos brutos. Os cinco ciclos juntos registraram 12.770 retornos e 6.629 registros deduplicados pelos identificadores conhecidos fora dos 972 originais. Isso amplia a fila anterior em 5.337 registros. [Manifesto de busca](../research/conventional-arms/external-expansion/coverage/manifest.json) · [Fila acumulada](../research/conventional-arms/external-expansion/coverage/register.psv.gz)
+
+| Família | Termos de ânodo, doador e cátodo nos métodos do Europe PMC | Desses, no lote original de 972 | Artigos confirmados em todas as rotas |
+|---|---:|---:|---:|
+| F1 | 59 | 53 | 6 |
+| F2 | 24 | 24 | 7 |
+| F3 | 8 | 8 | 10 |
+| F4 | 12 | 11 | 10 |
+| F5 | 5 | 5 | 5 |
+| F6 | 16 | 14 | 4 |
+
+As duas colunas de consulta medem coocorrências e permitem sobreposição entre famílias. A última coluna conta referências verificadas e reúne vias que a pesquisa em métodos do Europe PMC não cobre. A diferença em F3 mostra por que o retorno de uma única base não funciona como teto para a família.
+
+O lote documental de 180 registros novos ou ainda sem texto recuperou 47 corpos legíveis segundo o filtro automático. Houve 133 registros sem corpo validado nessa passagem. Uma mesma referência pode ter várias tentativas, e 104 requisições retornaram HTTP 403. Os arquivos incluem revisões, preprints e textos que ainda precisam de validação de identidade. A verificação de locais abertos por DOI encontrou três rotas alternativas. Eram dois registros de correção e uma nota de retratação. A triagem individual acrescentou 15 decisões, incluindo exclusões por uso de Pt como fio, papel no cátodo e alimentação contínua. Em F5, o suplemento oficial de Li et al. trouxe a caracterização EDS. O protocolo de operação segue pendente no artigo principal. [Aquisição](../research/conventional-arms/external-expansion/coverage/acquisition.psv) · [Triagem](../research/conventional-arms/external-expansion/screening.psv)
+
+X012 acrescenta um controle F2 de uma linhagem da USTC. O braço de papel sem implantação chegou a 67 mV sob 1 kΩ. O pico de potência de 30,7 mW/m³ fica registrado na ocorrência de qualidade. O método declara 200 cm³ de volume de trabalho e 70 mL de meio adicionado. O denominador da potência precisa ser confirmado antes de convertê-la ou compará-la. O acervo passou de 37 a 38 artigos distintos e o registro de observações contém 22 valores. Para F6, o texto e o esquema de Jin et al. confirmam acetato, reposição, feltro anódico, duas câmaras com membrana e ferricianeto. O suporte catódico segue sem identificação, por isso esse artigo permanece pendente. [He et al.](https://doi.org/10.1039/c2cp40873b) · [Jin et al.](https://doi.org/10.1088/1755-1315/435/1/012036) · [Auditoria](../research/conventional-arms/external-expansion/audit.json)
+
+```sh
+cache=/caminho/privado/mfc-externo
+for ciclo in 4 5; do
+  python3 scripts/search-external-arms.py "$cache" --cycle "$ciclo"
+done
+python3 scripts/search-external-arms.py "$cache" --export-register "$cache/coverage-register.psv.gz" --include-expanded
+cmp "$cache/coverage-register.psv.gz" research/conventional-arms/external-expansion/coverage/register.psv.gz
+python3 scripts/audit-external-arms.py --check --cache "$cache"
+```
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

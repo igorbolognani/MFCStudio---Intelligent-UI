@@ -64,6 +64,16 @@
       "bibliographic_target_met": [
         "F3"
       ]
+    },
+    {
+      "step": "censo_de_indices_e_nova_triagem",
+      "additional_raw_returns": 9594,
+      "cumulative_raw_returns": 12770,
+      "cumulative_distinct_metadata_records": 6629,
+      "new_sources": [
+        "X012"
+      ],
+      "total_confirmed_unique_articles": 38
     }
   ],
   "next": [
@@ -72,9 +82,10 @@
       "sources": [
         "10.3390/coatings13040790",
         "10.3390/coatings15030356",
-        "10.3390/coatings16060677"
+        "10.3390/coatings16060677",
+        "10.1088/1755-1315/435/1/012036"
       ],
-      "check": "Resolver doador, espécie química do católito e reposição, respectivamente, usando protocolo depositado ou correção. Continuar nas referências dos estudos em chinês sobre feltro e ferricianeto."
+      "check": "Resolver doador, espécie química do católito e reposição, respectivamente, usando protocolo depositado ou correção. Continuar nas referências dos estudos em chinês sobre feltro e ferricianeto. No artigo de Jin et al., a Fig. 1 confirma a membrana e a geometria de duas câmaras. Identificar o material do cátodo e resolver a concentração efetiva e os volumes."
     },
     {
       "family": "F5",
@@ -87,9 +98,10 @@
     {
       "family": "F2",
       "sources": [
-        "10.1021/es050316c"
+        "10.1021/es050316c",
+        "10.1039/c2cp40873b"
       ],
-      "check": "Recuperar a montagem do comparador com papel, fonte do acetato e o ensaio sob carga. Seguir referências e citações de X006 fora da linhagem PSU."
+      "check": "Recuperar a montagem do comparador com papel, fonte do acetato e o ensaio sob carga. Seguir referências e citações de X006 fora da linhagem PSU. X012 já foi admitido. Confirmar o denominador da potência volumétrica antes de compará-la com outros controles."
     },
     {
       "family": "F3",
@@ -124,8 +136,11 @@
     "candidate-register.psv",
     "screening.psv",
     "sources.json",
-    "search.json"
+    "search.json",
+    "coverage/manifest.json",
+    "coverage/register.psv.gz",
+    "coverage/acquisition.psv"
   ],
-  "resume_explanation": "Preservar os onze artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
+  "resume_explanation": "Preservar os doze artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
   "quantitative_readiness": "Nenhum estrato foi verificado quanto à disponibilidade de dados por reator de campanhas comparáveis independentes. Não se fez calibração."
 }

@@ -1,0 +1,992 @@
+{
+  "as_of": "2026-11-06",
+  "comparison_commit": "dff64367cf4a13ebcee2520a2391024fd3ed32bd",
+  "raw_returns": {
+    "previous": 3176,
+    "additional": 9594,
+    "cumulative": 12770
+  },
+  "registry": {
+    "previous": 1292,
+    "cumulative_outside_972": 6629,
+    "net_growth": 5337,
+    "sha256": "87cee62f2d16264600d538132a453a806dc4efd544ca1ec8aa9c598326809e94"
+  },
+  "methods_with_donor_epmc": {
+    "F1": {
+      "matches_reported": 59,
+      "previous_972_matched": 53
+    },
+    "F2": {
+      "matches_reported": 24,
+      "previous_972_matched": 24
+    },
+    "F3": {
+      "matches_reported": 8,
+      "previous_972_matched": 8
+    },
+    "F4": {
+      "matches_reported": 12,
+      "previous_972_matched": 11
+    },
+    "F5": {
+      "matches_reported": 5,
+      "previous_972_matched": 5
+    },
+    "F6": {
+      "matches_reported": 16,
+      "previous_972_matched": 14
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 4,
+      "excluded_articles_matched": 853,
+      "candidates": 5933,
+      "queries": [
+        {
+          "route": "mfc-title-abstract-census",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 500
+          },
+          "page_limit": 24,
+          "pages": [
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "5b8f558f452effc68734413cba666270bf8ca75d16b18036b76cb7b2fc5d76b8"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "4de86da7f62ef4dd458d6d601d96acba607796830a449d55cee2ff66a810425e"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "ee9b9519d21f1c2756cf0911604944e64566a97141314c1f53463d127fa72cb7"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "ba3a1404e8615fcfc9cad6e8ff8a5fcd33b3bac617a2beb151392f2ae78b4287"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "88f11828e3bd5f8e4d86af7ef79c7552f7ecd9f4cbc692dbadb13fd2d9b5194f"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "c8b643b28c09aae61ae7bbabb9048d91785c8a7568581adca82b04275e29d264"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "572f24fbd73a937c3067a648d7f7a5f856436c776d7eed6c0a72fbeceb06127a"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "37d328a5377c6a3b28a00178eeca6b73ad1e37628e7d446cea6ca8ab9d046206"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "9485aa688e7fd002652ce17326c4a4d414a2338f0ee3fca48b734f265588eced"
+            },
+            {
+              "returned": 500,
+              "total_reported": 5003,
+              "sha256": "ffda38091de64e3fae79f6c5007ab31b812665e940ac222891f031ff8c070a3e"
+            },
+            {
+              "returned": 3,
+              "total_reported": 5003,
+              "sha256": "35cc86e22a79e9de0457b4b2cd36db1530eb6f33693cf54bd007650368a49c24"
+            }
+          ],
+          "records_returned": 5003,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "mfc-openalex-title-abstract-count",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "to_publication_date:2026-11-06,type:article",
+            "per_page": 1,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 1,
+              "total_reported": 16611,
+              "sha256": "bf2a711e661d0aba7fa1b958607a3078f9019605f2f4bce04693907c75f47e05"
+            }
+          ],
+          "records_returned": 1,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "mfc-openalex-1970-2005",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:1970-01-01,to_publication_date:2005-12-31,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 335,
+              "sha256": "b4f4018a18dcfdd57ba11b0e3aa70ff98561ed897b39f9df9bd70199dfec2bd9"
+            },
+            {
+              "returned": 100,
+              "total_reported": 335,
+              "sha256": "10b58c549d2315596b1b9848def1f455acdcd2c1763c2f6c8c8e2786678047cb"
+            },
+            {
+              "returned": 100,
+              "total_reported": 335,
+              "sha256": "96c07dffd1ea35251ca2b6c7549723d2829b98ca16a1d419a44bae558f032385"
+            },
+            {
+              "returned": 35,
+              "total_reported": 335,
+              "sha256": "344b8888e780f7ab934b7f18666670d28a12e0e92427d8f89d5baf890280ef86"
+            }
+          ],
+          "records_returned": 335,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "mfc-openalex-2006-2010",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:2006-01-01,to_publication_date:2010-12-31,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 1472,
+              "sha256": "9ccb06ce05e4b5f2f31dedac5722a1564378944e1102fe9d8192af0d8f41753d"
+            },
+            {
+              "returned": 100,
+              "total_reported": 1472,
+              "sha256": "2f2a9eba4473123fadf6eebc381d324615c805d5f4105a871c511365b3294192"
+            },
+            {
+              "returned": 100,
+              "total_reported": 1472,
+              "sha256": "249ba2aa3be28e81db87f15c654aeb30b5fa57d78f30590c9393d8d9c5f9b839"
+            },
+            {
+              "returned": 100,
+              "total_reported": 1472,
+              "sha256": "8fda79461ab78e83fce18da0ac17e21b7d9ab20af9e263946457524eb8570eff"
+            },
+            {
+              "returned": 100,
+              "total_reported": 1472,
+              "sha256": "d51766029a55f83f1f994c5bfc2859ba20f57e1545ad4ba410c8369c339d987a"
+            }
+          ],
+          "records_returned": 500,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "mfc-openalex-2011-2015",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:2011-01-01,to_publication_date:2015-12-31,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 3634,
+              "sha256": "39bbc933bcb7fe9861e7c37c99a0f277c9e1502229f87a185e8ec03e46909358"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3634,
+              "sha256": "ed261cf01e753c9fd66fb67c61b7cd3bdbb096140d22b7289338e2fe34ff2499"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3634,
+              "sha256": "cebd373f79e823a468a7a9b94fc02b6f31e8a6cf90df49e231823b2b2e76f0cc"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3634,
+              "sha256": "eb6305da77df689e5dbbd3cc3b509e2e54035f8ce4e4b47d27a7d8f660411e18"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3634,
+              "sha256": "bf59c4f54359d3e7c1b4336c9f782a820649848270c0baaeaef2d66f36c9563d"
+            }
+          ],
+          "records_returned": 500,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "mfc-openalex-2016-2020",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:2016-01-01,to_publication_date:2020-12-31,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 5123,
+              "sha256": "42ac3bfd59159a238d59be413dc024a9206497ae6ccc6a31aa7be50d1163fdab"
+            },
+            {
+              "returned": 100,
+              "total_reported": 5123,
+              "sha256": "03f10189d14eff8f5aa4fd0f9586ace092d5e6ce3f95edaa99c99a3ea03a0934"
+            },
+            {
+              "returned": 100,
+              "total_reported": 5123,
+              "sha256": "bdbcd93fd56935b319bcf33bb5257d47d250f15f29f1f4387c7a70c6546c0411"
+            },
+            {
+              "returned": 100,
+              "total_reported": 5123,
+              "sha256": "37bafd172dfc618683b46095957c1d25d3d3588930ad747c15f995eec6910ec1"
+            },
+            {
+              "returned": 100,
+              "total_reported": 5123,
+              "sha256": "2ea9866aecf045c4003c88a4d151c546832cb427bd1cca804ccefa1e6c2ccdb6"
+            }
+          ],
+          "records_returned": 500,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "mfc-openalex-2021-2023",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:2021-01-01,to_publication_date:2023-12-31,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 2969,
+              "sha256": "dd8906baaa394640b46d5f599f746ba64cd69d5f908e5e87d6211926c083c776"
+            },
+            {
+              "returned": 100,
+              "total_reported": 2969,
+              "sha256": "85f550fbfbb5a50a514d91d8286654b3b179a05b19762f7bf686c6fd35ebc7c8"
+            },
+            {
+              "returned": 100,
+              "total_reported": 2969,
+              "sha256": "d63dc13e1d6c59adc3a9ae3d6d761882575df0937cf6024957e4d5531b048d0f"
+            },
+            {
+              "returned": 100,
+              "total_reported": 2969,
+              "sha256": "49c0d5cdb6eb0e5d61b592a63c3694aa303d9f24f1c60fec3ebe4e13d2ba6b3d"
+            },
+            {
+              "returned": 100,
+              "total_reported": 2969,
+              "sha256": "a32950f9fc31e38f5b69a84f75a390b0a52e269179587b676664fab2edc03491"
+            }
+          ],
+          "records_returned": 500,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "mfc-openalex-2024-2026",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search.title_abstract_keywords": "\"microbial fuel cell\" OR \"microbial fuel cells\"",
+            "filter": "from_publication_date:2024-01-01,to_publication_date:2026-11-06,type:article",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 5,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 3044,
+              "sha256": "be40ffde937988ba408df96285b9fe0b6cc3598d1ed60b76ac6a231a5c0cff68"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3044,
+              "sha256": "92c49112bd81540ac3914b10488faee802ed8b901b0582da27be9ca2738ae9a3"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3044,
+              "sha256": "d42bfb85787c6cf4d5ca3f799009fb4981d418c7e46dd304a0218b3b47ca6394"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3044,
+              "sha256": "80039e78a109c382b8a07ddaa3c389ff08cf4590c66c63f083f47f90061f32dd"
+            },
+            {
+              "returned": 100,
+              "total_reported": 3044,
+              "sha256": "f5f0c6363c2fcb9553318421517c4816ba8275731dcb37419669af8d4c5f65b6"
+            }
+          ],
+          "records_returned": 500,
+          "coverage": "bounded_ranked"
+        }
+      ],
+      "candidates_with_locators": 864,
+      "route_counts": {
+        "mfc-title-abstract-census": 4113,
+        "mfc-openalex-2024-2026": 466,
+        "mfc-openalex-2021-2023": 459,
+        "mfc-openalex-2016-2020": 454,
+        "mfc-openalex-2011-2015": 476,
+        "mfc-openalex-2006-2010": 488,
+        "mfc-openalex-1970-2005": 332,
+        "mfc-openalex-title-abstract-count": 1
+      }
+    },
+    {
+      "cycle": 5,
+      "excluded_articles_matched": 214,
+      "candidates": 403,
+      "queries": [
+        {
+          "route": "F1-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon cloth\" OR METHODS:\"graphite cloth\" OR METHODS:\"woven carbon\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\") AND METHODS:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 59,
+              "total_reported": 59,
+              "sha256": "038d68875f13af8cb39fcca9e98e6164a1eab0f64df2aee20f868b0fc482438e"
+            }
+          ],
+          "records_returned": 59,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F1-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon cloth\" OR METHODS:\"graphite cloth\" OR METHODS:\"woven carbon\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 103,
+              "total_reported": 103,
+              "sha256": "0fa924ab310e5506b27818fea11585cbcea2dc8ed43af9fcd87fb5626dd567f0"
+            }
+          ],
+          "records_returned": 103,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F1-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"carbon cloth\" OR BODY:\"graphite cloth\" OR BODY:\"woven carbon\") AND (BODY:\"platinum\" OR BODY:\"Pt/C\") AND BODY:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 127,
+              "total_reported": 127,
+              "sha256": "0d0ca654bf064aee91caa5ccb1d6f781017d26592d775f2a61f6942c8467e7fc"
+            }
+          ],
+          "records_returned": 127,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F1-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon cloth acetate platinum air cathode batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 122602,
+              "sha256": "9bc3fe8675a6c97a53af6430c01d74da98b2f0b49151731c84be70608861b4e4"
+            },
+            {
+              "returned": 100,
+              "total_reported": 122602,
+              "sha256": "b32fc16f198f802ffe152612a9376a481b4746a8711f5b4b4df97fa86cef6540"
+            }
+          ],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 200,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F2-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon paper\" OR METHODS:\"Toray\" OR METHODS:\"TGP-H\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\") AND METHODS:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 24,
+              "total_reported": 24,
+              "sha256": "4dfb68cbbaf6f3103bcb488222e074d1ec2fe3806c3d20ec62367300a592f863"
+            }
+          ],
+          "records_returned": 24,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon paper\" OR METHODS:\"Toray\" OR METHODS:\"TGP-H\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 40,
+              "total_reported": 40,
+              "sha256": "d17708bf67649cc221e08ec73fe3686dc7cc2cfc743629cade764da969c16a75"
+            }
+          ],
+          "records_returned": 40,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"carbon paper\" OR BODY:\"Toray\" OR BODY:\"TGP-H\") AND (BODY:\"platinum\" OR BODY:\"Pt/C\") AND BODY:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 62,
+              "total_reported": 62,
+              "sha256": "df6cc7bbf4981a988685a01571ce2faa26a0c03fefd440d043dc7dae1d6b0627"
+            }
+          ],
+          "records_returned": 62,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon paper acetate platinum air cathode batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 123799,
+              "sha256": "58f4f02b0bb82db0d6ad428632f4176028c1478d4613c78e953bdc8b3249d2c2"
+            },
+            {
+              "returned": 100,
+              "total_reported": 123799,
+              "sha256": "3bd869c9311409fd60f310acc921ed9fd3a92078cfcc08980a65d439335acdd0"
+            },
+            {
+              "returned": 100,
+              "total_reported": 123799,
+              "sha256": "e6deb201ba5b153da70b849b8652627dad1200f96450e89f3802e25f4e35e4b3"
+            }
+          ],
+          "records_returned": 300,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F3-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"activated carbon\" OR METHODS:\"AC/PTFE\") AND METHODS:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 8,
+              "total_reported": 8,
+              "sha256": "88971fe15e294b30dd78bef1c7eca72f6565b548be89cd56d091d51ed8f361bd"
+            }
+          ],
+          "records_returned": 8,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"activated carbon\" OR METHODS:\"AC/PTFE\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 10,
+              "total_reported": 10,
+              "sha256": "482a300781b8ddc8cc2fdb202918f03eaa2e524e149765b31d2d32a9de5bd826"
+            }
+          ],
+          "records_returned": 10,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"graphite fiber brush\" OR BODY:\"carbon brush\" OR BODY:\"brush anode\") AND (BODY:\"activated carbon\" OR BODY:\"AC/PTFE\") AND BODY:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 25,
+              "total_reported": 25,
+              "sha256": "4aee27092a7161372cc5628773bac4c9958c707207c27c730bdba2632603eb55"
+            }
+          ],
+          "records_returned": 25,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush acetate activated carbon air cathode batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 133215,
+              "sha256": "76364ece3d766b82f249d1f43fa5cc87deaa51c3d1e9a34bb8f2f5ad38fcd80d"
+            },
+            {
+              "returned": 100,
+              "total_reported": 133215,
+              "sha256": "9189fea86f74b6a6a0dc0e8aeaef6a5110638ac3a0696e261634774a23bcf1b7"
+            },
+            {
+              "returned": 100,
+              "total_reported": 133215,
+              "sha256": "faec679395f24e654652b594f6563582e1c55dd03823830e023cfd0adc37f82c"
+            }
+          ],
+          "records_returned": 300,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F4-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\") AND METHODS:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 12,
+              "total_reported": 12,
+              "sha256": "82d116232adb3462db1bc1c16a14013c7391e0ddb7881b332adfa33d2d7d3024"
+            }
+          ],
+          "records_returned": 12,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F4-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 16,
+              "total_reported": 16,
+              "sha256": "b5c81d9d0e5a2dce49213b9ce38e8c6092820bd4ad0631ebd2d9b800cfda60c4"
+            }
+          ],
+          "records_returned": 16,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F4-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"graphite fiber brush\" OR BODY:\"carbon brush\" OR BODY:\"brush anode\") AND (BODY:\"platinum\" OR BODY:\"Pt/C\") AND BODY:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 35,
+              "total_reported": 35,
+              "sha256": "abaf563bc8239e860e6136c85c0ef5e38593b2cc082a8514b7e328bd4d3b4124"
+            }
+          ],
+          "records_returned": 35,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F4-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush acetate platinum air cathode batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        },
+        {
+          "route": "F5-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\") AND METHODS:\"glucose\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 5,
+              "total_reported": 5,
+              "sha256": "a15c3738566b0e098cf095070cc6e664694515164e709208e40a1596bf237304"
+            }
+          ],
+          "records_returned": 5,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"graphite fiber brush\" OR METHODS:\"carbon brush\" OR METHODS:\"brush anode\") AND (METHODS:\"platinum\" OR METHODS:\"Pt/C\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 16,
+              "total_reported": 16,
+              "sha256": "b5c81d9d0e5a2dce49213b9ce38e8c6092820bd4ad0631ebd2d9b800cfda60c4"
+            }
+          ],
+          "records_returned": 16,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"graphite fiber brush\" OR BODY:\"carbon brush\" OR BODY:\"brush anode\") AND (BODY:\"platinum\" OR BODY:\"Pt/C\") AND BODY:\"glucose\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 23,
+              "total_reported": 23,
+              "sha256": "38b5376ba31d4d49cbb920d1cbeb6ee4fe3ebb2690772e618e0c606fb2439452"
+            }
+          ],
+          "records_returned": 23,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush glucose platinum air cathode batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 117586,
+              "sha256": "1cc7f4c4f5d23154721d2f48ec1bc2316104e110285be4e34d2e260a5ecbb7fe"
+            },
+            {
+              "returned": 100,
+              "total_reported": 117586,
+              "sha256": "94caca113c0a66b3ca53b8813b354499b02c401d58fdf0030101eda0e6a1372b"
+            },
+            {
+              "returned": 100,
+              "total_reported": 117586,
+              "sha256": "dd2a9f11ef214645fb2ea8c675f7914fb4b57f8ea725aea697caf71c4d95134a"
+            }
+          ],
+          "records_returned": 300,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F6-epmc-methods-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon felt\" OR METHODS:\"graphite felt\") AND (METHODS:\"ferricyanide\" OR METHODS:\"hexacyanoferrate\") AND METHODS:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 16,
+              "total_reported": 16,
+              "sha256": "9539c8de5021f215abd8951c297a40b35e0adb6470c576d67e5a553ffc0496db"
+            }
+          ],
+          "records_returned": 16,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-epmc-methods-without-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (METHODS:\"carbon felt\" OR METHODS:\"graphite felt\") AND (METHODS:\"ferricyanide\" OR METHODS:\"hexacyanoferrate\")",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 31,
+              "total_reported": 31,
+              "sha256": "bb8e38e27675170ee751f58e6dec3711cc981ab09505de3b38fbb2c8552da3a4"
+            }
+          ],
+          "records_returned": 31,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-epmc-body-with-donor",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\") AND FIRST_PDATE:[1970-01-01 TO 2026-11-06] AND (BODY:\"carbon felt\" OR BODY:\"graphite felt\") AND (BODY:\"ferricyanide\" OR BODY:\"hexacyanoferrate\") AND BODY:\"acetate\"",
+            "format": "json",
+            "pageSize": 300
+          },
+          "page_limit": 12,
+          "pages": [
+            {
+              "returned": 43,
+              "total_reported": 43,
+              "sha256": "64511389a4972527ad8a9ab6f4ad0410fb00d2065be434e4976120d30039d59c"
+            }
+          ],
+          "records_returned": 43,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-crossref-cursor",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon felt acetate ferricyanide two chamber batch control",
+            "query.title": "microbial fuel cell",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 100,
+            "select": "DOI,title,author,published,link,URL"
+          },
+          "page_limit": 3,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        }
+      ],
+      "candidates_with_locators": 90,
+      "route_counts": {
+        "F1-epmc-methods-with-donor": 6,
+        "F1-epmc-methods-without-donor": 8,
+        "F1-epmc-body-with-donor": 12,
+        "F3-epmc-body-with-donor": 3,
+        "F4-epmc-methods-with-donor": 1,
+        "F4-epmc-methods-without-donor": 1,
+        "F4-epmc-body-with-donor": 4,
+        "F5-epmc-methods-without-donor": 1,
+        "F2-epmc-body-with-donor": 5,
+        "F2-epmc-methods-without-donor": 2,
+        "F6-epmc-body-with-donor": 5,
+        "F5-epmc-body-with-donor": 2,
+        "F1-crossref-cursor": 200,
+        "F2-crossref-cursor": 300,
+        "F3-crossref-cursor": 300,
+        "F5-crossref-cursor": 300,
+        "F6-epmc-methods-with-donor": 2,
+        "F6-epmc-methods-without-donor": 4
+      }
+    }
+  ],
+  "acquisition": {
+    "attempted": 180,
+    "text_candidates": 47,
+    "failure_classes_by_request": {
+      "HTTP Error 400": 1,
+      "HTTP Error 401": 1,
+      "HTTP Error 403": 104,
+      "HTTP Error 404": 4,
+      "HTTP Error 429": 1,
+      "HTTP Error 500": 9,
+      "HTTP Error 503": 35,
+      "HTTP Error 504": 1,
+      "The read operation timed out": 5,
+      "body_incomplete_or_unreadable": 108,
+      "timed out": 2
+    },
+    "machine_screen_scope": "Heurística de corpo legível. Pode devolver revisão, manuscrito anterior à publicação, configuração errada ou artigo diferente. Sinais por termos servem para priorizar leitura."
+  },
+  "alternate_location_recovery": {
+    "dois_without_body_queried": 129,
+    "new_routes_tested": 3,
+    "text_candidates": 0,
+    "records": [
+      {
+        "doi": "10.1038/s41598-024-82361-3",
+        "urls": [
+          "https://www.nature.com/articles/s41598-024-82361-3.pdf",
+          "https://doi.org/10.1038/s41598-024-82361-3",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11634901/pdf/41598_2024_Article_82361.pdf",
+          "https://www.ncbi.nlm.nih.gov/pmc/articles/11634901",
+          "https://doaj.org/article/1ee9544388b446668ee4292b10165b30"
+        ],
+        "terminal_status": "excluded_non_primary_document"
+      },
+      {
+        "doi": "10.1038/s41598-026-61321-z",
+        "urls": [
+          "https://www.nature.com/articles/s41598-026-61321-z.pdf",
+          "https://doi.org/10.1038/s41598-026-61321-z",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13346487/pdf/41598_2026_Article_61321.pdf"
+        ],
+        "terminal_status": "excluded_non_primary_document"
+      },
+      {
+        "doi": "10.1039/c8ra90008f",
+        "urls": [
+          "https://pubs.rsc.org/en/content/articlepdf/2018/ra/c8ra90008f",
+          "https://doi.org/10.1039/c8ra90008f",
+          "https://www.ncbi.nlm.nih.gov/pmc/articles/9078544"
+        ],
+        "terminal_status": "excluded_non_primary_document"
+      }
+    ]
+  },
+  "individual_review": {
+    "new_screening_rows": [
+      "10.1088/1755-1315/435/1/012036",
+      "10.1016/j.jiec.2021.11.001",
+      "10.7763/jocet.2016.v4.250",
+      "10.1002/jctb.7357",
+      "10.2965/jwet.15-081",
+      "10.5012/bkcs.2010.31.6.1729",
+      "10.54691/zs32n469",
+      "10.59440/ceer/226379",
+      "10.3390/catal13060937",
+      "10.1016/j.jwpe.2024.104966",
+      "10.3390/su12166538",
+      "10.3389/fenrg.2019.00093",
+      "10.1038/s41598-024-82361-3",
+      "10.1039/c8ra90008f",
+      "10.1038/s41598-026-61321-z"
+    ],
+    "count": 15,
+    "admitted_sources": [
+      "X012"
+    ],
+    "updated_previous_rows": [
+      "10.1039/c6ra04012h"
+    ]
+  },
+  "coverage_scope": "Contagens dos índices variam com consulta, data, documentos e campos. Coincidência de termos dentro da seção de métodos não vincula o material a um braço medido. As filas não são amostras aleatórias nem estimam o total mundial.",
+  "resume": {
+    "next": "Terminar a triagem do lote documental e abrir um lote por família a partir dos registros ainda sem ficha, com busca por versões de autor e suplementos. Reavaliar o controle F6 de Jin et al. após identificar o material do cátodo.",
+    "f6_pending": "10.1088/1755-1315/435/1/012036"
+  }
+}

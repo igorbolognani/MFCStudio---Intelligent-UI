@@ -1,6 +1,8 @@
 """Check the external conventional-arm additions and recompute family coverage."""
 from argparse import ArgumentParser
 from collections import Counter
+from csv import DictReader
+from gzip import open as gzip_open
 from hashlib import sha256
 from pathlib import Path
 import re
@@ -23,6 +25,38 @@ def check_original(doc, cache):
         data = (cache / doc["local_path"]).read_bytes()
         if len(data) != doc["bytes"] or sha256(data).hexdigest() != doc["sha256"]:
             raise ValueError(f"Original document changed: {doc['local_path']}")
+
+
+def check_coverage(earlier, old, screening, sources, cache):
+    folder = ROUND / "coverage"
+    manifest = read_json(folder / "manifest.json")
+    registry = folder / "register.psv.gz"
+    with gzip_open(registry, "rt", encoding="utf-8", newline="") as file:
+        entries = index(list(DictReader(file, delimiter="|")), "key")
+    registry_counts = manifest["registry"]
+    if (sha256(registry.read_bytes()).hexdigest() != registry_counts["sha256"]
+            or len(entries) != registry_counts["cumulative_outside_972"]
+            or len(entries) - earlier["api_records_after_deduplication"] != registry_counts["net_growth"]
+            or any(SEARCH["prior_record"](row, old) for row in entries.values())):
+        raise ValueError("Expanded register does not reconcile with the discovery manifest")
+    prior_count = sum(query["records_returned"] for cycle in earlier["cycles"] for query in cycle["queries"])
+    new_count = sum(query["records_returned"] for cycle in manifest["cycles"] for query in cycle["queries"])
+    if manifest["raw_returns"] != {"previous": prior_count, "additional": new_count,
+                                    "cumulative": prior_count + new_count}:
+        raise ValueError("Raw API counts differ from the query log")
+    acquisition = index(table(folder / "acquisition.psv")[1], "key")
+    acquired = [row for row in acquisition.values() if row["status"] == "text_candidate"]
+    if (len(acquisition) != manifest["acquisition"]["attempted"]
+            or len(acquired) != manifest["acquisition"]["text_candidates"]):
+        raise ValueError("Acquisition statuses differ from the manifest")
+    for row in acquired:
+        directory = sha256(row["key"].encode()).hexdigest()[:16]
+        check_original(row | {"bytes": int(row["bytes"]), "local_path": f"articles/{directory}/article.{row['format']}"}, cache)
+    review = manifest["individual_review"]
+    if (len(set(review["new_screening_rows"])) != review["count"]
+            or not set(review["new_screening_rows"] + review["updated_previous_rows"]) <= screening
+            or not set(review["admitted_sources"]) <= sources.keys()):
+        raise ValueError("Individual review does not reconcile with the recorded decisions")
 
 
 def audit(cache=None):
@@ -55,6 +89,7 @@ def audit(cache=None):
         if row["decision"] == "prior_access" and SEARCH["prior_record"]({"doi": row["key"]}, old) is None:
             raise ValueError(f"Screened prior access does not match the frozen set: {row['key']}")
     screened_keys = {row["key"] for row in screening}
+    check_coverage(discovery, old, screened_keys, sources, cache)
     reviewed_documents = read_json(ROUND / "screened-documents.json")
     index(reviewed_documents, "local_path")
     for doc in reviewed_documents:

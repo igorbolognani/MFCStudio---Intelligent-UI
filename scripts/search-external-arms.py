@@ -6,6 +6,7 @@ from argparse import ArgumentParser
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from csv import DictReader, DictWriter
+from gzip import compress
 from hashlib import sha256
 from pathlib import Path
 from urllib.error import HTTPError
@@ -94,8 +95,42 @@ def terms(values):
 
 
 def query_plan(cycle):
+    dates = "FIRST_PDATE:[1970-01-01 TO 2026-11-06]"
+    mfc_titles = "(TITLE_ABS:\"microbial fuel cell\" OR TITLE_ABS:\"microbial fuel cells\" OR TITLE_ABS:\"microbial fuel-cell\")"
+    if cycle == 4:
+        yield "mfc-title-abstract-census", EUROPE, {
+            "query": f"{mfc_titles} AND {dates}", "format": "json", "pageSize": 500,
+        }, 24
+        yield "mfc-openalex-title-abstract-count", ALEX, {
+            "search.title_abstract_keywords": MFC[1:-1],
+            "filter": "to_publication_date:2026-11-06,type:article",
+            "per_page": 1, "select": SELECT,
+        }, 1
+        for start, end in [(1970, 2005), (2006, 2010), (2011, 2015), (2016, 2020), (2021, 2023), (2024, 2026)]:
+            yield f"mfc-openalex-{start}-{end}", ALEX, {
+                "search.title_abstract_keywords": MFC[1:-1],
+                "filter": f"from_publication_date:{start}-01-01,to_publication_date:{end}-{'11-06' if end == 2026 else '12-31'},type:article",
+                "per_page": 100, "select": SELECT,
+            }, 5
+        return
     for f, (anodes, donor, cathodes, topology) in FAMILIES.items():
-        if cycle == 3:
+        if cycle == 5:
+            for field, require_donor in [("METHODS", True), ("METHODS", False), ("BODY", True)]:
+                filters = ["(" + " OR ".join(f'{field}:"{word}"' for word in group) + ")"
+                           for group in (anodes, cathodes)]
+                if require_donor:
+                    filters.append(f'{field}:"{donor}"')
+                query = " AND ".join((mfc_titles, dates, *filters))
+                yield f"{f}-epmc-{field.lower()}-{'with' if require_donor else 'without'}-donor", EUROPE, {
+                    "query": query, "format": "json", "pageSize": 300,
+                }, 12
+            query = f"microbial fuel cell {anodes[0]} {donor} {cathodes[0]} {topology} batch control"
+            yield f"{f}-crossref-cursor", CROSSREF, {
+                "query.bibliographic": query, "query.title": "microbial fuel cell",
+                "filter": "type:journal-article,until-pub-date:2026-11-06", "rows": 100,
+                "select": "DOI,title,author,published,link,URL",
+            }, 3
+        elif cycle == 3:
             for pmid in CITATION_SEEDS[f]:
                 yield f"{f}-cites-{pmid}", f"{EUROPE_REST}/MED/{pmid}/citations", {
                     "format": "json", "pageSize": 100,
@@ -147,6 +182,11 @@ def search(cache, spec):
     for page in range(1, limit + 1):
         options = dict(params)
         if endpoint == ALEX:
+            if name.startswith("mfc-openalex-"):
+                options["page"] = page
+            else:
+                options["cursor"] = cursor
+        elif endpoint == CROSSREF and name.endswith("-cursor"):
             options["cursor"] = cursor
         elif endpoint == EUROPE:
             options["cursorMark"] = cursor
@@ -160,8 +200,12 @@ def search(cache, spec):
             break
         if endpoint == ALEX:
             batch, total, next_cursor = data["results"], data["meta"]["count"], data["meta"].get("next_cursor")
+            if "page" in options:
+                next_cursor = str(page + 1)
         elif endpoint == CROSSREF:
-            batch, total, next_cursor = data["message"]["items"], data["message"]["total-results"], None
+            message = data["message"]
+            batch, total = message["items"], message["total-results"]
+            next_cursor = message.get("next-cursor") if "cursor" in options else None
         elif endpoint.endswith("/citations"):
             batch, total = data.get("citationList", {}).get("citation", []), int(data["hitCount"])
             next_cursor = str(page + 1)
@@ -179,10 +223,10 @@ def search(cache, spec):
     return log, records
 
 
-def export_register(cache, destination):
+def export_register(cache, destination, cycles=(1, 2, 3)):
     old = exclusions()
     records = {}
-    for cycle in (1, 2, 3):
+    for cycle in cycles:
         for row in json.loads((cache / f"discovery-cycle-{cycle}.json").read_bytes())["records"]:
             entry = records.setdefault(row["key"], row)
             entry["routes"].update(row["routes"])
@@ -213,6 +257,8 @@ def export_register(cache, destination):
                 entry["title"] = " ".join(row["title"].split())
                 entry["routes"] = " ".join(sorted(row["routes"]))
                 writer.writerow(entry)
+    if destination.suffix == ".gz":
+        tmp.write_bytes(compress(tmp.read_bytes(), mtime=0))
     tmp.replace(destination)
 
 
@@ -220,11 +266,12 @@ def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("cache", type=Path)
     action = parser.add_mutually_exclusive_group(required=True)
-    action.add_argument("--cycle", type=int, choices=[1, 2, 3])
+    action.add_argument("--cycle", type=int, choices=range(1, 6))
     action.add_argument("--export-register", type=Path, metavar="PSV")
+    parser.add_argument("--include-expanded", action="store_true", help="Include the two later cycles in the export.")
     args = parser.parse_args()
     if args.export_register:
-        export_register(args.cache, args.export_register)
+        export_register(args.cache, args.export_register, range(1, 6) if args.include_expanded else (1, 2, 3))
         return
     old = exclusions()
     grouped = {}
