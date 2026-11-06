@@ -1,0 +1,371 @@
+{
+  "date": "2026-11-06",
+  "database": "Europe PMC",
+  "baseline_frame": "../frame.json",
+  "families": {
+    "F1": "1 domínio líquido, ar ambiente, acetato, tecido, Pt",
+    "F2": "1 domínio líquido, ar ambiente, acetato, papel, Pt",
+    "F3": "1 domínio líquido, ar ambiente, acetato, escova, carvão ativado",
+    "F4": "1 domínio líquido, ar ambiente, acetato, escova, Pt",
+    "F5": "1 domínio líquido, ar ambiente, glicose, escova, Pt",
+    "F6": "2 domínios líquidos, ferricianeto, acetato, feltro, cátodo de carbono"
+  },
+  "common_operating_regime": "fed_batch",
+  "queries": [
+    {
+      "id": "F1-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon cloth\" OR METHODS:\"graphite cloth\" OR METHODS:\"carbon fiber cloth\" OR METHODS:\"carbon fibre cloth\" OR METHODS:\"carbon fabric\") AND (METHODS:\"acetate\" OR METHODS:\"CH3COONa\" OR METHODS:\"acetic acid\") AND (METHODS:\"platinum\" OR METHODS:\"Pt\" OR METHODS:\"Pt/C\")",
+      "hits": 126,
+      "pages": [
+        {
+          "sha256": "8d881a44795db500721faa4b81becf780a26334fcdf0e47ee06e22f4de4ffd17",
+          "hits": 126,
+          "returned": 126
+        }
+      ]
+    },
+    {
+      "id": "F1-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon cloth\" OR \"graphite cloth\" OR \"carbon fiber cloth\" OR \"carbon fibre cloth\" OR \"carbon fabric\") AND (\"acetate\" OR \"CH3COONa\" OR \"acetic acid\") AND (\"platinum\" OR \"Pt\" OR \"Pt/C\") AND (\"air cathode\" OR \"air cathodes\" OR \"air breathing\" OR \"air cathodic\" OR \"air cathode MFC\" OR \"air-breathing cathode\" OR \"gas diffusion cathode\")",
+      "hits": 153,
+      "pages": [
+        {
+          "sha256": "3d260066f885b5c8f3cf81a774a50534e099e0a0b5fa7bd11bc2659f83d9671d",
+          "hits": 153,
+          "returned": 153
+        }
+      ]
+    },
+    {
+      "id": "F2-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon paper\" OR METHODS:\"graphite paper\" OR METHODS:\"TGP-H-060\" OR METHODS:\"TGP-H-090\") AND (METHODS:\"acetate\" OR METHODS:\"CH3COONa\" OR METHODS:\"acetic acid\") AND (METHODS:\"platinum\" OR METHODS:\"Pt\" OR METHODS:\"Pt/C\")",
+      "hits": 45,
+      "pages": [
+        {
+          "sha256": "2b0805e0105c02fb6cef2aeffccbecbd537fdaedca701f319db65a8191038334",
+          "hits": 45,
+          "returned": 45
+        }
+      ]
+    },
+    {
+      "id": "F2-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon paper\" OR \"graphite paper\" OR \"TGP-H-060\" OR \"TGP-H-090\") AND (\"acetate\" OR \"CH3COONa\" OR \"acetic acid\") AND (\"platinum\" OR \"Pt\" OR \"Pt/C\") AND (\"air cathode\" OR \"air cathodes\" OR \"air breathing\" OR \"air cathodic\" OR \"air cathode MFC\" OR \"air-breathing cathode\" OR \"gas diffusion cathode\")",
+      "hits": 93,
+      "pages": [
+        {
+          "sha256": "41e7085896e378cccd26f6359735e39c28b09ab7622a252cc4324f2a21426943",
+          "hits": 93,
+          "returned": 93
+        }
+      ]
+    },
+    {
+      "id": "F3-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon brush\" OR METHODS:\"carbon brushes\" OR METHODS:\"graphite brush\" OR METHODS:\"carbon fiber brush\" OR METHODS:\"carbon fibre brush\" OR METHODS:\"graphite fiber brush\" OR METHODS:\"graphite fibre brush\" OR METHODS:\"brush anode\" OR METHODS:\"brush anodes\") AND (METHODS:\"acetate\" OR METHODS:\"CH3COONa\" OR METHODS:\"acetic acid\") AND (METHODS:\"activated carbon\" OR METHODS:\"active carbon\" OR METHODS:\"AC/PTFE\" OR METHODS:\"activated charcoal\")",
+      "hits": 21,
+      "pages": [
+        {
+          "sha256": "7a5a86ee85e38dae26977e6107578dab2f9300168cac6e70733680bf9e9278be",
+          "hits": 21,
+          "returned": 21
+        }
+      ]
+    },
+    {
+      "id": "F3-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon brush\" OR \"carbon brushes\" OR \"graphite brush\" OR \"carbon fiber brush\" OR \"carbon fibre brush\" OR \"graphite fiber brush\" OR \"graphite fibre brush\" OR \"brush anode\" OR \"brush anodes\") AND (\"acetate\" OR \"CH3COONa\" OR \"acetic acid\") AND (\"activated carbon\" OR \"active carbon\" OR \"AC/PTFE\" OR \"activated charcoal\") AND (\"air cathode\" OR \"air cathodes\" OR \"air breathing\" OR \"air cathodic\" OR \"air cathode MFC\" OR \"air-breathing cathode\" OR \"gas diffusion cathode\")",
+      "hits": 56,
+      "pages": [
+        {
+          "sha256": "7d56662b1a4b79baf1d28fadba9fe34535048315a9ec20e91886aff739dc0919",
+          "hits": 56,
+          "returned": 56
+        }
+      ]
+    },
+    {
+      "id": "F4-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon brush\" OR METHODS:\"carbon brushes\" OR METHODS:\"graphite brush\" OR METHODS:\"carbon fiber brush\" OR METHODS:\"carbon fibre brush\" OR METHODS:\"graphite fiber brush\" OR METHODS:\"graphite fibre brush\" OR METHODS:\"brush anode\" OR METHODS:\"brush anodes\") AND (METHODS:\"acetate\" OR METHODS:\"CH3COONa\" OR METHODS:\"acetic acid\") AND (METHODS:\"platinum\" OR METHODS:\"Pt\" OR METHODS:\"Pt/C\")",
+      "hits": 47,
+      "pages": [
+        {
+          "sha256": "4e62856254e4d809c52282ac3a2b8dfc887a65eaed80ea13391f810a96bdad2d",
+          "hits": 47,
+          "returned": 47
+        }
+      ]
+    },
+    {
+      "id": "F4-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon brush\" OR \"carbon brushes\" OR \"graphite brush\" OR \"carbon fiber brush\" OR \"carbon fibre brush\" OR \"graphite fiber brush\" OR \"graphite fibre brush\" OR \"brush anode\" OR \"brush anodes\") AND (\"acetate\" OR \"CH3COONa\" OR \"acetic acid\") AND (\"platinum\" OR \"Pt\" OR \"Pt/C\") AND (\"air cathode\" OR \"air cathodes\" OR \"air breathing\" OR \"air cathodic\" OR \"air cathode MFC\" OR \"air-breathing cathode\" OR \"gas diffusion cathode\")",
+      "hits": 74,
+      "pages": [
+        {
+          "sha256": "a71b444a0c553fdfc61a3d6394af81dd23defb16e32470aea4f0c3b3162141bb",
+          "hits": 74,
+          "returned": 74
+        }
+      ]
+    },
+    {
+      "id": "F5-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon brush\" OR METHODS:\"carbon brushes\" OR METHODS:\"graphite brush\" OR METHODS:\"carbon fiber brush\" OR METHODS:\"carbon fibre brush\" OR METHODS:\"graphite fiber brush\" OR METHODS:\"graphite fibre brush\" OR METHODS:\"brush anode\" OR METHODS:\"brush anodes\") AND (METHODS:\"glucose\" OR METHODS:\"dextrose\" OR METHODS:\"C6H12O6\") AND (METHODS:\"platinum\" OR METHODS:\"Pt\" OR METHODS:\"Pt/C\")",
+      "hits": 14,
+      "pages": [
+        {
+          "sha256": "bd5974454ff6134c2f93e95cf4f0eccb024ecfc518d8cee589270990638b316e",
+          "hits": 14,
+          "returned": 14
+        }
+      ]
+    },
+    {
+      "id": "F5-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon brush\" OR \"carbon brushes\" OR \"graphite brush\" OR \"carbon fiber brush\" OR \"carbon fibre brush\" OR \"graphite fiber brush\" OR \"graphite fibre brush\" OR \"brush anode\" OR \"brush anodes\") AND (\"glucose\" OR \"dextrose\" OR \"C6H12O6\") AND (\"platinum\" OR \"Pt\" OR \"Pt/C\") AND (\"air cathode\" OR \"air cathodes\" OR \"air breathing\" OR \"air cathodic\" OR \"air cathode MFC\" OR \"air-breathing cathode\" OR \"gas diffusion cathode\")",
+      "hits": 47,
+      "pages": [
+        {
+          "sha256": "81c7e76a91f1ae893e6e2304e674a8f50d66f96b6834cd2e2366ae5f578cd563",
+          "hits": 47,
+          "returned": 47
+        }
+      ]
+    },
+    {
+      "id": "F6-methods",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (METHODS:\"carbon felt\" OR METHODS:\"graphite felt\" OR METHODS:\"graphite fiber felt\" OR METHODS:\"carbon fibre felt\" OR METHODS:\"carbon fiber felt\") AND (METHODS:\"acetate\" OR METHODS:\"CH3COONa\" OR METHODS:\"acetic acid\") AND (METHODS:\"ferricyanide\" OR METHODS:\"hexacyanoferrate\" OR METHODS:\"K3Fe(CN)6\")",
+      "hits": 22,
+      "pages": [
+        {
+          "sha256": "c515b3831fbc51b0d6372f33196dd0a0e8070f3b3769a23762ea8a43be44943b",
+          "hits": 22,
+          "returned": 22
+        }
+      ]
+    },
+    {
+      "id": "F6-body",
+      "query": "(\"microbial fuel cell\" OR \"microbial fuel cells\" OR \"microbial fuel-cell\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06] AND (\"carbon felt\" OR \"graphite felt\" OR \"graphite fiber felt\" OR \"carbon fibre felt\" OR \"carbon fiber felt\") AND (\"acetate\" OR \"CH3COONa\" OR \"acetic acid\") AND (\"ferricyanide\" OR \"hexacyanoferrate\" OR \"K3Fe(CN)6\") AND (\"dual chamber\" OR \"two chamber\" OR \"double chamber\" OR \"H type\" OR \"two compartment\" OR \"two chambers\")",
+      "hits": 65,
+      "pages": [
+        {
+          "sha256": "5793fb8192686b0ae7e57769ca097bcb9bbeff7923722f445169c8bafec56bc7",
+          "hits": 65,
+          "returned": 65
+        }
+      ]
+    }
+  ],
+  "unique_section_hits": 328,
+  "section_hits_outside_broad_frame": 127,
+  "index_method_sections": 756,
+  "ranked_union": 278,
+  "citation_lookups": [
+    {
+      "from": "L037 ref. 6",
+      "query": "TITLE_ABS:\"Enhanced electrical power generation using flame-oxidized stainless steel anode\"",
+      "hits": 1,
+      "identities": [
+        "10.1186/s13068-016-0480-7"
+      ]
+    },
+    {
+      "from": "L036 ref. 29",
+      "query": "DOI:\"10.1021/es048927c\"",
+      "hits": 1,
+      "identities": [
+        "10.1021/es048927c"
+      ]
+    },
+    {
+      "from": "L036 ref. 30",
+      "query": "DOI:\"10.1016/j.jpowsour.2007.09.083\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L029 ref. 27",
+      "query": "DOI:\"10.1016/j.elecom.2010.11.011\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L050 ref. 39",
+      "query": "DOI:\"10.1002/fuce.201700026\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L050 ref. 40",
+      "query": "DOI:\"10.3390/nano9010036\"",
+      "hits": 1,
+      "identities": [
+        "10.3390/nano9010036"
+      ]
+    },
+    {
+      "from": "L122 ref. 36",
+      "query": "TITLE_ABS:\"A fluid dynamics perspective on material selection in microbial fuel cell-based biosensors\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L031 ref. 74",
+      "query": "DOI:\"10.1016/j.ijhydene.2016.04.154\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L031 ref. 75",
+      "query": "DOI:\"10.1016/j.ijhydene.2014.02.064\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L031 ref. 76",
+      "query": "DOI:\"10.1149/2.0061703jes\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L031 ref. 91",
+      "query": "DOI:\"10.1016/j.jpowsour.2017.12.017\"",
+      "hits": 1,
+      "identities": [
+        "10.1016/j.jpowsour.2017.12.017"
+      ]
+    },
+    {
+      "from": "L062 ref. 14",
+      "query": "DOI:\"10.1016/j.apenergy.2014.02.048\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L062 ref. 15",
+      "query": "TITLE_ABS:\"Effects of catalyst layer and gas diffusion layer thickness\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L062 ref. 16",
+      "query": "DOI:\"10.1039/C4RA07078J\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L054 ref. 33",
+      "query": "DOI:\"10.1016/j.jpowsour.2009.10.030\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L054 ref. 36",
+      "query": "DOI:\"10.1007/s00253-010-2757-2\"",
+      "hits": 1,
+      "identities": [
+        "10.1007/s00253-010-2757-2"
+      ]
+    },
+    {
+      "from": "L103 Chae et al.",
+      "query": "DOI:\"10.1016/j.biortech.2009.02.065\"",
+      "hits": 1,
+      "identities": [
+        "10.1016/j.biortech.2009.02.065"
+      ]
+    },
+    {
+      "from": "L103 Xing et al.",
+      "query": "DOI:\"10.1016/j.bios.2009.06.013\"",
+      "hits": 1,
+      "identities": [
+        "10.1016/j.bios.2009.06.013"
+      ]
+    },
+    {
+      "from": "L038 ref. 11",
+      "query": "DOI:\"10.1021/es0512071\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L038 ref. 12",
+      "query": "DOI:\"10.1016/j.elecom.2006.01.010\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "L038 ref. 15",
+      "query": "DOI:\"10.1021/es062644y\"",
+      "hits": 1,
+      "identities": [
+        "10.1021/es062644y"
+      ]
+    },
+    {
+      "from": "L038 ref. 16",
+      "query": "DOI:\"10.1007/s00253-007-1193-4\"",
+      "hits": 1,
+      "identities": [
+        "10.1007/s00253-007-1193-4"
+      ]
+    },
+    {
+      "from": "L070 ref. 25",
+      "query": "DOI:\"10.1016/j.bios.2019.111763\"",
+      "hits": 1,
+      "identities": [
+        "10.1016/j.bios.2019.111763"
+      ]
+    },
+    {
+      "from": "L070 ref. 26",
+      "query": "DOI:\"10.1016/j.fuel.2021.121382\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "F5 cellulose search",
+      "query": "DOI:\"10.3390/en11010124\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "F6 coated felt search",
+      "query": "DOI:\"10.3390/coatings13061043\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "F6 polarized fixed resistance search",
+      "query": "DOI:\"10.3390/environments13070396\"",
+      "hits": 0,
+      "identities": []
+    },
+    {
+      "from": "F3 aniline search",
+      "query": "DOI:\"10.3390/microorganisms13112610\"",
+      "hits": 1,
+      "identities": [
+        "10.3390/microorganisms13112610"
+      ]
+    }
+  ],
+  "external_routes": [
+    "PubMed para identidade, editora para versão publicada, repositórios de autores e instituições para texto",
+    "Penn State, AperTO e NSF Public Access para artigos clássicos e textos não retornados por DOI no Europe PMC",
+    "Suplementos da editora e arquivos PMC para meio, preparação, figuras e errata"
+  ],
+  "criteria": {
+    "required": [
+      "mesmo braço de referência medido",
+      "metodologia completa, inclusive suplementar quando necessária",
+      "topologia, doador, ânodo, cátodo e reposição no mesmo braço",
+      "resultado da célula inteira vinculado à condição de referência"
+    ],
+    "separate": "Protocolo único sem comparador tem ficha auxiliar e fica fora da contagem estrita de braços.",
+    "scope": "Busca dirigida para ampliação, sem estimar prevalência. Coocorrência é apenas pista."
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "version": "mfc-conventional-methods/1.0.0",
+  "date": "2026-11-06",
+  "indexed_jats": 923,
+  "xml_unavailable": 35,
+  "section_hits": 328,
+  "reviewed_sources": 55,
+  "complete_methods": 44,
+  "review_decisions": {
+    "exclude": 28,
+    "include": 13,
+    "pending": 14
+  },
+  "observations": {
+    "context_only": 24,
+    "quality_hold": 5
+  },
+  "quality_issues": 12,
+  "digitized_points": 7,
+  "families": {
+    "F1": {
+      "baseline_articles": 3,
+      "new_articles": 2,
+      "articles": 5,
+      "lineages": 5,
+      "new_arm_ids": [
+        "D08-plain",
+        "D39-C"
+      ],
+      "auxiliary_protocols": [],
+      "articles_with_treated_values": 5,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 2
+        },
+        "anolyte": {
+          "recorded": 2
+        },
+        "anode": {
+          "recorded": 2
+        },
+        "anode_catalyst": {
+          "not_reported": 1,
+          "recorded": 1
+        },
+        "biofilm": {
+          "recorded": 2
+        },
+        "membrane": {
+          "not_applicable": 1,
+          "not_reported": 1
+        },
+        "external_circuit": {
+          "recorded": 2
+        },
+        "cathode_chamber": {
+          "not_applicable": 2
+        },
+        "catholyte": {
+          "not_applicable": 2
+        },
+        "cathode": {
+          "recorded": 2
+        },
+        "cathode_catalyst": {
+          "recorded": 2
+        }
+      }
+    },
+    "F2": {
+      "baseline_articles": 3,
+      "new_articles": 2,
+      "articles": 5,
+      "lineages": 3,
+      "new_arm_ids": [
+        "M6353719-acetate",
+        "M10609324-ptfe"
+      ],
+      "auxiliary_protocols": [
+        "M6296648-acetate"
+      ],
+      "articles_with_treated_values": 4,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 2
+        },
+        "anolyte": {
+          "recorded": 2
+        },
+        "anode": {
+          "recorded": 2
+        },
+        "anode_catalyst": {
+          "not_reported": 2
+        },
+        "biofilm": {
+          "recorded": 2
+        },
+        "membrane": {
+          "not_applicable": 2
+        },
+        "external_circuit": {
+          "recorded": 2
+        },
+        "cathode_chamber": {
+          "not_applicable": 2
+        },
+        "catholyte": {
+          "not_applicable": 2
+        },
+        "cathode": {
+          "recorded": 2
+        },
+        "cathode_catalyst": {
+          "recorded": 2
+        }
+      }
+    },
+    "F3": {
+      "baseline_articles": 2,
+      "new_articles": 1,
+      "articles": 3,
+      "lineages": 3,
+      "new_arm_ids": [
+        "M9076873-pristine"
+      ],
+      "auxiliary_protocols": [],
+      "articles_with_treated_values": 2,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 1
+        },
+        "anolyte": {
+          "recorded": 1
+        },
+        "anode": {
+          "recorded": 1
+        },
+        "anode_catalyst": {
+          "not_reported": 1
+        },
+        "biofilm": {
+          "recorded": 1
+        },
+        "membrane": {
+          "not_reported": 1
+        },
+        "external_circuit": {
+          "recorded": 1
+        },
+        "cathode_chamber": {
+          "not_applicable": 1
+        },
+        "catholyte": {
+          "not_applicable": 1
+        },
+        "cathode": {
+          "recorded": 1
+        },
+        "cathode_catalyst": {
+          "recorded": 1
+        }
+      }
+    },
+    "F4": {
+      "baseline_articles": 2,
+      "new_articles": 3,
+      "articles": 5,
+      "lineages": 3,
+      "new_arm_ids": [
+        "D12-CFC",
+        "D16-Pt",
+        "M9141142-blank"
+      ],
+      "auxiliary_protocols": [],
+      "articles_with_treated_values": 4,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 3
+        },
+        "anolyte": {
+          "recorded": 3
+        },
+        "anode": {
+          "recorded": 3
+        },
+        "anode_catalyst": {
+          "not_reported": 2,
+          "recorded": 1
+        },
+        "biofilm": {
+          "recorded": 3
+        },
+        "membrane": {
+          "not_reported": 3
+        },
+        "external_circuit": {
+          "recorded": 3
+        },
+        "cathode_chamber": {
+          "not_applicable": 3
+        },
+        "catholyte": {
+          "not_applicable": 3
+        },
+        "cathode": {
+          "recorded": 3
+        },
+        "cathode_catalyst": {
+          "recorded": 3
+        }
+      }
+    },
+    "F5": {
+      "baseline_articles": 2,
+      "new_articles": 2,
+      "articles": 4,
+      "lineages": 4,
+      "new_arm_ids": [
+        "D01-start",
+        "D26-Pt"
+      ],
+      "auxiliary_protocols": [],
+      "articles_with_treated_values": 3,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 2
+        },
+        "anolyte": {
+          "recorded": 2
+        },
+        "anode": {
+          "recorded": 2
+        },
+        "anode_catalyst": {
+          "not_reported": 2
+        },
+        "biofilm": {
+          "recorded": 2
+        },
+        "membrane": {
+          "not_applicable": 1,
+          "not_reported": 1
+        },
+        "external_circuit": {
+          "recorded": 2
+        },
+        "cathode_chamber": {
+          "not_applicable": 2
+        },
+        "catholyte": {
+          "not_applicable": 2
+        },
+        "cathode": {
+          "recorded": 2
+        },
+        "cathode_catalyst": {
+          "recorded": 2
+        }
+      }
+    },
+    "F6": {
+      "baseline_articles": 2,
+      "new_articles": 2,
+      "articles": 4,
+      "lineages": 4,
+      "new_arm_ids": [
+        "D05-FCF",
+        "D36-PB"
+      ],
+      "auxiliary_protocols": [],
+      "articles_with_treated_values": 3,
+      "stage_status_new": {
+        "anode_chamber": {
+          "recorded": 2
+        },
+        "anolyte": {
+          "recorded": 2
+        },
+        "anode": {
+          "recorded": 2
+        },
+        "anode_catalyst": {
+          "not_reported": 1,
+          "recorded": 1
+        },
+        "biofilm": {
+          "recorded": 2
+        },
+        "membrane": {
+          "recorded": 2
+        },
+        "external_circuit": {
+          "recorded": 2
+        },
+        "cathode_chamber": {
+          "recorded": 2
+        },
+        "catholyte": {
+          "recorded": 2
+        },
+        "cathode": {
+          "recorded": 2
+        },
+        "cathode_catalyst": {
+          "not_reported": 1,
+          "recorded": 1
+        }
+      }
+    }
+  },
+  "active_families": []
+}

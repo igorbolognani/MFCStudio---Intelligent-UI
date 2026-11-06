@@ -1,0 +1,106 @@
+{
+  "arm_id": "M9141142-blank",
+  "locator": "Suplemento, p. 3, Fig. S3a, Blank (quadrados pretos)",
+  "document_sha256": "7182d801dae3274df3df599b62006f01fd11fd61348a59d5a85417717fd5f306",
+  "image_sha256": "c53c2b7b5bdeacfa2915316f23e014a73a510f5b87690da494a39715ef95f7b3",
+  "image_local_path": "supplements/PMC9141142-s3-002.jpg",
+  "image_dimensions_px": [
+    1769,
+    697
+  ],
+  "extraction": "Imagem incorporada extraída sem reamostragem por pdfimages -f 3 -l 3 -j. Coordenadas medidas em pixels desde o canto superior esquerdo. Eixos lineares.",
+  "axis_marks_px_value": {
+    "current_density_A_m2": [
+      [
+        182,
+        "0"
+      ],
+      [
+        909,
+        "3.0"
+      ]
+    ],
+    "power_density_W_m2": [
+      [
+        600,
+        "0"
+      ],
+      [
+        120,
+        "0.6"
+      ]
+    ]
+  },
+  "pixels": [
+    [
+      312,
+      356
+    ],
+    [
+      372,
+      251
+    ],
+    [
+      565,
+      177
+    ],
+    [
+      587,
+      206
+    ],
+    [
+      696,
+      345
+    ],
+    [
+      765,
+      437
+    ],
+    [
+      854,
+      578
+    ]
+  ],
+  "digitization_uncertainty": {
+    "pixels_each_axis": 4,
+    "current_density_A_m2": "0.017",
+    "power_density_W_m2": "0.005"
+  },
+  "basis": "Área projetada de uma face do cátodo, conforme P008.",
+  "scope": "Polarização da célula inteira na condição Blank, antes de SDZ. Marcadores sobrepostos foram omitidos. Não há interpolação.",
+  "limitations": [
+    "A incerteza é da leitura gráfica, separada da variabilidade experimental.",
+    "Número de reatores da curva, resistores de cada ponto e dados primários não foram recuperados."
+  ],
+  "use": "context_only",
+  "points": [
+    {
+      "current_density_A_m2": "0.536",
+      "power_density_W_m2": "0.305"
+    },
+    {
+      "current_density_A_m2": "0.784",
+      "power_density_W_m2": "0.436"
+    },
+    {
+      "current_density_A_m2": "1.580",
+      "power_density_W_m2": "0.529"
+    },
+    {
+      "current_density_A_m2": "1.671",
+      "power_density_W_m2": "0.492"
+    },
+    {
+      "current_density_A_m2": "2.121",
+      "power_density_W_m2": "0.319"
+    },
+    {
+      "current_density_A_m2": "2.406",
+      "power_density_W_m2": "0.204"
+    },
+    {
+      "current_density_A_m2": "2.773",
+      "power_density_W_m2": "0.028"
+    }
+  ]
+}

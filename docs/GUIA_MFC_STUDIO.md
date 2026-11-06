@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. A seção 12.6 registra o reinício da seleção e o levantamento ampliado de braços convencionais.
+Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 e 12.7 registram o reinício da seleção, a amostra geral e a ampliação pela leitura dos métodos.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -862,6 +862,43 @@ python3 scripts/extract-reference-series.py \
 ```
 
 O próximo incremento parte dos localizadores L029/L036/L037, L031/L062 e L054/L082. Ele fecha o separador, a área exposta, o preparo de eletrodos e os dados de tensão por reator. A família mais frequente fornece o eixo para ampliar busca em outros índices. O par mais semelhante de 28 mL e a campanha T008 permitem testar comparabilidade e dispersão em conjuntos separados. As curvas, pontos de uma mesma série e réplicas relacionadas permanecem agrupados na avaliação.
+
+### 12.7 Busca dentro dos métodos e conferência dos controles
+
+Dos 14 braços da tabela anterior que pertencem às seis famílias desta rodada, 13 têm a montagem e a operação localizadas nos métodos do artigo. L082 remete ao suplemento, onde estão a escova, a glicose, o circuito e a montagem comum ao controle de Pt/C. Nenhum dos 14 resumos resolve sozinho a combinação e o regime. A introdução ajuda a entender por que um componente serviu de referência. Para confirmar que a referência foi efetivamente ensaiada, é preciso ligar o método ao nome do grupo, à fase sob carga e à curva ou tabela de resultados. Essa ligação está registrada artigo por artigo. [Localizadores dos 14 braços](../research/conventional-arms/methods-expansion/baseline-locators.psv)
+
+O quadro geral de 832 registros foi reaproveitado. A busca adicional usou 12 consultas paginadas no Europe PMC, uma restrita a `METHODS` e uma no corpo indexado para cada família. Foram 328 artigos distintos nessas consultas, 127 além do quadro geral. Nos dois conjuntos foram recuperados e indexados 923 JATS completos. Trinta e cinco tentativas de recuperar o JATS ficaram indisponíveis e um registro do quadro geral não tinha PMCID. Houve ainda 28 buscas por referências dos estudos e buscas dirigidas em editoras e repositórios. O índice gera uma fila de leitura, porque um termo pode nomear o contraeletrodo de voltametria, um reagente de síntese ou outro braço do artigo. A revisão dirigida teve 55 fichas, 44 com leitura integral dos métodos. Cada inclusão tem método completo e resultado ligado ao mesmo braço. A frequência da amostra geral continua calculada separadamente. [Consultas](../research/conventional-arms/methods-expansion/search.json) · [Aquisição](../research/conventional-arms/methods-expansion/acquisition.psv) · [Leitura e decisões](../research/conventional-arms/methods-expansion/reading-log.psv)
+
+| Família em bateladas com reposição | Artigos anteriores | Novos | Total | Linhagens | Artigos com valores tratados para consulta |
+|---|---:|---:|---:|---:|---:|
+| F1 · Uma câmara líquida a ar, acetato, tecido no ânodo, Pt | 3 | 2 | 5 | 5 | 5 |
+| F2 · Uma câmara líquida a ar, acetato, papel no ânodo, Pt | 3 | 2 | 5 | 3 | 4 |
+| F3 · Uma câmara líquida a ar, acetato, escova no ânodo, carvão ativado | 2 | 1 | 3 | 3 | 2 |
+| F4 · Uma câmara líquida a ar, acetato, escova no ânodo, Pt | 2 | 3 | 5 | 3 | 4 |
+| F5 · Uma câmara líquida a ar, glicose, escova no ânodo, Pt | 2 | 2 | 4 | 4 | 3 |
+| F6 · Duas câmaras líquidas, acetato, feltro no ânodo, ferricianeto e cátodo de carbono | 2 | 2 | 4 | 4 | 3 |
+
+O total bibliográfico é de 26 artigos. M6296648 documenta um protocolo adicional sem comparador próprio e fica fora da contagem estrita. O estudo M6353719 usa montagem e números semelhantes. Os dois foram agrupados na linhagem de Benha. O braço de PTFE comercial M10609324 usa ânodos reaproveitados da linha de Turim e também não aumenta o número de linhagens. L038 continua listado no total bibliográfico. Sua curva publicada tem uma diferença de volume de troca e de fase em relação ao método. A contagem de valores tratados exclui dados em quarentena. [Fichas das onze etapas](../research/conventional-arms/methods-expansion/arms.psv) · [Contagens](../research/conventional-arms/methods-expansion/audit.json)
+
+Foram registradas 29 observações numéricas extraídas de texto ou tabela. Cinco ficaram em quarentena por base de área ou inconsistência de relato. Na Fig. S3a de M9141142, sete pares de densidade de corrente e de potência foram digitalizados da curva sem sulfadiazina. O arquivo guarda a imagem de origem por hash, as marcas dos eixos e a incerteza de leitura de aproximadamente 0,017 A/m² e 0,005 W/m². Pontos sobrepostos ao ensaio com sulfadiazina foram omitidos. A incerteza gráfica não mede a variabilidade entre reatores. [Observações](../research/conventional-arms/methods-expansion/observations.psv) · [Curva digitalizada](../research/conventional-arms/methods-expansion/series-M9141142.json) · [Ocorrências de qualidade](../research/conventional-arms/methods-expansion/quality.psv)
+
+**O que já pode ser comparado.** Em F4, L103, D12, D16 e M9141142 têm câmara de 28 mL, acetato a 1 g/L, escova, tecido com Pt e operação de referência a 1 kΩ. A lavagem, o tratamento térmico, a carga de Pt, a temperatura e o inóculo ainda separam os protocolos. Em F5, L054 e L082 compartilham volume, glicose, tampão, temperatura e carga. D01 acrescenta seis partidas com 0,75 g/L a 20 ± 3 °C e suporte catódico de papel. D26 usa 18 mL e 37 °C. Em F6, D36 recupera três reatores com feltro nos dois lados, 10 mL de líquido por domínio, ferricianeto de 50 mmol/L e 1 kΩ. D05 usa escova no cátodo, 28 mL por domínio e potência dividida pela área da membrana. Em D36 a potência é dividida pela área geométrica anódica. Essas bases medem potência por superfícies físicas distintas. Dividir ou multiplicar pelo volume exige o volume da fase e da montagem correspondentes. [Nam et al.](https://doi.org/10.1016/j.ijhydene.2017.07.180) · [Feng et al.](https://doi.org/10.1016/j.jpowsour.2009.10.030) · [Jia et al.](https://doi.org/10.3390/environments13070396) · [Fonseca et al.](https://doi.org/10.1016/j.biortech.2021.125932)
+
+Para comparar a normalização, a potência elétrica num resistor fixo é $P=U^2/R$, em W. $U$ é a tensão terminal em V e $R$ a resistência em Ω. A densidade $p=P/A$ tem unidade W/m² quando a área $A$ está em m². O cálculo exige uma tensão e uma carga do mesmo ponto e uma área conhecida. Em D26, combinar 0,58 V, 1 kΩ e 2,25 cm² daria 1,50 W/m². A publicação também relata 642 mW/m² de pico em polarização, com duas dispersões distintas. Fase, método de medida e área precisam ser conciliados antes de usar esses valores juntos. [Lu et al.](https://doi.org/10.1007/s44344-026-00033-y)
+
+**Ponto de retomada.** O levantamento oferece uma base de referência bibliográfica nas seis famílias. Para uma calibração com verificação externa, ainda faltam séries e curvas por reator em condições equivalentes de pelo menos duas linhagens, com resistência, área, meio e fase recuperados. Em F4, a prioridade de processamento é alinhar as curvas e a reposição da série de 28 mL. Em F3, a pendência concreta é conferir o regime de reposição do estágio I de M12654573 e recuperar o método do controle AC de D20. Em F6, D36 é a primeira fonte da ampliação com triplicata, série temporal e polarização da referência. O passo seguinte é recuperar os pontos e a variação por reator, distinguindo a curva publicada dos dados de aquisição. Os documentos não recuperados estão no registro de leitura. A seleção ativa continua vazia e as fichas estão na camada de pesquisa do repositório. [Estado da seleção](../research/conventional-arms/selection.json) · [Arquivo de fontes](../research/conventional-arms/methods-expansion/archive.json)
+
+A reprodução parte do quadro e dos manifestos congelados. O primeiro comando reaproveita os XMLs no cache e registra as tentativas e divergências. O segundo reconstrói a fila por métodos. O terceiro confere os originais, as contagens e as coordenadas da curva.
+
+```sh
+dados=research/conventional-arms/methods-expansion
+cache=/caminho/privado/mfc-metodos
+python3 scripts/search-conventional-methods.py "$cache" --replay "$dados/acquisition.psv"
+python3 scripts/index-conventional-methods.py "$cache"
+python3 scripts/audit-conventional-methods.py --check --cache "$cache"
+```
+
+O parâmetro `--cache` também confere os PDFs, os suplementos e a imagem da curva nas posições indicadas em `sources.json` e `series-M9141142.json`. Para uma conferência sem rede ou sem os arquivos, rode a auditoria somente com `--check`.
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

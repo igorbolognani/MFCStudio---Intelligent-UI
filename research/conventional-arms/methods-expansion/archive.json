@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-06",
+  "file": "MFC_Fontes_Metodologia_2026-11-06.zip",
+  "library_file_id": "libfile_ed16622f21cc81919c7f1917c72ba2a4",
+  "file_id": "file_00000000636c81f48807fea0157978ba",
+  "version": 1,
+  "bytes": 37026636,
+  "sha256": "59d7c4563fbe588cd8f2bbe7da85072290de4c0b1adbd4aafe9c24c56c58c97c",
+  "contents": {
+    "jats": 473,
+    "pdf": 8,
+    "supplements_and_figures": 6,
+    "archive_metadata_files": 2
+  },
+  "retained_previously": "../archive.json",
+  "scope": "Documentos originais com licença de preservação identificada, inclusive textos somente indexados. Direitos não verificados e textos acessíveis somente na Web ficam com localizador e estado de acesso no manifesto de fontes. A figura de Yang et al. conserva o JPEG incorporado ao suplemento.",
+  "source_manifests": [
+    "acquisition.psv",
+    "sources.json"
+  ],
+  "checked": "CRC de todos os membros e SHA-256 comparado ao manifesto interno antes do envio. Versão e tamanho confirmados na resposta de persistência."
+}
