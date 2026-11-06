@@ -18,7 +18,7 @@
     "evaluation": "Reservar campanha externa. Curvas agregadas ou repetições de ciclo não são réplicas de reatores.",
     "status": "pending"
   },
-  "state": "bibliographic_target_pending",
+  "state": "bibliographic_target_met_for_F3_only",
   "rule": "Só admitir referência experimental do próprio artigo com método completo, combinação no mesmo braço, reposição em bateladas e resultado elétrico sob carga.",
   "checkpoints": [
     {
@@ -56,6 +56,14 @@
         "F4",
         "F5"
       ]
+    },
+    {
+      "step": "cruzamento_de_controles_sem_separador",
+      "new_articles": 11,
+      "new_family_memberships": 15,
+      "bibliographic_target_met": [
+        "F3"
+      ]
     }
   ],
   "next": [
@@ -86,18 +94,22 @@
     {
       "family": "F3",
       "sources": [
-        "10.1021/ez5002769"
+        "10.1021/ez5002769",
+        "10.1016/j.biortech.2014.09.004",
+        "10.1016/j.bios.2011.08.025",
+        "10.1002/celc.201402123"
       ],
-      "check": "Verificar se a reposição descrita nos protocolos citados se aplica ao cubo pequeno. Recuperar dados por reator com área e protocolo em pelo menos duas linhagens."
+      "check": "F3 atingiu o alvo bibliográfico. Priorizar curvas por reator em duas linhagens e recuperar o suplemento de X011. Verificar a reposição no cubo pequeno de 10.1021/ez5002769 antes de nova inclusão."
     },
     {
       "family": "F4",
       "sources": [
         "10.1039/c7ew00108h",
         "10.1039/c5ew00245a",
-        "10.1021/es401722j"
+        "10.1021/es401722j",
+        "10.1016/j.jpowsour.2012.06.088"
       ],
-      "check": "Conciliar possível reuso do controle Pt em X001 e X009. Ampliar fora da linhagem PSU e recuperar séries do estrato de 28 mL para comparação por protocolo."
+      "check": "Verificar reuso de X001 e X009, buscar duas linhagens adicionais e recuperar séries do estrato de 28 mL. Confirmar a reposição durante os 15 ciclos do controle Nafion/Pt da última fonte."
     },
     {
       "family": "F1",
@@ -114,6 +126,6 @@
     "sources.json",
     "search.json"
   ],
-  "resume_explanation": "Preservar os dez artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
+  "resume_explanation": "Preservar os onze artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
   "quantitative_readiness": "Nenhum estrato foi verificado quanto à disponibilidade de dados por reator de campanhas comparáveis independentes. Não se fez calibração."
 }

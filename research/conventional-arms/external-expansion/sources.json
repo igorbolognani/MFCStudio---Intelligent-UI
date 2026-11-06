@@ -239,5 +239,38 @@
     "comparison": {
       "X010-Pt": {}
     }
+  },
+  {
+    "source": "X011",
+    "doi": "10.1016/j.biortech.2014.09.004",
+    "title": "Spray-on polyvinyl alcohol separators and impact on power production in air-cathode microbial fuel cells with different solution conductivities",
+    "authors": "D. L. Hoskins, X. Zhang, M. A. Hickner e B. E. Logan",
+    "year": 2014,
+    "route": "reference_chaining_publisher_pdf_index",
+    "reading_scope": "full_methods_web",
+    "methods_location": "pp. 157–158, §§2.1–2.3, Fig. 1: cuba SPA, alimentação em batelada e polarização",
+    "arm_outcome_location": "pp. 158–159, §3.2 Fig. 2 (Pt) e §3.3 Fig. 3 (AC), SPA sem separador",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "publisher_pdf_indexed",
+      "url": "https://citeseerx.ist.psu.edu/document?doi=e5007c63ce531205760d53c44bd255650bc07778&repid=rep1&type=pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "pmid": "25260178",
+    "associated": [
+      {
+        "role": "supplement",
+        "url": "https://doi.org/10.1016/j.biortech.2014.09.004",
+        "locator": "Apêndice A, Figs. S1–S6",
+        "access": "pending_download",
+        "detail": "Apêndice aponta para o suplemento da versão da editora. Tentativas pelos URLs CDN não retornaram o arquivo."
+      }
+    ],
+    "comparison": {
+      "X011-AC": {},
+      "X011-Pt": {}
+    }
   }
 ]

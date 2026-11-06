@@ -792,6 +792,22 @@
       "supplement": "https://www.rsc.org/suppdata/c7/ee/c7ee00910k/c7ee00910k1.pdf",
       "supplement_access": "indexed PDF tables read; raw bytes HTTP 403",
       "cited_or_related_shortlist": 55
+    },
+    "post_audit_reference_chaining": {
+      "family_focus": [
+        "F3",
+        "F4",
+        "F6"
+      ],
+      "new_sources": [
+        "X011"
+      ],
+      "pending": [
+        "10.1016/j.jpowsour.2012.06.088",
+        "10.1016/j.bios.2011.08.025",
+        "10.1002/celc.201402123"
+      ],
+      "supplement_access": "X011: Apêndice A localizado. Download direto e duas tentativas de suplemento por CDN expiraram."
     }
   },
   "document_attempt_batches": {

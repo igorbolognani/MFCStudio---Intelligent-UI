@@ -3,19 +3,19 @@
   "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
   "api_discovery_records": 1292,
   "prior_unique_articles_in_families": 26,
-  "new_unique_articles_in_families": 10,
-  "new_family_memberships": 13,
-  "total_unique_articles_in_families": 36,
+  "new_unique_articles_in_families": 11,
+  "new_family_memberships": 15,
+  "total_unique_articles_in_families": 37,
   "screening_decisions": {
     "auxiliary_protocol": 1,
     "exclude": 16,
     "exclude_arm": 1,
-    "pending": 13,
+    "pending": 16,
     "prior_access": 5
   },
   "downloaded_documents_in_manifests": 15,
   "observations": {
-    "context_only": 15,
+    "context_only": 19,
     "quality_hold": 2
   },
   "families": {
@@ -115,8 +115,8 @@
     },
     "F3": {
       "before": 3,
-      "new": 6,
-      "articles": 9,
+      "new": 7,
+      "articles": 10,
       "lineages_before": 3,
       "lineages": 5,
       "new_arms": [
@@ -125,95 +125,98 @@
         "X003-AC",
         "X004-AC",
         "X008-AC",
-        "X009-AC"
+        "X009-AC",
+        "X011-AC"
       ],
-      "minimum_bibliographic_target_met": false,
-      "new_context_observations": 6,
+      "minimum_bibliographic_target_met": true,
+      "new_context_observations": 7,
       "coverage_new": {
         "anode_chamber": {
-          "recorded": 6
+          "recorded": 7
         },
         "anolyte": {
-          "recorded": 6
+          "recorded": 7
         },
         "anode": {
-          "recorded": 6
+          "recorded": 7
         },
         "anode_catalyst": {
-          "not_reported": 6
+          "not_reported": 7
         },
         "biofilm": {
-          "recorded": 6
+          "recorded": 7
         },
         "membrane": {
+          "not_applicable": 1,
           "not_reported": 6
         },
         "external_circuit": {
-          "recorded": 6
+          "recorded": 7
         },
         "cathode_chamber": {
-          "not_applicable": 5,
+          "not_applicable": 6,
           "recorded": 1
         },
         "catholyte": {
-          "not_applicable": 6
+          "not_applicable": 7
         },
         "cathode": {
-          "recorded": 6
+          "recorded": 7
         },
         "cathode_catalyst": {
-          "recorded": 6
+          "recorded": 7
         }
       }
     },
     "F4": {
       "before": 5,
-      "new": 4,
-      "articles": 9,
+      "new": 5,
+      "articles": 10,
       "lineages_before": 3,
       "lineages": 3,
       "new_arms": [
         "X001-Pt",
         "X006-brush",
         "X009-Pt",
-        "X010-Pt"
+        "X010-Pt",
+        "X011-Pt"
       ],
       "minimum_bibliographic_target_met": false,
-      "new_context_observations": 4,
+      "new_context_observations": 7,
       "coverage_new": {
         "anode_chamber": {
-          "recorded": 4
+          "recorded": 5
         },
         "anolyte": {
-          "recorded": 4
+          "recorded": 5
         },
         "anode": {
-          "recorded": 4
+          "recorded": 5
         },
         "anode_catalyst": {
-          "not_reported": 4
+          "not_reported": 5
         },
         "biofilm": {
-          "recorded": 4
+          "recorded": 5
         },
         "membrane": {
-          "not_applicable": 1,
+          "not_applicable": 2,
           "not_reported": 3
         },
         "external_circuit": {
-          "recorded": 4
+          "recorded": 5
         },
         "cathode_chamber": {
-          "not_applicable": 4
+          "not_applicable": 5
         },
         "catholyte": {
-          "not_applicable": 4
+          "not_applicable": 5
         },
         "cathode": {
-          "recorded": 4
+          "recorded": 5
         },
         "cathode_catalyst": {
-          "recorded": 4
+          "recorded": 5
         }
       }
     },

@@ -16,5 +16,11 @@
     "source": "X009",
     "issue": "O pico Pt de 1350 ± 50 mW/m² coincide com o publicado no corpo de X001, ambos do mesmo grupo.",
     "decision": "Contar os dois DOIs na bibliografia e agrupar na mesma linhagem. A independência de campanhas e reatores continua pendente."
+  },
+  {
+    "id": "EXQ004",
+    "source": "X011",
+    "issue": "A receita impressa no §2.1 lista KCl em 13 mg, 0,13 mg e 0,26 g para PBS 5, 50 e 100 mmol/L, respectivamente.",
+    "decision": "Preservar a concentração nominal de PBS e a condutividade publicada. Confirmar o KCl a 50 mmol/L antes de reconstruir a composição iônica."
   }
 ]
