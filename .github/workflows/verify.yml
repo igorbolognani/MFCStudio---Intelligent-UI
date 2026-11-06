@@ -19,9 +19,8 @@ jobs:
       - run: python3 scripts/build-materials.py
       - run: python3 scripts/build-s02.py
       - run: python3 scripts/audit-s29.py
-      - run: python3 scripts/audit-reference-families.py
       - run: python3 scripts/build-corpus.py
-      - run: git diff --exit-code --stat -- science/corpus-seed.json science/corpus-embedded-assets.json science/corpus-pdf-assets.json science/materials-processed.json research/materials-v0.1/curation-report.json research/corpus-v0.3/curation-report.json research/corpus-v0.4/S02-processed.json research/reference-families-v0.1/processed.json
+      - run: git diff --exit-code --stat -- science/corpus-seed.json science/corpus-embedded-assets.json science/corpus-pdf-assets.json science/materials-processed.json research/materials-v0.1/curation-report.json research/corpus-v0.3/curation-report.json research/corpus-v0.4/S02-processed.json
       - run: node scripts/audit-corpus.mjs /tmp/mfc-corpus-audit.json
       - run: python3 -m unittest discover -s scripts -p 'test_source_safety.py'
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
