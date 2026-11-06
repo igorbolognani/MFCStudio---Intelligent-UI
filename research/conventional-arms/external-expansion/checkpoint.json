@@ -1,0 +1,119 @@
+{
+  "as_of": "2026-11-06",
+  "base_commit": "95696c0a3361f9764dd2b29915d08034b51d0143",
+  "bibliographic_target": {
+    "articles_per_family": 10,
+    "lineages_per_family": 5,
+    "meaning": "Limiar operacional para revisão comparativa inicial. Não é estimativa de poder estatístico."
+  },
+  "quantitative_target": {
+    "independent_campaigns_in_comparable_stratum": 2,
+    "required": [
+      "carga e protocolo",
+      "meio",
+      "geometria e base de área",
+      "fase",
+      "curvas ou séries por reator com identidade"
+    ],
+    "evaluation": "Reservar campanha externa. Curvas agregadas ou repetições de ciclo não são réplicas de reatores.",
+    "status": "pending"
+  },
+  "state": "bibliographic_target_pending",
+  "rule": "Só admitir referência experimental do próprio artigo com método completo, combinação no mesmo braço, reposição em bateladas e resultado elétrico sob carga.",
+  "checkpoints": [
+    {
+      "step": "congelamento",
+      "articles_excluded": 972,
+      "articles_in_families": 26
+    },
+    {
+      "step": "busca_de_api",
+      "cycles": [
+        1,
+        2,
+        3
+      ],
+      "distinct_metadata_records": 1292
+    },
+    {
+      "step": "primeira_conferencia_dirigida",
+      "new_articles": 6,
+      "families_with_additions": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ]
+    },
+    {
+      "step": "conferencia_multilingue_e_de_citacoes",
+      "new_articles": 10,
+      "new_family_memberships": 13,
+      "families_with_additions": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ],
+  "next": [
+    {
+      "family": "F6",
+      "sources": [
+        "10.3390/coatings13040790",
+        "10.3390/coatings15030356",
+        "10.3390/coatings16060677"
+      ],
+      "check": "Resolver doador, espécie química do católito e reposição, respectivamente, usando protocolo depositado ou correção. Continuar nas referências dos estudos em chinês sobre feltro e ferricianeto."
+    },
+    {
+      "family": "F5",
+      "sources": [
+        "10.1039/c6ra04012h",
+        "10.1016/j.ijhydene.2024.11.343"
+      ],
+      "check": "Recuperar os métodos completos e verificar a glicose no controle de escova e Pt. Distinguir glicose na maturação de glicose na fase de resultado."
+    },
+    {
+      "family": "F2",
+      "sources": [
+        "10.1021/es050316c"
+      ],
+      "check": "Recuperar a montagem do comparador com papel, fonte do acetato e o ensaio sob carga. Seguir referências e citações de X006 fora da linhagem PSU."
+    },
+    {
+      "family": "F3",
+      "sources": [
+        "10.1021/ez5002769"
+      ],
+      "check": "Verificar se a reposição descrita nos protocolos citados se aplica ao cubo pequeno. Recuperar dados por reator com área e protocolo em pelo menos duas linhagens."
+    },
+    {
+      "family": "F4",
+      "sources": [
+        "10.1039/c7ew00108h",
+        "10.1039/c5ew00245a",
+        "10.1021/es401722j"
+      ],
+      "check": "Conciliar possível reuso do controle Pt em X001 e X009. Ampliar fora da linhagem PSU e recuperar séries do estrato de 28 mL para comparação por protocolo."
+    },
+    {
+      "family": "F1",
+      "sources": [
+        "10.62063/ecb-14"
+      ],
+      "check": "Rastrear referências e citações de X005 para controles em tecido e verificar se picos foram medidos em mais de um reator."
+    }
+  ],
+  "resume_inputs": [
+    "excluded-972.psv",
+    "candidate-register.psv",
+    "screening.psv",
+    "sources.json",
+    "search.json"
+  ],
+  "resume_explanation": "Preservar os dez artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
+  "quantitative_readiness": "Nenhum estrato foi verificado quanto à disponibilidade de dados por reator de campanhas comparáveis independentes. Não se fez calibração."
+}

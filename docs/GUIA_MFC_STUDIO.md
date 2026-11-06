@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 e 12.7 registram o reinício da seleção, a amostra geral e a ampliação pela leitura dos métodos.
+Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.8 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -899,6 +899,41 @@ python3 scripts/audit-conventional-methods.py --check --cache "$cache"
 ```
 
 O parâmetro `--cache` também confere os PDFs, os suplementos e a imagem da curva nas posições indicadas em `sources.json` e `series-M9141142.json`. Para uma conferência sem rede ou sem os arquivos, rode a auditoria somente com `--check`.
+
+### 12.8 Expansão fora dos 972 artigos acessados
+
+A lista de exclusão congela os 954 artigos com acesso integral e os 18 com acesso parcial da rodada anterior. A comparação usou DOI, PMCID, PMID e títulos normalizados. A busca rodou em três ciclos de API. O primeiro cruzou materiais, doador e topologia em OpenAlex e Crossref. O segundo ampliou os campos de título e resumo, incluindo Europe PMC sem filtro de acesso aberto. O terceiro seguiu as citações de 12 artigos de referência. Os ciclos trouxeram, respectivamente, 368, 848 e 273 registros de descoberta fora da lista, com sobreposição. A união deduplicada por identificadores e aliases conhecidos tem 1.292 registros. As APIs têm limites de paginação e houve rotas bloqueadas ou limitadas. Esse total mede descoberta bibliográfica e pode conter variantes de metadados. [Lista de exclusão](../research/conventional-arms/external-expansion/excluded-972.psv) · [Registros de descoberta](../research/conventional-arms/external-expansion/candidate-register.psv) · [Log de consultas](../research/conventional-arms/external-expansion/search.json)
+
+A segunda frente usou SciSpace para descoberta, repositórios dos autores, referências de artigos e revisões e buscas técnicas em inglês e chinês. A triagem aprofundada exigiu ler os métodos completos e localizar a resposta elétrica do mesmo controle. A construção, o meio e a troca normalmente estão nos métodos. O preparo e a receita podem estar no suplemento. O nome do controle e a fase sob carga precisam ser ligados à curva ou tabela na seção de resultados. Foram preservados localizadores, versões, URLs e hashes dos originais baixados. Nos casos de PDF indexado e transcrição web, a forma de acesso está registrada separadamente. Os braços modificados ficaram fora da extração. [Fontes](../research/conventional-arms/external-expansion/sources.json) · [Triagem dirigida](../research/conventional-arms/external-expansion/screening.psv)
+
+| Família em bateladas com reposição | Antes | Novos | Total | Linhagens |
+|---|---:|---:|---:|---:|
+| F1 · Acetato, tecido no ânodo, Pt a ar | 5 | 1 | 6 | 6 |
+| F2 · Acetato, papel no ânodo, Pt a ar | 5 | 1 | 6 | 3 |
+| F3 · Acetato, escova no ânodo, carvão ativado a ar | 3 | 6 | 9 | 5 |
+| F4 · Acetato, escova no ânodo, Pt a ar | 5 | 4 | 9 | 3 |
+| F5 · Glicose, escova no ânodo, Pt a ar | 4 | 1 | 5 | 5 |
+| F6 · Acetato, feltro no ânodo, ferricianeto e carbono imerso | 4 | 0 | 4 | 4 |
+
+As 13 inclusões por família vieram de dez artigos inéditos. O conjunto das seis famílias passou de 26 para 36 artigos distintos. As fichas novas cobrem as onze etapas. O católito líquido separado é não aplicável nos braços a ar. Separador, tratamento, volumes úteis e contagem de reatores ficam como não reportados quando o método não os resolve. Dos 17 valores extraídos manualmente de texto ou tabela, 15 servem para consulta contextual. Os outros dois preservam as dispersões conflitantes de X001. Em X003, a fórmula impressa implicaria dividir pela área duas vezes. Conservou-se o pico publicado sem recalculá-lo. X001 e X009 relatam o mesmo pico e a mesma dispersão no texto do controle Pt. Ambos contam na bibliografia e ficam agrupados até esclarecer eventual reaproveitamento de reatores ou dados. [Braços e onze etapas](../research/conventional-arms/external-expansion/arms.psv) · [Observações](../research/conventional-arms/external-expansion/observations.psv) · [Controle de qualidade](../research/conventional-arms/external-expansion/quality.json) · [Auditoria por etapa](../research/conventional-arms/external-expansion/audit.json)
+
+F3 está mais perto do alvo bibliográfico de dez artigos e cinco linhagens adotado para esta rodada. Há controles com carvão ativado de turfa, ligante PTFE ou PVDF e suportes de aço, níquel ou produto comercial. Variações de área, tampão, difusão de oxigênio e protocolo de polarização acompanham as diferenças de potência. A tabela permite procurar comparações compatíveis sem atribuir o pico a uma propriedade isolada. Em F4, a repetição do desenho de 28 mL orienta a recuperação das curvas, mas a concentração de tampão e a sequência de cargas ainda variam. Em F5, o método de X007 liga glicose a 1 g/L, escova, Pt/C e troca por queda de tensão, com pico de 876 mW/m² pela área catódica projetada. [Xie et al.](https://doi.org/10.15541/jim20170136)
+
+Em F6, um suplemento confirma os bastões de grafite, o ferricianeto e os volumes de trabalho, enquanto a receita deixa o acetato sem confirmação. Outro artigo confirma acetato e reposição semanal, mas identifica o sal catódico como ferrocianeto, a espécie reduzida. A diferença altera a condição de contorno eletroquímica. Um terceiro descreve feltro, acetato e ferricianeto, porém não esclarece a reposição em bateladas. Esses controles seguem como pendências. O protocolo de Yin et al. documenta a montagem e uma curva de partida sob carga, como fonte auxiliar sem comparador próprio. [Wang et al. 2023](https://doi.org/10.3390/coatings13040790) · [Wang et al. 2025](https://doi.org/10.3390/coatings15030356) · [Protocolo de Yin et al.](https://journal.ecust.edu.cn/article/id/6abb8c5a-0e74-4378-87a6-8e553f6047f1)
+
+A meta bibliográfica mede cobertura de leitura. Para avaliar o modelo, o requisito inicial continua sendo recuperar curvas ou séries com identidade do reator em pelo menos duas campanhas independentes de uma montagem comparável e reservar uma campanha para avaliação. O ponto de retomada prioriza F6, F5 e F2 para aumentar a diversidade, a verificação de reposição em F3 e a aquisição de séries para F3 e F4. As fichas ficam na camada de pesquisa. [Ponto de retomada](../research/conventional-arms/external-expansion/checkpoint.json)
+
+```sh
+cache=/caminho/privado/mfc-externo
+for ciclo in 1 2 3; do
+  python3 scripts/search-external-arms.py "$cache" --cycle "$ciclo"
+done
+python3 scripts/search-external-arms.py "$cache" --export-register "$cache/candidate-register.psv"
+cmp "$cache/candidate-register.psv" research/conventional-arms/external-expansion/candidate-register.psv
+python3 scripts/audit-external-arms.py --check
+```
+
+As consultas reutilizam páginas em cache e registram quais resultados foram limitados. Para conferir também os arquivos originais baixados, use `--cache "$cache"` na auditoria. Os arquivos desta rodada complementam o registro anterior com identificadores estáveis. A triagem manual e os controles revisados ficam separados da fila de descoberta.
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

@@ -1,0 +1,243 @@
+[
+  {
+    "source": "X001",
+    "doi": "10.1039/c7ew00108h",
+    "title": "Addition of conductive particles to improve the performance of activated carbon air-cathodes in microbial fuel cells",
+    "authors": "X. Zhang et al.",
+    "year": 2017,
+    "route": "psu_publications",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 807–808, Materials and methods, Air-cathode materials, MFC experiments",
+    "arm_outcome_location": "Results and discussion, Electricity generation, Fig. 1A",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf",
+      "url": "https://sites.psu.edu/brucelogan/files/2017/09/2017-Zhang-etal-ESWRT-11aimpa.pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "psu/2017-Zhang-etal-ESWRT-11aimpa.pdf",
+      "sha256": "ee65c7b09433db1c9133e603be176e771d8f5a9a0d0167e1fbbf9e0fed823686",
+      "bytes": 2509786
+    },
+    "comparison": {
+      "X001-AC": {},
+      "X001-Pt": {}
+    }
+  },
+  {
+    "source": "X002",
+    "doi": "10.1016/j.jpowsour.2018.05.043",
+    "title": "Enhanced electricity generation and effective water filtration using graphene-based membrane air-cathodes in microbial fuel cells",
+    "authors": "X. Song et al.",
+    "year": 2018,
+    "route": "psu_publications",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 222–223, §§2.1–2.7, em particular §§2.5–2.6",
+    "arm_outcome_location": "p. 225, §3.4 e Fig. 6, control",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf",
+      "url": "https://sites.psu.edu/brucelogan/files/2017/06/2018-Song-etal-JPS-graphene-membrane-filter-26pyt3o.pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "psu/2018-Song-etal-JPS-graphene-membrane-filter-26pyt3o.pdf",
+      "sha256": "16f545ffcb291f569f10a6977e47d1f9096dfa5f30c66489853217b837ced28d",
+      "bytes": 3042352
+    },
+    "comparison": {
+      "X002-AC": {}
+    }
+  },
+  {
+    "source": "X003",
+    "doi": "10.1016/j.cej.2019.122522",
+    "title": "Low-cost Fe–N–C catalyst derived from Fe (III)-chitosan hydrogel to enhance power production in microbial fuel cells",
+    "authors": "W. Yang et al.",
+    "year": 2020,
+    "route": "psu_publications",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 2–4, §§2.1–2.6. Montagem e polarização no §2.4",
+    "arm_outcome_location": "p. 5, §3.2 e Fig. 4A, AC",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf",
+      "url": "https://sites.psu.edu/brucelogan/files/2019/09/2019-Yang-etal-ChemEngJ-Chitosan-cathode.pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "psu/2019-Yang-etal-ChemEngJ-Chitosan-cathode.pdf",
+      "sha256": "de7368beb65d2831c43ab8eee4df16143035dcc6162f6c72e041585ceac4b094",
+      "bytes": 2616108
+    },
+    "comparison": {
+      "X003-AC": {}
+    }
+  },
+  {
+    "source": "X004",
+    "doi": "10.1016/j.jpowsour.2020.228264",
+    "title": "Simultaneously enhancing power density and coulombic efficiency with a hydrophobic Fe–N4/activated carbon air cathode for microbial fuel cells",
+    "authors": "W. Yang et al.",
+    "year": 2020,
+    "route": "psu_publications",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 2–4, §§2.1–2.4. Montagem e operação no §2.2",
+    "arm_outcome_location": "p. 4, §3.1 e Fig. 1A, plain AC",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf",
+      "url": "https://sites.psu.edu/brucelogan/files/2020/05/2020-Yang-etal-JPS-Fe-N4-AC-cathode.pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "psu/2020-Yang-etal-JPS-Fe-N4-AC-cathode.pdf",
+      "sha256": "083b44dda33619a595179d82b5a702d745f476a116372e6f6af2e39439828b08",
+      "bytes": 1626642
+    },
+    "comparison": {
+      "X004-AC": {}
+    }
+  },
+  {
+    "source": "X005",
+    "doi": "10.62063/ecb-14",
+    "title": "Investigation of performance losses in microbial fuel cells with low platinum loadings on air-cathodes",
+    "authors": "E. Sonmez, B. Avci, N. Mohamad e H. Bermek",
+    "year": 2024,
+    "route": "scispace_title_then_journal",
+    "reading_scope": "full_methods",
+    "methods_location": "Materials and methods, de Electrodes a Electrochemical impedance spectroscopy",
+    "arm_outcome_location": "Results and discussion, Voltage generation e Polarization and power production, Figs. 2a e 3b",
+    "document": {
+      "role": "main",
+      "format": "html",
+      "version": "published_html",
+      "url": "https://euchembioj.com/index.php/pub/article/download/14/28",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "articles/e22f4ee4312c6567/article.html",
+      "sha256": "e1d66cf38ae576e7394b5c1e3b60ebcca376ff07ae2b96f8c19a9e6e00ddba28",
+      "bytes": 70096
+    },
+    "comparison": {
+      "X005-Pt": {}
+    }
+  },
+  {
+    "source": "X006",
+    "doi": "10.1021/es800312v",
+    "title": "Electricity Generation by Rhodopseudomonas palustris DX-1",
+    "authors": "D. Xing, Y. Zuo, S. Cheng, J. M. Regan e B. E. Logan",
+    "year": 2008,
+    "route": "scispace_related_citation_and_psu_author_copy",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 4146–4148, Materials and Methods, MFC Construction, MFC Operation e Electrochemical Analysis",
+    "arm_outcome_location": "pp. 4148–4149, Power Generation from MFCs with Carbon Paper Anodes e with Brush Anodes, Figs. 3–4",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf",
+      "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2008-Xing-etal-EST.pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only",
+      "local_path": "articles/5889c2763f6a177f/article.pdf",
+      "sha256": "3f7b85d084032132af0784f3cb60270618a353d4ba768fd7bf46403dc66d73ad",
+      "bytes": 5205254
+    },
+    "comparison": {
+      "X006-paper": {},
+      "X006-brush": {}
+    }
+  },
+  {
+    "source": "X007",
+    "doi": "10.15541/jim20170136",
+    "title": "Fe-N Modified Carbon Black as a High-performance and Cost-effective Cathode Catalyst in Microbial Fuel Cells",
+    "authors": "Y.-E. Xie, D.-L. Wang, Z.-K. Ma, H.-H. Song e P. Xu",
+    "year": 2018,
+    "route": "web_zh_publisher_full_pdf",
+    "reading_scope": "full_methods_web",
+    "methods_location": "pp. 296–297, §§1.1–1.3 do PDF do periódico em chinês",
+    "arm_outcome_location": "p. 297, §2.1, MFCs 的产电性能, e resumo",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "published_pdf_web_index",
+      "url": "https://www.jim.org.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=13768",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "comparison": {
+      "X007-Pt": {}
+    }
+  },
+  {
+    "source": "X008",
+    "doi": "10.1016/j.elecom.2009.09.024",
+    "title": "Power generation using an activated carbon and metal mesh cathode in a microbial fuel cell",
+    "authors": "F. Zhang, S. Cheng, D. Pant, G. Van Bogaert e B. E. Logan",
+    "year": 2009,
+    "route": "yang_2017_ref_20_then_author_copy",
+    "reading_scope": "full_methods_web",
+    "methods_location": "p. 2178, §§2.1–2.3 do PDF de autor, cópia editorial indexada",
+    "arm_outcome_location": "pp. 2178–2179, §3.1 e Fig. 1A, plain AC with PTFE",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "publisher_pdf_author_copy_web",
+      "url": "https://citeseerx.ist.psu.edu/document?doi=5417af16686b7d2e5583855a0910c3b7a1c06b01&repid=rep1&type=pdf",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "comparison": {
+      "X008-AC": {}
+    }
+  },
+  {
+    "source": "X009",
+    "doi": "10.1039/c5ew00245a",
+    "title": "Diffusion layer characteristics for increasing the performance of activated carbon air cathodes in microbial fuel cells",
+    "authors": "X. Zhang, W. He, W. Yang, J. Liu, Q. Wang, P. Liang, X. Huang e B. E. Logan",
+    "year": 2016,
+    "route": "yang_2017_si_then_public_author_manuscript",
+    "reading_scope": "full_methods_web",
+    "methods_location": "Manuscrito, §§2.1–2.5, montagem e operação no §2.3",
+    "arm_outcome_location": "Manuscrito, §3.2, Fig. 2A, porous PTFE e PTFE Pt/C CC",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "accepted_manuscript_web",
+      "url": "https://www.researchgate.net/publication/287374544_Diffusion_layer_characteristics_for_increasing_the_performance_of_activated_carbon_air_cathodes_in_microbial_fuel_cells",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "comparison": {
+      "X009-AC": {},
+      "X009-Pt": {}
+    }
+  },
+  {
+    "source": "X010",
+    "doi": "10.1021/es401722j",
+    "title": "Influence of Chemical and Physical Properties of Activated Carbon Powders on Oxygen Reduction and Microbial Fuel Cell Performance",
+    "authors": "V. J. Watson, C. Nieto Delgado e B. E. Logan",
+    "year": 2013,
+    "route": "yang_2017_ref_72_then_indexed_full_text",
+    "reading_scope": "full_methods_web",
+    "methods_location": "pp. 6705–6706, Materials and Methods, incluindo MFC Experiments",
+    "arm_outcome_location": "p. 6706, Results and Discussion, Fig. 1A, standard Pt/C",
+    "document": {
+      "role": "main",
+      "format": "web",
+      "version": "publisher_article_transcription_web",
+      "url": "https://paperzz.com/doc/9080737/influence-of-chemical-and-physical-properties-of-activate...",
+      "acquired_on": "2026-11-06",
+      "rights": "facts_and_citation_only"
+    },
+    "comparison": {
+      "X010-Pt": {}
+    }
+  }
+]

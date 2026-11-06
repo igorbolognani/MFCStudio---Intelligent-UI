@@ -1,0 +1,291 @@
+{
+  "prior_exclusion_count": 972,
+  "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
+  "api_discovery_records": 1292,
+  "prior_unique_articles_in_families": 26,
+  "new_unique_articles_in_families": 10,
+  "new_family_memberships": 13,
+  "total_unique_articles_in_families": 36,
+  "screening_decisions": {
+    "auxiliary_protocol": 1,
+    "exclude": 16,
+    "exclude_arm": 1,
+    "pending": 13,
+    "prior_access": 5
+  },
+  "downloaded_documents_in_manifests": 15,
+  "observations": {
+    "context_only": 15,
+    "quality_hold": 2
+  },
+  "families": {
+    "F1": {
+      "before": 5,
+      "new": 1,
+      "articles": 6,
+      "lineages_before": 5,
+      "lineages": 6,
+      "new_arms": [
+        "X005-Pt"
+      ],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 2,
+      "coverage_new": {
+        "anode_chamber": {
+          "recorded": 1
+        },
+        "anolyte": {
+          "recorded": 1
+        },
+        "anode": {
+          "recorded": 1
+        },
+        "anode_catalyst": {
+          "not_applicable": 1
+        },
+        "biofilm": {
+          "recorded": 1
+        },
+        "membrane": {
+          "not_applicable": 1
+        },
+        "external_circuit": {
+          "recorded": 1
+        },
+        "cathode_chamber": {
+          "not_applicable": 1
+        },
+        "catholyte": {
+          "not_applicable": 1
+        },
+        "cathode": {
+          "recorded": 1
+        },
+        "cathode_catalyst": {
+          "recorded": 1
+        }
+      }
+    },
+    "F2": {
+      "before": 5,
+      "new": 1,
+      "articles": 6,
+      "lineages_before": 3,
+      "lineages": 3,
+      "new_arms": [
+        "X006-paper"
+      ],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 2,
+      "coverage_new": {
+        "anode_chamber": {
+          "recorded": 1
+        },
+        "anolyte": {
+          "recorded": 1
+        },
+        "anode": {
+          "recorded": 1
+        },
+        "anode_catalyst": {
+          "not_reported": 1
+        },
+        "biofilm": {
+          "recorded": 1
+        },
+        "membrane": {
+          "not_applicable": 1
+        },
+        "external_circuit": {
+          "recorded": 1
+        },
+        "cathode_chamber": {
+          "not_applicable": 1
+        },
+        "catholyte": {
+          "not_applicable": 1
+        },
+        "cathode": {
+          "recorded": 1
+        },
+        "cathode_catalyst": {
+          "recorded": 1
+        }
+      }
+    },
+    "F3": {
+      "before": 3,
+      "new": 6,
+      "articles": 9,
+      "lineages_before": 3,
+      "lineages": 5,
+      "new_arms": [
+        "X001-AC",
+        "X002-AC",
+        "X003-AC",
+        "X004-AC",
+        "X008-AC",
+        "X009-AC"
+      ],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 6,
+      "coverage_new": {
+        "anode_chamber": {
+          "recorded": 6
+        },
+        "anolyte": {
+          "recorded": 6
+        },
+        "anode": {
+          "recorded": 6
+        },
+        "anode_catalyst": {
+          "not_reported": 6
+        },
+        "biofilm": {
+          "recorded": 6
+        },
+        "membrane": {
+          "not_reported": 6
+        },
+        "external_circuit": {
+          "recorded": 6
+        },
+        "cathode_chamber": {
+          "not_applicable": 5,
+          "recorded": 1
+        },
+        "catholyte": {
+          "not_applicable": 6
+        },
+        "cathode": {
+          "recorded": 6
+        },
+        "cathode_catalyst": {
+          "recorded": 6
+        }
+      }
+    },
+    "F4": {
+      "before": 5,
+      "new": 4,
+      "articles": 9,
+      "lineages_before": 3,
+      "lineages": 3,
+      "new_arms": [
+        "X001-Pt",
+        "X006-brush",
+        "X009-Pt",
+        "X010-Pt"
+      ],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 4,
+      "coverage_new": {
+        "anode_chamber": {
+          "recorded": 4
+        },
+        "anolyte": {
+          "recorded": 4
+        },
+        "anode": {
+          "recorded": 4
+        },
+        "anode_catalyst": {
+          "not_reported": 4
+        },
+        "biofilm": {
+          "recorded": 4
+        },
+        "membrane": {
+          "not_applicable": 1,
+          "not_reported": 3
+        },
+        "external_circuit": {
+          "recorded": 4
+        },
+        "cathode_chamber": {
+          "not_applicable": 4
+        },
+        "catholyte": {
+          "not_applicable": 4
+        },
+        "cathode": {
+          "recorded": 4
+        },
+        "cathode_catalyst": {
+          "recorded": 4
+        }
+      }
+    },
+    "F5": {
+      "before": 4,
+      "new": 1,
+      "articles": 5,
+      "lineages_before": 4,
+      "lineages": 5,
+      "new_arms": [
+        "X007-Pt"
+      ],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 1,
+      "coverage_new": {
+        "anode_chamber": {
+          "recorded": 1
+        },
+        "anolyte": {
+          "recorded": 1
+        },
+        "anode": {
+          "recorded": 1
+        },
+        "anode_catalyst": {
+          "not_reported": 1
+        },
+        "biofilm": {
+          "recorded": 1
+        },
+        "membrane": {
+          "not_reported": 1
+        },
+        "external_circuit": {
+          "recorded": 1
+        },
+        "cathode_chamber": {
+          "not_applicable": 1
+        },
+        "catholyte": {
+          "not_applicable": 1
+        },
+        "cathode": {
+          "recorded": 1
+        },
+        "cathode_catalyst": {
+          "recorded": 1
+        }
+      }
+    },
+    "F6": {
+      "before": 4,
+      "new": 0,
+      "articles": 4,
+      "lineages_before": 4,
+      "lineages": 4,
+      "new_arms": [],
+      "minimum_bibliographic_target_met": false,
+      "new_context_observations": 0,
+      "coverage_new": {
+        "anode_chamber": {},
+        "anolyte": {},
+        "anode": {},
+        "anode_catalyst": {},
+        "biofilm": {},
+        "membrane": {},
+        "external_circuit": {},
+        "cathode_chamber": {},
+        "catholyte": {},
+        "cathode": {},
+        "cathode_catalyst": {}
+      }
+    }
+  }
+}

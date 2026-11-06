@@ -1,0 +1,96 @@
+[
+  {
+    "key": "10.3390/coatings13040790",
+    "role": "main",
+    "version": "publisher_pdf",
+    "url": "https://www.mdpi.com/2079-6412/13/4/790/pdf?version=1681888333",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/5e1afd77f1df6759/article.pdf",
+    "sha256": "94b5afb1d0b6f57ac51e4a19a8683052d3658722b63d7b828af074fab7d9c3dc",
+    "bytes": 2805356
+  },
+  {
+    "key": "10.3390/coatings16060677",
+    "role": "main",
+    "version": "publisher_pdf",
+    "url": "https://www.mdpi.com/2079-6412/16/6/677/pdf",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/4459bcc6d5ba6cab/article.pdf",
+    "sha256": "d1309b6a41ea4adc11d8aaea7fb0532a38c35f3150fd3ddf62cc5fd22aa2d0b0",
+    "bytes": 4494957
+  },
+  {
+    "key": "10.3390/en13030574",
+    "role": "main",
+    "version": "publisher_pdf",
+    "url": "https://www.mdpi.com/1996-1073/13/3/574/pdf?version=1579927583",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/6bca667fca604329/article.pdf",
+    "sha256": "edd82c09d0d4fb5e90fbc04bf0384eeba93f89c9c3c1e2b80a9b57cf4cc9172a",
+    "bytes": 4745673
+  },
+  {
+    "key": "10.3390/su142113907",
+    "role": "main",
+    "version": "publisher_pdf",
+    "url": "https://www.mdpi.com/2071-1050/14/21/13907/pdf?version=1666783476",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/84897958e87f143d/article.pdf",
+    "sha256": "c4fcc7dcf4a173728ca3fcd0b6897eec9bc4b7bdbf714b11f8757a68c1a5cdb5",
+    "bytes": 3187638
+  },
+  {
+    "key": "10.3390/coatings13040790",
+    "role": "supplement_container",
+    "version": "publisher_zip",
+    "url": "https://mdpi-res.com/d_attachment/coatings/coatings-13-00790/article_deploy/coatings-13-00790-s001.zip",
+    "acquired_on": "2026-11-06",
+    "local_path": "coatings790-si-zip.zip",
+    "sha256": "66149fcca3da4b46acfbe8df22693c8e2909f73ff73be04a6e88319ec067b26b",
+    "bytes": 995770
+  },
+  {
+    "key": "10.3390/coatings13040790",
+    "role": "supplement",
+    "version": "publisher_pdf",
+    "url": "https://mdpi-res.com/d_attachment/coatings/coatings-13-00790/article_deploy/coatings-13-00790-s001.zip",
+    "acquired_on": "2026-11-06",
+    "local_path": "coatings790-supplement.pdf",
+    "sha256": "a9d25e2edfda0fb4a818eb9613080100c6addc6fe7a839d0b188cbce320b9f73",
+    "bytes": 1011198,
+    "zip_member": "coatings-2282340-supplementary.pdf",
+    "transform": "extração do membro sem alteração dos bytes"
+  },
+  {
+    "key": "10.3390/coatings15030356",
+    "role": "main",
+    "version": "publisher_pdf",
+    "url": "https://mdpi-res.com/d_attachment/coatings/coatings-15-00356/article_deploy/coatings-15-00356.pdf",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/fe356/article.pdf",
+    "sha256": "55e217c6b7ac1bed2f290aff58da247f55d2fcf771bca43c302c9c356e83f941",
+    "bytes": 12910258
+  },
+  {
+    "key": "10.3390/coatings15030356",
+    "role": "supplement_container",
+    "version": "publisher_zip",
+    "url": "https://mdpi-res.com/d_attachment/coatings/coatings-15-00356/article_deploy/coatings-15-00356-s001.zip",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/fe356/supplement.zip",
+    "sha256": "44305216936028e7e74d5392af558719295a1a1ed3c9c0adeb31e294869a33b4",
+    "bytes": 271682
+  },
+  {
+    "key": "10.3390/coatings15030356",
+    "role": "supplement",
+    "version": "publisher_pdf",
+    "url": "https://mdpi-res.com/d_attachment/coatings/coatings-15-00356/article_deploy/coatings-15-00356-s001.zip",
+    "acquired_on": "2026-11-06",
+    "local_path": "articles/fe356/supplement.pdf",
+    "sha256": "78c172c071dc8062d4331bbe33e60e4ff277c67ff9e54802bdb9d2ed93e415f6",
+    "bytes": 297214,
+    "zip_member": "coatings-3514582-supplementary.pdf",
+    "transform": "extração do membro sem alteração dos bytes"
+  }
+]

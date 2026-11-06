@@ -1,0 +1,866 @@
+{
+  "date": "2026-11-06",
+  "deduplication": "Prior exclusion by DOI, PMCID, PMID or normalized title. Register groups exact returned keys and merges metadata without DOI when a unique DOI is supported by PMID or exact title.",
+  "api_records_after_deduplication": 1292,
+  "cycles": [
+    {
+      "cycle": 1,
+      "excluded_articles_matched": 64,
+      "candidates": 368,
+      "queries": [
+        {
+          "route": "F1-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon cloth\" OR \"graphite cloth\" OR \"woven carbon\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\") AND \"air cathode\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        },
+        {
+          "route": "F1-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon cloth acetate platinum air cathode control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 60,
+              "total_reported": 208319,
+              "sha256": "3c84cb02e1f792513ffae8e899569e54ed2763c715e3e8e2b03bb53330a6e822"
+            }
+          ],
+          "records_returned": 60,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F2-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon paper\" OR \"Toray\" OR \"TGP-H\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\") AND \"air cathode\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 361,
+              "sha256": "d9db109d9743c44d0802183b9829d65efad11087e59709286fbc867a647a0c4c"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F2-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon paper acetate platinum air cathode control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 60,
+              "total_reported": 212383,
+              "sha256": "6dca6df8923cf2d536755246aff6cac8c962a17c5589853a734dc4ec36c4bad1"
+            }
+          ],
+          "records_returned": 60,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F3-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"acetate\" AND (\"activated carbon\" OR \"AC/PTFE\") AND \"air cathode\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 340,
+              "sha256": "c87874897ef70718ed8ecc19c2c21d28834048422e2ae31568557aeb8f25d7d7"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F3-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush acetate activated carbon air cathode control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 60,
+              "total_reported": 297903,
+              "sha256": "6a5341f5f757574b3e879671761ec106e56f99dfcd2ea7d09cbe1cc184f40fb3"
+            }
+          ],
+          "records_returned": 60,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F4-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\") AND \"air cathode\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        },
+        {
+          "route": "F4-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush acetate platinum air cathode control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        },
+        {
+          "route": "F5-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"glucose\" AND (\"platinum\" OR \"Pt/C\") AND \"air cathode\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 306,
+              "sha256": "9987b43a288d75e00f8b765a6fcf91068ae71ac2fb1b0cb147717d5791f2ac2d"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F5-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell graphite fiber brush glucose platinum air cathode control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 60,
+              "total_reported": 188266,
+              "sha256": "ad57b89e93e3967440256ec3f6412c85e9eb07072430747010b1f6cbe30090bf"
+            }
+          ],
+          "records_returned": 60,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F6-alex-specific",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon felt\" OR \"graphite felt\") AND \"acetate\" AND (\"ferricyanide\" OR \"hexacyanoferrate\") AND \"two chamber\"",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 190,
+              "sha256": "e5aa2d8b97ffb124275320d4a6118792b9ea040d318674367291cc86d4387e9f"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F6-crossref",
+          "endpoint": "https://api.crossref.org/works",
+          "query": {
+            "query.bibliographic": "microbial fuel cell carbon felt acetate ferricyanide two chamber control fed batch",
+            "filter": "type:journal-article,until-pub-date:2026-11-06",
+            "rows": 60,
+            "select": "DOI,title,author,published,link,URL,reference"
+          },
+          "page_limit": 1,
+          "pages": [
+            {
+              "returned": 60,
+              "total_reported": 217795,
+              "sha256": "5133fdaaf1b03571ec8cc81aa3ee3ff8a840004c89cf6be008b72d75fa490f50"
+            }
+          ],
+          "records_returned": 60,
+          "coverage": "bounded_ranked"
+        }
+      ],
+      "candidates_with_locators": 237,
+      "route_counts": {
+        "F1-crossref": 58,
+        "F2-crossref": 59,
+        "F3-crossref": 56,
+        "F5-crossref": 56,
+        "F5-alex-specific": 79,
+        "F6-crossref": 56,
+        "F3-alex-specific": 70,
+        "F2-alex-specific": 71,
+        "F6-alex-specific": 89
+      }
+    },
+    {
+      "cycle": 2,
+      "excluded_articles_matched": 184,
+      "candidates": 848,
+      "queries": [
+        {
+          "route": "F1-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon cloth\" OR \"graphite cloth\" OR \"woven carbon\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [],
+          "error": "HTTP Error 429: Too Many Requests",
+          "records_returned": 0,
+          "coverage": "failed"
+        },
+        {
+          "route": "F1-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"carbon cloth\" OR TITLE_ABS:\"graphite cloth\" OR TITLE_ABS:\"woven carbon\" OR TITLE_ABS:\"platinum\" OR TITLE_ABS:\"Pt/C\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 200,
+              "total_reported": 365,
+              "sha256": "b1a0618802a2ccedf5ec547e02dceb148d0d323cef54eda99c97f175c0794638"
+            },
+            {
+              "returned": 165,
+              "total_reported": 365,
+              "sha256": "2c9daef94d3163f70ec8603db12fc46b43f397ef17f75d65d6c5cc2be0e7a250"
+            }
+          ],
+          "records_returned": 365,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon paper\" OR \"Toray\" OR \"TGP-H\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 513,
+              "sha256": "9674a0305583ee8a016c26de1a40ee53a35824813e03646dffa15f4610cf174b"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F2-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"carbon paper\" OR TITLE_ABS:\"Toray\" OR TITLE_ABS:\"TGP-H\" OR TITLE_ABS:\"platinum\" OR TITLE_ABS:\"Pt/C\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 200,
+              "total_reported": 269,
+              "sha256": "d28fd21191d8006116126e6fdea01b0166cae98b585a60f057c11712ed77378d"
+            },
+            {
+              "returned": 69,
+              "total_reported": 269,
+              "sha256": "abe78900f3f42e5f0c7e4c23a5d85253ea9e6aaba8b1cddaa089abbb9b9dda47"
+            }
+          ],
+          "records_returned": 269,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"acetate\" AND (\"activated carbon\" OR \"AC/PTFE\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 440,
+              "sha256": "4fff9340eb2fb596155977d530a2552fa4671a43525d85d5532995967e3a00a0"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F3-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"graphite fiber brush\" OR TITLE_ABS:\"carbon brush\" OR TITLE_ABS:\"brush anode\" OR TITLE_ABS:\"activated carbon\" OR TITLE_ABS:\"AC/PTFE\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 198,
+              "total_reported": 198,
+              "sha256": "72ebac8bd249ee36fd74cd53a2d5cd2899e8dd1add828a23cbce7e44a1b2f213"
+            }
+          ],
+          "records_returned": 198,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F4-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"acetate\" AND (\"platinum\" OR \"Pt/C\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 469,
+              "sha256": "3d12c557728632353a160b5c9345720df303a8070a47b587ba378884f1d2f85f"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F4-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"graphite fiber brush\" OR TITLE_ABS:\"carbon brush\" OR TITLE_ABS:\"brush anode\" OR TITLE_ABS:\"platinum\" OR TITLE_ABS:\"Pt/C\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 200,
+              "total_reported": 256,
+              "sha256": "b891accb654873de202440508a25d1f3ea51735ded448ecd31e3a9790b5f4154"
+            },
+            {
+              "returned": 56,
+              "total_reported": 256,
+              "sha256": "b81a41611ab5b1706752b8a834b8120e10c28d6c5991a807aa1c6c53713c607f"
+            }
+          ],
+          "records_returned": 256,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"graphite fiber brush\" OR \"carbon brush\" OR \"brush anode\") AND \"glucose\" AND (\"platinum\" OR \"Pt/C\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 378,
+              "sha256": "b766ebdd6a9560b2d79b5d6ea433395b76dcb0887f36cd34a1c4fc12369f87c7"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F5-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"graphite fiber brush\" OR TITLE_ABS:\"carbon brush\" OR TITLE_ABS:\"brush anode\" OR TITLE_ABS:\"platinum\" OR TITLE_ABS:\"Pt/C\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 200,
+              "total_reported": 256,
+              "sha256": "b891accb654873de202440508a25d1f3ea51735ded448ecd31e3a9790b5f4154"
+            },
+            {
+              "returned": 56,
+              "total_reported": 256,
+              "sha256": "b81a41611ab5b1706752b8a834b8120e10c28d6c5991a807aa1c6c53713c607f"
+            }
+          ],
+          "records_returned": 256,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-alex-no-topology",
+          "endpoint": "https://api.openalex.org/works",
+          "query": {
+            "search": "(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (\"carbon felt\" OR \"graphite felt\") AND \"acetate\" AND (\"ferricyanide\" OR \"hexacyanoferrate\")",
+            "per_page": 100,
+            "select": "id,doi,display_name,publication_year,type,ids,is_retracted,primary_location,best_oa_location,locations,authorships"
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 382,
+              "sha256": "97fc33a4dfe619619ed4f5e77b4bc219c948dedae452bea9163a6525bb4da6b1"
+            }
+          ],
+          "error": "HTTP Error 401: Unauthorized",
+          "records_returned": 100,
+          "coverage": "bounded_ranked"
+        },
+        {
+          "route": "F6-epmc-title-abstract",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "query": {
+            "query": "TITLE_ABS:(\"microbial fuel cell\" OR \"microbial fuel cells\") AND (TITLE_ABS:\"carbon felt\" OR TITLE_ABS:\"graphite felt\" OR TITLE_ABS:\"ferricyanide\" OR TITLE_ABS:\"hexacyanoferrate\") AND FIRST_PDATE:[1990-01-01 TO 2026-11-06]",
+            "format": "json",
+            "pageSize": 200
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 200,
+              "total_reported": 289,
+              "sha256": "3d3c29ca2ad796fab535427f68be04ec27734be76b0754dd8681eb2ded554431"
+            },
+            {
+              "returned": 89,
+              "total_reported": 289,
+              "sha256": "19b9be9cb74ac0f072f7fa76b0fe5aed081358fc92ac1cae3aba59b743ad708d"
+            }
+          ],
+          "records_returned": 289,
+          "coverage": "all_pages"
+        }
+      ],
+      "candidates_with_locators": 202,
+      "route_counts": {
+        "F1-epmc-title-abstract": 296,
+        "F6-epmc-title-abstract": 247,
+        "F2-epmc-title-abstract": 218,
+        "F4-epmc-title-abstract": 210,
+        "F5-epmc-title-abstract": 210,
+        "F3-epmc-title-abstract": 154,
+        "F4-alex-no-topology": 71,
+        "F2-alex-no-topology": 76,
+        "F6-alex-no-topology": 80,
+        "F5-alex-no-topology": 78,
+        "F3-alex-no-topology": 68
+      }
+    },
+    {
+      "cycle": 3,
+      "excluded_articles_matched": 57,
+      "candidates": 273,
+      "queries": [
+        {
+          "route": "F1-cites-24993129",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/24993129/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 18,
+              "total_reported": 18,
+              "sha256": "45cddfaf9419d1935d59feac1d1ef157f7cebe8ca027efd75799d91d20056ebc"
+            }
+          ],
+          "records_returned": 18,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F1-cites-28662640",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/28662640/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 12,
+              "total_reported": 12,
+              "sha256": "02c9a7c603d8a39f1e743bc203de878c2f205f9bf36f533e6846ad26b2875e72"
+            }
+          ],
+          "records_returned": 12,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-cites-36500961",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/36500961/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 1,
+              "total_reported": 1,
+              "sha256": "f0f320769adbcb592b9c35c7269072d001ba0656d155b0141dca92914880d792"
+            }
+          ],
+          "records_returned": 1,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-cites-34835851",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/34835851/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 8,
+              "total_reported": 8,
+              "sha256": "50a4574bd6689a2c82e9fa0954bff91368a15a06947375ab4ad48e0da67c20ab"
+            }
+          ],
+          "records_returned": 8,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F2-cites-18589979",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/18589979/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 164,
+              "sha256": "e27d8659a2d2d7af0448d5739f15f4fb426a28d195f595dc660ecbcb931cd50d"
+            },
+            {
+              "returned": 64,
+              "total_reported": 164,
+              "sha256": "f82042edf209d65ec6eaecf3c254b718a8e0dcdaa129dc32c5ae3cd577f84396"
+            }
+          ],
+          "records_returned": 164,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-cites-30406217",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/30406217/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 9,
+              "total_reported": 9,
+              "sha256": "3806f859f124d26032d1e1b93b0f069feb3e8492b84a8a2a895dbfe36ded1097"
+            }
+          ],
+          "records_returned": 9,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F3-cites-31618815",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/31618815/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 4,
+              "total_reported": 4,
+              "sha256": "507137d9380d7dd85ad9755bd04730668bc0d02b3918d9ace2400a3b398345f9"
+            }
+          ],
+          "records_returned": 4,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F4-cites-22572637",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/22572637/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 100,
+              "total_reported": 100,
+              "sha256": "e5fad352aa8779b248ed82bc98f4c6e5771791e8c441a92a93ffb065a39d375c"
+            }
+          ],
+          "records_returned": 100,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-cites-35009526",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/35009526/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 3,
+              "total_reported": 3,
+              "sha256": "c38c76efa1feea4afd3cb0a9e42f0f2c779945021eda888995b5f431d5db7689"
+            }
+          ],
+          "records_returned": 3,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F5-cites-38887865",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/38887865/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 11,
+              "total_reported": 11,
+              "sha256": "2565dc31d94ffc59c3e4d94ea5b3e749921d740f5e9f4ad02e9f6ce4c1a8e387"
+            }
+          ],
+          "records_returned": 11,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-cites-36231599",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/36231599/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 5,
+              "total_reported": 5,
+              "sha256": "94773db5a76635d98fc67f0ca723067b93750d8efd79e21058ede2042f5c1687"
+            }
+          ],
+          "records_returned": 5,
+          "coverage": "all_pages"
+        },
+        {
+          "route": "F6-cites-26378546",
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/26378546/citations",
+          "query": {
+            "format": "json",
+            "pageSize": 100
+          },
+          "page_limit": 2,
+          "pages": [
+            {
+              "returned": 8,
+              "total_reported": 8,
+              "sha256": "a74e8af12de4278a003ac876b302bf2fee0179fa600256d85362e16009b89327"
+            }
+          ],
+          "records_returned": 8,
+          "coverage": "all_pages"
+        }
+      ],
+      "candidates_with_locators": 0,
+      "route_counts": {
+        "F1-cites-24993129": 12,
+        "F2-cites-36500961": 1,
+        "F1-cites-28662640": 8,
+        "F2-cites-18589979": 139,
+        "F2-cites-34835851": 7,
+        "F6-cites-26378546": 2,
+        "F4-cites-22572637": 89,
+        "F3-cites-30406217": 7,
+        "F3-cites-31618815": 3,
+        "F5-cites-35009526": 3,
+        "F5-cites-38887865": 9,
+        "F6-cites-36231599": 2
+      }
+    }
+  ],
+  "other_routes": {
+    "psu_publications": {
+      "source_urls": [
+        "https://sites.psu.edu/brucelogan/publications/",
+        "https://sites.psu.edu/microbialfuelcells/publications/"
+      ],
+      "links_inspected": 43,
+      "acquisition": {
+        "pdf": 39,
+        "prior_access": 3,
+        "unavailable": 1
+      }
+    },
+    "scispace": {
+      "returns": 150,
+      "distinct_index_ids": 104,
+      "scope": "Six family queries. Metadata and abstract excerpts for discovery."
+    },
+    "web": {
+      "initial_two_waves_result_links_logged": 105,
+      "distinct_urls_initial_two_waves": 92,
+      "additional_routes": "Exact DOI/title, author repositories, publisher PDFs and Chinese/English technical terms. Only the logged initial two waves have comparable counts."
+    },
+    "yang_2017": {
+      "doi": "10.1039/c7ee00910k",
+      "role": "bibliographic bridge only",
+      "supplement": "https://www.rsc.org/suppdata/c7/ee/c7ee00910k/c7ee00910k1.pdf",
+      "supplement_access": "indexed PDF tables read; raw bytes HTTP 403",
+      "cited_or_related_shortlist": 55
+    }
+  },
+  "document_attempt_batches": {
+    "pull-citation-targets": {
+      "candidates_in_queue": 55,
+      "with_a_locator": 6,
+      "bodies_to_check": 2,
+      "formats": {
+        "pdf": 2
+      },
+      "failed_download_or_incomplete": 6
+    },
+    "pull-discovery": {
+      "candidates_in_queue": 160,
+      "with_a_locator": 160,
+      "bodies_to_check": 71,
+      "formats": {
+        "html": 7,
+        "pdf": 64
+      },
+      "failed_download_or_incomplete": 89
+    },
+    "pull-target-f6-mxene": {
+      "candidates_in_queue": 1,
+      "with_a_locator": 1,
+      "bodies_to_check": 1,
+      "formats": {
+        "pdf": 1
+      },
+      "failed_download_or_incomplete": 0
+    },
+    "pull-target-four-priority": {
+      "candidates_in_queue": 70,
+      "with_a_locator": 70,
+      "bodies_to_check": 16,
+      "formats": {
+        "html": 1,
+        "pdf": 15
+      },
+      "failed_download_or_incomplete": 54
+    },
+    "pull-target-one": {
+      "candidates_in_queue": 8,
+      "with_a_locator": 8,
+      "bodies_to_check": 3,
+      "formats": {
+        "html": 1,
+        "pdf": 2
+      },
+      "failed_download_or_incomplete": 5
+    },
+    "pull-target-three": {
+      "candidates_in_queue": 4,
+      "with_a_locator": 4,
+      "bodies_to_check": 2,
+      "formats": {
+        "pdf": 2
+      },
+      "failed_download_or_incomplete": 2
+    },
+    "pull-target-two": {
+      "candidates_in_queue": 4,
+      "with_a_locator": 4,
+      "bodies_to_check": 2,
+      "formats": {
+        "pdf": 2
+      },
+      "failed_download_or_incomplete": 2
+    }
+  },
+  "counting_scope": "Registers are discovery metadata. Document queue counts may overlap or contain irrelevant articles, different copies, incomplete text or different arms. Only sources.json is the admitted set."
+}

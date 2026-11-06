@@ -1,0 +1,20 @@
+[
+  {
+    "id": "EXQ001",
+    "source": "X001",
+    "issue": "Dispersões de ±55 e ±50 mW/m² para o mesmo pico Pt.",
+    "decision": "Preservar ambos e usar apenas 1350 mW/m² como valor contextual até esclarecer a dispersão."
+  },
+  {
+    "id": "EXQ002",
+    "source": "X003",
+    "issue": "No §2.4, P = iU/A após i = U/(RA).",
+    "decision": "Registrar o pico publicado como contextual. Recalcular só com tensão, carga e área da mesma curva."
+  },
+  {
+    "id": "EXQ003",
+    "source": "X009",
+    "issue": "O pico Pt de 1350 ± 50 mW/m² coincide com o publicado no corpo de X001, ambos do mesmo grupo.",
+    "decision": "Contar os dois DOIs na bibliografia e agrupar na mesma linhagem. A independência de campanhas e reatores continua pendente."
+  }
+]
