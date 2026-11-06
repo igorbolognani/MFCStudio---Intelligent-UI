@@ -74,6 +74,48 @@
         "X012"
       ],
       "total_confirmed_unique_articles": 38
+    },
+    {
+      "step": "processamento_da_fila_congelada",
+      "raw_returns": 12770,
+      "distinct_records": 6629,
+      "acquisition_attempts": 260,
+      "individual_reviews": [
+        "10.1016/j.bios.2009.02.010",
+        "10.1016/j.nxener.2025.100311",
+        "10.4014/jmb.1204.04010",
+        "19968135",
+        "10.1016/j.biteb.2024.101817",
+        "10.3390/catal12020176",
+        "10.3390/en14165116",
+        "10.3390/en14030612",
+        "10.3390/fermentation10080408",
+        "10.3390/en9010035",
+        "10.3389/fenrg.2018.00050",
+        "10.1007/s00253-023-12829-1",
+        "10.2323/jgam.56.19",
+        "10.15294/joct.v3i2.64436",
+        "10.17576/jsm-2018-4712-11",
+        "10.1149/2.0061703jes",
+        "10.1016/j.biortech.2017.02.105",
+        "10.1021/es050316c",
+        "10.1002/cssc.201600573",
+        "10.1016/j.electacta.2016.12.046",
+        "10.1002/bit.21878",
+        "10.1016/j.apcatb.2015.07.010",
+        "10.1128/aem.70.9.5373-5382.2004",
+        "10.3390/en16237901",
+        "10.1002/bit.22266",
+        "10.1149/1945-7111/ad8037",
+        "10.1002/aic.12157",
+        "10.1002/btpr.115",
+        "10.1016/j.watres.2010.11.033",
+        "10.1016/j.bej.2010.06.006",
+        "10.3390/pr9081330",
+        "10.1007/s12649-023-02128-1"
+      ],
+      "total_confirmed_unique_articles": 38,
+      "new_sources": []
     }
   ],
   "next": [
@@ -139,8 +181,18 @@
     "search.json",
     "coverage/manifest.json",
     "coverage/register.psv.gz",
-    "coverage/acquisition.psv"
+    "coverage/acquisition.psv",
+    "coverage/frozen-pass/reconciliation.json",
+    "coverage/frozen-pass/status.psv.gz",
+    "coverage/frozen-pass/raw-crosswalk.psv.gz",
+    "coverage/frozen-pass/acquisition.psv"
   ],
   "resume_explanation": "Preservar os doze artigos admitidos, conferir DOI/PMCID/PMID e variantes de título antes de obter o texto, e retomar pelas pendências registradas. Atualizar observações e contagens somente após verificação do método e do resultado. A busca paginada pode ser repetida com o mesmo cache.",
-  "quantitative_readiness": "Nenhum estrato foi verificado quanto à disponibilidade de dados por reator de campanhas comparáveis independentes. Não se fez calibração."
+  "quantitative_readiness": "Nenhum estrato foi verificado quanto à disponibilidade de dados por reator de campanhas comparáveis independentes. Não se fez calibração.",
+  "resume_frozen_register": {
+    "prefer_existing_bodies": "Ler primeiro os corpos recuperados e sem decisão, confirmando DOI, método, controle e resultado. O status registra existência de um corpo candidato, sem afirmar leitura integral.",
+    "acquisition_queue": "Em status.psv.gz, acquisition_rank identifica a próxima fila. Separar falhas de HTTP, textos incompletos e ausência de local indexado. Testar nova versão legal de acesso por DOI quando necessário.",
+    "keep_population": "Reusar 6.629 registros e preservar a fila de 972 anterior. Citações fora do universo não entram nesta passagem.",
+    "highest_priority": "F2, F5 e F6, com inspeção simultânea das seis famílias."
+  }
 }

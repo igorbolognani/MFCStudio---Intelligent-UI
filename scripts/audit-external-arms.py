@@ -59,6 +59,60 @@ def check_coverage(earlier, old, screening, sources, cache):
         raise ValueError("Individual review does not reconcile with the recorded decisions")
 
 
+def check_frozen_pass(screening, cache):
+    folder = ROUND / "coverage/frozen-pass"
+    report = read_json(folder / "reconciliation.json")
+    read = runpy.run_path(str(HERE / "reconcile-external-register.py"))["read_table"]
+    for name, digest in report["hashes"].items():
+        if sha256((folder / name).read_bytes()).hexdigest() != digest:
+            raise ValueError(f"Frozen-pass output changed: {name}")
+    register = index(read(ROUND / "coverage/register.psv.gz"), "key")
+    statuses = index(read(folder / "status.psv.gz"), "key")
+    links = read(folder / "raw-crosswalk.psv.gz")
+    linked = Counter(row["key"] for row in links if row["resolution"] == "frozen_register")
+    raw_total = read_json(ROUND / "coverage/manifest.json")["raw_returns"]["cumulative"]
+    prior = {key for group in SEARCH["exclusions"]().values() for key in group.values()}
+    positions = {(row["route"], row["page"], row["position"]) for row in links}
+    if (register.keys() != statuses.keys() or len(register) != report["register_records"]
+            or len(links) != raw_total or len(positions) != raw_total
+            or Counter(row["resolution"] for row in links) != report["raw_returns"]
+            or any(row["key"] not in prior for row in links if row["resolution"] == "prior_972")
+            or any(row["key"] != "NR" for row in links if row["resolution"] == "unlinked")
+            or not linked.keys() <= register.keys()
+            or any(int(row["raw_matches"]) != linked[key] for key, row in statuses.items())):
+        raise ValueError("Frozen raw crosswalk and status register do not reconcile")
+    for field, total in (("decision", "decisions"), ("abstract_provider", "abstracts"),
+                         ("document_state", "document_states")):
+        if Counter(row[field] for row in statuses.values()) != report[total]:
+            raise ValueError(f"Frozen-pass summary count disagrees for {field}")
+    ranks = sorted(int(row["acquisition_rank"]) for row in statuses.values() if row["acquisition_rank"] != "NR")
+    if ranks != list(range(1, report["unattempted_open_priority_count"] + 1)):
+        raise ValueError("The remaining acquisition queue has invalid ranks")
+    rows = index(read(folder / "acquisition.psv"), "key")
+    batches = {}
+    for key, row in rows.items():
+        batches.setdefault(row["batch"], Counter())[row["state"]] += 1
+        if key not in statuses or row["decision"] != statuses[key]["decision"]:
+            raise ValueError(f"Acquisition and reviewed identity disagree: {key}")
+        if row["state"] == "text_candidate":
+            directory = sha256(key.encode()).hexdigest()[:16]
+            check_original(row | {"bytes": int(row["bytes"]),
+                                  "local_path": f"articles/{directory}/article.{row['format']}"}, cache)
+    if batches != report["acquisition_batches"]:
+        raise ValueError("Frozen-pass acquisition summary differs from individual rows")
+    round_record = read_json(ROUND / "checkpoint.json")["checkpoints"][-1]
+    keys = round_record["individual_reviews"]
+    if len(keys) != len(set(keys)) or any(key not in screening or key not in statuses for key in keys):
+        raise ValueError("Frozen-pass scientific decisions have no source record")
+    decisions = Counter(screening[key]["decision"] for key in keys)
+    return {
+        "raw_returns": raw_total,
+        "distinct_register_records": len(register),
+        "acquisition_batch_records": len(rows),
+        "individual_review_decisions": dict(sorted(decisions.items())),
+    }
+
+
 def audit(cache=None):
     old = SEARCH["exclusions"]()
     candidates = index(table(ROUND / "candidate-register.psv")[1], "key")
@@ -174,6 +228,7 @@ def audit(cache=None):
             ).items())) for stage in METHOD["SURVEY"]["STAGES"]},
         }
     return {
+        "frozen_register_pass": check_frozen_pass(index(screening, "key"), cache),
         "prior_exclusion_count": 972,
         "prior_exclusion_sha256": sha256((ROUND / "excluded-972.psv").read_bytes()).hexdigest(),
         "api_discovery_records": len(candidates),

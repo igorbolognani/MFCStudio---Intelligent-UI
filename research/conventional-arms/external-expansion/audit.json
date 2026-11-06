@@ -1,4 +1,13 @@
 {
+  "frozen_register_pass": {
+    "raw_returns": 12770,
+    "distinct_register_records": 6629,
+    "acquisition_batch_records": 260,
+    "individual_review_decisions": {
+      "exclude": 25,
+      "pending": 7
+    }
+  },
   "prior_exclusion_count": 972,
   "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
   "api_discovery_records": 1292,
@@ -8,12 +17,12 @@
   "total_unique_articles_in_families": 38,
   "screening_decisions": {
     "auxiliary_protocol": 2,
-    "exclude": 28,
+    "exclude": 53,
     "exclude_arm": 1,
-    "pending": 18,
+    "pending": 24,
     "prior_access": 5
   },
-  "downloaded_documents_in_manifests": 15,
+  "downloaded_documents_in_manifests": 16,
   "observations": {
     "context_only": 20,
     "quality_hold": 2

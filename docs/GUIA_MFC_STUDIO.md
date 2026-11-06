@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.9 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
+Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.10 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -965,6 +965,52 @@ for ciclo in 4 5; do
 done
 python3 scripts/search-external-arms.py "$cache" --export-register "$cache/coverage-register.psv.gz" --include-expanded
 cmp "$cache/coverage-register.psv.gz" research/conventional-arms/external-expansion/coverage/register.psv.gz
+python3 scripts/audit-external-arms.py --check --cache "$cache"
+```
+
+### 12.10 Processamento dos 6.629 registros da fila congelada
+
+Esta passagem reutilizou o acervo da seção 12.9. O cruzamento conferiu o SHA-256 e a contagem de 108 páginas de busca. Dos 12.770 retornos, 10.529 foram associados à fila de 6.629 registros, 2.214 ao lote anterior de 972 e 27 ficaram sem vínculo automático. Dois registros da fila continuam sem retorno vinculado por ambiguidade de título genérico. A relação mantém ciclo, consulta, página e posição. A correspondência usa DOI, PMCID ou PMID, com título normalizado único como alternativa. [Cruzamento de retornos](../research/conventional-arms/external-expansion/coverage/frozen-pass/raw-crosswalk.psv.gz)
+
+| Etapa | Resultado |
+|---|---:|
+| Registros com resumo associado e triagem automática de termos | 4.700 |
+| Registros sem resumo recuperado por estas rotas | 1.929 |
+| Registros em duas rodadas de aquisição documental | 260 |
+| Corpos candidatos recuperados nessas rodadas | 85 |
+| Registros com revisão individual nesta passagem | 32 |
+| Exclusões com justificativa e localização | 25 |
+| Pendências com justificativa e localização | 7 |
+| Controles acrescentados às seis famílias | 0 |
+
+O enriquecimento consultou Europe PMC e OpenAlex por identificadores exatos. Os 4.700 resumos correspondem a 70,9% da fila e alimentam somente a priorização. A aquisição recuperou 46 de 140 e 39 de 120 corpos candidatos. A taxa conjunta foi de 32,7% no lote priorizado. O filtro automático verificou legibilidade e presença de termos de método e resultado. Uma resposta pode ser revisão, manuscrito de outra versão ou texto sem o braço procurado. Os manifestos registram a rota, o SHA-256 dos originais recuperados e as classes de falha. Os documentos e resumos ficaram no cache de trabalho. O repositório contém metadados e fatos revisados. [Balanço](../research/conventional-arms/external-expansion/coverage/frozen-pass/reconciliation.json) · [Aquisição](../research/conventional-arms/external-expansion/coverage/frozen-pass/acquisition.psv)
+
+As 32 decisões incluem uma leitura dos métodos completos, 25 inspeções de seções pertinentes, uma decisão pelo resumo com critério eliminatório explícito e cinco inspeções parciais que permaneceram pendentes. A fonte de Liu et al. teve sua pendência refinada. No estudo de Zhang et al., o controle de glicose e platina a ar usa grânulos de grafite no ânodo. O tecido de carbono é suporte do cátodo. No de Montes-Ochoa et al., o controle de platina usa feltro de grafite ESGRAF no ânodo e tecido platinado Fuel Cell Earth no cátodo. Esses produtos estão identificados no método, porém a célula tem arquitetura própria com copo de papel. No estudo de Klevinskas et al., feltro e acetato coexistem, mas o católito é aerado e recirculado. Nenhum desses casos entra nas seis famílias. [Zhang et al.](https://doi.org/10.1016/j.bios.2009.02.010) · [Montes-Ochoa et al.](https://doi.org/10.1016/j.nxener.2025.100311) · [Klevinskas et al.](https://doi.org/10.3390/pr9081330) · [Triagem individual](../research/conventional-arms/external-expansion/screening.psv)
+
+Rossi et al. é um caso pendente próximo de F3. A referência de carvão ativado sem modificação usa escova, acetato/PBS e uma face do cátodo ao ar. O método explicita ciclos de reposição para a polarização com esgoto. A operação em bateladas e os resultados semanais do controle com acetato são documentados, mas falta identificar a reposição no controle. Seus picos seguem fora da base comparativa. [Rossi et al.](https://doi.org/10.1016/j.biortech.2017.02.105)
+
+| Família | Exclusões nesta passagem | Pendências nesta passagem | Artigos confirmados acumulados | Linhagens |
+|---|---:|---:|---:|---:|
+| F1 | 8 | 0 | 6 | 6 |
+| F2 | 5 | 2 | 7 | 4 |
+| F3 | 6 | 4 | 10 | 5 |
+| F4 | 3 | 2 | 10 | 3 |
+| F5 | 9 | 0 | 5 | 5 |
+| F6 | 12 | 1 | 4 | 4 |
+
+A mesma decisão pode descartar ou deixar pendente a pertinência de um artigo para mais de uma família. O acervo continua com 38 artigos confirmados distintos e 22 observações nas adições externas. Um pico agregado, mesmo quando sua unidade e base de área são conhecidas, não informa a dispersão entre reatores nem resolve o efeito de trocar materiais. Permanecem pendentes séries ou curvas identificadas por reator e campanhas comparáveis para separar ajuste e verificação.
+
+A próxima passagem começa pelos 172 corpos candidatos acumulados sem decisão individual, dos quais 70 vêm das duas rodadas acima. A segunda fila tem 334 registros ainda sem tentativa e com local indexado, ordenados em `acquisition_rank`. Há 383 registros com tentativa sem corpo candidato e 6.032 sem tentativa automatizada documentada. Esses estados coexistem com a leitura pela web. Para F2, F5 e F6, a prioridade é validar a posição do material na montagem, a alimentação no mesmo braço e o resultado sob carga. [Estado por registro](../research/conventional-arms/external-expansion/coverage/frozen-pass/status.psv.gz) · [Ponto de retomada](../research/conventional-arms/external-expansion/checkpoint.json)
+
+O comando de reconciliação reutiliza os cinco ciclos de consultas e as aquisições guardadas no cache. `--fetch-metadata` preenche os lotes de metadados por identificador exato quando faltam. O comando de aquisição usa Python com `lxml` e `pdftotext`. O mesmo número de lote e a mesma seleção reutilizam as aquisições concluídas. Depois da aquisição, rode a reconciliação de novo para avançar a fila.
+
+```sh
+cache=/caminho/privado/mfc-externo
+out=research/conventional-arms/external-expansion/coverage/frozen-pass
+python3 scripts/reconcile-external-register.py "$cache" --output "$out" --queue "$cache/frozen-next.json" --fetch-metadata
+cp "$cache/frozen-next.json" "$cache/frozen-batch-3.json"
+python3 scripts/acquire-external-register.py "$cache" "$cache/frozen-batch-3.json" --batch 3 --limit 120
+python3 scripts/reconcile-external-register.py "$cache" --output "$out" --queue "$cache/frozen-next.json"
 python3 scripts/audit-external-arms.py --check --cache "$cache"
 ```
 

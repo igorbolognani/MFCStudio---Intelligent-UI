@@ -1,0 +1,46 @@
+{
+  "raw_returns": {
+    "frozen_register": 10529,
+    "prior_972": 2214,
+    "unlinked": 27
+  },
+  "register_records": 6629,
+  "register_without_linked_return": 2,
+  "abstracts": {
+    "Europe PMC": 3906,
+    "NR": 1929,
+    "OpenAlex": 794
+  },
+  "document_states": {
+    "attempted": 383,
+    "html": 19,
+    "not_attempted": 6032,
+    "pdf": 194,
+    "xml": 1
+  },
+  "acquisition_batches": {
+    "pull-frozen-queue": {
+      "text_candidate": 46,
+      "unrecovered": 94
+    },
+    "pull-frozen-queue-2": {
+      "text_candidate": 39,
+      "unrecovered": 81
+    }
+  },
+  "decisions": {
+    "admitted": 6,
+    "auxiliary_protocol": 1,
+    "exclude": 47,
+    "pending": 17,
+    "unreviewed": 6558
+  },
+  "rows_flagged_nonprimary": 265,
+  "unattempted_open_priority_count": 334,
+  "terms_scope": "Title/abstract signals for triage. A match or a missing term does not decide eligibility.",
+  "hashes": {
+    "raw-crosswalk.psv.gz": "8a62db5ca5bdf63ecf6eaad52d1fe23823d57617ec0d6f882a05f16af58bc6a2",
+    "status.psv.gz": "01363121a2521b7b5a1dd4f2af52f9c7a5b76f63ff507a72e03295ee78d95818",
+    "acquisition.psv": "1385c31fece52602471d168ab5706e7586f2a958fb05d2a28082bc1b087ab705"
+  }
+}

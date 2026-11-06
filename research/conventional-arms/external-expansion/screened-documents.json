@@ -92,5 +92,15 @@
     "bytes": 297214,
     "zip_member": "coatings-3514582-supplementary.pdf",
     "transform": "extração do membro sem alteração dos bytes"
+  },
+  {
+    "key": "10.1016/j.biortech.2017.02.105",
+    "role": "main",
+    "version": "publisher_pdf_public_institutional_copy",
+    "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2017-Rossi-etal-BioresTechnol.pdf",
+    "acquired_on": "2026-11-06",
+    "local_path": "psu/2017-Rossi-etal-BioresTechnol.pdf",
+    "sha256": "f046eb0a01304e3c64719c827cc2f36a13a337c2208882f64df4056e8065b7ea",
+    "bytes": 712746
   }
 ]
