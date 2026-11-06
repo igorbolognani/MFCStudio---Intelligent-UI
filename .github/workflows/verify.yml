@@ -19,6 +19,7 @@ jobs:
       - run: python3 scripts/build-materials.py
       - run: python3 scripts/build-s02.py
       - run: python3 scripts/audit-s29.py
+      - run: python3 scripts/audit-conventional-arms.py --check
       - run: python3 scripts/build-corpus.py
       - run: git diff --exit-code --stat -- science/corpus-seed.json science/corpus-embedded-assets.json science/corpus-pdf-assets.json science/materials-processed.json research/materials-v0.1/curation-report.json research/corpus-v0.3/curation-report.json research/corpus-v0.4/S02-processed.json
       - run: node scripts/audit-corpus.mjs /tmp/mfc-corpus-audit.json

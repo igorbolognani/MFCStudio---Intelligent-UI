@@ -27,7 +27,7 @@ A rodada 0.4.0 integra oito atribuições revisadas às etapas e a recuperação
 
 O incremento em `research/corpus-v0.3/` acrescenta S29 com 115 pares publicados por reator (pico/tempo), mantendo dois pares ausentes e a mesma família conservadora de S18. `research/materials-v0.1/` separa material/variante, caracterização, oferta e vínculo experimental. Fabricantes sem licença de redistribuição têm fatos e proveniência preservados, sem cópia integral pública. A [seção de curadoria do guia](docs/GUIA_MFC_STUDIO.md#dados) explica decisões, normalização e admissões ainda bloqueadas.
 
-A seleção de referências convencionais foi reiniciada em 6 de novembro de 2026. O [registro da seleção](research/conventional-arms/selection.json) documenta a retirada dos candidatos anteriores. A busca parte de consultas gerais sobre MFC e conta montagens ensaiadas nas fontes primárias.
+A seleção de referências convencionais foi reiniciada em 6 de novembro de 2026. O [registro da seleção](research/conventional-arms/selection.json) documenta a retirada dos candidatos anteriores. O levantamento em [research/conventional-arms](research/conventional-arms/) triou 144 textos integrais de uma consulta geral, com 50 braços em 46 estudos. Um lote dirigido de 17 fontes acrescentou dez braços e tem contagem separada. A seção 12.6 do guia detalha as famílias recorrentes, as onze etapas e as pendências.
 
 ## Desenvolvimento
 
@@ -47,6 +47,6 @@ O adaptador de autenticação é o nativo do Sites. Nunca configure OAuth indepe
 
 As rotinas `seed-hosted-corpus.py` e `verify-database.py` atualizam seus blocos de auditoria no guia por meio de `scripts/document_audits.py`. Os relatórios continuam legíveis por máquina nos blocos JSON, sem recriar documentos separados em `docs`.
 
-A rodada de literatura identifica os braços convencionais que se repetem em estudos experimentais independentes. O guia registra a estratégia e o alcance da contagem.
+`python3 scripts/audit-conventional-arms.py --check` verifica a triagem, a origem dos braços e as contagens por estudo e linhagem. O levantamento fica na camada bibliográfica de pesquisa.
 
 A integração 0.4.0 usa comparação com o registro anterior para aplicar revisões de escopo. Edições divergentes interrompem a aplicação e permanecem preservadas. `node scripts/audit-corpus.mjs` confere a integridade e a cobertura; `node scripts/review-stage-coverage.mjs` confere as atribuições revisadas. O preenchimento e `/api/seed` verificam o conteúdo completo das linhas, os trechos de texto e os hashes dos arquivos. `python3 scripts/acquire-s02.py <diretório-privado-fora-do-repositório>` reproduz a aquisição com verificação de versão; a transcrição dos fatos foi manual, conferida nas páginas, e está explicitamente identificada como tal.

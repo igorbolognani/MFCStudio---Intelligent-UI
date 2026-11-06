@@ -1,0 +1,2853 @@
+{
+  "version": "conventional-arm-survey/1.0.0",
+  "searched": "2026-11-06",
+  "universe_open_access_hits": 832,
+  "quality_issues": {
+    "open_for_modeling": 13,
+    "resolved_for_screening": 4
+  },
+  "supplements_reviewed": 3,
+  "active_families": [],
+  "neutral": {
+    "records": 144,
+    "full_text_xml": 144,
+    "full_pdf_preserved": 0,
+    "full_pdf_web_read": 0,
+    "screening": {
+      "excluded": 94,
+      "included": 46,
+      "pending": 4
+    },
+    "arms": 50,
+    "studies": 46,
+    "lineages": 36,
+    "missing_by_classification_field": {
+      "liquid_domains": 0,
+      "acceptor": 3,
+      "feed": 1,
+      "anode_form": 0,
+      "cathode_active": 4,
+      "feeding": 1,
+      "cathode_support": 6,
+      "separator": 20
+    },
+    "stage_status": {
+      "anode_chamber": {
+        "not_reported": 1,
+        "recorded": 49
+      },
+      "anolyte": {
+        "not_reported": 1,
+        "recorded": 49
+      },
+      "anode": {
+        "recorded": 50
+      },
+      "anode_catalyst": {
+        "not_reported": 40,
+        "recorded": 10
+      },
+      "biofilm": {
+        "recorded": 50
+      },
+      "membrane": {
+        "not_applicable": 3,
+        "not_reported": 13,
+        "recorded": 34
+      },
+      "external_circuit": {
+        "recorded": 50
+      },
+      "cathode_chamber": {
+        "not_applicable": 21,
+        "recorded": 29
+      },
+      "catholyte": {
+        "not_applicable": 26,
+        "recorded": 24
+      },
+      "cathode": {
+        "recorded": 50
+      },
+      "cathode_catalyst": {
+        "not_reported": 18,
+        "recorded": 32
+      }
+    },
+    "topologies": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "studies": 24,
+        "lineages": 14,
+        "sources": [
+          "L025",
+          "L029",
+          "L030",
+          "L031",
+          "L036",
+          "L037",
+          "L043",
+          "L044",
+          "L050",
+          "L054",
+          "L062",
+          "L066",
+          "L067",
+          "L068",
+          "L081",
+          "L082",
+          "L103",
+          "L107",
+          "L109",
+          "L120",
+          "L122",
+          "L124",
+          "L135",
+          "L143"
+        ],
+        "arm_ids": [
+          "L025-AC",
+          "L025-CV",
+          "L029-pre",
+          "L030-zero",
+          "L031-AC",
+          "L036-zero",
+          "L037-CCA",
+          "L043-ADW",
+          "L044-CB",
+          "L050-CP",
+          "L054-WW",
+          "L062-zero",
+          "L066-AC",
+          "L067-pre",
+          "L068-C",
+          "L081-CC",
+          "L081-Pt",
+          "L082-PtC",
+          "L103-PSU",
+          "L107-pre",
+          "L109-AC",
+          "L120-PAO1",
+          "L122-CP",
+          "L124-unit",
+          "L135-FC",
+          "L143-S1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "studies": 9,
+        "lineages": 9,
+        "sources": [
+          "L007",
+          "L020",
+          "L034",
+          "L038",
+          "L049",
+          "L064",
+          "L070",
+          "L121",
+          "L134"
+        ],
+        "arm_ids": [
+          "L007-H",
+          "L020-sludge",
+          "L034-CC",
+          "L038-MFC",
+          "L049-SS",
+          "L064-parent",
+          "L070-A",
+          "L070-B",
+          "L121-fresh",
+          "L134-MF0"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "studies": 3,
+        "lineages": 3,
+        "sources": [
+          "L012",
+          "L056",
+          "L059"
+        ],
+        "arm_ids": [
+          "L012-EX4",
+          "L056-pre",
+          "L059-CC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L079",
+          "L131"
+        ],
+        "arm_ids": [
+          "L079-MFC",
+          "L131-DW2"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L055",
+          "L105"
+        ],
+        "arm_ids": [
+          "L055-B",
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "dichromate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L096"
+        ],
+        "arm_ids": [
+          "L096-acetate"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferric_sulfate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L112"
+        ],
+        "arm_ids": [
+          "L112-AEM",
+          "L112-CEM"
+        ]
+      }
+    ],
+    "feeds_within_topology": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "studies": 15,
+        "lineages": 11,
+        "sources": [
+          "L025",
+          "L029",
+          "L030",
+          "L031",
+          "L036",
+          "L037",
+          "L044",
+          "L050",
+          "L062",
+          "L103",
+          "L107",
+          "L109",
+          "L120",
+          "L122",
+          "L135"
+        ],
+        "arm_ids": [
+          "L025-AC",
+          "L025-CV",
+          "L029-pre",
+          "L030-zero",
+          "L031-AC",
+          "L036-zero",
+          "L037-CCA",
+          "L044-CB",
+          "L050-CP",
+          "L062-zero",
+          "L103-PSU",
+          "L107-pre",
+          "L109-AC",
+          "L120-PAO1",
+          "L122-CP",
+          "L135-FC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "studies": 3,
+        "lineages": 3,
+        "sources": [
+          "L054",
+          "L081",
+          "L082"
+        ],
+        "arm_ids": [
+          "L054-WW",
+          "L081-CC",
+          "L081-Pt",
+          "L082-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "studies": 3,
+        "lineages": 3,
+        "sources": [
+          "L038",
+          "L049",
+          "L070"
+        ],
+        "arm_ids": [
+          "L038-MFC",
+          "L049-SS",
+          "L070-A"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "studies": 3,
+        "lineages": 1,
+        "sources": [
+          "L066",
+          "L068",
+          "L124"
+        ],
+        "arm_ids": [
+          "L066-AC",
+          "L068-C",
+          "L124-unit"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "tsb",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L007",
+          "L034"
+        ],
+        "arm_ids": [
+          "L007-H",
+          "L034-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_complex_medium",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L067"
+        ],
+        "arm_ids": [
+          "L067-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "activated_sludge",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L143"
+        ],
+        "arm_ids": [
+          "L143-S1"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "synthetic_domestic_wastewater",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L043"
+        ],
+        "arm_ids": [
+          "L043-ADW"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "dichromate",
+        "feed": "acetate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L096"
+        ],
+        "arm_ids": [
+          "L096-acetate"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferric_sulfate",
+        "feed": "tetrathionate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L112"
+        ],
+        "arm_ids": [
+          "L112-AEM",
+          "L112-CEM"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "domestic_wastewater",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L020"
+        ],
+        "arm_ids": [
+          "L020-sludge"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "formate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L121"
+        ],
+        "arm_ids": [
+          "L121-fresh"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "glucose",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L070"
+        ],
+        "arm_ids": [
+          "L070-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactate_citrate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L134"
+        ],
+        "arm_ids": [
+          "L134-MF0"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactose",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L064"
+        ],
+        "arm_ids": [
+          "L064-parent"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "dairy_wastewater",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L131"
+        ],
+        "arm_ids": [
+          "L131-DW2"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "pome",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L079"
+        ],
+        "arm_ids": [
+          "L079-MFC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L105"
+        ],
+        "arm_ids": [
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose_phenol",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L055"
+        ],
+        "arm_ids": [
+          "L055-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "feed": "acetate_wastewater",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L059"
+        ],
+        "arm_ids": [
+          "L059-CC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "feed": "glucose",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L012"
+        ],
+        "arm_ids": [
+          "L012-EX4"
+        ]
+      }
+    ],
+    "joint_arms": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 3,
+        "lineages": 3,
+        "sources": [
+          "L029",
+          "L036",
+          "L037"
+        ],
+        "arm_ids": [
+          "L029-pre",
+          "L036-zero",
+          "L037-CCA"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_paper",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 3,
+        "lineages": 2,
+        "sources": [
+          "L050",
+          "L107",
+          "L122"
+        ],
+        "arm_ids": [
+          "L050-CP",
+          "L107-pre",
+          "L122-CP"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "studies": 3,
+        "lineages": 1,
+        "sources": [
+          "L066",
+          "L068",
+          "L124"
+        ],
+        "arm_ids": [
+          "L066-AC",
+          "L068-C",
+          "L124-unit"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L031",
+          "L062"
+        ],
+        "arm_ids": [
+          "L031-AC",
+          "L062-zero"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L044",
+          "L103"
+        ],
+        "arm_ids": [
+          "L044-CB",
+          "L103-PSU"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L054",
+          "L082"
+        ],
+        "arm_ids": [
+          "L054-WW",
+          "L082-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L038",
+          "L070"
+        ],
+        "arm_ids": [
+          "L038-MFC",
+          "L070-A"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L109"
+        ],
+        "arm_ids": [
+          "L109-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_paper",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L120"
+        ],
+        "arm_ids": [
+          "L120-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "bare_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-CV"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_complex_medium",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L067"
+        ],
+        "arm_ids": [
+          "L067-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_felt",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "dichromate",
+        "feed": "acetate",
+        "anode_form": "graphite_rod",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L096"
+        ],
+        "arm_ids": [
+          "L096-acetate"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferric_sulfate",
+        "feed": "tetrathionate",
+        "anode_form": "graphite_foil",
+        "cathode_active": "bare_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L112"
+        ],
+        "arm_ids": [
+          "L112-AEM",
+          "L112-CEM"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "anode_form": "steel_mesh",
+        "cathode_active": "bare_steel",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L049"
+        ],
+        "arm_ids": [
+          "L049-SS"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "domestic_wastewater",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "continuous",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L020"
+        ],
+        "arm_ids": [
+          "L020-sludge"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "formate",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L121"
+        ],
+        "arm_ids": [
+          "L121-fresh"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "glucose",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L070"
+        ],
+        "arm_ids": [
+          "L070-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactate_citrate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L134"
+        ],
+        "arm_ids": [
+          "L134-MF0"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactose",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L064"
+        ],
+        "arm_ids": [
+          "L064-parent"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "tsb",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L034"
+        ],
+        "arm_ids": [
+          "L034-CC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "tsb",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L007"
+        ],
+        "arm_ids": [
+          "L007-H"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "dairy_wastewater",
+        "anode_form": "granular_graphite",
+        "cathode_active": "bare_carbon",
+        "feeding": "step_feed",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L131"
+        ],
+        "arm_ids": [
+          "L131-DW2"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "pome",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L079"
+        ],
+        "arm_ids": [
+          "L079-MFC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L105"
+        ],
+        "arm_ids": [
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose_phenol",
+        "anode_form": "carbon_paper",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L055"
+        ],
+        "arm_ids": [
+          "L055-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "feed": "glucose",
+        "anode_form": "vitreous_carbon",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L012"
+        ],
+        "arm_ids": [
+          "L012-EX4"
+        ]
+      }
+    ],
+    "joint_arms_with_support_and_separator": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_paper",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L037"
+        ],
+        "arm_ids": [
+          "L037-CCA"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_paper",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_paper",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L122"
+        ],
+        "arm_ids": [
+          "L122-CP"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "recirculating",
+        "cathode_support": "carbon_cloth",
+        "separator": "cmi_7000",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "bare_carbon",
+        "feeding": "recirculating",
+        "cathode_support": "carbon_veil",
+        "separator": "cmi_7000",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-CV"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_complex_medium",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "cathode_support": "carbon_veil",
+        "separator": "ceramic",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L067"
+        ],
+        "arm_ids": [
+          "L067-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "cathode_support": "carbon_veil",
+        "separator": "ceramic",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L124"
+        ],
+        "arm_ids": [
+          "L124-unit"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "cathode_support": "steel_mesh",
+        "separator": "ceramic",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L066"
+        ],
+        "arm_ids": [
+          "L066-AC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_felt",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "dichromate",
+        "feed": "acetate",
+        "anode_form": "graphite_rod",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "graphite_rod",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L096"
+        ],
+        "arm_ids": [
+          "L096-acetate"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L070"
+        ],
+        "arm_ids": [
+          "L070-A"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "anode_form": "steel_mesh",
+        "cathode_active": "bare_steel",
+        "feeding": "fed_batch",
+        "cathode_support": "steel_mesh",
+        "separator": "cmi_7000",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L049"
+        ],
+        "arm_ids": [
+          "L049-SS"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "domestic_wastewater",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "continuous",
+        "cathode_support": "graphite_plate",
+        "separator": "cmi_7000",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L020"
+        ],
+        "arm_ids": [
+          "L020-sludge"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "formate",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "graphite_plate",
+        "separator": "nafion_115",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L121"
+        ],
+        "arm_ids": [
+          "L121-fresh"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "glucose",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L070"
+        ],
+        "arm_ids": [
+          "L070-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactose",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "cmi_7000s",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L064"
+        ],
+        "arm_ids": [
+          "L064-parent"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "tsb",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L007"
+        ],
+        "arm_ids": [
+          "L007-H"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "dairy_wastewater",
+        "anode_form": "granular_graphite",
+        "cathode_active": "bare_carbon",
+        "feeding": "step_feed",
+        "cathode_support": "granular_graphite",
+        "separator": "cmi_7000",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L131"
+        ],
+        "arm_ids": [
+          "L131-DW2"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "pome",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "graphite_plate",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L079"
+        ],
+        "arm_ids": [
+          "L079-MFC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "carbon_felt",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L105"
+        ],
+        "arm_ids": [
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose_phenol",
+        "anode_form": "carbon_paper",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_paper",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L055"
+        ],
+        "arm_ids": [
+          "L055-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "feed": "glucose",
+        "anode_form": "vitreous_carbon",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "cathode_support": "vitreous_carbon",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L012"
+        ],
+        "arm_ids": [
+          "L012-EX4"
+        ]
+      }
+    ],
+    "explicit_control_topologies": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "studies": 17,
+        "lineages": 12,
+        "sources": [
+          "L025",
+          "L030",
+          "L031",
+          "L036",
+          "L037",
+          "L044",
+          "L050",
+          "L054",
+          "L062",
+          "L066",
+          "L068",
+          "L081",
+          "L082",
+          "L109",
+          "L120",
+          "L122",
+          "L143"
+        ],
+        "arm_ids": [
+          "L025-AC",
+          "L025-CV",
+          "L030-zero",
+          "L031-AC",
+          "L036-zero",
+          "L037-CCA",
+          "L044-CB",
+          "L050-CP",
+          "L054-WW",
+          "L062-zero",
+          "L066-AC",
+          "L068-C",
+          "L081-CC",
+          "L081-Pt",
+          "L082-PtC",
+          "L109-AC",
+          "L120-PAO1",
+          "L122-CP",
+          "L143-S1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "studies": 4,
+        "lineages": 4,
+        "sources": [
+          "L034",
+          "L049",
+          "L121",
+          "L134"
+        ],
+        "arm_ids": [
+          "L034-CC",
+          "L049-SS",
+          "L121-fresh",
+          "L134-MF0"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L055",
+          "L105"
+        ],
+        "arm_ids": [
+          "L055-B",
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L012",
+          "L059"
+        ],
+        "arm_ids": [
+          "L012-EX4",
+          "L059-CC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferric_sulfate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L112"
+        ],
+        "arm_ids": [
+          "L112-AEM",
+          "L112-CEM"
+        ]
+      }
+    ],
+    "explicit_control_joint_arms": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L031",
+          "L062"
+        ],
+        "arm_ids": [
+          "L031-AC",
+          "L062-zero"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L036",
+          "L037"
+        ],
+        "arm_ids": [
+          "L036-zero",
+          "L037-CCA"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "L054",
+          "L082"
+        ],
+        "arm_ids": [
+          "L054-WW",
+          "L082-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_paper",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 2,
+        "lineages": 1,
+        "sources": [
+          "L050",
+          "L122"
+        ],
+        "arm_ids": [
+          "L050-CP",
+          "L122-CP"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "studies": 2,
+        "lineages": 1,
+        "sources": [
+          "L066",
+          "L068"
+        ],
+        "arm_ids": [
+          "L066-AC",
+          "L068-C"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L109"
+        ],
+        "arm_ids": [
+          "L109-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L044"
+        ],
+        "arm_ids": [
+          "L044-CB"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_paper",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L120"
+        ],
+        "arm_ids": [
+          "L120-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_veil",
+        "cathode_active": "bare_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L025"
+        ],
+        "arm_ids": [
+          "L025-CV"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "glucose",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L081"
+        ],
+        "arm_ids": [
+          "L081-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_felt",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L127"
+        ],
+        "arm_ids": [
+          "L127-PtC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferric_sulfate",
+        "feed": "tetrathionate",
+        "anode_form": "graphite_foil",
+        "cathode_active": "bare_carbon",
+        "feeding": "recirculating",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L112"
+        ],
+        "arm_ids": [
+          "L112-AEM",
+          "L112-CEM"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "acetate",
+        "anode_form": "steel_mesh",
+        "cathode_active": "bare_steel",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L049"
+        ],
+        "arm_ids": [
+          "L049-SS"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "formate",
+        "anode_form": "graphite_plate",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L121"
+        ],
+        "arm_ids": [
+          "L121-fresh"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "lactate_citrate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L134"
+        ],
+        "arm_ids": [
+          "L134-MF0"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "ferricyanide",
+        "feed": "tsb",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L034"
+        ],
+        "arm_ids": [
+          "L034-CC"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose",
+        "anode_form": "carbon_felt",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L105"
+        ],
+        "arm_ids": [
+          "L105-PAO1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_passive_dissolved",
+        "feed": "glucose_phenol",
+        "anode_form": "carbon_paper",
+        "cathode_active": "bare_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L055"
+        ],
+        "arm_ids": [
+          "L055-B"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_pure_sparged",
+        "feed": "glucose",
+        "anode_form": "vitreous_carbon",
+        "cathode_active": "bare_carbon",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "L012"
+        ],
+        "arm_ids": [
+          "L012-EX4"
+        ]
+      }
+    ],
+    "eras": {
+      "1990-2013": {
+        "era": "1990-2013",
+        "records_with_pmcid": 45,
+        "selected": 36,
+        "included_studies": 6,
+        "topologies": [
+          {
+            "liquid_domains": "2",
+            "acceptor": "ferricyanide",
+            "studies": 2,
+            "lineages": 2,
+            "sources": [
+              "L007",
+              "L020"
+            ],
+            "arm_ids": [
+              "L007-H",
+              "L020-sludge"
+            ]
+          },
+          {
+            "liquid_domains": "1",
+            "acceptor": "ambient_air",
+            "studies": 2,
+            "lineages": 1,
+            "sources": [
+              "L103",
+              "L107"
+            ],
+            "arm_ids": [
+              "L103-PSU",
+              "L107-pre"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_passive_dissolved",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L105"
+            ],
+            "arm_ids": [
+              "L105-PAO1"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_pure_sparged",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L012"
+            ],
+            "arm_ids": [
+              "L012-EX4"
+            ]
+          }
+        ]
+      },
+      "2014-2018": {
+        "era": "2014-2018",
+        "records_with_pmcid": 201,
+        "selected": 36,
+        "included_studies": 15,
+        "topologies": [
+          {
+            "liquid_domains": "1",
+            "acceptor": "ambient_air",
+            "studies": 10,
+            "lineages": 7,
+            "sources": [
+              "L025",
+              "L029",
+              "L030",
+              "L031",
+              "L036",
+              "L037",
+              "L043",
+              "L044",
+              "L109",
+              "L120"
+            ],
+            "arm_ids": [
+              "L025-AC",
+              "L025-CV",
+              "L029-pre",
+              "L030-zero",
+              "L031-AC",
+              "L036-zero",
+              "L037-CCA",
+              "L043-ADW",
+              "L044-CB",
+              "L109-AC",
+              "L120-PAO1"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "ferricyanide",
+            "studies": 2,
+            "lineages": 2,
+            "sources": [
+              "L034",
+              "L038"
+            ],
+            "arm_ids": [
+              "L034-CC",
+              "L038-MFC"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "ferric_sulfate",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L112"
+            ],
+            "arm_ids": [
+              "L112-AEM",
+              "L112-CEM"
+            ]
+          }
+        ]
+      },
+      "2019-2022": {
+        "era": "2019-2022",
+        "records_with_pmcid": 288,
+        "selected": 36,
+        "included_studies": 17,
+        "topologies": [
+          {
+            "liquid_domains": "1",
+            "acceptor": "ambient_air",
+            "studies": 8,
+            "lineages": 4,
+            "sources": [
+              "L050",
+              "L054",
+              "L062",
+              "L066",
+              "L067",
+              "L068",
+              "L122",
+              "L124"
+            ],
+            "arm_ids": [
+              "L050-CP",
+              "L054-WW",
+              "L062-zero",
+              "L066-AC",
+              "L067-pre",
+              "L068-C",
+              "L122-CP",
+              "L124-unit"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "ferricyanide",
+            "studies": 4,
+            "lineages": 4,
+            "sources": [
+              "L049",
+              "L064",
+              "L070",
+              "L121"
+            ],
+            "arm_ids": [
+              "L049-SS",
+              "L064-parent",
+              "L070-A",
+              "L070-B",
+              "L121-fresh"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_pure_sparged",
+            "studies": 2,
+            "lineages": 2,
+            "sources": [
+              "L056",
+              "L059"
+            ],
+            "arm_ids": [
+              "L056-pre",
+              "L059-CC"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "ambient_air",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L127"
+            ],
+            "arm_ids": [
+              "L127-PtC"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_air_sparged",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L131"
+            ],
+            "arm_ids": [
+              "L131-DW2"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_passive_dissolved",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L055"
+            ],
+            "arm_ids": [
+              "L055-B"
+            ]
+          }
+        ]
+      },
+      "2023-2026": {
+        "era": "2023-2026",
+        "records_with_pmcid": 297,
+        "selected": 36,
+        "included_studies": 8,
+        "topologies": [
+          {
+            "liquid_domains": "1",
+            "acceptor": "ambient_air",
+            "studies": 4,
+            "lineages": 4,
+            "sources": [
+              "L081",
+              "L082",
+              "L135",
+              "L143"
+            ],
+            "arm_ids": [
+              "L081-CC",
+              "L081-Pt",
+              "L082-PtC",
+              "L135-FC",
+              "L143-S1"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "dichromate",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L096"
+            ],
+            "arm_ids": [
+              "L096-acetate"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "ferricyanide",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L134"
+            ],
+            "arm_ids": [
+              "L134-MF0"
+            ]
+          },
+          {
+            "liquid_domains": "2",
+            "acceptor": "oxygen_air_sparged",
+            "studies": 1,
+            "lineages": 1,
+            "sources": [
+              "L079"
+            ],
+            "arm_ids": [
+              "L079-MFC"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "targeted": {
+    "records": 17,
+    "full_text_xml": 12,
+    "full_pdf_preserved": 1,
+    "full_pdf_web_read": 1,
+    "screening": {
+      "excluded": 4,
+      "included": 9,
+      "pending": 4
+    },
+    "arms": 10,
+    "studies": 9,
+    "lineages": 7,
+    "missing_by_classification_field": {
+      "liquid_domains": 0,
+      "acceptor": 0,
+      "feed": 0,
+      "anode_form": 0,
+      "cathode_active": 0,
+      "feeding": 0,
+      "cathode_support": 1,
+      "separator": 4
+    },
+    "stage_status": {
+      "anode_chamber": {
+        "recorded": 10
+      },
+      "anolyte": {
+        "recorded": 10
+      },
+      "anode": {
+        "recorded": 10
+      },
+      "anode_catalyst": {
+        "not_reported": 6,
+        "recorded": 4
+      },
+      "biofilm": {
+        "recorded": 10
+      },
+      "membrane": {
+        "not_applicable": 4,
+        "not_reported": 3,
+        "recorded": 3
+      },
+      "external_circuit": {
+        "recorded": 10
+      },
+      "cathode_chamber": {
+        "not_applicable": 9,
+        "recorded": 1
+      },
+      "catholyte": {
+        "not_applicable": 9,
+        "recorded": 1
+      },
+      "cathode": {
+        "recorded": 10
+      },
+      "cathode_catalyst": {
+        "recorded": 10
+      }
+    },
+    "topologies": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "studies": 8,
+        "lineages": 6,
+        "sources": [
+          "T002",
+          "T003",
+          "T006",
+          "T008",
+          "T009",
+          "T010",
+          "T011",
+          "T012"
+        ],
+        "arm_ids": [
+          "T002-CC",
+          "T003-CF",
+          "T006-pre",
+          "T008-A1",
+          "T009-AC",
+          "T010-t1",
+          "T011-CC",
+          "T012-AC",
+          "T012-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T004"
+        ],
+        "arm_ids": [
+          "T004-start"
+        ]
+      }
+    ],
+    "feeds_within_topology": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "studies": 3,
+        "lineages": 3,
+        "sources": [
+          "T003",
+          "T008",
+          "T012"
+        ],
+        "arm_ids": [
+          "T003-CF",
+          "T008-A1",
+          "T012-AC",
+          "T012-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "T009",
+          "T011"
+        ],
+        "arm_ids": [
+          "T009-AC",
+          "T011-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_nitrate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T006"
+        ],
+        "arm_ids": [
+          "T006-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "lactate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T002"
+        ],
+        "arm_ids": [
+          "T002-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T010"
+        ],
+        "arm_ids": [
+          "T010-t1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "acetate",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T004"
+        ],
+        "arm_ids": [
+          "T004-start"
+        ]
+      }
+    ],
+    "joint_arms": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_felt",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "studies": 2,
+        "lineages": 2,
+        "sources": [
+          "T003",
+          "T008"
+        ],
+        "arm_ids": [
+          "T003-CF",
+          "T008-A1"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T011"
+        ],
+        "arm_ids": [
+          "T011-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "periodic_dosing",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T009"
+        ],
+        "arm_ids": [
+          "T009-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_nitrate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T006"
+        ],
+        "arm_ids": [
+          "T006-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "lactate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T002"
+        ],
+        "arm_ids": [
+          "T002-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T010"
+        ],
+        "arm_ids": [
+          "T010-t1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T004"
+        ],
+        "arm_ids": [
+          "T004-start"
+        ]
+      }
+    ],
+    "joint_arms_with_support_and_separator": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T011"
+        ],
+        "arm_ids": [
+          "T011-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_nitrate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T006"
+        ],
+        "arm_ids": [
+          "T006-pre"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "none",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "cathode_support": "carbon_veil",
+        "separator": "ceramic",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T010"
+        ],
+        "arm_ids": [
+          "T010-t1"
+        ]
+      },
+      {
+        "liquid_domains": "2",
+        "acceptor": "oxygen_air_sparged",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "cathode_support": "carbon_cloth",
+        "separator": "nafion_117",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T004"
+        ],
+        "arm_ids": [
+          "T004-start"
+        ]
+      }
+    ],
+    "explicit_control_topologies": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "studies": 6,
+        "lineages": 4,
+        "sources": [
+          "T002",
+          "T003",
+          "T009",
+          "T010",
+          "T011",
+          "T012"
+        ],
+        "arm_ids": [
+          "T002-CC",
+          "T003-CF",
+          "T009-AC",
+          "T010-t1",
+          "T011-CC",
+          "T012-AC",
+          "T012-Pt"
+        ]
+      }
+    ],
+    "explicit_control_joint_arms": [
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T011"
+        ],
+        "arm_ids": [
+          "T011-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "periodic_dosing",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T009"
+        ],
+        "arm_ids": [
+          "T009-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-AC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_brush",
+        "cathode_active": "platinum",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T012"
+        ],
+        "arm_ids": [
+          "T012-Pt"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "acetate_wastewater",
+        "anode_form": "carbon_felt",
+        "cathode_active": "platinum",
+        "feeding": "batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T003"
+        ],
+        "arm_ids": [
+          "T003-CF"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "lactate",
+        "anode_form": "carbon_cloth",
+        "cathode_active": "activated_carbon",
+        "feeding": "fed_batch",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T002"
+        ],
+        "arm_ids": [
+          "T002-CC"
+        ]
+      },
+      {
+        "liquid_domains": "1",
+        "acceptor": "ambient_air",
+        "feed": "urine",
+        "anode_form": "carbon_veil",
+        "cathode_active": "activated_carbon",
+        "feeding": "continuous",
+        "studies": 1,
+        "lineages": 1,
+        "sources": [
+          "T010"
+        ],
+        "arm_ids": [
+          "T010-t1"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+source|decision|reason
+T001|pending|Europe PMC não retornou XML e PMC bloqueou leitura pelo navegador.
+T002|included|Tecido de carbono não revestido com lactato e cátodo a ar de carvão superativado.
+T003|included|Feltro de carbono intacto com Pt a ar, efluente mais acetato, ensaio de célula completa.
+T004|included|Fase medida com tampão e ar antes da substituição pelo efluente para recuperar fósforo.
+T005|excluded|Rede de múltiplos ânodos para propagação de biofilme, sem braço convencional individual.
+T006|included|Câmara única medida antes de ser dividida; alimentação com nitrato é categoria própria.
+T007|pending|Métodos acessíveis na página PMC após falha de JATS; estado pré-troca com lactato localizado, composição catódica remete a outro artigo.
+T008|included|PDF integral da editora consultado via web; tipo A inicial com 28 reatores idênticos, antes da reinoculação. Bytes locais indisponíveis.
+T009|included|Cátodo com AC e sem Fe-NCB em célula completa, polarização antes da troca do cátodo.
+T010|included|Braço t1 de terracota com urina fresca, ânodo de véu sem carvão adicionado, Tabela 1.
+T011|included|Ânodo CC de referência com cátodo AC, acetato, câmara a ar sem membrana.
+T012|included|Braços AC e Pt em célula completa e sob 470 Ω, separados dos ensaios de eletrodo.
+T013|excluded|PDF integral recuperado; controle sem aquecimento apenas em caracterização, curvas de MFC nos braços aquecidos.
+T014|pending|Europe PMC não retornou XML e PMC bloqueou leitura pelo navegador.
+T015|excluded|Os controles retêm cátodo Fe-AAPyr; leitura de descarga capacitiva.
+T016|pending|Pré-aclimatação com ferricianeto em célula carregada; curva ou série de célula inteira dessa fase ainda não localizada.
+T017|excluded|Controle sem cromo identificado em circuito aberto; dados sob carga verificados pertencem às condições com cromo.

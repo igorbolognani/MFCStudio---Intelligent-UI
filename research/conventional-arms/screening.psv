@@ -1,0 +1,145 @@
+source|decision|reason
+L001|excluded|Biofilme e condutividade em eletrodo sob potencial controlado; sem braço completo de referência sob carga.
+L002|excluded|Revisão de células sedimentares.
+L003|excluded|Projeto computacional de biossensor.
+L004|excluded|Os reatores recebem BDE-209; comparador em circuito aberto, sem referência convencional sob carga.
+L005|excluded|Caracterização de citocromos; sem reator completo de referência.
+L006|excluded|Enriquecimento e isolamento em U-tube; controle abiótico, sem braço de referência biológico definido.
+L007|included|MFC H-type convencional com MR-1, separada da matriz experimental; Methods S1 e Fig. S1 recuperados.
+L008|excluded|MFC a celulose para enriquecimento; controle sem inóculo de solo sem geração útil.
+L009|excluded|Genômica comparativa, sem braço de célula de referência documentado.
+L010|excluded|Seleção comentada de páginas web.
+L011|excluded|Genômica e quimiotaxia.
+L012|included|EX4, água sem mediador no ânodo e no cátodo, com curva sob cargas.
+L013|excluded|Célula reversa operada com fornecimento elétrico.
+L014|excluded|Modelo metabólico de levedura.
+L015|excluded|Célula de planta e rizosfera.
+L016|excluded|Operação de reator para efluente urbano sem braço convencional separado.
+L017|excluded|Base de conhecimento de Shewanella.
+L018|pending|MFC-B com acetato tem resposta publicada; ligação da montagem e do inóculo à MFC-B remete a outro estudo.
+L019|excluded|MFC desnitrificante com fases de tratamento; braço convencional independente não identificado.
+L020|included|Lodo ativado como referência usual diante da cultura pura; hardware e operação descritos.
+L021|excluded|Experimentos de desenvolvimento de biofilme com várias cepas e controles de circuito; sem braço convencional identificado.
+L022|excluded|Simulação de metabolismo.
+L023|excluded|Célula com planta/rizosfera.
+L024|excluded|Regulação gênica.
+L025|included|Véu sem revestimento e carvão ativado sem Fe como dois controles em células operadas.
+L026|included|Matriz I de TSB diluído, controle ativo de desempenho do sensor em célula completa.
+L027|excluded|Reatores suplementados com espécies de nitrogênio, sem comparação com braço basal de referência demonstrado.
+L028|excluded|Autoencapsulação e caracterização de Gluconobacter.
+L029|included|Sete ciclos de acetato medidos antes de introduzir lixiviado.
+L030|included|Condição 0 M de NaCl adicionado medida sob carga.
+L031|included|MFC de controle com carvão ativado sem catalisador de ferro.
+L032|excluded|Revisão de supercapacitores.
+L033|excluded|Comparação de dois polimorfos de MnO₂; sem cátodo convencional em célula completa identificado.
+L034|included|Ânodo comercial de tecido CC6 no controle.
+L035|excluded|Revisão de biossensores.
+L036|included|MFC antes/sem exposição a tobramicina, com polarização e operação sob carga.
+L037|included|Tecido de carbono em acetato como referência diante de ânodos de aço tratados.
+L038|included|Fase resistiva antes do sistema de coleta de energia.
+L039|excluded|Hidrocarboneto e isolado investigado; sem braço convencional separável.
+L040|excluded|Biossensor de solo.
+L041|excluded|MFC fotossintética com alga e modificação genética.
+L042|excluded|Operação com resíduo de fermentação, sem comparador convencional identificado.
+L043|included|Esgoto doméstico artificial empregado explicitamente como referência interexperimental.
+L044|included|CB-MFC com escova de carbono como comparador.
+L045|excluded|Nanopartículas sintetizadas e metal alternativo; controle comercial sob carga em célula completa não identificado.
+L046|excluded|Farelo de arroz com variantes de meio; sem referência com alimentação convencional separada.
+L047|excluded|Células de sedimento.
+L048|excluded|Revisão de aplicações.
+L049|included|Controle SS ∥ SS na fase inicial com ferricianeto e ânodo biológico.
+L050|included|Papel de carbono comercial sem o aerogel como referência.
+L051|excluded|Sistema de recuperação de nutrientes com ânodos híbridos, sem MFC convencional separada.
+L052|excluded|Reator de solo de arrozal.
+L053|excluded|Célula terrestre de solo.
+L054|included|Controle WW com efluente de ETE em câmara a ar, sem inóculo ruminal.
+L055|included|B-MFC com papel de carbono sem revestimento; preservar glicose mais fenol como meio específico.
+L056|included|Fase eletroquímica da cocultura antes da introdução de algas.
+L057|excluded|Caracterização de microcápsulas com enzima, sem célula completa.
+L058|excluded|Célula de dessalinização com circuito hidráulico integrado; sem referência MFC isolada identificada.
+L059|included|Controle com tecido catódico sem MnO₂ em MFC com oxigênio.
+L060|excluded|Série de espessuras cerâmicas para desinfecção; sem braço de referência definido.
+L061|excluded|Revisão de biofilmes.
+L062|included|Condição sem butacloro alimentada com acetato.
+L063|excluded|Escala de supercapacitores de MFC, sem resposta de um braço convencional separado sob carga resistiva identificada.
+L064|included|Cocultura parental completa com corrente medida, em ensaio da relação lactose–corrente.
+L065|excluded|Modelo metabólico de Shewanella.
+L066|included|AC sem Fe-STR, reator a urina com separador cerâmico.
+L067|included|Regime basal no reator cerâmico grande antes de intervenção anódica.
+L068|included|SC-MFC-C durante a fase com resistência, antes do protocolo de descarga.
+L069|excluded|Controle de circuito aberto em estudo de lama oleosa.
+L070|included|Fases de fundo MFC-A e MFC-B com substratos puros, antes dos ensaios de mistura.
+L071|excluded|Controle de descarga supercapacitiva; 3 kΩ para maturação, sem curva/série resistiva de referência identificada.
+L072|excluded|MFC de papel descartável com inóculo liofilizado, sem braço convencional separado.
+L073|excluded|Revisão de aplicações e perspectivas.
+L074|excluded|Modelo de sucção em solo com célula de planta.
+L075|excluded|Óleo de motor e controles de caracterização da cultura; sem referência convencional sob carga.
+L076|excluded|Revisão de nitrogênio em efluentes.
+L077|excluded|Cátodo AC sem CuO combina com ânodo experimental de sabugo; não é célula de referência completa.
+L078|included|Cenário 4, grafite convencional com água deionizada; sem presumir aeração.
+L079|included|MFC convencional operada separadamente como comparação à MEC.
+L080|excluded|MFC em wetland construída.
+L081|included|Pt/CC e tecido simples em células completas, Fig. 5d; RRDE não entrou na contagem.
+L082|included|Pt/C comercial em MFC sob 1000 Ω, Fig. 6 e DOCX suplementar.
+L083|excluded|Análise bibliométrica.
+L084|excluded|Revisão sobre quorum sensing e biorremediação.
+L085|excluded|Revisão de biorrefinaria de algas.
+L086|excluded|Sistema em sedimentos para remoção de tetraciclina.
+L087|excluded|Efluente de mandioca em regimes experimentais; braço convencional separado não identificado.
+L088|excluded|Fotocátodo de perovskita; controle escuro ainda usa o material experimental.
+L089|excluded|Minirrevisão de nanofibras.
+L090|excluded|O comparador PCA/C contém vetor vazio; braço parental sem manipulação não identificado.
+L091|excluded|Revisão de microalgas e bactérias.
+L092|excluded|Compósitos PEDOT/GO e PEDOT/rGO; sem braço convencional completo identificado.
+L093|excluded|MFC de sedimento com borra de café.
+L094|excluded|Revisão de nanotecnologia.
+L095|pending|Tecido simples aparece em EIS; resposta da célula inteira de referência sob carga ainda não identificada.
+L096|included|MFC com acetato e dicromato antes do hidrolisado, separada da MEC; verificar incoerência elétrica.
+L097|excluded|Culturas e balanço de prótons em biorreator, sem referência MFC.
+L098|excluded|Célula sem cátodo de ar que usa nitrato; comparador sem bactérias ou sem aceptor da montagem estudada.
+L099|excluded|Análise de expressão de Shewanella.
+L100|excluded|Célula com bactéria aeróbia; controles sem células ou em circuito aberto.
+L101|excluded|Análise de modos metabólicos por modelo.
+L102|excluded|Quatro enchimentos em biocátodos sem braço basal explicitado.
+L103|included|Inóculo PSU descrito como referência usada repetidamente, mesma montagem testada sob carga.
+L104|excluded|Célula de laboratório herda ânodo e inóculo do arrozal; sem comparador convencional independente.
+L105|included|PAO1 selvagem em MFC de tubo em U sob carga, distinta do ensaio em potenciostato.
+L106|excluded|Genômica e regulação de nitrogênio.
+L107|included|Papel de carbono antes da aplicação de látex, em reator MFC e sob carga.
+L108|excluded|Regulação transcricional da fixação de nitrogênio.
+L109|included|AC/CB/PTFE sem Fe com escovas comerciais, polarização terminal da célula.
+L110|excluded|Célula sedimentar.
+L111|excluded|MFC em wetland construída.
+L112|included|Dois controles em meio mineral sem água de mineração, com CEM e AEM.
+L113|pending|Controles de eletrodos isolados na comparação do artigo; material do outro eletrodo de cada curva requer confirmação.
+L114|included|Escova nova MFC-CB, controle de recuperação de ânodos.
+L115|excluded|MFC de briófitas.
+L116|excluded|Autômato celular.
+L117|excluded|MFC acoplada a filtro biológico, sem braço convencional separado identificado.
+L118|excluded|Revisão de aceptores de elétrons.
+L119|excluded|Câmara catódica compartilhada por quatro ânodos, sem célula convencional independente.
+L120|included|Cepa selvagem PAO1 em MFC sob 1000 Ω.
+L121|included|MFC com formiato e meio fresco sem mediador adicionado, controle de intervenção em transferência de elétrons.
+L122|included|Ânodo CP comercial sem nanofibras em câmara sem membrana, com curva e corrente medidas.
+L123|excluded|Revisão de configurações, materiais e custos.
+L124|included|Unidade cerâmica individual, curva e série em regime distinto das pilhas.
+L125|excluded|Controles biológico e abiótico em circuito aberto; cascata fechada recebe antígenos.
+L126|excluded|Revisão de bioincrustação.
+L127|included|Pt/C convencional em célula com segundo volume líquido e difusão de ar.
+L128|excluded|Revisão de quitosana.
+L129|excluded|Células sedimentares com leitos flutuantes.
+L130|excluded|Matriz experimental de microrreatores, controles de potencial/circuito aberto.
+L131|included|Fase 0 da MFC2 de grafite granular, com efluente de laticínio antes de lixiviado; eletrodo alternativo separado.
+L132|excluded|Partida de uma montagem convencional, sem braço comparativo ou intervenção com referência separada; possível fonte complementar.
+L133|excluded|Caracterização de membrana, sem ensaio completo de referência.
+L134|included|MF-0 sob carga sem campo aplicado; classe iônica da membrana requer verificação.
+L135|included|FC, cátodo fresco antes de inserir separador microbiano.
+L136|excluded|Revisão de osmose direta acoplada a MFC.
+L137|pending|Controle CP mostra curva e tensão; trecho JATS de montagem insuficiente para ligar as câmaras e o católito ao braço.
+L138|excluded|Protótipo de tubulação com terracota e catalisador experimental, sem referência completa.
+L139|excluded|Mecanismo de biofilme e genética de Geobacter, sem braço convencional completo identificado.
+L140|excluded|O controle retém eletrodos HTG desenvolvidos no trabalho.
+L141|excluded|Revisão de hidrogéis.
+L142|excluded|Voltametria/imagem de célula individual, sem MFC completa.
+L143|included|Placa de grafite S1 sem revestimento sob carga; unidades de densidade em revisão.
+L144|excluded|Eletrorreatores de captura de CO₂ com biocátodos especializados e controles sem eletrodos; sem braço basal convencional identificado.
