@@ -25,6 +25,18 @@ def text_nodes(node, expression):
     return "\n".join(" ".join(" ".join(element.itertext()).split()) for element in node.xpath(expression))
 
 
+def is_access_preview(page):
+    """Identify access screens whose Methods and Results are confined to an abstract."""
+    if not any(" ".join(h.text_content().casefold().split()) in {
+        "access this article", "log in or create a free account to read this content",
+    } for h in page.xpath("//article//h2 | //main//h2")):
+        return False
+    labels = [section.get("data-title", "") for section in page.xpath(
+        "//article//section[@data-title] | //main//section[@data-title]"
+    )]
+    return not (any(METHOD.search(label) for label in labels) and any(RESULT.search(label) for label in labels))
+
+
 def extract(data, route):
     if data.startswith(b"%PDF-"):
         result = subprocess.run(["pdftotext", "-raw", "-", "-"], input=data, capture_output=True, check=True)
@@ -36,6 +48,8 @@ def extract(data, route):
             raise ValueError("XML lacks article body")
         return "xml", text_nodes(body, ".//title|.//p|.//caption")
     page = html.fromstring(data)
+    if is_access_preview(page):
+        raise ValueError("article preview lacks the full body")
     for item in page.xpath("//script|//style|//nav|//footer"):
         item.drop_tree()
     node = max(page.xpath("//article|//main|//*[@id='body']"), key=lambda n: len(n.text_content()), default=page)

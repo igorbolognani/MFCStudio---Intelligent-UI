@@ -20,6 +20,8 @@ save = R["SEARCH"]["save_json"]
 doi_key = R["SEARCH"]["doi_key"]
 title_hash = R["SEARCH"]["title_hash"]
 FULL_METHODS = METHOD["FULL_METHODS"]
+REQUIRED_COVERAGE = ("body_recovered", "documented_integral", "individual_screening",
+                     "complete_methods_read", "included_F1_F6")
 DOC = {"unknown": 0, "unavailable": 1, "partial": 2, "body_candidate": 3, "documented_integral": 4}
 METADATA_DOC_TYPES = {"review", "editorial", "erratum", "book", "book-chapter", "retraction"}
 
@@ -282,6 +284,8 @@ def apply_acquisition(catalog, output):
             access(row, "documented_integral")
         elif item["state"] == "body_candidate":
             access(row, "body_candidate")
+        elif item["state"] == "preview_only":
+            access(row, "partial")
         elif item["state"] in {"unrecovered", "wrong_document"}:
             access(row, "unavailable")
         row["evidence"].add("catalog_acquisition")
@@ -366,9 +370,13 @@ def summarize(rows, output):
         counts["archived_methods_indexed"] += "archived_methods_indexed" in values(row["evidence"])
         counts["without_title"] += row["title"] == "NR"
         counts["without_persistent_identifier"] += not aliases
-    summary = {"unique_publications": len(rows), "minimum_for_over_half": len(rows) // 2 + 1,
+    minimum = len(rows) // 2 + 1
+    remaining = {metric: max(0, minimum - counts[metric]) for metric in REQUIRED_COVERAGE}
+    summary = {"unique_publications": len(rows), "minimum_for_over_half": minimum,
                "counts": dict(sorted(counts.items())),
                "percent": {key: round(100 * value / len(rows), 2) for key, value in sorted(counts.items())},
+               "over_half_complete": not any(remaining.values()),
+               "remaining_to_over_half": remaining,
                "access_states": dict(sorted(Counter(row["document"] for row in rows).items())),
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
@@ -405,11 +413,21 @@ if __name__ == "__main__":
     parser.add_argument("--cache", type=Path)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--require-over-half", action="store_true",
+                        help="With --check, return 2 while any of the five rates is at or below 50%.")
     args = parser.parse_args()
+    if args.require_over_half and not args.check:
+        parser.error("--require-over-half requires --check")
     if args.check:
-        if summarize(read(args.output / "publications.psv.gz"), args.output) != read_json(args.output / "coverage.json"):
+        summary = summarize(read(args.output / "publications.psv.gz"), args.output)
+        if summary != read_json(args.output / "coverage.json"):
             raise ValueError("Saved catalogue counts or hashes changed")
         print("Catalogue identities, counts and file hashes verified")
+        for metric, remaining in summary["remaining_to_over_half"].items():
+            print(f"{metric}: {summary['counts'][metric]}/{summary['unique_publications']} "
+                  f"({summary['percent'][metric]:.2f}%), remaining {remaining}")
+        if args.require_over_half and not summary["over_half_complete"]:
+            raise SystemExit(2)
         raise SystemExit(0)
     if args.cache is None:
         parser.error("--cache is required when generating the catalogue")

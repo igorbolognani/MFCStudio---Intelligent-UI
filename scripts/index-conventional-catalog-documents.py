@@ -11,6 +11,7 @@ import re
 import runpy
 
 C = runpy.run_path(str(Path(__file__).with_name("build-conventional-catalog.py")))
+is_access_preview = runpy.run_path(str(Path(__file__).with_name("acquire-external-register.py")))["is_access_preview"]
 read_json, write = C["read_json"], C["write"]
 doi_key = C["doi_key"]
 DUPLICATE_SPACE = re.compile(r"\s+")
@@ -120,6 +121,10 @@ def export(cache, output):
                 else:
                     identifier = article_identity(item, data, text, versions[doi_key(item.get("doi"))])
                     state = "identity_verified" if identifier else "body_candidate"
+                    if fmt == "html":
+                        from lxml import html
+                        if is_access_preview(html.fromstring(data)):
+                            state = "preview_only"
             errors = Counter("body_incomplete_or_unreadable" if a["error"].startswith("incomplete body")
                              else a["error"].split(": ", 1)[0] for a in item.get("attempts", []))
             records[key, route] = {"key": key, "route_group": route,

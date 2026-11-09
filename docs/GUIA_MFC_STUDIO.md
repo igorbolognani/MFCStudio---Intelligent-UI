@@ -1086,6 +1086,33 @@ Para F6, a leitura do método e do suplemento de Mohanty et al. confirmou o mate
 
 O ponto de retomada está no catálogo com as decisões, localizadores e hashes desta revisão. Há 1.260 publicações com corpo recuperado que aguardam triagem individual. O próximo incremento começa pelos textos identificados com sinais de métodos em F1, F5 e F6. Entre os pendentes já lidos, devem ser verificadas a montagem da fase MFC de Hari et al. e a vinculação do MFC-B de Borole et al. ao católito e à polarização relatados. As checagens reproduzem a contagem de publicações, os hashes do acervo disponível e a transformação de pixels em coordenadas. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
 
+<a id="meta-cobertura"></a>
+### 12.13 Conferência dos cinco percentuais
+
+A base permanece com **7.599 publicações**. Para superar 50%, cada etapa precisa alcançar 3.800. A checagem usa contagens inteiras e foi repetida após os lotes. [Cobertura e lacunas](../research/conventional-arms/catalog/coverage.json)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.588 | 1.593 | 20,96% | 2.207 |
+| Texto com identidade confirmada | 1.443 | 1.447 | 19,04% | 2.353 |
+| Triagem ou revisão individual | 373 | 392 | 5,16% | 3.408 |
+| Métodos completos lidos | 115 | 133 | 1,75% | 3.667 |
+| Controle admitido em F1–F6 | 42 | 42 | 0,55% | 3.758 |
+
+O acervo público do PMC forneceu nove manuscritos com identidade verificada. Outras rotas forneceram cinco corpos, quatro com identidade confirmada. A auditoria de 69 arquivos HTML identificou onze páginas que só continham o resumo, referências e instruções de acesso. Duas apareceram nas tentativas novas. Nove haviam sido contadas como corpo. Os registros preservam os hashes e a identificação bibliográfica da página, marcada como `preview_only`. A aquisição passou a rejeitar esse tipo de página como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
+
+Após a limpeza do espaço temporário, o catálogo publicado e os arquivos de fontes permitiram retomar a revisão. Os 14 corpos e duas páginas de acesso da rodada foram obtidos novamente. Os nove HTMLs históricos mantêm os hashes da inspeção anterior. A reconstrução incremental preservou as identidades, as fontes e as decisões anteriores. O cache de todas as tentativas frustradas do primeiro passe ficou incompleto.
+
+Foram registradas 19 revisões individuais, incluindo 18 métodos completos. Por exemplo, em Harrington e colaboradores o ferri/ferrocianeto pertence ao ensaio de impedância do reator. Em Quek e colaboradores, a montagem de duas câmaras tem ferricianeto, acetato e resultados sob carga, mas o ânodo é um leito de grânulos de grafite. Nenhuma das duas configurações satisfaz F6. [Decisões com localizadores](../research/conventional-arms/catalog/reviews.psv)
+
+O teste da rota OpenAlex encontrou 315 registros pendentes com indicação de PDF. O download exige chave de API. Esses documentos continuam sujeitos à verificação de identidade e escopo. O próximo lote começa pelos corpos recuperados com sinais de F1, F5 e F6 e por novas rotas públicas de textos pendentes. A quinta meta depende de o catálogo conter pelo menos 3.800 controles elegíveis verificáveis. [Acesso a texto completo no OpenAlex](https://help.openalex.org/access/fulltext/)
+
+```sh
+python3 scripts/build-conventional-catalog.py --check --require-over-half
+```
+
+A checagem verifica a integridade dos arquivos e retorna 2 enquanto alguma etapa estiver em 50% ou menos.
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 

@@ -15,6 +15,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1002/bit.23204|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 410 (1)
 10.1002/bit.24769|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1002/bit.25315|open|identity_verified|pdf|https://researchportal.murdoch.edu.au/view/delivery/61MUN_INST/12136001010007891/13137090200007891|1062104|c79f5c8d4004ceca40db99f8d393f39d080e65579a37c5b11fa258e63846096b|doi:10.1002/bit.25315|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.1002/bit.25500|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4380679.1/PMC4380679.1.xml|70623|6372d68890043db8a764b848b52b542054fb2c384d3f4fdb6123d624b8fdcf2f|doi:10.1002/bit.25500|NR
 10.1002/bit.260191112|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/bit.28380|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/bit.28383|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
@@ -33,6 +34,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1002/cssc.201100836|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1002/cssc.201200283|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1002/cssc.201300019|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 500 (1) / body_incomplete_or_unreadable (2)
+10.1002/cssc.201300019|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4247834.1/PMC4247834.1.xml|87518|702ebd99227f98c952587202f69a8e006234bcb02577dcdb9f395d4ad2295d81|doi:10.1002/cssc.201300019|NR
 10.1002/cssc.201402570|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1002/cssc.201500431|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1002/cssc.201600590|openaire|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -115,10 +117,10 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s10529-008-9707-4|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s10529-008-9751-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s10529-016-2128-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
-10.1007/s10529-018-2624-2|open|identity_verified|html|https://link.springer.com/content/pdf/10.1007/s10529-018-2624-2.pdf|368982|762d61c9e44b27ecb912e9e29460d04697cc2aac054680b64d3e0fcc9e0a04be|doi:10.1007/s10529-018-2624-2|NR
+10.1007/s10529-018-2624-2|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s10529-018-2624-2.pdf|368982|762d61c9e44b27ecb912e9e29460d04697cc2aac054680b64d3e0fcc9e0a04be|doi:10.1007/s10529-018-2624-2|NR
 10.1007/s10529-020-02858-5|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1007/s10529-020-02858-5|openaire|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (5)
-10.1007/s10529-022-03304-4|open|identity_verified|html|https://link.springer.com/content/pdf/10.1007/s10529-022-03304-4.pdf|437979|e1b50000a9b7d8caacaa8b0ba74383b594d983ebea5aa2692d716e3b6e422996|doi:10.1007/s10529-022-03304-4|NR
+10.1007/s10529-022-03304-4|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s10529-022-03304-4.pdf|437979|e1b50000a9b7d8caacaa8b0ba74383b594d983ebea5aa2692d716e3b6e422996|doi:10.1007/s10529-022-03304-4|NR
 10.1007/s10532-013-9621-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1007/s10653-019-00266-x|open|identity_verified|pdf|https://escholarship.org/content/qt7vt9w3pk/qt7vt9w3pk.pdf|848895|5510d6908e7b0be04ce02c2a0c254a2c6006cb342ada96e282d65e7791acec46|doi:10.1007/s10653-019-00266-x|NR
 10.1007/s10800-009-9957-4|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
@@ -136,7 +138,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s11356-022-19292-x|open|identity_verified|pdf|https://escholarship.org/content/qt3ss1w1cr/qt3ss1w1cr.pdf|2085308|3ee6192aa1aeaa93f2585098a8f670fa585b6407a76adad71b9f40a82fe05b41|doi:10.1007/s11356-022-19292-x|NR
 10.1007/s11356-022-22467-1|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-1470545/latest.pdf|1024936|8391133f9fbbc1716f1e2f97e870b9e33355ec184e18e49dac628d0b41feed8d|NR|NR
 10.1007/s11356-022-24254-4|open2|identity_verified|pdf|https://www.researchsquare.com/article/rs-2072655/latest.pdf|2980544|b65d30f79b03a77a265c5876ed681ab637e72703ef3e89c8e09e2ad77040be89|article_front_title|NR
-10.1007/s11356-023-26342-5|open|identity_verified|html|https://doi.org/10.1007/s11356-023-26342-5|326125|45776805be082c1a726f426e08ddb5e5758a932b7c1640f03cfd6c5d76bbd701|doi:10.1007/s11356-023-26342-5|NR
+10.1007/s11356-023-26342-5|open|preview_only|html|https://doi.org/10.1007/s11356-023-26342-5|326125|45776805be082c1a726f426e08ddb5e5758a932b7c1640f03cfd6c5d76bbd701|doi:10.1007/s11356-023-26342-5|NR
 10.1007/s11356-023-27845-x|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-2671807/latest.pdf|3091403|3d5fe09f261e1083222df8022f231fea9e5bd7a6b2176df9d3a423e77e20279f|NR|NR
 10.1007/s11356-023-29169-2|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-2808186/latest.pdf|1369866|33dc21ba51b0b010608afee95246b171535271e3243bcfa34ec5687be9f0f9eb|NR|NR
 10.1007/s11356-023-29232-y|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-2638324/latest.pdf|1297474|9b79d12173d181611e198a6b8bf636a2fa21ac81895f60a61da3daffc15f8fc7|NR|NR
@@ -165,14 +167,14 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s12649-026-03757-y|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s12649-026-03757-y.pdf|1631473|fb31c0770c2731978155ad88435b8e3a2c4286d813edf583ced229d3f2549539|doi:10.1007/s12649-026-03757-y|NR
 10.1007/s12678-016-0334-x|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1007/s13201-022-01632-4|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s13201-022-01632-4.pdf|2002721|f14c9b143106e72a86a72bdaf9a60dde389a94ed5c668a1f5665793ac314ec76|doi:10.1007/s13201-022-01632-4|NR
-10.1007/s13205-018-1237-8|open|identity_verified|html|https://link.springer.com/content/pdf/10.1007/s13205-018-1237-8.pdf|600569|cf915a7ec8a3a8dec1adacd2518dac71372da494c2e29ce4ffa985727eeef9ad|doi:10.1007/s13205-018-1237-8|NR
+10.1007/s13205-018-1237-8|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s13205-018-1237-8.pdf|600569|cf915a7ec8a3a8dec1adacd2518dac71372da494c2e29ce4ffa985727eeef9ad|doi:10.1007/s13205-018-1237-8|NR
 10.1007/s13205-018-1321-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s13205-018-1462-1|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s13205-018-1462-1|openaire|identity_verified|pdf|https://europepmc.org/articles/pmc6170320|2320072|363dc5ca2e09f0033cfe42b7f2daf9f8acdf22752c5a24adfec455bff2ec24ca|doi:10.1007/s13205-018-1462-1|body_incomplete_or_unreadable (3)
 10.1007/s13205-019-1950-y|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s13205-020-02606-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
-10.1007/s13205-020-2050-8|open|identity_verified|html|https://link.springer.com/content/pdf/10.1007/s13205-020-2050-8.pdf|339967|89e8a3c090ed30f53ec2bb95ef2fdaee6aedcee5c353237dde00c0408ccd1335|doi:10.1007/s13205-020-2050-8|NR
-10.1007/s13205-021-02802-y|open4|identity_verified|html|https://doi.org/10.1007/s13205-021-02802-y|692144|191ed733073808f1071f86f283dfb7e1fdf221018d46bfc89d4bd5d92843e7c0|doi:10.1007/s13205-021-02802-y|NR
+10.1007/s13205-020-2050-8|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s13205-020-2050-8.pdf|339967|89e8a3c090ed30f53ec2bb95ef2fdaee6aedcee5c353237dde00c0408ccd1335|doi:10.1007/s13205-020-2050-8|NR
+10.1007/s13205-021-02802-y|open4|preview_only|html|https://doi.org/10.1007/s13205-021-02802-y|692144|191ed733073808f1071f86f283dfb7e1fdf221018d46bfc89d4bd5d92843e7c0|doi:10.1007/s13205-021-02802-y|NR
 10.1007/s13205-021-02886-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13205-021-03065-3|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13205-022-03214-2|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -180,13 +182,14 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s13205-023-03687-9|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s13205-023-03772-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s13205-025-04381-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
-10.1007/s13205-025-04388-1|open4|identity_verified|html|https://doi.org/10.1007/s13205-025-04388-1|445902|3d96bd679efd92b2037df721721ecb89dbe4b6e307db3a97d6c09be3b868e65b|doi:10.1007/s13205-025-04388-1|NR
+10.1007/s13205-025-04388-1|open4|preview_only|html|https://doi.org/10.1007/s13205-025-04388-1|445902|3d96bd679efd92b2037df721721ecb89dbe4b6e307db3a97d6c09be3b868e65b|doi:10.1007/s13205-025-04388-1|NR
 10.1007/s13205-025-04529-6|open4|identity_verified|pdf|https://europepmc.org/articles/PMC12535574|1642585|0cfe3c49c080a4cca40791516855e3a940cbedd489da5becd9b7676494dd4ce9|doi:10.1007/s13205-025-04529-6|body_incomplete_or_unreadable (3)
 10.1007/s13205-025-04618-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13399-022-02321-7|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s13399-022-02321-7.pdf|2007066|7ba8eb2809ad3a648df227d625a87532a49ab549ff39d0fa54518be63c7742dd|doi:10.1007/s13399-022-02321-7|NR
 10.1007/s40095-014-0093-5|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s40095-014-0093-5.pdf|1307430|f50e57138bcd25023e371de2f4af65175648e1d8077fc3f9a83d02b9c7c43456|doi:10.1007/s40095-014-0093-5|NR
 10.1007/s40095-017-0249-1|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s40095-017-0249-1.pdf|776863|c9b1cfa72995b1a7086742353b28d861437cd41b4b4a4d012ac0e6ea0025f846|doi:10.1007/s40095-017-0249-1|NR
-10.1007/s40201-020-00504-w|open|identity_verified|html|https://link.springer.com/content/pdf/10.1007/s40201-020-00504-w.pdf|370554|6e1d46607a4f15148b149d3d23a9c188ba66bd9afe0929409785745cdcf22b9c|doi:10.1007/s40201-020-00504-w|NR
+10.1007/s40201-020-00504-w|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s40201-020-00504-w.pdf|370554|6e1d46607a4f15148b149d3d23a9c188ba66bd9afe0929409785745cdcf22b9c|doi:10.1007/s40201-020-00504-w|NR
+10.1007/s40201-020-00528-2|fresh-oa|preview_only|html|https://link.springer.com/content/pdf/10.1007/s40201-020-00528-2.pdf|470379|64f34849c597f1cf8d625e9bcbf6e44da6a87a3aef9ca1c707e30a376b4e776e|doi:10.1007/s40201-020-00528-2|NR
 10.1007/s40201-020-00537-1|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s40201-022-00846-7|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s40201-025-00933-5|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
@@ -269,6 +272,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.bioelechem.2015.03.009|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2015.04.011|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2015.05.002|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 500 (1) / body_incomplete_or_unreadable (3)
+10.1016/j.bioelechem.2015.05.002|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4894060.1/PMC4894060.1.xml|111468|b5fa6c352639248f8138fbb2ac03dc89b974e86102550e9c92ca6c77b8d8d349|doi:10.1016/j.bioelechem.2015.05.002|NR
 10.1016/j.bioelechem.2015.06.011|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1016/j.bioelechem.2016.03.004|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1016/j.bioelechem.2016.11.002|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (5)
@@ -646,6 +650,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.enzmictec.2016.10.012|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1016/j.enzmictec.2020.109564|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (3) / body_incomplete_or_unreadable (2)
 10.1016/j.enzmictec.2022.109995|open2|identity_verified|pdf|https://www.biorxiv.org/content/biorxiv/early/2021/11/18/2021.11.17.469056.full.pdf|628531|5b7916c796332788af2e89602b270d451cc49c60733e3c9bbc1707dec96fce1f|doi:10.1101/2021.11.17.469056|NR
+10.1016/j.enzmictec.2024.110502|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11529205.1/PMC11529205.1.xml|94223|a2bea64f295d7106aecd60aad640603804f90383fc04650efd1b200127c3686a|doi:10.1016/j.enzmictec.2024.110502|NR
 10.1016/j.eti.2025.104090|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.eti.2026.105097|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1016/j.femsle.2004.01.041|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -856,6 +861,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.talanta.2018.04.084|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.tibtech.2008.04.008|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.tibtech.2010.11.001|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 500 (1) / body_incomplete_or_unreadable (3)
+10.1016/j.tibtech.2010.11.001|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3044331.1/PMC3044331.1.xml|101792|e7ede43d2ba2cdcbd0d329cc58bf5a1e649bd52393e8bba2c73ff7fb3357dc29|doi:10.1016/j.tibtech.2010.11.001|NR
 10.1016/j.tibtech.2022.12.008|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.wasman.2014.11.004|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.wasman.2015.11.022|open|identity_verified|pdf|https://nrc-publications.canada.ca/eng/view/accepted/|888490|6923874f2504b705a1d035130cf633852be5ef33dee166c7a11b7f0b1fa8abe5|doi:10.1016/j.wasman.2015.11.022|NR
@@ -864,6 +870,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.watres.2004.11.019|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1016/j.watres.2007.10.007|restore|identity_verified|pdf|https://backoffice.biblio.ugent.be/download/2009670/2009686|631407|d4df49dec58c257919e623b2f1dfaeb3685a22572ffdb762dc019e8d0e5c21d7|doi:10.1016/j.watres.2007.10.007|NR
 10.1016/j.watres.2012.02.025|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1016/j.watres.2015.03.012|fresh-oa|identity_verified|pdf|https://researchportal.murdoch.edu.au/view/delivery/61MUN_INST/12135121380007891/13136715210007891|2022322|8dfa2e27e685a1bb49da072586f5ffbd3b1624917c9134298b2ae5a977610663|doi:10.1016/j.watres.2015.03.012|NR
 10.1016/j.watres.2015.03.012|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.watres.2015.05.012|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (1)
 10.1016/j.watres.2015.06.005|open|identity_verified|pdf|https://upcommons.upc.edu/bitstream/2117/84893/1/Operational%2c%20design%20and%20microbial%20aspects.pdf|1752014|aff19b5bdba23862b7b7a28b3f5448b8775be227c7136c91c4894289f38518ec|article_front_title|NR
@@ -909,6 +916,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/s1452-3981(23)14009-0|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/s1452-3981(23)14393-8|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1021/acs.analchem.0c00653|open5|identity_verified|pdf|https://www.osti.gov/servlets/purl/1673583|1672969|fbf646bc7bf01044518701a2eb791b3f0c0a33967a238ab1950d54744ac420f5|article_front_title|body_incomplete_or_unreadable (1)
+10.1021/acs.chemrev.9b00717|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC7357856.1/PMC7357856.1.xml|402264|b6da80d1bb424ff7bec8407eb91ae9646c247833ea41c9dc33870c48ff950ca8|doi:10.1021/acs.chemrev.9b00717|NR
 10.1021/acs.est.1c03586|open2|identity_verified|pdf|https://biblio.ugent.be/publication/8731345/file/01GR3R35BVKWGQ9BSXGWTSCV5G.pdf|2028271|5a89734df936d237bd43aa3a6bc3333dc8bbc62d49cd9a6a7ac58909ab73e0d9|doi:10.1021/acs.est.1c03586|NR
 10.1021/acs.est.6b00827|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1021/acs.est.7b00209|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -954,8 +962,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1029/2009jg001131|restore|identity_verified|pdf|https://pureadmin.qub.ac.uk/ws/files/2725088/2009JG001131_PROOF.pdf|1343076|41ca50280693c3a9faf780035e7259b2395226d1410aa8ad12b14bd028fab8f7|doi:10.1029/2009jg001131|NR
 10.1038/ismej.2009.12|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1038/ismej.2010.66|open2|identity_verified|pdf|https://biblio.ugent.be/publication/1162702/file/1163135.pdf|299477|7523c3b80ca0d71c84401a929a3132a5e0c434d4a79351218f0ee69e9a6228a9|article_front_title|NR
-10.1038/ismej.2012.5|open2|identity_verified|html|https://www.nature.com/articles/ismej20125.pdf|269553|80d131dd179460233e5a11a03f7848bcc290abb164d3e2c4b468ef6ae05fb2ac|doi:10.1038/ismej.2012.5|NR
+10.1038/ismej.2012.5|open2|preview_only|html|https://www.nature.com/articles/ismej20125.pdf|269553|80d131dd179460233e5a11a03f7848bcc290abb164d3e2c4b468ef6ae05fb2ac|doi:10.1038/ismej.2012.5|NR
 10.1038/ismej.2013.198|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3) / body_incomplete_or_unreadable (2)
+10.1038/ismej.2013.217|fresh-oa|preview_only|html|https://www.nature.com/articles/ismej2013217.pdf|339292|3d2e826ea2a599c1647b20af72b6c3762e3660d8a580aaf6d6d942739671e90f|doi:10.1038/ismej.2013.217|NR
 10.1038/ismej.2013.40|open|identity_verified|pdf|https://europepmc.org/articles/PMC3721111|1875535|e0f2548fe8e74e294df24fa183c956030e571ccbe595365cf2129d811571f3a0|doi:10.1038/ismej.2013.40|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1038/ncomms3751|open2|identity_verified|pdf|https://www.nature.com/articles/ncomms3751.pdf|1143766|9014a08f3e163f1b58914bdcec0aec3e871199aeca5c4457385531818304cdec|doi:10.1038/ncomms3751|NR
 10.1038/ncomms4208|open|identity_verified|pdf|https://www.nature.com/articles/ncomms4208.pdf|899104|412f4c94250c835e3fa8ac4ad044c11c9695959bf8e648519b0d6907e7371b76|doi:10.1038/ncomms4208|NR
@@ -965,6 +974,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1039/b819866g|open3|identity_verified|pdf|https://openresearch.surrey.ac.uk/view/delivery/44SUR_INST/12139581520002346/13140603000002346|794488|b34ac696283c09b0177fed29c80f4e94ea2b999fec260761993ef016e3b2fb9a|doi:10.1039/b819866g|NR
 10.1039/c0mt00084a|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1039/c1cp23200b|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 500 (1) / body_incomplete_or_unreadable (2)
+10.1039/c1cp23200b|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3551589.1/PMC3551589.1.xml|152271|4ae11966e7eda0971d71f7823207cf53b8015294335d811b38aad48b44a99346|doi:10.1039/c1cp23200b|NR
 10.1039/c1cp23213d|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1039/c1ra00839k|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/c2cp42571h|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -1018,6 +1028,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1080/08927010903161281|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1080/08927014.2011.564615|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1080/08927014.2012.710324|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / HTTP Error 500 (1) / HTTP Error 502 (1) / body_incomplete_or_unreadable (1)
+10.1080/08927014.2012.710324|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4242416.1/PMC4242416.1.xml|259769|85a4c10c23185780b80ce6c506ef55617f1ee215c9986ec0f546cf96b0f1666c|doi:10.1080/08927014.2012.710324|NR
 10.1080/09593330.2013.788040|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1080/09593330.2013.827223|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1080/09593330.2013.828101|open3|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -1642,6 +1653,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 22470538|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3314594/fullTextXML|81329|1f5ba437ec981f00cbf2f9e2964459a9b830c58f3b9f58756e2fc9994ada26fe|NR|NR
 22843516|open|identity_verified|pdf|https://europepmc.org/articles/PMC3457516|1007484|eed7dbad9c3750f204e15487c028994d96d0a5e2bd15887d2ed0a662a890a227|article_front_title|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 24478768|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3902354/fullTextXML|125969|e97f3ab8814a763005e11058ec331e345a61d5adf9b07893c1e915fe5fcdcf2d|article_front_title|NR
+24569675|fresh-oa|identity_verified|pdf|https://www.nature.com/articles/ncomms4391.pdf|567014|d54ab3cb06ad14e13ad874587aed4cd2b90be0b33f02f67610dec3e56ad9eeb6|doi:10.1038/ncomms4391|NR
 24741468|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3982937/fullTextXML|94923|453a08c82cc216d55b03806370356beedcb3724ca2397116b75018cd850df7c7|NR|NR
 24862005|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 25506343|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4246885/fullTextXML|88436|6bec0e9c57009361eab6feef8ed43542f92c659a76d8c2740986a9a904220505|NR|NR
@@ -1656,6 +1668,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 27071535|open|unrecovered|NR|NR|NR|NR|NR|The read operation timed out (1)
 27797183|open|identity_verified|pdf|https://europepmc.org/articles/PMC7388032|902312|278432b82400c4bbe2d66fc21b640604d5a192a2fb66aad9d62f76862e54dbb4|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 28473374|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
+28473374|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC5477182.1/PMC5477182.1.xml|42876|86627680a22b28a3bbab1206d77b346d4b3fbba5c90a9b780fe66eb7176f49d9|doi:10.1128/genomea.00221-17|NR
 28698497|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5539708/fullTextXML|138326|8717c5488df19c5ffe081b9e5542fdba319c36722467e1e363af6a3c36ddc5f7|article_front_title|NR
 29082669|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 29222104|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5795077/fullTextXML|116794|3800d3f5fc0c45dadf1b582352b462be6ad1b687868037f47ef8cb4bdc00c86a|article_front_title|NR
@@ -1667,12 +1680,15 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 30902855|open2|identity_verified|pdf|https://europepmc.org/articles/PMC6532047|1367168|93c0112af9056e1145e4cbd7033e706a4cbe8dd01ea2f265ff4795d1517b09d7|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 31070592|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 31072303|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6509789/fullTextXML|218536|0cd56ada3e262e22bb01529eb8a2a225ae98f780874703ecd9f388aa1730cb5c|article_front_title|NR
+31931483|fresh-oa|identity_verified|pdf|https://findresearcher.sdu.dk/ws/files/161244490/Yee_2020_Nanotechnology_31_174003.pdf|1347137|ea4d83dc6d7ce881e6856d210df80f904cac47922324952ae38180e432f840ca|doi:10.1088/1361-6528/ab6ab5|NR
 32050646|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7037215/fullTextXML|110522|854f70284ee2a7f9fd2feeb35f0b002f22cb1f326eccfce7caf76ce7da016699|article_front_title|NR
+32446060|fresh-oa|identity_verified|pdf|https://arxiv.org/pdf/2005.06336|1279397|de8468c305d45fcae4d969a61d4ce997e86035bd833e93f015b06cfedfdbbb70|article_front_title|NR
 32446060|open2|unrecovered|NR|NR|NR|NR|NR|<urlopen error [Errno 111] Connection refused> (1)
 32849356|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7399161/fullTextXML|219274|b721dfd8c8b90ae5b0a0a5604659dc1f9cc95827a4ff86806e2ba4eded3179a8|article_front_title|NR
 33119231|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 33304839|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7714679/fullTextXML|308442|bff3605eb855f8b986285eeed849ea4f6f2afd32717b5bd33ec4756a8355682f|NR|NR
 33671672|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7926576/fullTextXML|131559|2d8b43deae8d4c42faf9a5dcfae81d958508c7eda06c568ed775075e038b52d1|NR|NR
+34273778|fresh-oa|body_candidate|pdf|https://www.biorxiv.org/content/biorxiv/early/2021/04/15/2021.04.15.440059.full.pdf|1486687|e5e2ef8e583db5932ff8c598c62e73fc90cd15ea4bc036a374c7671c6aeeabdf|NR|NR
 34341507|open2|identity_verified|pdf|https://europepmc.org/articles/PMC8776907|3230404|bc26c59d99d5d59f8d024cac2b5e5978d5e9de6799bd08ec6e92b0c1a05b68a4|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 34368649|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8326206/fullTextXML|222826|4ebf871b3ff253acb45c40e4c106e067447fd517cfae0e4c207815662cc40036|article_front_title|NR
 34472610|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
