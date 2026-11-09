@@ -2,7 +2,7 @@
 
 **Uma leitura para entender a célula, acompanhar seus balanços e saber até onde confiar em uma previsão.**
 
-Revisão editorial em **6 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. As seções 12.6 a 12.10 registram o reinício da seleção, a amostra geral e as rodadas de ampliação pela leitura dos métodos.
+Revisão editorial em **9 de novembro de 2026**. O projeto mantém o núcleo `mfc-kernel/0.2.0` e a base publicada `mfc-corpus/0.4.0`, conferida em 2 de novembro. A literatura usa o [catálogo único de publicações](#catalogo-unico). O histórico de busca fica recolhido na seção 12.
 
 Este guia reúne o conteúdo dos onze arquivos que antes estavam separados em `docs`. O texto principal foi reescrito para uma leitura de engenharia. Inventários, números de verificação e registros originais ficam em anexos recolhíveis no final, dentro deste mesmo documento.
 
@@ -815,6 +815,9 @@ Esses dados ajudam a estudar resposta e repetibilidade de uma família. Não con
 
 Preservar uma contradição não inutiliza automaticamente o estudo. Indica que certas relações podem ser usadas como contexto e que determinados números ainda não devem sustentar uma conversão ou calibração.
 
+<details>
+<summary>Histórico das consultas e rodadas anteriores de referências convencionais</summary>
+
 ### 12.6 Referências convencionais
 
 Em 6 de novembro de 2026, os 17 candidatos e as seis configurações do levantamento anterior foram retirados da seleção ativa. Os arquivos daquela curadoria podem ser consultados pelo histórico. A seleção ativa está vazia. [Registro da seleção](../research/conventional-arms/selection.json) · [Curadoria anterior](https://github.com/igorbolognani/MFCStudio---Intelligent-UI/tree/d1529499b515433d5849267361ad5703ae59d885/research/reference-families-v0.1)
@@ -1013,6 +1016,43 @@ python3 scripts/acquire-external-register.py "$cache" "$cache/frozen-batch-3.jso
 python3 scripts/reconcile-external-register.py "$cache" --output "$out" --queue "$cache/frozen-next.json"
 python3 scripts/audit-external-arms.py --check --cache "$cache"
 ```
+
+</details>
+
+<a id="catalogo-unico"></a>
+### 12.11 Catálogo único de publicações
+
+Em 9 de novembro de 2026, o catálogo passou a usar **7.599 publicações** como denominador único. Uma linha representa uma identidade bibliográfica. DOI, PMID e PMCID são mantidos como identificadores alternativos. O título normalizado só vincula uma entrada quando o cruzamento é inequívoco e os identificadores e o ano disponíveis são compatíveis. O XML original confirmou um caso com DOI e PMCID antes separados. Outros 29 vínculos agruparam preprints e artigos publicados, com a relação e sua fonte registradas. Há 293 entradas sem DOI, PMID ou PMCID, para as quais a deduplicação depende dos metadados disponíveis. Os títulos estão preenchidos em todas as linhas. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Vínculos de versões](../research/conventional-arms/catalog/versions.psv)
+
+| Etapa | Publicações | Percentual do catálogo |
+|---|---:|---:|
+| Triagem automática de metadados e sinais para priorização | 7.599 | 100% |
+| Resumo associado | 5.830 | 76,72% |
+| Corpo de artigo recuperado, incluindo candidatos à confirmação | 1.432 | 18,84% |
+| Texto com identidade documentada | 1.272 | 16,74% |
+| Triagem ou revisão individual registrada | 345 | 4,54% |
+| Leitura dos métodos completos documentada | 83 | 1,09% |
+| Artigo com controle F1–F6 admitido | 38 | 0,50% |
+
+A meta de mais de 50% equivale a 3.800 publicações por etapa. Foi atingida para resumos e triagem automática. A inclusão depende da presença real da montagem, do doador, da reposição em bateladas e da resposta sob carga no mesmo braço. A contagem de 38 é a cobertura confirmada, e a prevalência dos controles na literatura segue desconhecida. O total por família é F1 6, F2 7, F3 10, F4 10, F5 5 e F6 4. Um artigo pode aparecer em mais de uma família.
+
+A aquisição testou rotas públicas para 1.228 publicações. Foram recuperados ou restaurados 352 corpos de artigo. A comparação de identidade verificou 299 e manteve 53 como candidatos. As falhas de acesso e as rotas sem tentativa HTTP estão registradas à parte. O processamento dos arquivos JATS preservados identificou seções de métodos em 756 publicações. A localização automática da seção e a leitura completa são etapas diferentes. Esta passagem acrescentou ou atualizou 40 decisões individuais, com 31 exclusões e nove pendências. [Cobertura e integridade](../research/conventional-arms/catalog/coverage.json) · [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Triagem](../research/conventional-arms/catalog/reviews.psv)
+
+Em Wu et al., a referência de acetato tem feltro nos dois eletrodos e 0,57 V a 1 kΩ. O artigo mostra um ciclo e descreve adição de combustível. Falta ligar a troca do anólito em ciclos ao controle de acetato para admitir em F6. No estudo de Cheng et al., o preprint identifica a montagem e a reposição abaixo de 20 mV. O resumo do artigo publicado informa 54,7 mW/m² para o controle, valor diferente do que se obtém ao converter os valores textuais do preprint. A conferência da versão publicada segue pendente. Os dois casos permanecem fora das comparações quantitativas. [Wu et al.](https://doi.org/10.1088/1755-1315/369/1/012011) · [Cheng et al.](https://doi.org/10.1016/j.biortech.2018.08.006)
+
+O ponto de retomada está nas linhas do catálogo. Há 1.135 publicações com corpo recuperado e sem triagem individual. Entre as que ainda não têm corpo, 1.387 têm localização indexada, incluindo rotas já testadas. A aquisição registra falha ou recuperação por tentativa e conserva o hash quando houve acesso. A próxima leitura começa nos textos disponíveis com sinal de F2, F5 ou F6. O histórico das versões preserva o documento de origem de cada observação.
+
+```sh
+cache=/caminho/privado/mfc-literatura
+python3 scripts/build-conventional-catalog.py --check
+python3 scripts/enrich-conventional-catalog.py "$cache" epmc
+python3 scripts/enrich-conventional-catalog.py "$cache" alex
+python3 scripts/acquire-conventional-catalog.py "$cache" rodada-seguinte --limit 120 --topic
+python3 scripts/index-conventional-catalog-documents.py "$cache"
+python3 scripts/build-conventional-catalog.py --cache "$cache"
+```
+
+Para reproduzir a rodada publicada, o cache deve conter os metadados exatos, os manifestos das aquisições concluídas e os originais correspondentes. O índice JATS pode ser reconstruído com `scripts/index-conventional-methods.py` a partir dos originais preservados e verificados pelo manifesto de metodologia. O repositório publica o catálogo, os hashes e as decisões. As cópias obtidas com condições de redistribuição desconhecidas permanecem no acervo de trabalho.
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

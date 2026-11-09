@@ -2,8 +2,9 @@
 from argparse import ArgumentParser
 from concurrent.futures import ThreadPoolExecutor
 from hashlib import sha256
+from http.client import HTTPException
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 from urllib.request import Request, urlopen
 import re
 import runpy
@@ -72,7 +73,8 @@ def acquire(cache, row):
         if url in tried:
             continue
         try:
-            req = Request(url, headers={"User-Agent": "MFC Studio literature research/1.0",
+            encoded = quote(url, safe=":/?#[]@!$&'()*+,;=%")
+            req = Request(encoded, headers={"User-Agent": "MFC Studio literature research/1.0",
                                         "Accept": "application/pdf,text/html,application/xml,*/*"})
             with urlopen(req, timeout=15) as response:
                 data = response.read(MAX_BYTES + 1)
@@ -89,7 +91,7 @@ def acquire(cache, row):
                             "attempts": errors}
             save_json(acquired, record)
             return record
-        except (OSError, ValueError, etree.Error, subprocess.SubprocessError) as error:
+        except (OSError, ValueError, HTTPException, etree.Error, subprocess.SubprocessError) as error:
             errors.append({"url": url, "error": str(error)})
             save_json(attempts, errors)
     return row | {"format": None, "attempts": errors, "local": str(folder.relative_to(cache))}
