@@ -1224,6 +1224,23 @@ O lote B03 retomou o catálogo em `88a31ad` e recuperou dois PDFs editoriais com
 
 O artigo de Yang et al. com cátodo tubular de bambu é candidato à próxima revisão F4. A cópia editorial indexada localiza a montagem Pt/C nas §§2.1–2.4 e a polarização na Fig. 4a. A tentativa de baixar o PDF pela editora retornou HTTP 403. A aquisição dos bytes e a ficha do braço ainda estão pendentes. [Yang et al.](https://doi.org/10.1039/c7ra04571a) · [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
 
+
+#### Lote B04 · Alimentação e fase do ensaio F6
+
+O lote B04 retomou o catálogo em `e21838a`. A cópia editorial de Sun et al. obtida pela rota da MDPI tem o mesmo SHA-256 do PDF já registrado. A Fig. 5 descreve o experimento como contínuo e a polarização da Fig. 2 pertence ao dia 4 do mesmo Período 1. A troca de católito está documentada. A reposição de anólito em bateladas segue sem confirmação para o braço FeC-MFC. [Sun et al.](https://doi.org/10.3390/en9050388) · [Aquisição](../research/conventional-arms/catalog/acquisition.psv)
+
+Foram triadas publicações do acervo JATS já conferido. Nos dois textos com feltro e ferricianeto, a glicose é o doador da fase em questão ou o feltro está no cátodo da aclimatação. As decisões localizam separadamente montagem, alimentação e ensaio. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.598 | 1.598 | 21,03% | 2.202 |
+| Texto com identidade confirmada | 1.464 | 1.464 | 19,27% | 2.336 |
+| Triagem ou revisão individual | 445 | 450 | 5,92% | 3.350 |
+| Métodos completos lidos | 173 | 177 | 2,33% | 3.623 |
+| Controle admitido em F1–F6 | 44 | 44 | 0,58% | 3.756 |
+
+A fila seguinte começa nos corpos confirmados sem triagem e nas cópias primárias pendentes, incluindo o comparador tubular Pt/C de Yang et al. A meta de admissão continua condicionada à verificação individual dos controles elegíveis. [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
