@@ -1195,6 +1195,20 @@ A decisão publicada sobre Paitier et al. foi preservada. A Tabela S1 identifica
 
 O próximo lote começa por métodos de fontes primárias com corpo confirmado e por repositórios institucionais para os registros ainda sem texto. [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
 
+#### Revisão dos originais do acervo de referências convencionais
+
+O lote conferiu os tamanhos e SHA-256 dos 14 arquivos descritos em `IDENTIDADE_DOCUMENTOS.json` do acervo `MFC_Referencias_Convencionais_Fontes_Abertas_v0.1.zip`. Os registros `authorized-archive-20261109` documentam os PDFs RF05, RF06, RF08 e RF10–RF14 com a identidade do artigo. A cópia de Logan et al. (D15) foi obtida na página dos autores. O lote acrescentou oito primeiras triagens e duas leituras integrais de métodos. [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Decisões](../research/conventional-arms/catalog/reviews.psv)
+
+O braço FeC de Sun et al. permanece pendente em F6. A montagem tem feltro, ferricianeto e acetato, e a Tabela 2 atribui 444 mA/m² a 150 Ω ao Período 1. O calendário de reposição do anólito precisa ser vinculado a esse período. Em Logan et al., a polarização da B-MFC com glicose foi medida no início de um ciclo. O limiar de renovação de 20 mV aparece no protocolo da C-MFC. A B-MFC segue pendente em F5. [Sun et al.](https://doi.org/10.3390/en9050388) · [Logan et al.](https://doi.org/10.1021/es062644y)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.596 | 1.596 | 21,00% | 2.204 |
+| Texto com identidade confirmada | 1.462 | 1.462 | 19,24% | 2.338 |
+| Triagem ou revisão individual | 433 | 441 | 5,80% | 3.359 |
+| Métodos completos lidos | 168 | 170 | 2,24% | 3.630 |
+| Controle admitido em F1–F6 | 43 | 43 | 0,57% | 3.757 |
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
