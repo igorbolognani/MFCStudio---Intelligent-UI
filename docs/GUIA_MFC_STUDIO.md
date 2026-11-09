@@ -1117,7 +1117,7 @@ A checagem verifica a integridade dos arquivos e retorna 2 enquanto alguma etapa
 
 O lote de 9 de novembro acrescentou 15 leituras integrais e reconferiu a distinção entre as Figs. 3 e 4 em Borole et al. A cópia editorial de Heidrich et al. recuperada no repositório da Universidade de Glasgow confirma o braço de acetato em bateladas, com feltro e carga de 470 Ω. O cátodo é malha de titânio platinizado em tampão aerado. [Heidrich et al.](https://eprints.gla.ac.uk/148747/1/148747.pdf) · [Borole et al.](https://doi.org/10.1186/1754-6834-2-7)
 
-No artigo de Zhou et al., a Fig. 5 vincula o braço R2B1 com acetato a uma resposta sob 1 kΩ. O método informa feltro de 3 × 3 cm como material de eletrodo e ferricianeto como aceitador. A área catódica declarada no cálculo é 100 cm², também a área do tecido no reator de isolamento. A montagem catódica do braço de acetato precisa de confirmação antes da admissão em F6. [Zhou et al.](https://doi.org/10.1371/journal.pone.0113379)
+No artigo de Feng et al., a Fig. 5 vincula o braço R2B1 com acetato a uma resposta sob 1 kΩ. O método informa feltro de 3 × 3 cm como material de eletrodo e ferricianeto como aceitador. A área catódica declarada no cálculo é 100 cm², também a área do tecido no reator de isolamento. A montagem catódica do braço de acetato precisa de confirmação antes da admissão em F6. [Feng et al.](https://doi.org/10.1371/journal.pone.0113379)
 
 Os registros de aquisição preservam a versão de cada XML do PMC pelo caminho do objeto, além do tamanho e do SHA-256. A fila continua nos corpos confirmados com sinais de F1, F5 e F6. [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Decisões](../research/conventional-arms/catalog/reviews.psv) · [Cobertura](../research/conventional-arms/catalog/coverage.json)
 
@@ -1145,6 +1145,22 @@ A rota pública do PMC verificou 30 corpos em 85 tentativas. Desses, 18 já tinh
 | Controle admitido em F1–F6 | 42 | 42 | 0,55% | 3.758 |
 
 Cinco publicações receberam a primeira triagem individual, todas com leitura integral dos métodos. A reconferência de Hari et al. registrou a fase MFC a ar separada da MEC. Em Paitier et al. e Chen et al., os métodos e resultados documentam uma montagem F1 e resposta sob carga em braços identificados. A atribuição do papel de controle ou referência convencional segue em revisão. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv) · [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
+
+#### Admissão de um braço F4 e leitura de novos métodos
+
+O lote acrescentou 12 decisões, das quais sete documentam leitura dos métodos completos. O manuscrito público de Mateo et al. confirma feltro anódico, cátodo a ar e recirculação do reservatório nos braços de acetato e glicose. Os dois braços têm resultados sob carga e ficam fora de F1, F5 e F6 pela montagem. O catálogo identifica a cópia como manuscrito e preserva o hash da página que contém o texto. [Mateo et al.](https://www.academia.edu/120174484/Driving_force_behind_electrochemical_performance_of_microbial_fuel_cells_fed_with_different_substrates)
+
+Souza et al. acrescentam um controle F4 pré-intervenção. O compartimento ventilado contém o cátodo de tecido platinizado, ligado a uma escova de carbono no domínio anódico. A Fig. 2 separa a série biótica dos ciclos I–II de acetato a 1 g/L da série abiótica e dos ciclos com benzeno. Os picos publicados em I e II foram 470,5 ± 25,1 mV e 568,0 ± 10,3 mV a 1 kΩ. A figura e o suplemento têm hashes próprios. Os valores ficam para consulta bibliográfica, com dispersão e número de reatores do valor resumido por esclarecer. [Souza et al.](https://doi.org/10.1021/acsomega.5c05703) · [Braço e método](../research/conventional-arms/methods-expansion/arms.psv) · [Observações](../research/conventional-arms/methods-expansion/observations.psv)
+
+A consulta ao acervo público do PMC não encontrou XML para 15 identificadores pendentes. Em outras rotas indexadas houve páginas sem corpo, respostas de acesso restrito e limitação temporária de consultas. O próximo lote mantém a prioridade em F1, F5 e F6 e segue pelos corpos confirmados sem revisão. [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Decisões](../research/conventional-arms/catalog/reviews.psv)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.594 | 1.595 | 20,99% | 2.205 |
+| Texto com identidade confirmada | 1.460 | 1.461 | 19,23% | 2.339 |
+| Triagem ou revisão individual | 412 | 424 | 5,58% | 3.376 |
+| Métodos completos lidos | 153 | 160 | 2,11% | 3.640 |
+| Controle admitido em F1–F6 | 42 | 43 | 0,57% | 3.757 |
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

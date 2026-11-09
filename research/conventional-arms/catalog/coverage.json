@@ -4,73 +4,73 @@
   "counts": {
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
-    "body_recovered": 1594,
-    "complete_methods_read": 153,
-    "documented_integral": 1460,
-    "included_F1_F6": 42,
-    "individual_screening": 412,
+    "body_recovered": 1595,
+    "complete_methods_read": 160,
+    "documented_integral": 1461,
+    "included_F1_F6": 43,
+    "individual_screening": 424,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1228,
-    "with_open_route_without_body": 1231,
+    "with_body_without_screening": 1217,
+    "with_open_route_without_body": 1230,
     "without_persistent_identifier": 293,
     "without_title": 0
   },
   "percent": {
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
-    "body_recovered": 20.98,
-    "complete_methods_read": 2.01,
-    "documented_integral": 19.21,
-    "included_F1_F6": 0.55,
-    "individual_screening": 5.42,
+    "body_recovered": 20.99,
+    "complete_methods_read": 2.11,
+    "documented_integral": 19.23,
+    "included_F1_F6": 0.57,
+    "individual_screening": 5.58,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 16.16,
-    "with_open_route_without_body": 16.2,
+    "with_body_without_screening": 16.02,
+    "with_open_route_without_body": 16.19,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
   },
   "over_half_complete": false,
   "remaining_to_over_half": {
-    "body_recovered": 2206,
-    "documented_integral": 2340,
-    "individual_screening": 3388,
-    "complete_methods_read": 3647,
-    "included_F1_F6": 3758
+    "body_recovered": 2205,
+    "documented_integral": 2339,
+    "individual_screening": 3376,
+    "complete_methods_read": 3640,
+    "included_F1_F6": 3757
   },
   "access_states": {
     "body_candidate": 134,
-    "documented_integral": 1460,
+    "documented_integral": 1461,
     "partial": 29,
-    "unavailable": 1105,
+    "unavailable": 1104,
     "unknown": 4871
   },
   "families": {
     "F1": 6,
     "F2": 9,
     "F3": 10,
-    "F4": 12,
+    "F4": 13,
     "F5": 5,
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "b9a95c4786212e4fa05ca58ea11621a704b8ce940d3b53be40c7048e5b7c4260",
-    "acquisition.psv": "3d9b59b01ef93e583fa9caebc27bd2a95da01a45907ea03b2991d33f407e93fa",
-    "reviews.psv": "6395c43ae8d337207ff9f754c4dbf7c4b9f6e25200e84fdca21940d733c862d4",
+    "publications.psv.gz": "ac454b6657a0079281eb617399254d337668c404dfa02d4c920b23124a0e65c3",
+    "acquisition.psv": "4095e01ddc069082d7765fba036271fffced9e32bd50eb41645969991807f5fa",
+    "reviews.psv": "f24151bd38beb2e6f356cb999447bd3b0440c638b4390423c76d9b919c93d54c",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
-    "identity_verified": 521,
+    "identity_verified": 529,
     "no_route_tested": 122,
     "preview_only": 11,
     "unrecovered": 1129,
     "wrong_document": 1
   },
-  "acquisition_unique_attempted": 1607,
+  "acquisition_unique_attempted": 1613,
   "catalog_review_decisions": {
-    "confirm_existing_control": 3,
-    "exclude": 69,
+    "confirm_existing_control": 4,
+    "exclude": 80,
     "pending": 16
   }
 }

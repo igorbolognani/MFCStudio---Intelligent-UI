@@ -11,10 +11,10 @@
   "prior_exclusion_count": 972,
   "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
   "api_discovery_records": 1292,
-  "prior_unique_articles_in_families": 30,
+  "prior_unique_articles_in_families": 31,
   "new_unique_articles_in_families": 12,
   "new_family_memberships": 16,
-  "total_unique_articles_in_families": 42,
+  "total_unique_articles_in_families": 43,
   "screening_decisions": {
     "auxiliary_protocol": 2,
     "exclude": 53,
@@ -180,11 +180,11 @@
       }
     },
     "F4": {
-      "before": 7,
+      "before": 8,
       "new": 5,
-      "articles": 12,
-      "lineages_before": 4,
-      "lineages": 4,
+      "articles": 13,
+      "lineages_before": 5,
+      "lineages": 5,
       "new_arms": [
         "X001-Pt",
         "X006-brush",
@@ -192,7 +192,7 @@
         "X010-Pt",
         "X011-Pt"
       ],
-      "minimum_bibliographic_target_met": false,
+      "minimum_bibliographic_target_met": true,
       "new_context_observations": 7,
       "coverage_new": {
         "anode_chamber": {

@@ -2079,5 +2079,56 @@
       }
     ],
     "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M12593025",
+    "doi": "10.1021/acsomega.5c05703",
+    "pmcid": "PMC12593025",
+    "title": "High-Performance\nMicrobial Fuel Cell for Aromatic\nHydrocarbon Bioremediation: Leveraging a Unique Mangrove-Derived Electrogenic\nConsortium",
+    "authors": "João Carlos de Souza, Ana Clara Bonizol Zani, João Pedro Silva, Amanda dos Santos, Gisela de Aragão Umbuzeiro, André Valente Bueno, Fernanda Leite Lobo, Valeria Reginatto, Adalgisa Rodrigues de Andrade",
+    "year": 2025,
+    "journal": "ACS Omega",
+    "access": "jats",
+    "version": "PMC Open Access, XML PMC12593025.1",
+    "rights": "CC BY 4.0 no XML do artigo",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12593025/",
+    "acquisition_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/PMC12593025.1.xml",
+    "acquired_at": "2026-11-09",
+    "reading_scope": "full_methods",
+    "reviewed_at": "2026-11-09",
+    "associated": [
+      {
+        "kind": "figure",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/ao5c05703_0002.jpg",
+        "access": "retrieved",
+        "scope": "Fig. 2 conferida visualmente. Os ciclos I–II precedem o benzeno."
+      },
+      {
+        "kind": "supplement",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/ao5c05703_si_001.pdf",
+        "access": "retrieved",
+        "scope": "Fig. S1 conferida no texto. Ensaio de alternância de carga com acetato separado dos ciclos I–II."
+      }
+    ],
+    "files": [
+      {
+        "local_path": "pmc-oa/PMC12593025.1/PMC12593025.1.xml",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/PMC12593025.1.xml",
+        "bytes": 183202,
+        "sha256": "c12a394218968bdacbbed44404e7958e973399c764b20736a7369288b67fcdd5"
+      },
+      {
+        "local_path": "pmc-oa/PMC12593025.1/ao5c05703_0002.jpg",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/ao5c05703_0002.jpg",
+        "bytes": 91922,
+        "sha256": "dddc7d4384be17ee4a34359004e70fca482e30f019ffa9b50666a7c58b5853ed"
+      },
+      {
+        "local_path": "pmc-oa/PMC12593025.1/ao5c05703_si_001.pdf",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/ao5c05703_si_001.pdf",
+        "bytes": 850780,
+        "sha256": "f98adc8188cbe30a15eadbd8689d69dad38ebd2d508a0685c616d0f038a534ab"
+      }
+    ]
   }
 ]

@@ -4,15 +4,15 @@
   "indexed_jats": 923,
   "xml_unavailable": 35,
   "section_hits": 328,
-  "reviewed_sources": 80,
-  "complete_methods": 69,
+  "reviewed_sources": 81,
+  "complete_methods": 70,
   "review_decisions": {
     "exclude": 45,
-    "include": 17,
+    "include": 18,
     "pending": 18
   },
   "observations": {
-    "context_only": 32,
+    "context_only": 34,
     "quality_hold": 5
   },
   "quality_issues": 16,
@@ -169,53 +169,56 @@
     },
     "F4": {
       "baseline_articles": 2,
-      "new_articles": 5,
-      "articles": 7,
-      "lineages": 4,
+      "new_articles": 6,
+      "articles": 8,
+      "lineages": 5,
       "new_arm_ids": [
         "D12-CFC",
         "D16-Pt",
         "M9141142-blank",
         "M6507619-fresh",
-        "M3837309-PtC"
+        "M3837309-PtC",
+        "M12593025-acetate-before-benzene"
       ],
       "auxiliary_protocols": [],
-      "articles_with_treated_values": 6,
+      "articles_with_treated_values": 7,
       "stage_status_new": {
         "anode_chamber": {
-          "recorded": 5
+          "recorded": 6
         },
         "anolyte": {
-          "recorded": 5
+          "recorded": 6
         },
         "anode": {
-          "recorded": 5
+          "recorded": 6
         },
         "anode_catalyst": {
-          "not_reported": 4,
+          "not_reported": 5,
           "recorded": 1
         },
         "biofilm": {
-          "recorded": 5
+          "recorded": 6
         },
         "membrane": {
           "not_applicable": 2,
-          "not_reported": 3
+          "not_reported": 3,
+          "recorded": 1
         },
         "external_circuit": {
-          "recorded": 5
+          "recorded": 6
         },
         "cathode_chamber": {
-          "not_applicable": 5
+          "not_applicable": 5,
+          "recorded": 1
         },
         "catholyte": {
-          "not_applicable": 5
+          "not_applicable": 6
         },
         "cathode": {
-          "recorded": 5
+          "recorded": 6
         },
         "cathode_catalyst": {
-          "recorded": 5
+          "recorded": 6
         }
       }
     },
