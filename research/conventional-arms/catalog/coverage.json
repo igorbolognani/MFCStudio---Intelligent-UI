@@ -5,12 +5,12 @@
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
     "body_recovered": 1595,
-    "complete_methods_read": 160,
+    "complete_methods_read": 164,
     "documented_integral": 1461,
     "included_F1_F6": 43,
-    "individual_screening": 424,
+    "individual_screening": 428,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1217,
+    "with_body_without_screening": 1213,
     "with_open_route_without_body": 1230,
     "without_persistent_identifier": 293,
     "without_title": 0
@@ -19,12 +19,12 @@
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
     "body_recovered": 20.99,
-    "complete_methods_read": 2.11,
+    "complete_methods_read": 2.16,
     "documented_integral": 19.23,
     "included_F1_F6": 0.57,
-    "individual_screening": 5.58,
+    "individual_screening": 5.63,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 16.02,
+    "with_body_without_screening": 15.96,
     "with_open_route_without_body": 16.19,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
@@ -33,8 +33,8 @@
   "remaining_to_over_half": {
     "body_recovered": 2205,
     "documented_integral": 2339,
-    "individual_screening": 3376,
-    "complete_methods_read": 3640,
+    "individual_screening": 3372,
+    "complete_methods_read": 3636,
     "included_F1_F6": 3757
   },
   "access_states": {
@@ -53,24 +53,24 @@
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "ac454b6657a0079281eb617399254d337668c404dfa02d4c920b23124a0e65c3",
-    "acquisition.psv": "4095e01ddc069082d7765fba036271fffced9e32bd50eb41645969991807f5fa",
-    "reviews.psv": "f24151bd38beb2e6f356cb999447bd3b0440c638b4390423c76d9b919c93d54c",
+    "publications.psv.gz": "1df0c26488a8218f60f8f222f5fb8b771995fb60bf92abee255b7823ecd83e03",
+    "acquisition.psv": "c67596a1ef5dc4ca3a59a8dc871608a4223bd2aec9fcd0c7e13075d79ac4e4f7",
+    "reviews.psv": "dc4a8e09d7c972e0e819a1d53d9664e6b235bb97f68a2b5c72779a4487a08461",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
-    "identity_verified": 529,
+    "identity_verified": 535,
     "no_route_tested": 122,
     "preview_only": 11,
     "unrecovered": 1129,
     "wrong_document": 1
   },
-  "acquisition_unique_attempted": 1613,
+  "acquisition_unique_attempted": 1619,
   "catalog_review_decisions": {
-    "confirm_existing_control": 4,
-    "exclude": 80,
-    "pending": 16
+    "confirm_existing_control": 7,
+    "exclude": 83,
+    "pending": 17
   }
 }

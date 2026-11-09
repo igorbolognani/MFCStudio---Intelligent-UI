@@ -1162,6 +1162,22 @@ A consulta ao acervo público do PMC não encontrou XML para 15 identificadores 
 | Métodos completos lidos | 153 | 160 | 2,11% | 3.640 |
 | Controle admitido em F1–F6 | 42 | 43 | 0,57% | 3.757 |
 
+#### Reconferência de referências F1, F4 e F5 e suplemento de Paitier et al.
+
+Foram documentadas quatro leituras integrais novas, três de controles já admitidos, e quatro primeiras triagens individuais. Os artigos de tobramicina, convergência de comunidades e inóculo ruminal mantêm, respectivamente, os braços F1, F4 e F5. A revisão separa corrente sob carga de polarização e identifica a batelada ou o braço de referência. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv)
+
+Em Paitier et al., o texto menciona acetato. A receita do suplemento para 500 mg DQO/L lista triptona, extrato de levedura e ureia. A composição das doses de reposição e o papel de referência dos coletores A, B e C continuam em aberto. O PDF interno `molecules-1622666-supplementary.pdf`, p. S2, tem SHA-256 `da871960ecaaa40e12ce8e06376b747f599358dee12ce5ef69ad8968ebe9b999`. O ZIP tem SHA-256 `d22b4b1c9817134fcab155b681b30827f1286f2de97fea4d1b00402ecedfc9f9`. [Artigo](https://doi.org/10.3390/molecules27072245) · [Suplemento do PMC](https://pmc-oa-opendata.s3.amazonaws.com/PMC9000358.1/molecules-27-02245-s001.zip)
+
+O controle de Liu et al. com tecido, Pt a ar e acetato adicionado a cada dois dias permanece pendente em F1. O reator começa com efluente primário, e a receita da fase medida precisa ser confirmada. A próxima passagem continua a partir dos corpos com identidade verificada e sem triagem, com prioridade a F1, F5 e F6. [Liu et al.](https://doi.org/10.3390/microorganisms11112695) · [Cobertura](../research/conventional-arms/catalog/coverage.json)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.595 | 1.595 | 20,99% | 2.205 |
+| Texto com identidade confirmada | 1.461 | 1.461 | 19,23% | 2.339 |
+| Triagem ou revisão individual | 424 | 428 | 5,63% | 3.372 |
+| Métodos completos lidos | 160 | 164 | 2,16% | 3.636 |
+| Controle admitido em F1–F6 | 43 | 43 | 0,57% | 3.757 |
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
