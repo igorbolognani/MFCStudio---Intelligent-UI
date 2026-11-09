@@ -7,13 +7,18 @@ permissions:
   contents: read
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '24'
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install Python verification dependencies
+        run: python3 -m pip install 'lxml==6.1.1'
       - run: pnpm install --frozen-lockfile
       - run: python3 scripts/source_safety.py --check
       - run: python3 scripts/build-materials.py
@@ -21,6 +26,9 @@ jobs:
       - run: python3 scripts/audit-s29.py
       - run: python3 scripts/audit-conventional-arms.py --check
       - run: python3 scripts/audit-conventional-methods.py --check
+      - run: python3 scripts/audit-external-arms.py --check
+      - name: Verify catalogue integrity and report coverage
+        run: python3 scripts/build-conventional-catalog.py --check
       - run: python3 scripts/build-corpus.py
       - run: git diff --exit-code --stat -- science/corpus-seed.json science/corpus-embedded-assets.json science/corpus-pdf-assets.json science/materials-processed.json research/materials-v0.1/curation-report.json research/corpus-v0.3/curation-report.json research/corpus-v0.4/S02-processed.json
       - run: node scripts/audit-corpus.mjs /tmp/mfc-corpus-audit.json
