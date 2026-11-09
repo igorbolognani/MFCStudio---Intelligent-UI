@@ -1178,6 +1178,23 @@ O controle de Liu et al. com tecido, Pt a ar e acetato adicionado a cada dois di
 | Métodos completos lidos | 160 | 164 | 2,16% | 3.636 |
 | Controle admitido em F1–F6 | 43 | 43 | 0,57% | 3.757 |
 
+
+#### Lote B02 · Texto editorial, restauração do PMC e suplemento
+
+O lote B02 retomou o catálogo em `ce44f7e`. Foram reconfirmadas 80 versões de corpos do PMC em 100 tentativas para restaurar a fila de leitura. De 76 publicações selecionadas para busca de rotas abertas por DOI, foi confirmado um PDF editorial, 74 tentativas ficaram sem corpo confirmado e uma publicação ficou sem rota nova. A fonte adicional é o artigo de Yang et al. A Fig. 1A liga o controle de carvão ativado com PTFE a acetato, escova e potência. A reposição em bateladas do controle ainda requer evidência. O comparador Pt/C usa efluente doméstico em uma configuração distinta. [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Yang et al.](https://doi.org/10.1021/ez5002769)
+
+A decisão publicada sobre Paitier et al. foi preservada. A Tabela S1 identifica triptona, extrato de levedura e ureia no efluente inicial. O manifesto registra os hashes do ZIP editorial e do PDF interno e a página consultada. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv) · [Anexos de revisão](../research/conventional-arms/catalog/review-attachments.psv)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.595 | 1.596 | 21,00% | 2.204 |
+| Texto com identidade confirmada | 1.461 | 1.462 | 19,24% | 2.338 |
+| Triagem ou revisão individual | 428 | 433 | 5,70% | 3.367 |
+| Métodos completos lidos | 164 | 168 | 2,21% | 3.632 |
+| Controle admitido em F1–F6 | 43 | 43 | 0,57% | 3.757 |
+
+O próximo lote começa por métodos de fontes primárias com corpo confirmado e por repositórios institucionais para os registros ainda sem texto. [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 

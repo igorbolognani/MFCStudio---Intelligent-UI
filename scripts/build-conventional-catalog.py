@@ -380,7 +380,8 @@ def summarize(rows, output):
                "access_states": dict(sorted(Counter(row["document"] for row in rows).items())),
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
-    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv", "document-conflicts.psv"):
+    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv",
+                 "document-conflicts.psv", "review-attachments.psv"):
         path = output / name
         if path.exists():
             summary["hashes"][name] = sha256(path.read_bytes()).hexdigest()
