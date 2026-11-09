@@ -1139,6 +1139,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1021/es060382u|openaire|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1021/es0608545|open2|unrecovered|NR|NR|NR|NR|NR|The read operation timed out (1)
 10.1021/es061634u|open|identity_verified|pdf|https://digitalcommons.unl.edu/cgi/viewcontent.cgi|265262|3cbacd19854d8d76a9690df48bc5eec6ac8d0cde6fd89ea2305e0a2c85f62ef1|doi:10.1021/es061634u|NR
+10.1021/es062644y|author-20261109-f156|identity_verified|pdf|https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2007-Logan-etal-EST.pdf|431800|8fd07dd6b4072e861b64b7756d6df8b5b408ef8bd8fb3e21ce6d997f15ebd5f8|doi:10.1021/es062644y|NR
 10.1021/es0627592|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1021/es0702824|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1021/es100526g|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -1202,6 +1203,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1039/c1cp23200b|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 500 (1) / body_incomplete_or_unreadable (2)
 10.1039/c1cp23200b|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3551589.1/PMC3551589.1.xml|152271|4ae11966e7eda0971d71f7823207cf53b8015294335d811b38aad48b44a99346|doi:10.1039/c1cp23200b|NR
 10.1039/c1cp23213d|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
+10.1039/c1ee02451e|direct-pdf-b03|identity_verified|pdf|https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2011-Kim-etal-EnergyEnvSci.pdf|358942|c55ef3879a3f1142f7e3dfbedf262a41fc2b652e42ee12bf4eb3c57d4ac70579|doi:10.1039/c1ee02451e|NR
 10.1039/c1ra00839k|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/c2cp42571h|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1039/c2cp44548d|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -1672,6 +1674,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.33545/26649926.2025.v7.i3b.730|restore|identity_verified|pdf|https://www.biologyjournal.net/archives/2025/vol7issue3/PartB/8-4-63-719.pdf|252072|fddde47b7a718ff81626169a65facc59c5fb5634d4a344fccbc020ca6e358377|doi:10.33545/26649926.2025.v7.i3b.730|NR
 10.3389/fbioe.2021.705414|pmc-cloud-b02|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8383453.1/PMC8383453.1.xml|107882|99afb37a5c2a088b5ffcd88647b706f2deb08d7e5899947522bfbfa44420257d|doi:10.3389/fbioe.2021.705414|NR
 10.3389/fbioe.2021.747434|pmc-cloud-b02|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8632868.1/PMC8632868.1.xml|98937|ba40c578c2526ba02172ce1fd1136959b7258a0a5abdd0f4dfcea7904b035757|doi:10.3389/fbioe.2021.747434|NR
+10.3389/fmech.2021.616179|direct-pdf-b03|identity_verified|pdf|https://www.frontiersin.org/journals/mechanical-engineering/articles/10.3389/fmech.2021.616179/pdf|174521|75f51df2a415f2d45bd4f78ae2254ca472eb9c49b7d7b38c47470548a45a546d|doi:10.3389/fmech.2021.616179|NR
 10.3389/fmech.2021.616179|oa-index-b02|unrecovered|NR|https://www.frontiersin.org/journals/mechanical-engineering/articles/10.3389/fmech.2021.616179/full|NR|NR|NR|Body methods and results not confirmed
 10.3389/fmech.2021.616179|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
 10.3389/fmicb.2016.00699|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4863660.1/PMC4863660.1.xml|136597|cdc326dd584139171d2227de36d68dcef7dd2959268a0dcdb043ba53d6cd223e|doi:10.3389/fmicb.2016.00699|NR
@@ -1703,11 +1706,13 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/electrochem6020012|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/electrochem/electrochem-06-00012/article_deploy/electrochem-06-00012.pdf|4018092|6d157fba9cc80fc3188423b24904a5a2cc805f054bdaa40732a84a0e7739b752|doi:10.3390/electrochem6020012|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/electronics13173381|open4|identity_verified|pdf|https://www.mdpi.com/2079-9292/13/17/3381/pdf|1373659|a4542f275c4d96de85471c05dc964ee241834f16319b61a727af8aeb7727b3a3|doi:10.3390/electronics13173381|body_incomplete_or_unreadable (1)
 10.3390/en11102827|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/11/10/2827/pdf|518984|279eb940bbec8fb9a0072d3590004b88863e26c7de6899be2cc60d0af9fc1e35|doi:10.3390/en11102827|NR
+10.3390/en12061034|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en12061034|1684865|0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14|doi:10.3390/en12061034|NR
 10.3390/en12173390|restore|body_candidate|pdf|https://www.preprints.org/manuscript/201810.0763/v1/download|1367938|6c4e9592e9e37c1b2e8b2f8ebcc4d90d507311244aef175343ae2aa412b67136|NR|NR
 10.3390/en13184712|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/13/18/4712/pdf|1734753|049fffd2ed5ebcf89829cc86342e61230d26e5e73fc9dbf357e987aba71f3bd3|doi:10.3390/en13184712|NR
 10.3390/en13246596|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/13/24/6596/pdf|2080316|23730003ffed5dcede4cb6ec224830c672023b44daad73370ef0188c692aebe4|doi:10.3390/en13246596|NR
 10.3390/en15010272|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/15/1/272/pdf|5275600|edcab1176156b88f27357d43f4c40d6d01f75a7088154cca268c0043e6fb7ea8|doi:10.3390/en15010272|NR
 10.3390/en15020444|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/15/2/444/pdf|1071164|61e75ea1b010f07eeef61bd103e89683980005d407f3adc1286643bdbe86f979|doi:10.3390/en15020444|NR
+10.3390/en15041412|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en15041412|2237184|cb0580f6e2670ad48dff3d801c6610ae8e6a7eae5d603e07328c19fe99fbf697|doi:10.3390/en15041412|NR
 10.3390/en15061989|open4|identity_verified|pdf|https://www.mdpi.com/1996-1073/15/6/1989/pdf|2057893|8ba90952259cf4eafe0e158a7a6b6aa932e32e4efb7adf8153425c670fdfd39a|doi:10.3390/en15061989|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/en15062283|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/15/6/2283/pdf|1732348|559f3966b473b52e624d9ae9019b0df72878b2681ad5edf1e5d261a710be82c2|doi:10.3390/en15062283|NR
 10.3390/en15114152|open2|identity_verified|pdf|https://www.mdpi.com/1996-1073/15/11/4152/pdf|2870095|89c2ed68e975edf190beb7c19fdbb4712e523b47e3763abf841eb47668bd2a75|doi:10.3390/en15114152|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
@@ -1717,9 +1722,11 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/en16020576|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/16/2/576/pdf|1236585|067c975d229bc3dd4a1391585d8f00f0730a184ea5b168f5ab666964491ede62|doi:10.3390/en16020576|NR
 10.3390/en16020709|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/16/2/709/pdf|3474528|7bcee4ee9ea7217f8882c0f949ad40f31c64243fede2eb490e43e56d20bcc7f0|doi:10.3390/en16020709|NR
 10.3390/en16062647|open4|identity_verified|pdf|https://www.mdpi.com/1996-1073/16/6/2647/pdf|540556|dbbad65074d3ab5da44fb57520e32c1c700a8919007f7d199b3b455a6121627f|doi:10.3390/en16062647|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.3390/en16104238|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en16104238|3578963|69ecbe40e585d827c634b43c495ab303c71e49bbdee62cf0f76e9c6925e75ad9|doi:10.3390/en16104238|NR
 10.3390/en16124740|open4|identity_verified|html|https://doi.org/10.3390/en16124740|771627|6a9e4bd779a7573957391e0938fccb087e8395b842a2e3b8a2461063bddf721c|doi:10.3390/en16124740|HTTP Error 403 (1)
 10.3390/en16186501|open4|identity_verified|pdf|https://www.mdpi.com/1996-1073/16/18/6501/pdf|7977997|63e10e34da7bc5ee666ab1b185ded8519fb2634f63e115b7e4223dcfb8ef5ec7|doi:10.3390/en16186501|HTTP Error 403 (3) / body_incomplete_or_unreadable (1)
 10.3390/en16186581|restore|identity_verified|pdf|https://www.mdpi.com/1996-1073/16/18/6581/pdf|902882|e8adc50a1f9ab9cd4de3036da9089422150fa1c8411778be19f861f494e3f980|doi:10.3390/en16186581|NR
+10.3390/en17040943|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en17040943|2993491|bfc5236735f682437567ed2698eaab719d3f333a72e2e2e1d7d08be9d88a9224|doi:10.3390/en17040943|NR
 10.3390/en17153607|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/en17153607|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/energies/energies-17-03607/article_deploy/energies-17-03607.pdf|3273212|601d3f4b07cc9fe232112a0b70d46277e49bc05ada33e5cea44e7e1ed760ec96|doi:10.3390/en17153607|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/en18040970|open4|identity_verified|pdf|https://www.mdpi.com/1996-1073/18/4/970/pdf|2380251|c40a0a0bcfe2b86464e8ce45e418242e5385a315729244144983b8068598c837|doi:10.3390/en18040970|body_incomplete_or_unreadable (2)
@@ -1727,7 +1734,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/en18061350|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/energies/energies-18-01350/article_deploy/energies-18-01350.pdf|1657138|e8916a70dd7c07cf8fd250fa33e60d9cb9971531c565d1cfdbb5ef4fc95470f6|doi:10.3390/en18061350|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/en18143725|open4|identity_verified|html|https://doi.org/10.3390/en18143725|1054763|98802d2c734f792c30313a290318cb8e39f1898de92b0d02fd98d98854c23cfd|doi:10.3390/en18143725|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/en19051196|open2|identity_verified|pdf|https://www.mdpi.com/1996-1073/19/5/1196/pdf|1345713|09e9ed5c9ad1de2ac4ab7979b72d77db05cc81abab2a3982334ae3357663da02|doi:10.3390/en19051196|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.3390/en3040592|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en3040592|250526|c5e9433080cebe35c449b6b3983d42f2bfeb56b97b6fe007045e825b363ca460|doi:10.3390/en3040592|NR
 10.3390/en3050899|open4|identity_verified|pdf|https://www.mdpi.com/1996-1073/3/5/899/pdf|519597|9d9f59edafce5bdcacf443ada971a25554b8de798b7f36c82791781fdcf673fc|doi:10.3390/en3050899|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
+10.3390/en9050388|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en9050388|3038708|21a7addae01045ca19b90058c495074f9a267fc3eec2e49e7644074d0d2ae24e|doi:10.3390/en9050388|NR
 10.3390/eng5040134|open4|identity_verified|pdf|https://www.mdpi.com/2673-4117/5/4/134/pdf|2680125|6e8cbcc52d2b12f5a11e72c3d9683e2b7a34e6580ef645797e625716a0202e62|doi:10.3390/eng5040134|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/fermentation11040176|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/fermentation11040176|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/fermentation/fermentation-11-00176/article_deploy/fermentation-11-00176.pdf|2391020|10261c96d84c0de88fb4f0f4de06a195516752dbfeac3972c503d69d3569568e|doi:10.3390/fermentation11040176|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1759,6 +1768,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/pr12092028|open4|identity_verified|pdf|https://www.mdpi.com/2227-9717/12/9/2028/pdf|2303112|0762474f16d29e65cdbf908de21130eae5dbf25a7e61217471b5f48c0f60bdd5|doi:10.3390/pr12092028|body_incomplete_or_unreadable (1)
 10.3390/pr14030416|restore|identity_verified|pdf|https://www.mdpi.com/2227-9717/14/3/416/pdf|1216456|25108d9575969806a921735604612eb65d5ac6352598e9378b987345fbcfa50a|doi:10.3390/pr14030416|NR
 10.3390/pr8050583|open4|identity_verified|pdf|https://www.mdpi.com/2227-9717/8/5/583/pdf|523511|bbfa634f26834064789af01d2b290a2bde4ba02f9e0374eb989a625093924a00|doi:10.3390/pr8050583|NR
+10.3390/pr8080939|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/pr8080939|4394331|5dffef8baca7399ed3f04fc371524af16e2a4535df97823023009df94c1ee429|doi:10.3390/pr8080939|NR
 10.3390/pr9040673|restore|identity_verified|pdf|https://www.mdpi.com/2227-9717/9/4/673/pdf|3433049|9d8ccd29b198a0962d1e38bd62bbfccb6610acb40e1f7b709395476598bdb103|doi:10.3390/pr9040673|NR
 10.3390/pr9060985|open4|identity_verified|pdf|https://www.mdpi.com/2227-9717/9/6/985/pdf|23037291|3391ac04bb82aaa217c6c2c1a5459197d641be976d0b17220bd43a106fc8d755|doi:10.3390/pr9060985|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/su14020955|restore|identity_verified|pdf|https://www.mdpi.com/2071-1050/14/2/955/pdf|1896024|10fece6f6a3e6060e5e41c421bd501587f4e74606ed751de366274a96146cfd4|doi:10.3390/su14020955|NR
@@ -1772,6 +1782,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/su15097316|open2|identity_verified|pdf|https://repositorio.uwiener.edu.pe/bitstream/20.500.13053/9304/1/sustainability-15-07316.pdf|1652616|48d25f141dfa65ab12c9654242967fc563a016ef96e67cc8a9a5955b46d631aa|doi:10.3390/su15097316|NR
 10.3390/su151310339|open2|identity_verified|pdf|https://repositorio.uwiener.edu.pe/bitstream/20.500.13053/9523/1/sustainability-15-10339.pdf|1846461|88495b8c96c9208ea8935568d074ba8a1edceeab315fd36d29abc0622a0261ff|doi:10.3390/su151310339|NR
 10.3390/su151310640|restore|identity_verified|pdf|https://www.mdpi.com/2071-1050/15/13/10640/pdf|2329484|11462b5e3d0d0faa753b665001624ad08f64deb7254c87c8e74d6d37caa3cb24|doi:10.3390/su151310640|NR
+10.3390/su152014817|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/su152014817|4150414|1aa613d6c29eb9ecead161c0d196d897f88d8d3976a5f37bf73cf1f82510e9d6|doi:10.3390/su152014817|NR
 10.3390/su16072705|open4|identity_verified|pdf|https://www.mdpi.com/2071-1050/16/7/2705/pdf|4225613|44a93bcefab5f6546d513904e0475f322de53d53de9f57a73bb00edcb10e61f7|doi:10.3390/su16072705|body_incomplete_or_unreadable (1)
 10.3390/su16156468|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.3390/su16156468|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/sustainability/sustainability-16-06468/article_deploy/sustainability-16-06468.pdf|3689324|03516f3f03ecf1fe50fe4e2b863ac043dd8bd7e98edad63d8d40c224ac1e0737|doi:10.3390/su16156468|body_incomplete_or_unreadable (1)
@@ -2011,12 +2022,3 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 5fe18d8b3b9aab7bb74a7ebb0f0769608034e99c507c23745979b6e5e9fc573a|restore|identity_verified|pdf|https://backoffice.biblio.ugent.be/download/4197486/4336874|4029564|6f89aad3c4af006315c88e71cc47e34af65aa545adbbe154604b5b28ee9870b1|article_front_title|NR
 73382306f63857be2a9dbdec34c5640225d74ae340e0b38f8ec854b31c793e1b|restore|identity_verified|pdf|https://pure.manchester.ac.uk/ws/files/84023294/FULL_TEXT.PDF|12653908|e48d079422d366c295a7451afb9e966ead6bd2d728bfae4bd2baa3eba60c97ea|article_front_title|NR
 b1659b70fa89cd77b588da865927a9f6c67eafec209b8edf316fe5ad871fc165|restore|identity_verified|pdf|https://utoronto.scholaris.ca/server/api/core/bitstreams/fa5a87ee-ddcc-4f39-9cf9-99a866ef70cb/content|5549597|71898038bb6a5eaa97fe3c457e63dfa1c073ae1afb153477261e12d502c124f7|article_front_title|NR
-10.3390/pr8080939|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/pr8080939|4394331|5dffef8baca7399ed3f04fc371524af16e2a4535df97823023009df94c1ee429|doi:10.3390/pr8080939|NR
-10.3390/en17040943|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en17040943|2993491|bfc5236735f682437567ed2698eaab719d3f333a72e2e2e1d7d08be9d88a9224|doi:10.3390/en17040943|NR
-10.3390/en12061034|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en12061034|1684865|0a860bd38dcdf63d757aa715d16ba86ffffe950ffe25fa027b2c297fd5909f14|doi:10.3390/en12061034|NR
-10.3390/su152014817|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/su152014817|4150414|1aa613d6c29eb9ecead161c0d196d897f88d8d3976a5f37bf73cf1f82510e9d6|doi:10.3390/su152014817|NR
-10.3390/en16104238|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en16104238|3578963|69ecbe40e585d827c634b43c495ab303c71e49bbdee62cf0f76e9c6925e75ad9|doi:10.3390/en16104238|NR
-10.3390/en15041412|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en15041412|2237184|cb0580f6e2670ad48dff3d801c6610ae8e6a7eae5d603e07328c19fe99fbf697|doi:10.3390/en15041412|NR
-10.3390/en3040592|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en3040592|250526|c5e9433080cebe35c449b6b3983d42f2bfeb56b97b6fe007045e825b363ca460|doi:10.3390/en3040592|NR
-10.3390/en9050388|authorized-archive-20261109|identity_verified|pdf|https://doi.org/10.3390/en9050388|3038708|21a7addae01045ca19b90058c495074f9a267fc3eec2e49e7644074d0d2ae24e|doi:10.3390/en9050388|NR
-10.1021/es062644y|author-20261109-f156|identity_verified|pdf|https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/9/72836/files/2019/08/2007-Logan-etal-EST.pdf|431800|8fd07dd6b4072e861b64b7756d6df8b5b408ef8bd8fb3e21ce6d997f15ebd5f8|doi:10.1021/es062644y|NR

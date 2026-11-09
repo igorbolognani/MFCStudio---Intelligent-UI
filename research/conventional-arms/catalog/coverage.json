@@ -4,74 +4,74 @@
   "counts": {
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
-    "body_recovered": 1596,
-    "complete_methods_read": 170,
-    "documented_integral": 1462,
-    "included_F1_F6": 43,
-    "individual_screening": 441,
+    "body_recovered": 1598,
+    "complete_methods_read": 173,
+    "documented_integral": 1464,
+    "included_F1_F6": 44,
+    "individual_screening": 445,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1200,
-    "with_open_route_without_body": 1229,
+    "with_body_without_screening": 1198,
+    "with_open_route_without_body": 1228,
     "without_persistent_identifier": 293,
     "without_title": 0
   },
   "percent": {
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
-    "body_recovered": 21.0,
-    "complete_methods_read": 2.24,
-    "documented_integral": 19.24,
-    "included_F1_F6": 0.57,
-    "individual_screening": 5.8,
+    "body_recovered": 21.03,
+    "complete_methods_read": 2.28,
+    "documented_integral": 19.27,
+    "included_F1_F6": 0.58,
+    "individual_screening": 5.86,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 15.79,
-    "with_open_route_without_body": 16.17,
+    "with_body_without_screening": 15.77,
+    "with_open_route_without_body": 16.16,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
   },
   "over_half_complete": false,
   "remaining_to_over_half": {
-    "body_recovered": 2204,
-    "documented_integral": 2338,
-    "individual_screening": 3359,
-    "complete_methods_read": 3630,
-    "included_F1_F6": 3757
+    "body_recovered": 2202,
+    "documented_integral": 2336,
+    "individual_screening": 3355,
+    "complete_methods_read": 3627,
+    "included_F1_F6": 3756
   },
   "access_states": {
     "body_candidate": 134,
-    "documented_integral": 1462,
+    "documented_integral": 1464,
     "partial": 29,
-    "unavailable": 1103,
-    "unknown": 4871
+    "unavailable": 1102,
+    "unknown": 4870
   },
   "families": {
     "F1": 6,
     "F2": 9,
     "F3": 10,
-    "F4": 13,
+    "F4": 14,
     "F5": 5,
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "794cf13de05e122941fb9375fe890a6fbb32c92ab0fd88c08ae4a343de3b1d64",
-    "acquisition.psv": "f41aba7fd4fd885f7153e4a20b817798914dd2716f0662cf08b7cb5627ca6650",
-    "reviews.psv": "9556513c34bbe87ee19f3bc906d63d378d181104ff2065d8bbdf72e1fad4d291",
+    "publications.psv.gz": "d9d8751c9c9e6113f80b2566d518c9e124d02562f5b88cb617b1aae83ffe200d",
+    "acquisition.psv": "1b6c20496e1e7831e710ab5afbcb9f3e169543743af35103c49a8913af1503a2",
+    "reviews.psv": "7428f3a1392ecf8c71077d9f7e62f0e467fbd15d990841b086f96782e17925a6",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
     "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
-    "identity_verified": 625,
+    "identity_verified": 627,
     "no_route_tested": 123,
     "preview_only": 11,
     "unrecovered": 1223,
     "wrong_document": 1
   },
-  "acquisition_unique_attempted": 1726,
+  "acquisition_unique_attempted": 1727,
   "catalog_review_decisions": {
-    "confirm_existing_control": 7,
-    "exclude": 95,
+    "confirm_existing_control": 8,
+    "exclude": 98,
     "pending": 20
   }
 }

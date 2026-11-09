@@ -1209,6 +1209,21 @@ O braço FeC de Sun et al. permanece pendente em F6. A montagem tem feltro, ferr
 | Métodos completos lidos | 168 | 170 | 2,24% | 3.630 |
 | Controle admitido em F1–F6 | 43 | 43 | 0,57% | 3.757 |
 
+
+#### Lote B03 · Controle F4 de uma MFC sem capacitores
+
+O lote B03 retomou o catálogo em `88a31ad` e recuperou dois PDFs editoriais com DOI e corpo conferidos. O PDF de Kim et al. está na Penn State. O comparador individual sem capacitores usa escova, tecido com Pt a ar e alimentação de acetato em bateladas. O texto da p. 4664 liga 0,25 V no ponto de potência máxima à curva sem capacitor da Fig. 2. A observação conserva a fase de polarização e a unidade publicadas. O valor serve para consulta bibliográfica e a resistência desse ponto permanece em aberto. O PDF de Ren foi classificado como artigo de opinião e triado fora dos controles. [Kim et al.](https://doi.org/10.1039/c1ee02451e) · [Braços externos](../research/conventional-arms/external-expansion/arms.psv) · [Observações](../research/conventional-arms/external-expansion/observations.psv)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.596 | 1.598 | 21,03% | 2.202 |
+| Texto com identidade confirmada | 1.462 | 1.464 | 19,27% | 2.336 |
+| Triagem ou revisão individual | 441 | 445 | 5,86% | 3.355 |
+| Métodos completos lidos | 170 | 173 | 2,28% | 3.627 |
+| Controle admitido em F1–F6 | 43 | 44 | 0,58% | 3.756 |
+
+O artigo de Yang et al. com cátodo tubular de bambu é candidato à próxima revisão F4. A cópia editorial indexada localiza a montagem Pt/C nas §§2.1–2.4 e a polarização na Fig. 4a. A tentativa de baixar o PDF pela editora retornou HTTP 403. A aquisição dos bytes e a ficha do braço ainda estão pendentes. [Yang et al.](https://doi.org/10.1039/c7ra04571a) · [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 

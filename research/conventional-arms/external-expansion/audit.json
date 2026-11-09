@@ -12,9 +12,9 @@
   "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
   "api_discovery_records": 1292,
   "prior_unique_articles_in_families": 31,
-  "new_unique_articles_in_families": 12,
-  "new_family_memberships": 16,
-  "total_unique_articles_in_families": 43,
+  "new_unique_articles_in_families": 13,
+  "new_family_memberships": 17,
+  "total_unique_articles_in_families": 44,
   "screening_decisions": {
     "auxiliary_protocol": 2,
     "exclude": 53,
@@ -22,9 +22,9 @@
     "pending": 24,
     "prior_access": 5
   },
-  "downloaded_documents_in_manifests": 16,
+  "downloaded_documents_in_manifests": 17,
   "observations": {
-    "context_only": 20,
+    "context_only": 21,
     "quality_hold": 2
   },
   "families": {
@@ -181,8 +181,8 @@
     },
     "F4": {
       "before": 8,
-      "new": 5,
-      "articles": 13,
+      "new": 6,
+      "articles": 14,
       "lineages_before": 5,
       "lineages": 5,
       "new_arms": [
@@ -190,44 +190,45 @@
         "X006-brush",
         "X009-Pt",
         "X010-Pt",
-        "X011-Pt"
+        "X011-Pt",
+        "X013-no-cap"
       ],
       "minimum_bibliographic_target_met": true,
-      "new_context_observations": 7,
+      "new_context_observations": 8,
       "coverage_new": {
         "anode_chamber": {
-          "recorded": 5
+          "recorded": 6
         },
         "anolyte": {
-          "recorded": 5
+          "recorded": 6
         },
         "anode": {
-          "recorded": 5
+          "recorded": 6
         },
         "anode_catalyst": {
-          "not_reported": 5
+          "not_reported": 6
         },
         "biofilm": {
-          "recorded": 5
+          "recorded": 6
         },
         "membrane": {
           "not_applicable": 2,
-          "not_reported": 3
+          "not_reported": 4
         },
         "external_circuit": {
-          "recorded": 5
+          "recorded": 6
         },
         "cathode_chamber": {
-          "not_applicable": 5
+          "not_applicable": 6
         },
         "catholyte": {
-          "not_applicable": 5
+          "not_applicable": 6
         },
         "cathode": {
-          "recorded": 5
+          "recorded": 6
         },
         "cathode_catalyst": {
-          "recorded": 5
+          "recorded": 6
         }
       }
     },

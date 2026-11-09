@@ -295,5 +295,30 @@
     "comparison": {
       "X012-paper": {}
     }
+  },
+  {
+    "source": "X013",
+    "doi": "10.1039/c1ee02451e",
+    "title": "Capturing power at higher voltages from arrays of microbial fuel cells without voltage reversal",
+    "authors": "Younggy Kim, Marta C. Hatzell, Adam J. Hutchinson e Bruce E. Logan",
+    "year": 2011,
+    "route": "psu_publications",
+    "reading_scope": "full_methods",
+    "methods_location": "pp. 4663–4664, Materials and methods, MFC preparation and operation até Analyses",
+    "arm_outcome_location": "p. 4664, Results and discussion, Voltage increases, Fig. 2A–B, curva sem capacitor",
+    "document": {
+      "role": "main",
+      "format": "pdf",
+      "version": "published_pdf_psu_copy",
+      "url": "https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/72804/files/2019/08/2011-Kim-etal-EnergyEnvSci.pdf",
+      "acquired_on": "2026-11-09",
+      "rights": "facts_and_citation_only",
+      "local_path": "direct/kim2011.pdf",
+      "sha256": "c55ef3879a3f1142f7e3dfbedf262a41fc2b652e42ee12bf4eb3c57d4ac70579",
+      "bytes": 358942
+    },
+    "comparison": {
+      "X013-no-cap": {}
+    }
   }
 ]
