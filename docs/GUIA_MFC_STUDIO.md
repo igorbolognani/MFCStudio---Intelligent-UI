@@ -1113,6 +1113,22 @@ python3 scripts/build-conventional-catalog.py --check --require-over-half
 
 A checagem verifica a integridade dos arquivos e retorna 2 enquanto alguma etapa estiver em 50% ou menos.
 
+#### Revisão de textos primários com sinais de F1, F5 e F6
+
+O lote de 9 de novembro acrescentou 15 leituras integrais e reconferiu a distinção entre as Figs. 3 e 4 em Borole et al. A cópia editorial de Heidrich et al. recuperada no repositório da Universidade de Glasgow confirma o braço de acetato em bateladas, com feltro e carga de 470 Ω. O cátodo é malha de titânio platinizado em tampão aerado. [Heidrich et al.](https://eprints.gla.ac.uk/148747/1/148747.pdf) · [Borole et al.](https://doi.org/10.1186/1754-6834-2-7)
+
+No artigo de Zhou et al., a Fig. 5 vincula o braço R2B1 com acetato a uma resposta sob 1 kΩ. O método informa feltro de 3 × 3 cm como material de eletrodo e ferricianeto como aceitador. A área catódica declarada no cálculo é 100 cm², também a área do tecido no reator de isolamento. A montagem catódica do braço de acetato precisa de confirmação antes da admissão em F6. [Zhou et al.](https://doi.org/10.1371/journal.pone.0113379)
+
+Os registros de aquisição preservam a versão de cada XML do PMC pelo caminho do objeto, além do tamanho e do SHA-256. A fila continua nos corpos confirmados com sinais de F1, F5 e F6. [Aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Decisões](../research/conventional-arms/catalog/reviews.psv) · [Cobertura](../research/conventional-arms/catalog/coverage.json)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.593 | 1.594 | 20,98% | 2.206 |
+| Texto com identidade confirmada | 1.447 | 1.448 | 19,06% | 2.352 |
+| Triagem ou revisão individual | 392 | 407 | 5,36% | 3.393 |
+| Métodos completos lidos | 133 | 148 | 1,95% | 3.652 |
+| Controle admitido em F1–F6 | 42 | 42 | 0,55% | 3.758 |
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
