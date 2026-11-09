@@ -1129,6 +1129,23 @@ Os registros de aquisição preservam a versão de cada XML do PMC pelo caminho 
 | Métodos completos lidos | 133 | 148 | 1,95% | 3.652 |
 | Controle admitido em F1–F6 | 42 | 42 | 0,55% | 3.758 |
 
+
+#### Lote B01 · Acervo com hash conferido e versões públicas do PMC
+
+O lote B01 retomou o catálogo após a revisão `64262c3`. O acervo forneceu 593 originais JATS com SHA-256 igual ao manifesto de aquisição. Entre eles, 88 artigos primários ainda sem triagem em `ffd7f0e` tinham termos de uma ou mais famílias nos métodos ou no corpo. A fila usa esses termos para ordenar a leitura. As quatro revisões que também entraram em `64262c3` ficaram com as decisões já publicadas.
+
+A rota pública do PMC verificou 30 corpos em 85 tentativas. Desses, 18 já tinham identidade confirmada e 12 estavam registrados como candidatos a corpo. Em 47 casos o índice público não retornou versão, e oito requisições retornaram HTTP 503. A rota registra a versão no URL, o tamanho e o SHA-256. O catálogo mantém as versões e os hashes anteriores. O total de resumos ficou em 5.830. [Aquisição](../research/conventional-arms/catalog/acquisition.psv)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.594 | 1.594 | 20,98% | 2.206 |
+| Texto com identidade confirmada | 1.448 | 1.460 | 19,21% | 2.340 |
+| Triagem ou revisão individual | 407 | 412 | 5,42% | 3.388 |
+| Métodos completos lidos | 148 | 153 | 2,01% | 3.647 |
+| Controle admitido em F1–F6 | 42 | 42 | 0,55% | 3.758 |
+
+Cinco publicações receberam a primeira triagem individual, todas com leitura integral dos métodos. A reconferência de Hari et al. registrou a fase MFC a ar separada da MEC. Em Paitier et al. e Chen et al., os métodos e resultados documentam uma montagem F1 e resposta sob carga em braços identificados. A atribuição do papel de controle ou referência convencional segue em revisão. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv) · [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 

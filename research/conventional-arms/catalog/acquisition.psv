@@ -44,7 +44,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1002/elan.202400100|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/elsa.202100071|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/elsc.201600063|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1002/elsc.201600063|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6999532.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1002/elsc.201600173|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1002/elsc.201600173|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6999340.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1002/ente.201600674|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1002/ente.202301346|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/ente.70633|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
@@ -75,7 +77,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1002/wer.10989|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/wer.70118|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/wer.70556|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
+10.1002/wer.70556|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13527657.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1002/wer.70587|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
+10.1002/wer.70587|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13583551.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1002/wer.70619|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/wer.70627|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1007/s002320001099|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
@@ -88,10 +92,12 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s00253-010-2903-x|open|unrecovered|NR|NR|NR|NR|NR|The read operation timed out (1)
 10.1007/s00253-011-3181-y|open|identity_verified|pdf|https://openresearch.surrey.ac.uk/view/delivery/44SUR_INST/12138753130002346/13140649380002346|491766|e9f81ee7279907bb0e616e394558bc27ec29bb26948c6853523fdae98bfa9175|doi:10.1007/s00253-011-3181-y|NR
 10.1007/s00253-011-3188-4|open4|identity_verified|pdf|https://nrc-publications.canada.ca/eng/view/accepted/|698086|2a60c5332790f1b28421ae7eb30cf657d64df8d780680b8062944fb505efdcb0|doi:10.1007/s00253-011-3188-4|NR
+10.1007/s00253-011-3583-x|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/PMC3210952.1/PMC3210952.1.xml|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1007/s00253-013-5328-5|open|identity_verified|pdf|https://biblio.ugent.be/publication/4195190/file/4350318.pdf|970409|1105bb09f28f02b9d318ed67d37d5959286592f75077fd263b1c96af1d1d9fb8|article_front_title|NR
 10.1007/s00253-015-6857-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1007/s00253-016-7707-1|open|identity_verified|pdf|https://publicatio.bibl.u-szeged.hu/9980/1/Schneider_etal_AMAB_2016.pdf|509304|dfc0e8e041df8d7ff25b3c7841743e8724448a643a6bc490760d791adb0bf77f|doi:10.1007/s00253-016-7707-1|NR
 10.1007/s00253-018-9158-3|open|identity_verified|pdf|https://www.osti.gov/servlets/purl/1834068|1049135|1c21995edd67c53dea9b6a142c7771adcf846c248751205439cb8a024f6a809e|article_front_title|body_incomplete_or_unreadable (1)
+10.1007/s00253-023-12829-1|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13497064.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s00284-014-0539-2|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 410 (1)
 10.1007/s00374-020-01463-y|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1007/s00449-010-0491-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
@@ -118,8 +124,10 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s10529-008-9751-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s10529-016-2128-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1007/s10529-018-2624-2|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s10529-018-2624-2.pdf|368982|762d61c9e44b27ecb912e9e29460d04697cc2aac054680b64d3e0fcc9e0a04be|doi:10.1007/s10529-018-2624-2|NR
+10.1007/s10529-019-02668-4|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6482134.1/PMC6482134.1.xml|57104|a32d8be0a061278fe3e8ba247ae576cb2c4f919423a1c0d12dc79e4786a642eb|doi:10.1007/s10529-019-02668-4|NR
 10.1007/s10529-020-02858-5|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1007/s10529-020-02858-5|openaire|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (5)
+10.1007/s10529-020-03050-5|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC7822768.1/PMC7822768.1.xml|61933|e810b2437bd506336547015ce8cb798a79959c22fc470cf15e9b3ef56f4a410a|doi:10.1007/s10529-020-03050-5|NR
 10.1007/s10529-022-03304-4|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s10529-022-03304-4.pdf|437979|e1b50000a9b7d8caacaa8b0ba74383b594d983ebea5aa2692d716e3b6e422996|doi:10.1007/s10529-022-03304-4|NR
 10.1007/s10532-013-9621-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1007/s10653-019-00266-x|open|identity_verified|pdf|https://escholarship.org/content/qt7vt9w3pk/qt7vt9w3pk.pdf|848895|5510d6908e7b0be04ce02c2a0c254a2c6006cb342ada96e282d65e7791acec46|doi:10.1007/s10653-019-00266-x|NR
@@ -143,6 +151,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s11356-023-29169-2|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-2808186/latest.pdf|1369866|33dc21ba51b0b010608afee95246b171535271e3243bcfa34ec5687be9f0f9eb|NR|NR
 10.1007/s11356-023-29232-y|open|body_candidate|pdf|https://www.researchsquare.com/article/rs-2638324/latest.pdf|1297474|9b79d12173d181611e198a6b8bf636a2fa21ac81895f60a61da3daffc15f8fc7|NR|NR
 10.1007/s11356-023-31140-0|open5|identity_verified|pdf|https://www.researchsquare.com/article/rs-3179130/latest.pdf|5396118|67d2e5fdaea7dd75130584339fe98adfe6001b8c74a816e3980b7da7cf9966f6|doi:10.21203/rs.3.rs-3179130/v1|NR
+10.1007/s11356-024-33338-2|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12712122.1/PMC12712122.1.xml|113429|14fded94759f6eb70586b31662bc344224f08b98e54952996198be7c25316894|doi:10.1007/s11356-024-33338-2|NR
 10.1007/s11356-024-35607-6|open|identity_verified|pdf|https://www.researchsquare.com/article/rs-4836798/latest.pdf|1273061|ab4dd4928f00bcb4499732b40c480c3fea1ca68fe346fb89d9214c38e3005aa7|doi:10.21203/rs.3.rs-4836798/v1|NR
 10.1007/s11356-025-36669-w|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s11356-025-37243-0|open|identity_verified|pdf|https://www.researchsquare.com/article/rs-7472748/latest.pdf|1716901|d8588f79d3213f89b32c5ecbd3665642eb9e8793d11b4c3416588ffd2db0ee64|doi:10.21203/rs.3.rs-7472748/v1|NR
@@ -152,49 +161,80 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s12010-020-03474-9|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s12010-024-04864-z|restore|identity_verified|html|https://doi.org/10.21203/rs.3.rs-3472564/v1|160741|f1cc0a7a66b2479aaee8a38ac93ab241f282c1e2859880d155867a21606e5a6e|doi:10.21203/rs.3.rs-3472564/v1|NR
 10.1007/s12088-011-0180-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (5)
+10.1007/s12088-011-0180-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3209890.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-018-0765-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-018-0765-6|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6328403.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-018-0769-2|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s12088-018-0769-2|openaire|identity_verified|pdf|https://europepmc.org/articles/pmc6328417|630578|cacdd9404cc5cb06f8f2b3dd1ca1a88e4820c1f9350d0eed81277d5ba310240e|doi:10.1007/s12088-018-0769-2|body_incomplete_or_unreadable (3)
 10.1007/s12088-019-00829-7|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-019-00829-7|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6842379.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-021-00959-x|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-021-00959-x|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8542014.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-022-01022-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-022-01022-z|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9375807.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-023-01058-9|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s12088-023-01058-9|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10172409.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-024-01291-w|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s12088-024-01291-w|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11607233.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-024-01414-3|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-024-01414-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12246325.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-025-01458-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-025-01458-z|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12579078.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-025-01483-y|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s12274-019-2438-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s12649-026-03757-y|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s12649-026-03757-y.pdf|1631473|fb31c0770c2731978155ad88435b8e3a2c4286d813edf583ced229d3f2549539|doi:10.1007/s12649-026-03757-y|NR
 10.1007/s12678-016-0334-x|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1007/s13201-022-01632-4|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s13201-022-01632-4.pdf|2002721|f14c9b143106e72a86a72bdaf9a60dde389a94ed5c668a1f5665793ac314ec76|doi:10.1007/s13201-022-01632-4|NR
 10.1007/s13205-018-1237-8|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s13205-018-1237-8.pdf|600569|cf915a7ec8a3a8dec1adacd2518dac71372da494c2e29ce4ffa985727eeef9ad|doi:10.1007/s13205-018-1237-8|NR
+10.1007/s13205-018-1237-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC5891446.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-018-1321-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
+10.1007/s13205-018-1321-0|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6087702.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-018-1462-1|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s13205-018-1462-1|openaire|identity_verified|pdf|https://europepmc.org/articles/pmc6170320|2320072|363dc5ca2e09f0033cfe42b7f2daf9f8acdf22752c5a24adfec455bff2ec24ca|doi:10.1007/s13205-018-1462-1|body_incomplete_or_unreadable (3)
 10.1007/s13205-019-1950-y|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
+10.1007/s13205-019-1950-y|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6879689.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-020-02606-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-020-02606-6|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7797020.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-020-2050-8|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s13205-020-2050-8.pdf|339967|89e8a3c090ed30f53ec2bb95ef2fdaee6aedcee5c353237dde00c0408ccd1335|doi:10.1007/s13205-020-2050-8|NR
+10.1007/s13205-020-2050-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6987287.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-021-02802-y|open4|preview_only|html|https://doi.org/10.1007/s13205-021-02802-y|692144|191ed733073808f1071f86f283dfb7e1fdf221018d46bfc89d4bd5d92843e7c0|doi:10.1007/s13205-021-02802-y|NR
+10.1007/s13205-021-02802-y|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8088421.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-021-02886-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-021-02886-6|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8211813.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-021-03065-3|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-021-03065-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8674389.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-022-03214-2|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-022-03214-2|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9206964.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
+10.1007/s13205-022-03260-w|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9391563.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-022-03335-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-022-03335-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9525492.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-023-03687-9|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s13205-023-03687-9|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10335983.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-023-03772-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s13205-023-03772-z|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10550894.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
+10.1007/s13205-025-04340-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12084208.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04381-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-025-04381-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12165935.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04388-1|open4|preview_only|html|https://doi.org/10.1007/s13205-025-04388-1|445902|3d96bd679efd92b2037df721721ecb89dbe4b6e307db3a97d6c09be3b868e65b|doi:10.1007/s13205-025-04388-1|NR
+10.1007/s13205-025-04388-1|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12179030.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04529-6|open4|identity_verified|pdf|https://europepmc.org/articles/PMC12535574|1642585|0cfe3c49c080a4cca40791516855e3a940cbedd489da5becd9b7676494dd4ce9|doi:10.1007/s13205-025-04529-6|body_incomplete_or_unreadable (3)
 10.1007/s13205-025-04618-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13399-022-02321-7|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s13399-022-02321-7.pdf|2007066|7ba8eb2809ad3a648df227d625a87532a49ab549ff39d0fa54518be63c7742dd|doi:10.1007/s13399-022-02321-7|NR
 10.1007/s40095-014-0093-5|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s40095-014-0093-5.pdf|1307430|f50e57138bcd25023e371de2f4af65175648e1d8077fc3f9a83d02b9c7c43456|doi:10.1007/s40095-014-0093-5|NR
 10.1007/s40095-017-0249-1|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s40095-017-0249-1.pdf|776863|c9b1cfa72995b1a7086742353b28d861437cd41b4b4a4d012ac0e6ea0025f846|doi:10.1007/s40095-017-0249-1|NR
 10.1007/s40201-020-00504-w|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s40201-020-00504-w.pdf|370554|6e1d46607a4f15148b149d3d23a9c188ba66bd9afe0929409785745cdcf22b9c|doi:10.1007/s40201-020-00504-w|NR
+10.1007/s40201-020-00504-w|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7721755.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s40201-020-00528-2|fresh-oa|preview_only|html|https://link.springer.com/content/pdf/10.1007/s40201-020-00528-2.pdf|470379|64f34849c597f1cf8d625e9bcbf6e44da6a87a3aef9ca1c707e30a376b4e776e|doi:10.1007/s40201-020-00528-2|NR
+10.1007/s40201-020-00528-2|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7721933.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s40201-020-00537-1|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s40201-020-00537-1|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7721773.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s40201-022-00846-7|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s40201-022-00846-7|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10163198.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s40201-025-00933-5|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s40201-025-00933-5|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11828766.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s41742-025-00889-2|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s41742-025-00889-2.pdf|4212785|a209c97085dde787b03b311f25f82d5f5757c2e3e890ba01ebd2012df80b6c86|doi:10.1007/s41742-025-00889-2|NR
 10.1007/s42770-019-00091-5|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
+10.1007/s42770-019-00091-5|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6863186.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s42770-022-00895-y|open|identity_verified|pdf|https://acikkaynak.bilecik.edu.tr/bitstreams/e40c256b-2558-4e6f-98ae-9db7c328e80c/download|3423313|a15b301898957703b228faf30e4d6e4c05f0c2b5512ad683dbb12c2a26df80f2|doi:10.1007/s42770-022-00895-y|NR
 10.1007/s42770-026-01987-9|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s43153-021-00130-5|open|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -277,12 +317,14 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.bioelechem.2016.03.004|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1016/j.bioelechem.2016.11.002|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (5)
 10.1016/j.bioelechem.2017.07.006|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
+10.1016/j.bioelechem.2017.07.006|repository-20261109-f156|identity_verified|pdf|https://eprints.gla.ac.uk/148747/1/148747.pdf|807935|d7f9b117cfc0c13dbb877a7ae5c574d47b6f616d2c1747dd941ccf5dc06e1169|doi:10.1016/j.bioelechem.2017.07.006|NR
 10.1016/j.bioelechem.2017.07.013|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2017.10.005|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2017.10.008|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1016/j.bioelechem.2017.10.008|openaire|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (5)
 10.1016/j.bioelechem.2017.11.005|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1016/j.bioelechem.2018.01.004|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1016/j.bioelechem.2018.02.004|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6344780.1/PMC6344780.1.xml|119868|58e6ff92e7a8bac6765b2336a7cdd6ea93dacd2b47936fae82f2ff016772b609|doi:10.1016/j.bioelechem.2018.02.004|NR
 10.1016/j.bioelechem.2018.05.002|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2018.08.002|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2018.12.004|open|unrecovered|NR|NR|NR|NR|NR|<urlopen error timed out> (1) / HTTP Error 403 (1) / HTTP Error 404 (1) / body_incomplete_or_unreadable (1)
@@ -316,6 +358,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.bioelechem.2026.109297|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2026.109360|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.bioelechem.2026.109478|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.1016/j.bioflm.2021.100054|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8258643.1/PMC8258643.1.xml|168446|1a09542befd8dc920ba5204ed3d7195119b9930c8369110fee2e59be648d1a3e|doi:10.1016/j.bioflm.2021.100054|NR
 10.1016/j.biombioe.2015.05.017|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
 10.1016/j.biombioe.2022.106677|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.biombioe.2025.107706|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
@@ -519,6 +562,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.cej.2020.124176|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 401 (1) / HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
 10.1016/j.cej.2020.124462|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.cej.2020.126545|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1016/j.cej.2020.126545|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC7787988.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1016/j.cej.2021.130150|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.cej.2021.130707|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1016/j.cej.2023.141821|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -628,6 +672,8 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.enconman.2024.118448|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.energy.2016.03.004|openaire|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (4)
 10.1016/j.energy.2021.120702|open3|no_route_tested|NR|NR|NR|NR|NR|NR
+10.1016/j.engmic.2024.100148|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/PMC11610965.1/PMC11610965.1.xml|NR|NR|NR|HTTP Error 503: Service Unavailable
+10.1016/j.engmic.2025.100221|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/PMC12967833.1/PMC12967833.1.xml|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1016/j.envint.2019.01.076|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
 10.1016/j.envint.2021.106594|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1016/j.envpol.2018.03.085|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -651,6 +697,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.enzmictec.2020.109564|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (3) / body_incomplete_or_unreadable (2)
 10.1016/j.enzmictec.2022.109995|open2|identity_verified|pdf|https://www.biorxiv.org/content/biorxiv/early/2021/11/18/2021.11.17.469056.full.pdf|628531|5b7916c796332788af2e89602b270d451cc49c60733e3c9bbc1707dec96fce1f|doi:10.1101/2021.11.17.469056|NR
 10.1016/j.enzmictec.2024.110502|pmc-cloud|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11529205.1/PMC11529205.1.xml|94223|a2bea64f295d7106aecd60aad640603804f90383fc04650efd1b200127c3686a|doi:10.1016/j.enzmictec.2024.110502|NR
+10.1016/j.ese.2022.100186|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC9487993.1/PMC9487993.1.xml|93568|137d95f6b549f6555ca7bbc9c3d463e3b1b576816c791a0e6d89602574896f4d|doi:10.1016/j.ese.2022.100186|NR
+10.1016/j.ese.2023.100276|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10189395.1/PMC10189395.1.xml|165790|2447aaaa832e9429bdb5d497d6cf31af9563931b6e6aa331ae1e666b07f69cb8|doi:10.1016/j.ese.2023.100276|NR
+10.1016/j.ese.2026.100730|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/PMC13380776.1/PMC13380776.1.xml|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1016/j.eti.2025.104090|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.eti.2026.105097|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1016/j.femsle.2004.01.041|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -662,6 +711,8 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.fuel.2024.132090|restore|identity_verified|pdf|https://researchonline.jcu.edu.au/86703/1/1-s2.0-S0016236124012389-main.pdf|7109430|b000173e54dc064a9ab5e22bf6efababc19cc4f525dc27630316f06b9573d331|doi:10.1016/j.fuel.2024.132090|NR
 10.1016/j.gee.2020.11.010|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1016/j.gee.2022.10.007|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
+10.1016/j.heliyon.2018.e00560|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC5968083.1/PMC5968083.1.xml|99024|dd595b509f8fef43947bf5f9c54277ee2c247e1bf32fa25c154979ca09c6851f|doi:10.1016/j.heliyon.2018.e00560|NR
+10.1016/j.heliyon.2019.e01506|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6495065.1/PMC6495065.1.xml|110111|5bb10985fccc2c89fbc0b614b70884ba0991ecbd293b6576b29e9bdd2d674263|doi:10.1016/j.heliyon.2019.e01506|NR
 10.1016/j.ifacol.2018.05.037|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.ijbiomac.2026.153207|open5|identity_verified|pdf|https://repozitorij.uni-lj.si/Dokument.php|5621568|51abceae5f011045a1d34c63de8801d7adbb7995c7157a8f9887ace1e1c59418|doi:10.1016/j.ijbiomac.2026.153207|body_incomplete_or_unreadable (2)
 10.1016/j.ijhydene.2012.09.062|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -681,6 +732,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.ijhydene.2026.153564|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (1) / body_incomplete_or_unreadable (1)
 10.1016/j.ijoes.2025.101227|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.indcrop.2017.06.062|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1016/j.isci.2021.103401|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8605441.1/PMC8605441.1.xml|206685|139b3648755122c90adba667ef832cbb4ede89ac18bd6cd620c57f85b6027ead|doi:10.1016/j.isci.2021.103401|NR
+10.1016/j.isci.2024.110965|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11492332.1/PMC11492332.1.xml|103469|49c8c73ea3a7483c67ce13414f5cc7d9c2b99b2fecd5feda2e459f377601754e|doi:10.1016/j.isci.2024.110965|NR
+10.1016/j.isci.2025.113069|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12314332.1/PMC12314332.1.xml|101890|511a1f3add85f6aa0bad104bd7b2cdcb4831cf68076c8be2eef40ea7d1bc33ad|doi:10.1016/j.isci.2025.113069|NR
 10.1016/j.jbiosc.2016.02.005|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (1) / body_incomplete_or_unreadable (1)
 10.1016/j.jbiosc.2016.03.025|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.jbiosc.2017.12.018|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 503 (1) / body_incomplete_or_unreadable (1)
@@ -757,6 +811,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1016/j.jpowsour.2020.229222|open2|identity_verified|pdf|https://europepmc.org/articles/PMC7898120|843700|82617d114303cc57ae2d5ad473999316e62bc40438239975e373c6eac0950bfd|doi:10.1016/j.jpowsour.2020.229222|body_incomplete_or_unreadable (2)
 10.1016/j.jpowsour.2021.229938|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.jpowsour.2021.230688|open4|no_route_tested|NR|NR|NR|NR|NR|NR
+10.1016/j.jpowsour.2022.231209|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9109132.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1016/j.jpowsour.2022.231739|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1016/j.jpowsour.2022.231890|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1016/j.jpowsour.2024.234192|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -926,6 +981,10 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1021/acsami.9b22116|open2|identity_verified|pdf|https://www.biorxiv.org/content/biorxiv/early/2019/12/05/864967.full.pdf|1048484|db7cc333cda54eafcef95c9ce12d6185e898e5bf01c62c9089ba167fcec5e5f5|doi:10.1101/864967|NR
 10.1021/acsanm.3c04786|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1021/acsbiomaterials.3c01174|open2|body_candidate|pdf|https://www.biorxiv.org/content/biorxiv/early/2022/09/03/2022.09.01.506267.full.pdf|623581|f71d58a3c8eb6d88236cb4634f6ea59b24c8c942cc035f93a7c8044990d22360|NR|NR
+10.1021/acsenvironau.4c00067|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11583100.1/PMC11583100.1.xml|108236|6408b2ff71061716d5d425a32f60e9e29c02720d5f28135d6214f3fb1ee5155e|doi:10.1021/acsenvironau.4c00067|NR
+10.1021/acsestengg.6c00128|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC13077639.1/PMC13077639.1.xml|134717|e7e7752f007e23e8699e2fd7b955bc9ab1bdb0843973d2f998a1cf43f9e86ea2|doi:10.1021/acsestengg.6c00128|NR
+10.1021/acsomega.5c05703|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12593025.1/PMC12593025.1.xml|183202|c12a394218968bdacbbed44404e7958e973399c764b20736a7369288b67fcdd5|doi:10.1021/acsomega.5c05703|NR
+10.1021/acsomega.5c12114|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC13425517.1/PMC13425517.1.xml|113619|c42d5d7c177dcbf352f16e2e3d97783a91f05b9bc6f16db93db4b10103b86a20|doi:10.1021/acsomega.5c12114|NR
 10.1021/bp060347r|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1021/es0480668|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 502 (2)
 10.1021/es048386r|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 502 (1)
@@ -945,6 +1004,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1021/es204126r|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1021/es304937e|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1021/es400631r|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
+10.1021/es500737m|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3979089.1/PMC3979089.1.xml|88882|295b93b5e79697f9a7fe7bd601e6fda36eccd77e7bfa8c86b94032a90610f93c|doi:10.1021/es500737m|NR
 10.1021/es503063n|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1021/es503511m|open2|identity_verified|pdf|https://unsworks.unsw.edu.au/bitstreams/afcb0f86-c65b-4c89-8a7d-db6817e1df1a/download|1875623|090a7b08abfa5bb6e29bf54052aa29e356c2d1df57ac7d01a26568437bccbf66|doi:10.1021/es503511m|NR
 10.1021/es800775d|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 502 (2)
@@ -963,11 +1023,15 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1038/ismej.2009.12|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1038/ismej.2010.66|open2|identity_verified|pdf|https://biblio.ugent.be/publication/1162702/file/1163135.pdf|299477|7523c3b80ca0d71c84401a929a3132a5e0c434d4a79351218f0ee69e9a6228a9|article_front_title|NR
 10.1038/ismej.2012.5|open2|preview_only|html|https://www.nature.com/articles/ismej20125.pdf|269553|80d131dd179460233e5a11a03f7848bcc290abb164d3e2c4b468ef6ae05fb2ac|doi:10.1038/ismej.2012.5|NR
+10.1038/ismej.2012.5|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3400418.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.198|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3) / body_incomplete_or_unreadable (2)
+10.1038/ismej.2013.198|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3869025.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.217|fresh-oa|preview_only|html|https://www.nature.com/articles/ismej2013217.pdf|339292|3d2e826ea2a599c1647b20af72b6c3762e3660d8a580aaf6d6d942739671e90f|doi:10.1038/ismej.2013.217|NR
+10.1038/ismej.2013.217|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3996694.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.40|open|identity_verified|pdf|https://europepmc.org/articles/PMC3721111|1875535|e0f2548fe8e74e294df24fa183c956030e571ccbe595365cf2129d811571f3a0|doi:10.1038/ismej.2013.40|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1038/ncomms3751|open2|identity_verified|pdf|https://www.nature.com/articles/ncomms3751.pdf|1143766|9014a08f3e163f1b58914bdcec0aec3e871199aeca5c4457385531818304cdec|doi:10.1038/ncomms3751|NR
 10.1038/ncomms4208|open|identity_verified|pdf|https://www.nature.com/articles/ncomms4208.pdf|899104|412f4c94250c835e3fa8ac4ad044c11c9695959bf8e648519b0d6907e7371b76|doi:10.1038/ncomms4208|NR
+10.1038/s41467-024-52498-w|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11448506.1/PMC11448506.1.xml|144998|72c7bcb6a6ede71df040eb373a74ef1a2e74fecd00a01b3b921e6c600aaf5d65|doi:10.1038/s41467-024-52498-w|NR
 10.1038/s41579-019-0173-x|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1039/b719955d|open3|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1039/b806498a|open4|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -1002,11 +1066,14 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1039/c7cc90353g|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/c7ra04571a|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/c7ra07799h|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
+10.1039/c7ra12923h|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC9077460.1/PMC9077460.1.xml|65223|626a1eaf98921ab36c63a21586928de423584a949ce09a19641296a530617906|doi:10.1039/c7ra12923h|NR
 10.1039/c9se00354a|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/d0cc07303b|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1039/d2lc00098a|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
+10.1039/d4ra07323a|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11737372.1/PMC11737372.1.xml|81349|dc023fea4564e278f029168eaa13a5dc0fa29da4a572e8d73151ab41288a9a6e|doi:10.1039/d4ra07323a|NR
 10.1039/d4ra90117g|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / The read operation timed out (1) / body_incomplete_or_unreadable (3)
 10.1039/d5cc00103j|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
+10.1039/d5ra01080b|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12150292.1/PMC12150292.1.xml|147179|106328a2ddf3348f50138cb2c2e5c887ed30b23a5345d36ff9be4b7d97df559e|doi:10.1039/d5ra01080b|NR
 10.1042/bcj20180457|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1042/bcj20240423|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1042/bst20120114|open|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -1020,6 +1087,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1073/pnas.0706379104|open5|identity_verified|pdf|https://europepmc.org/articles/PMC2141869|177740|719836d678637151b01536529d38da5191b30dee154df3775740c91178057d9a|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1073/pnas.0907468107|open5|identity_verified|pdf|https://europepmc.org/articles/PMC2806741|748244|786df9f28860cf00f0e04d1897f81f3a5f99a946c51e423bef33f5f66b7fdea3|doi:10.1073/pnas.0907468107|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1073/pnas.1011699107|open2|identity_verified|pdf|https://europepmc.org/articles/PMC2947899|1467936|85d2a74e02f27187e83a8c20fac0d411915f7d0e1653df2377e84fd47690838c|doi:10.1073/pnas.1011699107|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
+10.1073/pnas.1106335108|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3182737.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1073/pnas.1112905109|open2|identity_verified|pdf|https://europepmc.org/articles/PMC3277152|970370|e23cd8f483900b956d44e2770235cfeb0897c3ee8c40055adeaa5c937a2afa40|doi:10.1073/pnas.1112905109|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1073/pnas.1419328112|open5|identity_verified|pdf|https://europepmc.org/articles/PMC4418906|1103444|fc6b32ba7698f264c3a8bd32a3b541c1cdc5eef2f7f2933d9ae7b5b1370fd9ed|doi:10.1073/pnas.1419328112|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1080/00032719.2024.2341087|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
@@ -1086,6 +1154,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1109/tfuzz.2026.3710628|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1111/1758-2229.12277|open|identity_verified|pdf|https://biblio.ugent.be/publication/5970590/file/5970683.pdf|756138|5c6e0398e219086e9602ed7dbd889c0b958ab377e6caa67dec04e601d92ef58e|doi:10.1111/1758-2229.12277|NR
 10.1111/1758-2229.12871|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
+10.1111/1758-2229.13187|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10667633.1/PMC10667633.1.xml|191291|bce65b520a4d91338185669955567f4822f3cfb31926434ccfb5aa8e16c7475a|doi:10.1111/1758-2229.13187|NR
 10.1111/ejss.12215|open3|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1111/j.1365-2672.2004.02514.x|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 10.1111/j.1365-2672.2006.02923.x|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
@@ -1125,6 +1194,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1128/aem.01387-07|open2|identity_verified|pdf|https://europepmc.org/articles/PMC2227709|987360|21d2428ec259bab53be7d4a737f17358c5aab331f0cb3137db1564653dc7937b|doi:10.1128/aem.01387-07|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/aem.01392-10|open3|identity_verified|pdf|https://europepmc.org/articles/PMC3020560|749722|790dcf13a9f55230d5a12a6ebff07c59ca0ba2932db6c4832d5c0963424e9110|doi:10.1128/aem.01392-10|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.01444-06|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (3)
+10.1128/aem.01444-06|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC1636155.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.01615-16|open5|identity_verified|pdf|https://europepmc.org/articles/PMC4988178|3038881|0f948e374345bc188024db8e498d5937f41ba1ebb36bcfa7db0af5cf75bfd27a|doi:10.1128/aem.01615-16|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.01639-08|open|identity_verified|pdf|https://europepmc.org/articles/PMC2592935|760610|412ec71a0756466cc4641dad6096bc6e1b7f4a30e56f746febac178c31d449c3|doi:10.1128/aem.01639-08|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.01760-09|open|identity_verified|pdf|https://europepmc.org/articles/PMC2794111|1556036|32ba0761ff518da84aff5a04de929d3bf59b07c4ef73a283e4849f51603e9bbc|doi:10.1128/aem.01760-09|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1141,12 +1211,16 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1128/aem.69.3.1548-1555.2003|open|identity_verified|pdf|https://europepmc.org/articles/PMC150094|620767|68266518b423a924c35efb857d1652da226f2f969cf8f63902b36a0b725530fc|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.70.10.6023-6030.2004|open5|identity_verified|pdf|https://europepmc.org/articles/PMC522133|259097|be37864f1f167fdb562d9c235a5095e97a6a63038e58c8a21e69f665e4f10261|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.70.2.1234-1237.2004|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 429 (1) / body_incomplete_or_unreadable (2)
+10.1128/aem.70.2.1234-1237.2004|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC348862.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.70.6.3467-3474.2004|open5|identity_verified|pdf|https://europepmc.org/articles/PMC427799|102845|647c0dff0f666e1a1d6d219c829f471f69dcc3df052f6f644fbfd21d1a90707e|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.1128/aem.70.9.5373-5382.2004|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC520914.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.71.4.2186-2189.2005|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (4)
+10.1128/aem.71.4.2186-2189.2005|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC1082548.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1128/jb.00716-16|open|identity_verified|pdf|https://europepmc.org/articles/PMC5370424|3553915|490ae8c4c892035b96a3b2e033b0152fd9bd28264ff4d17f70e359290184b645|doi:10.1128/jb.00716-16|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/jb.00725-19|open5|identity_verified|pdf|https://europepmc.org/articles/PMC7167473|942512|22df74bd66b3a483044636acbf27ad182d20fca3592359ef08432aaade3c0421|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/jb.00890-12|open|identity_verified|pdf|https://europepmc.org/articles/PMC3486075|3003576|b1330d28b07af735eb27fcd01aa1e6f5549bb6023107df34432a0f1e46491448|doi:10.1128/jb.00890-12|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/jb.06084-11|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (3)
+10.1128/jb.06084-11|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3209197.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1128/jb.06366-11|open|identity_verified|pdf|https://europepmc.org/articles/PMC3347174|2847784|607f5b83cd8bbf4c2d955a9adac4d9de7aacd2456adb68505670943a08446404|doi:10.1128/jb.06366-11|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/jmbe.v16i2.934|open3|identity_verified|pdf|https://europepmc.org/articles/PMC4690580|680499|fe5db37c06e6886e38710697b3a29194fb097102a83c24ff04be7eac5bd0a900|doi:10.1128/jmbe.v16i2.934|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1134/s0003683817020028|open3|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -1161,6 +1235,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1149/2.f04153if|open3|body_candidate|pdf|https://iopscience.iop.org/article/10.1149/2.F04153if/pdf|1286912|572252a53301663eb7b01e165bf7b46e7abb0fd7b27345360c11ff62dcf74cac|NR|body_incomplete_or_unreadable (1)
 10.1149/ma2012-02/52/3598|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1152/physiolgenomics.00010.2015|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
+10.1152/physiolgenomics.00010.2015|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4491528.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1155/2013/172010|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3)
 10.1155/2015/686891|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3)
 10.1155/2021/4570388|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3) / HTTP Error 503 (2)
@@ -1178,7 +1253,9 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1177/2472630319875403|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1186/1475-2859-2-6|open2|identity_verified|pdf|https://link.springer.com/content/pdf/10.1186/1475-2859-2-6.pdf|423362|dc030d5c46d40bcf1b4c37f9172b9501612973fdc64b4386c00cf1187fdc6bdd|article_front_title|NR
 10.1186/1475-2859-6-16|open2|identity_verified|pdf|https://link.springer.com/content/pdf/10.1186/1475-2859-6-16.pdf|362381|c6851c3afeed11daea7d0dfc0d5c8a595ffcb9af531b281edf5d879e4bbf57c0|doi:10.1186/1475-2859-6-16|NR
+10.1186/1754-6834-2-7|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC2670826.1/PMC2670826.1.xml|106483|70847c0a6fbd4acfd16ba1f53bb903b0e96ccb2823e6925f6ec7d12214f21d27|doi:10.1186/1754-6834-2-7|NR
 10.1186/s11671-026-04960-5|open2|identity_verified|pdf|https://link.springer.com/content/pdf/10.1186/s11671-026-04960-5.pdf|4072072|38ef1fcd294a9181ba83485258a94deea809973b66652738b234cb48ed578334|doi:10.1186/s11671-026-04960-5|NR
+10.1186/s12896-014-0102-z|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4299683.1/PMC4299683.1.xml|94365|8f2fa078479f01461f3169d66ebcebdab28202d7529ba444212e84f2fe012051|doi:10.1186/s12896-014-0102-z|NR
 10.1186/s12934-018-0992-x|open2|identity_verified|html|https://doi.org/10.1186/s12934-018-0992-x|433576|88d6640f11a64b5f14ea25d77568dd266a70ab07c1afb72b9abb6eb193a3d96d|doi:10.1186/s12934-018-0992-x|HTTP Error 403 (1)
 10.1186/s12934-020-1288-5|open2|identity_verified|pdf|https://repositum.tuwien.at/bitstream/20.500.12708/19885/1/Veiter-2020-Microbial%20Cell%20Factories-vor.pdf|2448783|88fb502e4a52abdb318f164eef0a11097d611887e78f30f441dadcc5f4fb868c|doi:10.1186/s12934-020-1288-5|body_incomplete_or_unreadable (1)
 10.1186/s12934-021-01634-y|open2|identity_verified|html|https://doi.org/10.1186/s12934-021-01634-y|411971|ecc2de8afffd2b4554e495dee6cb57725722097614deb537c7497f86a4c20a4e|doi:10.1186/s12934-021-01634-y|HTTP Error 403 (1)
@@ -1197,6 +1274,8 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1299/jsmemecj.2025.j061-05|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.13005/bbra/3345|open4|identity_verified|pdf|https://www.biotech-asia.org/pdf/vol22no1/BBRA_Vol_22_No_1_p_113-123.pdf|1036332|01d1f158297c869a9603f4d21cd7f498d5b7a5994f4e0ee0817896d74bc4a6ea|doi:10.13005/bbra/3345|NR
 10.13025/17150|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1371/journal.pone.0113379|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4239067.1/PMC4239067.1.xml|89509|842e837263493855bdd3081a67e27312886f129b3eac92fb696ac0e9ef291269|doi:10.1371/journal.pone.0113379|NR
+10.1371/journal.pone.0113379|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4239067.1/PMC4239067.1.xml|89509|842e837263493855bdd3081a67e27312886f129b3eac92fb696ac0e9ef291269|doi:10.1371/journal.pone.0113379|NR
 10.14288/1.0401884|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.14419/ijet.v1i2.78|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.14419/yvfatr03|open4|identity_verified|pdf|https://www.sciencepubco.com/index.php/IJBAS/article/download/33550/19365|738562|26ca99601ceb1fb35a7575bf729bf6fea3fafe51fdaa8902b132732dd905907f|doi:10.14419/yvfatr03|NR
@@ -1210,6 +1289,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.15171/ijb.1608|open2|identity_verified|html|https://doi.org/10.15171/ijb.1608|102755|8587d52934007546b8261e625293c24d1a065daf33aae9a9783b2a64fdfad070|doi:10.15171/ijb.1608|NR
 10.15244/pjoes/133402|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1529/biophysj.108.134411|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 429 (1) / body_incomplete_or_unreadable (4)
+10.1529/biophysj.108.134411|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC2426644.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.15376/biores.20.4.pratama|restore|identity_verified|pdf|https://bioresources.cnr.ncsu.edu/wp-content/uploads/2025/10/BioRes_20_4_Pratama_SRSDFMI_REVIEW_Synthesis_Binders_Fuel_Cell_24313.pdf|1787644|62bb9d1723df7f4f2ef71232e9974183d89cadd0dd8a8e19868cf158b2cca4e0|doi:10.15376/biores.20.4.pratama|NR
 10.15407/ubj86.02.016|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.15414/jmbfs.2018.7.4.437-444|open4|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -1412,12 +1492,18 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.33263/briac112.94209431|open4|identity_verified|pdf|https://doi.org/10.33263/briac112.94209431|358559|24b58029d70fe7585b5a329adc8b4e2f2015906619eefe6088e5b6cb97d4e1f1|doi:10.33263/briac112.94209431|NR
 10.33545/26649926.2025.v7.i3b.730|restore|identity_verified|pdf|https://www.biologyjournal.net/archives/2025/vol7issue3/PartB/8-4-63-719.pdf|252072|fddde47b7a718ff81626169a65facc59c5fb5634d4a344fccbc020ca6e358377|doi:10.33545/26649926.2025.v7.i3b.730|NR
 10.3389/fmech.2021.616179|open4|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (2)
+10.3389/fmicb.2016.00699|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4863660.1/PMC4863660.1.xml|136597|cdc326dd584139171d2227de36d68dcef7dd2959268a0dcdb043ba53d6cd223e|doi:10.3389/fmicb.2016.00699|NR
+10.3389/fmicb.2017.01371|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC5517442.1/PMC5517442.1.xml|149993|281baa57c68722431a2a9d89f2d22c5fba24cde137ba5481551e095498f00b42|doi:10.3389/fmicb.2017.01371|NR
+10.3389/fmicb.2018.02633|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6237982.1/PMC6237982.1.xml|103736|9eb931a032dafb3ed985cba2539466b7bf62a46ac62fc596a1e0611cb2a813ff|doi:10.3389/fmicb.2018.02633|NR
+10.3389/fmicb.2019.01747|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6685142.1/PMC6685142.1.xml|145101|eefa696c8b20b00bb04da709e6b3ce54f8c3b2f03a44db963586b9a1417c42ac|doi:10.3389/fmicb.2019.01747|NR
+10.3389/fmicb.2024.1511142|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11743565.1/PMC11743565.1.xml|143923|d51242a4f2e7d839cde86bc083744f05c0f2fbf03d8f5b6fcd4ebb8eabd73ece|doi:10.3389/fmicb.2024.1511142|NR
 10.3389/fmicb.2026.1815770|open2|identity_verified|html|https://doi.org/10.3389/fmicb.2026.1815770|834789|13f2bd68dc64d7a307998651329406f83f8399207cd9e18c313be50570823e3e|doi:10.3389/fmicb.2026.1815770|body_incomplete_or_unreadable (1)
 10.3389/fnano.2022.876014|restore|identity_verified|pdf|https://www.frontiersin.org/journals/nanotechnology/articles/10.3389/fnano.2022.876014/pdf|3326326|9682a24518dfdc7c4df9192e477d3e012da15114abc7b2f583bf902b54296bcb|doi:10.3389/fnano.2022.876014|NR
 10.3390/app112210777|open4|identity_verified|pdf|https://www.mdpi.com/2076-3417/11/22/10777/pdf|3463127|16e0b1d00cf228217ff6f33f1c6993b1267d8985be188a67629302185b1272a6|doi:10.3390/app112210777|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.3390/app15063335|restore|identity_verified|html|https://www.mdpi.com/2076-3417/15/6/3335|1148693|19b6f8e04f12c6352dee2f9e95073344ee4fd73feade67462a3237c9fd72f3dd|doi:10.3390/app15063335|NR
 10.3390/app8071184|open4|identity_verified|pdf|https://www.mdpi.com/2076-3417/8/7/1184/pdf|1182286|fb7d10a895e8ecadf82f151c0ffa5e59cc8d1e50ca28168061368a972b14d3ac|doi:10.3390/app8071184|NR
 10.3390/beverages10010020|open4|identity_verified|pdf|https://www.mdpi.com/2306-5710/10/1/20/pdf|2657378|bb9a4d8c38b746d0e6c1189d981190f60a845ab7da9b54135d4dcf49d2c17267|doi:10.3390/beverages10010020|body_incomplete_or_unreadable (1)
+10.3390/bioengineering10121380|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10740411.1/PMC10740411.1.xml|87753|90ec1e3bc58140e873171efde829afc1779a5d81f68a65a4165941db94f6f619|doi:10.3390/bioengineering10121380|NR
 10.3390/books978-3-03921-534-8|open4|body_candidate|pdf|https://mdpi-res.com/bookfiles/book/1547/Microbial_Fuel_Cells_2018.pdf|10054493|45c44442eb488dacd1fe12a8d6e297cc50558ce59d0c04a659624243e140d6fe|NR|NR
 10.3390/catal10050475|restore|identity_verified|pdf|https://www.mdpi.com/2073-4344/10/5/475/pdf|2091358|4d85fd4cb83cecdb819184693bdaf002c550f4df95de13d1d71d73b4cd03212f|doi:10.3390/catal10050475|NR
 10.3390/catal11070839|restore|identity_verified|pdf|https://www.mdpi.com/2073-4344/11/7/839/pdf|906879|e761dfc3bfae12e9feb637ec830169119949eb7b256a6d62e7822d17551adb52|doi:10.3390/catal11070839|NR
@@ -1467,6 +1553,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.3390/ma19194174|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.3390/ma19194174|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/materials/materials-19-04174/article_deploy/materials-19-04174.pdf|3103608|19d4e36861026c64b0604b9d7947551de11d9d95e986cb73085bcd7e04f8f22d|doi:10.3390/ma19194174|body_incomplete_or_unreadable (3)
 10.3390/machines10050320|open4|identity_verified|pdf|https://www.mdpi.com/2075-1702/10/5/320/pdf|2520781|0cfe9c59abf239079eabe185deba0a0c18a7627c6970c1f79074c20b4f001e69|doi:10.3390/machines10050320|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.3390/molecules26164755|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8400688.1/PMC8400688.1.xml|137753|70d2911bb338e6a4f77aae9ce16627ee133ac418dc386858dfe5a878e82e5069|doi:10.3390/molecules26164755|NR
 10.3390/molecules29020462|open2|identity_verified|pdf|https://nrc-publications.canada.ca/eng/view/ft/|4421489|8ea00f4d0e0e3dce1022feaa794753bf014127160cd9617c6e212ef4f246a3c7|doi:10.3390/molecules29020462|NR
 10.3390/molecules31122039|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.3390/molecules31122039|publisher|identity_verified|pdf|https://mdpi-res.com/d_attachment/molecules/molecules-31-02039/article_deploy/molecules-31-02039.pdf|2544653|dacc6262de219a22abec4c73f0b98a22bd094e1d7615b143012d7b653f2a17e1|doi:10.3390/molecules31122039|body_incomplete_or_unreadable (2)
@@ -1651,19 +1738,24 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 20453141|open|identity_verified|pdf|https://europepmc.org/articles/PMC2897463|1579911|216c7700f2bbf9ff6dc9a847735c3771e277b01741a95710d6f0e75121fd3be6|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 22084572|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3201837/fullTextXML|155367|132efa403cda10b89b006bfcdaa669fb106843b84d0f7d007934cf25d8e5b345|article_front_title|NR
 22470538|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3314594/fullTextXML|81329|1f5ba437ec981f00cbf2f9e2964459a9b830c58f3b9f58756e2fc9994ada26fe|NR|NR
+22470538|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3314594.1/PMC3314594.1.xml|75808|c240c95140d1ab9de6157f2420dff319967aca6f6a2cacfcaac58f230acab724|doi:10.1371/journal.pone.0034216|NR
 22843516|open|identity_verified|pdf|https://europepmc.org/articles/PMC3457516|1007484|eed7dbad9c3750f204e15487c028994d96d0a5e2bd15887d2ed0a662a890a227|article_front_title|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 24478768|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3902354/fullTextXML|125969|e97f3ab8814a763005e11058ec331e345a61d5adf9b07893c1e915fe5fcdcf2d|article_front_title|NR
 24569675|fresh-oa|identity_verified|pdf|https://www.nature.com/articles/ncomms4391.pdf|567014|d54ab3cb06ad14e13ad874587aed4cd2b90be0b33f02f67610dec3e56ad9eeb6|doi:10.1038/ncomms4391|NR
 24741468|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3982937/fullTextXML|94923|453a08c82cc216d55b03806370356beedcb3724ca2397116b75018cd850df7c7|NR|NR
+24741468|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3982937.1/PMC3982937.1.xml|89418|7bc40bac56a9e335a00304b14af5cc8b28aab510714d666daaccf4eab2e0cbf9|doi:10.1021/sc400520x|NR
 24862005|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 25506343|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4246885/fullTextXML|88436|6bec0e9c57009361eab6feef8ed43542f92c659a76d8c2740986a9a904220505|NR|NR
+25506343|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4246885.1/PMC4246885.1.xml|86998|0bcd0a24464ca898eaad3d07ca32d5a141cc79978436b494930b78632b216d18|doi:10.3389/fmicb.2014.00663|NR
 25642216|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4295556/fullTextXML|113795|195df9cba85d859dc8b0607b865cf3aacb571b7acfab0c4754bb14e10c81e446|article_front_title|NR
 25717030|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 26044993|open|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s00284-015-0846-2.pdf|1026606|8bc60305f77c72bad6d51b595cd53bf4ca8793d8ab7b798d590511ff0049d7be|article_front_title|The read operation timed out (1)
 26057262|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 26284037|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4523033/fullTextXML|94063|19a916dea2aa42d24f98c7326eee198485767374a0c137bfd96a430d17cea2e9|article_front_title|NR
 26678949|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4683449/fullTextXML|84219|59d4791f6f03c1acb70f54911ac1406a4ba63c23bcfe2bfb9dcff06acc28bd7b|NR|NR
+26678949|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4683449.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 26733958|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4679932/fullTextXML|118339|70b6d278186a677cafa370268a46de08c7de2a0f15099235b3fc95632033dbec|NR|NR
+26733958|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4679932.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 26899353|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4761877/fullTextXML|100493|26ea4726c9e2ea8f48ff6efbda4bc12f43a6c0fa4ce5f2368be81950f820c556|article_front_title|NR
 27071535|open|unrecovered|NR|NR|NR|NR|NR|The read operation timed out (1)
 27797183|open|identity_verified|pdf|https://europepmc.org/articles/PMC7388032|902312|278432b82400c4bbe2d66fc21b640604d5a192a2fb66aad9d62f76862e54dbb4|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1677,6 +1769,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 29693330|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6055872/fullTextXML|109408|04bc75e7537b504efa1749f093c5bf3d88295634616fa33586b43d64d8258f9e|article_front_title|NR
 30804911|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6370692/fullTextXML|96191|f63f98a8a9e9968983cb6e7319a10e6f860069b6b8d5cf47477e4bfbec005ddc|article_front_title|NR
 30894842|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6415583/fullTextXML|86671|dffaf38969f535e6612a285ba8d2ee8f9684b51fc5da72507a3e8e632aa65fcb|NR|NR
+30894842|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6415583.1/PMC6415583.1.xml|82897|8222b9d805e8882b312cdd778a19aef55b11ad84426664051ea4f0518ecc6ac3|doi:10.3389/fmicb.2019.00398|NR
 30902855|open2|identity_verified|pdf|https://europepmc.org/articles/PMC6532047|1367168|93c0112af9056e1145e4cbd7033e706a4cbe8dd01ea2f265ff4795d1517b09d7|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 31070592|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 31072303|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6509789/fullTextXML|218536|0cd56ada3e262e22bb01529eb8a2a225ae98f780874703ecd9f388aa1730cb5c|article_front_title|NR
@@ -1687,12 +1780,15 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 32849356|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7399161/fullTextXML|219274|b721dfd8c8b90ae5b0a0a5604659dc1f9cc95827a4ff86806e2ba4eded3179a8|article_front_title|NR
 33119231|open5|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 33304839|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7714679/fullTextXML|308442|bff3605eb855f8b986285eeed849ea4f6f2afd32717b5bd33ec4756a8355682f|NR|NR
+33304839|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC7714679.1/PMC7714679.1.xml|305927|91c7d35d17d2a85781b851abecda7f2951126a82eef76327e4a47245edb4f3e7|doi:10.1016/j.btre.2020.e00563|NR
 33671672|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7926576/fullTextXML|131559|2d8b43deae8d4c42faf9a5dcfae81d958508c7eda06c568ed775075e038b52d1|NR|NR
+33671672|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC7926576.1/PMC7926576.1.xml|125782|e8c7dc3885219477eb9095556bc18245b0d0aa4f0668830331f3b6b74d765665|doi:10.3390/ma14041033|NR
 34273778|fresh-oa|body_candidate|pdf|https://www.biorxiv.org/content/biorxiv/early/2021/04/15/2021.04.15.440059.full.pdf|1486687|e5e2ef8e583db5932ff8c598c62e73fc90cd15ea4bc036a374c7671c6aeeabdf|NR|NR
 34341507|open2|identity_verified|pdf|https://europepmc.org/articles/PMC8776907|3230404|bc26c59d99d5d59f8d024cac2b5e5978d5e9de6799bd08ec6e92b0c1a05b68a4|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 34368649|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8326206/fullTextXML|222826|4ebf871b3ff253acb45c40e4c106e067447fd517cfae0e4c207815662cc40036|article_front_title|NR
 34472610|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 34889066|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9300040/fullTextXML|193340|e4ca7a0ddc897ad179ab595430ac379cd26c7fdc20a562386ea87fcca14b3a69|NR|NR
+34889066|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC9300040.1/PMC9300040.1.xml|185650|562204909f1c177ddbf75351d46a7ce81169224d436ce7686e4c79becb4812a9|doi:10.1002/cssc.202102351|NR
 35323802|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8951516/fullTextXML|186781|5449e7681c079b1b483383c874ddf99129c6aa0adfb9b555acdf19a09f4c1ab6|article_front_title|NR
 35680002|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 36151459|open2|identity_verified|pdf|https://www.nature.com/articles/s41396-022-01316-6.pdf|1890274|d0f270e220592de87fc58ee8e555cd4b46b48cf35ca0eadee8b3f42582f9160a|article_front_title|The read operation timed out (1)
@@ -1700,9 +1796,11 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 36537073|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9948228/fullTextXML|102071|bb3e020142ca5922b54be14dffbb13c23838dbe3044f80cc0007d737b3b619ee|article_front_title|NR
 36590422|open2|identity_verified|pdf|https://europepmc.org/articles/PMC9800620|1816626|e4a974aee125fe8eaacc29e641ef006049175f35d944a58566dde627cb535a2f|article_front_title|The read operation timed out (1) / body_incomplete_or_unreadable (1)
 36772646|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9919353/fullTextXML|216993|19fe8f83f4145a8c1d73653051627b1aed3069ead9d6baab8656b0ef2c8e5589|NR|NR
+36772646|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC9919353.1/PMC9919353.1.xml|208307|e54ee0aa002afa3514bc6ccc8b38831eae7045e7bdf82cb8d43107093bd6826b|doi:10.3390/s23031606|NR
 36808480|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10221544/fullTextXML|319784|0b64f7de31fcd9d88ab92b502f113c3b7d2923babbdb3589df01eb5d5a0ae677|article_front_title|NR
 37029136|open2|identity_verified|pdf|https://europepmc.org/articles/PMC10082016|2409491|946b2c13627b5854003b7742287a4bb0fb4c7c0efee64e9d616717f06c76f603|article_front_title|The read operation timed out (1) / body_incomplete_or_unreadable (1)
 37859795|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10582064/fullTextXML|132063|490340566d671598298353267466063eefeae2d9a7bcdf70edfddd4099d39e3c|NR|NR
+37859795|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10582064.1/PMC10582064.1.xml|128104|b6c9ec60f278da6afd096a4a333d078efa32a6198fd420295baa3d601b04eebc|doi:10.1016/j.bioflm.2023.100161|NR
 38074455|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10702900/fullTextXML|199340|118ab96ccf49b3aee6e23732cd79fbe020db4d4d2246c598756c1b4c8a10a003|article_front_title|NR
 39741226|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11848534/fullTextXML|104814|68e90487ee6bcfe5697804f6ec2da53058ec14d409063f6154a4a325ddf17b92|article_front_title|NR
 39770771|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11677828/fullTextXML|150985|c9ca663d66b14350d6931f5dfc9a5fb95fe15fad198227a5201cea024d4e02dd|article_front_title|NR
@@ -1710,29 +1808,16 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 40338308|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12062099/fullTextXML|223546|81986e580a6fd1975e113098b081ccd70e081438e7389274154b6f63ec833949|article_front_title|NR
 40345171|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12199422/fullTextXML|189423|360fc059d3df8b3fc5ac1f354e24c19af0e5c591a74f1d122e298d83f8ec21d3|article_front_title|NR
 40367360|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12225005/fullTextXML|176311|afa436dcaa551125b33a5baf1b6c590cda45c99d0a196bd67bca530bfc0ff229|NR|NR
+40367360|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12225005.1/PMC12225005.1.xml|170737|46ffc5d6030ae20e5d0995a56f5281d17495559c4fff45e4a677eaf86056f1df|doi:10.1002/advs.202501376|NR
 40510254|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12153056/fullTextXML|151427|ee23db80a2ae712c6f1938253daef0a122a93c605f6f79bb42d957f2737e5dff|NR|NR
+40510254|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12153056.1/PMC12153056.1.xml|146783|8956c382e23b38078f401a1228ed4922fd8e0be1152e90d810320cd58e9ae8cf|doi:10.1021/acsaem.5c00687|NR
 40807607|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12346509/fullTextXML|477348|a4f75b046aba802a40816fa080bf202b7b474491717f9c721126165d3888f8c5|article_front_title|NR
 41304511|open2|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12656165/fullTextXML|132572|c14c26a3da2339c86908973c8d0bf6190e5012501f60d7c7fa7bf8f42ce6acc0|article_front_title|NR
 41516352|open2|identity_verified|pdf|https://europepmc.org/articles/PMC12786658|2426823|e902b414c817ebcd63081d2a1826e2ebadac7def50123b07adc961402cd60946|article_front_title|The read operation timed out (1) / body_incomplete_or_unreadable (1)
 42279983|open2|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13258206/fullTextXML|98286|c592bb4c01e5733a1ba11777db9a6d093dcbe2bf664a3b111ba9f38699691a00|NR|NR
+42279983|pmc-cloud-b01|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC13258206.1/PMC13258206.1.xml|91162|321762ac3ef241ff623273f14a4132e48d16288f859bfb318c5a5641f66810bb|doi:10.3390/ma19112331|NR
 43ce11007e8114269d84c56ef1173e609ba2e6f2a3c868cc2a0f4594bc1072a9|restore|identity_verified|pdf|https://polen.itu.edu.tr/server/api/core/bitstreams/b7f8af7e-3895-429f-8540-a87380b17be2/content|3144998|1e084c67110fec95ef3e04f641cfe560cf6081649103b899969afee851123ee4|article_front_title|NR
 4c86d54a4e13de9e856bda7bb964a56b2245ab46219a58999fe96e240891ba29|restore|identity_verified|pdf|https://polen.itu.edu.tr/server/api/core/bitstreams/0efdd231-7066-4fc8-83c5-1f517fd71da2/content|2751875|768b781aa22d6983b08eb059289e7347a48c82faad71d9b3c2d3a851cd7b12a4|article_front_title|NR
 5fe18d8b3b9aab7bb74a7ebb0f0769608034e99c507c23745979b6e5e9fc573a|restore|identity_verified|pdf|https://backoffice.biblio.ugent.be/download/4197486/4336874|4029564|6f89aad3c4af006315c88e71cc47e34af65aa545adbbe154604b5b28ee9870b1|article_front_title|NR
 73382306f63857be2a9dbdec34c5640225d74ae340e0b38f8ec854b31c793e1b|restore|identity_verified|pdf|https://pure.manchester.ac.uk/ws/files/84023294/FULL_TEXT.PDF|12653908|e48d079422d366c295a7451afb9e966ead6bd2d728bfae4bd2baa3eba60c97ea|article_front_title|NR
 b1659b70fa89cd77b588da865927a9f6c67eafec209b8edf316fe5ad871fc165|restore|identity_verified|pdf|https://utoronto.scholaris.ca/server/api/core/bitstreams/fa5a87ee-ddcc-4f39-9cf9-99a866ef70cb/content|5549597|71898038bb6a5eaa97fe3c457e63dfa1c073ae1afb153477261e12d502c124f7|article_front_title|NR
-10.1186/1754-6834-2-7|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC2670826.1/PMC2670826.1.xml|106483|70847c0a6fbd4acfd16ba1f53bb903b0e96ccb2823e6925f6ec7d12214f21d27|doi:10.1186/1754-6834-2-7|NR
-10.3389/fmicb.2018.02633|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6237982.1/PMC6237982.1.xml|103736|9eb931a032dafb3ed985cba2539466b7bf62a46ac62fc596a1e0611cb2a813ff|doi:10.3389/fmicb.2018.02633|NR
-10.1038/s41467-024-52498-w|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11448506.1/PMC11448506.1.xml|144998|72c7bcb6a6ede71df040eb373a74ef1a2e74fecd00a01b3b921e6c600aaf5d65|doi:10.1038/s41467-024-52498-w|NR
-10.1371/journal.pone.0113379|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4239067.1/PMC4239067.1.xml|89509|842e837263493855bdd3081a67e27312886f129b3eac92fb696ac0e9ef291269|doi:10.1371/journal.pone.0113379|NR
-10.3389/fmicb.2016.00699|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4863660.1/PMC4863660.1.xml|136597|cdc326dd584139171d2227de36d68dcef7dd2959268a0dcdb043ba53d6cd223e|doi:10.3389/fmicb.2016.00699|NR
-10.3390/bioengineering10121380|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10740411.1/PMC10740411.1.xml|87753|90ec1e3bc58140e873171efde829afc1779a5d81f68a65a4165941db94f6f619|doi:10.3390/bioengineering10121380|NR
-10.1007/s10529-019-02668-4|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC6482134.1/PMC6482134.1.xml|57104|a32d8be0a061278fe3e8ba247ae576cb2c4f919423a1c0d12dc79e4786a642eb|doi:10.1007/s10529-019-02668-4|NR
-10.1007/s10529-020-03050-5|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC7822768.1/PMC7822768.1.xml|61933|e810b2437bd506336547015ce8cb798a79959c22fc470cf15e9b3ef56f4a410a|doi:10.1007/s10529-020-03050-5|NR
-10.1186/s12896-014-0102-z|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC4299683.1/PMC4299683.1.xml|94365|8f2fa078479f01461f3169d66ebcebdab28202d7529ba444212e84f2fe012051|doi:10.1186/s12896-014-0102-z|NR
-10.1039/c7ra12923h|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC9077460.1/PMC9077460.1.xml|65223|626a1eaf98921ab36c63a21586928de423584a949ce09a19641296a530617906|doi:10.1039/c7ra12923h|NR
-10.1039/d4ra07323a|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11737372.1/PMC11737372.1.xml|81349|dc023fea4564e278f029168eaa13a5dc0fa29da4a572e8d73151ab41288a9a6e|doi:10.1039/d4ra07323a|NR
-10.1007/s11356-024-33338-2|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC12712122.1/PMC12712122.1.xml|113429|14fded94759f6eb70586b31662bc344224f08b98e54952996198be7c25316894|doi:10.1007/s11356-024-33338-2|NR
-10.3390/molecules26164755|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC8400688.1/PMC8400688.1.xml|137753|70d2911bb338e6a4f77aae9ce16627ee133ac418dc386858dfe5a878e82e5069|doi:10.3390/molecules26164755|NR
-10.1111/1758-2229.13187|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC10667633.1/PMC10667633.1.xml|191291|bce65b520a4d91338185669955567f4822f3cfb31926434ccfb5aa8e16c7475a|doi:10.1111/1758-2229.13187|NR
-10.3389/fmicb.2024.1511142|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC11743565.1/PMC11743565.1.xml|143923|d51242a4f2e7d839cde86bc083744f05c0f2fbf03d8f5b6fcd4ebb8eabd73ece|doi:10.3389/fmicb.2024.1511142|NR
-10.1016/j.bioelechem.2017.07.006|repository-20261109-f156|identity_verified|pdf|https://eprints.gla.ac.uk/148747/1/148747.pdf|807935|d7f9b117cfc0c13dbb877a7ae5c574d47b6f616d2c1747dd941ccf5dc06e1169|doi:10.1016/j.bioelechem.2017.07.006|NR
