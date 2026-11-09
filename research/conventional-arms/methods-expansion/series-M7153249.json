@@ -1,0 +1,224 @@
+{
+  "arm_id": "M7153249-CP-acetate",
+  "locator": "PDF editorial p. 7 de 11, Fig. 3b, CP magenta, acetato",
+  "document_sha256": "46bafd22d62c55c1f3033f780dda4b411d59285bb0b6a1d4f5ed670fdb108a85",
+  "image_sha256": "0d36c3a5d5ec48d916b7586de61e50cab827a44d92d137e73c8d9e8f05811e76",
+  "image_local_path": "supplements/PMC7153249-figure3b.png",
+  "image_dimensions_px": [
+    305,
+    265
+  ],
+  "extraction": "Render da página 7 com pdftoppm -f 7 -l 7 -r 145 -png. Recorte RGB (590, 930, 895, 1195) com Pillow. Pontos marcados no centro da curva CP, coordenadas em pixels desde o canto superior esquerdo. Eixos lineares.",
+  "axis_order": [
+    "time_day",
+    "current_density_mA_m2"
+  ],
+  "axis_marks_px_value": {
+    "time_day": [
+      [
+        65,
+        "1"
+      ],
+      [
+        286,
+        "14"
+      ]
+    ],
+    "current_density_mA_m2": [
+      [
+        224,
+        "0"
+      ],
+      [
+        75,
+        "20"
+      ]
+    ]
+  },
+  "pixels": [
+    [
+      65,
+      187
+    ],
+    [
+      75,
+      148
+    ],
+    [
+      80,
+      137
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      90,
+      82
+    ],
+    [
+      95,
+      105
+    ],
+    [
+      105,
+      154
+    ],
+    [
+      115,
+      187
+    ],
+    [
+      125,
+      201
+    ],
+    [
+      138,
+      213
+    ],
+    [
+      150,
+      220
+    ],
+    [
+      165,
+      223
+    ],
+    [
+      175,
+      180
+    ],
+    [
+      180,
+      151
+    ],
+    [
+      194,
+      120
+    ],
+    [
+      204,
+      104
+    ],
+    [
+      215,
+      185
+    ],
+    [
+      230,
+      194
+    ],
+    [
+      250,
+      215
+    ],
+    [
+      270,
+      219
+    ],
+    [
+      283,
+      221
+    ]
+  ],
+  "digitization_uncertainty": {
+    "pixels_each_axis": 3,
+    "time_day": "0.18",
+    "current_density_mA_m2": "0.41"
+  },
+  "basis": "Área geométrica anódica de 5,76 cm², §3.2.",
+  "scope": "Série da célula inteira sob 1 kΩ. Acetato a 2 g/L após aclimatação. Duplicata no delineamento.",
+  "limitations": [
+    "Incerteza gráfica separada da dispersão entre reatores.",
+    "A figura apresenta uma curva por condição. Séries por réplica e dados primários não recuperados.",
+    "Amostragem esparsa da figura. As casas decimais preservam o cálculo e não indicam precisão experimental.",
+    "Energia da Fig. 3c tem unidade ou integração pendente, ver Q15."
+  ],
+  "use": "context_only",
+  "points": [
+    {
+      "time_day": "1.000",
+      "current_density_mA_m2": "4.966"
+    },
+    {
+      "time_day": "1.588",
+      "current_density_mA_m2": "10.201"
+    },
+    {
+      "time_day": "1.882",
+      "current_density_mA_m2": "11.678"
+    },
+    {
+      "time_day": "2.176",
+      "current_density_mA_m2": "18.658"
+    },
+    {
+      "time_day": "2.471",
+      "current_density_mA_m2": "19.060"
+    },
+    {
+      "time_day": "2.765",
+      "current_density_mA_m2": "15.973"
+    },
+    {
+      "time_day": "3.353",
+      "current_density_mA_m2": "9.396"
+    },
+    {
+      "time_day": "3.941",
+      "current_density_mA_m2": "4.966"
+    },
+    {
+      "time_day": "4.529",
+      "current_density_mA_m2": "3.087"
+    },
+    {
+      "time_day": "5.294",
+      "current_density_mA_m2": "1.477"
+    },
+    {
+      "time_day": "6.000",
+      "current_density_mA_m2": "0.537"
+    },
+    {
+      "time_day": "6.882",
+      "current_density_mA_m2": "0.134"
+    },
+    {
+      "time_day": "7.471",
+      "current_density_mA_m2": "5.906"
+    },
+    {
+      "time_day": "7.765",
+      "current_density_mA_m2": "9.799"
+    },
+    {
+      "time_day": "8.588",
+      "current_density_mA_m2": "13.960"
+    },
+    {
+      "time_day": "9.176",
+      "current_density_mA_m2": "16.107"
+    },
+    {
+      "time_day": "9.824",
+      "current_density_mA_m2": "5.235"
+    },
+    {
+      "time_day": "10.706",
+      "current_density_mA_m2": "4.027"
+    },
+    {
+      "time_day": "11.882",
+      "current_density_mA_m2": "1.208"
+    },
+    {
+      "time_day": "13.059",
+      "current_density_mA_m2": "0.671"
+    },
+    {
+      "time_day": "13.824",
+      "current_density_mA_m2": "0.403"
+    }
+  ]
+}

@@ -23,12 +23,14 @@ FAMILY_KEYS = {
     ("1", "ambient_air", "glucose", "carbon_brush", "platinum", "fed_batch"): "F5",
     ("2", "ferricyanide", "acetate", "carbon_felt", "bare_carbon", "fed_batch"): "F6",
 }
-FULL_METHODS = {"full_methods", "full_methods_web"}
+FULL_METHODS = {"full_methods", "full_methods_web", "full_methods_and_supplement"}
 UNITS = {
     "voltage": {"V", "mV"}, "peak_voltage": {"V", "mV"}, "current": {"mA"},
     "peak_current_density": {"mA/m2"}, "short_circuit_current_density": {"mA/m2"},
     "operating_power_density": {"mW/m2"}, "peak_power_density": {"W/m2", "mW/m2", "uW/cm2"},
     "charge_per_cycle": {"C"}, "time_to_stable_voltage": {"day"},
+    "energy_recovery_density": {"J/m3"}, "charge_transfer_resistance": {"ohm"},
+    "internal_resistance_eis": {"ohm"},
 }
 
 
@@ -60,23 +62,25 @@ def digitize(series):
         raise ValueError("Digitized points must be distinct and ordered by x")
     width, height = series["image_dimensions_px"]
     axes = series["axis_marks_px_value"]
-    j_marks, p_marks = axes["current_density_A_m2"], axes["power_density_W_m2"]
+    x_axis, y_axis = series.get("axis_order", ["current_density_A_m2", "power_density_W_m2"])
+    if {x_axis, y_axis} != set(axes) or x_axis == y_axis:
+        raise ValueError("Digitization must define two distinct axes")
     if not all(0 <= x < width and 0 <= y < height for x, y in points):
         raise ValueError("Pixel is outside the image")
     def convert(x, y):
         return {
-            "current_density_A_m2": str(decimal(project_axis(x, j_marks)).quantize(Decimal("0.001"))),
-            "power_density_W_m2": str(decimal(project_axis(y, p_marks)).quantize(Decimal("0.001"))),
+            x_axis: str(decimal(project_axis(x, axes[x_axis])).quantize(Decimal("0.001"))),
+            y_axis: str(decimal(project_axis(y, axes[y_axis])).quantize(Decimal("0.001"))),
         }
     return [convert(x, y) for x, y in points]
 
 
-def check_cache(cache, acquisition, sources, figure):
+def check_cache(cache, acquisition, sources, figures):
     paths = [(cache / "originals" / f'{row["pmcid"]}.xml', row["sha256"])
              for row in acquisition if row["access"] == "jats"]
     paths.extend((cache / artifact["local_path"], artifact["sha256"])
                  for row in sources.values() for artifact in row.get("files", []))
-    paths.append((cache / figure["image_local_path"], figure["image_sha256"]))
+    paths.extend((cache / figure["image_local_path"], figure["image_sha256"]) for figure in figures)
     for path, expected in paths:
         if sha256(path.read_bytes()).hexdigest() != expected:
             raise ValueError(f"Original bytes changed: {path}")
@@ -135,7 +139,7 @@ def main():
             raise ValueError(f"Missing liquid cathode domain: {identity}")
 
     observations = index(table("observations.psv"), "id")
-    included_arms = set(baseline) | {row["arm_id"] for row in additions}
+    included_arms = {key: former[key] for key in baseline} | {row["arm_id"]: row for row in additions}
     for obs in observations.values():
         if (
             obs["arm_id"] not in included_arms
@@ -154,11 +158,13 @@ def main():
         if obs["load_ohm"] not in {"NR", "variable", "short_circuit"} and decimal(obs["load_ohm"]) == 0:
             raise ValueError(f"Load must be positive or an explicit circuit state: {obs['id']}")
 
-    curve = read_json(ROUND / "series-M9141142.json")
-    if curve["arm_id"] not in included_arms or digitize(curve) != curve["points"]:
-        raise ValueError("The digital points must reproduce the reviewed Blank pixels")
-    if curve["document_sha256"] not in {f["sha256"] for f in sources["M9141142"]["files"]}:
-        raise ValueError("Digitized series lacks the source supplement identity")
+    figures = [read_json(path) for path in sorted(ROUND.glob("series-*.json"))]
+    for curve in figures:
+        arm = included_arms[curve["arm_id"]]
+        if digitize(curve) != curve["points"] or curve["use"] != "context_only":
+            raise ValueError(f"Digitized series differs from reviewed pixels: {curve['arm_id']}")
+        if curve["document_sha256"] not in {f["sha256"] for f in sources[arm["source"]]["files"]}:
+            raise ValueError(f"Digitized series lacks original document identity: {curve['arm_id']}")
 
     acquisition = table("acquisition.psv")
     index(acquisition, "key")
@@ -178,13 +184,13 @@ def main():
     if sum(row["section_routes"] != "NA" for row in acquisition) != search["unique_section_hits"]:
         raise ValueError("Section hit union differs from frozen manifest")
     if args.cache:
-        check_cache(args.cache, acquisition, sources, curve)
+        check_cache(args.cache, acquisition, sources, figures)
 
     active = read_json(DATA / "selection.json")["active_families"]
     if active:
         raise ValueError("Methods research cannot activate a family")
     scalar_arms = {obs["arm_id"] for obs in observations.values() if obs["status"] == "context_only"}
-    linked = scalar_arms | {curve["arm_id"]}
+    linked = scalar_arms | {curve["arm_id"] for curve in figures}
     results = {}
     for f in FAMILY_KEYS.values():
         base = [former[key] for key, row in baseline.items() if row["family"] == f]
@@ -219,7 +225,8 @@ def main():
         "review_decisions": dict(sorted(Counter(row["decision"] for row in reviews.values()).items())),
         "observations": dict(sorted(Counter(obs["status"] for obs in observations.values()).items())),
         "quality_issues": len(issues),
-        "digitized_points": len(curve["points"]),
+        "digitized_series": len(figures),
+        "digitized_points": sum(len(curve["points"]) for curve in figures),
         "families": results,
         "active_families": active,
     }

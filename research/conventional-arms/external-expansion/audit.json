@@ -11,10 +11,10 @@
   "prior_exclusion_count": 972,
   "prior_exclusion_sha256": "ac2fce0c896c2ccac249e6df9638cfdcef70fafee3c3ea62ba09a1758ea959d0",
   "api_discovery_records": 1292,
-  "prior_unique_articles_in_families": 26,
+  "prior_unique_articles_in_families": 30,
   "new_unique_articles_in_families": 12,
   "new_family_memberships": 16,
-  "total_unique_articles_in_families": 38,
+  "total_unique_articles_in_families": 42,
   "screening_decisions": {
     "auxiliary_protocol": 2,
     "exclude": 53,
@@ -76,9 +76,9 @@
       }
     },
     "F2": {
-      "before": 5,
+      "before": 7,
       "new": 2,
-      "articles": 7,
+      "articles": 9,
       "lineages_before": 3,
       "lineages": 4,
       "new_arms": [
@@ -180,11 +180,11 @@
       }
     },
     "F4": {
-      "before": 5,
+      "before": 7,
       "new": 5,
-      "articles": 10,
-      "lineages_before": 3,
-      "lineages": 3,
+      "articles": 12,
+      "lineages_before": 4,
+      "lineages": 4,
       "new_arms": [
         "X001-Pt",
         "X006-brush",

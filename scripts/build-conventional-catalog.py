@@ -19,7 +19,7 @@ write = R["write_table"]
 save = R["SEARCH"]["save_json"]
 doi_key = R["SEARCH"]["doi_key"]
 title_hash = R["SEARCH"]["title_hash"]
-FULL_METHODS = METHOD["FULL_METHODS"] | {"full_methods_and_supplement"}
+FULL_METHODS = METHOD["FULL_METHODS"]
 DOC = {"unknown": 0, "unavailable": 1, "partial": 2, "body_candidate": 3, "documented_integral": 4}
 METADATA_DOC_TYPES = {"review", "editorial", "erratum", "book", "book-chapter", "retraction"}
 
@@ -282,7 +282,7 @@ def apply_acquisition(catalog, output):
             access(row, "documented_integral")
         elif item["state"] == "body_candidate":
             access(row, "body_candidate")
-        elif item["state"] == "unrecovered":
+        elif item["state"] in {"unrecovered", "wrong_document"}:
             access(row, "unavailable")
         row["evidence"].add("catalog_acquisition")
 
@@ -290,10 +290,18 @@ def apply_acquisition(catalog, output):
 def apply_reviews(catalog, output):
     for review in read(output / "reviews.psv"):
         row = catalog.rows[catalog.keys.get(review["key"], review["key"])]
-        if review["decision"] not in {"exclude", "pending"} or not review["locator"] or not review["reason"]:
+        decision = review["decision"]
+        if decision not in {"exclude", "pending", "confirm_existing_control"} or not review["locator"] or not review["reason"]:
             raise ValueError(f"Invalid screening record: {review['key']}")
+        reviewed_families = values(review["families_considered"])
+        if decision == "confirm_existing_control" and (
+            not reviewed_families or not reviewed_families <= row["families"]
+            or review["scope"] not in FULL_METHODS
+            or row["document"] != "documented_integral"
+        ):
+            raise ValueError(f"Control confirmation requires an existing arm and documented methods: {review['key']}")
         row["scopes"].add(review["scope"])
-        row["decisions"].add(review["decision"])
+        row["decisions"].add(decision)
         row["evidence"].add("catalog_individual_review")
 
 
@@ -364,7 +372,7 @@ def summarize(rows, output):
                "access_states": dict(sorted(Counter(row["document"] for row in rows).items())),
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
-    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv"):
+    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv", "document-conflicts.psv"):
         path = output / name
         if path.exists():
             summary["hashes"][name] = sha256(path.read_bytes()).hexdigest()
@@ -380,13 +388,15 @@ def summarize(rows, output):
     if "acquisition.psv" in summary["hashes"]:
         acquisition = read(output / "acquisition.psv")
         publications = {canonical(item) for item in acquisition if item["state"] != "no_route_tested"}
-        summary["acquisition"] = dict(sorted(Counter(row["state"] for row in acquisition).items()))
+        if len(acquisition) != len({(canonical(row), row["route_group"]) for row in acquisition}):
+            raise ValueError("Repeated acquisition identity within a batch")
+        summary["acquisition_batch_states"] = dict(sorted(Counter(row["state"] for row in acquisition).items()))
         summary["acquisition_unique_attempted"] = len(publications)
     if "reviews.psv" in summary["hashes"]:
         reviews = read(output / "reviews.psv")
         if len(reviews) != len({canonical(row) for row in reviews}):
             raise ValueError("Repeated review identity")
-        summary["reviews_this_round"] = dict(sorted(Counter(row["decision"] for row in reviews).items()))
+        summary["catalog_review_decisions"] = dict(sorted(Counter(row["decision"] for row in reviews).items()))
     return summary
 
 

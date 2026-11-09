@@ -1054,6 +1054,38 @@ python3 scripts/build-conventional-catalog.py --cache "$cache"
 
 Para reproduzir a rodada publicada, o cache deve conter os metadados exatos, os manifestos das aquisições concluídas e os originais correspondentes. O índice JATS pode ser reconstruído com `scripts/index-conventional-methods.py` a partir dos originais preservados e verificados pelo manifesto de metodologia. O repositório publica o catálogo, os hashes e as decisões. As cópias obtidas com condições de redistribuição desconhecidas permanecem no acervo de trabalho.
 
+<a id="cobertura-metodos"></a>
+### 12.12 Leitura integral e inclusão de novos controles
+
+Em 9 de novembro de 2026, a revisão manteve as mesmas **7.599 publicações**. Foram priorizados os textos em que os métodos indicavam câmara, material anódico, doador, cátodo e alimentação compatíveis. A inclusão exigiu localizar a resposta elétrica do mesmo controle nos resultados. Os localizadores indicam o que foi encontrado no corpo, nas figuras ou no suplemento. [Cobertura auditada](../research/conventional-arms/catalog/coverage.json) · [Leituras de métodos](../research/conventional-arms/methods-expansion/reading-log.psv) · [Revisões do catálogo](../research/conventional-arms/catalog/reviews.psv)
+
+| Etapa | Antes | Após a revisão | Percentual atual |
+|---|---:|---:|---:|
+| Corpo recuperado, incluindo candidatos à conferência de identidade | 1.432 | 1.588 | 20,90% |
+| Texto com identidade confirmada | 1.272 | 1.443 | 18,99% |
+| Triagem ou revisão individual registrada | 345 | 373 | 4,91% |
+| Métodos completos lidos | 83 | 115 | 1,51% |
+| Artigo com controle admitido em F1–F6 | 38 | 42 | 0,55% |
+
+As rotas públicas trouxeram 157 arquivos com corpo, com ganho de 156 publicações no catálogo. O PDF restaurado para um DOI de 2018 mostrou outro artigo, de 2021. O arquivo errado foi separado. Uma versão histórica com outro hash segue como corpo candidato, pendente de conferência do original. A confirmação de identidade também avançou sobre documentos já recuperados. Quando o texto é um preprint vinculado, o registro mantém o DOI dessa versão. A leitura de uma versão preliminar não resolve divergências com a versão publicada. O catálogo reúne 145 corpos ainda sem confirmação de identidade. [Aquisição por rota e hash](../research/conventional-arms/catalog/acquisition.psv) · [Conflito de documento](../research/conventional-arms/catalog/document-conflicts.psv) · [Vínculos de versões](../research/conventional-arms/catalog/versions.psv)
+
+As 32 leituras integrais adicionais incluem a reconferência de três controles já admitidos. Quatro publicações novas entraram no acervo de referências. O total por família ficou em **F1 6, F2 9, F3 10, F4 12, F5 5 e F6 4**. Um artigo pode contribuir para duas famílias. A admissão libera consulta e comparação dentro das condições documentadas. Os dados desta rodada ficaram com uso bibliográfico, condicionado à fase e à unidade de cada observação. A habilitação para calibração depende da recuperabilidade das séries e réplicas, da consistência física e da separação de linhagens. [Braços e onze etapas](../research/conventional-arms/methods-expansion/arms.psv) · [Auditoria das famílias](../research/conventional-arms/external-expansion/audit.json)
+
+| Família | Referência | Vínculo entre método e resultado |
+|---|---|---|
+| F2 | Massaglia et al., 2020 | §§2.1–2.2 identificam papel Fuel Cell Earth sem recobrimento, acetato a 2 g/L, Pt/C a ar e reposição quando a potência cai. A Fig. 3b mostra a série do controle a 1 kΩ, por área geométrica anódica. |
+| F2 | Spisni et al., 2023 | §§2.1–2.2.3 ligam papel AvCarb sem recobrimento, acetato a 1 g/L e Pt/C a ar. A Fig. 9 marca reposições a 1 kΩ e a Tabela 2 dá a energia por volume interno. A LSV e o ajuste de impedância são outros ensaios. |
+| F4 | Lu et al., 2019 | A configuração e a operação especificam escova de grafite, Pt a ar, acetato e controle com lodo fresco em duplicata a 4 °C. As Figs. 1A e 2 separam a tensão a 1 kΩ e a polarização. |
+| F4 | Feng et al., 2013 | O método define escova de fibra de carbono, Pt/C BASF e troca abaixo de 20 mV a 1 kΩ. A Fig. 5 apresenta a polarização e a evolução por ciclos do controle. A área exata usada na normalização ainda precisa ser confirmada. |
+
+As duas publicações F2 são da mesma linhagem. A concentração de acetato, a receita do meio e a carga de partida diferem. Os dois controles F4 também diferem na preparação, no inóculo e na temperatura de operação. A comparação preserva essas condições e os rótulos comerciais disponíveis. Um fabricante identificado sem o código do produto continua com a especificação comercial em aberto. [Massaglia et al.](https://doi.org/10.3390/nano10030523) · [Spisni et al.](https://doi.org/10.3390/nano13222926) · [Lu et al.](https://doi.org/10.3389/fmicb.2019.00935) · [Feng et al.](https://doi.org/10.1038/srep03306)
+
+Foram integrados oito valores escalares e 21 pontos digitizados da curva de corrente do controle de Massaglia et al. A digitalização preserva a página, o hash do PDF e da imagem, os pixels e a calibração dos eixos. A incerteza da leitura gráfica é de cerca de 0,18 dia e 0,41 mA/m². A dispersão entre reatores continua desconhecida. A energia da Fig. 3c ficou em quarentena. Sob carga resistiva, `I = j A` e `P = I² R`, em que `I` é a corrente em A, `j` a densidade em A/m², `A` a área geométrica anódica em m², `P` a potência em W e `R` a resistência em Ω. Por exemplo, 10 mA/m² mantidos por um dia em 5,76 cm², a 1 kΩ, dariam cerca de 229 J/m³ se integrados no volume interno de 12,5 mL. A barra correspondente da Fig. 3c está na ordem de 0,1 J/m³ após converter seu rótulo de mJ/m³. Falta confirmar a janela, a unidade ou a normalização adotada pelos autores. [Valores tratados](../research/conventional-arms/methods-expansion/observations.psv) · [Série digitizada](../research/conventional-arms/methods-expansion/series-M7153249.json) · [Ocorrências de qualidade](../research/conventional-arms/methods-expansion/quality.psv)
+
+Para F6, a leitura do método e do suplemento de Mohanty et al. confirmou o material dos eletrodos e o comparador Nafion 117. A receita imprime duas concentrações de ferricianeto incompatíveis entre si, e falta identificar quais ciclos do comparador foram acompanhados por reposição. Em Cao et al., a aclimatação de duas câmaras e a operação de dessalinização com três câmaras permanecem separadas. A carga e o calendário de reposições descritos para a dessalinização ainda não podem ser atribuídos à fase MFC. Os dois registros seguem pendentes. [Mohanty et al.](https://doi.org/10.3390/membranes11060454) · [Cao et al.](https://doi.org/10.1021/es901950j)
+
+O ponto de retomada está no catálogo com as decisões, localizadores e hashes desta revisão. Há 1.260 publicações com corpo recuperado que aguardam triagem individual. O próximo incremento começa pelos textos identificados com sinais de métodos em F1, F5 e F6. Entre os pendentes já lidos, devem ser verificadas a montagem da fase MFC de Hari et al. e a vinculação do MFC-B de Borole et al. ao católito e à polarização relatados. As checagens reproduzem a contagem de publicações, os hashes do acervo disponível e a transformação de pixels em coordenadas. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 

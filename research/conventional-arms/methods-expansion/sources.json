@@ -1314,5 +1314,770 @@
     "reading_scope": "full_methods_web",
     "associated": [],
     "files": []
+  },
+  {
+    "source": "M7153249",
+    "doi": "10.3390/nano10030523",
+    "pmcid": "PMC7153249",
+    "title": "Electrospun Nanofibers: from Food to Energy by Engineered Electrodes in Microbial Fuel Cells",
+    "authors": "Massaglia Giulia, Frascella Francesca, Chiadò Alessandro, Sacco Adriano, Marasso Simone Luigi, Cocuzza Matteo, Pirri Candido F., Quaglio Marzia",
+    "year": 2020,
+    "journal": "Nanomaterials",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7153249/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7153249/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "main_pdf",
+        "url": "https://www.mdpi.com/2079-4991/10/3/523/pdf",
+        "access": "local",
+        "scope": "PDF editorial, §2 e Fig. 3b–c.",
+        "acquired_at": "2026-11-09"
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC7153249.xml",
+        "bytes": 86582,
+        "sha256": "f9f9809fdba0c76c425c49b72945d892fa67881a37e5e894ff61e1acd4afa6f1"
+      },
+      {
+        "local_path": "supplements/PMC7153249-massaglia-2.pdf",
+        "bytes": 1975967,
+        "sha256": "46bafd22d62c55c1f3033f780dda4b411d59285bb0b6a1d4f5ed670fdb108a85"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M10675038",
+    "doi": "10.3390/nano13222926",
+    "pmcid": "PMC10675038",
+    "title": "Ultrasonic Spray Coating to Optimize Performance of Bio-Electrochemical Systems",
+    "authors": "Spisni Giacomo, Massaglia Giulia, Pirri Fabrizio C., Bianco Stefano, Quaglio Marzia",
+    "year": 2023,
+    "journal": "Nanomaterials",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10675038/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10675038/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "main_pdf",
+        "url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-02926/article_deploy/nanomaterials-13-02926.pdf",
+        "access": "local",
+        "scope": "PDF editorial, §2, Fig. 9 e Tabela 2.",
+        "acquired_at": "2026-11-09"
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC10675038.xml",
+        "bytes": 124238,
+        "sha256": "7d42c3b49e02d9935f9f40ed161c07a6686564eb8eef0374dd2d6a092f71559c"
+      },
+      {
+        "local_path": "supplements/PMC10675038-spisni.pdf",
+        "bytes": 7056730,
+        "sha256": "0ddaa58410b6b737263a58655045e7c56f3338d326d0aa2687cf5df9f4cab1ff"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M8233788",
+    "doi": "10.3390/membranes11060454",
+    "pmcid": "PMC8233788",
+    "title": "Phenolphthalein Anilide Based Poly(Ether Sulfone) Block Copolymers Containing Quaternary Ammonium and Imidazolium Cations: Anion Exchange Membrane Materials for Microbial Fuel Cell",
+    "authors": "NR",
+    "year": 2021,
+    "journal": "Membranes",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8233788/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8233788/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods_and_supplement",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://mdpi-res.com/d_attachment/membranes/membranes-11-00454/article_deploy/membranes-11-00454-s001.zip",
+        "access": "local",
+        "scope": "ZIP com PDF de caracterização de membranas, lido.",
+        "acquired_at": "2026-11-09"
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC8233788.xml",
+        "bytes": 144056,
+        "sha256": "d0ff7f16a712e484e3b3b77686a86ee4d93d35fbad6587c0387409b5c44cb73d"
+      },
+      {
+        "local_path": "supplements/PMC8233788-membranes-supp.zip",
+        "bytes": 827230,
+        "sha256": "e5b1af6dd284d7d15245c58c0d0c4e937d079a45474ec27f474237c05a76bc12"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M4163465",
+    "doi": "10.1155/2014/832850",
+    "pmcid": "PMC4163465",
+    "title": "Nonactivated and Activated Biochar Derived from Bananas as Alternative Cathode Catalyst in Microbial Fuel Cells",
+    "authors": "Yuan Haoran, Deng Lifang, Qi Yujie, Kobayashi Noriyuki, Tang Jiahuan",
+    "year": 2014,
+    "journal": "The Scientific World Journal",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4163465/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4163465/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC4163465.xml",
+        "bytes": 64432,
+        "sha256": "e0cc22de63a88d4cbe17d68d073aa6afbf549a753c9a13d3865384f73dcecac0"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M9030816",
+    "doi": "10.3390/polym14081542",
+    "pmcid": "PMC9030816",
+    "title": "Carbon Nanofiber Double Active Layer and Co-Incorporation as New Anode Modification Strategies for Power-Enhanced Microbial Fuel Cells",
+    "authors": "Barakat Nasser A. M., Amen Mohamed Taha, Ali Rasha H., Nassar Mamdouh M., Fadali Olfat A., Ali Marwa A., Kim Hak Yong",
+    "year": 2022,
+    "journal": "Polymers",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9030816/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9030816/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC9030816.xml",
+        "bytes": 173684,
+        "sha256": "625f8245d0101ffee930e39423d7c64f19e64a7ee98a959c707abd599bd3b75d"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M10745599",
+    "doi": "10.3390/mi14122137",
+    "pmcid": "PMC10745599",
+    "title": "Microbial Fuel Cells as Effective Tools for Energy Recovery and Antibiotic Detection in Water and Food",
+    "authors": "Massaglia Giulia, Spisni Giacomo, Pirri Candido F., Quaglio Marzia",
+    "year": 2023,
+    "journal": "Micromachines",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10745599/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10745599/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC10745599.xml",
+        "bytes": 97073,
+        "sha256": "128d4862f765c5ae3b8bdfb3ee89d2be104cb7fa753c0a6432b7ad0186cd6f66"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M6442422",
+    "doi": "10.1186/s13068-019-1414-y",
+    "pmcid": "PMC6442422",
+    "title": "Less biomass and intracellular glutamate in anodic biofilms lead to efficient electricity generation by microbial fuel cells",
+    "authors": "NR",
+    "year": 2019,
+    "journal": "Biotechnology for Biofuels",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6442422/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6442422/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC6442422.xml",
+        "bytes": 113705,
+        "sha256": "ec9c2dc463e61f0702e40337f229de972259ade71c0062bc8478daa58c08ab82"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M10458277",
+    "doi": "10.3390/microorganisms11082044",
+    "pmcid": "PMC10458277",
+    "title": "Synthetic Biology Toolkit for a New Species of Pseudomonas Promissory for Electricity Generation in Microbial Fuel Cells",
+    "authors": "Rabiço Franciene, Pedrino Matheus, Narcizo Julia Pereira, de Andrade Adalgisa Rodrigues, Reginatto Valeria, Guazzaroni María-Eugenia",
+    "year": 2023,
+    "journal": "Microorganisms",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10458277/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10458277/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC10458277.xml",
+        "bytes": 170697,
+        "sha256": "b6c32804d7ffa3b526c729f3e284a4bfbbe0dce15733c92b282808469771d0ef"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M9916399",
+    "doi": "10.3390/ijerph20032580",
+    "pmcid": "PMC9916399",
+    "title": "Anode Modification with Fe2O3 Affects the Anode Microbiome and Improves Energy Generation in Microbial Fuel Cells Powered by Wastewater",
+    "authors": "Nosek Dawid, Mikołajczyk Tomasz, Cydzik-Kwiatkowska Agnieszka",
+    "year": 2023,
+    "journal": "International Journal of Environmental Research and Public Health",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9916399/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9916399/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC9916399.xml",
+        "bytes": 202949,
+        "sha256": "e3458dac4a741c98323833dfe207a6b0e0e78d194b50ccc7c21eb213b34d95f5"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M7037954",
+    "doi": "10.3390/ijerph17030806",
+    "pmcid": "PMC7037954",
+    "title": "Adding Zero-Valent Iron to Enhance Electricity Generation during MFC Start-Up",
+    "authors": "Li Chao, Zhou Kang, He Hanyue, Cao Jiashun, Zhou Shihua",
+    "year": 2020,
+    "journal": "International Journal of Environmental Research and Public Health",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7037954/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7037954/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC7037954.xml",
+        "bytes": 115267,
+        "sha256": "f992f052230a3beae1977bac18e92b32ba691086c139b53228c2f88177618dfb"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M11766833",
+    "doi": "10.3390/membranes15010005",
+    "pmcid": "PMC11766833",
+    "title": "Dual Repurposing of End-of-Life BWRO Membranes: Ultrafiltration Membranes for Advanced Wastewater Treatment and Cation Exchange Membranes for Fungal Microbial Fuel Cells",
+    "authors": "NR",
+    "year": 2024,
+    "journal": "Membranes",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11766833/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11766833/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC11766833.xml",
+        "bytes": 129365,
+        "sha256": "724c7879d6cbd6651d92f1a5c5391d399899487db02153a913380c7a35dcf52a"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M10674280",
+    "doi": "10.3390/nano13222949",
+    "pmcid": "PMC10674280",
+    "title": "Xerogel-Derived Manganese Oxide/N-Doped Carbon as a Non-Precious Metal-Based Oxygen Reduction Reaction Catalyst in Microbial Fuel Cells for Energy Conversion Applications",
+    "authors": "Hao Wu, Lee Sang-Hun, Peera Shaik Gouse",
+    "year": 2023,
+    "journal": "Nanomaterials",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10674280/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10674280/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods_and_supplement",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-02949/article_deploy/nanomaterials-13-02949-s001.zip",
+        "access": "local",
+        "scope": "ZIP com PDF do suplemento, incluindo protocolo da MFC em S3, lido.",
+        "acquired_at": "2026-11-09"
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC10674280.xml",
+        "bytes": 151386,
+        "sha256": "e8547a59c3db574ad0c6b29518b084478097a7a0b1e83996f354f401dd0a1599"
+      },
+      {
+        "local_path": "supplements/PMC10674280-xerogel-supp.zip",
+        "bytes": 303565,
+        "sha256": "7d37e9b2c77b39a6f1ed2fce0b61645b5ff66528d7b81558b7f431b6d92ae93b"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M5648455",
+    "doi": "10.1186/s12866-017-1115-2",
+    "pmcid": "PMC5648455",
+    "title": "Electrochemical performance and microbial community profiles in microbial fuel cells in relation to electron transfer mechanisms",
+    "authors": "Uria Naroa, Ferrera Isabel, Mas Jordi",
+    "year": 2017,
+    "journal": "BMC Microbiology",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5648455/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5648455/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC5648455.xml",
+        "bytes": 113854,
+        "sha256": "e7d26452770888ef3e1f0264822fa2a4eef6180c92903c814d8a8980e5fdf978"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M5174012",
+    "doi": "10.1186/s13568-016-0299-4",
+    "pmcid": "PMC5174012",
+    "title": "Comparative metabolic state of microflora on the surface of the anode electrode in a microbial fuel cell operated at different pH conditions",
+    "authors": "Sasaki Daisuke, Sasaki Kengo, Tsuge Yota, Kondo Akihiko",
+    "year": 2016,
+    "journal": "AMB Express",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5174012/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5174012/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC5174012.xml",
+        "bytes": 95112,
+        "sha256": "a5007ea1757d5971a26b46b363d5e5653539503e26a4cc452a4a6ff5845a797e"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M5644122",
+    "doi": "10.1186/s13068-017-0929-3",
+    "pmcid": "PMC5644122",
+    "title": "Pulse electromagnetic fields enhance extracellular electron transfer in magnetic bioelectrochemical systems",
+    "authors": "Zhou Huihui, Liu Bingfeng, Wang Qisong, Sun Jianmin, Xie Guojun, Ren Nanqi, Ren Zhiyong Jason, Xing Defeng",
+    "year": 2017,
+    "journal": "Biotechnology for Biofuels",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5644122/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5644122/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC5644122.xml",
+        "bytes": 104548,
+        "sha256": "e59e86f546bd3a7d90c1c18a4282c4d3f34b43e1f6a4a92e0da42ef8f6281a40"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M6507619",
+    "doi": "10.3389/fmicb.2019.00935",
+    "pmcid": "PMC6507619",
+    "title": "Neglected Effects of Inoculum Preservation on the Start-Up of Psychrophilic Bioelectrochemical Systems and Shaping Bacterial Communities at Low Temperature",
+    "authors": "Lu Sidan, Xie Binghan, Liu Bingfeng, Lu Baiyun, Xing Defeng",
+    "year": 2019,
+    "journal": "Frontiers in Microbiology",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "CC BY, versão não especificada na licença do XML"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6507619/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6507619/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2019.00935/full#supplementary-material",
+        "access": "pending",
+        "scope": "Data_Sheet_1.PDF, inclui desenho da montagem. Configuração e operação do controle constam no corpo."
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC6507619.xml",
+        "bytes": 92298,
+        "sha256": "679099ec2f7d3bd3b917fbb3193b67477a5e24aa521cb604a19ec6b4d11d26a5"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M4103520",
+    "doi": "10.1264/jsme2.me13140",
+    "pmcid": "PMC4103520",
+    "title": "Dynamics of Different Bacterial Communities Are Capable of Generating Sustainable Electricity from Microbial Fuel Cells with Organic Waste",
+    "authors": "Yamamoto Shuji, Suzuki Kei, Araki Yoko, Mochihara Hiroki, Hosokawa Tetsuya, Kubota Hiroko, Chiba Yusuke, Rubaba Owen, Tashiro Yosuke, Futamata Hiroyuki",
+    "year": 2014,
+    "journal": "Microbes and Environments",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/3.0"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4103520/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4103520/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC4103520.xml",
+        "bytes": 109584,
+        "sha256": "cd708b40259ef5da9fd29aab6bd6148fa426b76fcaadae417dd9ad7621ab4ea7"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M3896841",
+    "doi": "10.1186/1754-6834-7-9",
+    "pmcid": "PMC3896841",
+    "title": "Microbial community structures differentiated in a single-chamber air-cathode microbial fuel cell fueled with rice straw hydrolysate",
+    "authors": "Wang Zejie, Lee Taekwon, Lim Bongsu, Choi Chansoo, Park Joonhong",
+    "year": 2014,
+    "journal": "Biotechnology for Biofuels",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/2.0"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3896841/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3896841/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC3896841.xml",
+        "bytes": 97357,
+        "sha256": "d2dd735b8f5d3b41ed4f7ba8b433f7a1190e963cca066c763e943729b494d6e8"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M3837309",
+    "doi": "10.1038/srep03306",
+    "pmcid": "PMC3837309",
+    "title": "Enhancing Electrocatalytic Oxygen Reduction on Nitrogen-Doped Graphene by Active Sites Implantation",
+    "authors": "Feng Leiyu, Yang Lanqin, Huang Zujing, Luo Jingyang, Li Mu, Wang Dongbo, Chen Yinguang",
+    "year": 2013,
+    "journal": "Scientific Reports",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by-nc-nd/3.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3837309/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3837309/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods_and_supplement",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://media.springernature.com/original/springer-static/esm/art:10.1038%2Fsrep03306/MediaObjects/41598_2013_BFsrep03306_MOESM1_ESM.pdf",
+        "access": "local",
+        "scope": "PDF suplementar, Figs. S1–S6, lido para localizar a montagem e separar ensaios de material.",
+        "acquired_at": "2026-11-09"
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC3837309.xml",
+        "bytes": 91798,
+        "sha256": "38d02cdaa326662707a09f4652d9456138cb4001ec42bacbdeab4696407fedbc"
+      },
+      {
+        "local_path": "supplements/PMC3837309-feng-supp.pdf",
+        "bytes": 439208,
+        "sha256": "55f6db24de799655fbd6f630067008fcd48203217071f124ce1732ae861a337a"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M10704469",
+    "doi": "10.3389/fchem.2023.1286572",
+    "pmcid": "PMC10704469",
+    "title": "Synergistic advancements in sewage-driven microbial fuel cells: novel carbon nanotube cathodes and biomass-derived anodes for efficient renewable energy generation and wastewater treatment",
+    "authors": "Barakat Nasser A M, Gamal Shimaa, Kim Hak Yong, Abd El-Salam Nasser M, Fouad Hassan, Fadali Olfat A, Moustafa Hager M, Abdelraheem Omina H",
+    "year": 2023,
+    "journal": "Frontiers in Chemistry",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": "rights_not_verified",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10704469/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10704469/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://doi.org/10.3389/fchem.2023.1286572",
+        "access": "pending",
+        "scope": "Suplemento de instrumentação, imagens e esquemas. O combustível incompatível é explícito no corpo."
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC10704469.xml",
+        "bytes": 150029,
+        "sha256": "6590e7cf2d4b27b92a1961644f10df9afd15eaae1c4cf290ac9a463781ec1a03"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M13296332",
+    "doi": "10.3390/bioengineering13060624",
+    "pmcid": "PMC13296332",
+    "title": "Dual Strategies for Enriching Electroactive Microorganisms from Anaerobic Digestate: Carbon-Assisted Acclimation and Direct In Situ Enrichment in a Liter-Scale MFC",
+    "authors": "Li Shiue-Lin, Chen Po-Chia, Chen Yun-An, Chen Pei-Ling, Wei Ya-Chun, Wu Tung-Yang, Lin Zone-Ke",
+    "year": 2026,
+    "journal": "Bioengineering",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13296332/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13296332/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC13296332.xml",
+        "bytes": 108946,
+        "sha256": "2527b34cb75e2efed6312a729d2c55e82ee99236fbb4e053b02255589a252c37"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M12168614",
+    "doi": "10.1002/smsc.202400619",
+    "pmcid": "PMC12168614",
+    "title": "Exsolution of Pt Nanoparticles from Mixed Zr/Gd‐CeO2 Oxides for Microbial Fuel Cell‐Based Biosensors",
+    "authors": "Martinez Martin Alex, Saini Shailza, Salvian Anna, Miah Tarique, Yiu Chan Cheuk, Avignone Rossa Claudio, Gadkari Siddharth, Kousi Kalliopi",
+    "year": 2025,
+    "journal": "Small Science",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12168614/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12168614/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC12168614.xml",
+        "bytes": 159591,
+        "sha256": "cb2e5b33ffee2a91d18a1f600b8877d624c10cd0f6813fa253d8feaa609bc553"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M5099896",
+    "doi": "10.3389/fmicb.2016.01776",
+    "pmcid": "PMC5099896",
+    "title": "Characterization of Electricity Generated by Soil in Microbial Fuel Cells and the Isolation of Soil Source Exoelectrogenic Bacteria",
+    "authors": "Jiang Yun-Bin, Zhong Wen-Hui, Han Cheng, Deng Huan",
+    "year": 2016,
+    "journal": "Frontiers in Microbiology",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5099896/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5099896/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [],
+    "files": [
+      {
+        "local_path": "originals/PMC5099896.xml",
+        "bytes": 109431,
+        "sha256": "c51b462fa3ae38a7e3c17be8b226c936b0c95810190bd744c9dd4439633e0a1e"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M5517442",
+    "doi": "10.3389/fmicb.2017.01371",
+    "pmcid": "PMC5517442",
+    "title": "Temporal Microbial Community Dynamics in Microbial Electrolysis Cells – Influence of Acetate and Propionate Concentration",
+    "authors": "Hari Ananda Rao, Venkidusamy Krishnaveni, Katuri Krishna P, Bagchi Samik, Saikaly Pascal E",
+    "year": 2017,
+    "journal": "Frontiers in Microbiology",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": "rights_not_verified",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5517442/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5517442/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://doi.org/10.3389/fmicb.2017.01371",
+        "access": "pending",
+        "scope": "Suplemento com figura da escova. Permanece pendente a configuração da MFC de enriquecimento citada no método."
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC5517442.xml",
+        "bytes": 155222,
+        "sha256": "0bcfc16ed8de2da68780acca432975e31092b2ff60c60ea77fb933ff3e976683"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
+  },
+  {
+    "source": "M9077550",
+    "doi": "10.1039/c7ra12316g",
+    "pmcid": "PMC9077550",
+    "title": "Composition and role of the attached and planktonic microbial communities in mesophilic and thermophilic xylose-fed microbial fuel cells†",
+    "authors": "Dessì Paolo, Porca Estefania, Haavisto Johanna, Lakaniemi Aino-Maija, Collins Gavin, Lens Piet N L",
+    "year": 2018,
+    "journal": "RSC Advances",
+    "access": "jats",
+    "version": "Europe PMC fullTextXML conforme SHA-256",
+    "rights": "rights_not_verified",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9077550/",
+    "acquisition_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9077550/fullTextXML",
+    "acquired_at": "2026-11-06",
+    "reading_scope": "full_methods",
+    "associated": [
+      {
+        "kind": "supplement",
+        "url": "https://doi.org/10.1039/c7ra12316g",
+        "access": "pending",
+        "scope": "Suplemento de cromatogramas. A alimentação com xilose é explícita no corpo."
+      }
+    ],
+    "files": [
+      {
+        "local_path": "originals/PMC9077550.xml",
+        "bytes": 117166,
+        "sha256": "e63d7ed7fc3fba5924373808b07aa09fee0b94fedecafacf2e6af3925a1dd945"
+      }
+    ],
+    "reviewed_at": "2026-11-09"
   }
 ]

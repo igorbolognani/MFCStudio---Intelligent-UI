@@ -27,7 +27,7 @@ A rodada 0.4.0 integra oito atribuições revisadas às etapas e a recuperação
 
 O incremento em `research/corpus-v0.3/` acrescenta S29 com 115 pares publicados por reator (pico/tempo), mantendo dois pares ausentes e a mesma família conservadora de S18. `research/materials-v0.1/` separa material/variante, caracterização, oferta e vínculo experimental. Fabricantes sem licença de redistribuição têm fatos e proveniência preservados, sem cópia integral pública. A [seção de curadoria do guia](docs/GUIA_MFC_STUDIO.md#dados) explica decisões, normalização e admissões ainda bloqueadas.
 
-O [catálogo único de literatura](research/conventional-arms/catalog/) reúne **7.599 publicações deduplicadas** com o estado de acesso, leitura e inclusão de cada uma. A [seção atual do guia](docs/GUIA_MFC_STUDIO.md#catalogo-unico) explica o balanço e os critérios F1–F6. O acervo científico mantém 38 artigos confirmados nessas famílias.
+O catálogo único reúne **7.599 publicações deduplicadas**, das quais **115** têm leitura integral dos métodos documentada e **42** têm um controle admitido em F1–F6. [Catálogo de literatura](research/conventional-arms/catalog/) · [Cobertura e critérios no guia](docs/GUIA_MFC_STUDIO.md#cobertura-metodos)
 
 ## Desenvolvimento
 
