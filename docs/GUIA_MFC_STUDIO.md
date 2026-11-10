@@ -1084,20 +1084,20 @@ Foram integrados oito valores escalares e 21 pontos digitizados da curva de corr
 
 Para F6, a leitura do método e do suplemento de Mohanty et al. confirmou o material dos eletrodos e o comparador Nafion 117. A receita imprime duas concentrações de ferricianeto incompatíveis entre si, e falta identificar quais ciclos do comparador foram acompanhados por reposição. Em Cao et al., a aclimatação de duas câmaras e a operação de dessalinização com três câmaras permanecem separadas. A carga e o calendário de reposições descritos para a dessalinização ainda não podem ser atribuídos à fase MFC. Os dois registros seguem pendentes. [Mohanty et al.](https://doi.org/10.3390/membranes11060454) · [Cao et al.](https://doi.org/10.1021/es901950j)
 
-O ponto de retomada está no catálogo com as decisões, localizadores e hashes desta revisão. Há 1.260 publicações com corpo recuperado que aguardam triagem individual. O próximo incremento começa pelos textos identificados com sinais de métodos em F1, F5 e F6. Entre os pendentes já lidos, devem ser verificadas a montagem da fase MFC de Hari et al. e a vinculação do MFC-B de Borole et al. ao católito e à polarização relatados. As checagens reproduzem a contagem de publicações, os hashes do acervo disponível e a transformação de pixels em coordenadas. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
+O ponto de retomada está no catálogo com as decisões, localizadores e hashes publicados. Após o lote B16, há 1.168 publicações com corpo recuperado sem triagem individual. A próxima fila de métodos começa por `10.1021/acsomega.8b02077` (PMC6289545), com sinais de F1. A checagem reproduz a contagem de publicações e verifica os hashes do acervo disponível. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
 
 <a id="meta-cobertura"></a>
 ### 12.13 Conferência dos cinco percentuais
 
 A base permanece com **7.599 publicações**. Para superar 50%, cada etapa precisa alcançar 3.800. A checagem usa contagens inteiras e foi repetida após os lotes. [Cobertura e lacunas](../research/conventional-arms/catalog/coverage.json)
 
-| Etapa | Antes do B15 | B15 | Atual | Percentual | Faltam para superar 50% |
+| Etapa | Antes do B16 | B16 | Atual | Percentual | Faltam para superar 50% |
 |---|---:|---:|---:|---:|---:|
 | Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
 | Texto com identidade confirmada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 464 | +2 | 466 | 6,13% | 3.334 |
-| Métodos completos lidos | 192 | +5 | 197 | 2,59% | 3.603 |
-| Controle admitido em F1–F6 | 46 | +0 | 46 | 0,61% | 3.754 |
+| Triagem ou revisão individual | 466 | +10 | 476 | 6,26% | 3.324 |
+| Métodos completos lidos | 197 | +10 | 207 | 2,72% | 3.593 |
+| Controle admitido em F1–F6 | 46 | +1 | 47 | 0,62% | 3.753 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
 
@@ -1439,6 +1439,22 @@ Os localizadores atuais estão em `catalog/reviews.psv`. As decisões anteriores
 | Triagem individual | 464 | +2 | 466 | 6,13% | 3.334 |
 | Métodos completos lidos | 192 | +5 | 197 | 2,59% | 3.603 |
 | Controle admitido em F1–F6 | 46 | +0 | 46 | 0,61% | 3.754 |
+
+#### Lote B16 · métodos completos e decisão F6 vinculada ao mesmo braço
+
+O lote B16 leu integralmente os métodos e resultados pertinentes de dez publicações com corpo e identidade já confirmados. Os dez arquivos JATS locais foram conferidos byte a byte contra tamanhos e SHA-256 existentes em `methods-expansion/acquisition.psv`; os registros originais, hashes e campos de versão não foram substituídos. Os localizadores e decisões por publicação estão em [reviews.psv](../research/conventional-arms/catalog/reviews.psv). Nenhum corpo ou identidade nova foi contado; as dez publicações avançaram na triagem individual e na leitura integral dos métodos.
+
+Nove artigos foram excluídos das famílias sinalizadas após a leitura dos braços. Os sistemas de duas ou três câmaras, os eletrodos em posição/material diferente, católitos distintos de Pt/AC a ar e os resultados de MES/MDC não foram combinados para compor F1, F2, F3, F4 ou F6. Os motivos e localizadores de método e resultado foram registrados individualmente; os sinais automáticos serviram apenas para priorizar a fila.
+
+Uma unidade MFC de Wu et al. (`10.1016/j.isci.2021.103401`, PMC8605441) foi admitida em F6. O corpo principal descreve uma célula H-type de duas câmaras com Nafion 212, feltro de carbono nu nos dois eletrodos, ferricianeto em tampão fosfato no cátodo, alimentação simulada com 1 g/L de acetato e resistor externo de 2.000 Ω. A Fig. 1B liga a mesma unidade a cerca de 0,79 V durante três operações de batelada, estáveis por 3–4 dias cada. O registro do braço e a observação elétrica ficam ligados em `arms.psv` e `observations.psv`; a fonte não informa o volume nem a frequência exata de renovação por ciclo, e essa lacuna permanece explícita. Não foram atribuídos a F6 os resultados da EESC ou da variante com cátodo a ar. O suplemento Document S1 foi identificado, mas não foi recuperado pela rota PMC consultada, que apresentou verificação reCAPTCHA; a decisão de F6 usa somente métodos e resultados confirmados no corpo principal. [Artigo primário](https://pmc.ncbi.nlm.nih.gov/articles/PMC8605441/) · [Aquisição e hashes](../research/conventional-arms/methods-expansion/acquisition.psv) · [Braço e observação](../research/conventional-arms/catalog/arms.psv)
+
+| Etapa | Antes do B16 | B16 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 466 | +10 | 476 | 6,26% | 3.324 |
+| Métodos completos lidos | 197 | +10 | 207 | 2,72% | 3.593 |
+| Controle admitido em F1–F6 | 46 | +1 | 47 | 0,62% | 3.753 |
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
