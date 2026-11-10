@@ -1095,8 +1095,8 @@ A base permanece com **7.599 publicações**. Para superar 50%, cada etapa preci
 |---|---:|---:|---:|---:|
 | Corpo recuperado | 1.599 | 1.599 | 21,04% | 2.201 |
 | Texto com identidade confirmada | 1.467 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 461 | 461 | 6,07% | 3.339 |
-| Métodos completos lidos | 187 | 187 | 2,46% | 3.613 |
+| Triagem ou revisão individual | 463 | 463 | 6,09% | 3.337 |
+| Métodos completos lidos | 189 | 189 | 2,49% | 3.611 |
 | Controle admitido em F1–F6 | 45 | 45 | 0,59% | 3.755 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
@@ -1112,6 +1112,8 @@ python3 scripts/build-conventional-catalog.py --check --require-over-half
 ```
 
 A checagem verifica a integridade dos arquivos e retorna 2 enquanto alguma etapa estiver em 50% ou menos.
+
+Para trabalhar uma fila sem imprimir as cinco listas de uma vez, `python3 scripts/advance-conventional-catalog.py queue --stage methods --limit 25` mantém o resumo das cinco coberturas e mostra apenas os próximos 25 métodos pendentes. O mesmo filtro aceita `recover`, `confirm`, `screen` e `admission`; a prévia padrão usa campos de identificação e sinais, e `--details` recupera os campos completos.
 
 #### Revisão de textos primários com sinais de F1, F5 e F6
 
@@ -1276,15 +1278,22 @@ A versão editorial aberta de Yang et al. foi consultada na RSC. O método §2.4
 
 As consultas PMC do B06 não produziram corpo recuperável para 28 registros. A rota S3 não encontrou versões públicas para parte das chaves e a Europe PMC devolveu respostas transitórias 500 ou timeout. A rota direta do PDF de Yang et al. retornou 403. Essas tentativas ficam separadas de aquisições bem-sucedidas. A fila atual registra **6.000** itens sem corpo, **134** corpos que ainda precisam de identidade, **1.093** textos identificados sem triagem, **1.305** sem leitura completa dos métodos e **1.132** candidatos pendentes de avaliação para admissão. As filas se sobrepõem quando uma publicação ainda precisa passar por mais de uma etapa.
 
-O comando `scripts/advance-conventional-catalog.py queue` resume as cinco contagens, o denominador fixo e o tamanho de cada fila, com prévias curtas por padrão; `--details` mostra todos os campos. A aquisição PMC começa pelos corpos pendentes de confirmação de identidade e só depois passa ao backlog sem corpo. Cada URL tentada fica registrada. O plano OpenAlex pula publicações com recibos anteriores e URLs exatas já tentadas. `--retry-failed` volta apenas a falhas transitórias; 404 e ausência de versão pública permanecem encerrados para aquela rota. Filas de retry compostas por Europe PMC/BioC são sequenciais; PMC Cloud mantém até quatro trabalhadores. O comando `stage` requer um diretório novo, verifica bytes e hashes, preserva decisões conflitantes e gera uma cópia candidata com o denominador fixo de 7.599.
+O comando `scripts/advance-conventional-catalog.py queue` resume as cinco contagens, o denominador fixo e o tamanho de cada fila, com prévias compactas por padrão; `--details` mostra todos os campos e `--stage` focaliza uma fila. A aquisição PMC começa pelos corpos pendentes de confirmação de identidade e só depois passa ao backlog sem corpo. Cada URL tentada fica registrada. `plan-openalex-pdfs` gera recibos por DOI mesmo quando a API não lista PDF direto; os lotes seguintes pulam publicações com recibos e URLs exatas já tentadas. `acquire-epmc` consulta DOI exato em lote e só tenta JATS quando a Europe PMC declara um PMCID e um link de texto integral aberto. Os recibos de índice preservam hash e versão da resposta, mas não promovem corpo ou identidade. `--retry-failed` volta apenas a falhas transitórias; 404 e ausência de versão pública permanecem encerrados para aquela rota. Filas de retry compostas por Europe PMC/BioC são sequenciais; PMC Cloud mantém até quatro trabalhadores. O comando `stage` requer um diretório novo, verifica bytes e hashes, preserva decisões conflitantes e gera uma cópia candidata com o denominador fixo de 7.599. [API REST do Europe PMC](https://dev.europepmc.org/RestfulWebService) · [Subconjunto aberto](https://dev.europepmc.org/downloads/openaccess)
 
 ```sh
 python3 scripts/advance-conventional-catalog.py queue --limit 10
 python3 scripts/advance-conventional-catalog.py queue --limit 10 --details
+python3 scripts/advance-conventional-catalog.py queue --stage methods --limit 25
 python3 scripts/advance-conventional-catalog.py acquire-pmc /cache-privado/b07-pmc --limit 25
 python3 scripts/advance-conventional-catalog.py acquire-pmc /cache-privado/b07-retry --limit 25 --retry-failed
+python3 scripts/advance-conventional-catalog.py acquire-epmc /cache-privado/b13-epmc --limit 25
+python3 scripts/advance-conventional-catalog.py plan-openalex-pdfs /cache-privado/b13-openalex.psv --limit 25
 python3 scripts/advance-conventional-catalog.py stage /cache-privado/b07-staged \
   --receipts /cache-privado/b07-pmc/receipts.json --reviews /cache-privado/b07-reviews.psv
+python3 scripts/advance-conventional-catalog.py stage /cache-privado/b13-staged \
+  --receipts /cache-privado/b13-epmc/lookup_receipts.json \
+  --receipts /cache-privado/b13-epmc/receipts.json \
+  --receipts /cache-privado/b13-openalex.psv.receipts.json
 python3 scripts/build-conventional-catalog.py --output /cache-privado/b07-staged --check
 python3 scripts/build-conventional-catalog.py --output /cache-privado/b07-staged --check --require-over-half
 ```
@@ -1379,6 +1388,24 @@ Foram lidos integralmente os métodos de duas fontes primárias já recuperadas 
 | Métodos completos lidos | 185 | +2 | 187 | 2,46% | 3.613 |
 | Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
 
+
+#### Lote B13 · triagem integral e fila focada por etapa
+
+O planejador OpenAlex consultou 25 candidatos priorizados e não encontrou rota de PDF aberto direto. A busca Europe PMC por DOI exato encontrou metadados para 17 dos 25 candidatos sem PMCID local, mas nenhum retornou PMCID com texto integral aberto na própria Europe PMC. Os 50 recibos por publicação preservam endpoint, versão, tamanho e hash da resposta: `86717d859d4e5beffd4a03921f31fb2a2b6f5cf44373a31a3da2ad692d0c9537` para OpenAlex e `1bc154f37690e2bf6938e691027ad74ec9e3f7f91742571cb6d8a6b58e905474` para Europe PMC. Não houve download nem promoção de corpo ou identidade; os próximos planejadores pulam os DOIs consultados. Como as rotas PMC já estavam esgotadas para os candidatos ordenados, o lote priorizou dois textos completos já recuperados e com identidade confirmada.
+
+Em `10.3390/biotech15040086` (JATS PMC13702618, 154.857 bytes, SHA-256 `c34914c941b6ca1f900e9fc6b82235587ae66e165a456a87490e8f63cf7e9eb2`), §§2.1–2.7 descrevem uma célula de câmara única com escova anódica, cátodo de tecido e alimentação fed-batch com efluente industrial salino contaminado por fenol. A Fig. 4 mostra as curvas elétricas dessa mesma montagem; nenhum braço corresponde às combinações de eletrodo, aceptor e doador de F1–F6. O registro considera F3/F4, que geraram os sinais de métodos, e exclui a publicação da admissão.
+
+Em `10.3390/ma9110885` (JATS PMC5457253, 50.799 bytes, SHA-256 `0eadbdb8f38a76547ea6ae1adb8d1a6b3381e32214222c89a9352aea82570cbb`), §§2.1–2.4 e Fig. 1 descrevem escova de carbono no ânodo e feltro nu ou modificado no cátodo; o carvão ativado é enchimento do wetland. A alimentação de acetato só inicia a aclimatação. A Fig. 3 e §§3.2–3.3 vinculam a resposta do N-CW-MFC de feltro nu à operação com esgoto oleoso, bombeado continuamente a 17 mL/h (HRT de três dias). As combinações e a alimentação da fase medida não correspondem a F1–F6, então a decisão também é exclusão.
+
+O comando da fila ganhou `--stage`, que preserva as cinco contagens e concentra a prévia na etapa escolhida. Os dois métodos completos adicionaram uma triagem e uma leitura integral cada, sem alterar recuperação, identidade ou admissão.
+
+| Etapa | Antes do B13 | B13 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 461 | +2 | 463 | 6,09% | 3.337 |
+| Métodos completos lidos | 187 | +2 | 189 | 2,49% | 3.611 |
+| Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

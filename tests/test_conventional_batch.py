@@ -30,6 +30,48 @@ class ConventionalBatchTests(unittest.TestCase):
         included["pending"] = "no"
         self.assertEqual([row["key"] for row in BATCH["queues"]([included])["admission"]], ["included"])
 
+    def test_queue_preview_can_focus_one_stage_with_compact_fields(self):
+        rows = [publication("recover", "partial"),
+                publication("screen", "documented_integral"),
+                publication("methods", "documented_integral", "pending", "relevant_sections")]
+        rows[-1]["pmcid"] = "PMC123"
+        result = BATCH["queue_preview"](rows, limit=5, stage="methods")
+        self.assertEqual(set(result), {"methods"})
+        self.assertEqual(result["methods"]["total"], 2)
+        self.assertEqual(set(result["methods"]["next"][0]), {
+            "key", "title", "pmcid", "decisions", "reading_scopes", "machine_signals"})
+
+    def test_epmc_route_requires_exact_doi_and_explicit_open_full_text(self):
+        record = {"doi": "10.1234/study", "pmcid": "PMC123", "isOpenAccess": "Y", "inEPMC": "Y",
+                  "fullTextUrlList": {"fullTextUrl": [
+                      {"site": "Europe_PMC", "availabilityCode": "OA", "documentStyle": "html"}]}}
+        self.assertEqual(BATCH["epmc_fulltext_pmcid"](record, "10.1234/study"), "PMC123")
+        self.assertIsNone(BATCH["epmc_fulltext_pmcid"](record | {"doi": "10.1234/other"}, "10.1234/study"))
+        self.assertIsNone(BATCH["epmc_fulltext_pmcid"](record | {"isOpenAccess": "N"}, "10.1234/study"))
+        closed = record | {"fullTextUrlList": {"fullTextUrl": [
+            {"site": "DOI", "availabilityCode": "S", "documentStyle": "doi"}]}}
+        self.assertIsNone(BATCH["epmc_fulltext_pmcid"](closed, "10.1234/study"))
+
+    def test_index_receipt_preserves_metadata_without_promoting_body_identity(self):
+        receipt = {"key": "study", "route_group": "epmc-index-b13", "state": "unrecovered",
+                   "format": "NR", "access_url": "https://example.org/search", "bytes": "20",
+                   "sha256": "a" * 64, "identity_basis": "index_doi:10.1234/study",
+                   "failure_classes": "epmc_index:no OA full text", "provider": "Europe PMC search",
+                   "source_version": "REST API 6.9", "license": "NR", "host_kind": "index",
+                   "landing_page_url": "NR"}
+        row = publication("study", "body_candidate")
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "lookup.json"
+            BATCH["save"](path, [receipt])
+            BATCH["merge_receipts"]({"study": row}, [], [path])
+        self.assertEqual(row["document"], "body_candidate")
+        invalid = receipt | {"identity_basis": "doi:10.1234/study"}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "lookup.json"
+            BATCH["save"](path, [invalid])
+            with self.assertRaisesRegex(ValueError, "cannot confirm article-body identity"):
+                BATCH["merge_receipts"]({"study": publication("study", "body_candidate")}, [], [path])
+
     def test_review_requires_identity_and_will_not_replace_concurrent_evidence(self):
         review = dict(key="study", families_considered="F6", scope="full_methods", decision="exclude",
                       locator="§2.1 and Fig. 3", reason="Different catholyte", source="https://example.org/study")

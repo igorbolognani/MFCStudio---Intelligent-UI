@@ -74,11 +74,25 @@ def queues(rows):
     }
 
 
-QUEUE_FIELDS = ("key", "doi", "pmcid", "pmid", "title", "year", "document",
-                "decisions", "reading_scopes", "families", "machine_signals")
+QUEUE_FIELDS = ("key", "title", "pmcid", "decisions", "reading_scopes", "machine_signals")
 
 
-def queue_report(directory, limit=10, details=False):
+def queue_preview(rows, limit=10, details=False, stage=None):
+    all_queues = queues(rows)
+    selected = {stage: all_queues[stage]} if stage else all_queues
+    return {
+        name: {
+            "total": len(items),
+            "next": items[:limit] if details else [
+                {field: row[field] for field in QUEUE_FIELDS if field in row}
+                for row in items[:limit]
+            ],
+        }
+        for name, items in selected.items()
+    }
+
+
+def queue_report(directory, limit=10, details=False, stage=None):
     rows = checked_catalogue(directory)
     summary = C["summarize"](list(rows.values()), directory)
     stages = {
@@ -88,16 +102,7 @@ def queue_report(directory, limit=10, details=False):
         "complete_methods_read": "complete_methods_read",
         "admitted_F1_F6": "included_F1_F6",
     }
-    queue_data = {}
-    for name, items in queues(list(rows.values())).items():
-        preview = items[:limit]
-        queue_data[name] = {
-            "total": len(items),
-            "next": preview if details else [
-                {field: row[field] for field in QUEUE_FIELDS if field in row}
-                for row in preview
-            ],
-        }
+    queue_data = queue_preview(list(rows.values()), limit, details, stage)
     return {
         "denominator": summary["unique_publications"],
         "coverage": {
@@ -118,9 +123,9 @@ def pmc_workers(queue, retry_failed=False):
     return 4
 
 
-def download(url):
+def download(url, timeout=20):
     request = Request(url, headers={"User-Agent": "MFC Studio literature catalogue/1.0"})
-    with urlopen(request, timeout=12) as response:
+    with urlopen(request, timeout=timeout) as response:
         data = response.read(JATS_LIMIT + 1)
     if len(data) > JATS_LIMIT:
         raise ValueError("Document exceeds size limit")
@@ -273,15 +278,17 @@ def openalex_candidates(candidates, history):
 
 def plan_openalex_pdfs(directory, output, limit):
     rows = checked_catalogue(directory)
-    if output.exists():
-        raise ValueError(f"Refusing to overwrite an existing route plan: {output}")
+    receipts_path = output.with_name(output.name + ".receipts.json")
+    response_directory = output.parent / (output.stem + "-responses")
+    if output.exists() or receipts_path.exists() or response_directory.exists():
+        raise ValueError(f"Refusing to overwrite an existing route plan or metadata: {output}")
     history = read(directory / "acquisition.psv")
     candidates = [row for row in queues(rows.values())["recover"]
                   if row["open_route_indexed"] == "yes" and
                   any(doi.startswith("10.") for doi in values(row.get("doi")))]
     candidates = openalex_candidates(candidates, history)
     candidates = sorted(candidates, key=rank)[:limit]
-    works = []
+    works, response_records = [], []
     for start in range(0, len(candidates), 40):
         batch = candidates[start:start + 40]
         dois = sorted({doi for row in batch for doi in values(row.get("doi")) if doi.startswith("10.")})
@@ -289,7 +296,9 @@ def plan_openalex_pdfs(directory, output, limit):
             continue
         query = {"filter": "doi:" + "|".join("https://doi.org/" + doi for doi in dois),
                  "select": "doi,best_oa_location,locations", "per_page": "100"}
-        response = json.loads(download(OPENALEX + "?" + urlencode(query)))
+        request_url = OPENALEX + "?" + urlencode(query)
+        response_bytes = download(request_url)
+        response = json.loads(response_bytes)
         actual = response.get("results")
         if not isinstance(actual, list):
             raise ValueError("OpenAlex did not return a works list")
@@ -297,19 +306,48 @@ def plan_openalex_pdfs(directory, output, limit):
         if any(C["doi_key"](work.get("doi")) not in requested for work in actual):
             raise ValueError("OpenAlex returned a work outside the exact DOI batch")
         works.extend(actual)
+        response_records.append({"url": request_url, "raw": response_bytes, "bytes": len(response_bytes),
+                                 "sha256": sha256(response_bytes).hexdigest(),
+                                 "dois": dois, "response": response})
     prefix = re.sub(r"-sources.*$", "", output.stem, flags=re.IGNORECASE)
     prefix = re.sub(r"(^|-)openalex(?=-|$)", "-", prefix, flags=re.IGNORECASE)
     prefix = re.sub(r"[^A-Za-z0-9-]+", "-", prefix).strip("-") or "batch"
-    sources = select_openalex_routes(candidates, works, "openalex-" + prefix)
-    sources = unattempted_routes(sources, history)
+    all_sources = select_openalex_routes(candidates, works, "openalex-" + prefix)
+    sources = unattempted_routes(all_sources, history)
     output.parent.mkdir(parents=True, exist_ok=True)
     columns = ["key", "url", "provider", "license", "version", "host_kind", "landing_page_url",
                "route_group"]
     write(output, columns, sources)
+    response_directory.mkdir(parents=True)
+    response_for_doi = {}
+    for index, record in enumerate(response_records, 1):
+        (response_directory / f"response-{index:03d}.json").write_bytes(record["raw"])
+        for doi in record["dois"]:
+            response_for_doi[C["doi_key"](doi)] = record
+    routes_by_key = {key: [] for key in (row["key"] for row in candidates)}
+    for route in all_sources:
+        routes_by_key.setdefault(route["key"], []).append(route)
+    metadata_receipts = []
+    for row in candidates:
+        doi = sorted(value for value in values(row.get("doi")) if value.startswith("10."))[0]
+        record = response_for_doi[C["doi_key"](doi)]
+        matched = any(C["doi_key"](work.get("doi")) == C["doi_key"](doi) for work in works)
+        metadata_receipts.append({
+            "key": row["key"], "route_group": "openalex-index-" + prefix,
+            "state": "unrecovered", "format": "NR", "access_url": record["url"],
+            "bytes": str(record["bytes"]), "sha256": record["sha256"],
+            "identity_basis": "index_doi:" + C["doi_key"](doi) if matched else "NR",
+            "failure_classes": ("openalex_index: direct OA PDF route listed" if routes_by_key.get(row["key"])
+                                else "openalex_index: no direct OA PDF route listed"),
+            "provider": "OpenAlex", "source_version": "OpenAlex Works API",
+            "license": "NR", "host_kind": "index", "landing_page_url": "NR",
+        })
+    save(receipts_path, metadata_receipts)
     resolved = len({item["key"] for item in sources})
     print(json.dumps({"candidate_publications": len(candidates), "direct_oa_pdf_routes": len(sources),
                       "publications_with_routes": resolved, "unresolved": len(candidates) - resolved,
-                      "source_file": str(output)},
+                      "source_file": str(output), "lookup_receipts": str(receipts_path),
+                      "response_directory": str(response_directory)},
                      ensure_ascii=False))
 
 
@@ -373,7 +411,7 @@ def fetch_pmc(row, batch, group, identity):
         providers_attempted.append(provider)
         url = (EPMC + pmc + "/fullTextXML" if provider == "epmc" else
                BIOC + pmc + "/unicode" if provider == "bioc" else PMC_BUCKET)
-        source_version = "NR"
+        source_version = row.get("source_version", "NR")
         try:
             if provider == "cloud":
                 cloud = cloud_route(pmc, values(row["doi"]))
@@ -411,6 +449,110 @@ def fetch_pmc(row, batch, group, identity):
             record["provider"] = " ".join(providers_attempted) or "NR"
     save(receipt, record)
     return record
+
+
+def epmc_fulltext_pmcid(result, doi):
+    """Return a PMCID only when an exact DOI has an explicit Europe PMC OA full-text link."""
+    if C["doi_key"](result.get("doi")) != C["doi_key"](doi):
+        return None
+    pmcid = (result.get("pmcid") or "").upper()
+    if (not re.fullmatch(r"PMC\d+", pmcid) or result.get("isOpenAccess") != "Y" or
+            result.get("inEPMC") != "Y"):
+        return None
+    links = (result.get("fullTextUrlList") or {}).get("fullTextUrl", [])
+    if isinstance(links, dict):
+        links = [links]
+    if not any(link.get("site") == "Europe_PMC" and link.get("availabilityCode") == "OA" and
+               link.get("documentStyle") in {"html", "pdf", "xml"} for link in links):
+        return None
+    return pmcid
+
+
+def acquire_epmc(directory, batch, limit):
+    """Resolve missing PMCIDs by exact DOI in Europe PMC, then acquire only declared OA full text."""
+    rows = checked_catalogue(directory)
+    if batch.exists() and any(batch.iterdir()):
+        raise ValueError(f"Refusing to overwrite an existing batch: {batch}")
+    group_name = batch.name
+    if not re.fullmatch(r"[A-Za-z0-9-]+", group_name):
+        raise ValueError("Use letters, digits and hyphens in the batch directory name")
+    history = read(directory / "acquisition.psv")
+    indexed = {item["key"] for item in history
+               if item["route_group"].startswith("epmc-index-")}
+    candidates = [row for row in queues(rows.values())["recover"]
+                  if row["pmcid"] == "NR" and row["key"] not in indexed and
+                  any(doi.startswith("10.") for doi in values(row["doi"]))]
+    candidates = candidates[:limit]
+    if not candidates:
+        batch.mkdir(parents=True, exist_ok=True)
+        save(batch / "lookup_receipts.json", [])
+        save(batch / "queue.json", [])
+        save(batch / "receipts.json", [])
+        print(json.dumps({"candidate_publications": 0, "open_fulltext_routes": 0,
+                          "body_recovered": 0, "batch_directory": str(batch)}))
+        return
+
+    doi_by_key = {row["key"]: sorted(doi for doi in values(row["doi"]) if doi.startswith("10."))[0]
+                  for row in candidates}
+    unique_dois = list(dict.fromkeys(doi_by_key[row["key"]] for row in candidates))
+    query = " OR ".join(f"DOI:{doi}" for doi in unique_dois)
+    url = EPMC + "search?" + urlencode({"query": query, "format": "json", "resultType": "core",
+                                       "pageSize": str(max(25, len(unique_dois)))})
+    response_bytes = download(url, timeout=45)
+    response = json.loads(response_bytes)
+    results = response.get("resultList", {}).get("result")
+    if not isinstance(results, list):
+        raise ValueError("Europe PMC did not return an article result list")
+    requested = {C["doi_key"](doi): doi for doi in unique_dois}
+    found = {}
+    for result in results:
+        doi = C["doi_key"](result.get("doi"))
+        if doi not in requested:
+            raise ValueError(f"Europe PMC returned an article outside the exact DOI batch: {doi}")
+        if doi not in found or epmc_fulltext_pmcid(result, requested[doi]):
+            found[doi] = result
+
+    batch.mkdir(parents=True, exist_ok=True)
+    (batch / "epmc-search-response.json").write_bytes(response_bytes)
+    version = "Europe PMC REST API " + str(response.get("version", "NR"))
+    digest = sha256(response_bytes).hexdigest()
+    lookup_records, fetch_queue = [], []
+    for row in candidates:
+        doi = doi_by_key[row["key"]]
+        result = found.get(C["doi_key"](doi))
+        pmcid = epmc_fulltext_pmcid(result, doi) if result else None
+        landing = (f"https://europepmc.org/articles/{pmcid}" if pmcid else "NR")
+        reason = (f"epmc_index: exact DOI matched OA full text {pmcid}; body receipt is separate"
+                  if pmcid else
+                  "epmc_index: no exact DOI record with an OA Europe PMC full-text PMCID")
+        lookup_records.append({
+            "key": row["key"], "route_group": f"epmc-index-{group_name}",
+            "state": "unrecovered", "format": "NR", "access_url": url,
+            "bytes": str(len(response_bytes)), "sha256": digest,
+            "identity_basis": f"index_doi:{doi}" if result else "NR",
+            "failure_classes": reason, "provider": "Europe PMC search",
+            "source_version": version, "license": "NR", "host_kind": "index",
+            "landing_page_url": landing,
+        })
+        if pmcid:
+            fetch_queue.append({"key": row["key"], "doi": doi, "pmcid": pmcid,
+                                "title": row["title"], "providers": ["epmc"],
+                                "source_version": version})
+
+    save(batch / "lookup_receipts.json", lookup_records)
+    save(batch / "queue.json", fetch_queue)
+    identity = runpy.run_path(str(HERE / "index-conventional-catalog-documents.py"))["article_identity"]
+    with ThreadPoolExecutor(max_workers=pmc_workers(fetch_queue, retry_failed=True)) as pool:
+        receipts = list(pool.map(lambda item: fetch_pmc(item, batch, "pmc-epmc-" + group_name, identity),
+                                 fetch_queue))
+    save(batch / "receipts.json", receipts)
+    print(json.dumps({"candidate_publications": len(candidates),
+                      "exact_doi_matches": sum(C["doi_key"](doi) in found for doi in unique_dois),
+                      "open_fulltext_routes": len(fetch_queue),
+                      "identity_verified": sum(item["state"] == "identity_verified" for item in receipts),
+                      "body_candidates": sum(item["state"] == "body_candidate" for item in receipts),
+                      "lookup_response_sha256": digest, "batch_directory": str(batch)},
+                     ensure_ascii=False))
 
 
 def acquire(directory, batch, limit, retry_failed=False):
@@ -550,6 +692,14 @@ def merge_receipts(rows, ledger, receipt_files):
                 continue
             if item["state"] not in STATES or not re.fullmatch(r"[a-zA-Z0-9-]+", item["route_group"]):
                 raise ValueError(f"Invalid acquisition receipt: {key}")
+            if item.get("host_kind") == "index":
+                basis = item.get("identity_basis", "NR")
+                if basis not in {"", "NR"} and not basis.startswith("index_doi:"):
+                    raise ValueError(f"Metadata lookup cannot confirm article-body identity: {key}")
+                if (item["state"] != "unrecovered" or item.get("format") != "NR" or
+                        not str(item.get("bytes", "")).isdecimal() or
+                        not re.fullmatch(r"[a-f0-9]{64}", item.get("sha256", ""))):
+                    raise ValueError(f"Metadata lookup cannot promote body or omit response hash: {key}")
             if item["state"] != "unrecovered":
                 original = original_path(path.parent, row["key"], item["format"])
                 if (not item["access_url"].startswith("https://") or original.stat().st_size != int(item["bytes"])
@@ -726,11 +876,17 @@ def main():
     queue = commands.add_parser("queue")
     queue.add_argument("--limit", type=int, default=10)
     queue.add_argument("--details", action="store_true", help="Print every field for each queued record")
+    queue.add_argument("--stage", choices=("recover", "confirm", "screen", "methods", "admission"),
+                       help="Show one queue and retain the five-stage coverage summary")
     pmc = commands.add_parser("acquire-pmc")
     pmc.add_argument("batch", type=Path)
     pmc.add_argument("--limit", type=int, default=30)
     pmc.add_argument("--retry-failed", action="store_true",
                      help="Retry transient PMC/Europe PMC failures; permanent 404/no-version routes remain skipped")
+    epmc = commands.add_parser("acquire-epmc")
+    epmc.add_argument("batch", type=Path)
+    epmc.add_argument("--limit", type=int, default=25,
+                      help="Resolve this many missing PMCIDs in one exact-DOI Europe PMC query")
     pdf = commands.add_parser("acquire-pdfs")
     pdf.add_argument("batch", type=Path)
     pdf.add_argument("sources", type=Path, help="PSV with key and url columns")
@@ -747,10 +903,12 @@ def main():
     if getattr(args, "limit", 1) < 1:
         parser.error("--limit must be positive")
     if args.command == "queue":
-        print(json.dumps(queue_report(args.catalog, args.limit, args.details),
+        print(json.dumps(queue_report(args.catalog, args.limit, args.details, args.stage),
                          ensure_ascii=False, indent=2))
     elif args.command == "acquire-pmc":
         acquire(args.catalog, args.batch, args.limit, args.retry_failed)
+    elif args.command == "acquire-epmc":
+        acquire_epmc(args.catalog, args.batch, args.limit)
     elif args.command == "acquire-pdfs":
         acquire_pdfs(args.catalog, args.batch, args.sources)
     elif args.command == "plan-openalex-pdfs":
