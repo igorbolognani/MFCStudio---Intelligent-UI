@@ -1310,6 +1310,20 @@ O B08 seleciona versões do PMC pelo manifesto JSON de cada versão, confere PMC
 
 As falhas que apareceram no Actions tinham duas causas. O run #30 parou na suíte `unittest`: dois módulos importavam `lxml`, que não estava instalado; o workflow agora fixa Python 3.12 e `lxml==6.1.1`. O run #31 parou antes dos testes, em `setup-node`, por causa da detecção automática de cache pnpm antes de o pnpm estar configurado; `package-manager-cache: false` remove essa dependência implícita. O run #32 e os lotes B05 e B06 passaram integralmente depois dos ajustes. [Workflow B06](https://github.com/igorbolognani/MFCStudio---Intelligent-UI/actions/runs/42730189761) · [Workflow de verificação](../.github/workflows/verify.yml)
 
+#### Lote B08 · Falhas de rota e triagem integral microfluídica
+
+O B08 tentou 25 registros PMC sem obter um novo corpo. Na rota BioC, 24 respostas eram páginas de erro sem artigo no subconjunto aberto e uma retornou HTTP 429, classificada como transitória. O plano OpenAlex localizou cinco PDFs de acesso aberto; as tentativas produziram duas respostas de autorização (401/403) e três respostas que não eram PDFs verificáveis. Nenhuma dessas tentativas alterou as contagens de corpo ou identidade. O manifesto de aquisição preserva por rota URL, provedor, versão, licença, tipo de hospedagem e SHA-256 quando houve bytes de artigo. O plano executado ainda selecionava apenas a primeira URL por publicação; o planejador agora mantém alternativas distintas e a aquisição tenta-as em ordem até confirmar corpo e identidade.
+
+A leitura integral de Jiang et al. (`10.1038/srep41208`, PMCID `PMC5264610`) confirmou um dispositivo microfluídico de duas câmaras, graphene foam no ânodo, tecido de carbono no cátodo, Nafion 117, lactato e ferricianeto. A configuração não corresponde às famílias F1–F6. A decisão de exclusão aponta para todos os métodos experimentais e Fig. 2; o JATS primário tem 122.178 bytes e SHA-256 `0c98de373679e4e9367eaa8032dcb9e5cf97c2ce774ac6b1221cade2f057615f`. [Artigo e métodos](https://pmc.ncbi.nlm.nih.gov/articles/PMC5264610/) · [Aquisição por método](../research/conventional-arms/methods-expansion/acquisition.psv) · [Triagem](../research/conventional-arms/catalog/reviews.psv)
+
+| Etapa | Antes do B08 | B08 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 457 | +1 | 458 | 6,03% | 3.342 |
+| Métodos completos lidos | 183 | +1 | 184 | 2,42% | 3.616 |
+| Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
+
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
