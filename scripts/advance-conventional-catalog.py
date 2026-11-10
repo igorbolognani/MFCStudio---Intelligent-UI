@@ -3,10 +3,10 @@ from argparse import ArgumentParser
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from csv import DictReader
-from hashlib import sha256
+from hashlib import md5, sha256
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from urllib.parse import urlencode, urlsplit
+from urllib.parse import parse_qs, urlencode, urlsplit
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
 import json
@@ -60,6 +60,24 @@ def rank(row):
             int(prior) if prior.isdecimal() else float("inf"), row["key"])
 
 
+def stage_rank(stage, row):
+    """Prioritize unresolved, high-yield methods before already excluded papers."""
+    if stage == "methods":
+        decisions = values(row["decisions"])
+        if "unreviewed" in decisions:
+            state_priority = 0
+        elif "pending" in decisions:
+            state_priority = 1
+        elif "confirm_existing_control" in decisions or "included_in_survey" in decisions:
+            state_priority = 2
+        elif "exclude" in decisions:
+            state_priority = 3
+        else:
+            state_priority = 4
+        return (state_priority, *rank(row))
+    return rank(row)
+
+
 def queues(rows):
     ordered = sorted(rows, key=rank)
     confirmed = [row for row in ordered if row["document"] == "documented_integral"]
@@ -83,9 +101,9 @@ def queue_preview(rows, limit=10, details=False, stage=None):
     return {
         name: {
             "total": len(items),
-            "next": items[:limit] if details else [
+            "next": sorted(items, key=lambda row: stage_rank(name, row))[:limit] if details else [
                 {field: row[field] for field in QUEUE_FIELDS if field in row}
-                for row in items[:limit]
+                for row in sorted(items, key=lambda row: stage_rank(name, row))[:limit]
             ],
         }
         for name, items in selected.items()
@@ -154,16 +172,32 @@ def cloud_route(pmc, expected_dois=()):
         url = metadata.get("xml_url")
         if not isinstance(url, str) or not url.startswith(PMC_BUCKET):
             continue
+        digests = parse_qs(urlsplit(url).query).get("md5", [])
+        if len(digests) != 1 or not re.fullmatch(r"[a-fA-F0-9]{32}", digests[0]):
+            continue
         version = metadata.get("version")
         version = int(version) if str(version).isdecimal() else int(stem.rsplit(".", 1)[1])
         manuscript = str(metadata.get("is_manuscript") or "").casefold()
         rank = {"no": 0, "false": 0, "": 1, "yes": 2, "true": 2}.get(manuscript, 1)
-        candidates.append((rank, -version, url, version, manuscript, metadata_doi))
+        candidates.append((rank, -version, url, version, manuscript, metadata_doi, digests[0].lower()))
     if not candidates:
         raise ValueError("No PMC Cloud version matches expected DOI and PMCID")
     candidates.sort()
-    _, _, url, version, manuscript, doi = candidates[0]
-    return {"url": url, "version": str(version), "is_manuscript": manuscript or "NR", "doi": doi}
+    _, _, url, version, manuscript, doi, source_md5 = candidates[0]
+    return {"url": url, "version": str(version), "is_manuscript": manuscript or "NR",
+            "doi": doi, "source_md5": source_md5}
+
+
+def verify_pmc_source_md5(data, url):
+    """Verify the upstream MD5 attached to PMC AWS article object URLs."""
+    digests = parse_qs(urlsplit(url).query).get("md5", [])
+    if len(digests) != 1 or not re.fullmatch(r"[a-fA-F0-9]{32}", digests[0]):
+        raise ValueError("PMC AWS object URL lacks a valid upstream MD5")
+    expected = digests[0].lower()
+    actual = md5(data, usedforsecurity=False).hexdigest()
+    if actual != expected:
+        raise ValueError("PMC AWS object MD5 does not match its metadata URL")
+    return expected
 
 
 def cloud_url(pmc, expected_dois=()):
@@ -403,7 +437,7 @@ def fetch_pmc(row, batch, group, identity):
         return record
     record = dict(key=row["key"], route_group=group, state="unrecovered", format="NR",
                   access_url="NR", bytes="NR", sha256="NR", identity_basis="NR", failure_classes="NR",
-                  provider="NR", source_version="NR", license="NR", host_kind="NR",
+                  provider="NR", source_version="NR", source_digest="NR", license="NR", host_kind="NR",
                   landing_page_url="NR")
     failures = []
     providers_attempted = []
@@ -418,11 +452,13 @@ def fetch_pmc(row, batch, group, identity):
                 url = cloud["url"]
                 source_version = f"PMC OA version {cloud['version']} (is_manuscript={cloud['is_manuscript']})"
             data = download(url)
+            source_digest = verify_pmc_source_md5(data, url) if provider == "cloud" else "NR"
             if provider == "bioc":
                 text, state, basis = bioc_article(data, row, pmc)
                 original_path(batch, row["key"], "bioc_xml").write_bytes(data)
                 record.update(state=state, format="bioc_xml", access_url=url, bytes=str(len(data)),
-                              sha256=sha256(data).hexdigest(), identity_basis=basis, provider=provider)
+                              sha256=sha256(data).hexdigest(), identity_basis=basis, provider=provider,
+                              source_digest=source_digest)
                 break
             article = ET.fromstring(data)
             body = article.find("body")
@@ -438,7 +474,7 @@ def fetch_pmc(row, batch, group, identity):
             original_path(batch, row["key"], "xml").write_bytes(data)
             record.update(state=state, format="xml", access_url=url, bytes=str(len(data)),
                           sha256=sha256(data).hexdigest(), identity_basis=basis or "NR",
-                          provider=provider, source_version=source_version)
+                          provider=provider, source_version=source_version, source_digest=source_digest)
             break
         except (OSError, ValueError, ET.ParseError) as error:
             failures.append(f"{provider}: {error}")
@@ -797,17 +833,27 @@ def merge_arm_evidence(rows, arm_ledger, observation_ledger, arm_files, observat
             arm_columns, observation_columns)
 
 
-def merge_reviews(rows, ledger, review_files, registered_families=None):
+REVIEW_HISTORY_COLUMNS = ("key", "revision", "scope", "decision", "families_considered",
+                          "locator", "reason", "source", "superseded_by_revision", "amended_in")
+
+
+def merge_reviews(rows, ledger, review_files, registered_families=None,
+                  allow_amend=False, history=None, amendment_batch="NR"):
     registered_families = registered_families or {}
+    history = history if history is not None else []
     known = {review["key"]: review for review in ledger}
     registered_arms = None
     for path in review_files:
         for item in read(path):
             row = rows[item["key"]]
-            if item["key"] in known:
-                if known[item["key"]] != item:
+            prior = known.get(item["key"])
+            if prior is not None:
+                if prior == item:
+                    continue
+                if not allow_amend:
                     raise ValueError(f"Review already exists with different evidence: {item['key']}")
-                continue
+                if prior["decision"] == "confirm_existing_control":
+                    raise ValueError(f"An admitted control amendment needs a superseding arm decision: {item['key']}")
             families = values(item["families_considered"])
             if (row["document"] != "documented_integral" or
                     item["scope"] not in C["FULL_METHODS"] | {"relevant_sections"} or
@@ -827,6 +873,19 @@ def merge_reviews(rows, ledger, review_files, registered_families=None):
                     raise ValueError(f"Control requires a registered arm and full methods: {item['key']}")
                 row["families"] = " ".join(sorted(values(row["families"]) | families))
                 labels.add("admitted_F1_F6")
+            if prior is not None:
+                revisions = [int(entry["revision"]) for entry in history if entry["key"] == item["key"]]
+                revision = max(revisions, default=0) + 1
+                history.append({
+                    "key": item["key"], "revision": str(revision), "scope": prior["scope"],
+                    "decision": prior["decision"], "families_considered": prior["families_considered"],
+                    "locator": prior["locator"], "reason": prior["reason"], "source": prior["source"],
+                    "superseded_by_revision": str(revision + 1), "amended_in": amendment_batch,
+                })
+                labels -= {"pending", "exclude", "confirm_existing_control", "admitted_F1_F6", "unreviewed"}
+                labels.add(item["decision"])
+                if item["decision"] == "confirm_existing_control":
+                    labels.add("admitted_F1_F6")
             row.update(decisions=" ".join(sorted(labels)), pending="yes" if "pending" in labels else "no",
                        reading_scopes=" ".join(sorted(values(row["reading_scopes"]) | {item["scope"]})),
                        evidence=" ".join(sorted(values(row["evidence"]) | {"catalog_individual_review"})))
@@ -834,7 +893,8 @@ def merge_reviews(rows, ledger, review_files, registered_families=None):
     return list(known.values())
 
 
-def stage(directory, output, receipt_files, review_files, arm_files, observation_files):
+def stage(directory, output, receipt_files, review_files, arm_files, observation_files,
+          amend_reviews=False):
     rows = checked_catalogue(directory)
     if output.exists() or not (receipt_files or review_files or arm_files):
         raise ValueError("Use a new staging directory and provide receipts or reviews")
@@ -844,13 +904,17 @@ def stage(directory, output, receipt_files, review_files, arm_files, observation
     arms, observations, arm_families, arm_columns, observation_columns = merge_arm_evidence(
         rows, existing_arms, existing_observations, arm_files, observation_files
     )
-    reviews = merge_reviews(rows, read(directory / "reviews.psv"), review_files, arm_families)
+    review_history_path = directory / "review-history.psv"
+    review_history = read(review_history_path) if review_history_path.exists() else []
+    reviews = merge_reviews(rows, read(directory / "reviews.psv"), review_files, arm_families,
+                            allow_amend=amend_reviews, history=review_history,
+                            amendment_batch=output.name)
     output.parent.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(dir=output.parent) as temp:
         draft = Path(temp) / "catalog"
         shutil.copytree(directory, draft)
         acquisition_columns = list(acquisitions[0])
-        source_metadata = ("provider", "source_version", "license", "host_kind", "landing_page_url")
+        source_metadata = ("provider", "source_version", "source_digest", "license", "host_kind", "landing_page_url")
         acquisition_columns.extend(name for name in source_metadata
                                    if any(name in item for item in acquisitions) and name not in acquisition_columns)
         for item in acquisitions:
@@ -859,6 +923,8 @@ def stage(directory, output, receipt_files, review_files, arm_files, observation
                     item.setdefault(name, "NR")
         write(draft / "acquisition.psv", acquisition_columns, acquisitions)
         write(draft / "reviews.psv", list(reviews[0]), reviews)
+        if review_history:
+            write(draft / "review-history.psv", REVIEW_HISTORY_COLUMNS, review_history)
         if arms:
             write(draft / "arms.psv", arm_columns, arms)
             write(draft / "observations.psv", observation_columns, observations)
@@ -899,6 +965,8 @@ def main():
     apply.add_argument("--reviews", type=Path, action="append", default=[])
     apply.add_argument("--arms", type=Path, action="append", default=[])
     apply.add_argument("--observations", type=Path, action="append", default=[])
+    apply.add_argument("--amend-reviews", action="store_true",
+                       help="Version prior review evidence before replacing its current decision")
     args = parser.parse_args()
     if getattr(args, "limit", 1) < 1:
         parser.error("--limit must be positive")
@@ -914,7 +982,8 @@ def main():
     elif args.command == "plan-openalex-pdfs":
         plan_openalex_pdfs(args.catalog, args.output, args.limit)
     else:
-        stage(args.catalog, args.output, args.receipts, args.reviews, args.arms, args.observations)
+        stage(args.catalog, args.output, args.receipts, args.reviews, args.arms, args.observations,
+              amend_reviews=args.amend_reviews)
 
 
 if __name__ == "__main__":

@@ -34,12 +34,20 @@ class ConventionalBatchTests(unittest.TestCase):
         rows = [publication("recover", "partial"),
                 publication("screen", "documented_integral"),
                 publication("methods", "documented_integral", "pending", "relevant_sections")]
-        rows[-1]["pmcid"] = "PMC123"
+        rows[1]["pmcid"] = "PMC123"
         result = BATCH["queue_preview"](rows, limit=5, stage="methods")
         self.assertEqual(set(result), {"methods"})
         self.assertEqual(result["methods"]["total"], 2)
         self.assertEqual(set(result["methods"]["next"][0]), {
             "key", "title", "pmcid", "decisions", "reading_scopes", "machine_signals"})
+
+    def test_method_queue_prioritizes_unresolved_decisions_over_exclusions(self):
+        excluded = publication("excluded", "documented_integral", "exclude", "relevant_sections")
+        pending = publication("pending", "documented_integral", "pending", "relevant_sections")
+        unreviewed = publication("unreviewed", "documented_integral", "unreviewed", "NR")
+        result = BATCH["queue_preview"]([excluded, pending, unreviewed], stage="methods", limit=3)
+        self.assertEqual([row["key"] for row in result["methods"]["next"]],
+                         ["unreviewed", "pending", "excluded"])
 
     def test_epmc_route_requires_exact_doi_and_explicit_open_full_text(self):
         record = {"doi": "10.1234/study", "pmcid": "PMC123", "isOpenAccess": "Y", "inEPMC": "Y",
@@ -87,6 +95,30 @@ class ConventionalBatchTests(unittest.TestCase):
             different = review | {"locator": "Supplementary Table 1"}
             with self.assertRaisesRegex(ValueError, "different evidence"):
                 BATCH["merge_reviews"](confirmed, [different], [path])
+
+    def test_review_amendment_versions_prior_decision_and_clears_pending_state(self):
+        prior = dict(key="study", families_considered="F3 F4", scope="relevant_sections", decision="pending",
+                     locator="Methods, cathode preparation", reason="Feed cycle not yet resolved",
+                     source="https://example.org/study")
+        revised = prior | {"families_considered": "F3", "scope": "full_methods", "decision": "exclude",
+                           "locator": "§§2.1–2.9 and Figs. 5–6",
+                           "reason": "The full method rules out a same-arm fed-batch F3/F4 control."}
+        row = publication("study", "documented_integral", "pending", "relevant_sections")
+        history = []
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "review.psv"
+            BATCH["write"](path, list(revised), [revised])
+            with self.assertRaisesRegex(ValueError, "different evidence"):
+                BATCH["merge_reviews"]({"study": row.copy()}, [prior], [path])
+            merged = BATCH["merge_reviews"]({"study": row}, [prior], [path], allow_amend=True,
+                                             history=history, amendment_batch="B14")
+        self.assertEqual(merged, [revised])
+        self.assertEqual(row["decisions"], "exclude")
+        self.assertEqual(row["pending"], "no")
+        self.assertEqual(history[0]["decision"], "pending")
+        self.assertEqual(history[0]["revision"], "1")
+        self.assertEqual(history[0]["superseded_by_revision"], "2")
+        self.assertEqual(history[0]["amended_in"], "B14")
 
     def test_changed_original_cannot_promote_body_state(self):
         row = publication("study", "body_candidate")
@@ -136,9 +168,9 @@ class ConventionalBatchTests(unittest.TestCase):
                    b"<CommonPrefixes><Prefix>PMC123.2/</Prefix></CommonPrefixes></ListBucketResult>")
         metadata = {
             "PMC123.1": {"pmcid": "PMC123", "doi": "10.1234/study", "version": 1,
-                         "is_manuscript": "no", "xml_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC123.1/PMC123.1.xml?md5=pub"},
+                         "is_manuscript": "no", "xml_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC123.1/PMC123.1.xml?md5=" + "a" * 32},
             "PMC123.2": {"pmcid": "PMC123", "doi": "10.1234/study", "version": 2,
-                         "is_manuscript": "yes", "xml_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC123.2/PMC123.2.xml?md5=ms"},
+                         "is_manuscript": "yes", "xml_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC123.2/PMC123.2.xml?md5=" + "b" * 32},
         }
         def fake_download(url):
             if "list-type=2" in url:
@@ -151,6 +183,18 @@ class ConventionalBatchTests(unittest.TestCase):
             source = BATCH["cloud_route"]("PMC123", ["10.1234/study"])
         self.assertIn("PMC123.1/PMC123.1.xml", selected)
         self.assertEqual((source["version"], source["is_manuscript"]), ("1", "no"))
+        self.assertEqual(source["source_md5"], "a" * 32)
+
+    def test_pmc_aws_source_digest_is_checked_before_acceptance(self):
+        import hashlib
+        data = b"versioned JATS body"
+        digest = hashlib.md5(data, usedforsecurity=False).hexdigest()
+        url = "https://pmc-oa-opendata.s3.amazonaws.com/PMC123.1/PMC123.1.xml?md5=" + digest
+        self.assertEqual(BATCH["verify_pmc_source_md5"](data, url), digest)
+        with self.assertRaisesRegex(ValueError, "does not match"):
+            BATCH["verify_pmc_source_md5"](data + b"x", url)
+        with self.assertRaisesRegex(ValueError, "lacks a valid"):
+            BATCH["verify_pmc_source_md5"](data, url.split("?", 1)[0])
 
     def test_bioc_fallback_requires_full_body_and_confirms_identity(self):
         import xml.etree.ElementTree as ET

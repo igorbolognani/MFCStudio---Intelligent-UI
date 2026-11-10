@@ -5,12 +5,12 @@
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
     "body_recovered": 1599,
-    "complete_methods_read": 189,
+    "complete_methods_read": 192,
     "documented_integral": 1467,
-    "included_F1_F6": 45,
-    "individual_screening": 463,
+    "included_F1_F6": 46,
+    "individual_screening": 464,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1181,
+    "with_body_without_screening": 1180,
     "with_open_route_without_body": 1227,
     "without_persistent_identifier": 293,
     "without_title": 0
@@ -19,12 +19,12 @@
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
     "body_recovered": 21.04,
-    "complete_methods_read": 2.49,
+    "complete_methods_read": 2.53,
     "documented_integral": 19.31,
-    "included_F1_F6": 0.59,
-    "individual_screening": 6.09,
+    "included_F1_F6": 0.61,
+    "individual_screening": 6.11,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 15.54,
+    "with_body_without_screening": 15.53,
     "with_open_route_without_body": 16.15,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
@@ -33,9 +33,9 @@
   "remaining_to_over_half": {
     "body_recovered": 2201,
     "documented_integral": 2333,
-    "individual_screening": 3337,
-    "complete_methods_read": 3611,
-    "included_F1_F6": 3755
+    "individual_screening": 3336,
+    "complete_methods_read": 3608,
+    "included_F1_F6": 3754
   },
   "access_states": {
     "body_candidate": 132,
@@ -47,33 +47,34 @@
   "families": {
     "F1": 6,
     "F2": 9,
-    "F3": 10,
+    "F3": 11,
     "F4": 15,
     "F5": 5,
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "4247908a6a66cb74c25e839c9b0559f6bc67d1da360345e4481c8a1218851828",
-    "acquisition.psv": "2328cf3a073ea5d08288ce3a0737339ae16ea3eca67f8ec68eb3db09706617b1",
-    "reviews.psv": "d45fe2e22e25787375a231e1d5b00f2dd566b0590192f4428853e179d0664bf9",
+    "publications.psv.gz": "e097a3abda03bad5762a5b35402e8c579d5e4fc98b77b570f119e2476645be63",
+    "acquisition.psv": "1ed44f418522623d09b44bc2542a84c514318bcd862679c312fd22cecab8a95c",
+    "reviews.psv": "d5af4f073854bece324001a4bff7cf9a414968637b7d76a9214dc149fb7af6a3",
+    "review-history.psv": "2d815a237f855c85721692fc13b861e4c3b9d4fe04cafdc0da535f59a419b786",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
     "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c",
-    "arms.psv": "16ee0e4dac2cbd563e59517dd9e99f6d1cf2a18358011177890eb2433d4fb110",
-    "observations.psv": "f7d36650729066f3b3707836055fc8ca95412d1ed82b88673498a3c7587bdae7"
+    "arms.psv": "12b3204cc3379f687af9f9281b0c92554074daad2946ec55ae06e01e8373c147",
+    "observations.psv": "8424419dfc9ad6bdf6065087accd3cd087194edc081e78b1d1484f1930b0fefa"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
     "identity_verified": 631,
     "no_route_tested": 123,
     "preview_only": 11,
-    "unrecovered": 1404,
+    "unrecovered": 1407,
     "wrong_document": 1
   },
   "acquisition_unique_attempted": 1728,
   "catalog_review_decisions": {
-    "confirm_existing_control": 9,
-    "exclude": 115,
-    "pending": 21
+    "confirm_existing_control": 10,
+    "exclude": 117,
+    "pending": 19
   }
 }

@@ -482,7 +482,7 @@ def summarize(rows, output):
                "access_states": dict(sorted(Counter(row["document"] for row in rows).items())),
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
-    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv",
+    for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "review-history.psv", "versions.psv",
                  "document-conflicts.psv", "review-attachments.psv", "arms.psv", "observations.psv"):
         path = output / name
         if path.exists():
@@ -508,6 +508,21 @@ def summarize(rows, output):
         if len(reviews) != len({canonical(row) for row in reviews}):
             raise ValueError("Repeated review identity")
         summary["catalog_review_decisions"] = dict(sorted(Counter(row["decision"] for row in reviews).items()))
+    if "review-history.psv" in summary["hashes"]:
+        history = read(output / "review-history.psv")
+        current = {canonical(row) for row in read(output / "reviews.psv")}
+        versions = Counter()
+        for entry in history:
+            key = canonical(entry)
+            revision = entry["revision"]
+            if (key not in current or not revision.isdecimal() or
+                    int(revision) != versions[key] + 1 or
+                    entry["superseded_by_revision"] != str(int(revision) + 1) or
+                    entry["decision"] not in {"exclude", "pending", "confirm_existing_control"} or
+                    not entry["locator"] or not entry["reason"] or
+                    not entry["source"].startswith("https://") or not entry["amended_in"]):
+                raise ValueError(f"Invalid review history: {entry.get('key')}")
+            versions[key] += 1
     return summary
 
 

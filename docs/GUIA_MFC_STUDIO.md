@@ -1095,9 +1095,9 @@ A base permanece com **7.599 publicações**. Para superar 50%, cada etapa preci
 |---|---:|---:|---:|---:|
 | Corpo recuperado | 1.599 | 1.599 | 21,04% | 2.201 |
 | Texto com identidade confirmada | 1.467 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 463 | 463 | 6,09% | 3.337 |
-| Métodos completos lidos | 189 | 189 | 2,49% | 3.611 |
-| Controle admitido em F1–F6 | 45 | 45 | 0,59% | 3.755 |
+| Triagem ou revisão individual | 464 | 464 | 6,11% | 3.336 |
+| Métodos completos lidos | 192 | 192 | 2,53% | 3.608 |
+| Controle admitido em F1–F6 | 46 | 46 | 0,61% | 3.754 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
 
@@ -1406,6 +1406,21 @@ O comando da fila ganhou `--stage`, que preserva as cinco contagens e concentra 
 | Triagem individual | 461 | +2 | 463 | 6,09% | 3.337 |
 | Métodos completos lidos | 187 | +2 | 189 | 2,49% | 3.611 |
 | Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
+
+
+#### Lote B14 · revisão de controles F3 e versão do histórico de decisões
+
+O lote B14 retomou o catálogo publicado após o workflow #40, que passou na validação do B13. Foram relidos por completo os métodos de três publicações com corpo e identidade já confirmados. Para `10.1016/j.apcatb.2016.12.013` (PMC5310117.1; 122.653 bytes; SHA-256 `bc2cdf89c42ba3b2dea3df6522662ccf5f07b9f93ee16f176a91882269ad82eb`), §§2.1–2.7 e Fig. 5 vinculam os controles AC/Pt a polarização potenciostática, mas não demonstram alimentação em ciclos nem saída operacional sob carga externa; F3/F4 foram excluídas. Para `10.1016/j.electacta.2017.02.033` (PMC5384433.1; 131.797 bytes; SHA-256 `8e7dd015ca987ff1ee65fd08e2346a82d8d9b13127300d7e88013cecfa729076`), §§2.4–2.8 e Figs. 5b–6 vinculam o controle AC à MFC de uma câmara, escova de carbono, cátodo a ar e ciclos de acetato; o artigo relata 130 ± 4,2 µW/cm² para AC e mostra o mesmo braço AC sob 100 Ω na durabilidade. O controle foi admitido em F3. Para `10.1186/s13568-014-0022-2` (PMC4052673.1; 101.466 bytes; SHA-256 `81ad601aaca044502b5fc458a8f3be167d787e7c210cbc1caba9549fa96cb22e`), Materials and Methods e Results descrevem sequenciamento de amostras de um MFC preexistente, sem braço de cátodo AC/Pt nem resultado elétrico próprio; F3/F4 foram excluídas. Os localizadores e decisões ficam por DOI em `reviews.psv`; as fontes, no registro de aquisição.
+
+As duas decisões pendentes anteriores foram substituídas por revisões completas e preservadas em `review-history.psv`, com revisão anterior, nova decisão e lote de alteração. A validação também passou a comparar o MD5 upstream anunciado pelo PMC no `xml_url` com os bytes JATS, além do SHA-256 arquivado. Três retries ao Europe PMC para artigos sem novo corpo confirmado retornaram dois HTTP 500 e um timeout; os recibos preservam URL e falha e não elevam corpo nem identidade. As cinco etapas continuam separadas.
+
+| Etapa | Antes do B14 | B14 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 463 | +1 | 464 | 6,11% | 3.336 |
+| Métodos completos lidos | 189 | +3 | 192 | 2,53% | 3.608 |
+| Controle admitido em F1–F6 | 45 | +1 | 46 | 0,61% | 3.754 |
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
