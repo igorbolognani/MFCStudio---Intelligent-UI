@@ -1324,6 +1324,18 @@ A leitura integral de Jiang et al. (`10.1038/srep41208`, PMCID `PMC5264610`) con
 | Métodos completos lidos | 183 | +1 | 184 | 2,42% | 3.616 |
 | Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
 
+#### Lote B09 · Controle de carvão ativado e alimentação ausente
+
+A leitura integral de MFC em `10.1002/cssc.201700851` (`PMC5697675`) encontrou um comparador de carvão ativado com dois ânodos de escova de carbono e cátodo respirador de ar. A Fig. 6 relata 127 ± 1 µW/cm² para o controle AC. O método informa câmara de 125 mL com 50% tampão fosfato e 50% lodo ativado, mas não documenta alimentação de acetato nem operação fed-batch; a polarização usa potenciostatos e não relata carga externa resistiva. Assim, apesar da correspondência parcial dos eletrodos com F3, faltam alimentação e fase elegíveis; F4 não se aplica porque o cátodo não é Pt. O estudo foi excluído da admissão com métodos, montagem, resposta e localizadores vinculados. O JATS primário de 113.877 bytes tem SHA-256 `31e3522cb5c3c62914c3358afec4cab6c1f85357d72bbf94a9d27e02b64a1c6f`. [Artigo e métodos](https://pmc.ncbi.nlm.nih.gov/articles/PMC5697675/) · [Aquisição por método](../research/conventional-arms/methods-expansion/acquisition.psv) · [Triagem](../research/conventional-arms/catalog/reviews.psv)
+
+| Etapa | Antes do B09 | B09 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 458 | +1 | 459 | 6,04% | 3.341 |
+| Métodos completos lidos | 184 | +1 | 185 | 2,43% | 3.615 |
+| Controle admitido em F1–F6 | 45 | +0 | 45 | 0,59% | 3.755 |
+
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

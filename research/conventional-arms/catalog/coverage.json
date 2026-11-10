@@ -5,12 +5,12 @@
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
     "body_recovered": 1599,
-    "complete_methods_read": 184,
+    "complete_methods_read": 185,
     "documented_integral": 1467,
     "included_F1_F6": 45,
-    "individual_screening": 458,
+    "individual_screening": 459,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1186,
+    "with_body_without_screening": 1185,
     "with_open_route_without_body": 1227,
     "without_persistent_identifier": 293,
     "without_title": 0
@@ -19,12 +19,12 @@
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
     "body_recovered": 21.04,
-    "complete_methods_read": 2.42,
+    "complete_methods_read": 2.43,
     "documented_integral": 19.31,
     "included_F1_F6": 0.59,
-    "individual_screening": 6.03,
+    "individual_screening": 6.04,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 15.61,
+    "with_body_without_screening": 15.59,
     "with_open_route_without_body": 16.15,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
@@ -33,8 +33,8 @@
   "remaining_to_over_half": {
     "body_recovered": 2201,
     "documented_integral": 2333,
-    "individual_screening": 3342,
-    "complete_methods_read": 3616,
+    "individual_screening": 3341,
+    "complete_methods_read": 3615,
     "included_F1_F6": 3755
   },
   "access_states": {
@@ -53,9 +53,9 @@
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "fdd80aaa951fcd514360dbbfae4e81c64f07e10b877a2e00051c2d4c215ae778",
+    "publications.psv.gz": "5d0372f9952f02e0920f60942c866810afdd5a64aa168837b3b98d658a945d84",
     "acquisition.psv": "d25ebfc3397e2bc1cc9f28edfa1982f2867ea1388ea96b0bfc6c2aac2c8af037",
-    "reviews.psv": "3a4aecd31338b2167ddf8936da24cabc96ec1d24c1f14fda6a5cebe255020e74",
+    "reviews.psv": "ed80d9bb8d8db6315d989aca4b9281b6c809e14a1e645e9a38eed1ad757a5017",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
     "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c",
@@ -73,7 +73,7 @@
   "acquisition_unique_attempted": 1728,
   "catalog_review_decisions": {
     "confirm_existing_control": 9,
-    "exclude": 111,
+    "exclude": 112,
     "pending": 20
   }
 }
