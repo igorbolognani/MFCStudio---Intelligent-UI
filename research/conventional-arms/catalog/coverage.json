@@ -1,0 +1,79 @@
+{
+  "unique_publications": 7599,
+  "minimum_for_over_half": 3800,
+  "counts": {
+    "abstract_recovered": 5830,
+    "archived_methods_indexed": 756,
+    "body_recovered": 1599,
+    "complete_methods_read": 187,
+    "documented_integral": 1467,
+    "included_F1_F6": 45,
+    "individual_screening": 461,
+    "metadata_signals_processed": 7599,
+    "with_body_without_screening": 1183,
+    "with_open_route_without_body": 1227,
+    "without_persistent_identifier": 293,
+    "without_title": 0
+  },
+  "percent": {
+    "abstract_recovered": 76.72,
+    "archived_methods_indexed": 9.95,
+    "body_recovered": 21.04,
+    "complete_methods_read": 2.46,
+    "documented_integral": 19.31,
+    "included_F1_F6": 0.59,
+    "individual_screening": 6.07,
+    "metadata_signals_processed": 100.0,
+    "with_body_without_screening": 15.57,
+    "with_open_route_without_body": 16.15,
+    "without_persistent_identifier": 3.86,
+    "without_title": 0.0
+  },
+  "over_half_complete": false,
+  "remaining_to_over_half": {
+    "body_recovered": 2201,
+    "documented_integral": 2333,
+    "individual_screening": 3339,
+    "complete_methods_read": 3613,
+    "included_F1_F6": 3755
+  },
+  "access_states": {
+    "body_candidate": 132,
+    "documented_integral": 1467,
+    "partial": 29,
+    "unavailable": 1101,
+    "unknown": 4870
+  },
+  "families": {
+    "F1": 6,
+    "F2": 9,
+    "F3": 10,
+    "F4": 15,
+    "F5": 5,
+    "F6": 4
+  },
+  "hashes": {
+    "publications.psv.gz": "5c56c3ccdbb33a8c2b4663ff23ead3bc1ee998ab787dc7a0dd0bd9e439e170f0",
+    "acquisition.psv": "66ca824a0661bcb3b15882472356b21aefdec94c41295c0e17540087c7bc8e91",
+    "reviews.psv": "ad0d063854a9d545e7824266a00e5206b4529e59bf8362738d6ed3d49dd2c087",
+    "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
+    "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
+    "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c",
+    "arms.psv": "16ee0e4dac2cbd563e59517dd9e99f6d1cf2a18358011177890eb2433d4fb110",
+    "observations.psv": "f7d36650729066f3b3707836055fc8ca95412d1ed82b88673498a3c7587bdae7"
+  },
+  "acquisition_batch_states": {
+    "body_candidate": 38,
+    "identity_verified": 631,
+    "no_route_tested": 123,
+    "preview_only": 11,
+    "unrecovered": 1354,
+    "wrong_document": 1
+  },
+  "acquisition_unique_attempted": 1728,
+  "catalog_review_decisions": {
+    "confirm_existing_control": 9,
+    "exclude": 113,
+    "pending": 21
+  }
+}
