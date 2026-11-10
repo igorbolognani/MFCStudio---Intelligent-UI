@@ -1084,20 +1084,20 @@ Foram integrados oito valores escalares e 21 pontos digitizados da curva de corr
 
 Para F6, a leitura do método e do suplemento de Mohanty et al. confirmou o material dos eletrodos e o comparador Nafion 117. A receita imprime duas concentrações de ferricianeto incompatíveis entre si, e falta identificar quais ciclos do comparador foram acompanhados por reposição. Em Cao et al., a aclimatação de duas câmaras e a operação de dessalinização com três câmaras permanecem separadas. A carga e o calendário de reposições descritos para a dessalinização ainda não podem ser atribuídos à fase MFC. Os dois registros seguem pendentes. [Mohanty et al.](https://doi.org/10.3390/membranes11060454) · [Cao et al.](https://doi.org/10.1021/es901950j)
 
-O ponto de retomada está no catálogo com as decisões, localizadores e hashes publicados. Após o lote B16, há 1.168 publicações com corpo recuperado sem triagem individual. A próxima fila de métodos começa por `10.1021/acsomega.8b02077` (PMC6289545), com sinais de F1. A checagem reproduz a contagem de publicações e verifica os hashes do acervo disponível. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
+O ponto de retomada está no catálogo com as decisões, localizadores e hashes publicados. Após o lote B17, há 1.158 publicações com corpo recuperado sem triagem individual. A próxima fila de métodos começa por `10.3389/fmicb.2018.03284` (PMC6340052), com sinal de F1. As dez decisões do B17 e seus localizadores estão em `reviews.psv`; a checagem reproduz a contagem de publicações e verifica os hashes do acervo disponível. [Catálogo](../research/conventional-arms/catalog/publications.psv.gz) · [Manifesto de fontes e suplementos](../research/conventional-arms/methods-expansion/sources.json)
 
 <a id="meta-cobertura"></a>
 ### 12.13 Conferência dos cinco percentuais
 
 A base permanece com **7.599 publicações**. Para superar 50%, cada etapa precisa alcançar 3.800. A checagem usa contagens inteiras e foi repetida após os lotes. [Cobertura e lacunas](../research/conventional-arms/catalog/coverage.json)
 
-| Etapa | Antes do B16 | B16 | Atual | Percentual | Faltam para superar 50% |
-|---|---:|---:|---:|---:|---:|
-| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
-| Texto com identidade confirmada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 466 | +10 | 476 | 6,26% | 3.324 |
-| Métodos completos lidos | 197 | +10 | 207 | 2,72% | 3.593 |
-| Controle admitido em F1–F6 | 46 | +1 | 47 | 0,62% | 3.753 |
+| Etapa | Antes do B16 | B16 | B17 | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | +0 | 1.599 | 21,04% | 2.201 |
+| Texto com identidade confirmada | 1.467 | +0 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem ou revisão individual | 466 | +10 | +10 | 486 | 6,40% | 3.314 |
+| Métodos completos lidos | 197 | +10 | +10 | 217 | 2,86% | 3.583 |
+| Controle admitido em F1–F6 | 46 | +1 | +0 | 47 | 0,62% | 3.753 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
 
@@ -1455,6 +1455,35 @@ Uma unidade MFC de Wu et al. (`10.1016/j.isci.2021.103401`, PMC8605441) foi admi
 | Triagem individual | 466 | +10 | 476 | 6,26% | 3.324 |
 | Métodos completos lidos | 197 | +10 | 207 | 2,72% | 3.593 |
 | Controle admitido em F1–F6 | 46 | +1 | 47 | 0,62% | 3.753 |
+
+#### Lote B17 · métodos completos; nenhum controle admitido
+
+O lote B17 leu os métodos completos e os resultados associados de dez publicações com corpo e identidade já confirmados. Os dez XMLs JATS foram recuperados por rota pública da Europe PMC e conferidos byte a byte com os tamanhos e SHA-256 já registrados em `methods-expansion/acquisition.psv`. Nenhum hash ou campo `pmc_version` foi substituído; os valores de versão existentes permaneceram como registrados. Não houve novo corpo ou identidade, e as dez publicações avançaram na triagem individual e na leitura completa dos métodos. As decisões, localizadores por método e resultado e fontes primárias estão em [reviews.psv](../research/conventional-arms/catalog/reviews.psv).
+
+As dez publicações foram excluídas das famílias consideradas. Os sinais de F1/F6 serviram para ordenar a fila, mas não substituíram a conferência do braço. Em especial, o acetato do católito de um bio-cátodo não foi tratado como alimentação anódica; os braços MFC, MEC e MES permaneceram separados.
+
+| Publicação | Família examinada | Motivo da exclusão |
+|---|---|---|
+| [10.1021/acsomega.8b02077](https://doi.org/10.1021/acsomega.8b02077) | F1 | Ânodo de feltro, farelo de arroz e lama; o tecido com Pt/C pertence ao cátodo a ar. |
+| [10.1038/s41598-020-76229-5](https://doi.org/10.1038/s41598-020-76229-5) | F1 | Braços em MEC e MES com potencial imposto, ânodo de titânio e CO₂; não há MFC convencional. |
+| [10.1038/s41598-026-50075-3](https://doi.org/10.1038/s41598-026-50075-3) | F1, F6 | Controle de acetato com hastes de grafite e católito de dicromato ácido; outros substratos são braços distintos. |
+| [10.1039/c8ra03846e](https://doi.org/10.1039/c8ra03846e) | F1 | Operação em MEC de três eletrodos com potencial anódico imposto. |
+| [10.1039/c8ra04904a](https://doi.org/10.1039/c8ra04904a) | F1, F6 | O braço com feltro e ferricianeto usa glicose no ânodo; o estágio final usa antibiótico sem glicose. |
+| [10.1039/c9ra08538f](https://doi.org/10.1039/c9ra08538f) | F6 | Cátodo de partículas grafite-PTFE e haste, sulfato aerado e sem ferricianeto. |
+| [10.1039/d0ra08747e](https://doi.org/10.1039/d0ra08747e) | F1, F6 | Alimentação com glicose e acetato; cátodo TiO₂/Ti, UV e católito de nitrato, bicarbonato e corante. |
+| [10.1039/d1ra07600k](https://doi.org/10.1039/d1ra07600k) | F6 | O acetato está no católito; o ânodo recebe glicose e o cátodo é aerado, sem ferricianeto. |
+| [10.1098/rsos.210996](https://doi.org/10.1098/rsos.210996) | F1 | Ânodo de feltro alimentado com água de chuva ou caldo nutritivo; não há acetato. |
+| [10.1155/2015/582471](https://doi.org/10.1155/2015/582471) | F1 | As montagens usam carvão ativado ou placas de grafite com FePc, sem o comparador Pt/C de F1. |
+
+| Etapa | Antes do B17 | B17 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 476 | +10 | 486 | 6,40% | 3.314 |
+| Métodos completos lidos | 207 | +10 | 217 | 2,86% | 3.583 |
+| Controle admitido em F1–F6 | 47 | +0 | 47 | 0,62% | 3.753 |
+
+O próximo lote retoma a fila de métodos pendentes, começando por `10.3389/fmicb.2018.03284` (PMC6340052). A verificação exigida continua sendo `python3 scripts/build-conventional-catalog.py --check --require-over-half`; as cinco etapas ainda estão abaixo de 50%.
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
