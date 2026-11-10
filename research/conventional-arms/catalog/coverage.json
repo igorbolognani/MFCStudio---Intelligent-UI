@@ -4,44 +4,44 @@
   "counts": {
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
-    "body_recovered": 1598,
-    "complete_methods_read": 180,
-    "documented_integral": 1464,
+    "body_recovered": 1599,
+    "complete_methods_read": 182,
+    "documented_integral": 1465,
     "included_F1_F6": 44,
-    "individual_screening": 455,
+    "individual_screening": 457,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1188,
-    "with_open_route_without_body": 1228,
+    "with_body_without_screening": 1187,
+    "with_open_route_without_body": 1227,
     "without_persistent_identifier": 293,
     "without_title": 0
   },
   "percent": {
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
-    "body_recovered": 21.03,
-    "complete_methods_read": 2.37,
-    "documented_integral": 19.27,
+    "body_recovered": 21.04,
+    "complete_methods_read": 2.4,
+    "documented_integral": 19.28,
     "included_F1_F6": 0.58,
-    "individual_screening": 5.99,
+    "individual_screening": 6.01,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 15.63,
-    "with_open_route_without_body": 16.16,
+    "with_body_without_screening": 15.62,
+    "with_open_route_without_body": 16.15,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
   },
   "over_half_complete": false,
   "remaining_to_over_half": {
-    "body_recovered": 2202,
-    "documented_integral": 2336,
-    "individual_screening": 3345,
-    "complete_methods_read": 3620,
+    "body_recovered": 2201,
+    "documented_integral": 2335,
+    "individual_screening": 3343,
+    "complete_methods_read": 3618,
     "included_F1_F6": 3756
   },
   "access_states": {
     "body_candidate": 134,
-    "documented_integral": 1464,
+    "documented_integral": 1465,
     "partial": 29,
-    "unavailable": 1102,
+    "unavailable": 1101,
     "unknown": 4870
   },
   "families": {
@@ -53,25 +53,25 @@
     "F6": 4
   },
   "hashes": {
-    "publications.psv.gz": "845c1f5afaed7bc6160610f405090c4b4fd4d43c04f21d62612aa58d33192951",
-    "acquisition.psv": "4e4ccd22491d9307d67e1eed595ce69331e8e186094d08a5661a349b595e84e5",
-    "reviews.psv": "693f88f2fc3af1d7258b582182719f608c5dd7ec8dff62031d20a9eefac3b952",
+    "publications.psv.gz": "80e4487db36d567341f1824b64644a7bd2889635dccaa69c5d56442d7b992e90",
+    "acquisition.psv": "f0a7a7451ba25155940db60fa3d6b5f911313da0a9251b91bdaa6711b09e7cbb",
+    "reviews.psv": "038765e6257b097d3586d46ad550537e16c2cc0dad669a5a83860031d81df4a9",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
     "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
-    "identity_verified": 628,
+    "identity_verified": 629,
     "no_route_tested": 123,
     "preview_only": 11,
-    "unrecovered": 1223,
+    "unrecovered": 1253,
     "wrong_document": 1
   },
-  "acquisition_unique_attempted": 1727,
+  "acquisition_unique_attempted": 1728,
   "catalog_review_decisions": {
     "confirm_existing_control": 8,
-    "exclude": 108,
+    "exclude": 110,
     "pending": 20
   }
 }

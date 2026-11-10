@@ -20,6 +20,7 @@ save = R["SEARCH"]["save_json"]
 doi_key = R["SEARCH"]["doi_key"]
 title_hash = R["SEARCH"]["title_hash"]
 FULL_METHODS = METHOD["FULL_METHODS"]
+FROZEN_PUBLICATIONS = 7599
 REQUIRED_COVERAGE = ("body_recovered", "documented_integral", "individual_screening",
                      "complete_methods_read", "included_F1_F6")
 DOC = {"unknown": 0, "unavailable": 1, "partial": 2, "body_candidate": 3, "documented_integral": 4}
@@ -421,6 +422,8 @@ if __name__ == "__main__":
         parser.error("--require-over-half requires --check")
     if args.check:
         summary = summarize(read(args.output / "publications.psv.gz"), args.output)
+        if summary["unique_publications"] != FROZEN_PUBLICATIONS:
+            raise ValueError(f"Expected {FROZEN_PUBLICATIONS} frozen publications")
         if summary != read_json(args.output / "coverage.json"):
             raise ValueError("Saved catalogue counts or hashes changed")
         print("Catalogue identities, counts and file hashes verified")
@@ -440,4 +443,6 @@ if __name__ == "__main__":
         if (args.output / name).exists():
             apply(catalog, args.output)
     merge_versions(catalog, args.output)
+    if len(catalog.rows) != FROZEN_PUBLICATIONS:
+        raise ValueError(f"Expected {FROZEN_PUBLICATIONS} frozen publications")
     rows_and_summary(catalog, args.output)

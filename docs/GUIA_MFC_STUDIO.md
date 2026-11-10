@@ -1057,15 +1057,15 @@ Para reproduzir a rodada publicada, o cache deve conter os metadados exatos, os 
 <a id="cobertura-metodos"></a>
 ### 12.12 Leitura integral e inclusão de novos controles
 
-Em 9 de novembro de 2026, a revisão manteve as mesmas **7.599 publicações**. Foram priorizados os textos em que os métodos indicavam câmara, material anódico, doador, cátodo e alimentação compatíveis. A inclusão exigiu localizar a resposta elétrica do mesmo controle nos resultados. Os localizadores indicam o que foi encontrado no corpo, nas figuras ou no suplemento. [Cobertura auditada](../research/conventional-arms/catalog/coverage.json) · [Leituras de métodos](../research/conventional-arms/methods-expansion/reading-log.psv) · [Revisões do catálogo](../research/conventional-arms/catalog/reviews.psv)
+Em 10 de novembro de 2026, a revisão manteve as mesmas **7.599 publicações**. Foram priorizados textos primários com corpo e identidade verificados e sinais de configuração compatível. A inclusão exigiu localizar configuração, alimentação e resposta elétrica do mesmo controle. Resumos, corpo recuperado, identidade, triagem, leitura integral dos métodos e admissão F1–F6 continuam como etapas separadas. [Cobertura auditada](../research/conventional-arms/catalog/coverage.json) · [Leituras de métodos](../research/conventional-arms/methods-expansion/reading-log.psv) · [Revisões do catálogo](../research/conventional-arms/catalog/reviews.psv)
 
 | Etapa | Antes | Após a revisão | Percentual atual |
 |---|---:|---:|---:|
-| Corpo recuperado, incluindo candidatos à conferência de identidade | 1.432 | 1.588 | 20,90% |
-| Texto com identidade confirmada | 1.272 | 1.443 | 18,99% |
-| Triagem ou revisão individual registrada | 345 | 373 | 4,91% |
-| Métodos completos lidos | 83 | 115 | 1,51% |
-| Artigo com controle admitido em F1–F6 | 38 | 42 | 0,55% |
+| Corpo recuperado, incluindo candidatos à conferência de identidade | 1.432 | 1.599 | 21,04% |
+| Texto com identidade confirmada | 1.272 | 1.465 | 19,28% |
+| Triagem ou revisão individual registrada | 345 | 457 | 6,01% |
+| Métodos completos lidos | 83 | 182 | 2,40% |
+| Artigo com controle admitido em F1–F6 | 38 | 44 | 0,58% |
 
 As rotas públicas trouxeram 157 arquivos com corpo, com ganho de 156 publicações no catálogo. O PDF restaurado para um DOI de 2018 mostrou outro artigo, de 2021. O arquivo errado foi separado. Uma versão histórica com outro hash segue como corpo candidato, pendente de conferência do original. A confirmação de identidade também avançou sobre documentos já recuperados. Quando o texto é um preprint vinculado, o registro mantém o DOI dessa versão. A leitura de uma versão preliminar não resolve divergências com a versão publicada. O catálogo reúne 145 corpos ainda sem confirmação de identidade. [Aquisição por rota e hash](../research/conventional-arms/catalog/acquisition.psv) · [Conflito de documento](../research/conventional-arms/catalog/document-conflicts.psv) · [Vínculos de versões](../research/conventional-arms/catalog/versions.psv)
 
@@ -1257,6 +1257,39 @@ Na busca por referências do braço FeC-MFC de Sun et al., o manuscrito aceito d
 | Controle admitido em F1–F6 | 44 | 44 | 0,58% | 3.756 |
 
 A retomada segue nos corpos primários confirmados sem triagem. Continuam pendentes a recuperação verificável do PDF do comparador tubular Pt/C de Yang et al. e a leitura dos métodos de Sun et al. de 2015, cujo registro da DTU oferece metadados e resumo. [Cobertura atual](../research/conventional-arms/catalog/coverage.json) · [Sun et al. 2015](https://doi.org/10.1007/s00253-015-6513-5)
+
+#### Lote B06 · Aquisição verificável e etapas independentes
+
+Uma cópia editorial de acesso público de Pasternak et al. foi recuperada e identificada pelo DOI `10.1016/j.bioelechem.2018.12.004`. O manifesto guarda a rota, os 2.454.399 bytes e o SHA-256 `1b748f9e82ca04cc79c8ebb12a708d1c2024f4ff1958f3cb8a2fc182a01ee50a`; o arquivo permanece no cache de trabalho. A leitura integral das seções 2.1–2.14 confirma o comparador CEM, acetato a 0,1%, reposição em ciclos de dois dias e exposição catódica ao ar. Ainda assim, o controle não pertence às famílias F1–F6. A montagem tem duas câmaras líquidas e véu de carbono nos dois eletrodos; F6 requer feltro no ânodo e ferricianeto. Os resultados do CEM não foram promovidos a uma família incompatível. [Artigo e métodos](https://livingarchitecture-h2020.eu/wp-content/uploads/2018/12/2019-Pasternak-SFM.pdf) · [Aquisição e hash](../research/conventional-arms/catalog/acquisition.psv) · [Decisão](../research/conventional-arms/catalog/reviews.psv)
+
+Também foi lido o método completo de Hari et al. (`10.1038/srep38690`). O estudo é uma célula de eletrólise microbiana com ânodo polarizado, propionato em fed-batch e controle em circuito aberto, sem um controle MFC sob carga que corresponda a F1–F6. Foi excluído da admissão, com os localizadores das seções de método, figuras e tabela. [Artigo no PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5146674/) · [Decisão no catálogo](../research/conventional-arms/catalog/reviews.psv)
+
+A versão editorial aberta de Yang et al. foi consultada na RSC. O método §2.4 liga o braço Pt/C à câmara tubular de uma câmara, escova de carbono, acetato a 2,04 g/L, alimentação fed-batch com troca abaixo de 30 mV e carga de 1.000 Ω. A Fig. 4a relata 37,7 ± 2,5 W/m³ para esse braço. A configuração é um candidato F4. O acesso direto aos bytes do PDF retornou HTTP 403; a tentativa está preservada em `acquisition.psv`, sem hash de corpo, e o estudo segue fora da contagem até a aquisição verificável. [PDF editorial aberto](https://pubs.rsc.org/en/content/articlepdf/2017/ra/c7ra04571a) · [Método e resultado](https://doi.org/10.1039/c7ra04571a)
+
+| Etapa | Antes | B06 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.598 | +1 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.464 | +1 | 1.465 | 19,28% | 2.335 |
+| Triagem individual | 455 | +2 | 457 | 6,01% | 3.343 |
+| Métodos completos lidos | 180 | +2 | 182 | 2,40% | 3.618 |
+| Controle admitido em F1–F6 | 44 | +0 | 44 | 0,58% | 3.756 |
+
+As consultas PMC do B06 não produziram corpo recuperável para 28 registros. A rota S3 não encontrou versões públicas para parte das chaves e a Europe PMC devolveu respostas transitórias 500 ou timeout. A rota direta do PDF de Yang et al. retornou 403. Essas tentativas ficam separadas de aquisições bem-sucedidas. A fila atual registra **6.000** itens sem corpo, **134** corpos que ainda precisam de identidade, **1.093** textos identificados sem triagem, **1.305** sem leitura completa dos métodos e **1.132** candidatos pendentes de avaliação para admissão. As filas se sobrepõem quando uma publicação ainda precisa passar por mais de uma etapa.
+
+O comando `scripts/advance-conventional-catalog.py queue` expõe cada etapa sem confundir os estados. A aquisição PMC começa pelos corpos pendentes de confirmação de identidade; só depois passa ao backlog sem corpo. Cada rota tentada fica registrada para não se repetir automaticamente. `--retry-failed` volta apenas a falhas transitórias; 404 e ausência de versão pública permanecem encerrados para aquela rota. O limite de quatro requisições simultâneas reduz a repetição de respostas temporárias. O comando `stage` requer um diretório novo, verifica bytes e hashes, preserva decisões conflitantes e gera uma cópia candidata com o denominador fixo de 7.599.
+
+```sh
+python3 scripts/advance-conventional-catalog.py queue --limit 10
+python3 scripts/advance-conventional-catalog.py acquire-pmc /cache-privado/b07-pmc --limit 25
+python3 scripts/advance-conventional-catalog.py acquire-pmc /cache-privado/b07-retry --limit 25 --retry-failed
+python3 scripts/advance-conventional-catalog.py stage /cache-privado/b07-staged \
+  --receipts /cache-privado/b07-pmc/receipts.json --reviews /cache-privado/b07-reviews.psv
+python3 scripts/build-conventional-catalog.py --output /cache-privado/b07-staged --check
+python3 scripts/build-conventional-catalog.py --output /cache-privado/b07-staged --check --require-over-half
+```
+
+Na checagem B06, hashes, identidades e contagens passaram. `--require-over-half` retornou código 2 conforme esperado porque as cinco etapas ainda estão abaixo de 3.800. A revisão publica somente depois da verificação de integridade; o status da meta fica explícito, sem transformar essa pendência científica em falha de instalação do workflow.
+
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
