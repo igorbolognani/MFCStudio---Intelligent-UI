@@ -1241,6 +1241,23 @@ Foram triadas publicações do acervo JATS já conferido. Nos dois textos com fe
 
 A fila seguinte começa nos corpos confirmados sem triagem e nas cópias primárias pendentes, incluindo o comparador tubular Pt/C de Yang et al. A meta de admissão continua condicionada à verificação individual dos controles elegíveis. [Cobertura atual](../research/conventional-arms/catalog/coverage.json)
 
+
+#### Lote B05 · Separação entre a montagem convencional e o braço medido
+
+O lote B05 retomou o catálogo em `a9c6360`. No comparador CC do estudo de ânodos derivados de uva, a reposição abaixo de 100 mV, o ferricianeto e o acetato pertencem ao mesmo braço. O ânodo é de tecido e a escova está no cátodo. No estudo de `P. stutzeri`, o ferricianeto pertence ao reator 1 com tiossulfato. O reator 2 usa acetato e ânodo de tecido. [Decisões e localizadores](../research/conventional-arms/catalog/reviews.psv)
+
+Na busca por referências do braço FeC-MFC de Sun et al., o manuscrito aceito de 2016 hospedado pela DTU informa papel de carbono nos dois eletrodos, ferricianeto e renovação a cada cinco dias. A publicação de DOI `10.1016/j.cjche.2015.11.002` ficou fora do denominador congelado. O original consultado tem SHA-256 `25474c509e236df314bab0feff137ab17116f52f8ec2590fd14f333ace441f18`. [Versão e identidade no repositório da DTU](https://orbit.dtu.dk/en/publications/inocula-selection-in-microbial-fuel-cells-based-on-anodic-biofilm/)
+
+| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|
+| Corpo recuperado | 1.598 | 1.598 | 21,03% | 2.202 |
+| Texto com identidade confirmada | 1.464 | 1.464 | 19,27% | 2.336 |
+| Triagem ou revisão individual | 450 | 455 | 5,99% | 3.345 |
+| Métodos completos lidos | 177 | 180 | 2,37% | 3.620 |
+| Controle admitido em F1–F6 | 44 | 44 | 0,58% | 3.756 |
+
+A retomada segue nos corpos primários confirmados sem triagem. Continuam pendentes a recuperação verificável do PDF do comparador tubular Pt/C de Yang et al. e a leitura dos métodos de Sun et al. de 2015, cujo registro da DTU oferece metadados e resumo. [Cobertura atual](../research/conventional-arms/catalog/coverage.json) · [Sun et al. 2015](https://doi.org/10.1007/s00253-015-6513-5)
+
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
 
