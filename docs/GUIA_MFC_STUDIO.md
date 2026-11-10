@@ -1091,13 +1091,13 @@ O ponto de retomada está no catálogo com as decisões, localizadores e hashes 
 
 A base permanece com **7.599 publicações**. Para superar 50%, cada etapa precisa alcançar 3.800. A checagem usa contagens inteiras e foi repetida após os lotes. [Cobertura e lacunas](../research/conventional-arms/catalog/coverage.json)
 
-| Etapa | Antes | Atual | Percentual | Faltam para superar 50% |
-|---|---:|---:|---:|---:|
-| Corpo recuperado | 1.599 | 1.599 | 21,04% | 2.201 |
-| Texto com identidade confirmada | 1.467 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 464 | 464 | 6,11% | 3.336 |
-| Métodos completos lidos | 192 | 192 | 2,53% | 3.608 |
-| Controle admitido em F1–F6 | 46 | 46 | 0,61% | 3.754 |
+| Etapa | Antes do B15 | B15 | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Texto com identidade confirmada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem ou revisão individual | 464 | +2 | 466 | 6,13% | 3.334 |
+| Métodos completos lidos | 192 | +5 | 197 | 2,59% | 3.603 |
+| Controle admitido em F1–F6 | 46 | +0 | 46 | 0,61% | 3.754 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
 
@@ -1421,6 +1421,24 @@ As duas decisões pendentes anteriores foram substituídas por revisões complet
 | Triagem individual | 463 | +1 | 464 | 6,11% | 3.336 |
 | Métodos completos lidos | 189 | +3 | 192 | 2,53% | 3.608 |
 | Controle admitido em F1–F6 | 45 | +1 | 46 | 0,61% | 3.754 |
+
+#### Lote B15 · leitura completa e vínculo entre braço, alimentação e resposta
+
+O lote B15 revisou dez publicações com corpo e identidade já confirmados. Os arquivos JATS locais foram comparados aos tamanhos e SHA-256 existentes em `methods-expansion/acquisition.psv`; os bytes e hashes não foram substituídos. Os marcadores internos confirmam as versões PMC4163465.1, PMC9000358.1, PMC5738968.1 e PMC10797328.1; as seis outras entradas mantêm o valor de versão anteriormente registrado. A receita do suplemento de Paitier foi conferida na Table S1, p. S2; o PDF suplementar permanece ligado ao registro com SHA-256 `da871960ecaaa40e12ce8e06376b747f599358dee12ce5ef69ad8968ebe9b999`.
+
+Cinco publicações avançaram para leitura completa dos métodos e duas receberam triagem individual. O lote não acrescentou novos corpos recuperados nem novas identidades confirmadas. Sete publicações foram excluídas da admissão e três ficaram pendentes: em `10.1155/2014/832850`, o método identifica carbono têxtil, acetato e Pt/C a ar, mas não vincula a reposição do meio aos ciclos de tensão; em `10.1039/d4ra08808e`, a resposta do controle CF aparece com acetato, ferricianeto e 1 kΩ, mas o material do cátodo não é identificado e o texto também usa o termo ferrocianeto. Esses dois controles permanecem pendentes; o MFC-B de Borole também segue pendente pela lacuna de configuração descrita abaixo.
+
+As exclusões verificam a ligação no mesmo braço. Em Borole et al. (`10.1186/1754-6834-2-7`), MFC-A com inibidores e cátodo de ferricianeto e MFC-B com acetato são braços distintos. A resposta elétrica do MFC-B aparece na Fig. 3, mas a configuração completa é remetida a outro artigo. a rota pública para [Borole et al. (2009)](https://doi.org/10.1016/j.bej.2009.08.008) só expôs resumo/metadados, sem corpo integral verificável; por isso a decisão F4/F5/F6 continua pendente, sem empréstimo da montagem ou dos resultados de MFC-A. Em `10.1186/1754-6834-7-9`, as respostas quantitativas seguem a troca do acetato de partida por hidrolisado de palha de arroz. Em Paitier et al., a receita suplementar para 500 mg DQO/L lista triptona, extrato de levedura, ureia e sais, sem acetato. Os controles de cátodo AC em `10.1016/j.jpowsour.2017.08.110` e `10.1016/j.jpowsour.2017.11.039` foram avaliados por polarização, sem alimentação fed-batch repetida ligada à resposta operacional sob resistência externa. Em `10.1039/d3ra05084j`, o ânodo é um leito de semente de manga grafitizada; em `10.1039/d4ra03774j`, os comparadores são dois ânodos modificados, sem referência de tecido de carbono sem revestimento. Em `10.1016/j.electacta.2018.04.190`, o controle usa AC no cátodo, enquanto F1–F4 exigem outra composição catódica ou outro material anódico.
+
+Os localizadores atuais estão em `catalog/reviews.psv`. As decisões anteriores substituídas foram arquivadas em `catalog/review-history.psv`, e os tamanhos, hashes e versões continuam em `methods-expansion/acquisition.psv`; nenhuma família ganhou nova admissão. A próxima execução retoma a fila de métodos a partir do catálogo publicado B15.
+
+| Etapa | Antes do B15 | B15 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 464 | +2 | 466 | 6,13% | 3.334 |
+| Métodos completos lidos | 192 | +5 | 197 | 2,59% | 3.603 |
+| Controle admitido em F1–F6 | 46 | +0 | 46 | 0,61% | 3.754 |
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

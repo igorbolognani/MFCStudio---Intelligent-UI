@@ -7,9 +7,9 @@
   "reviewed_sources": 81,
   "complete_methods": 70,
   "review_decisions": {
-    "exclude": 45,
+    "exclude": 46,
     "include": 18,
-    "pending": 18
+    "pending": 17
   },
   "observations": {
     "context_only": 34,
