@@ -5,12 +5,12 @@
     "abstract_recovered": 5830,
     "archived_methods_indexed": 756,
     "body_recovered": 1599,
-    "complete_methods_read": 217,
+    "complete_methods_read": 218,
     "documented_integral": 1467,
     "included_F1_F6": 47,
-    "individual_screening": 486,
+    "individual_screening": 487,
     "metadata_signals_processed": 7599,
-    "with_body_without_screening": 1158,
+    "with_body_without_screening": 1157,
     "with_open_route_without_body": 1227,
     "without_persistent_identifier": 293,
     "without_title": 0
@@ -19,12 +19,12 @@
     "abstract_recovered": 76.72,
     "archived_methods_indexed": 9.95,
     "body_recovered": 21.04,
-    "complete_methods_read": 2.86,
+    "complete_methods_read": 2.87,
     "documented_integral": 19.31,
     "included_F1_F6": 0.62,
-    "individual_screening": 6.4,
+    "individual_screening": 6.41,
     "metadata_signals_processed": 100.0,
-    "with_body_without_screening": 15.24,
+    "with_body_without_screening": 15.23,
     "with_open_route_without_body": 16.15,
     "without_persistent_identifier": 3.86,
     "without_title": 0.0
@@ -33,8 +33,8 @@
   "remaining_to_over_half": {
     "body_recovered": 2201,
     "documented_integral": 2333,
-    "individual_screening": 3314,
-    "complete_methods_read": 3583,
+    "individual_screening": 3313,
+    "complete_methods_read": 3582,
     "included_F1_F6": 3753
   },
   "access_states": {
@@ -53,19 +53,25 @@
     "F6": 5
   },
   "hashes": {
-    "publications.psv.gz": "2a98b6c796df54198faa63e0a5e6986be73390b2e029b14cc48fe93d5f744fb9",
-    "acquisition.psv": "1ed44f418522623d09b44bc2542a84c514318bcd862679c312fd22cecab8a95c",
-    "reviews.psv": "511c80972509e9a685c73aae0ca6360116933ea826dfa59ecda77cbf4e5e3c42",
+    "publications.psv.gz": "deb6b453cecc35069d8c0554507b7d3c98752958681f12a6eca8419f5284b94a",
+    "acquisition.psv": "6ea23baa46a5f7ef9bcbbf37406bcfb545c43549f5789a11f9a600611091c6d2",
+    "reviews.psv": "8ddc73661ab877587c21d38257620ff6bb31b7ea160e5ce671cdcbfa14624bdc",
     "review-history.psv": "094ca4cc1e9266f04e016ae657d755e299e7a8d3f4285f3f4ae9892af33170a2",
     "versions.psv": "6f2426d88fadd683daf88d74d2c6ced5713e89a6d045beffd05f375abe26d199",
     "document-conflicts.psv": "f1afef2ec9fa65f59d1f2666898fa983fe0ceb701cd1043b62e435db079920dd",
     "review-attachments.psv": "bb8eee6ecbc40f1151dcc65938fdcf605bf67b2f3d358e46548720d015d40d3c",
     "arms.psv": "1bc119c6bf6566cf00021e7aa8134fb3a0d2bb51ad50ffb1765d353a86652e31",
-    "observations.psv": "4382ef6af8dea5d8805605a8e40311c1a07caf96a4a6d741452a86707e3827a2"
+    "observations.psv": "4382ef6af8dea5d8805605a8e40311c1a07caf96a4a6d741452a86707e3827a2",
+    "approved-F1-F6.psv": "f3c2d8bd360ce06d4111bef05d83717eedc172abf455b25d3e34a2b3d8d5a828",
+    "excluded-F1-F6.psv": "188ac8baff66e0b10406ee7614bcba5e784ccdd5b025d81802e8fcbe6b8b18f1",
+    "pending-F1-F6.psv": "6be7d2fb411314f5e4b07bee318a08af9f5fbf4016d088424d1b8669dc43c5b5",
+    "registered-observations.psv": "4ac627bdebc4709e9821f05b416532e968f4ba3e960d0341ca4eb06c5efd7e13",
+    "external-expansion-arms-index.psv": "10e8f586a0ff916a1abb1124030988c32cf46ff31e05325aa18138dec10ef4c1",
+    "context-observations.psv": "49e5b6621b5db0aabfaa6832d5cbce80a36a66293113beefed81f26e98fc093f"
   },
   "acquisition_batch_states": {
     "body_candidate": 38,
-    "identity_verified": 631,
+    "identity_verified": 632,
     "no_route_tested": 123,
     "preview_only": 11,
     "unrecovered": 1407,
@@ -74,7 +80,7 @@
   "acquisition_unique_attempted": 1728,
   "catalog_review_decisions": {
     "confirm_existing_control": 11,
-    "exclude": 143,
+    "exclude": 144,
     "pending": 18
   }
 }

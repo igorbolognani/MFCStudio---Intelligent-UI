@@ -14,6 +14,7 @@ METHOD = runpy.run_path(str(HERE / "audit-conventional-methods.py"))
 EXTERNAL = R["BASE"]
 DATA = EXTERNAL.parent
 OUTPUT = DATA / "catalog"
+INDEX = runpy.run_path(str(HERE / "export-conventional-catalog-index.py"))
 read = R["read_table"]
 read_json = R["read_json"]
 write = R["write_table"]
@@ -442,6 +443,7 @@ def rows_and_summary(catalog, output):
                      "machine_signals": " ".join(sorted(row["machine"])) or "NR",
                      "evidence": " ".join(sorted(row["evidence"]))})
     write(output / "publications.psv.gz", list(rows[0]), rows)
+    INDEX["export"](output)
     summary = summarize(rows, output)
     save(output / "coverage.json", summary)
     print(json.dumps(summary, ensure_ascii=False))
@@ -483,7 +485,10 @@ def summarize(rows, output):
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
     for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "review-history.psv", "versions.psv",
-                 "document-conflicts.psv", "review-attachments.psv", "arms.psv", "observations.psv"):
+                 "document-conflicts.psv", "review-attachments.psv", "arms.psv", "observations.psv",
+                 "approved-F1-F6.psv", "excluded-F1-F6.psv", "pending-F1-F6.psv",
+                 "registered-observations.psv", "external-expansion-arms-index.psv",
+                 "context-observations.psv"):
         path = output / name
         if path.exists():
             summary["hashes"][name] = sha256(path.read_bytes()).hexdigest()
@@ -547,6 +552,7 @@ if __name__ == "__main__":
             row = publication_by_doi.get(doi_key(doi))
             return (row["key"], row) if row else (None, None)
         validate_catalog_arm_registry(args.output, resolve_publication, allow_published_family=True)
+        INDEX["check"](args.output)
         summary = summarize(rows, args.output)
         if summary["unique_publications"] != FROZEN_PUBLICATIONS:
             raise ValueError(f"Expected {FROZEN_PUBLICATIONS} frozen publications")

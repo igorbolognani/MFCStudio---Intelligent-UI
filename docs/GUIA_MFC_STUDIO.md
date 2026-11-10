@@ -1091,13 +1091,13 @@ O ponto de retomada está no catálogo com as decisões, localizadores e hashes 
 
 A base permanece com **7.599 publicações**. Para superar 50%, cada etapa precisa alcançar 3.800. A checagem usa contagens inteiras e foi repetida após os lotes. [Cobertura e lacunas](../research/conventional-arms/catalog/coverage.json)
 
-| Etapa | Antes do B16 | B16 | B17 | Atual | Percentual | Faltam para superar 50% |
-|---|---:|---:|---:|---:|---:|---:|
-| Corpo recuperado | 1.599 | +0 | +0 | 1.599 | 21,04% | 2.201 |
-| Texto com identidade confirmada | 1.467 | +0 | +0 | 1.467 | 19,31% | 2.333 |
-| Triagem ou revisão individual | 466 | +10 | +10 | 486 | 6,40% | 3.314 |
-| Métodos completos lidos | 197 | +10 | +10 | 217 | 2,86% | 3.583 |
-| Controle admitido em F1–F6 | 46 | +1 | +0 | 47 | 0,62% | 3.753 |
+| Etapa | Antes do B16 | B16 | B17 | B18 | Atual | Percentual | Faltam para superar 50% |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | +0 | +0 | 1.599 | 21,04% | 2.201 |
+| Texto com identidade confirmada | 1.467 | +0 | +0 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem ou revisão individual | 466 | +10 | +10 | +1 | 487 | 6,41% | 3.313 |
+| Métodos completos lidos | 197 | +10 | +10 | +1 | 218 | 2,87% | 3.582 |
+| Controle admitido em F1–F6 | 46 | +1 | +0 | +0 | 47 | 0,62% | 3.753 |
 
 O catálogo conserva um denominador congelado de 7.599 publicações. Resumos, corpo recuperado, identidade confirmada, triagem, leitura completa dos métodos e admissão são estados distintos; só o último conta um controle quando configuração, alimentação e resposta estão ligadas ao mesmo braço. A auditoria de 69 arquivos HTML identificou onze páginas que continham apenas resumo, referências e instruções de acesso. Os registros preservam os hashes e marcam essas páginas como `preview_only`, sem contá-las como corpo. [Registro de aquisição](../research/conventional-arms/catalog/acquisition.psv) · [Acervo do PMC](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/)
 
@@ -1475,15 +1475,25 @@ As dez publicações foram excluídas das famílias consideradas. Os sinais de F
 | [10.1098/rsos.210996](https://doi.org/10.1098/rsos.210996) | F1 | Ânodo de feltro alimentado com água de chuva ou caldo nutritivo; não há acetato. |
 | [10.1155/2015/582471](https://doi.org/10.1155/2015/582471) | F1 | As montagens usam carvão ativado ou placas de grafite com FePc, sem o comparador Pt/C de F1. |
 
-| Etapa | Antes do B17 | B17 | Atual | Percentual | Faltam para 3.800 |
-|---|---:|---:|---:|---:|---:|
-| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
-| Identidade documentada | 1.467 | +0 | 1.467 | 19,31% | 2.333 |
-| Triagem individual | 476 | +10 | 486 | 6,40% | 3.314 |
-| Métodos completos lidos | 207 | +10 | 217 | 2,86% | 3.583 |
-| Controle admitido em F1–F6 | 47 | +0 | 47 | 0,62% | 3.753 |
+| Etapa | Antes do B17 | B17 | B18 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.467 | +0 | +0 | 1.467 | 19,31% | 2.333 |
+| Triagem individual | 476 | +10 | +1 | 487 | 6,41% | 3.313 |
+| Métodos completos lidos | 207 | +10 | +1 | 218 | 2,87% | 3.582 |
+| Controle admitido em F1–F6 | 47 | +0 | +0 | 47 | 0,62% | 3.753 |
 
 O próximo lote retoma a fila de métodos pendentes, começando por `10.3389/fmicb.2018.03284` (PMC6340052). A verificação exigida continua sendo `python3 scripts/build-conventional-catalog.py --check --require-over-half`; as cinco etapas ainda estão abaixo de 50%.
+
+#### Lote B18 · artigo de MFC fora das seis famílias iniciais
+
+O JATS integral de Ishizaki et al. foi recuperado pela Europe PMC e conferido com o DOI `10.3389/fmicb.2018.03284`, PMID 30692973, PMCID PMC6340052, 109.498 bytes e SHA-256 `76ac9e72344029b8d02aae92442af8e8c83382c69a35551cb23f9d64cf853178`. A tentativa PMC anterior que retornou HTTP 503 foi preservada; a aquisição bem-sucedida está registrada separadamente. [Artigo](https://pmc.ncbi.nlm.nih.gov/articles/PMC6340052/) · [Aquisições e hashes](../research/conventional-arms/catalog/acquisition.psv)
+
+Os métodos descrevem duas câmaras de 250 mL, ânodo de carbono poroso, cátodo de tecido de carbono com Pt, Nafion 117 e 20 mM de glicose como única fonte de energia para *Klebsiella quasipneumoniae* S05. O estudo compara respiração anódica com +0,2 V vs Ag/AgCl, circuito externo de 1 Ω sem potencial, oxigênio, nitrato e ausência de aceptor; o foco é incrustação de membrana e crescimento. A montagem não satisfaz F1–F6. Foi excluída da lista de controles convencionais e classificada como contexto de MFC com respiração anódica e operação orientada a membrana, sem misturar os seus resultados com os controles de referência.
+
+A Tabela 1 fornece valores de consumo de COD, corrente, produção de H₂, consumo de nitrato e eficiência coulômbica; o texto relata aumento de densidade de corrente de 0,21 ± 0,02 para 0,70 ± 0,09 A/m² com o potencial aplicado. Esses 18 registros permanecem na tabela contextual separada, fora do conjunto numérico de F1–F6. A unidade de H₂ aparece literalmente como `rnmol` no JATS e está em retenção de qualidade; não foi convertida. A Fig. 2 apresenta o potencial de incrustação, mas seus pontos ainda não foram digitalizados. [Dados contextuais e localizadores](../research/conventional-arms/catalog/context-observations.psv) · [Decisão e motivo](../research/conventional-arms/catalog/reviews.psv)
+
+As listas por artigo, o inventário de medições, os braços de stacks alternativas e a auditoria dos commits ficam no [índice de revisão e dados](../research/conventional-arms/catalog/REVIEW_INDEX.md). O B18 contém uma publicação revisada, uma exclusão de F1–F6 e zero admissões.
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão
