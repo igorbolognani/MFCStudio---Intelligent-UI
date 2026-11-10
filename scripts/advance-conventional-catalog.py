@@ -2,6 +2,7 @@
 from argparse import ArgumentParser
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
+from csv import DictReader
 from hashlib import sha256
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -21,8 +22,13 @@ STATES = {"identity_verified": "documented_integral", "body_candidate": "body_ca
           "wrong_document": "unavailable", "preview_only": "partial", "unrecovered": "unavailable"}
 PMC_BUCKET = "https://pmc-oa-opendata.s3.amazonaws.com/"
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+BIOC = "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/"
+OPENALEX = "https://api.openalex.org/works"
 JATS_LIMIT = 16 * 1024 * 1024
-PERMANENT_PMC_FAILURE = re.compile(r"No public PMC version|HTTP Error 404")
+PERMANENT_PMC_FAILURE = re.compile(
+    r"No public PMC version|No PMC Cloud version matches|not available in the BioC open-access subset|HTTP Error 404",
+    re.IGNORECASE,
+)
 TRANSIENT_PMC_FAILURE = re.compile(
     r"timed out|timeout|temporar|HTTP Error (?:408|425|429|500|502|503|504)|\b(?:408|425|429|500|502|503|504)\b",
     re.IGNORECASE,
@@ -33,6 +39,11 @@ def checked_catalogue(directory):
     rows = read(directory / "publications.psv.gz")
     if len(rows) != C["FROZEN_PUBLICATIONS"]:
         raise ValueError(f"Expected {C['FROZEN_PUBLICATIONS']} frozen publications")
+    by_doi = {C["doi_key"](doi): row for row in rows for doi in values(row.get("doi"))}
+    def resolve_publication(doi):
+        row = by_doi.get(C["doi_key"](doi))
+        return (row["key"], row) if row else (None, None)
+    C["validate_catalog_arm_registry"](directory, resolve_publication, allow_published_family=True)
     if C["summarize"](rows, directory) != read_json(directory / "coverage.json"):
         raise ValueError("The published catalogue failed its integrity check")
     return {row["key"]: row for row in rows}
@@ -58,7 +69,8 @@ def queues(rows):
         "screen": [r for r in confirmed if r["decisions"] == "unreviewed"],
         "methods": [r for r in confirmed if not values(r["reading_scopes"]) & C["FULL_METHODS"]],
         "admission": [r for r in confirmed if r["families"] == "NR" and
-                      (r["pending"] == "yes" or r["decisions"] == "unreviewed")],
+                      (r["pending"] == "yes" or r["decisions"] == "unreviewed" or
+                       "included_in_survey" in values(r["decisions"]))],
     }
 
 
@@ -71,15 +83,173 @@ def download(url):
     return data
 
 
-def cloud_url(pmc):
+def cloud_route(pmc, expected_dois=()):
     listing = PMC_BUCKET + "?" + urlencode({"list-type": 2, "prefix": pmc + ".", "delimiter": "/"})
     xml = ET.fromstring(download(listing))
     versions = [x.text.rstrip("/") for x in xml.findall("{*}CommonPrefixes/{*}Prefix")
                 if re.fullmatch(pmc + r"\.\d+/", x.text or "")]
     if not versions:
         raise ValueError("No public PMC version in bucket")
-    version = max(versions, key=lambda s: int(s.rsplit(".", 1)[1]))
-    return f"{PMC_BUCKET}{version}/{version}.xml"
+    expected = {C["doi_key"](doi) for doi in expected_dois if doi}
+    candidates = []
+    for prefix in versions:
+        stem = prefix.rstrip("/")
+        metadata_url = f"{PMC_BUCKET}{stem}/{stem}.json"
+        metadata = json.loads(download(metadata_url))
+        metadata_pmc = str(metadata.get("pmcid") or "").upper()
+        metadata_doi = C["doi_key"](metadata.get("doi"))
+        if metadata_pmc and metadata_pmc != pmc.upper():
+            continue
+        if expected and metadata_doi not in expected:
+            continue
+        url = metadata.get("xml_url")
+        if not isinstance(url, str) or not url.startswith(PMC_BUCKET):
+            continue
+        version = metadata.get("version")
+        version = int(version) if str(version).isdecimal() else int(stem.rsplit(".", 1)[1])
+        manuscript = str(metadata.get("is_manuscript") or "").casefold()
+        rank = {"no": 0, "false": 0, "": 1, "yes": 2, "true": 2}.get(manuscript, 1)
+        candidates.append((rank, -version, url, version, manuscript, metadata_doi))
+    if not candidates:
+        raise ValueError("No PMC Cloud version matches expected DOI and PMCID")
+    candidates.sort()
+    _, _, url, version, manuscript, doi = candidates[0]
+    return {"url": url, "version": str(version), "is_manuscript": manuscript or "NR", "doi": doi}
+
+
+def cloud_url(pmc, expected_dois=()):
+    return cloud_route(pmc, expected_dois)["url"]
+
+
+def bioc_article(data, row, pmc):
+    if b"No result can be found" in data[:512]:
+        raise ValueError("not available in the BioC open-access subset")
+    root = ET.fromstring(data)
+    documents = root.findall("document")
+    if len(documents) != 1:
+        raise ValueError("BioC response does not contain exactly one article")
+    document = documents[0]
+    text_by_type = []
+    identifiers = {}
+    for info in document.findall(".//infon"):
+        key = str(info.get("key") or "").casefold()
+        if key:
+            identifiers.setdefault(key, set()).add((info.text or "").strip())
+    for passage in document.findall("passage"):
+        value = " ".join((passage.findtext("text") or "").split())
+        if value:
+            info = passage.find("infon[@key='type']")
+            text_by_type.append(((info.text or "").casefold() if info is not None else "", value))
+    article_text = " ".join(value for _, value in text_by_type)
+    substantive = [value for kind, value in text_by_type if kind not in {"title", "abstract"}]
+    if len(article_text) < 2000 or len(substantive) < 4:
+        raise ValueError("BioC response lacks a substantive article body")
+
+    expected_dois = {C["doi_key"](doi) for doi in values(row.get("doi"))}
+    declared_dois = {C["doi_key"](value) for key, values_ in identifiers.items()
+                     if "doi" in key for value in values_ if value}
+    expected_pmc = pmc.upper().removeprefix("PMC")
+    declared_pmc = {value.upper().removeprefix("PMC") for key, values_ in identifiers.items()
+                    if "pmc" in key for value in values_ if value}
+    title_passages = [value for kind, value in text_by_type if kind == "title"]
+    title_matches = any(C["title_hash"](title) == C["title_hash"](row["title"])
+                        for title in title_passages)
+    pmc_matches = expected_pmc in declared_pmc
+    if declared_dois and expected_dois and not declared_dois & expected_dois:
+        return article_text, "wrong_document", "different_doi:" + sorted(declared_dois)[0]
+    if declared_dois & expected_dois:
+        return article_text, "identity_verified", "doi:" + sorted(declared_dois & expected_dois)[0]
+    if pmc_matches and (not title_passages or title_matches):
+        return article_text, "identity_verified", "pmcid:" + pmc
+    if title_matches:
+        return article_text, "identity_verified", "title_sha256:" + C["title_hash"](row["title"])
+    return article_text, "body_candidate", "NR"
+
+
+def select_openalex_routes(rows, works, route_prefix="openalex"):
+    works_by_doi = {}
+    for work in works:
+        doi = C["doi_key"](work.get("doi"))
+        if doi:
+            if doi in works_by_doi and works_by_doi[doi] != work:
+                raise ValueError(f"OpenAlex returned conflicting exact-DOI records: {doi}")
+            works_by_doi[doi] = work
+    planned = []
+    for row in rows:
+        dois = sorted(value for value in values(row.get("doi")) if value.startswith("10."))
+        matches = [works_by_doi[doi] for doi in dois if doi in works_by_doi]
+        if len(matches) > 1:
+            raise ValueError(f"OpenAlex returned multiple records for one catalog publication: {row['key']}")
+        if not matches:
+            continue
+        work = matches[0]
+        locations = [work.get("best_oa_location"), *(work.get("locations") or [])]
+        candidates = {}
+        for location in locations:
+            if not location or location.get("is_oa") is not True:
+                continue
+            url = location.get("pdf_url")
+            parsed = urlsplit(url or "")
+            if parsed.scheme != "https" or not parsed.hostname or parsed.username:
+                continue
+            source = location.get("source") or {}
+            host_kind = source.get("type") or "unknown"
+            version = location.get("version") or "unknown"
+            rank = ({"publisher": 0, "repository": 1}.get(host_kind, 2),
+                    {"publishedVersion": 0, "acceptedVersion": 1,
+                     "submittedVersion": 2}.get(version, 3),
+                    location is not work.get("best_oa_location"), url)
+            if url not in candidates or rank < candidates[url][0]:
+                candidates[url] = (rank, location, host_kind, version)
+        if not candidates:
+            continue
+        for index, (url, (rank, location, host_kind, version)) in enumerate(
+                sorted(candidates.items(), key=lambda pair: pair[1][0]), 1):
+            planned.append({"key": row["key"], "url": url, "provider": "OpenAlex",
+                            "license": location.get("license") or "NR", "version": version,
+                            "host_kind": host_kind,
+                            "landing_page_url": location.get("landing_page_url") or "NR",
+                            "route_group": f"{route_prefix}-{index:03d}"})
+    return planned
+
+
+def plan_openalex_pdfs(directory, output, limit):
+    rows = checked_catalogue(directory)
+    if output.exists():
+        raise ValueError(f"Refusing to overwrite an existing route plan: {output}")
+    candidates = [row for row in queues(rows.values())["recover"]
+                  if row["open_route_indexed"] == "yes" and
+                  any(doi.startswith("10.") for doi in values(row.get("doi")))]
+    candidates = sorted(candidates, key=rank)[:limit]
+    works = []
+    for start in range(0, len(candidates), 40):
+        batch = candidates[start:start + 40]
+        dois = sorted({doi for row in batch for doi in values(row.get("doi")) if doi.startswith("10.")})
+        if not dois:
+            continue
+        query = {"filter": "doi:" + "|".join("https://doi.org/" + doi for doi in dois),
+                 "select": "doi,best_oa_location,locations", "per_page": "100"}
+        response = json.loads(download(OPENALEX + "?" + urlencode(query)))
+        actual = response.get("results")
+        if not isinstance(actual, list):
+            raise ValueError("OpenAlex did not return a works list")
+        requested = {C["doi_key"](doi) for doi in dois}
+        if any(C["doi_key"](work.get("doi")) not in requested for work in actual):
+            raise ValueError("OpenAlex returned a work outside the exact DOI batch")
+        works.extend(actual)
+    prefix = re.sub(r"-sources.*$", "", output.stem, flags=re.IGNORECASE)
+    prefix = re.sub(r"(^|-)openalex(?=-|$)", "-", prefix, flags=re.IGNORECASE)
+    prefix = re.sub(r"[^A-Za-z0-9-]+", "-", prefix).strip("-") or "batch"
+    sources = select_openalex_routes(candidates, works, "openalex-" + prefix)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    columns = ["key", "url", "provider", "license", "version", "host_kind", "landing_page_url",
+               "route_group"]
+    write(output, columns, sources)
+    resolved = len({item["key"] for item in sources})
+    print(json.dumps({"candidate_publications": len(candidates), "direct_oa_pdf_routes": len(sources),
+                      "publications_with_routes": resolved, "unresolved": len(candidates) - resolved,
+                      "source_file": str(output)},
+                     ensure_ascii=False))
 
 
 def pmc_provider_history(history):
@@ -91,7 +261,7 @@ def pmc_provider_history(history):
         }:
             continue
         failures = item["failure_classes"]
-        labelled = list(re.finditer(r"(?:^| / )(cloud|epmc): ", failures))
+        labelled = list(re.finditer(r"(?:^| / )(cloud|epmc|bioc): ", failures))
         attempts = []
         if labelled:
             for index, match in enumerate(labelled):
@@ -100,7 +270,8 @@ def pmc_provider_history(history):
         else:
             host = urlsplit(item["access_url"]).hostname
             provider = "cloud" if host == "pmc-oa-opendata.s3.amazonaws.com" else (
-                "epmc" if host == "www.ebi.ac.uk" else None
+                "epmc" if host == "www.ebi.ac.uk" else
+                "bioc" if host == "www.ncbi.nlm.nih.gov" else None
             )
             if provider:
                 attempts.append((provider, failures))
@@ -115,9 +286,10 @@ def pmc_provider_history(history):
 
 
 def original_path(directory, key, fmt):
-    if fmt not in {"xml", "html", "pdf"}:
+    if fmt not in {"xml", "bioc_xml", "html", "pdf"}:
         raise ValueError(f"Unknown document format: {fmt}")
-    return directory / sha256(key.encode()).hexdigest()[:16] / f"article.{fmt}"
+    extension = "xml" if fmt == "bioc_xml" else fmt
+    return directory / sha256(key.encode()).hexdigest()[:16] / f"article.{extension}"
 
 
 def fetch_pmc(row, batch, group, identity):
@@ -131,14 +303,26 @@ def fetch_pmc(row, batch, group, identity):
             raise ValueError(f"Invalid receipt for {row['key']}")
         return record
     record = dict(key=row["key"], route_group=group, state="unrecovered", format="NR",
-                  access_url="NR", bytes="NR", sha256="NR", identity_basis="NR", failure_classes="NR")
+                  access_url="NR", bytes="NR", sha256="NR", identity_basis="NR", failure_classes="NR",
+                  provider="NR", source_version="NR", license="NR", host_kind="NR",
+                  landing_page_url="NR")
     failures = []
     for provider in row["providers"]:
-        url = EPMC + pmc + "/fullTextXML" if provider == "epmc" else PMC_BUCKET
+        url = (EPMC + pmc + "/fullTextXML" if provider == "epmc" else
+               BIOC + pmc + "/unicode" if provider == "bioc" else PMC_BUCKET)
+        source_version = "NR"
         try:
             if provider == "cloud":
-                url = cloud_url(pmc)
+                cloud = cloud_route(pmc, values(row["doi"]))
+                url = cloud["url"]
+                source_version = f"PMC OA version {cloud['version']} (is_manuscript={cloud['is_manuscript']})"
             data = download(url)
+            if provider == "bioc":
+                text, state, basis = bioc_article(data, row, pmc)
+                original_path(batch, row["key"], "bioc_xml").write_bytes(data)
+                record.update(state=state, format="bioc_xml", access_url=url, bytes=str(len(data)),
+                              sha256=sha256(data).hexdigest(), identity_basis=basis, provider=provider)
+                break
             article = ET.fromstring(data)
             body = article.find("body")
             if body is None or len("".join(body.itertext()).strip()) < 2000 or len(body.findall(".//p")) < 4:
@@ -152,7 +336,8 @@ def fetch_pmc(row, batch, group, identity):
                 state, basis = "wrong_document", "different_doi:" + declared
             original_path(batch, row["key"], "xml").write_bytes(data)
             record.update(state=state, format="xml", access_url=url, bytes=str(len(data)),
-                          sha256=sha256(data).hexdigest(), identity_basis=basis or "NR")
+                          sha256=sha256(data).hexdigest(), identity_basis=basis or "NR",
+                          provider=provider, source_version=source_version)
             break
         except (OSError, ValueError, ET.ParseError) as error:
             failures.append(f"{provider}: {error}")
@@ -188,10 +373,11 @@ def acquire(directory, batch, limit, retry_failed=False):
             if retry_failed:
                 if key not in transient:
                     continue
-                pending = [p for p in ("cloud", "epmc")
+                pending = [p for p in ("cloud", "epmc", "bioc")
                            if p not in exhausted and (p not in tried or p in transient[key])]
             else:
-                pending = [p for p in ("cloud", "epmc") if p not in tried and p not in exhausted]
+                pending = [p for p in ("cloud", "epmc", "bioc")
+                           if p not in tried and p not in exhausted]
             pmcs = values(row["pmcid"])
             if len(pmcs) == 1 and pending:
                 queue.append(dict(key=row["key"], doi=row["doi"], pmcid=next(iter(pmcs)),
@@ -214,12 +400,14 @@ def acquire_pdfs(directory, batch, sources):
     group = "pdf-" + batch.name
     if not re.fullmatch(r"pdf-[A-Za-z0-9-]+", group) or not planned:
         raise ValueError("Provide a nonempty list and a batch name using letters, digits and hyphens")
-    if len(planned) != len({item["key"] for item in planned}):
-        raise ValueError("Provide one PDF route per publication in a batch")
-    for item in planned:
+    for index, item in enumerate(planned, 1):
+        item.setdefault("route_group", f"{group}-{index:03d}")
         url = urlsplit(item["url"])
-        if item["key"] not in rows or url.scheme != "https" or not url.hostname or url.username:
+        if (item["key"] not in rows or url.scheme != "https" or not url.hostname or url.username or
+                not re.fullmatch(r"[a-zA-Z0-9-]+", item["route_group"])):
             raise ValueError(f"Unknown publication or invalid public URL: {item['key']}")
+    if len(planned) != len({(item["key"], item["route_group"]) for item in planned}):
+        raise ValueError("A publication cannot repeat a route-group identifier")
     batch.mkdir(parents=True, exist_ok=True)
     queue_file = batch / "queue.json"
     if queue_file.exists() and planned != read_json(queue_file):
@@ -228,38 +416,58 @@ def acquire_pdfs(directory, batch, sources):
     index = runpy.run_path(str(HERE / "index-conventional-catalog-documents.py"))
     acquisition = runpy.run_path(str(HERE / "acquire-external-register.py"))
 
-    def fetch(item):
-        key, url = item["key"], item["url"]
+    def fetch_group(routes):
+        records = []
+        key = routes[0]["key"]
         original = original_path(batch, key, "pdf")
         original.parent.mkdir(parents=True, exist_ok=True)
-        receipt = original.parent / "receipt.json"
-        if receipt.exists():
-            return read_json(receipt)
         row = rows[key]
-        result = dict(key=key, route_group=group, state="unrecovered", format="NR",
-                      access_url=url, bytes="NR", sha256="NR", identity_basis="NR", failure_classes="NR")
-        try:
-            data = download(url)
-            if not data.startswith(b"%PDF-"):
-                raise ValueError("Public route did not return a PDF")
-            _, text = acquisition["extract"](data, url)
-            if len(text) < 6500 or not all(acquisition[name].search(text) for name in ("METHOD", "RESULT")):
-                raise ValueError("Substantive article body could not be verified")
-            dois = sorted(values(row["doi"]))
-            basis = index["article_identity"](dict(format="pdf", doi=dois[0] if dois else None,
-                                                   title=row["title"]), data, text, dois[1:])
-            if not basis:
-                raise ValueError("PDF identity could not be verified")
-            original.write_bytes(data)
-            result.update(state="identity_verified", format="pdf", bytes=str(len(data)),
-                          sha256=sha256(data).hexdigest(), identity_basis=basis)
-        except (OSError, ValueError, SubprocessError) as error:
-            result["failure_classes"] = str(error)
-        save(receipt, result)
-        return result
+        for item in routes:
+            url = item["url"]
+            receipt = original.parent / f"receipt-{item['route_group']}.json"
+            if receipt.exists():
+                result = read_json(receipt)
+                if (result["key"], result["route_group"]) != (key, item["route_group"]):
+                    raise ValueError(f"Invalid PDF receipt for {key}")
+                records.append(result)
+                if result["state"] == "identity_verified":
+                    break
+                continue
+            result = dict(key=key, route_group=item["route_group"], state="unrecovered", format="NR",
+                          access_url=url, bytes="NR", sha256="NR", identity_basis="NR",
+                          failure_classes="NR", provider=item.get("provider", "NR"),
+                          source_version=item.get("version", "NR"), license=item.get("license", "NR"),
+                          host_kind=item.get("host_kind", "NR"),
+                          landing_page_url=item.get("landing_page_url", "NR"))
+            try:
+                data = download(url)
+                if not data.startswith(b"%PDF-"):
+                    raise ValueError("Public route did not return a PDF")
+                _, text = acquisition["extract"](data, url)
+                if len(text) < 6500 or not all(acquisition[name].search(text) for name in ("METHOD", "RESULT")):
+                    raise ValueError("Substantive article body could not be verified")
+                dois = sorted(values(row["doi"]))
+                basis = index["article_identity"](dict(format="pdf", doi=dois[0] if dois else None,
+                                                       title=row["title"]), data, text, dois[1:])
+                if not basis:
+                    raise ValueError("PDF identity could not be verified")
+                original.write_bytes(data)
+                result.update(state="identity_verified", format="pdf", bytes=str(len(data)),
+                              sha256=sha256(data).hexdigest(), identity_basis=basis)
+            except (OSError, ValueError, SubprocessError) as error:
+                result["failure_classes"] = str(error)
+            save(receipt, result)
+            records.append(result)
+            if result["state"] == "identity_verified":
+                break
+        return records
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        records = list(pool.map(fetch, planned))
+    grouped = {}
+    for item in planned:
+        grouped.setdefault(item["key"], []).append(item)
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        records = [item for group_records in pool.map(fetch_group, grouped.values())
+                   for item in group_records]
     save(batch / "receipts.json", records)
     print(json.dumps(dict(Counter(item["state"] for item in records)), sort_keys=True))
 
@@ -271,7 +479,8 @@ def merge_receipts(rows, ledger, receipt_files):
             row = rows[item["key"]]
             key = item["key"], item["route_group"]
             if key in known:
-                if known[key] != item:
+                if any(known[key].get(name, "NR") != item.get(name, "NR") for name in
+                       set(known[key]) | set(item)):
                     raise ValueError(f"Conflicting receipt: {key}")
                 continue
             if item["state"] not in STATES or not re.fullmatch(r"[a-zA-Z0-9-]+", item["route_group"]):
@@ -291,7 +500,90 @@ def merge_receipts(rows, ledger, receipt_files):
     return [known[key] for key in sorted(known)]
 
 
-def merge_reviews(rows, ledger, review_files):
+def catalog_row(rows, source):
+    if source in rows:
+        return rows[source]
+    matches = [row for row in rows.values() if source in values(row.get("doi"))]
+    if len(matches) != 1:
+        raise ValueError(f"Arm source does not resolve to one frozen publication: {source}")
+    return matches[0]
+
+
+def table_columns(path):
+    with path.open(encoding="utf-8", newline="") as file:
+        columns = DictReader(file, delimiter="|").fieldnames
+    if not columns or len(columns) != len(set(columns)):
+        raise ValueError(f"Invalid columns in {path.name}")
+    return columns
+
+
+def merge_arm_evidence(rows, arm_ledger, observation_ledger, arm_files, observation_files):
+    arms = {item["arm_id"]: item for item in arm_ledger}
+    observations = {item["id"]: item for item in observation_ledger}
+    original_arm_ids = set(arms)
+    family_by_key = {}
+    arm_columns = table_columns(C["DATA"] / "external-expansion/arms.psv")
+    observation_columns = table_columns(C["DATA"] / "external-expansion/observations.psv")
+    method = C["METHOD"]
+    for path in arm_files:
+        columns, incoming = table_columns(path), read(path)
+        if columns != arm_columns:
+            raise ValueError(f"Catalog arm file has an unexpected schema: {path}")
+        for item in incoming:
+            arm_id = item["arm_id"]
+            if arm_id in arms and arms[arm_id] != item:
+                raise ValueError(f"Conflicting registered arm: {arm_id}")
+            arms[arm_id] = item
+    for path in observation_files:
+        columns, incoming = table_columns(path), read(path)
+        if columns != observation_columns:
+            raise ValueError(f"Catalog observation file has an unexpected schema: {path}")
+        for item in incoming:
+            obs_id = item["id"]
+            if obs_id in observations and observations[obs_id] != item:
+                raise ValueError(f"Conflicting arm observation: {obs_id}")
+            observations[obs_id] = item
+    if arms and not observations:
+        raise ValueError("Every registered arm requires an electrical observation")
+    seen_source_families = set()
+    for arm in arms.values():
+        if arm["role"] not in method["SURVEY"]["ROLES"] or not arm["locators"].strip():
+            raise ValueError(f"Arm lacks a role or method/result locator: {arm['arm_id']}")
+        family = method["family"](arm)
+        if family not in set(method["FAMILY_KEYS"].values()):
+            raise ValueError(f"Arm does not map to F1–F6: {arm['arm_id']}")
+        row = catalog_row(rows, arm["source"])
+        if row["document"] != "documented_integral":
+            raise ValueError(f"Arm source lacks confirmed article identity: {arm['arm_id']}")
+        if arm["arm_id"] not in original_arm_ids and family in values(row["families"]):
+            raise ValueError(f"Catalog arm duplicates an existing publication family: {arm['arm_id']}")
+        source_family = row["key"], family
+        if source_family in seen_source_families:
+            raise ValueError(f"Duplicate source and family registration: {source_family}")
+        seen_source_families.add(source_family)
+        linked = [obs for obs in observations.values() if obs["arm_id"] == arm["arm_id"]]
+        if not linked:
+            raise ValueError(f"Arm lacks a linked result: {arm['arm_id']}")
+        for obs in linked:
+            if (obs["metric"] not in method["UNITS"] or
+                    obs["unit"] not in method["UNITS"][obs["metric"]] or
+                    obs["status"] not in {"context_only", "quality_hold"} or
+                    obs["extraction"] != "manual_text_or_table" or not obs["locator"].strip() or
+                    not obs["basis"].strip() or not obs["phase"].strip()):
+                raise ValueError(f"Observation lacks a linked result, unit or locator: {obs['id']}")
+            load = obs["load_ohm"]
+            if load not in {"NR", "variable", "short_circuit"}:
+                if not method["decimal"](load) or load not in arm["external_circuit"]:
+                    raise ValueError(f"Observation load does not match its arm: {obs['id']}")
+        row["families"] = " ".join(sorted(values(row["families"]) | {family}))
+        row["evidence"] = " ".join(sorted(values(row["evidence"]) | {"catalog_registered_arm"}))
+        family_by_key.setdefault(row["key"], set()).add(family)
+    return (list(arms.values()), list(observations.values()), family_by_key,
+            arm_columns, observation_columns)
+
+
+def merge_reviews(rows, ledger, review_files, registered_families=None):
+    registered_families = registered_families or {}
     known = {review["key"]: review for review in ledger}
     registered_arms = None
     for path in review_files:
@@ -314,7 +606,8 @@ def merge_reviews(rows, ledger, review_files):
                 if registered_arms is None:
                     registered_arms = C["historical"]()
                 owner = registered_arms.find(row)
-                verified = registered_arms.rows[owner]["families"] if owner else set()
+                verified = (registered_arms.rows[owner]["families"] if owner else set())
+                verified |= registered_families.get(row["key"], set())
                 if item["scope"] not in C["FULL_METHODS"] or not families <= verified:
                     raise ValueError(f"Control requires a registered arm and full methods: {item['key']}")
                 row["families"] = " ".join(sorted(values(row["families"]) | families))
@@ -326,18 +619,34 @@ def merge_reviews(rows, ledger, review_files):
     return list(known.values())
 
 
-def stage(directory, output, receipt_files, review_files):
+def stage(directory, output, receipt_files, review_files, arm_files, observation_files):
     rows = checked_catalogue(directory)
-    if output.exists() or not (receipt_files or review_files):
+    if output.exists() or not (receipt_files or review_files or arm_files):
         raise ValueError("Use a new staging directory and provide receipts or reviews")
     acquisitions = merge_receipts(rows, read(directory / "acquisition.psv"), receipt_files)
-    reviews = merge_reviews(rows, read(directory / "reviews.psv"), review_files)
+    existing_arms = read(directory / "arms.psv") if (directory / "arms.psv").exists() else []
+    existing_observations = read(directory / "observations.psv") if (directory / "observations.psv").exists() else []
+    arms, observations, arm_families, arm_columns, observation_columns = merge_arm_evidence(
+        rows, existing_arms, existing_observations, arm_files, observation_files
+    )
+    reviews = merge_reviews(rows, read(directory / "reviews.psv"), review_files, arm_families)
     output.parent.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(dir=output.parent) as temp:
         draft = Path(temp) / "catalog"
         shutil.copytree(directory, draft)
-        write(draft / "acquisition.psv", list(acquisitions[0]), acquisitions)
+        acquisition_columns = list(acquisitions[0])
+        source_metadata = ("provider", "source_version", "license", "host_kind", "landing_page_url")
+        acquisition_columns.extend(name for name in source_metadata
+                                   if any(name in item for item in acquisitions) and name not in acquisition_columns)
+        for item in acquisitions:
+            for name in source_metadata:
+                if name in acquisition_columns:
+                    item.setdefault(name, "NR")
+        write(draft / "acquisition.psv", acquisition_columns, acquisitions)
         write(draft / "reviews.psv", list(reviews[0]), reviews)
+        if arms:
+            write(draft / "arms.psv", arm_columns, arms)
+            write(draft / "observations.psv", observation_columns, observations)
         values_in_order = list(rows.values())
         write(draft / "publications.psv.gz", list(values_in_order[0]), values_in_order)
         save(draft / "coverage.json", C["summarize"](values_in_order, draft))
@@ -359,10 +668,15 @@ def main():
     pdf = commands.add_parser("acquire-pdfs")
     pdf.add_argument("batch", type=Path)
     pdf.add_argument("sources", type=Path, help="PSV with key and url columns")
+    openalex = commands.add_parser("plan-openalex-pdfs")
+    openalex.add_argument("output", type=Path, help="New PSV route plan for acquire-pdfs")
+    openalex.add_argument("--limit", type=int, default=100)
     apply = commands.add_parser("stage")
     apply.add_argument("output", type=Path)
     apply.add_argument("--receipts", type=Path, action="append", default=[])
     apply.add_argument("--reviews", type=Path, action="append", default=[])
+    apply.add_argument("--arms", type=Path, action="append", default=[])
+    apply.add_argument("--observations", type=Path, action="append", default=[])
     args = parser.parse_args()
     if getattr(args, "limit", 1) < 1:
         parser.error("--limit must be positive")
@@ -374,8 +688,10 @@ def main():
         acquire(args.catalog, args.batch, args.limit, args.retry_failed)
     elif args.command == "acquire-pdfs":
         acquire_pdfs(args.catalog, args.batch, args.sources)
+    elif args.command == "plan-openalex-pdfs":
+        plan_openalex_pdfs(args.catalog, args.output, args.limit)
     else:
-        stage(args.catalog, args.output, args.receipts, args.reviews)
+        stage(args.catalog, args.output, args.receipts, args.reviews, args.arms, args.observations)
 
 
 if __name__ == "__main__":

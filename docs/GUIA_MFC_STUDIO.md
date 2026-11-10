@@ -1290,6 +1290,26 @@ python3 scripts/build-conventional-catalog.py --output /cache-privado/b07-staged
 
 Na checagem B06, hashes, identidades e contagens passaram. `--require-over-half` retornou código 2 conforme esperado porque as cinco etapas ainda estão abaixo de 3.800. A revisão publica somente depois da verificação de integridade; o status da meta fica explícito, sem transformar essa pendência científica em falha de instalação do workflow.
 
+#### Lote B07 · Identidade confirmada e controle F4 vinculado
+
+O B07 registrou 23 tentativas PMC: dois corpos já contabilizados como candidatos tiveram a identidade confirmada, e 21 rotas não recuperaram outro corpo. Os originais Europe PMC ficaram no cache de trabalho com tamanhos e SHA-256; os registros distinguem confirmação de identidade de recuperação inicial do corpo.
+
+A leitura integral de Santoro et al. (`10.1038/srep16596`, PMCID `PMC4643260`) confirmou um controle F4 no mesmo braço: cátodo com Pt, escova de carbono, célula de uma câmara sem membrana, acetato de sódio a 1 g/L no início de cada ciclo e resultado de 375 ± 7 mV no primeiro ciclo sob 470 Ω. A mistura 1:1 de PBS e lodo ativado, a substituição da alimentação a cada quatro dias, a temperatura e as duas réplicas permanecem explícitas na ficha. A origem JATS, 96.824 bytes, SHA-256 `227b39d8f76219fc9a10e55ab8da3490dfd2460d9d13c3b9ce76994a07666db8`, já estava registrada na aquisição por métodos; os localizadores ligam método e Fig. 3. [Artigo](https://doi.org/10.1038/srep16596) · [Braço CAT001-Pt](../research/conventional-arms/catalog/arms.psv) · [Resultado CATOBS001](../research/conventional-arms/catalog/observations.psv) · [Decisão F4](../research/conventional-arms/catalog/reviews.psv)
+
+O B08 seleciona versões do PMC pelo manifesto JSON de cada versão, confere PMCID e DOI e prefere versões não marcadas como manuscritos de autor. Se Cloud e Europe PMC não servirem o texto, tenta também o BioC oficial do subconjunto aberto; identidade só é confirmada após validar corpo e identificadores. O registro mantém URL da versão e SHA-256 dos bytes recebidos. Para artigos sem PMCID, `plan-openalex-pdfs` consulta o OpenAlex em lote por DOI, exige `is_oa` e PDF direto e ordena primeiro as versões publicadas. Agora mantém todas as rotas públicas distintas de cada estudo; `acquire-pdfs` tenta-as em sequência, para após confirmar corpo e identidade, e registra provedor, versão, licença, hospedagem e página de destino por rota. Assim um link fechado ou quebrado não encerra as alternativas do mesmo artigo. [Documentação do PMC Cloud e seus manifestos](https://pmc.ncbi.nlm.nih.gov/tools/pmcaws/) · [API BioC autorizada para o subconjunto aberto](https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/BioC-PMC/) · [API OpenAlex](https://help.openalex.org/api/) · [Locais abertos e versões](https://help.openalex.org/data/locations/)
+
+| Etapa | Antes do B07 | B07 | Atual | Percentual | Faltam para 3.800 |
+|---|---:|---:|---:|---:|---:|
+| Corpo recuperado | 1.599 | +0 | 1.599 | 21,04% | 2.201 |
+| Identidade documentada | 1.465 | +2 | 1.467 | 19,31% | 2.333 |
+| Triagem ou revisão individual | 457 | +0 | 457 | 6,01% | 3.343 |
+| Métodos completos lidos | 182 | +1 | 183 | 2,41% | 3.617 |
+| Controle admitido em F1–F6 | 44 | +1 | 45 | 0,59% | 3.755 |
+
+`arms.psv` e `observations.psv` usam o esquema auditado de braços e medições; a checagem impede que configuração, alimentação, carga e resposta sejam atribuídas a braços diferentes. Os dois arquivos entram nos hashes da cobertura. `--require-over-half` permanece abaixo da meta e retorna 2 até que cada uma das cinco contagens alcance 3.800.
+
+As falhas que apareceram no Actions tinham duas causas. O run #30 parou na suíte `unittest`: dois módulos importavam `lxml`, que não estava instalado; o workflow agora fixa Python 3.12 e `lxml==6.1.1`. O run #31 parou antes dos testes, em `setup-node`, por causa da detecção automática de cache pnpm antes de o pnpm estar configurado; `package-manager-cache: false` remove essa dependência implícita. O run #32 e os lotes B05 e B06 passaram integralmente depois dos ajustes. [Workflow B06](https://github.com/igorbolognani/MFCStudio---Intelligent-UI/actions/runs/42730189761) · [Workflow de verificação](../.github/workflows/verify.yml)
+
 
 <a id="validacao"></a>
 ## 13. Calibração, validação e confiança na previsão

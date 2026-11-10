@@ -1,6 +1,7 @@
 """Consolidate publication identities and keep access, reading and inclusion separate."""
 from argparse import ArgumentParser
 from collections import Counter, defaultdict
+from csv import DictReader
 from hashlib import sha256
 from pathlib import Path
 import json
@@ -147,7 +148,101 @@ def classify_machine(row, text, types):
         row["machine"].add("nonprimary_signal")
 
 
-def historical():
+def read_columns(path):
+    with path.open(encoding="utf-8", newline="") as file:
+        columns = DictReader(file, delimiter="|").fieldnames
+    if not columns or len(columns) != len(set(columns)):
+        raise ValueError(f"Invalid columns in {path.name}")
+    return columns
+
+
+def validate_catalog_arm_registry(output, resolve_publication, allow_published_family=False):
+    """Validate catalog-specific frozen-frame arms and return their families by key."""
+    arm_path, observation_path = output / "arms.psv", output / "observations.psv"
+    if arm_path.exists() != observation_path.exists():
+        raise ValueError("Catalog arms and observations must be registered together")
+    if not arm_path.exists():
+        return {}
+
+    arm_columns, arms = read_columns(arm_path), read(arm_path)
+    observation_columns, observations = read_columns(observation_path), read(observation_path)
+    external_arms = read_columns(DATA / "external-expansion/arms.psv")
+    external_observations = read_columns(DATA / "external-expansion/observations.psv")
+    if arm_columns != external_arms or observation_columns != external_observations:
+        raise ValueError("Catalog arm ledgers must use the audited arm and observation schemas")
+    if len({arm["arm_id"] for arm in arms}) != len(arms):
+        raise ValueError("Repeated catalog arm ID")
+    if len({obs["id"] for obs in observations}) != len(observations):
+        raise ValueError("Repeated catalog observation ID")
+
+    method = METHOD
+    source_docs = {}
+    for record in read(DATA / "methods-expansion/acquisition.psv"):
+        if record["access"] == "jats":
+            if (not re.fullmatch(r"[a-f0-9]{64}", record["sha256"]) or
+                    not record["bytes"].isdecimal() or int(record["bytes"]) <= 0):
+                raise ValueError(f"Invalid source checksum for {record['source']}")
+            doi = doi_key(record["key"])
+            if doi in source_docs and source_docs[doi] != record:
+                raise ValueError(f"Conflicting full-text source versions for {doi}")
+            source_docs[doi] = record
+
+    by_key = defaultdict(set)
+    seen_source_families = set()
+    known_arms = {arm["arm_id"] for arm in arms}
+    linked = defaultdict(list)
+    for obs in observations:
+        if obs["arm_id"] not in known_arms:
+            raise ValueError(f"Observation references an unregistered catalog arm: {obs['id']}")
+        linked[obs["arm_id"]].append(obs)
+
+    for arm in arms:
+        family = method["family"](arm)
+        if (arm["role"] not in method["SURVEY"]["ROLES"] or not family or
+                not arm["locators"].strip()):
+            raise ValueError(f"Catalog arm lacks a supported family, role or locator: {arm['arm_id']}")
+        doi = doi_key(arm["source"])
+        document = source_docs.get(doi)
+        if not document:
+            raise ValueError(f"Catalog arm lacks a hash-registered primary JATS source: {arm['arm_id']}")
+        key, publication = resolve_publication(arm["source"])
+        if not publication or publication["document"] != "documented_integral":
+            raise ValueError(f"Catalog arm lacks confirmed identity and integral body: {arm['arm_id']}")
+        published_families = publication.get("families") or set()
+        if isinstance(published_families, str):
+            published_families = values(published_families)
+        if family in published_families and not allow_published_family:
+            raise ValueError(f"Catalog arm duplicates an already registered family: {arm['arm_id']}")
+        if allow_published_family and family not in published_families:
+            raise ValueError(f"Catalog publication omits its registered family: {arm['arm_id']}")
+        source_family = key, family
+        if source_family in seen_source_families:
+            raise ValueError(f"Duplicate catalog source and family: {source_family}")
+        seen_source_families.add(source_family)
+        if not linked[arm["arm_id"]]:
+            raise ValueError(f"Catalog arm lacks a linked electrical result: {arm['arm_id']}")
+        for obs in linked[arm["arm_id"]]:
+            if (obs["metric"] not in method["UNITS"] or
+                    obs["unit"] not in method["UNITS"][obs["metric"]] or
+                    obs["status"] not in {"context_only", "quality_hold"} or
+                    obs["extraction"] != "manual_text_or_table" or
+                    not obs["basis"].strip() or not obs["phase"].strip() or
+                    not obs["locator"].strip()):
+                raise ValueError(f"Catalog observation lacks a linked result or locator: {obs['id']}")
+            method["decimal"](obs["value"])
+            if obs["spread_or_upper"] != "NR":
+                method["decimal"](obs["spread_or_upper"])
+            if obs["n_reactors"] != "NR" and not re.fullmatch(r"[1-9][0-9]*", obs["n_reactors"]):
+                raise ValueError(f"Invalid replicate count for {obs['id']}")
+            load = obs["load_ohm"]
+            if load not in {"NR", "variable", "short_circuit"}:
+                if method["decimal"](load) == 0 or load not in arm["external_circuit"]:
+                    raise ValueError(f"Observation load does not match its arm: {obs['id']}")
+        by_key[key].add(family)
+    return by_key
+
+
+def historical(output=OUTPUT):
     catalog = Catalog()
     for source in read(EXTERNAL / "excluded-972.psv"):
         row = catalog.add(source, "historical_identity")
@@ -214,6 +309,12 @@ def historical():
         for arm in read(file):
             if arm["role"] != "standard_protocol":
                 sources[arm["source"]]["families"].add(METHOD["family"](arm))
+    def resolve_publication(doi):
+        key = catalog.find({"doi": doi})
+        return (key, catalog.rows.get(key)) if key else (None, None)
+    for key, families in validate_catalog_arm_registry(output, resolve_publication).items():
+        catalog.rows[key]["families"].update(families)
+        catalog.rows[key]["evidence"].add("catalog_registered_arm")
     return catalog
 
 
@@ -382,7 +483,7 @@ def summarize(rows, output):
                "families": dict(sorted(Counter(f for row in rows for f in values(row["families"])).items())),
                "hashes": {}}
     for name in ("publications.psv.gz", "acquisition.psv", "reviews.psv", "versions.psv",
-                 "document-conflicts.psv", "review-attachments.psv"):
+                 "document-conflicts.psv", "review-attachments.psv", "arms.psv", "observations.psv"):
         path = output / name
         if path.exists():
             summary["hashes"][name] = sha256(path.read_bytes()).hexdigest()
@@ -421,7 +522,17 @@ if __name__ == "__main__":
     if args.require_over_half and not args.check:
         parser.error("--require-over-half requires --check")
     if args.check:
-        summary = summarize(read(args.output / "publications.psv.gz"), args.output)
+        rows = read(args.output / "publications.psv.gz")
+        publication_by_doi = {}
+        for row in rows:
+            for kind, value in identity(row):
+                if kind == "doi":
+                    publication_by_doi[value] = row
+        def resolve_publication(doi):
+            row = publication_by_doi.get(doi_key(doi))
+            return (row["key"], row) if row else (None, None)
+        validate_catalog_arm_registry(args.output, resolve_publication, allow_published_family=True)
+        summary = summarize(rows, args.output)
         if summary["unique_publications"] != FROZEN_PUBLICATIONS:
             raise ValueError(f"Expected {FROZEN_PUBLICATIONS} frozen publications")
         if summary != read_json(args.output / "coverage.json"):
@@ -436,7 +547,7 @@ if __name__ == "__main__":
     if args.cache is None:
         parser.error("--cache is required when generating the catalogue")
     args.output.mkdir(parents=True, exist_ok=True)
-    catalog = historical()
+    catalog = historical(args.output)
     apply_metadata(catalog, args.cache)
     apply_archived_index(catalog, args.cache)
     for name, apply in (("acquisition.psv", apply_acquisition), ("reviews.psv", apply_reviews)):

@@ -81,6 +81,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1002/wer.10989|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/wer.70118|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1002/wer.70556|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (2)
+10.1002/wer.70556|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13527657/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1002/wer.70556|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13527657.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1002/wer.70587|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1002/wer.70587|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13583551/fullTextXML|NR|NR|NR|epmc: The read operation timed out
@@ -104,6 +105,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s00253-015-6857-x|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (2)
 10.1007/s00253-016-7707-1|open|identity_verified|pdf|https://publicatio.bibl.u-szeged.hu/9980/1/Schneider_etal_AMAB_2016.pdf|509304|dfc0e8e041df8d7ff25b3c7841743e8724448a643a6bc490760d791adb0bf77f|doi:10.1007/s00253-016-7707-1|NR
 10.1007/s00253-018-9158-3|open|identity_verified|pdf|https://www.osti.gov/servlets/purl/1834068|1049135|1c21995edd67c53dea9b6a142c7771adcf846c248751205439cb8a024f6a809e|article_front_title|body_incomplete_or_unreadable (1)
+10.1007/s00253-023-12829-1|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13497064/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1007/s00253-023-12829-1|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13497064.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s00284-014-0539-2|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 410 (1)
 10.1007/s00374-020-01463-y|open|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -192,8 +194,10 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s12088-024-01291-w|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11607233/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1007/s12088-024-01291-w|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11607233.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-024-01414-3|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-024-01414-3|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12246325/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s12088-024-01414-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12246325.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-025-01458-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s12088-025-01458-z|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12579078/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1007/s12088-025-01458-z|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12579078.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s12088-025-01483-y|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s12274-019-2438-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -201,6 +205,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s12678-016-0334-x|open|no_route_tested|NR|NR|NR|NR|NR|NR
 10.1007/s13201-022-01632-4|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s13201-022-01632-4.pdf|2002721|f14c9b143106e72a86a72bdaf9a60dde389a94ed5c668a1f5665793ac314ec76|doi:10.1007/s13201-022-01632-4|NR
 10.1007/s13205-018-1237-8|open|preview_only|html|https://link.springer.com/content/pdf/10.1007/s13205-018-1237-8.pdf|600569|cf915a7ec8a3a8dec1adacd2518dac71372da494c2e29ce4ffa985727eeef9ad|doi:10.1007/s13205-018-1237-8|NR
+10.1007/s13205-018-1237-8|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5891446/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-018-1237-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC5891446.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-018-1321-0|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
 10.1007/s13205-018-1321-0|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6087702/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
@@ -217,6 +222,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s13205-020-2050-8|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6987287/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-020-2050-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC6987287.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-021-02802-y|open4|preview_only|html|https://doi.org/10.1007/s13205-021-02802-y|692144|191ed733073808f1071f86f283dfb7e1fdf221018d46bfc89d4bd5d92843e7c0|doi:10.1007/s13205-021-02802-y|NR
+10.1007/s13205-021-02802-y|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8088421/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-021-02802-y|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8088421.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-021-02886-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13205-021-02886-6|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8211813/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
@@ -225,20 +231,26 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s13205-021-03065-3|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8674389/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1007/s13205-021-03065-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8674389.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-022-03214-2|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-022-03214-2|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9206964/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-022-03214-2|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9206964.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
+10.1007/s13205-022-03260-w|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9391563/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-022-03260-w|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9391563.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-022-03335-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1007/s13205-022-03335-8|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9525492/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-022-03335-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC9525492.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-023-03687-9|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s13205-023-03687-9|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10335983/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-023-03687-9|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10335983.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-023-03772-z|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
 10.1007/s13205-023-03772-z|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10550894/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-023-03772-z|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10550894.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
+10.1007/s13205-025-04340-3|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12084208/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-025-04340-3|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12084208.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04381-8|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
+10.1007/s13205-025-04381-8|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12165935/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-025-04381-8|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12165935.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04388-1|open4|preview_only|html|https://doi.org/10.1007/s13205-025-04388-1|445902|3d96bd679efd92b2037df721721ecb89dbe4b6e307db3a97d6c09be3b868e65b|doi:10.1007/s13205-025-04388-1|NR
+10.1007/s13205-025-04388-1|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12179030/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s13205-025-04388-1|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12179030.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s13205-025-04529-6|open4|identity_verified|pdf|https://europepmc.org/articles/PMC12535574|1642585|0cfe3c49c080a4cca40791516855e3a940cbedd489da5becd9b7676494dd4ce9|doi:10.1007/s13205-025-04529-6|body_incomplete_or_unreadable (3)
 10.1007/s13205-025-04618-6|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
@@ -258,6 +270,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1007/s40201-022-00846-7|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10163198/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1007/s40201-022-00846-7|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10163198.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s40201-025-00933-5|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (2)
+10.1007/s40201-025-00933-5|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11828766/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1007/s40201-025-00933-5|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11828766.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1007/s41742-025-00889-2|restore|identity_verified|pdf|https://link.springer.com/content/pdf/10.1007/s41742-025-00889-2.pdf|4212785|a209c97085dde787b03b311f25f82d5f5757c2e3e890ba01ebd2012df80b6c86|doi:10.1007/s41742-025-00889-2|NR
 10.1007/s42770-019-00091-5|open|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (3)
@@ -1200,11 +1213,13 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1038/ismej.2010.66|open2|identity_verified|pdf|https://biblio.ugent.be/publication/1162702/file/1163135.pdf|299477|7523c3b80ca0d71c84401a929a3132a5e0c434d4a79351218f0ee69e9a6228a9|article_front_title|NR
 10.1038/ismej.2012.42|pmc-20261109-f156|identity_verified|xml|https://pmc-oa-opendata.s3.amazonaws.com/PMC3475369.1/PMC3475369.1.xml|158781|3f4052985a00168dff23079e8126e62047a703fa61a16e9a143cc86c2a6cbb26|doi:10.1038/ismej.2012.42|NR
 10.1038/ismej.2012.5|open2|preview_only|html|https://www.nature.com/articles/ismej20125.pdf|269553|80d131dd179460233e5a11a03f7848bcc290abb164d3e2c4b468ef6ae05fb2ac|doi:10.1038/ismej.2012.5|NR
+10.1038/ismej.2012.5|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3400418/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1038/ismej.2012.5|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3400418.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.198|open3|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (3) / body_incomplete_or_unreadable (2)
 10.1038/ismej.2013.198|pmc-b06-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3869025/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1038/ismej.2013.198|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3869025.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.217|fresh-oa|preview_only|html|https://www.nature.com/articles/ismej2013217.pdf|339292|3d2e826ea2a599c1647b20af72b6c3762e3660d8a580aaf6d6d942739671e90f|doi:10.1038/ismej.2013.217|NR
+10.1038/ismej.2013.217|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3996694/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1038/ismej.2013.217|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3996694.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1038/ismej.2013.40|open|identity_verified|pdf|https://europepmc.org/articles/PMC3721111|1875535|e0f2548fe8e74e294df24fa183c956030e571ccbe595365cf2129d811571f3a0|doi:10.1038/ismej.2013.40|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1038/ismej.2013.40|pmc-cloud-b02|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3721111.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
@@ -1290,6 +1305,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1073/pnas.0706379104|open5|identity_verified|pdf|https://europepmc.org/articles/PMC2141869|177740|719836d678637151b01536529d38da5191b30dee154df3775740c91178057d9a|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1073/pnas.0907468107|open5|identity_verified|pdf|https://europepmc.org/articles/PMC2806741|748244|786df9f28860cf00f0e04d1897f81f3a5f99a946c51e423bef33f5f66b7fdea3|doi:10.1073/pnas.0907468107|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1073/pnas.1011699107|open2|identity_verified|pdf|https://europepmc.org/articles/PMC2947899|1467936|85d2a74e02f27187e83a8c20fac0d411915f7d0e1653df2377e84fd47690838c|doi:10.1073/pnas.1011699107|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
+10.1073/pnas.1106335108|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3182737/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1073/pnas.1106335108|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC3182737.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1073/pnas.1112905109|open2|identity_verified|pdf|https://europepmc.org/articles/PMC3277152|970370|e23cd8f483900b956d44e2770235cfeb0897c3ee8c40055adeaa5c937a2afa40|doi:10.1073/pnas.1112905109|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1073/pnas.1419328112|open5|identity_verified|pdf|https://europepmc.org/articles/PMC4418906|1103444|fc6b32ba7698f264c3a8bd32a3b541c1cdc5eef2f7f2933d9ae7b5b1370fd9ed|doi:10.1073/pnas.1419328112|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1398,6 +1414,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1128/aem.01387-07|open2|identity_verified|pdf|https://europepmc.org/articles/PMC2227709|987360|21d2428ec259bab53be7d4a737f17358c5aab331f0cb3137db1564653dc7937b|doi:10.1128/aem.01387-07|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/aem.01392-10|open3|identity_verified|pdf|https://europepmc.org/articles/PMC3020560|749722|790dcf13a9f55230d5a12a6ebff07c59ca0ba2932db6c4832d5c0963424e9110|doi:10.1128/aem.01392-10|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.01444-06|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (3)
+10.1128/aem.01444-06|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1636155/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1128/aem.01444-06|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC1636155.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.01615-16|open5|identity_verified|pdf|https://europepmc.org/articles/PMC4988178|3038881|0f948e374345bc188024db8e498d5937f41ba1ebb36bcfa7db0af5cf75bfd27a|doi:10.1128/aem.01615-16|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.01639-08|open|identity_verified|pdf|https://europepmc.org/articles/PMC2592935|760610|412ec71a0756466cc4641dad6096bc6e1b7f4a30e56f746febac178c31d449c3|doi:10.1128/aem.01639-08|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1415,10 +1432,13 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.1128/aem.69.3.1548-1555.2003|open|identity_verified|pdf|https://europepmc.org/articles/PMC150094|620767|68266518b423a924c35efb857d1652da226f2f969cf8f63902b36a0b725530fc|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.70.10.6023-6030.2004|open5|identity_verified|pdf|https://europepmc.org/articles/PMC522133|259097|be37864f1f167fdb562d9c235a5095e97a6a63038e58c8a21e69f665e4f10261|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
 10.1128/aem.70.2.1234-1237.2004|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / HTTP Error 429 (1) / body_incomplete_or_unreadable (2)
+10.1128/aem.70.2.1234-1237.2004|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC348862/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1128/aem.70.2.1234-1237.2004|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC348862.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.70.6.3467-3474.2004|open5|identity_verified|pdf|https://europepmc.org/articles/PMC427799|102845|647c0dff0f666e1a1d6d219c829f471f69dcc3df052f6f644fbfd21d1a90707e|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
+10.1128/aem.70.9.5373-5382.2004|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC520914/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1128/aem.70.9.5373-5382.2004|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC520914.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.1128/aem.71.4.2186-2189.2005|open2|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1) / body_incomplete_or_unreadable (4)
+10.1128/aem.71.4.2186-2189.2005|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1082548/fullTextXML|NR|NR|NR|epmc: The read operation timed out
 10.1128/aem.71.4.2186-2189.2005|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC1082548.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 10.1128/jb.00716-16|open|identity_verified|pdf|https://europepmc.org/articles/PMC5370424|3553915|490ae8c4c892035b96a3b2e033b0152fd9bd28264ff4d17f70e359290184b645|doi:10.1128/jb.00716-16|HTTP Error 403 (2) / body_incomplete_or_unreadable (1)
 10.1128/jb.00725-19|open5|identity_verified|pdf|https://europepmc.org/articles/PMC7167473|942512|22df74bd66b3a483044636acbf27ad182d20fca3592359ef08432aaade3c0421|article_front_title|HTTP Error 403 (1) / body_incomplete_or_unreadable (1)
@@ -1499,6 +1519,7 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 10.15171/ijb.1608|open2|identity_verified|html|https://doi.org/10.15171/ijb.1608|102755|8587d52934007546b8261e625293c24d1a065daf33aae9a9783b2a64fdfad070|doi:10.15171/ijb.1608|NR
 10.15244/pjoes/133402|open2|unrecovered|NR|NR|NR|NR|NR|body_incomplete_or_unreadable (1)
 10.1529/biophysj.108.134411|open5|unrecovered|NR|NR|NR|NR|NR|HTTP Error 429 (1) / body_incomplete_or_unreadable (4)
+10.1529/biophysj.108.134411|pmc-b07-pmc|unrecovered|NR|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2426644/fullTextXML|NR|NR|NR|epmc: HTTP Error 500: Internal Server Error
 10.1529/biophysj.108.134411|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC2426644.&delimiter=%2F|NR|NR|NR|No public PMC version in bucket
 10.15376/biores.20.4.pratama|restore|identity_verified|pdf|https://bioresources.cnr.ncsu.edu/wp-content/uploads/2025/10/BioRes_20_4_Pratama_SRSDFMI_REVIEW_Synthesis_Binders_Fuel_Cell_24313.pdf|1787644|62bb9d1723df7f4f2ef71232e9974183d89cadd0dd8a8e19868cf158b2cca4e0|doi:10.15376/biores.20.4.pratama|NR
 10.15407/ubj86.02.016|open|no_route_tested|NR|NR|NR|NR|NR|NR
@@ -1986,8 +2007,10 @@ key|route_group|state|format|access_url|bytes|sha256|identity_basis|failure_clas
 26057262|open|unrecovered|NR|NR|NR|NR|NR|HTTP Error 403 (1)
 26284037|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4523033/fullTextXML|94063|19a916dea2aa42d24f98c7326eee198485767374a0c137bfd96a430d17cea2e9|article_front_title|NR
 26678949|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4683449/fullTextXML|84219|59d4791f6f03c1acb70f54911ac1406a4ba63c23bcfe2bfb9dcff06acc28bd7b|NR|NR
+26678949|pmc-b07-pmc|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4683449/fullTextXML|84219|59d4791f6f03c1acb70f54911ac1406a4ba63c23bcfe2bfb9dcff06acc28bd7b|doi:10.1038/srep18433|NR
 26678949|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4683449.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 26733958|open|body_candidate|html|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4679932/fullTextXML|118339|70b6d278186a677cafa370268a46de08c7de2a0f15099235b3fc95632033dbec|NR|NR
+26733958|pmc-b07-pmc|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4679932/fullTextXML|118339|70b6d278186a677cafa370268a46de08c7de2a0f15099235b3fc95632033dbec|doi:10.3389/fmicb.2015.01410|NR
 26733958|pmc-cloud-b01|unrecovered|NR|https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4679932.&delimiter=%2F|NR|NR|NR|HTTP Error 503: Service Unavailable
 26899353|open|identity_verified|xml|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4761877/fullTextXML|100493|26ea4726c9e2ea8f48ff6efbda4bc12f43a6c0fa4ce5f2368be81950f820c556|article_front_title|NR
 27071535|open|unrecovered|NR|NR|NR|NR|NR|The read operation timed out (1)
